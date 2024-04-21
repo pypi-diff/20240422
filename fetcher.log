@@ -436,3 +436,56 @@
 [2024-04-22 00:22:16] INFO root fetch - processPackages [fennel-invest-api]: Remove: archive file [/home/abi/fetcher/tmp/fennel_invest_api-1.0.2.tar.gz]
 [2024-04-22 00:22:16] INFO root fetch - main [MainThread]: End processing [fennel-invest-api]: success
 [2024-04-22 00:22:16] INFO root fetch - main [MainThread]: Store serial: [22870156]
+[2024-04-22 00:24:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870156]
+[2024-04-22 00:24:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 00:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fennel-invest-api
+[2024-04-22 00:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hat-controller
+[2024-04-22 00:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: home-assistant-chip-clusters
+[2024-04-22 00:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: home-assistant-chip-repl
+[2024-04-22 00:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: netbox-validity
+[2024-04-22 00:24:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: codex
+[2024-04-22 00:24:24] INFO root fetch - processPackages [fennel-invest-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-22 00:24:24] INFO root fetch - processPackages [netbox-validity]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-04-22 00:24:24] INFO root fetch - processPackages [fennel-invest-api]: Downloading https://files.pythonhosted.org/packages/74/ef/deaa094640fb34c773af65675e36375c87860b5f53697a374d917d1f9e3d/fennel_invest_api-1.0.1.tar.gz
+[2024-04-22 00:24:24] INFO root fetch - processPackages [home-assistant-chip-clusters]: New version: [2024.4.0] Old Version: [2024.3.2]
+[2024-04-22 00:24:24] INFO root fetch - processPackages [home-assistant-chip-repl]: New version: [2024.4.0] Old Version: [2024.3.2]
+[2024-04-22 00:24:24] INFO root fetch - processPackages [hat-controller]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 00:24:24] INFO root fetch - processPackages [codex]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-04-22 00:24:24] INFO root fetch - processPackages [netbox-validity]: Downloading https://files.pythonhosted.org/packages/da/65/6ea43f1ef72da6897184ee5d2c103504f9a96631660d43707a12897a4b33/netbox-validity-2.1.1.tar.gz
+[2024-04-22 00:24:24] INFO root fetch - processPackages [home-assistant-chip-clusters]: Downloading https://files.pythonhosted.org/packages/b9/6d/9d87153fd06efc7efb8c1ea19a0191ecc3aa143c71c4a62ab522d6a08d4f/home_assistant_chip_clusters-2024.3.2-py3-none-any.whl
+[2024-04-22 00:24:24] INFO root fetch - processPackages [fennel-invest-api]: Downloading https://files.pythonhosted.org/packages/8d/66/73963cd11f4dd48a7b63ec9a37047e9e8f50334981ee9bfef8767a064683/fennel_invest_api-1.0.2.tar.gz
+[2024-04-22 00:24:24] INFO root fetch - processPackages [home-assistant-chip-repl]: Downloading https://files.pythonhosted.org/packages/5b/d2/018cf8b871bf0ded2a1a0cd0443a77e1d651af7421437d0b96bb839c7451/home_assistant_chip_repl-2024.3.2-py3-none-any.whl
+[2024-04-22 00:24:24] INFO root fetch - processPackages [hat-controller]: Downloading https://files.pythonhosted.org/packages/69/7d/8c6f3248182a893037aab9b14f2db6598a5d9b9e571023460df181207d14/hat_controller-0.1.1-cp310.cp311.cp312-none-any.whl
+[2024-04-22 00:24:25] INFO root fetch - processPackages [codex]: Downloading https://files.pythonhosted.org/packages/0c/6f/7c4b25c7a3f59e29de3052fd98dcb78a9ee044406464991bc45a1fd4a48f/codex-1.5.8.tar.gz
+[2024-04-22 00:24:25] INFO root fetch - processPackages [fennel-invest-api]: executing diffoscope
+[2024-04-22 00:24:25] INFO root fetch - processPackages [fennel-invest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fennel_invest_api-1.0.1.tar.gz tmp/fennel_invest_api-1.0.2.tar.gz --markdown 20240422/f/fennel-invest-api/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-22 00:24:25] WARNING root fetch - processPackages [codex]: Skipping package: exceeds size limit 18232846>=10485760
+[2024-04-22 00:24:25] INFO root fetch - main [MainThread]: End processing [codex] error
+[2024-04-22 00:24:25] INFO root fetch - processPackages [netbox-validity]: Downloading https://files.pythonhosted.org/packages/17/f6/2086f7f37c0e523adec9b74ce3e4c197a17753b707432a1f82640cfa3c10/netbox_validity-2.2.0.tar.gz
+[2024-04-22 00:24:25] INFO root fetch - processPackages [home-assistant-chip-clusters]: Downloading https://files.pythonhosted.org/packages/af/1e/986da7fa0751fe984e067b76a41c3c8b40eb6f872bb9e1dbf8233ef7b87f/home_assistant_chip_clusters-2024.4.0-py3-none-any.whl
+[2024-04-22 00:24:25] INFO root fetch - processPackages [hat-controller]: Downloading https://files.pythonhosted.org/packages/c8/8c/162db3a70c94966bad7df5f29197cdc3d7e2507069f7474f4fa1b20bd093/hat_controller-0.1.2-cp310.cp311.cp312-abi3-win_amd64.whl
+[2024-04-22 00:24:25] INFO root fetch - processPackages [home-assistant-chip-repl]: Downloading https://files.pythonhosted.org/packages/2e/63/34f61ac1af64f576bf1c42754113641b6aa0cb0b44769b66252aa0f4d054/home_assistant_chip_repl-2024.4.0-py3-none-any.whl
+[2024-04-22 00:24:25] INFO root fetch - processPackages [home-assistant-chip-clusters]: executing diffoscope
+[2024-04-22 00:24:25] INFO root fetch - processPackages [home-assistant-chip-clusters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_chip_clusters-2024.3.2-py3-none-any.whl.zip tmp/home_assistant_chip_clusters-2024.4.0-py3-none-any.whl.zip --markdown 20240422/h/home-assistant-chip-clusters/2024.3.2-2024.4.0/README.md --exclude *.pyd
+[2024-04-22 00:24:25] INFO root fetch - processPackages [netbox-validity]: executing diffoscope
+[2024-04-22 00:24:25] INFO root fetch - processPackages [netbox-validity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox-validity-2.1.1.tar.gz tmp/netbox_validity-2.2.0.tar.gz --markdown 20240422/n/netbox-validity/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-04-22 00:24:25] INFO root fetch - processPackages [hat-controller]: executing diffoscope
+[2024-04-22 00:24:25] INFO root fetch - processPackages [home-assistant-chip-repl]: executing diffoscope
+[2024-04-22 00:24:25] INFO root fetch - processPackages [hat-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hat_controller-0.1.1-cp310.cp311.cp312-none-any.whl.zip tmp/hat_controller-0.1.2-cp310.cp311.cp312-abi3-win_amd64.whl.zip --markdown 20240422/h/hat-controller/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 00:24:25] INFO root fetch - processPackages [home-assistant-chip-repl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/home_assistant_chip_repl-2024.3.2-py3-none-any.whl.zip tmp/home_assistant_chip_repl-2024.4.0-py3-none-any.whl.zip --markdown 20240422/h/home-assistant-chip-repl/2024.3.2-2024.4.0/README.md --exclude *.pyd
+[2024-04-22 00:24:25] INFO root fetch - processPackages [fennel-invest-api]: Remove: archive file [/home/abi/fetcher/tmp/fennel_invest_api-1.0.1.tar.gz]
+[2024-04-22 00:24:25] INFO root fetch - processPackages [fennel-invest-api]: Remove: archive file [/home/abi/fetcher/tmp/fennel_invest_api-1.0.2.tar.gz]
+[2024-04-22 00:24:25] INFO root fetch - main [MainThread]: End processing [fennel-invest-api]: success
+[2024-04-22 00:24:26] INFO root fetch - processPackages [home-assistant-chip-repl]: Remove: archive file [/home/abi/fetcher/tmp/home_assistant_chip_repl-2024.3.2-py3-none-any.whl.zip]
+[2024-04-22 00:24:26] INFO root fetch - processPackages [home-assistant-chip-repl]: Remove: archive file [/home/abi/fetcher/tmp/home_assistant_chip_repl-2024.4.0-py3-none-any.whl.zip]
+[2024-04-22 00:24:26] INFO root fetch - main [MainThread]: End processing [home-assistant-chip-repl]: success
+[2024-04-22 00:24:26] INFO root fetch - processPackages [hat-controller]: Remove: archive file [/home/abi/fetcher/tmp/hat_controller-0.1.1-cp310.cp311.cp312-none-any.whl.zip]
+[2024-04-22 00:24:26] INFO root fetch - processPackages [hat-controller]: Remove: archive file [/home/abi/fetcher/tmp/hat_controller-0.1.2-cp310.cp311.cp312-abi3-win_amd64.whl.zip]
+[2024-04-22 00:24:26] INFO root fetch - main [MainThread]: End processing [hat-controller]: success
+[2024-04-22 00:24:26] INFO root fetch - processPackages [netbox-validity]: Remove: archive file [/home/abi/fetcher/tmp/netbox-validity-2.1.1.tar.gz]
+[2024-04-22 00:24:26] INFO root fetch - processPackages [netbox-validity]: Remove: archive file [/home/abi/fetcher/tmp/netbox_validity-2.2.0.tar.gz]
+[2024-04-22 00:24:26] INFO root fetch - main [MainThread]: End processing [netbox-validity]: success
+[2024-04-22 00:24:26] INFO root fetch - processPackages [home-assistant-chip-clusters]: Remove: archive file [/home/abi/fetcher/tmp/home_assistant_chip_clusters-2024.3.2-py3-none-any.whl.zip]
+[2024-04-22 00:24:26] INFO root fetch - processPackages [home-assistant-chip-clusters]: Remove: archive file [/home/abi/fetcher/tmp/home_assistant_chip_clusters-2024.4.0-py3-none-any.whl.zip]
+[2024-04-22 00:24:26] INFO root fetch - main [MainThread]: End processing [home-assistant-chip-clusters]: success
+[2024-04-22 00:24:26] INFO root fetch - main [MainThread]: Store serial: [22870175]
