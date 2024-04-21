@@ -317,3 +317,15 @@
 [2024-04-22 00:11:24] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.5.0-cp312-none-win_amd64.whl.zip]
 [2024-04-22 00:11:24] INFO root fetch - main [MainThread]: End processing [rookiepy]: success
 [2024-04-22 00:11:24] INFO root fetch - main [MainThread]: Store serial: [22870065]
+[2024-04-22 00:13:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870065]
+[2024-04-22 00:13:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 00:13:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ya-music-rnd
+[2024-04-22 00:13:33] INFO root fetch - processPackages [ya-music-rnd]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-22 00:13:33] INFO root fetch - processPackages [ya-music-rnd]: Downloading https://files.pythonhosted.org/packages/79/31/fee4c2155caeb9df4fd6d1ed85c05c29115fcf7772739688a955cc34e90a/ya-music-rnd-1.0.0.tar.gz
+[2024-04-22 00:13:33] INFO root fetch - processPackages [ya-music-rnd]: Downloading https://files.pythonhosted.org/packages/c4/09/42a8953a96666f33e7f9f4c701a993198bee1ab6bbfa7607e7ec24aeefc8/ya_music_rnd-1.1.0.tar.gz
+[2024-04-22 00:13:33] INFO root fetch - processPackages [ya-music-rnd]: executing diffoscope
+[2024-04-22 00:13:33] INFO root fetch - processPackages [ya-music-rnd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ya-music-rnd-1.0.0.tar.gz tmp/ya_music_rnd-1.1.0.tar.gz --markdown 20240422/y/ya-music-rnd/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-22 00:13:34] INFO root fetch - processPackages [ya-music-rnd]: Remove: archive file [/home/abi/fetcher/tmp/ya-music-rnd-1.0.0.tar.gz]
+[2024-04-22 00:13:34] INFO root fetch - processPackages [ya-music-rnd]: Remove: archive file [/home/abi/fetcher/tmp/ya_music_rnd-1.1.0.tar.gz]
+[2024-04-22 00:13:34] INFO root fetch - main [MainThread]: End processing [ya-music-rnd]: success
+[2024-04-22 00:13:34] INFO root fetch - main [MainThread]: Store serial: [22870118]
