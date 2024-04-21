@@ -771,3 +771,15 @@
 [2024-04-22 00:55:08] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
 [2024-04-22 00:55:08] INFO root fetch - main [MainThread]: End processing [telectron]: success
 [2024-04-22 00:55:08] INFO root fetch - main [MainThread]: Store serial: [22870281]
+[2024-04-22 00:57:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870281]
+[2024-04-22 00:57:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 00:57:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeflex
+[2024-04-22 00:57:17] INFO root fetch - processPackages [codeflex]: New version: [3.0.0] Old Version: [2.1.1]
+[2024-04-22 00:57:17] INFO root fetch - processPackages [codeflex]: Downloading https://files.pythonhosted.org/packages/a0/c2/766782c6545ff2090a10c449cf0362a19e1d6c3d08c414d6b21a865acf82/codeflex-2.1.1.tar.gz
+[2024-04-22 00:57:18] INFO root fetch - processPackages [codeflex]: Downloading https://files.pythonhosted.org/packages/20/97/cb151b8f3aaf2225ee2b5a4b14c5b9a04666b815662d06990e094c1cc884/codeflex-3.0.0.tar.gz
+[2024-04-22 00:57:18] INFO root fetch - processPackages [codeflex]: executing diffoscope
+[2024-04-22 00:57:18] INFO root fetch - processPackages [codeflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeflex-2.1.1.tar.gz tmp/codeflex-3.0.0.tar.gz --markdown 20240422/c/codeflex/2.1.1-3.0.0/README.md --exclude *.pyd
+[2024-04-22 00:57:18] INFO root fetch - processPackages [codeflex]: Remove: archive file [/home/abi/fetcher/tmp/codeflex-2.1.1.tar.gz]
+[2024-04-22 00:57:18] INFO root fetch - processPackages [codeflex]: Remove: archive file [/home/abi/fetcher/tmp/codeflex-3.0.0.tar.gz]
+[2024-04-22 00:57:18] INFO root fetch - main [MainThread]: End processing [codeflex]: success
+[2024-04-22 00:57:18] INFO root fetch - main [MainThread]: Store serial: [22870284]
