@@ -329,3 +329,39 @@
 [2024-04-22 00:13:34] INFO root fetch - processPackages [ya-music-rnd]: Remove: archive file [/home/abi/fetcher/tmp/ya_music_rnd-1.1.0.tar.gz]
 [2024-04-22 00:13:34] INFO root fetch - main [MainThread]: End processing [ya-music-rnd]: success
 [2024-04-22 00:13:34] INFO root fetch - main [MainThread]: Store serial: [22870118]
+[2024-04-22 00:15:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870118]
+[2024-04-22 00:15:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 00:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ThreatHunter
+[2024-04-22 00:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clams-python
+[2024-04-22 00:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygformula
+[2024-04-22 00:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tcp-modbus-aio
+[2024-04-22 00:15:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bumpsemver
+[2024-04-22 00:15:42] WARNING root fetch - processPackages [ThreatHunter]: Skipping, unable to determine old version
+[2024-04-22 00:15:42] INFO root fetch - main [MainThread]: End processing [ThreatHunter] error
+[2024-04-22 00:15:42] WARNING root fetch - processPackages [pygformula]: Skipping, unable to determine old version
+[2024-04-22 00:15:42] INFO root fetch - main [MainThread]: End processing [pygformula] error
+[2024-04-22 00:15:42] INFO root fetch - processPackages [tcp-modbus-aio]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-22 00:15:42] INFO root fetch - processPackages [bumpsemver]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-22 00:15:42] INFO root fetch - processPackages [clams-python]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-22 00:15:43] INFO root fetch - processPackages [tcp-modbus-aio]: Downloading https://files.pythonhosted.org/packages/77/53/896d0388b1cac2f5ef02bd7241fa8d7b500e5586a958722933fdd8331531/tcp_modbus_aio-0.1.1.tar.gz
+[2024-04-22 00:15:43] INFO root fetch - processPackages [bumpsemver]: Downloading https://files.pythonhosted.org/packages/b4/27/295eecfc4c97341ebd63e1684b9038242a91c37a4c93aaaa6742f4f6e41e/bumpsemver-2.2.0.tar.gz
+[2024-04-22 00:15:43] INFO root fetch - processPackages [clams-python]: Downloading https://files.pythonhosted.org/packages/d4/91/f4670d2548953b1c68ee40a2216ddc03c6f6643bd1a26ed64c0a28dd992f/clams-python-1.2.0.tar.gz
+[2024-04-22 00:15:43] INFO root fetch - processPackages [tcp-modbus-aio]: Downloading https://files.pythonhosted.org/packages/19/af/7597c4f655f2cce58fb012e1cc14d70a6fbe34334e5e94be1fb2c27b3788/tcp_modbus_aio-0.2.0.tar.gz
+[2024-04-22 00:15:43] INFO root fetch - processPackages [bumpsemver]: Downloading https://files.pythonhosted.org/packages/ba/ed/af607f631d3d57dd83698319593304a8e3fcc6ffdf54ae678e3c479a9c74/bumpsemver-2.2.1.tar.gz
+[2024-04-22 00:15:43] INFO root fetch - processPackages [clams-python]: Downloading https://files.pythonhosted.org/packages/f7/ce/d5fcf34bee4dcd007cabbb8b5cb58fa6e897096efc734b88dffb92640e62/clams_python-1.2.1.tar.gz
+[2024-04-22 00:15:43] INFO root fetch - processPackages [tcp-modbus-aio]: executing diffoscope
+[2024-04-22 00:15:43] INFO root fetch - processPackages [tcp-modbus-aio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcp_modbus_aio-0.1.1.tar.gz tmp/tcp_modbus_aio-0.2.0.tar.gz --markdown 20240422/t/tcp-modbus-aio/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-22 00:15:43] INFO root fetch - processPackages [bumpsemver]: executing diffoscope
+[2024-04-22 00:15:43] INFO root fetch - processPackages [bumpsemver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bumpsemver-2.2.0.tar.gz tmp/bumpsemver-2.2.1.tar.gz --markdown 20240422/b/bumpsemver/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-22 00:15:43] INFO root fetch - processPackages [clams-python]: executing diffoscope
+[2024-04-22 00:15:43] INFO root fetch - processPackages [clams-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clams-python-1.2.0.tar.gz tmp/clams_python-1.2.1.tar.gz --markdown 20240422/c/clams-python/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-22 00:15:44] INFO root fetch - processPackages [tcp-modbus-aio]: Remove: archive file [/home/abi/fetcher/tmp/tcp_modbus_aio-0.1.1.tar.gz]
+[2024-04-22 00:15:44] INFO root fetch - processPackages [tcp-modbus-aio]: Remove: archive file [/home/abi/fetcher/tmp/tcp_modbus_aio-0.2.0.tar.gz]
+[2024-04-22 00:15:44] INFO root fetch - main [MainThread]: End processing [tcp-modbus-aio]: success
+[2024-04-22 00:15:44] INFO root fetch - processPackages [bumpsemver]: Remove: archive file [/home/abi/fetcher/tmp/bumpsemver-2.2.0.tar.gz]
+[2024-04-22 00:15:44] INFO root fetch - processPackages [bumpsemver]: Remove: archive file [/home/abi/fetcher/tmp/bumpsemver-2.2.1.tar.gz]
+[2024-04-22 00:15:44] INFO root fetch - main [MainThread]: End processing [bumpsemver]: success
+[2024-04-22 00:15:44] INFO root fetch - processPackages [clams-python]: Remove: archive file [/home/abi/fetcher/tmp/clams-python-1.2.0.tar.gz]
+[2024-04-22 00:15:44] INFO root fetch - processPackages [clams-python]: Remove: archive file [/home/abi/fetcher/tmp/clams_python-1.2.1.tar.gz]
+[2024-04-22 00:15:44] INFO root fetch - main [MainThread]: End processing [clams-python]: success
+[2024-04-22 00:15:44] INFO root fetch - main [MainThread]: Store serial: [22870134]
