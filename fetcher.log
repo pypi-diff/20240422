@@ -1168,3 +1168,24 @@
 [2024-04-22 01:47:00] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-1.0.2.tar.gz]
 [2024-04-22 01:47:00] INFO root fetch - main [MainThread]: End processing [paper2vec]: success
 [2024-04-22 01:47:00] INFO root fetch - main [MainThread]: Store serial: [22870400]
+[2024-04-22 01:49:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870400]
+[2024-04-22 01:49:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 01:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oresat-dxwifi
+[2024-04-22 01:49:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cvxpygen
+[2024-04-22 01:49:09] INFO root fetch - processPackages [cvxpygen]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 01:49:09] INFO root fetch - processPackages [oresat-dxwifi]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 01:49:09] INFO root fetch - processPackages [cvxpygen]: Downloading https://files.pythonhosted.org/packages/49/d8/57d4ef6c343aea29cf5d6374d7d2137b3acecc00e612844d6761686be985/cvxpygen-0.3.2.tar.gz
+[2024-04-22 01:49:09] INFO root fetch - processPackages [oresat-dxwifi]: Downloading https://files.pythonhosted.org/packages/ef/fa/152162195640a5b8604c2f88039d383c6176793960ad902e6d3ebcaaecee/oresat_dxwifi-0.3.2.tar.gz
+[2024-04-22 01:49:09] INFO root fetch - processPackages [cvxpygen]: Downloading https://files.pythonhosted.org/packages/b9/c4/82562fc7475a4cb129faba1f2966b6b5941694443bc848ab3d78e4e34fa1/cvxpygen-0.3.3.tar.gz
+[2024-04-22 01:49:09] INFO root fetch - processPackages [oresat-dxwifi]: Downloading https://files.pythonhosted.org/packages/d0/8c/d29b0fd58e6bc80a261e911a8ced42f1a1c989861d8f49840f13f46b32c6/oresat_dxwifi-0.3.3.tar.gz
+[2024-04-22 01:49:10] INFO root fetch - processPackages [cvxpygen]: executing diffoscope
+[2024-04-22 01:49:10] INFO root fetch - processPackages [cvxpygen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxpygen-0.3.2.tar.gz tmp/cvxpygen-0.3.3.tar.gz --markdown 20240422/c/cvxpygen/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 01:49:10] INFO root fetch - processPackages [oresat-dxwifi]: executing diffoscope
+[2024-04-22 01:49:10] INFO root fetch - processPackages [oresat-dxwifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_dxwifi-0.3.2.tar.gz tmp/oresat_dxwifi-0.3.3.tar.gz --markdown 20240422/o/oresat-dxwifi/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 01:49:10] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.2.tar.gz]
+[2024-04-22 01:49:10] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.3.tar.gz]
+[2024-04-22 01:49:10] INFO root fetch - main [MainThread]: End processing [oresat-dxwifi]: success
+[2024-04-22 01:49:11] INFO root fetch - processPackages [cvxpygen]: Remove: archive file [/home/abi/fetcher/tmp/cvxpygen-0.3.2.tar.gz]
+[2024-04-22 01:49:11] INFO root fetch - processPackages [cvxpygen]: Remove: archive file [/home/abi/fetcher/tmp/cvxpygen-0.3.3.tar.gz]
+[2024-04-22 01:49:11] INFO root fetch - main [MainThread]: End processing [cvxpygen]: success
+[2024-04-22 01:49:11] INFO root fetch - main [MainThread]: Store serial: [22870405]
