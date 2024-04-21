@@ -834,3 +834,27 @@
 [2024-04-22 01:01:40] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-22 01:01:40] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-22 01:01:40] INFO root fetch - main [MainThread]: Store serial: [22870298]
+[2024-04-22 01:03:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870298]
+[2024-04-22 01:03:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 01:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NeuronLib
+[2024-04-22 01:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PKDevTools
+[2024-04-22 01:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: marcuslion
+[2024-04-22 01:03:48] INFO root fetch - processPackages [marcuslion]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-22 01:03:48] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240421.99] Old Version: [0.13.20240421.100]
+[2024-04-22 01:03:48] INFO root fetch - processPackages [marcuslion]: Downloading https://files.pythonhosted.org/packages/9e/1b/35d713162681f4b6a508ca2f0abe84f28934e251febf83a312e0978d0135/marcuslion-0.2.8.tar.gz
+[2024-04-22 01:03:48] WARNING root fetch - processPackages [NeuronLib]: Skipping, unable to determine old version
+[2024-04-22 01:03:48] INFO root fetch - main [MainThread]: End processing [NeuronLib] error
+[2024-04-22 01:03:48] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/3f/66/f08f9dc4458d217107dc5fc81c22826154f1288a8875280111454d451ee9/PKDevTools-0.13.20240421.100.tar.gz
+[2024-04-22 01:03:48] INFO root fetch - processPackages [marcuslion]: Downloading https://files.pythonhosted.org/packages/73/74/371dc6066e1b5614cacf5b247114099a910b32ff470c7e0515f1a376d74d/marcuslion-0.2.9.tar.gz
+[2024-04-22 01:03:49] INFO root fetch - processPackages [marcuslion]: executing diffoscope
+[2024-04-22 01:03:49] INFO root fetch - processPackages [marcuslion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcuslion-0.2.8.tar.gz tmp/marcuslion-0.2.9.tar.gz --markdown 20240422/m/marcuslion/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-22 01:03:49] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/1c/da/ed6a44ea84ec65677ce541ca04ecd2aba8b9971918f98d4a656a387aab4a/PKDevTools-0.13.20240421.99.tar.gz
+[2024-04-22 01:03:49] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-04-22 01:03:49] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240421.100.tar.gz tmp/PKDevTools-0.13.20240421.99.tar.gz --markdown 20240422/P/PKDevTools/0.13.20240421.100-0.13.20240421.99/README.md --exclude *.pyd
+[2024-04-22 01:03:49] INFO root fetch - processPackages [marcuslion]: Remove: archive file [/home/abi/fetcher/tmp/marcuslion-0.2.8.tar.gz]
+[2024-04-22 01:03:49] INFO root fetch - processPackages [marcuslion]: Remove: archive file [/home/abi/fetcher/tmp/marcuslion-0.2.9.tar.gz]
+[2024-04-22 01:03:49] INFO root fetch - main [MainThread]: End processing [marcuslion]: success
+[2024-04-22 01:03:49] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240421.100.tar.gz]
+[2024-04-22 01:03:49] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240421.99.tar.gz]
+[2024-04-22 01:03:49] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-04-22 01:03:49] INFO root fetch - main [MainThread]: Store serial: [22870311]
