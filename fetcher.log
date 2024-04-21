@@ -489,3 +489,45 @@
 [2024-04-22 00:24:26] INFO root fetch - processPackages [home-assistant-chip-clusters]: Remove: archive file [/home/abi/fetcher/tmp/home_assistant_chip_clusters-2024.4.0-py3-none-any.whl.zip]
 [2024-04-22 00:24:26] INFO root fetch - main [MainThread]: End processing [home-assistant-chip-clusters]: success
 [2024-04-22 00:24:26] INFO root fetch - main [MainThread]: Store serial: [22870175]
+[2024-04-22 00:26:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870175]
+[2024-04-22 00:26:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 00:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sem-desc
+[2024-04-22 00:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anywidget
+[2024-04-22 00:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sitesyncro
+[2024-04-22 00:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codeflex
+[2024-04-22 00:26:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: payconpy
+[2024-04-22 00:26:35] INFO root fetch - processPackages [codeflex]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-22 00:26:35] INFO root fetch - processPackages [payconpy]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-22 00:26:35] INFO root fetch - processPackages [codeflex]: Downloading https://files.pythonhosted.org/packages/69/06/564f9585465527e18d5fade027817679552c4f8d0bf2e29d4d3156109ad3/codeflex-2.1.0.tar.gz
+[2024-04-22 00:26:35] INFO root fetch - processPackages [payconpy]: Downloading https://files.pythonhosted.org/packages/ad/86/494f447a12f587fa5ea33d8314da91dc4bf2a83de70ca663a730dead73a5/payconpy-2.0.0.tar.gz
+[2024-04-22 00:26:35] INFO root fetch - processPackages [anywidget]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-22 00:26:35] WARNING root fetch - processPackages [sitesyncro]: Skipping, unable to determine old version
+[2024-04-22 00:26:35] INFO root fetch - main [MainThread]: End processing [sitesyncro] error
+[2024-04-22 00:26:35] INFO root fetch - processPackages [sem-desc]: New version: [6.9.0] Old Version: [6.8.0]
+[2024-04-22 00:26:35] INFO root fetch - processPackages [codeflex]: Downloading https://files.pythonhosted.org/packages/a0/c2/766782c6545ff2090a10c449cf0362a19e1d6c3d08c414d6b21a865acf82/codeflex-2.1.1.tar.gz
+[2024-04-22 00:26:35] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/a7/69/4bf33bafbd4320798ca4caeff38f0b105370d00458782a48e76eada782b4/anywidget-0.9.8.tar.gz
+[2024-04-22 00:26:35] INFO root fetch - processPackages [sem-desc]: Downloading https://files.pythonhosted.org/packages/bc/c6/e36bc62f82fa408248442cb9387b3ff326a3950debc6f5c834a6d40217a7/sem_desc-6.8.0.tar.gz
+[2024-04-22 00:26:35] INFO root fetch - processPackages [payconpy]: Downloading https://files.pythonhosted.org/packages/c3/03/1842344dcbc1bb19749dfe381014495627b56f41882311af0055f3efd177/payconpy-2.0.1.tar.gz
+[2024-04-22 00:26:35] INFO root fetch - processPackages [codeflex]: executing diffoscope
+[2024-04-22 00:26:35] INFO root fetch - processPackages [codeflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeflex-2.1.0.tar.gz tmp/codeflex-2.1.1.tar.gz --markdown 20240422/c/codeflex/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-22 00:26:35] INFO root fetch - processPackages [payconpy]: executing diffoscope
+[2024-04-22 00:26:35] INFO root fetch - processPackages [payconpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/payconpy-2.0.0.tar.gz tmp/payconpy-2.0.1.tar.gz --markdown 20240422/p/payconpy/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-22 00:26:35] INFO root fetch - processPackages [sem-desc]: Downloading https://files.pythonhosted.org/packages/1e/ed/28419685770a49c14514639fbca1f1076f30c551e471cc44705539ad42af/sem_desc-6.9.0.tar.gz
+[2024-04-22 00:26:36] INFO root fetch - processPackages [sem-desc]: executing diffoscope
+[2024-04-22 00:26:36] INFO root fetch - processPackages [sem-desc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sem_desc-6.8.0.tar.gz tmp/sem_desc-6.9.0.tar.gz --markdown 20240422/s/sem-desc/6.8.0-6.9.0/README.md --exclude *.pyd
+[2024-04-22 00:26:36] INFO root fetch - processPackages [anywidget]: Downloading https://files.pythonhosted.org/packages/13/44/a6b423b35e7cca60ddc329bef251c65b487838433eae81a9ed1a60c7891a/anywidget-0.9.9.tar.gz
+[2024-04-22 00:26:36] INFO root fetch - processPackages [codeflex]: Remove: archive file [/home/abi/fetcher/tmp/codeflex-2.1.0.tar.gz]
+[2024-04-22 00:26:36] INFO root fetch - processPackages [codeflex]: Remove: archive file [/home/abi/fetcher/tmp/codeflex-2.1.1.tar.gz]
+[2024-04-22 00:26:36] INFO root fetch - main [MainThread]: End processing [codeflex]: success
+[2024-04-22 00:26:36] INFO root fetch - processPackages [payconpy]: Remove: archive file [/home/abi/fetcher/tmp/payconpy-2.0.0.tar.gz]
+[2024-04-22 00:26:36] INFO root fetch - processPackages [payconpy]: Remove: archive file [/home/abi/fetcher/tmp/payconpy-2.0.1.tar.gz]
+[2024-04-22 00:26:36] INFO root fetch - main [MainThread]: End processing [payconpy]: success
+[2024-04-22 00:26:36] INFO root fetch - processPackages [sem-desc]: Remove: archive file [/home/abi/fetcher/tmp/sem_desc-6.8.0.tar.gz]
+[2024-04-22 00:26:36] INFO root fetch - processPackages [sem-desc]: Remove: archive file [/home/abi/fetcher/tmp/sem_desc-6.9.0.tar.gz]
+[2024-04-22 00:26:36] INFO root fetch - main [MainThread]: End processing [sem-desc]: success
+[2024-04-22 00:26:37] INFO root fetch - processPackages [anywidget]: executing diffoscope
+[2024-04-22 00:26:37] INFO root fetch - processPackages [anywidget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anywidget-0.9.8.tar.gz tmp/anywidget-0.9.9.tar.gz --markdown 20240422/a/anywidget/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-22 00:26:40] INFO root fetch - processPackages [anywidget]: Remove: archive file [/home/abi/fetcher/tmp/anywidget-0.9.8.tar.gz]
+[2024-04-22 00:26:40] INFO root fetch - processPackages [anywidget]: Remove: archive file [/home/abi/fetcher/tmp/anywidget-0.9.9.tar.gz]
+[2024-04-22 00:26:40] INFO root fetch - main [MainThread]: End processing [anywidget]: success
+[2024-04-22 00:26:40] INFO root fetch - main [MainThread]: Store serial: [22870192]
