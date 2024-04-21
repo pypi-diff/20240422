@@ -783,3 +783,33 @@
 [2024-04-22 00:57:18] INFO root fetch - processPackages [codeflex]: Remove: archive file [/home/abi/fetcher/tmp/codeflex-3.0.0.tar.gz]
 [2024-04-22 00:57:18] INFO root fetch - main [MainThread]: End processing [codeflex]: success
 [2024-04-22 00:57:18] INFO root fetch - main [MainThread]: Store serial: [22870284]
+[2024-04-22 00:59:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870284]
+[2024-04-22 00:59:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 00:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tendril-connector-rabbitmq
+[2024-04-22 00:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lisa-on-cuda
+[2024-04-22 00:59:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: class-singledispatch
+[2024-04-22 00:59:27] INFO root fetch - processPackages [lisa-on-cuda]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-22 00:59:27] INFO root fetch - processPackages [class-singledispatch]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-22 00:59:27] INFO root fetch - processPackages [tendril-connector-rabbitmq]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-22 00:59:27] INFO root fetch - processPackages [lisa-on-cuda]: Downloading https://files.pythonhosted.org/packages/86/70/fb9a1153c669c3e87fdc9c34fd8a9bd80edc0d4d8aa3069b25aa41158e3b/lisa_on_cuda-1.0.5.tar.gz
+[2024-04-22 00:59:27] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/17/d8/9f155134140b46c30d047c3e7a4f10338fd203723b7869279c4ecf199a3f/class_singledispatch-1.2.2.tar.gz
+[2024-04-22 00:59:27] INFO root fetch - processPackages [tendril-connector-rabbitmq]: Downloading https://files.pythonhosted.org/packages/52/c2/99e0b44e78bc68dde4345be34a4c093ee5f88f5f432139651b5c4b5ae159/tendril_connector_rabbitmq-0.2.1.tar.gz
+[2024-04-22 00:59:27] INFO root fetch - processPackages [lisa-on-cuda]: Downloading https://files.pythonhosted.org/packages/d2/bc/e1166371f796d40cf8409ba9ace534218753d7cbd35247a3c21de988843f/lisa_on_cuda-1.0.6.tar.gz
+[2024-04-22 00:59:27] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/fd/3e/5aa8ad495348da70b30739f5a7083f47ff9d1db7ac94c902b4f491c63f4d/class_singledispatch-1.2.3.tar.gz
+[2024-04-22 00:59:27] INFO root fetch - processPackages [lisa-on-cuda]: executing diffoscope
+[2024-04-22 00:59:27] INFO root fetch - processPackages [lisa-on-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lisa_on_cuda-1.0.5.tar.gz tmp/lisa_on_cuda-1.0.6.tar.gz --markdown 20240422/l/lisa-on-cuda/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-22 00:59:27] INFO root fetch - processPackages [class-singledispatch]: executing diffoscope
+[2024-04-22 00:59:27] INFO root fetch - processPackages [class-singledispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class_singledispatch-1.2.2.tar.gz tmp/class_singledispatch-1.2.3.tar.gz --markdown 20240422/c/class-singledispatch/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-22 00:59:27] INFO root fetch - processPackages [tendril-connector-rabbitmq]: Downloading https://files.pythonhosted.org/packages/64/fa/52716fad96cca2ee469e8743c95386438c5e6d271a58dfd7f7d285d87978/tendril_connector_rabbitmq-0.2.2.tar.gz
+[2024-04-22 00:59:28] INFO root fetch - processPackages [tendril-connector-rabbitmq]: executing diffoscope
+[2024-04-22 00:59:28] INFO root fetch - processPackages [tendril-connector-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_connector_rabbitmq-0.2.1.tar.gz tmp/tendril_connector_rabbitmq-0.2.2.tar.gz --markdown 20240422/t/tendril-connector-rabbitmq/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-22 00:59:28] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.2.tar.gz]
+[2024-04-22 00:59:28] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.3.tar.gz]
+[2024-04-22 00:59:28] INFO root fetch - main [MainThread]: End processing [class-singledispatch]: success
+[2024-04-22 00:59:28] INFO root fetch - processPackages [lisa-on-cuda]: Remove: archive file [/home/abi/fetcher/tmp/lisa_on_cuda-1.0.5.tar.gz]
+[2024-04-22 00:59:28] INFO root fetch - processPackages [lisa-on-cuda]: Remove: archive file [/home/abi/fetcher/tmp/lisa_on_cuda-1.0.6.tar.gz]
+[2024-04-22 00:59:28] INFO root fetch - main [MainThread]: End processing [lisa-on-cuda]: success
+[2024-04-22 00:59:28] INFO root fetch - processPackages [tendril-connector-rabbitmq]: Remove: archive file [/home/abi/fetcher/tmp/tendril_connector_rabbitmq-0.2.1.tar.gz]
+[2024-04-22 00:59:28] INFO root fetch - processPackages [tendril-connector-rabbitmq]: Remove: archive file [/home/abi/fetcher/tmp/tendril_connector_rabbitmq-0.2.2.tar.gz]
+[2024-04-22 00:59:28] INFO root fetch - main [MainThread]: End processing [tendril-connector-rabbitmq]: success
+[2024-04-22 00:59:28] INFO root fetch - main [MainThread]: Store serial: [22870293]
