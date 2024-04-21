@@ -1189,3 +1189,26 @@
 [2024-04-22 01:49:11] INFO root fetch - processPackages [cvxpygen]: Remove: archive file [/home/abi/fetcher/tmp/cvxpygen-0.3.3.tar.gz]
 [2024-04-22 01:49:11] INFO root fetch - main [MainThread]: End processing [cvxpygen]: success
 [2024-04-22 01:49:11] INFO root fetch - main [MainThread]: Store serial: [22870405]
+[2024-04-22 01:51:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870405]
+[2024-04-22 01:51:19] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 01:53:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870405]
+[2024-04-22 01:53:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 01:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datafog
+[2024-04-22 01:53:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foamlib
+[2024-04-22 01:53:24] INFO root fetch - processPackages [foamlib]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-22 01:53:24] INFO root fetch - processPackages [foamlib]: Downloading https://files.pythonhosted.org/packages/56/36/6ef5a329347422ea5e98882e2ffe88f7aa2dd92b47538ff8f88871b49358/foamlib-0.3.4.tar.gz
+[2024-04-22 01:53:24] INFO root fetch - processPackages [datafog]: New version: [3.0.0b1] Old Version: [2.4.0b4]
+[2024-04-22 01:53:25] INFO root fetch - processPackages [datafog]: Downloading https://files.pythonhosted.org/packages/77/d0/4e4a60b5437992fb2f25ef1bdd819286e446de18e2798f571732a7129fb6/datafog-2.4.0b4.tar.gz
+[2024-04-22 01:53:25] INFO root fetch - processPackages [foamlib]: Downloading https://files.pythonhosted.org/packages/fe/58/e8e45015dfe9f3532e9ce8d005127898ea6b68f085fec43eca47d01ae14f/foamlib-0.3.5.tar.gz
+[2024-04-22 01:53:25] INFO root fetch - processPackages [foamlib]: executing diffoscope
+[2024-04-22 01:53:25] INFO root fetch - processPackages [foamlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foamlib-0.3.4.tar.gz tmp/foamlib-0.3.5.tar.gz --markdown 20240422/f/foamlib/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-22 01:53:25] INFO root fetch - processPackages [datafog]: Downloading https://files.pythonhosted.org/packages/5a/6a/a384dbc0dfb2ae5bdf98a532cb2cd05eeb8704400c4255dbf4011905faa7/datafog-3.0.0b1.tar.gz
+[2024-04-22 01:53:25] INFO root fetch - processPackages [datafog]: executing diffoscope
+[2024-04-22 01:53:25] INFO root fetch - processPackages [datafog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datafog-2.4.0b4.tar.gz tmp/datafog-3.0.0b1.tar.gz --markdown 20240422/d/datafog/2.4.0b4-3.0.0b1/README.md --exclude *.pyd
+[2024-04-22 01:53:25] INFO root fetch - processPackages [foamlib]: Remove: archive file [/home/abi/fetcher/tmp/foamlib-0.3.4.tar.gz]
+[2024-04-22 01:53:25] INFO root fetch - processPackages [foamlib]: Remove: archive file [/home/abi/fetcher/tmp/foamlib-0.3.5.tar.gz]
+[2024-04-22 01:53:25] INFO root fetch - main [MainThread]: End processing [foamlib]: success
+[2024-04-22 01:53:26] INFO root fetch - processPackages [datafog]: Remove: archive file [/home/abi/fetcher/tmp/datafog-2.4.0b4.tar.gz]
+[2024-04-22 01:53:26] INFO root fetch - processPackages [datafog]: Remove: archive file [/home/abi/fetcher/tmp/datafog-3.0.0b1.tar.gz]
+[2024-04-22 01:53:26] INFO root fetch - main [MainThread]: End processing [datafog]: success
+[2024-04-22 01:53:26] INFO root fetch - main [MainThread]: Store serial: [22870410]
