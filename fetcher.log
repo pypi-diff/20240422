@@ -106,3 +106,150 @@
 [2024-04-22 00:04:51] INFO root fetch - processPackages [pygerm]: Remove: archive file [/home/abi/fetcher/tmp/pygerm-0.0.2.tar.gz]
 [2024-04-22 00:04:51] INFO root fetch - main [MainThread]: End processing [pygerm]: success
 [2024-04-22 00:04:51] INFO root fetch - main [MainThread]: Store serial: [22869960]
+[2024-04-22 00:06:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22869960]
+[2024-04-22 00:06:59] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gliner
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: payconpy
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magic-list
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-messages-token-helper
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: robotcode-debugger
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: robotcode-analyze
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: robotcode-runner
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: robotcode-language-server
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: robotcode-modifiers
+[2024-04-22 00:06:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: robotcode-plugin
+[2024-04-22 00:07:00] INFO root fetch - processPackages [magic-list]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [gliner]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [payconpy]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [magic-list]: Downloading https://files.pythonhosted.org/packages/36/df/1f8e8d106ef5a58081196f4622fe7d6e23440764506cca4968e7341d4a25/magic_list-2.1.0.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-analyze]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [llm-messages-token-helper]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-language-server]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-debugger]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-runner]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-modifiers]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-plugin]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:00] INFO root fetch - processPackages [payconpy]: Downloading https://files.pythonhosted.org/packages/a4/69/d7328bd56e9683f3df86eb57737332ed78e5544e7d388de16561b8d6829e/payconpy-1.1.0.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-modifiers]: Downloading https://files.pythonhosted.org/packages/8a/1b/2030575c52c1e2f700230d9992055b813297b8615044c7c6901d6ae42041/robotcode_modifiers-0.78.4.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/4a/ee/c794dd4d843e1b869cfa087fb4f5065174e23201cb216a6920ae919a0702/gliner-0.1.8.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-analyze]: Downloading https://files.pythonhosted.org/packages/ac/cd/6a575d5af5ba0e0cf3789b8da25f1fadbd74c01b42ee2c6c7cfb841ecfb9/robotcode_analyze-0.78.4.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [llm-messages-token-helper]: Downloading https://files.pythonhosted.org/packages/62/7c/212c4911b20295d86c565db6d182c00738debae3b4f6c251a561f62b7a35/llm_messages_token_helper-0.0.2.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-debugger]: Downloading https://files.pythonhosted.org/packages/36/47/feb39b9ccb9c2e48a1a8739d2d7bc4ee007758fb58b5311583c44e046141/robotcode_debugger-0.78.4.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-runner]: Downloading https://files.pythonhosted.org/packages/ae/00/3a8c1b5db2ee0b15b6978102e5153a928b8ab1d69f0db54a88e2bad48644/robotcode_runner-0.78.4.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-language-server]: Downloading https://files.pythonhosted.org/packages/21/36/b4e2a69e3ad7e284b2fa8aa5ee56a1ab67ec7ed5d367676482d5152d11a1/robotcode_language_server-0.78.4.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [magic-list]: Downloading https://files.pythonhosted.org/packages/94/d5/fa2f5d97c6919948001b396022a57ecb5b8882fe0aced0adb0aaa28a816a/magic_list-2.2.0.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-plugin]: Downloading https://files.pythonhosted.org/packages/b8/28/6f9f73b2b9f561e97525d6647d145c11a49be0a61edbb754cb80d7804041/robotcode_plugin-0.78.4.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [magic-list]: executing diffoscope
+[2024-04-22 00:07:00] INFO root fetch - processPackages [magic-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic_list-2.1.0.tar.gz tmp/magic_list-2.2.0.tar.gz --markdown 20240422/m/magic-list/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-22 00:07:00] INFO root fetch - processPackages [payconpy]: Downloading https://files.pythonhosted.org/packages/ad/86/494f447a12f587fa5ea33d8314da91dc4bf2a83de70ca663a730dead73a5/payconpy-2.0.0.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-analyze]: Downloading https://files.pythonhosted.org/packages/2f/75/b24e6ca425f5237c8fd4fbc60a514edf64e50ff7ed4b24801bbcf1bd2916/robotcode_analyze-0.79.0.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/54/53/182c5c1b761ab40ca0d4b9b3dfdd6aa606d105eb3ad7d4c743fbcca13471/gliner-0.1.9.tar.gz
+[2024-04-22 00:07:00] INFO root fetch - processPackages [robotcode-modifiers]: Downloading https://files.pythonhosted.org/packages/11/99/84ee14fdabe0be68eab7136b8e47e48f906c83ab8e9e4aba380223a62bf6/robotcode_modifiers-0.79.0.tar.gz
+[2024-04-22 00:07:01] INFO root fetch - processPackages [llm-messages-token-helper]: Downloading https://files.pythonhosted.org/packages/f8/dd/9d63ccc35ea8ce28ec9031e3b56f286b50f76e8e40a6afd743ff9159b0aa/llm_messages_token_helper-0.0.3.tar.gz
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-runner]: Downloading https://files.pythonhosted.org/packages/e1/3e/7eb2a93bc11ea721e3e7aa5ba97cbe5f3009983a59e52693b12cac1c7b5f/robotcode_runner-0.79.0.tar.gz
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-debugger]: Downloading https://files.pythonhosted.org/packages/a5/bf/c01d4efdd581f3f0d65d29b52c1aa7363075fca6cb86cf169e6d4cd06eb6/robotcode_debugger-0.79.0.tar.gz
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-plugin]: Downloading https://files.pythonhosted.org/packages/5c/40/cbc62810da9fae15891ed1103bdd2e9b6453f22795a883839d813970a8a9/robotcode_plugin-0.79.0.tar.gz
+[2024-04-22 00:07:01] INFO root fetch - processPackages [payconpy]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [payconpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/payconpy-1.1.0.tar.gz tmp/payconpy-2.0.0.tar.gz --markdown 20240422/p/payconpy/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-language-server]: Downloading https://files.pythonhosted.org/packages/da/41/8bfe4fb08a863c6dc4824b75227cd98679f419fcc82ad2d7c5e058bc5ca3/robotcode_language_server-0.79.0.tar.gz
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-analyze]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-analyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_analyze-0.78.4.tar.gz tmp/robotcode_analyze-0.79.0.tar.gz --markdown 20240422/r/robotcode-analyze/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [gliner]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [gliner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gliner-0.1.8.tar.gz tmp/gliner-0.1.9.tar.gz --markdown 20240422/g/gliner/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-modifiers]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_modifiers-0.78.4.tar.gz tmp/robotcode_modifiers-0.79.0.tar.gz --markdown 20240422/r/robotcode-modifiers/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-runner]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_runner-0.78.4.tar.gz tmp/robotcode_runner-0.79.0.tar.gz --markdown 20240422/r/robotcode-runner/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [llm-messages-token-helper]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [llm-messages-token-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_messages_token_helper-0.0.2.tar.gz tmp/llm_messages_token_helper-0.0.3.tar.gz --markdown 20240422/l/llm-messages-token-helper/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-debugger]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-debugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_debugger-0.78.4.tar.gz tmp/robotcode_debugger-0.79.0.tar.gz --markdown 20240422/r/robotcode-debugger/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-plugin]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_plugin-0.78.4.tar.gz tmp/robotcode_plugin-0.79.0.tar.gz --markdown 20240422/r/robotcode-plugin/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-language-server]: executing diffoscope
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode-language-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_language_server-0.78.4.tar.gz tmp/robotcode_language_server-0.79.0.tar.gz --markdown 20240422/r/robotcode-language-server/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:01] INFO root fetch - processPackages [magic-list]: Remove: archive file [/home/abi/fetcher/tmp/magic_list-2.1.0.tar.gz]
+[2024-04-22 00:07:01] INFO root fetch - processPackages [magic-list]: Remove: archive file [/home/abi/fetcher/tmp/magic_list-2.2.0.tar.gz]
+[2024-04-22 00:07:01] INFO root fetch - processPackages [magic-list]: Start processing: robotcode
+[2024-04-22 00:07:01] INFO root fetch - main [MainThread]: End processing [magic-list]: success
+[2024-04-22 00:07:01] INFO root fetch - processPackages [robotcode]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-analyze]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_analyze-0.78.4.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-analyze]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_analyze-0.79.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-analyze]: Start processing: competitorx
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [robotcode-analyze]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode]: Downloading https://files.pythonhosted.org/packages/e2/7e/d5a5aab3562b4e784a46b9a19878b348e6684bdc581650800581a7a198b8/robotcode-0.9.5.tar.gz
+[2024-04-22 00:07:02] INFO root fetch - processPackages [competitorx]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [competitorx]: Downloading https://files.pythonhosted.org/packages/0f/13/6bff62279029f767dbb50730e0ec3c4b95df0a9d4f19b3b9eebb38b59d62/competitorx-0.1.3.tar.gz
+[2024-04-22 00:07:02] INFO root fetch - processPackages [llm-messages-token-helper]: Remove: archive file [/home/abi/fetcher/tmp/llm_messages_token_helper-0.0.2.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [llm-messages-token-helper]: Remove: archive file [/home/abi/fetcher/tmp/llm_messages_token_helper-0.0.3.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [llm-messages-token-helper]: Start processing: robotcode-jsonrpc2
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [llm-messages-token-helper]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [payconpy]: Remove: archive file [/home/abi/fetcher/tmp/payconpy-1.1.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [payconpy]: Remove: archive file [/home/abi/fetcher/tmp/payconpy-2.0.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [payconpy]: Start processing: robotcode-robot
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [payconpy]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-debugger]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_debugger-0.78.4.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-debugger]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_debugger-0.79.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-debugger]: Start processing: multillm
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [robotcode-debugger]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.8.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.9.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [gliner]: Start processing: robotcode-core
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [gliner]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-runner]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_runner-0.78.4.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-runner]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_runner-0.79.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [robotcode-runner]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [multillm]: New version: [0.995] Old Version: [0.994]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-plugin]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_plugin-0.78.4.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-plugin]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_plugin-0.79.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [robotcode-plugin]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-jsonrpc2]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_modifiers-0.78.4.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_modifiers-0.79.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [robotcode-modifiers]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode]: Downloading https://files.pythonhosted.org/packages/b7/ab/96637a51c1fdfc4ddca0c75fb12ea6dca9295477c4f8a80f501ee7c3b2ec/robotcode-0.9.6.tar.gz
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-robot]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [competitorx]: Downloading https://files.pythonhosted.org/packages/f9/54/e68d88c418298a425682319f8c643ce11921c114a6dc3902ef19afa00d58/competitorx-0.1.4.tar.gz
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-core]: New version: [0.79.0] Old Version: [0.78.4]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [multillm]: Downloading https://files.pythonhosted.org/packages/1e/4f/0fba26bc38ffbd844877c9daaa762dfde81eb8775698ff391400dff6612c/multillm-0.994.tar.gz
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-language-server]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_language_server-0.78.4.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-language-server]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_language_server-0.79.0.tar.gz]
+[2024-04-22 00:07:02] INFO root fetch - main [MainThread]: End processing [robotcode-language-server]: success
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode]: executing diffoscope
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode-0.9.5.tar.gz tmp/robotcode-0.9.6.tar.gz --markdown 20240422/r/robotcode/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-22 00:07:02] INFO root fetch - processPackages [competitorx]: executing diffoscope
+[2024-04-22 00:07:02] INFO root fetch - processPackages [competitorx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/competitorx-0.1.3.tar.gz tmp/competitorx-0.1.4.tar.gz --markdown 20240422/c/competitorx/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-jsonrpc2]: Downloading https://files.pythonhosted.org/packages/bb/3a/51cb66eec0a750e9d0466aa1acf20e6a2af09daab68fb7bd39ab341b2d62/robotcode_jsonrpc2-0.78.4.tar.gz
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-robot]: Downloading https://files.pythonhosted.org/packages/81/5c/5520b28990fd14ec655dcf0e8c3616877b7d4577c89b89db64cdb4a8a0c0/robotcode_robot-0.78.4.tar.gz
+[2024-04-22 00:07:02] INFO root fetch - processPackages [robotcode-core]: Downloading https://files.pythonhosted.org/packages/c2/c2/cd82002939ac138099ad509b85ad259bb82615d2db79af9914642089a394/robotcode_core-0.78.4.tar.gz
+[2024-04-22 00:07:03] INFO root fetch - processPackages [multillm]: Downloading https://files.pythonhosted.org/packages/72/88/489bc736696635862d068556d55b38eb8aa77b8ce364363cb68ca102f42d/multillm-0.995.tar.gz
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-core]: Downloading https://files.pythonhosted.org/packages/29/8b/be36c6f595a5323e51d23ff9d335af620c7c210fba8cff952c724e3796ef/robotcode_core-0.79.0.tar.gz
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-jsonrpc2]: Downloading https://files.pythonhosted.org/packages/24/a2/a95c90ae9d47bf29908e8a45ae1bb67a5f3558e0b182c14684732e8eb7b0/robotcode_jsonrpc2-0.79.0.tar.gz
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-robot]: Downloading https://files.pythonhosted.org/packages/47/e7/49081f92640c5854d7176464cac727280940cd8764ac1e7b19ab449b9437/robotcode_robot-0.79.0.tar.gz
+[2024-04-22 00:07:03] INFO root fetch - processPackages [competitorx]: Remove: archive file [/home/abi/fetcher/tmp/competitorx-0.1.3.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - processPackages [competitorx]: Remove: archive file [/home/abi/fetcher/tmp/competitorx-0.1.4.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - main [MainThread]: End processing [competitorx]: success
+[2024-04-22 00:07:03] INFO root fetch - processPackages [multillm]: executing diffoscope
+[2024-04-22 00:07:03] INFO root fetch - processPackages [multillm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multillm-0.994.tar.gz tmp/multillm-0.995.tar.gz --markdown 20240422/m/multillm/0.994-0.995/README.md --exclude *.pyd
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-core]: executing diffoscope
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_core-0.78.4.tar.gz tmp/robotcode_core-0.79.0.tar.gz --markdown 20240422/r/robotcode-core/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-jsonrpc2]: executing diffoscope
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-jsonrpc2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_jsonrpc2-0.78.4.tar.gz tmp/robotcode_jsonrpc2-0.79.0.tar.gz --markdown 20240422/r/robotcode-jsonrpc2/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-robot]: executing diffoscope
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_robot-0.78.4.tar.gz tmp/robotcode_robot-0.79.0.tar.gz --markdown 20240422/r/robotcode-robot/0.78.4-0.79.0/README.md --exclude *.pyd
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode]: Remove: archive file [/home/abi/fetcher/tmp/robotcode-0.9.5.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode]: Remove: archive file [/home/abi/fetcher/tmp/robotcode-0.9.6.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - main [MainThread]: End processing [robotcode]: success
+[2024-04-22 00:07:03] INFO root fetch - processPackages [multillm]: Remove: archive file [/home/abi/fetcher/tmp/multillm-0.994.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - processPackages [multillm]: Remove: archive file [/home/abi/fetcher/tmp/multillm-0.995.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - main [MainThread]: End processing [multillm]: success
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-core]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_core-0.78.4.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-core]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_core-0.79.0.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - main [MainThread]: End processing [robotcode-core]: success
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-jsonrpc2]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_jsonrpc2-0.78.4.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - processPackages [robotcode-jsonrpc2]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_jsonrpc2-0.79.0.tar.gz]
+[2024-04-22 00:07:03] INFO root fetch - main [MainThread]: End processing [robotcode-jsonrpc2]: success
+[2024-04-22 00:07:04] INFO root fetch - processPackages [robotcode-robot]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_robot-0.78.4.tar.gz]
+[2024-04-22 00:07:04] INFO root fetch - processPackages [robotcode-robot]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_robot-0.79.0.tar.gz]
+[2024-04-22 00:07:04] INFO root fetch - main [MainThread]: End processing [robotcode-robot]: success
+[2024-04-22 00:07:04] INFO root fetch - main [MainThread]: Store serial: [22870007]
