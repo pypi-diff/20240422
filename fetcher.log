@@ -1076,3 +1076,33 @@
 [2024-04-22 01:34:01] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.3.tar.gz]
 [2024-04-22 01:34:01] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
 [2024-04-22 01:34:01] INFO root fetch - main [MainThread]: Store serial: [22870374]
+[2024-04-22 01:36:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870374]
+[2024-04-22 01:36:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 01:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-dlp
+[2024-04-22 01:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipxu
+[2024-04-22 01:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-anyscale-endpoints
+[2024-04-22 01:36:09] INFO root fetch - processPackages [yt-dlp]: New version: [2024.4.9.232723.dev0] Old Version: [2024.4.9]
+[2024-04-22 01:36:09] INFO root fetch - processPackages [pipxu]: New version: [1.9] Old Version: [1.8]
+[2024-04-22 01:36:09] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/52/85/af44c30f0cc5d94ebbce365f8ee40eea6e9d7a1d26d50f16e3766ca8410c/yt_dlp-2024.4.9.tar.gz
+[2024-04-22 01:36:09] INFO root fetch - processPackages [llm-anyscale-endpoints]: New version: [0.6] Old Version: [0.5]
+[2024-04-22 01:36:09] INFO root fetch - processPackages [pipxu]: Downloading https://files.pythonhosted.org/packages/cc/eb/3ab46d9459683b712238c934e0771e68d18f501630f0c699727047a9291f/pipxu-1.8.tar.gz
+[2024-04-22 01:36:09] INFO root fetch - processPackages [llm-anyscale-endpoints]: Downloading https://files.pythonhosted.org/packages/49/88/8469d98dd0836cf9eba550bd84b0c84f5b77b882ce42647f4c8d57286f6f/llm_anyscale_endpoints-0.5.tar.gz
+[2024-04-22 01:36:10] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/3d/26/45a9189ceae8b6fa894afcbb6e4dfa15bfa476b1c4750920529f8dce5039/yt_dlp-2024.4.9.232723.dev0.tar.gz
+[2024-04-22 01:36:10] INFO root fetch - processPackages [pipxu]: Downloading https://files.pythonhosted.org/packages/8a/eb/90f5309214385256434dc7b634f8eee8a63edf311279c03abb59bc54c556/pipxu-1.9.tar.gz
+[2024-04-22 01:36:10] INFO root fetch - processPackages [llm-anyscale-endpoints]: Downloading https://files.pythonhosted.org/packages/9d/33/48b9458838b148674f2abb4d847ea917939e8c9abe162ff2216f2513f893/llm_anyscale_endpoints-0.6.tar.gz
+[2024-04-22 01:36:10] INFO root fetch - processPackages [pipxu]: executing diffoscope
+[2024-04-22 01:36:10] INFO root fetch - processPackages [pipxu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipxu-1.8.tar.gz tmp/pipxu-1.9.tar.gz --markdown 20240422/p/pipxu/1.8-1.9/README.md --exclude *.pyd
+[2024-04-22 01:36:10] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-04-22 01:36:10] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.4.9.tar.gz tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz --markdown 20240422/y/yt-dlp/2024.4.9-2024.4.9.232723.dev0/README.md --exclude *.pyd
+[2024-04-22 01:36:10] INFO root fetch - processPackages [llm-anyscale-endpoints]: executing diffoscope
+[2024-04-22 01:36:10] INFO root fetch - processPackages [llm-anyscale-endpoints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_anyscale_endpoints-0.5.tar.gz tmp/llm_anyscale_endpoints-0.6.tar.gz --markdown 20240422/l/llm-anyscale-endpoints/0.5-0.6/README.md --exclude *.pyd
+[2024-04-22 01:36:10] INFO root fetch - processPackages [pipxu]: Remove: archive file [/home/abi/fetcher/tmp/pipxu-1.8.tar.gz]
+[2024-04-22 01:36:10] INFO root fetch - processPackages [pipxu]: Remove: archive file [/home/abi/fetcher/tmp/pipxu-1.9.tar.gz]
+[2024-04-22 01:36:10] INFO root fetch - main [MainThread]: End processing [pipxu]: success
+[2024-04-22 01:36:11] INFO root fetch - processPackages [llm-anyscale-endpoints]: Remove: archive file [/home/abi/fetcher/tmp/llm_anyscale_endpoints-0.5.tar.gz]
+[2024-04-22 01:36:11] INFO root fetch - processPackages [llm-anyscale-endpoints]: Remove: archive file [/home/abi/fetcher/tmp/llm_anyscale_endpoints-0.6.tar.gz]
+[2024-04-22 01:36:11] INFO root fetch - main [MainThread]: End processing [llm-anyscale-endpoints]: success
+[2024-04-22 01:36:15] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.tar.gz]
+[2024-04-22 01:36:15] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz]
+[2024-04-22 01:36:15] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-04-22 01:36:15] INFO root fetch - main [MainThread]: Store serial: [22870380]
