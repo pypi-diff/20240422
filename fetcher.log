@@ -948,3 +948,15 @@
 [2024-04-22 01:10:18] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: Remove: archive file [/home/abi/fetcher/tmp/python-ffmpeg-video-streaming-0.1.9.tar.gz]
 [2024-04-22 01:10:18] INFO root fetch - main [MainThread]: End processing [python-ffmpeg-video-streaming]: success
 [2024-04-22 01:10:18] INFO root fetch - main [MainThread]: Store serial: [22870336]
+[2024-04-22 01:12:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870336]
+[2024-04-22 01:12:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 01:12:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: foamlib
+[2024-04-22 01:12:27] INFO root fetch - processPackages [foamlib]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-22 01:12:27] INFO root fetch - processPackages [foamlib]: Downloading https://files.pythonhosted.org/packages/eb/9f/070c2924147b5575c67fe17e1fdb16347c261aa0f1845d0838810d95d193/foamlib-0.3.3.tar.gz
+[2024-04-22 01:12:27] INFO root fetch - processPackages [foamlib]: Downloading https://files.pythonhosted.org/packages/56/36/6ef5a329347422ea5e98882e2ffe88f7aa2dd92b47538ff8f88871b49358/foamlib-0.3.4.tar.gz
+[2024-04-22 01:12:27] INFO root fetch - processPackages [foamlib]: executing diffoscope
+[2024-04-22 01:12:27] INFO root fetch - processPackages [foamlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foamlib-0.3.3.tar.gz tmp/foamlib-0.3.4.tar.gz --markdown 20240422/f/foamlib/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-22 01:12:28] INFO root fetch - processPackages [foamlib]: Remove: archive file [/home/abi/fetcher/tmp/foamlib-0.3.3.tar.gz]
+[2024-04-22 01:12:28] INFO root fetch - processPackages [foamlib]: Remove: archive file [/home/abi/fetcher/tmp/foamlib-0.3.4.tar.gz]
+[2024-04-22 01:12:28] INFO root fetch - main [MainThread]: End processing [foamlib]: success
+[2024-04-22 01:12:28] INFO root fetch - main [MainThread]: Store serial: [22870339]
