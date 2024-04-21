@@ -253,3 +253,24 @@
 [2024-04-22 00:07:04] INFO root fetch - processPackages [robotcode-robot]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_robot-0.79.0.tar.gz]
 [2024-04-22 00:07:04] INFO root fetch - main [MainThread]: End processing [robotcode-robot]: success
 [2024-04-22 00:07:04] INFO root fetch - main [MainThread]: Store serial: [22870007]
+[2024-04-22 00:09:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870007]
+[2024-04-22 00:09:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 00:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-hx-yinying
+[2024-04-22 00:09:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QuasarCode
+[2024-04-22 00:09:12] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 00:09:12] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/a9/75/3ec95277182bbe94365900ac731106e02756d184ab734879eec42674855d/nonebot-plugin-hx-yinying-0.0.7.tar.gz
+[2024-04-22 00:09:12] INFO root fetch - processPackages [QuasarCode]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-22 00:09:12] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/70/b9/874f7a4a6c328972214a00c0db1f03888bd0a938eb727a0cf5a9b295e1d7/nonebot-plugin-hx-yinying-0.0.8.tar.gz
+[2024-04-22 00:09:12] INFO root fetch - processPackages [QuasarCode]: Downloading https://files.pythonhosted.org/packages/4b/f9/b2d8ee96804291c82aa8544413344aeff5d171030de7fca251a7887f43b4/QuasarCode-0.8.0.tar.gz
+[2024-04-22 00:09:12] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-04-22 00:09:12] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-0.0.7.tar.gz tmp/nonebot-plugin-hx-yinying-0.0.8.tar.gz --markdown 20240422/n/nonebot-plugin-hx-yinying/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 00:09:13] INFO root fetch - processPackages [QuasarCode]: Downloading https://files.pythonhosted.org/packages/67/46/55d9a0f234778abc638a43b265aa1558469d0967d78b5d026750dc299011/QuasarCode-0.9.0.tar.gz
+[2024-04-22 00:09:13] INFO root fetch - processPackages [QuasarCode]: executing diffoscope
+[2024-04-22 00:09:13] INFO root fetch - processPackages [QuasarCode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuasarCode-0.8.0.tar.gz tmp/QuasarCode-0.9.0.tar.gz --markdown 20240422/Q/QuasarCode/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-22 00:09:13] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-0.0.7.tar.gz]
+[2024-04-22 00:09:13] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-0.0.8.tar.gz]
+[2024-04-22 00:09:13] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-04-22 00:09:13] INFO root fetch - processPackages [QuasarCode]: Remove: archive file [/home/abi/fetcher/tmp/QuasarCode-0.8.0.tar.gz]
+[2024-04-22 00:09:13] INFO root fetch - processPackages [QuasarCode]: Remove: archive file [/home/abi/fetcher/tmp/QuasarCode-0.9.0.tar.gz]
+[2024-04-22 00:09:13] INFO root fetch - main [MainThread]: End processing [QuasarCode]: success
+[2024-04-22 00:09:13] INFO root fetch - main [MainThread]: Store serial: [22870014]
