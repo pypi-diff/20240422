@@ -654,3 +654,15 @@
 [2024-04-22 00:41:51] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.4.tar.gz]
 [2024-04-22 00:41:51] INFO root fetch - main [MainThread]: End processing [cutseq]: success
 [2024-04-22 00:41:51] INFO root fetch - main [MainThread]: Store serial: [22870237]
+[2024-04-22 00:43:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870237]
+[2024-04-22 00:44:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 00:44:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: basic-bar
+[2024-04-22 00:44:00] INFO root fetch - processPackages [basic-bar]: New version: [0.4] Old Version: [0.3]
+[2024-04-22 00:44:00] INFO root fetch - processPackages [basic-bar]: Downloading https://files.pythonhosted.org/packages/27/79/092c9865648479f06200e04659ba687ad642addef3a5d30a015539a7a2a4/basic-bar-0.3.tar.gz
+[2024-04-22 00:44:00] INFO root fetch - processPackages [basic-bar]: Downloading https://files.pythonhosted.org/packages/a0/49/446c50dfb77ab8d3505b171bad1148bf29b8cb197dd73c6c72a96eaf7121/basic_bar-0.4.tar.gz
+[2024-04-22 00:44:00] INFO root fetch - processPackages [basic-bar]: executing diffoscope
+[2024-04-22 00:44:00] INFO root fetch - processPackages [basic-bar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic-bar-0.3.tar.gz tmp/basic_bar-0.4.tar.gz --markdown 20240422/b/basic-bar/0.3-0.4/README.md --exclude *.pyd
+[2024-04-22 00:44:01] INFO root fetch - processPackages [basic-bar]: Remove: archive file [/home/abi/fetcher/tmp/basic-bar-0.3.tar.gz]
+[2024-04-22 00:44:01] INFO root fetch - processPackages [basic-bar]: Remove: archive file [/home/abi/fetcher/tmp/basic_bar-0.4.tar.gz]
+[2024-04-22 00:44:01] INFO root fetch - main [MainThread]: End processing [basic-bar]: success
+[2024-04-22 00:44:01] INFO root fetch - main [MainThread]: Store serial: [22870241]
