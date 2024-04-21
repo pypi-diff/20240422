@@ -1,0 +1,60 @@
+[2024-04-22 00:02:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22869922]
+[2024-04-22 00:02:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 00:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-hx-yinying
+[2024-04-22 00:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: genomeshader
+[2024-04-22 00:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ThreatHunter
+[2024-04-22 00:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multillm
+[2024-04-22 00:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ezrest
+[2024-04-22 00:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bookio-fetchfox
+[2024-04-22 00:02:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: competitorx
+[2024-04-22 00:02:36] WARNING root fetch - processPackages [ThreatHunter]: Skipping, unable to determine old version
+[2024-04-22 00:02:36] INFO root fetch - main [MainThread]: End processing [ThreatHunter] error
+[2024-04-22 00:02:36] INFO root fetch - processPackages [bookio-fetchfox]: New version: [2.4.1] Old Version: [2.4.0]
+[2024-04-22 00:02:36] INFO root fetch - processPackages [multillm]: New version: [0.994] Old Version: [0.993]
+[2024-04-22 00:02:36] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 00:02:36] INFO root fetch - processPackages [ezrest]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-22 00:02:36] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/b5/ce/9582ea0c202451baa8cd50c670def9759b027a4b3be9f5278d1535e181d6/bookio_fetchfox-2.4.0.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [multillm]: Downloading https://files.pythonhosted.org/packages/52/bd/ecaf9bc45fa6d4b6b7968f50db71ba85d813c65dc61b4bd7fdfc2515c52f/multillm-0.993.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 00:02:36] INFO root fetch - processPackages [competitorx]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-22 00:02:36] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/a9/75/3ec95277182bbe94365900ac731106e02756d184ab734879eec42674855d/nonebot-plugin-hx-yinying-0.0.7.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [ezrest]: Downloading https://files.pythonhosted.org/packages/ed/4c/9c50ef9a99cb1086e08680b71c196b0a392275f3f418839fcba352750af3/ezrest-0.1.1.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [competitorx]: Downloading https://files.pythonhosted.org/packages/0f/13/6bff62279029f767dbb50730e0ec3c4b95df0a9d4f19b3b9eebb38b59d62/competitorx-0.1.3.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [multillm]: Downloading https://files.pythonhosted.org/packages/1e/4f/0fba26bc38ffbd844877c9daaa762dfde81eb8775698ff391400dff6612c/multillm-0.994.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/a3/56/334f5088310abc519f9a7f8f0ea678cd96e9372f5ab1a43962af9eef52c9/bookio_fetchfox-2.4.1.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/70/b9/874f7a4a6c328972214a00c0db1f03888bd0a938eb727a0cf5a9b295e1d7/nonebot-plugin-hx-yinying-0.0.8.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [multillm]: executing diffoscope
+[2024-04-22 00:02:36] INFO root fetch - processPackages [multillm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multillm-0.993.tar.gz tmp/multillm-0.994.tar.gz --markdown 20240422/m/multillm/0.993-0.994/README.md --exclude *.pyd
+[2024-04-22 00:02:36] INFO root fetch - processPackages [bookio-fetchfox]: executing diffoscope
+[2024-04-22 00:02:36] INFO root fetch - processPackages [bookio-fetchfox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bookio_fetchfox-2.4.0.tar.gz tmp/bookio_fetchfox-2.4.1.tar.gz --markdown 20240422/b/bookio-fetchfox/2.4.0-2.4.1/README.md --exclude *.pyd
+[2024-04-22 00:02:36] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-04-22 00:02:36] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240422/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 00:02:36] INFO root fetch - processPackages [ezrest]: Downloading https://files.pythonhosted.org/packages/9d/2d/de8e97b3e2bcfe155d909110b925abdc0339645fae84f15db190eaa477c9/ezrest-0.2.0.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-04-22 00:02:36] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-0.0.7.tar.gz tmp/nonebot-plugin-hx-yinying-0.0.8.tar.gz --markdown 20240422/n/nonebot-plugin-hx-yinying/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 00:02:36] INFO root fetch - processPackages [competitorx]: Downloading https://files.pythonhosted.org/packages/f9/54/e68d88c418298a425682319f8c643ce11921c114a6dc3902ef19afa00d58/competitorx-0.1.4.tar.gz
+[2024-04-22 00:02:36] INFO root fetch - processPackages [ezrest]: executing diffoscope
+[2024-04-22 00:02:36] INFO root fetch - processPackages [ezrest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezrest-0.1.1.tar.gz tmp/ezrest-0.2.0.tar.gz --markdown 20240422/e/ezrest/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-22 00:02:37] INFO root fetch - processPackages [competitorx]: executing diffoscope
+[2024-04-22 00:02:37] INFO root fetch - processPackages [competitorx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/competitorx-0.1.3.tar.gz tmp/competitorx-0.1.4.tar.gz --markdown 20240422/c/competitorx/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-22 00:02:37] INFO root fetch - processPackages [multillm]: Remove: archive file [/home/abi/fetcher/tmp/multillm-0.993.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - processPackages [multillm]: Remove: archive file [/home/abi/fetcher/tmp/multillm-0.994.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - main [MainThread]: End processing [multillm]: success
+[2024-04-22 00:02:37] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-0.0.7.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.4.0.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-0.0.8.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.4.1.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-04-22 00:02:37] INFO root fetch - main [MainThread]: End processing [bookio-fetchfox]: success
+[2024-04-22 00:02:37] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-04-22 00:02:37] INFO root fetch - processPackages [ezrest]: Remove: archive file [/home/abi/fetcher/tmp/ezrest-0.1.1.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - processPackages [ezrest]: Remove: archive file [/home/abi/fetcher/tmp/ezrest-0.2.0.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - main [MainThread]: End processing [ezrest]: success
+[2024-04-22 00:02:37] INFO root fetch - processPackages [competitorx]: Remove: archive file [/home/abi/fetcher/tmp/competitorx-0.1.3.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - processPackages [competitorx]: Remove: archive file [/home/abi/fetcher/tmp/competitorx-0.1.4.tar.gz]
+[2024-04-22 00:02:37] INFO root fetch - main [MainThread]: End processing [competitorx]: success
+[2024-04-22 00:02:37] INFO root fetch - main [MainThread]: Store serial: [22869946]
