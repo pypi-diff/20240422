@@ -621,3 +621,24 @@
 [2024-04-22 00:37:31] INFO root fetch - processPackages [ream2]: Remove: archive file [/home/abi/fetcher/tmp/ream2-4.3.1.tar.gz]
 [2024-04-22 00:37:31] INFO root fetch - main [MainThread]: End processing [ream2]: success
 [2024-04-22 00:37:31] INFO root fetch - main [MainThread]: Store serial: [22870228]
+[2024-04-22 00:39:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870228]
+[2024-04-22 00:39:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 00:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Flask-Limiter
+[2024-04-22 00:39:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lichesspy
+[2024-04-22 00:39:40] INFO root fetch - processPackages [lichesspy]: New version: [6.0.4.dev5] Old Version: [6.0.4.dev4]
+[2024-04-22 00:39:40] INFO root fetch - processPackages [Flask-Limiter]: New version: [3.5.1] Old Version: [3.5.0]
+[2024-04-22 00:39:40] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/e3/b3/2037dd5487d28e04c01a03c3bd4b2865dc53beb2c5af08802f58723cea73/lichesspy-6.0.4.dev4.tar.gz
+[2024-04-22 00:39:40] INFO root fetch - processPackages [Flask-Limiter]: Downloading https://files.pythonhosted.org/packages/7f/03/dae2279d45982b603ea001dcc1a4d0d6cc7f383c9f52a2e1563fcff6d1c4/Flask-Limiter-3.5.0.tar.gz
+[2024-04-22 00:39:40] INFO root fetch - processPackages [lichesspy]: Downloading https://files.pythonhosted.org/packages/47/53/252e1fec8b6d072f8d246e018228a18326c07b775f3529cd5c3f4dfb37ba/lichesspy-6.0.4.dev5.tar.gz
+[2024-04-22 00:39:40] INFO root fetch - processPackages [lichesspy]: executing diffoscope
+[2024-04-22 00:39:40] INFO root fetch - processPackages [lichesspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lichesspy-6.0.4.dev4.tar.gz tmp/lichesspy-6.0.4.dev5.tar.gz --markdown 20240422/l/lichesspy/6.0.4.dev4-6.0.4.dev5/README.md --exclude *.pyd
+[2024-04-22 00:39:40] INFO root fetch - processPackages [Flask-Limiter]: Downloading https://files.pythonhosted.org/packages/ad/62/24440d89655fefa01f3dd7614d95222b4c1f65e5d1dbf4744c3609300c4a/Flask-Limiter-3.5.1.tar.gz
+[2024-04-22 00:39:41] INFO root fetch - processPackages [Flask-Limiter]: executing diffoscope
+[2024-04-22 00:39:41] INFO root fetch - processPackages [Flask-Limiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Flask-Limiter-3.5.0.tar.gz tmp/Flask-Limiter-3.5.1.tar.gz --markdown 20240422/F/Flask-Limiter/3.5.0-3.5.1/README.md --exclude *.pyd
+[2024-04-22 00:39:41] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev4.tar.gz]
+[2024-04-22 00:39:41] INFO root fetch - processPackages [lichesspy]: Remove: archive file [/home/abi/fetcher/tmp/lichesspy-6.0.4.dev5.tar.gz]
+[2024-04-22 00:39:41] INFO root fetch - main [MainThread]: End processing [lichesspy]: success
+[2024-04-22 00:39:41] INFO root fetch - processPackages [Flask-Limiter]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Limiter-3.5.0.tar.gz]
+[2024-04-22 00:39:41] INFO root fetch - processPackages [Flask-Limiter]: Remove: archive file [/home/abi/fetcher/tmp/Flask-Limiter-3.5.1.tar.gz]
+[2024-04-22 00:39:41] INFO root fetch - main [MainThread]: End processing [Flask-Limiter]: success
+[2024-04-22 00:39:41] INFO root fetch - main [MainThread]: Store serial: [22870234]
