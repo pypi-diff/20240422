@@ -1130,3 +1130,27 @@
 [2024-04-22 01:40:36] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
 [2024-04-22 01:40:36] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
 [2024-04-22 01:40:36] INFO root fetch - main [MainThread]: Store serial: [22870388]
+[2024-04-22 01:42:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870388]
+[2024-04-22 01:42:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 01:42:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coredumpy
+[2024-04-22 01:42:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paper2vec
+[2024-04-22 01:42:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: techmax-energiez-x23176458
+[2024-04-22 01:42:44] INFO root fetch - processPackages [techmax-energiez-x23176458]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 01:42:44] INFO root fetch - processPackages [paper2vec]: New version: [1.0.1] Old Version: [1.0]
+[2024-04-22 01:42:45] INFO root fetch - processPackages [techmax-energiez-x23176458]: Downloading https://files.pythonhosted.org/packages/a0/cb/cc7b1023a8c68ad8c42913cd404c036ebc395d7e76be17929d8eb0c684ce/techmax_energiez_x23176458-0.1.1.tar.gz
+[2024-04-22 01:42:45] WARNING root fetch - processPackages [coredumpy]: Skipping, unable to determine old version
+[2024-04-22 01:42:45] INFO root fetch - main [MainThread]: End processing [coredumpy] error
+[2024-04-22 01:42:45] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/8f/b1/19711181c922f6c263f887ded7bdcca74ad1822f0e2d33fd0d49f61cf059/paper2vec-1.0.tar.gz
+[2024-04-22 01:42:45] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/9e/c0/bc589f6b6865a740cea713e2a3ae1538e2601d7be246ba7e6c256ce9b2a8/paper2vec-1.0.1.tar.gz
+[2024-04-22 01:42:45] INFO root fetch - processPackages [techmax-energiez-x23176458]: Downloading https://files.pythonhosted.org/packages/28/e0/05e7526154672f81f5c6add00341255b9a0f8203559d5bb35fc30c9ec265/techmax_energiez_x23176458-0.1.2.tar.gz
+[2024-04-22 01:42:45] INFO root fetch - processPackages [paper2vec]: executing diffoscope
+[2024-04-22 01:42:45] INFO root fetch - processPackages [paper2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2vec-1.0.tar.gz tmp/paper2vec-1.0.1.tar.gz --markdown 20240422/p/paper2vec/1.0-1.0.1/README.md --exclude *.pyd
+[2024-04-22 01:42:45] INFO root fetch - processPackages [techmax-energiez-x23176458]: executing diffoscope
+[2024-04-22 01:42:45] INFO root fetch - processPackages [techmax-energiez-x23176458]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/techmax_energiez_x23176458-0.1.1.tar.gz tmp/techmax_energiez_x23176458-0.1.2.tar.gz --markdown 20240422/t/techmax-energiez-x23176458/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 01:42:46] INFO root fetch - processPackages [techmax-energiez-x23176458]: Remove: archive file [/home/abi/fetcher/tmp/techmax_energiez_x23176458-0.1.1.tar.gz]
+[2024-04-22 01:42:46] INFO root fetch - processPackages [techmax-energiez-x23176458]: Remove: archive file [/home/abi/fetcher/tmp/techmax_energiez_x23176458-0.1.2.tar.gz]
+[2024-04-22 01:42:46] INFO root fetch - main [MainThread]: End processing [techmax-energiez-x23176458]: success
+[2024-04-22 01:42:46] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-1.0.tar.gz]
+[2024-04-22 01:42:46] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-1.0.1.tar.gz]
+[2024-04-22 01:42:46] INFO root fetch - main [MainThread]: End processing [paper2vec]: success
+[2024-04-22 01:42:46] INFO root fetch - main [MainThread]: Store serial: [22870398]
