@@ -759,3 +759,15 @@
 [2024-04-22 00:52:41] INFO root fetch - processPackages [techmax-energiez-x23176458]: Remove: archive file [/home/abi/fetcher/tmp/techmax_energiez_x23176458-0.1.1.tar.gz]
 [2024-04-22 00:52:41] INFO root fetch - main [MainThread]: End processing [techmax-energiez-x23176458]: success
 [2024-04-22 00:52:41] INFO root fetch - main [MainThread]: Store serial: [22870277]
+[2024-04-22 00:54:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870277]
+[2024-04-22 00:54:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 00:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: telectron
+[2024-04-22 00:54:50] INFO root fetch - processPackages [telectron]: New version: [2.0.70.1] Old Version: [2.0.61.1]
+[2024-04-22 00:54:51] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/55/93/e17ac091ba77e370f92de168ae0415456d09cf71adf27725745f2cdb7d65/telectron-2.0.61.1.tar.gz
+[2024-04-22 00:54:51] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/4b/34/673057733fd7ab305104850d621b793b02287fd219e2292f8a2f5a18eaae/telectron-2.0.70.1.tar.gz
+[2024-04-22 00:54:51] INFO root fetch - processPackages [telectron]: executing diffoscope
+[2024-04-22 00:54:51] INFO root fetch - processPackages [telectron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telectron-2.0.61.1.tar.gz tmp/telectron-2.0.70.1.tar.gz --markdown 20240422/t/telectron/2.0.61.1-2.0.70.1/README.md --exclude *.pyd
+[2024-04-22 00:55:08] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.61.1.tar.gz]
+[2024-04-22 00:55:08] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
+[2024-04-22 00:55:08] INFO root fetch - main [MainThread]: End processing [telectron]: success
+[2024-04-22 00:55:08] INFO root fetch - main [MainThread]: Store serial: [22870281]
