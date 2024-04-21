@@ -274,3 +274,46 @@
 [2024-04-22 00:09:13] INFO root fetch - processPackages [QuasarCode]: Remove: archive file [/home/abi/fetcher/tmp/QuasarCode-0.9.0.tar.gz]
 [2024-04-22 00:09:13] INFO root fetch - main [MainThread]: End processing [QuasarCode]: success
 [2024-04-22 00:09:13] INFO root fetch - main [MainThread]: Store serial: [22870014]
+[2024-04-22 00:11:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870014]
+[2024-04-22 00:11:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 00:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: competitorx
+[2024-04-22 00:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tag-library
+[2024-04-22 00:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zonesmart-utils-fork
+[2024-04-22 00:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rookiepy
+[2024-04-22 00:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llama-core
+[2024-04-22 00:11:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: miniagents
+[2024-04-22 00:11:22] INFO root fetch - processPackages [zonesmart-utils-fork]: New version: [0.5.9.2] Old Version: [0.5.9.1]
+[2024-04-22 00:11:22] INFO root fetch - processPackages [competitorx]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-22 00:11:22] WARNING root fetch - processPackages [tag-library]: Skipping, unable to determine old version
+[2024-04-22 00:11:22] INFO root fetch - main [MainThread]: End processing [tag-library] error
+[2024-04-22 00:11:22] INFO root fetch - processPackages [llama-core]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-22 00:11:22] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/81/01/8d02a4ac65f9f3b676e0130ca45674689981c1aa984d1eb2b3ac87e5f695/zonesmart-utils-fork-0.5.9.1.tar.gz
+[2024-04-22 00:11:22] INFO root fetch - processPackages [competitorx]: Downloading https://files.pythonhosted.org/packages/f9/54/e68d88c418298a425682319f8c643ce11921c114a6dc3902ef19afa00d58/competitorx-0.1.4.tar.gz
+[2024-04-22 00:11:22] INFO root fetch - processPackages [miniagents]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 00:11:22] INFO root fetch - processPackages [miniagents]: Downloading https://files.pythonhosted.org/packages/2d/24/5090c6682c59676ba8f62fdb9e4df8b8f7f27a0fd7c8db718a710a62b2a4/miniagents-0.0.5.tar.gz
+[2024-04-22 00:11:22] INFO root fetch - processPackages [llama-core]: Downloading https://files.pythonhosted.org/packages/a7/92/d9fb9cf5d19a28d22ac750b4e1a81241075a0da287773982fc39712cfc5a/llama_core-0.2.7.tar.gz
+[2024-04-22 00:11:22] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/24/f1/db328d07a32a8b72cea7b8f6ab5b9183de12de416eced203203986b80b9d/zonesmart-utils-fork-0.5.9.2.tar.gz
+[2024-04-22 00:11:23] INFO root fetch - processPackages [rookiepy]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-22 00:11:23] WARNING root fetch - processPackages [llama-core]: Skipping package: exceeds size limit 11125473>=10485760
+[2024-04-22 00:11:23] INFO root fetch - main [MainThread]: End processing [llama-core] error
+[2024-04-22 00:11:23] ERROR root fetch - processPackages [competitorx]: Unable to fetch info: No such project/version 'competitorx' 0.1.5
+[2024-04-22 00:11:23] INFO root fetch - main [MainThread]: End processing [competitorx] error
+[2024-04-22 00:11:23] INFO root fetch - processPackages [zonesmart-utils-fork]: executing diffoscope
+[2024-04-22 00:11:23] INFO root fetch - processPackages [zonesmart-utils-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonesmart-utils-fork-0.5.9.1.tar.gz tmp/zonesmart-utils-fork-0.5.9.2.tar.gz --markdown 20240422/z/zonesmart-utils-fork/0.5.9.1-0.5.9.2/README.md --exclude *.pyd
+[2024-04-22 00:11:23] INFO root fetch - processPackages [miniagents]: Downloading https://files.pythonhosted.org/packages/43/8e/4b80176e0e15aca018911c4355c7d8fa51f7bc8451d76525de17a9820691/miniagents-0.0.6.tar.gz
+[2024-04-22 00:11:23] INFO root fetch - processPackages [rookiepy]: Downloading https://files.pythonhosted.org/packages/91/2d/0c99e9f014ee9ae06ef98eda6e34d06eac5f2d85971c81a1d572f5645800/rookiepy-0.4.0.tar.gz
+[2024-04-22 00:11:23] INFO root fetch - processPackages [miniagents]: executing diffoscope
+[2024-04-22 00:11:23] INFO root fetch - processPackages [miniagents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miniagents-0.0.5.tar.gz tmp/miniagents-0.0.6.tar.gz --markdown 20240422/m/miniagents/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 00:11:23] INFO root fetch - processPackages [rookiepy]: Downloading https://files.pythonhosted.org/packages/ee/4b/d04b85e130f28b1cebf9bb7c06172cf17dbd784eb8c434dbe3613c3a1687/rookiepy-0.5.0-cp312-none-win_amd64.whl
+[2024-04-22 00:11:23] INFO root fetch - processPackages [miniagents]: Remove: archive file [/home/abi/fetcher/tmp/miniagents-0.0.5.tar.gz]
+[2024-04-22 00:11:23] INFO root fetch - processPackages [miniagents]: Remove: archive file [/home/abi/fetcher/tmp/miniagents-0.0.6.tar.gz]
+[2024-04-22 00:11:23] INFO root fetch - main [MainThread]: End processing [miniagents]: success
+[2024-04-22 00:11:24] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.1.tar.gz]
+[2024-04-22 00:11:24] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.2.tar.gz]
+[2024-04-22 00:11:24] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
+[2024-04-22 00:11:24] INFO root fetch - processPackages [rookiepy]: executing diffoscope
+[2024-04-22 00:11:24] INFO root fetch - processPackages [rookiepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rookiepy-0.4.0.tar.gz tmp/rookiepy-0.5.0-cp312-none-win_amd64.whl.zip --markdown 20240422/r/rookiepy/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-22 00:11:24] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.4.0.tar.gz]
+[2024-04-22 00:11:24] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.5.0-cp312-none-win_amd64.whl.zip]
+[2024-04-22 00:11:24] INFO root fetch - main [MainThread]: End processing [rookiepy]: success
+[2024-04-22 00:11:24] INFO root fetch - main [MainThread]: Store serial: [22870065]
