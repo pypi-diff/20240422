@@ -609,3 +609,15 @@
 [2024-04-22 00:35:21] INFO root fetch - processPackages [stackql-deploy]: Remove: archive file [/home/abi/fetcher/tmp/stackql_deploy-1.1.0.tar.gz]
 [2024-04-22 00:35:21] INFO root fetch - main [MainThread]: End processing [stackql-deploy]: success
 [2024-04-22 00:35:21] INFO root fetch - main [MainThread]: Store serial: [22870224]
+[2024-04-22 00:37:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870224]
+[2024-04-22 00:37:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 00:37:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ream2
+[2024-04-22 00:37:30] INFO root fetch - processPackages [ream2]: New version: [4.3.1] Old Version: [4.2.3]
+[2024-04-22 00:37:30] INFO root fetch - processPackages [ream2]: Downloading https://files.pythonhosted.org/packages/d9/8f/ca350f5ca0ece8714cd4563ae54142ffeebb918b813f80e81b38066ae7df/ream2-4.2.3.tar.gz
+[2024-04-22 00:37:30] INFO root fetch - processPackages [ream2]: Downloading https://files.pythonhosted.org/packages/3b/0e/4a1072eb4025d6d70427dc372a8bd7a6c4d43fe9184975730b675eedc10c/ream2-4.3.1.tar.gz
+[2024-04-22 00:37:31] INFO root fetch - processPackages [ream2]: executing diffoscope
+[2024-04-22 00:37:31] INFO root fetch - processPackages [ream2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ream2-4.2.3.tar.gz tmp/ream2-4.3.1.tar.gz --markdown 20240422/r/ream2/4.2.3-4.3.1/README.md --exclude *.pyd
+[2024-04-22 00:37:31] INFO root fetch - processPackages [ream2]: Remove: archive file [/home/abi/fetcher/tmp/ream2-4.2.3.tar.gz]
+[2024-04-22 00:37:31] INFO root fetch - processPackages [ream2]: Remove: archive file [/home/abi/fetcher/tmp/ream2-4.3.1.tar.gz]
+[2024-04-22 00:37:31] INFO root fetch - main [MainThread]: End processing [ream2]: success
+[2024-04-22 00:37:31] INFO root fetch - main [MainThread]: Store serial: [22870228]
