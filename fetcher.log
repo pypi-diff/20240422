@@ -582,3 +582,18 @@
 [2024-04-22 00:31:02] WARNING root fetch - processPackages [sm-datasets]: Skipping package: exceeds size limit 89182817>=10485760
 [2024-04-22 00:31:02] INFO root fetch - main [MainThread]: End processing [sm-datasets] error
 [2024-04-22 00:31:02] INFO root fetch - main [MainThread]: Store serial: [22870213]
+[2024-04-22 00:33:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870213]
+[2024-04-22 00:33:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 00:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sshfs
+[2024-04-22 00:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fomodoro
+[2024-04-22 00:33:11] INFO root fetch - processPackages [sshfs]: New version: [2024.4.0] Old Version: [2023.7.0]
+[2024-04-22 00:33:11] WARNING root fetch - processPackages [fomodoro]: Skipping, unable to determine old version
+[2024-04-22 00:33:11] INFO root fetch - main [MainThread]: End processing [fomodoro] error
+[2024-04-22 00:33:11] INFO root fetch - processPackages [sshfs]: Downloading https://files.pythonhosted.org/packages/71/18/fa440e1b4cb83c9179b07ffb6ce78a6ed751945350601a3342c2b842d60d/sshfs-2023.7.0.tar.gz
+[2024-04-22 00:33:11] INFO root fetch - processPackages [sshfs]: Downloading https://files.pythonhosted.org/packages/97/5e/2f54fc637e1807ceb55af41e5948fdbbaaeb03c44afa2d400b2c04c4700f/sshfs-2024.4.0.tar.gz
+[2024-04-22 00:33:11] INFO root fetch - processPackages [sshfs]: executing diffoscope
+[2024-04-22 00:33:11] INFO root fetch - processPackages [sshfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sshfs-2023.7.0.tar.gz tmp/sshfs-2024.4.0.tar.gz --markdown 20240422/s/sshfs/2023.7.0-2024.4.0/README.md --exclude *.pyd
+[2024-04-22 00:33:12] INFO root fetch - processPackages [sshfs]: Remove: archive file [/home/abi/fetcher/tmp/sshfs-2023.7.0.tar.gz]
+[2024-04-22 00:33:12] INFO root fetch - processPackages [sshfs]: Remove: archive file [/home/abi/fetcher/tmp/sshfs-2024.4.0.tar.gz]
+[2024-04-22 00:33:12] INFO root fetch - main [MainThread]: End processing [sshfs]: success
+[2024-04-22 00:33:12] INFO root fetch - main [MainThread]: Store serial: [22870221]
