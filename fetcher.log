@@ -1032,3 +1032,26 @@
 [2024-04-22 01:27:35] WARNING root fetch - processPackages [pymsch]: Skipping, unable to determine old version
 [2024-04-22 01:27:35] INFO root fetch - main [MainThread]: End processing [pymsch] error
 [2024-04-22 01:27:35] INFO root fetch - main [MainThread]: Store serial: [22870364]
+[2024-04-22 01:29:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870364]
+[2024-04-22 01:29:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 01:31:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870365]
+[2024-04-22 01:31:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 01:31:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-04-22 01:31:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbcli-dev
+[2024-04-22 01:31:49] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240421.283] Old Version: [0.44.20240421.282]
+[2024-04-22 01:31:49] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/d3/22/644fce9ef482c56aaf10e3bb4cd7cb62fed6f0e737c554525d08dd4870f9/pkscreener-0.44.20240421.282.tar.gz
+[2024-04-22 01:31:49] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/4b/76/276bb44cd0d3d84a4960477fb22c291c93cb8d324ed621f49d30fc4de319/pkscreener-0.44.20240421.283.tar.gz
+[2024-04-22 01:31:49] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-22 01:31:49] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240421.282.tar.gz tmp/pkscreener-0.44.20240421.283.tar.gz --markdown 20240422/p/pkscreener/0.44.20240421.282-0.44.20240421.283/README.md --exclude *.pyd
+[2024-04-22 01:31:49] INFO root fetch - processPackages [sbcli-dev]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-22 01:31:50] INFO root fetch - processPackages [sbcli-dev]: Downloading https://files.pythonhosted.org/packages/15/bf/442ee58a71a27e86b65bd366ea79bfcb80c39fe21b946a4a270913633485/sbcli_dev-2.2.8.zip
+[2024-04-22 01:31:50] INFO root fetch - processPackages [sbcli-dev]: Downloading https://files.pythonhosted.org/packages/3f/82/90e4e7e48e52cd6a95012b4c6d81c5c10a457314708e21f07318e0ea7e18/sbcli_dev-2.2.9.zip
+[2024-04-22 01:31:50] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240421.282.tar.gz]
+[2024-04-22 01:31:50] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240421.283.tar.gz]
+[2024-04-22 01:31:50] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-22 01:31:50] INFO root fetch - processPackages [sbcli-dev]: executing diffoscope
+[2024-04-22 01:31:50] INFO root fetch - processPackages [sbcli-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli_dev-2.2.8.zip tmp/sbcli_dev-2.2.9.zip --markdown 20240422/s/sbcli-dev/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-22 01:31:51] INFO root fetch - processPackages [sbcli-dev]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_dev-2.2.8.zip]
+[2024-04-22 01:31:51] INFO root fetch - processPackages [sbcli-dev]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_dev-2.2.9.zip]
+[2024-04-22 01:31:51] INFO root fetch - main [MainThread]: End processing [sbcli-dev]: success
+[2024-04-22 01:31:51] INFO root fetch - main [MainThread]: Store serial: [22870370]
