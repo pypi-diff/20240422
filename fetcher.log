@@ -909,3 +909,42 @@
 [2024-04-22 01:08:08] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240421.94.tar.gz]
 [2024-04-22 01:08:08] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
 [2024-04-22 01:08:08] INFO root fetch - main [MainThread]: Store serial: [22870323]
+[2024-04-22 01:10:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870323]
+[2024-04-22 01:10:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 01:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: druida
+[2024-04-22 01:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-ffmpeg-video-streaming
+[2024-04-22 01:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: class-singledispatch
+[2024-04-22 01:10:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evm-wallet
+[2024-04-22 01:10:17] INFO root fetch - processPackages [class-singledispatch]: New version: [1.2.3.post1] Old Version: [1.2.3]
+[2024-04-22 01:10:17] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 01:10:17] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-22 01:10:17] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/fd/3e/5aa8ad495348da70b30739f5a7083f47ff9d1db7ac94c902b4f491c63f4d/class_singledispatch-1.2.3.tar.gz
+[2024-04-22 01:10:17] INFO root fetch - processPackages [evm-wallet]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-04-22 01:10:17] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 01:10:17] INFO root fetch - processPackages [evm-wallet]: Downloading https://files.pythonhosted.org/packages/7f/21/d7ae86ee509f7b279055c846bf02f786eb162f67b470fd3285a170d4c127/evm_wallet-1.2.0.tar.gz
+[2024-04-22 01:10:17] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-22 01:10:17] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: Downloading https://files.pythonhosted.org/packages/00/b5/52f22d9f9a1d5d2a389cbea782c3408c1a33f70eb9aa480563e49041b468/python-ffmpeg-video-streaming-0.1.8.tar.gz
+[2024-04-22 01:10:17] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/2e/c2/c541379fc2742a0f9ad4db116ba9d19c3607d0a6a69e0ef3f86bfcdca072/class_singledispatch-1.2.3.post1.tar.gz
+[2024-04-22 01:10:17] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-22 01:10:17] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240422/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 01:10:17] INFO root fetch - processPackages [class-singledispatch]: executing diffoscope
+[2024-04-22 01:10:17] INFO root fetch - processPackages [class-singledispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class_singledispatch-1.2.3.tar.gz tmp/class_singledispatch-1.2.3.post1.tar.gz --markdown 20240422/c/class-singledispatch/1.2.3-1.2.3.post1/README.md --exclude *.pyd
+[2024-04-22 01:10:17] INFO root fetch - processPackages [evm-wallet]: Downloading https://files.pythonhosted.org/packages/00/38/b5420a30b80f507fa298bf47c8521f3bb35f920ee673b480523a6c2ce564/evm_wallet-2.0.0.tar.gz
+[2024-04-22 01:10:17] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: Downloading https://files.pythonhosted.org/packages/76/7a/26b9e8d65f3aa234c0ce79e180973c5ac133c1143d6a2175239f4e1a0fc0/python-ffmpeg-video-streaming-0.1.9.tar.gz
+[2024-04-22 01:10:18] INFO root fetch - processPackages [evm-wallet]: executing diffoscope
+[2024-04-22 01:10:18] INFO root fetch - processPackages [evm-wallet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evm_wallet-1.2.0.tar.gz tmp/evm_wallet-2.0.0.tar.gz --markdown 20240422/e/evm-wallet/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-04-22 01:10:18] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: executing diffoscope
+[2024-04-22 01:10:18] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-ffmpeg-video-streaming-0.1.8.tar.gz tmp/python-ffmpeg-video-streaming-0.1.9.tar.gz --markdown 20240422/p/python-ffmpeg-video-streaming/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 01:10:18] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-22 01:10:18] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.3.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.3.post1.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - main [MainThread]: End processing [class-singledispatch]: success
+[2024-04-22 01:10:18] INFO root fetch - processPackages [evm-wallet]: Remove: archive file [/home/abi/fetcher/tmp/evm_wallet-1.2.0.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - processPackages [evm-wallet]: Remove: archive file [/home/abi/fetcher/tmp/evm_wallet-2.0.0.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - main [MainThread]: End processing [evm-wallet]: success
+[2024-04-22 01:10:18] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: Remove: archive file [/home/abi/fetcher/tmp/python-ffmpeg-video-streaming-0.1.8.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - processPackages [python-ffmpeg-video-streaming]: Remove: archive file [/home/abi/fetcher/tmp/python-ffmpeg-video-streaming-0.1.9.tar.gz]
+[2024-04-22 01:10:18] INFO root fetch - main [MainThread]: End processing [python-ffmpeg-video-streaming]: success
+[2024-04-22 01:10:18] INFO root fetch - main [MainThread]: Store serial: [22870336]
