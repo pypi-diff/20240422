@@ -960,3 +960,15 @@
 [2024-04-22 01:12:28] INFO root fetch - processPackages [foamlib]: Remove: archive file [/home/abi/fetcher/tmp/foamlib-0.3.4.tar.gz]
 [2024-04-22 01:12:28] INFO root fetch - main [MainThread]: End processing [foamlib]: success
 [2024-04-22 01:12:28] INFO root fetch - main [MainThread]: Store serial: [22870339]
+[2024-04-22 01:14:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870339]
+[2024-04-22 01:14:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 01:14:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwdtm
+[2024-04-22 01:14:36] INFO root fetch - processPackages [wwdtm]: New version: [2.9.0] Old Version: [2.8.2]
+[2024-04-22 01:14:36] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/7c/b4/e6cc7e7f21354ba16d848eb4108483f933df09a938c0c951dbb2986d30e2/wwdtm-2.8.2.tar.gz
+[2024-04-22 01:14:36] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/4a/97/932c29ba40f01d50f24cde324db56ec4b06f9dc923eb6012ca9c95684e5f/wwdtm-2.9.0.tar.gz
+[2024-04-22 01:14:36] INFO root fetch - processPackages [wwdtm]: executing diffoscope
+[2024-04-22 01:14:36] INFO root fetch - processPackages [wwdtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwdtm-2.8.2.tar.gz tmp/wwdtm-2.9.0.tar.gz --markdown 20240422/w/wwdtm/2.8.2-2.9.0/README.md --exclude *.pyd
+[2024-04-22 01:14:37] INFO root fetch - processPackages [wwdtm]: Remove: archive file [/home/abi/fetcher/tmp/wwdtm-2.8.2.tar.gz]
+[2024-04-22 01:14:37] INFO root fetch - processPackages [wwdtm]: Remove: archive file [/home/abi/fetcher/tmp/wwdtm-2.9.0.tar.gz]
+[2024-04-22 01:14:37] INFO root fetch - main [MainThread]: End processing [wwdtm]: success
+[2024-04-22 01:14:37] INFO root fetch - main [MainThread]: Store serial: [22870343]
