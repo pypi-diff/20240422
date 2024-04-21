@@ -365,3 +365,24 @@
 [2024-04-22 00:15:44] INFO root fetch - processPackages [clams-python]: Remove: archive file [/home/abi/fetcher/tmp/clams_python-1.2.1.tar.gz]
 [2024-04-22 00:15:44] INFO root fetch - main [MainThread]: End processing [clams-python]: success
 [2024-04-22 00:15:44] INFO root fetch - main [MainThread]: Store serial: [22870134]
+[2024-04-22 00:17:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870134]
+[2024-04-22 00:17:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 00:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: payconpy
+[2024-04-22 00:17:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: basic-bar
+[2024-04-22 00:17:53] INFO root fetch - processPackages [payconpy]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-04-22 00:17:53] INFO root fetch - processPackages [payconpy]: Downloading https://files.pythonhosted.org/packages/a4/69/d7328bd56e9683f3df86eb57737332ed78e5544e7d388de16561b8d6829e/payconpy-1.1.0.tar.gz
+[2024-04-22 00:17:53] INFO root fetch - processPackages [basic-bar]: New version: [0.4] Old Version: [0.3]
+[2024-04-22 00:17:54] INFO root fetch - processPackages [payconpy]: Downloading https://files.pythonhosted.org/packages/ad/86/494f447a12f587fa5ea33d8314da91dc4bf2a83de70ca663a730dead73a5/payconpy-2.0.0.tar.gz
+[2024-04-22 00:17:54] INFO root fetch - processPackages [basic-bar]: Downloading https://files.pythonhosted.org/packages/27/79/092c9865648479f06200e04659ba687ad642addef3a5d30a015539a7a2a4/basic-bar-0.3.tar.gz
+[2024-04-22 00:17:54] INFO root fetch - processPackages [payconpy]: executing diffoscope
+[2024-04-22 00:17:54] INFO root fetch - processPackages [payconpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/payconpy-1.1.0.tar.gz tmp/payconpy-2.0.0.tar.gz --markdown 20240422/p/payconpy/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-04-22 00:17:54] INFO root fetch - processPackages [basic-bar]: Downloading https://files.pythonhosted.org/packages/a0/49/446c50dfb77ab8d3505b171bad1148bf29b8cb197dd73c6c72a96eaf7121/basic_bar-0.4.tar.gz
+[2024-04-22 00:17:54] INFO root fetch - processPackages [basic-bar]: executing diffoscope
+[2024-04-22 00:17:54] INFO root fetch - processPackages [basic-bar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic-bar-0.3.tar.gz tmp/basic_bar-0.4.tar.gz --markdown 20240422/b/basic-bar/0.3-0.4/README.md --exclude *.pyd
+[2024-04-22 00:17:54] INFO root fetch - processPackages [payconpy]: Remove: archive file [/home/abi/fetcher/tmp/payconpy-1.1.0.tar.gz]
+[2024-04-22 00:17:54] INFO root fetch - processPackages [payconpy]: Remove: archive file [/home/abi/fetcher/tmp/payconpy-2.0.0.tar.gz]
+[2024-04-22 00:17:54] INFO root fetch - main [MainThread]: End processing [payconpy]: success
+[2024-04-22 00:17:54] INFO root fetch - processPackages [basic-bar]: Remove: archive file [/home/abi/fetcher/tmp/basic-bar-0.3.tar.gz]
+[2024-04-22 00:17:54] INFO root fetch - processPackages [basic-bar]: Remove: archive file [/home/abi/fetcher/tmp/basic_bar-0.4.tar.gz]
+[2024-04-22 00:17:54] INFO root fetch - main [MainThread]: End processing [basic-bar]: success
+[2024-04-22 00:17:54] INFO root fetch - main [MainThread]: Store serial: [22870139]
