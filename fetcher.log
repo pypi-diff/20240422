@@ -1055,3 +1055,24 @@
 [2024-04-22 01:31:51] INFO root fetch - processPackages [sbcli-dev]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_dev-2.2.9.zip]
 [2024-04-22 01:31:51] INFO root fetch - main [MainThread]: End processing [sbcli-dev]: success
 [2024-04-22 01:31:51] INFO root fetch - main [MainThread]: Store serial: [22870370]
+[2024-04-22 01:33:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870370]
+[2024-04-22 01:33:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 01:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tendril-iotedge
+[2024-04-22 01:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paper2vec
+[2024-04-22 01:33:59] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-22 01:33:59] INFO root fetch - processPackages [paper2vec]: New version: [1.0] Old Version: [0.7]
+[2024-04-22 01:34:00] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/3b/bb/1bcdcd74eab4f0097f756c4f7f70e986aa457f466803b8067b04e09871a8/tendril_iotedge-0.4.2.tar.gz
+[2024-04-22 01:34:00] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/f6/64/a5ce65879c5c633eec38ff57c096b0922ead7f00b7c6a3cd29a2604d882b/paper2vec-0.7.tar.gz
+[2024-04-22 01:34:00] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/8f/b1/19711181c922f6c263f887ded7bdcca74ad1822f0e2d33fd0d49f61cf059/paper2vec-1.0.tar.gz
+[2024-04-22 01:34:00] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/40/0c/7008fc1491e658c5b8990398eb44ff142c48624249a409436a4aab2fa86d/tendril_iotedge-0.4.3.tar.gz
+[2024-04-22 01:34:00] INFO root fetch - processPackages [paper2vec]: executing diffoscope
+[2024-04-22 01:34:00] INFO root fetch - processPackages [paper2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2vec-0.7.tar.gz tmp/paper2vec-1.0.tar.gz --markdown 20240422/p/paper2vec/0.7-1.0/README.md --exclude *.pyd
+[2024-04-22 01:34:00] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-22 01:34:00] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.4.2.tar.gz tmp/tendril_iotedge-0.4.3.tar.gz --markdown 20240422/t/tendril-iotedge/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-22 01:34:01] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-0.7.tar.gz]
+[2024-04-22 01:34:01] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-1.0.tar.gz]
+[2024-04-22 01:34:01] INFO root fetch - main [MainThread]: End processing [paper2vec]: success
+[2024-04-22 01:34:01] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.2.tar.gz]
+[2024-04-22 01:34:01] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.4.3.tar.gz]
+[2024-04-22 01:34:01] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-22 01:34:01] INFO root fetch - main [MainThread]: Store serial: [22870374]
