@@ -1229,3 +1229,15 @@
 [2024-04-22 01:57:40] INFO root fetch - processPackages [report-creator]: Remove: archive file [/home/abi/fetcher/tmp/report_creator-1.0.7.tar.gz]
 [2024-04-22 01:57:40] INFO root fetch - main [MainThread]: End processing [report-creator]: success
 [2024-04-22 01:57:40] INFO root fetch - main [MainThread]: Store serial: [22870416]
+[2024-04-22 01:59:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870416]
+[2024-04-22 01:59:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 01:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paper2vec
+[2024-04-22 01:59:49] INFO root fetch - processPackages [paper2vec]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-22 01:59:49] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/92/64/79b093acfc160da17564a031c7c4c13cb5e83a7f50e9ddbba16b0e3a0eaf/paper2vec-1.0.2.tar.gz
+[2024-04-22 01:59:49] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/e7/a5/6b7f780490d91b97da42dbc5f72fad95137602c1297d6026fc7f5bded08c/paper2vec-1.0.3.tar.gz
+[2024-04-22 01:59:49] INFO root fetch - processPackages [paper2vec]: executing diffoscope
+[2024-04-22 01:59:49] INFO root fetch - processPackages [paper2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2vec-1.0.2.tar.gz tmp/paper2vec-1.0.3.tar.gz --markdown 20240422/p/paper2vec/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-22 01:59:50] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-1.0.2.tar.gz]
+[2024-04-22 01:59:50] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-1.0.3.tar.gz]
+[2024-04-22 01:59:50] INFO root fetch - main [MainThread]: End processing [paper2vec]: success
+[2024-04-22 01:59:50] INFO root fetch - main [MainThread]: Store serial: [22870418]
