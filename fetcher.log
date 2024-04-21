@@ -1106,3 +1106,15 @@
 [2024-04-22 01:36:15] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.4.9.232723.dev0.tar.gz]
 [2024-04-22 01:36:15] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
 [2024-04-22 01:36:15] INFO root fetch - main [MainThread]: Store serial: [22870380]
+[2024-04-22 01:38:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870380]
+[2024-04-22 01:38:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 01:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-anyscale-endpoints
+[2024-04-22 01:38:24] INFO root fetch - processPackages [llm-anyscale-endpoints]: New version: [0.6] Old Version: [0.5]
+[2024-04-22 01:38:24] INFO root fetch - processPackages [llm-anyscale-endpoints]: Downloading https://files.pythonhosted.org/packages/49/88/8469d98dd0836cf9eba550bd84b0c84f5b77b882ce42647f4c8d57286f6f/llm_anyscale_endpoints-0.5.tar.gz
+[2024-04-22 01:38:25] INFO root fetch - processPackages [llm-anyscale-endpoints]: Downloading https://files.pythonhosted.org/packages/9d/33/48b9458838b148674f2abb4d847ea917939e8c9abe162ff2216f2513f893/llm_anyscale_endpoints-0.6.tar.gz
+[2024-04-22 01:38:25] INFO root fetch - processPackages [llm-anyscale-endpoints]: executing diffoscope
+[2024-04-22 01:38:25] INFO root fetch - processPackages [llm-anyscale-endpoints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_anyscale_endpoints-0.5.tar.gz tmp/llm_anyscale_endpoints-0.6.tar.gz --markdown 20240422/l/llm-anyscale-endpoints/0.5-0.6/README.md --exclude *.pyd
+[2024-04-22 01:38:25] INFO root fetch - processPackages [llm-anyscale-endpoints]: Remove: archive file [/home/abi/fetcher/tmp/llm_anyscale_endpoints-0.5.tar.gz]
+[2024-04-22 01:38:25] INFO root fetch - processPackages [llm-anyscale-endpoints]: Remove: archive file [/home/abi/fetcher/tmp/llm_anyscale_endpoints-0.6.tar.gz]
+[2024-04-22 01:38:25] INFO root fetch - main [MainThread]: End processing [llm-anyscale-endpoints]: success
+[2024-04-22 01:38:25] INFO root fetch - main [MainThread]: Store serial: [22870383]
