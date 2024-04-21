@@ -666,3 +666,36 @@
 [2024-04-22 00:44:01] INFO root fetch - processPackages [basic-bar]: Remove: archive file [/home/abi/fetcher/tmp/basic_bar-0.4.tar.gz]
 [2024-04-22 00:44:01] INFO root fetch - main [MainThread]: End processing [basic-bar]: success
 [2024-04-22 00:44:01] INFO root fetch - main [MainThread]: Store serial: [22870241]
+[2024-04-22 00:46:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870241]
+[2024-04-22 00:46:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 00:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parameterframe
+[2024-04-22 00:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: techmax-energiez-x23176458
+[2024-04-22 00:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paper2vec
+[2024-04-22 00:46:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-includecontents
+[2024-04-22 00:46:09] INFO root fetch - processPackages [techmax-energiez-x23176458]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 00:46:09] INFO root fetch - processPackages [paper2vec]: New version: [0.5] Old Version: [0.4]
+[2024-04-22 00:46:10] WARNING root fetch - processPackages [parameterframe]: Skipping, unable to determine old version
+[2024-04-22 00:46:10] INFO root fetch - processPackages [techmax-energiez-x23176458]: Downloading https://files.pythonhosted.org/packages/3b/32/ee9ffc45b56c8e2c0278f4880f2c9833a3c0ffff6f5c1f92c9a448632ccb/techmax_energiez_x23176458-0.0.4.tar.gz
+[2024-04-22 00:46:10] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/1d/8c/d435aa89bea79a8d3bae09e2449d94622d5b61cb0a081b786cd1ea3e7c63/paper2vec-0.4.tar.gz
+[2024-04-22 00:46:10] INFO root fetch - main [MainThread]: End processing [parameterframe] error
+[2024-04-22 00:46:10] INFO root fetch - processPackages [django-includecontents]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-22 00:46:10] INFO root fetch - processPackages [django-includecontents]: Downloading https://files.pythonhosted.org/packages/d4/65/56802baa08b8dc06337ca363029826ae242020a3632dc37fb8dfdd917cb7/django_includecontents-0.6.1.tar.gz
+[2024-04-22 00:46:10] INFO root fetch - processPackages [techmax-energiez-x23176458]: Downloading https://files.pythonhosted.org/packages/ee/fb/b4cc2edb44e45d5de120d675bac710d06c7631e28523303b9be2cc868432/techmax_energiez_x23176458-0.0.5.tar.gz
+[2024-04-22 00:46:10] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/86/14/c6d4b6c732b4befa368a604f7c66a92e0a8c2a664aba97f3c70ac50afbf6/paper2vec-0.5.tar.gz
+[2024-04-22 00:46:10] INFO root fetch - processPackages [techmax-energiez-x23176458]: executing diffoscope
+[2024-04-22 00:46:10] INFO root fetch - processPackages [techmax-energiez-x23176458]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/techmax_energiez_x23176458-0.0.4.tar.gz tmp/techmax_energiez_x23176458-0.0.5.tar.gz --markdown 20240422/t/techmax-energiez-x23176458/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 00:46:10] INFO root fetch - processPackages [paper2vec]: executing diffoscope
+[2024-04-22 00:46:10] INFO root fetch - processPackages [paper2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2vec-0.4.tar.gz tmp/paper2vec-0.5.tar.gz --markdown 20240422/p/paper2vec/0.4-0.5/README.md --exclude *.pyd
+[2024-04-22 00:46:10] INFO root fetch - processPackages [django-includecontents]: Downloading https://files.pythonhosted.org/packages/1f/84/f9248ea89c5a3ab8500a04f44f3a7a81ffb09376d8ae7aca6a6df2c721d8/django_includecontents-0.6.2.tar.gz
+[2024-04-22 00:46:10] INFO root fetch - processPackages [django-includecontents]: executing diffoscope
+[2024-04-22 00:46:10] INFO root fetch - processPackages [django-includecontents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_includecontents-0.6.1.tar.gz tmp/django_includecontents-0.6.2.tar.gz --markdown 20240422/d/django-includecontents/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-22 00:46:11] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-0.4.tar.gz]
+[2024-04-22 00:46:11] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-0.5.tar.gz]
+[2024-04-22 00:46:11] INFO root fetch - main [MainThread]: End processing [paper2vec]: success
+[2024-04-22 00:46:11] INFO root fetch - processPackages [techmax-energiez-x23176458]: Remove: archive file [/home/abi/fetcher/tmp/techmax_energiez_x23176458-0.0.4.tar.gz]
+[2024-04-22 00:46:11] INFO root fetch - processPackages [techmax-energiez-x23176458]: Remove: archive file [/home/abi/fetcher/tmp/techmax_energiez_x23176458-0.0.5.tar.gz]
+[2024-04-22 00:46:11] INFO root fetch - main [MainThread]: End processing [techmax-energiez-x23176458]: success
+[2024-04-22 00:46:11] INFO root fetch - processPackages [django-includecontents]: Remove: archive file [/home/abi/fetcher/tmp/django_includecontents-0.6.1.tar.gz]
+[2024-04-22 00:46:11] INFO root fetch - processPackages [django-includecontents]: Remove: archive file [/home/abi/fetcher/tmp/django_includecontents-0.6.2.tar.gz]
+[2024-04-22 00:46:11] INFO root fetch - main [MainThread]: End processing [django-includecontents]: success
+[2024-04-22 00:46:11] INFO root fetch - main [MainThread]: Store serial: [22870254]
