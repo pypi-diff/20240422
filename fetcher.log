@@ -531,3 +531,36 @@
 [2024-04-22 00:26:40] INFO root fetch - processPackages [anywidget]: Remove: archive file [/home/abi/fetcher/tmp/anywidget-0.9.9.tar.gz]
 [2024-04-22 00:26:40] INFO root fetch - main [MainThread]: End processing [anywidget]: success
 [2024-04-22 00:26:40] INFO root fetch - main [MainThread]: Store serial: [22870192]
+[2024-04-22 00:28:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870192]
+[2024-04-22 00:28:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 00:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twitter-api-client
+[2024-04-22 00:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai-messages-token-helper
+[2024-04-22 00:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-databases
+[2024-04-22 00:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: connectome-interpreter
+[2024-04-22 00:28:49] WARNING root fetch - processPackages [openai-messages-token-helper]: Skipping, unable to determine old version
+[2024-04-22 00:28:49] INFO root fetch - main [MainThread]: End processing [openai-messages-token-helper] error
+[2024-04-22 00:28:49] INFO root fetch - processPackages [pytest-databases]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-22 00:28:49] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.5.0] Old Version: [1.4.1]
+[2024-04-22 00:28:49] INFO root fetch - processPackages [twitter-api-client]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-22 00:28:49] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/92/7b/17905c12abde62c7e94a2d2085e4ff34b01cb5adcadb5dc58fea4dbee01c/connectome_interpreter-1.4.1.tar.gz
+[2024-04-22 00:28:49] INFO root fetch - processPackages [pytest-databases]: Downloading https://files.pythonhosted.org/packages/62/d3/35dcfc4cc1227ebf07a9e4fe8567208134b609ff0114f9d4d05642ae7410/pytest_databases-0.4.1.tar.gz
+[2024-04-22 00:28:49] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/6d/c9/1d547e8da64fdc6c40cf41bfcd04bab1dc66b8b77d10c444ff66c5a904dc/twitter-api-client-0.9.8.tar.gz
+[2024-04-22 00:28:49] INFO root fetch - processPackages [pytest-databases]: Downloading https://files.pythonhosted.org/packages/e3/db/ef12ed0836cc4d5528945a1c87c41c13ebff9adb17f0b85d252ca20dbbf4/pytest_databases-0.5.0.tar.gz
+[2024-04-22 00:28:49] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/06/d2/0f4223f6aa311945368ce2e0758ffaab5edaf4cf279eb0c324ccb0d27d32/connectome_interpreter-1.5.0.tar.gz
+[2024-04-22 00:28:50] INFO root fetch - processPackages [pytest-databases]: executing diffoscope
+[2024-04-22 00:28:50] INFO root fetch - processPackages [pytest-databases]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_databases-0.4.1.tar.gz tmp/pytest_databases-0.5.0.tar.gz --markdown 20240422/p/pytest-databases/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-22 00:28:50] INFO root fetch - processPackages [twitter-api-client]: Downloading https://files.pythonhosted.org/packages/01/72/7a27249d90e3f2e1c268ed5863305cd0c3a1970bb7a1b645b17053605afe/twitter-api-client-0.9.9.tar.gz
+[2024-04-22 00:28:50] INFO root fetch - processPackages [twitter-api-client]: executing diffoscope
+[2024-04-22 00:28:50] INFO root fetch - processPackages [twitter-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter-api-client-0.9.8.tar.gz tmp/twitter-api-client-0.9.9.tar.gz --markdown 20240422/t/twitter-api-client/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-22 00:28:50] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-04-22 00:28:50] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.4.1.tar.gz tmp/connectome_interpreter-1.5.0.tar.gz --markdown 20240422/c/connectome-interpreter/1.4.1-1.5.0/README.md --exclude *.pyd
+[2024-04-22 00:28:50] INFO root fetch - processPackages [twitter-api-client]: Remove: archive file [/home/abi/fetcher/tmp/twitter-api-client-0.9.8.tar.gz]
+[2024-04-22 00:28:50] INFO root fetch - processPackages [twitter-api-client]: Remove: archive file [/home/abi/fetcher/tmp/twitter-api-client-0.9.9.tar.gz]
+[2024-04-22 00:28:50] INFO root fetch - main [MainThread]: End processing [twitter-api-client]: success
+[2024-04-22 00:28:50] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.4.1.tar.gz]
+[2024-04-22 00:28:50] INFO root fetch - processPackages [pytest-databases]: Remove: archive file [/home/abi/fetcher/tmp/pytest_databases-0.5.0.tar.gz]
+[2024-04-22 00:28:50] INFO root fetch - main [MainThread]: End processing [pytest-databases]: success
+[2024-04-22 00:28:50] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.4.1.tar.gz]
+[2024-04-22 00:28:50] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.5.0.tar.gz]
+[2024-04-22 00:28:50] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-04-22 00:28:50] INFO root fetch - main [MainThread]: Store serial: [22870206]
