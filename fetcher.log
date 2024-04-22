@@ -7535,3 +7535,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:16:42] INFO root fetch - processPackages [ramodels]: Remove: archive file [/home/abi/fetcher/tmp/ramodels-9.7.3.tar.gz]
 [2024-04-22 09:16:42] INFO root fetch - main [MainThread]: End processing [ramodels]: success
 [2024-04-22 09:16:42] INFO root fetch - main [MainThread]: Store serial: [22873007]
+[2024-04-22 09:18:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873007]
+[2024-04-22 09:18:51] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deathdaily
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ansible-creator
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-img-optimizer
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mosqito
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-gshisbanner
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tf-hub-nightly
+[2024-04-22 09:18:51] INFO root fetch - processPackages [django-img-optimizer]: New version: [1.0] Old Version: [0.1]
+[2024-04-22 09:18:51] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ansible-creator]: New version: [24.4.2] Old Version: [24.4.1]
+[2024-04-22 09:18:51] INFO root fetch - processPackages [django-img-optimizer]: Downloading https://files.pythonhosted.org/packages/6b/3b/170480a340e2203c272902647769cc5ab4f31ea8440456287495329c67b8/django_img_optimizer-0.1.tar.gz
+[2024-04-22 09:18:51] INFO root fetch - processPackages [deathdaily]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-22 09:18:51] INFO root fetch - processPackages [mosqito]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-22 09:18:51] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Downloading https://files.pythonhosted.org/packages/d8/3a/1ce28fd412bef32d69e9b504a60f2127a02a06faf1b9e82609d3ef8e5625/nonebot_plugin_gshisbanner-1.3.0.tar.gz
+[2024-04-22 09:18:51] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-22 09:18:51] INFO root fetch - processPackages [ansible-creator]: Downloading https://files.pythonhosted.org/packages/f1/90/7a6e58d2c702ec74e2f5397fa62346a2cd82a8355f370f95498640b9fa52/ansible-creator-24.4.1.tar.gz
+[2024-04-22 09:18:51] INFO root fetch - processPackages [deathdaily]: Downloading https://files.pythonhosted.org/packages/09/21/916b3b92e010a73f9085c6d70da28ea508b5b32cc13343fe74eebb572251/deathdaily-0.1.5.tar.gz
+[2024-04-22 09:18:51] INFO root fetch - processPackages [mosqito]: Downloading https://files.pythonhosted.org/packages/27/22/d2b8583ce0a6081993ac48b82cd91b042206e5f5f2a5a25c1bfeecb3b05f/mosqito-1.2.0.tar.gz
+[2024-04-22 09:18:51] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-22 09:18:52] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Downloading https://files.pythonhosted.org/packages/64/c1/e96cad0c61c4572b39c3a8ea5ec3dcaa24f4178e4d23d6efcc8c9bdd8d7a/nonebot_plugin_gshisbanner-1.3.1.tar.gz
+[2024-04-22 09:18:52] INFO root fetch - processPackages [django-img-optimizer]: Downloading https://files.pythonhosted.org/packages/3e/90/4f48aafbefe451d6558b11729dfae1ccc2e27a57bfaf314db77d7646a4de/django_img_optimizer-1.0.tar.gz
+[2024-04-22 09:18:52] INFO root fetch - processPackages [deathdaily]: Downloading https://files.pythonhosted.org/packages/91/14/80e15eb6a5a8b4a98c0b56e6905061de39005fd1424c6490020397787f67/deathdaily-0.1.6.tar.gz
+[2024-04-22 09:18:52] INFO root fetch - processPackages [mosqito]: Downloading https://files.pythonhosted.org/packages/91/a1/e3e210dd7669ed7a3a35e89600821d555f4ae203d53b7b8b653882a52bcc/mosqito-1.2.1.tar.gz
+[2024-04-22 09:18:52] INFO root fetch - processPackages [django-img-optimizer]: executing diffoscope
+[2024-04-22 09:18:52] INFO root fetch - processPackages [django-img-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_img_optimizer-0.1.tar.gz tmp/django_img_optimizer-1.0.tar.gz --markdown 20240422/d/django-img-optimizer/0.1-1.0/README.md --exclude *.pyd
+[2024-04-22 09:18:52] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-22 09:18:52] INFO root fetch - processPackages [deathdaily]: executing diffoscope
+[2024-04-22 09:18:52] INFO root fetch - processPackages [deathdaily]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deathdaily-0.1.5.tar.gz tmp/deathdaily-0.1.6.tar.gz --markdown 20240422/d/deathdaily/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-22 09:18:52] INFO root fetch - processPackages [mosqito]: executing diffoscope
+[2024-04-22 09:18:52] INFO root fetch - processPackages [mosqito]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosqito-1.2.0.tar.gz tmp/mosqito-1.2.1.tar.gz --markdown 20240422/m/mosqito/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-22 09:18:52] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-22 09:18:52] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240422/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-04-22 09:18:52] INFO root fetch - processPackages [django-img-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/django_img_optimizer-0.1.tar.gz]
+[2024-04-22 09:18:52] INFO root fetch - processPackages [django-img-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/django_img_optimizer-1.0.tar.gz]
+[2024-04-22 09:18:52] INFO root fetch - main [MainThread]: End processing [django-img-optimizer]: success
+[2024-04-22 09:18:53] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: executing diffoscope
+[2024-04-22 09:18:53] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_gshisbanner-1.3.0.tar.gz tmp/nonebot_plugin_gshisbanner-1.3.1.tar.gz --markdown 20240422/n/nonebot-plugin-gshisbanner/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-22 09:18:53] INFO root fetch - processPackages [deathdaily]: Remove: archive file [/home/abi/fetcher/tmp/deathdaily-0.1.5.tar.gz]
+[2024-04-22 09:18:53] INFO root fetch - processPackages [deathdaily]: Remove: archive file [/home/abi/fetcher/tmp/deathdaily-0.1.6.tar.gz]
+[2024-04-22 09:18:53] INFO root fetch - main [MainThread]: End processing [deathdaily]: success
+[2024-04-22 09:18:53] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-22 09:18:53] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-22 09:18:53] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-22 09:18:53] INFO root fetch - processPackages [ansible-creator]: Downloading https://files.pythonhosted.org/packages/3f/02/d9db9f7c8745068c1473294339e44b627473063453013b02b8ecdb980f14/ansible_creator-24.4.2.tar.gz
+[2024-04-22 09:18:53] INFO root fetch - processPackages [mosqito]: Remove: archive file [/home/abi/fetcher/tmp/mosqito-1.2.0.tar.gz]
+[2024-04-22 09:18:53] INFO root fetch - processPackages [mosqito]: Remove: archive file [/home/abi/fetcher/tmp/mosqito-1.2.1.tar.gz]
+[2024-04-22 09:18:53] INFO root fetch - main [MainThread]: End processing [mosqito]: success
+[2024-04-22 09:18:53] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_gshisbanner-1.3.0.tar.gz]
+[2024-04-22 09:18:53] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_gshisbanner-1.3.1.tar.gz]
+[2024-04-22 09:18:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gshisbanner]: success
+[2024-04-22 09:18:55] INFO root fetch - processPackages [ansible-creator]: executing diffoscope
+[2024-04-22 09:18:55] INFO root fetch - processPackages [ansible-creator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible-creator-24.4.1.tar.gz tmp/ansible_creator-24.4.2.tar.gz --markdown 20240422/a/ansible-creator/24.4.1-24.4.2/README.md --exclude *.pyd
+[2024-04-22 09:18:56] INFO root fetch - processPackages [ansible-creator]: Remove: archive file [/home/abi/fetcher/tmp/ansible-creator-24.4.1.tar.gz]
+[2024-04-22 09:18:56] INFO root fetch - processPackages [ansible-creator]: Remove: archive file [/home/abi/fetcher/tmp/ansible_creator-24.4.2.tar.gz]
+[2024-04-22 09:18:56] INFO root fetch - main [MainThread]: End processing [ansible-creator]: success
+[2024-04-22 09:18:56] INFO root fetch - main [MainThread]: Store serial: [22873025]
