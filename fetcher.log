@@ -7849,3 +7849,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:36:24] INFO root fetch - processPackages [sunholo]: Remove: archive file [/home/abi/fetcher/tmp/sunholo-0.8.9.tar.gz]
 [2024-04-22 09:36:24] INFO root fetch - main [MainThread]: End processing [sunholo]: success
 [2024-04-22 09:36:24] INFO root fetch - main [MainThread]: Store serial: [22873150]
+[2024-04-22 09:38:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873150]
+[2024-04-22 09:38:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 09:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rank-torrent-name
+[2024-04-22 09:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DLMS-SPODES-client
+[2024-04-22 09:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zonesmart-utils-fork
+[2024-04-22 09:38:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: db-cache-manager
+[2024-04-22 09:38:33] INFO root fetch - processPackages [zonesmart-utils-fork]: New version: [0.5.9.9] Old Version: [0.5.9.8]
+[2024-04-22 09:38:33] INFO root fetch - processPackages [rank-torrent-name]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-22 09:38:33] INFO root fetch - processPackages [db-cache-manager]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-22 09:38:33] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/1f/3c/039c94473127564e1d61c86469dc142a7a89988f07bba21541fea00682d5/zonesmart-utils-fork-0.5.9.8.tar.gz
+[2024-04-22 09:38:33] INFO root fetch - processPackages [DLMS-SPODES-client]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-04-22 09:38:33] INFO root fetch - processPackages [rank-torrent-name]: Downloading https://files.pythonhosted.org/packages/55/6a/185494bfe23e8a2c4c83c4cf90c8435e7a3836c0c6ded4db899834e269a9/rank_torrent_name-0.2.8.tar.gz
+[2024-04-22 09:38:33] INFO root fetch - processPackages [DLMS-SPODES-client]: Downloading https://files.pythonhosted.org/packages/37/06/b75b97d416a03b6029eea7be7f81f962530d9e9f46a10996379570f5d2b4/DLMS_SPODES_client-0.8.4.tar.gz
+[2024-04-22 09:38:33] INFO root fetch - processPackages [db-cache-manager]: Downloading https://files.pythonhosted.org/packages/a8/97/8dad52f56a620d48f78d7be94f4f7bcccb522099b224e963f728460f9d31/db_cache_manager-0.1.2.tar.gz
+[2024-04-22 09:38:34] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/c7/9f/2ff32de4eacc484eb5a9007534d13156a1b1a1a9c62233775741db20c020/zonesmart-utils-fork-0.5.9.9.tar.gz
+[2024-04-22 09:38:34] INFO root fetch - processPackages [DLMS-SPODES-client]: Downloading https://files.pythonhosted.org/packages/7b/95/dc999d7c4215a29745cd3ce50b490254b60b4f4f43b0decdd93a17886151/DLMS_SPODES_client-0.8.5.tar.gz
+[2024-04-22 09:38:34] INFO root fetch - processPackages [zonesmart-utils-fork]: executing diffoscope
+[2024-04-22 09:38:34] INFO root fetch - processPackages [zonesmart-utils-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonesmart-utils-fork-0.5.9.8.tar.gz tmp/zonesmart-utils-fork-0.5.9.9.tar.gz --markdown 20240422/z/zonesmart-utils-fork/0.5.9.8-0.5.9.9/README.md --exclude *.pyd
+[2024-04-22 09:38:34] INFO root fetch - processPackages [rank-torrent-name]: Downloading https://files.pythonhosted.org/packages/58/da/9bd788cb38b6ae67089397a2537549bc66b4fe0b60be0af6bea97b30ab99/rank_torrent_name-0.2.9.tar.gz
+[2024-04-22 09:38:34] INFO root fetch - processPackages [db-cache-manager]: Downloading https://files.pythonhosted.org/packages/1c/c5/3f75667afa8be5e32f5e859e34cd4472d8371f4cea1fc5d950bfcce7e2ca/db_cache_manager-0.1.3.tar.gz
+[2024-04-22 09:38:34] INFO root fetch - processPackages [DLMS-SPODES-client]: executing diffoscope
+[2024-04-22 09:38:34] INFO root fetch - processPackages [DLMS-SPODES-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLMS_SPODES_client-0.8.4.tar.gz tmp/DLMS_SPODES_client-0.8.5.tar.gz --markdown 20240422/D/DLMS-SPODES-client/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-04-22 09:38:34] INFO root fetch - processPackages [rank-torrent-name]: executing diffoscope
+[2024-04-22 09:38:34] INFO root fetch - processPackages [rank-torrent-name]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rank_torrent_name-0.2.8.tar.gz tmp/rank_torrent_name-0.2.9.tar.gz --markdown 20240422/r/rank-torrent-name/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-22 09:38:34] INFO root fetch - processPackages [db-cache-manager]: executing diffoscope
+[2024-04-22 09:38:34] INFO root fetch - processPackages [db-cache-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db_cache_manager-0.1.2.tar.gz tmp/db_cache_manager-0.1.3.tar.gz --markdown 20240422/d/db-cache-manager/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-22 09:38:35] INFO root fetch - processPackages [db-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/db_cache_manager-0.1.2.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - processPackages [db-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/db_cache_manager-0.1.3.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - main [MainThread]: End processing [db-cache-manager]: success
+[2024-04-22 09:38:35] INFO root fetch - processPackages [DLMS-SPODES-client]: Remove: archive file [/home/abi/fetcher/tmp/DLMS_SPODES_client-0.8.4.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - processPackages [DLMS-SPODES-client]: Remove: archive file [/home/abi/fetcher/tmp/DLMS_SPODES_client-0.8.5.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - main [MainThread]: End processing [DLMS-SPODES-client]: success
+[2024-04-22 09:38:35] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.8.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.9.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
+[2024-04-22 09:38:35] INFO root fetch - processPackages [rank-torrent-name]: Remove: archive file [/home/abi/fetcher/tmp/rank_torrent_name-0.2.8.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - processPackages [rank-torrent-name]: Remove: archive file [/home/abi/fetcher/tmp/rank_torrent_name-0.2.9.tar.gz]
+[2024-04-22 09:38:35] INFO root fetch - main [MainThread]: End processing [rank-torrent-name]: success
+[2024-04-22 09:38:35] INFO root fetch - main [MainThread]: Store serial: [22873162]
