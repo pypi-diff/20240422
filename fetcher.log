@@ -1470,3 +1470,63 @@
 [2024-04-22 02:15:20] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch-ignite-0.6.0.dev20240421.tar.gz]
 [2024-04-22 02:15:20] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
 [2024-04-22 02:15:20] INFO root fetch - main [MainThread]: Store serial: [22870497]
+[2024-04-22 02:17:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870497]
+[2024-04-22 02:17:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 02:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-tf-module-stack
+[2024-04-22 02:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SLAP2-UTILS
+[2024-04-22 02:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-04-22 02:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-img-optimizer
+[2024-04-22 02:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyobs-flipro
+[2024-04-22 02:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-04-22 02:17:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mystring
+[2024-04-22 02:17:28] INFO root fetch - processPackages [django-img-optimizer]: New version: [0.1] Old Version: [0.0]
+[2024-04-22 02:17:28] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-22 02:17:28] INFO root fetch - processPackages [pyobs-flipro]: New version: [1.1.0] Old Version: [1.0.4]
+[2024-04-22 02:17:28] INFO root fetch - processPackages [cdktf-tf-module-stack]: New version: [5.0.9] Old Version: [5.0.8]
+[2024-04-22 02:17:28] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-22 02:17:29] INFO root fetch - processPackages [mystring]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-22 02:17:29] WARNING root fetch - processPackages [SLAP2-UTILS]: Skipping, unable to determine old version
+[2024-04-22 02:17:29] INFO root fetch - main [MainThread]: End processing [SLAP2-UTILS] error
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdktf-tf-module-stack]: Downloading https://files.pythonhosted.org/packages/c1/d6/bcdb03cd6a1d878e00460831e6347159681b80373ee2f77adf41661e8719/cdktf-tf-module-stack-5.0.8.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/ee/51/bc7ca32da95c9226e843ce6ce68e5a48f942fb4548f764c61fff09b6df99/pyobs_flipro-1.0.4.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [django-img-optimizer]: Downloading https://files.pythonhosted.org/packages/fa/72/064cb1f049ed1de0b428230e93bff734da601b425ba117d94b5e188e8ffe/django_img_optimizer-0.0.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/88/05/d0d140db04c0b270b7380359ce66dc3b26477e6b13a36cd8ced2e0442041/mystring-0.2.98-py3-none-any.whl
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240422/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdktf-tf-module-stack]: Downloading https://files.pythonhosted.org/packages/af/b7/75603d995d5224ba49ee11765e757fab2ecf9e2a28e00a542ad9d8669ba4/cdktf-tf-module-stack-5.0.9.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [django-img-optimizer]: Downloading https://files.pythonhosted.org/packages/6b/3b/170480a340e2203c272902647769cc5ab4f31ea8440456287495329c67b8/django_img_optimizer-0.1.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240422/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-22 02:17:29] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/0d/dd/2d240529da68458a6ca8d82b69a00db33a6acacb868992c930db3cc17a32/pyobs_flipro-1.1.0.tar.gz
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdktf-tf-module-stack]: executing diffoscope
+[2024-04-22 02:17:29] INFO root fetch - processPackages [cdktf-tf-module-stack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-tf-module-stack-5.0.8.tar.gz tmp/cdktf-tf-module-stack-5.0.9.tar.gz --markdown 20240422/c/cdktf-tf-module-stack/5.0.8-5.0.9/README.md --exclude *.pyd
+[2024-04-22 02:17:29] INFO root fetch - processPackages [django-img-optimizer]: executing diffoscope
+[2024-04-22 02:17:29] INFO root fetch - processPackages [django-img-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_img_optimizer-0.0.tar.gz tmp/django_img_optimizer-0.1.tar.gz --markdown 20240422/d/django-img-optimizer/0.0-0.1/README.md --exclude *.pyd
+[2024-04-22 02:17:29] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/fa/f7/968c4dde1769f6b1b7f54bedafe67abf4ae2c5ff261eaed5f05032e85e87/mystring-0.2.99-py3-none-any.whl
+[2024-04-22 02:17:29] INFO root fetch - processPackages [pyobs-flipro]: executing diffoscope
+[2024-04-22 02:17:29] INFO root fetch - processPackages [pyobs-flipro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobs_flipro-1.0.4.tar.gz tmp/pyobs_flipro-1.1.0.tar.gz --markdown 20240422/p/pyobs-flipro/1.0.4-1.1.0/README.md --exclude *.pyd
+[2024-04-22 02:17:29] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2024-04-22 02:17:29] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.2.98-py3-none-any.whl.zip tmp/mystring-0.2.99-py3-none-any.whl.zip --markdown 20240422/m/mystring/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-04-22 02:17:30] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-04-22 02:17:30] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-04-22 02:17:30] INFO root fetch - processPackages [cdktf-tf-module-stack]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-tf-module-stack-5.0.8.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - processPackages [cdktf-tf-module-stack]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-tf-module-stack-5.0.9.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - main [MainThread]: End processing [cdktf-tf-module-stack]: success
+[2024-04-22 02:17:30] INFO root fetch - processPackages [django-img-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/django_img_optimizer-0.0.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - processPackages [django-img-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/django_img_optimizer-0.1.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - main [MainThread]: End processing [django-img-optimizer]: success
+[2024-04-22 02:17:30] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.98-py3-none-any.whl.zip]
+[2024-04-22 02:17:30] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.99-py3-none-any.whl.zip]
+[2024-04-22 02:17:30] INFO root fetch - main [MainThread]: End processing [mystring]: success
+[2024-04-22 02:17:30] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.0.4.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.1.0.tar.gz]
+[2024-04-22 02:17:30] INFO root fetch - main [MainThread]: End processing [pyobs-flipro]: success
+[2024-04-22 02:17:30] INFO root fetch - main [MainThread]: Store serial: [22870523]
