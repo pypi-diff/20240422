@@ -6673,3 +6673,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:29:09] INFO root fetch - processPackages [robotframework-parrot-dtmf]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_parrot_dtmf-1.0.1.tar.gz]
 [2024-04-22 08:29:09] INFO root fetch - main [MainThread]: End processing [robotframework-parrot-dtmf]: success
 [2024-04-22 08:29:09] INFO root fetch - main [MainThread]: Store serial: [22872671]
+[2024-04-22 08:31:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872671]
+[2024-04-22 08:31:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 08:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: daktari
+[2024-04-22 08:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cs.binary
+[2024-04-22 08:31:18] INFO root fetch - processPackages [cs.binary]: New version: [20240422] Old Version: [20240316]
+[2024-04-22 08:31:18] INFO root fetch - processPackages [daktari]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-22 08:31:18] INFO root fetch - processPackages [daktari]: Downloading https://files.pythonhosted.org/packages/80/e2/e763e02669b3c5003eab9a1d3f23a8c11ddea7b9843baca75d4a3f67dfd1/daktari-0.0.98.tar.gz
+[2024-04-22 08:31:18] INFO root fetch - processPackages [cs.binary]: Downloading https://files.pythonhosted.org/packages/50/00/ac8a2c2e7ad56f39fb62c5f6906f6c0ff957cdf1d5cc82de44e1a6fb3468/cs.binary-20240316.tar.gz
+[2024-04-22 08:31:18] INFO root fetch - processPackages [cs.binary]: Downloading https://files.pythonhosted.org/packages/65/64/ca2a6141c5a6ed53bcaadbb7c0a7b02643017b4d4386e5d9e5e121f35db3/cs.binary-20240422.tar.gz
+[2024-04-22 08:31:18] INFO root fetch - processPackages [daktari]: Downloading https://files.pythonhosted.org/packages/35/1f/9e7becfab4e84e6879ca6968ba9f3963734de77bebf086053003ea27839c/daktari-0.0.99.tar.gz
+[2024-04-22 08:31:19] INFO root fetch - processPackages [cs.binary]: executing diffoscope
+[2024-04-22 08:31:19] INFO root fetch - processPackages [cs.binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.binary-20240316.tar.gz tmp/cs.binary-20240422.tar.gz --markdown 20240422/c/cs.binary/20240316-20240422/README.md --exclude *.pyd
+[2024-04-22 08:31:19] INFO root fetch - processPackages [daktari]: executing diffoscope
+[2024-04-22 08:31:19] INFO root fetch - processPackages [daktari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/daktari-0.0.98.tar.gz tmp/daktari-0.0.99.tar.gz --markdown 20240422/d/daktari/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-22 08:31:19] INFO root fetch - processPackages [cs.binary]: Remove: archive file [/home/abi/fetcher/tmp/cs.binary-20240316.tar.gz]
+[2024-04-22 08:31:19] INFO root fetch - processPackages [cs.binary]: Remove: archive file [/home/abi/fetcher/tmp/cs.binary-20240422.tar.gz]
+[2024-04-22 08:31:19] INFO root fetch - main [MainThread]: End processing [cs.binary]: success
+[2024-04-22 08:31:19] INFO root fetch - processPackages [daktari]: Remove: archive file [/home/abi/fetcher/tmp/daktari-0.0.98.tar.gz]
+[2024-04-22 08:31:19] INFO root fetch - processPackages [daktari]: Remove: archive file [/home/abi/fetcher/tmp/daktari-0.0.99.tar.gz]
+[2024-04-22 08:31:19] INFO root fetch - main [MainThread]: End processing [daktari]: success
+[2024-04-22 08:31:19] INFO root fetch - main [MainThread]: Store serial: [22872677]
