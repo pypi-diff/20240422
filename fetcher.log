@@ -8314,3 +8314,75 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:03:26] INFO root fetch - processPackages [sourcedefender]: Remove: archive file [/home/abi/fetcher/tmp/sourcedefender-11.0.20.tar.gz]
 [2024-04-22 10:03:26] INFO root fetch - main [MainThread]: End processing [sourcedefender]: success
 [2024-04-22 10:03:26] INFO root fetch - main [MainThread]: Store serial: [22873794]
+[2024-04-22 10:05:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873794]
+[2024-04-22 10:05:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rdf-doctor
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: doc2tei-CERTIC
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-allowedsites-dynamic
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GrainLearning
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: langfun
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stable-baselines3
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: minet
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SuRFM
+[2024-04-22 10:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hustmirror-cli
+[2024-04-22 10:05:41] INFO root fetch - processPackages [stable-baselines3]: New version: [2.3.0a5] Old Version: [2.3.0a4]
+[2024-04-22 10:05:41] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240421] Old Version: [0.0.2.dev20240420]
+[2024-04-22 10:05:41] INFO root fetch - processPackages [rdf-doctor]: New version: [1.1.0rc4] Old Version: [1.1.0rc3]
+[2024-04-22 10:05:41] INFO root fetch - processPackages [doc2tei-CERTIC]: New version: [0.0.95] Old Version: [0.0.94]
+[2024-04-22 10:05:41] INFO root fetch - processPackages [SuRFM]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 10:05:41] INFO root fetch - processPackages [GrainLearning]: New version: [2.0.3] Old Version: [2.0.1]
+[2024-04-22 10:05:41] WARNING root fetch - processPackages [django-allowedsites-dynamic]: Skipping, unable to determine old version
+[2024-04-22 10:05:41] INFO root fetch - main [MainThread]: End processing [django-allowedsites-dynamic] error
+[2024-04-22 10:05:41] WARNING root fetch - processPackages [hustmirror-cli]: Skipping, unable to determine old version
+[2024-04-22 10:05:41] INFO root fetch - main [MainThread]: End processing [hustmirror-cli] error
+[2024-04-22 10:05:41] INFO root fetch - processPackages [minet]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-22 10:05:41] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/86/b0/979b9195da0797aa9240ba2ccf9ec1ad1c8d93e8fe026c311e3d418096e5/langfun-0.0.2.dev20240420.tar.gz
+[2024-04-22 10:05:41] INFO root fetch - processPackages [stable-baselines3]: Downloading https://files.pythonhosted.org/packages/17/44/c83be1e6b183158162570b7ebb19b26f8be4bb572bc539fdb74167421391/stable_baselines3-2.3.0a4.tar.gz
+[2024-04-22 10:05:41] INFO root fetch - processPackages [rdf-doctor]: Downloading https://files.pythonhosted.org/packages/09/13/1125a1b9c9c02e4eb603a0cec4b072d46cf6133841ced394d84d4ce17cb1/rdf_doctor-1.1.0rc3-py3-none-any.whl
+[2024-04-22 10:05:41] INFO root fetch - processPackages [doc2tei-CERTIC]: Downloading https://files.pythonhosted.org/packages/c8/89/76163d9ce20802491bd00c677006307b3d7f5aa9951b75c369b68f2e8751/doc2tei-CERTIC-0.0.94.tar.gz
+[2024-04-22 10:05:41] INFO root fetch - processPackages [GrainLearning]: Downloading https://files.pythonhosted.org/packages/32/ae/3b11a98cb56acc3dd880b9df0872dda6fae004208d96f7acb2544566eb94/grainlearning-2.0.1.tar.gz
+[2024-04-22 10:05:41] INFO root fetch - processPackages [SuRFM]: Downloading https://files.pythonhosted.org/packages/ca/6c/601fc7c84f84d62e5060e7adf19c95d7bb209ad9c405fda1decf13c40b81/SuRFM-0.1.1.tar.gz
+[2024-04-22 10:05:42] INFO root fetch - processPackages [minet]: Downloading https://files.pythonhosted.org/packages/f2/b7/28b85cc2d601954ea74feb4004a67eebadc3a008eb9e3299f6c860c35fc3/minet-2.0.1.tar.gz
+[2024-04-22 10:05:42] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/e4/46/a830687e3a6a7192ab5fe0e27b12eca604c62519cff11915cdf4512bfa54/langfun-0.0.2.dev20240421.tar.gz
+[2024-04-22 10:05:42] INFO root fetch - processPackages [stable-baselines3]: Downloading https://files.pythonhosted.org/packages/4e/a7/4b265377a434d1c0c37e53201b645c73da33d8bf9b64f28b079ca4894fdb/stable_baselines3-2.3.0a5.tar.gz
+[2024-04-22 10:05:42] INFO root fetch - processPackages [rdf-doctor]: Downloading https://files.pythonhosted.org/packages/38/ee/d85aef536dbea85ec6c2011bc6ecfa398b61c5f85ac7aa99d65f20b89c80/rdf_doctor-1.1.0rc4-py3-none-any.whl
+[2024-04-22 10:05:42] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-04-22 10:05:42] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240420.tar.gz tmp/langfun-0.0.2.dev20240421.tar.gz --markdown 20240422/l/langfun/0.0.2.dev20240420-0.0.2.dev20240421/README.md --exclude *.pyd
+[2024-04-22 10:05:42] INFO root fetch - processPackages [SuRFM]: Downloading https://files.pythonhosted.org/packages/4f/1f/680ffc24e41a5027f7ce0e619a365a2bdadfa8d5f8522252fd47df106348/SuRFM-0.1.2-py3-none-any.whl
+[2024-04-22 10:05:42] INFO root fetch - processPackages [rdf-doctor]: executing diffoscope
+[2024-04-22 10:05:42] INFO root fetch - processPackages [rdf-doctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdf_doctor-1.1.0rc3-py3-none-any.whl.zip tmp/rdf_doctor-1.1.0rc4-py3-none-any.whl.zip --markdown 20240422/r/rdf-doctor/1.1.0rc3-1.1.0rc4/README.md --exclude *.pyd
+[2024-04-22 10:05:42] INFO root fetch - processPackages [stable-baselines3]: executing diffoscope
+[2024-04-22 10:05:42] INFO root fetch - processPackages [stable-baselines3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stable_baselines3-2.3.0a4.tar.gz tmp/stable_baselines3-2.3.0a5.tar.gz --markdown 20240422/s/stable-baselines3/2.3.0a4-2.3.0a5/README.md --exclude *.pyd
+[2024-04-22 10:05:42] INFO root fetch - processPackages [GrainLearning]: Downloading https://files.pythonhosted.org/packages/7c/9a/7d1d1b333d085bf24a59cb3b3e921ec88a395ae6260343bae7d73ce5f5db/grainlearning-2.0.3.tar.gz
+[2024-04-22 10:05:42] INFO root fetch - processPackages [minet]: Downloading https://files.pythonhosted.org/packages/70/33/307d9a2203ce14dbf07f87cc035714de56e4feb7eaaf39963a1d55d67410/minet-2.0.2.tar.gz
+[2024-04-22 10:05:42] INFO root fetch - processPackages [doc2tei-CERTIC]: Downloading https://files.pythonhosted.org/packages/4b/7f/cc958997e278ca94bc7411c4327f2196b3426c71b52389701d24e1f4a8d7/doc2tei-CERTIC-0.0.95.tar.gz
+[2024-04-22 10:05:42] INFO root fetch - processPackages [SuRFM]: executing diffoscope
+[2024-04-22 10:05:42] INFO root fetch - processPackages [SuRFM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SuRFM-0.1.1.tar.gz tmp/SuRFM-0.1.2-py3-none-any.whl.zip --markdown 20240422/S/SuRFM/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 10:05:42] INFO root fetch - processPackages [minet]: executing diffoscope
+[2024-04-22 10:05:42] INFO root fetch - processPackages [minet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minet-2.0.1.tar.gz tmp/minet-2.0.2.tar.gz --markdown 20240422/m/minet/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-04-22 10:05:42] INFO root fetch - processPackages [GrainLearning]: executing diffoscope
+[2024-04-22 10:05:42] INFO root fetch - processPackages [GrainLearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grainlearning-2.0.1.tar.gz tmp/grainlearning-2.0.3.tar.gz --markdown 20240422/G/GrainLearning/2.0.1-2.0.3/README.md --exclude *.pyd
+[2024-04-22 10:05:42] INFO root fetch - processPackages [doc2tei-CERTIC]: executing diffoscope
+[2024-04-22 10:05:42] INFO root fetch - processPackages [doc2tei-CERTIC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doc2tei-CERTIC-0.0.94.tar.gz tmp/doc2tei-CERTIC-0.0.95.tar.gz --markdown 20240422/d/doc2tei-CERTIC/0.0.94-0.0.95/README.md --exclude *.pyd
+[2024-04-22 10:05:43] INFO root fetch - processPackages [rdf-doctor]: Remove: archive file [/home/abi/fetcher/tmp/rdf_doctor-1.1.0rc3-py3-none-any.whl.zip]
+[2024-04-22 10:05:43] INFO root fetch - processPackages [rdf-doctor]: Remove: archive file [/home/abi/fetcher/tmp/rdf_doctor-1.1.0rc4-py3-none-any.whl.zip]
+[2024-04-22 10:05:43] INFO root fetch - main [MainThread]: End processing [rdf-doctor]: success
+[2024-04-22 10:05:43] INFO root fetch - processPackages [SuRFM]: Remove: archive file [/home/abi/fetcher/tmp/SuRFM-0.1.1.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - processPackages [SuRFM]: Remove: archive file [/home/abi/fetcher/tmp/SuRFM-0.1.2-py3-none-any.whl.zip]
+[2024-04-22 10:05:43] INFO root fetch - main [MainThread]: End processing [SuRFM]: success
+[2024-04-22 10:05:43] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240420.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240421.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-04-22 10:05:43] INFO root fetch - processPackages [stable-baselines3]: Remove: archive file [/home/abi/fetcher/tmp/stable_baselines3-2.3.0a4.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - processPackages [stable-baselines3]: Remove: archive file [/home/abi/fetcher/tmp/stable_baselines3-2.3.0a5.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - main [MainThread]: End processing [stable-baselines3]: success
+[2024-04-22 10:05:43] INFO root fetch - processPackages [GrainLearning]: Remove: archive file [/home/abi/fetcher/tmp/grainlearning-2.0.1.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - processPackages [GrainLearning]: Remove: archive file [/home/abi/fetcher/tmp/grainlearning-2.0.3.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - main [MainThread]: End processing [GrainLearning]: success
+[2024-04-22 10:05:43] INFO root fetch - processPackages [minet]: Remove: archive file [/home/abi/fetcher/tmp/minet-2.0.1.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - processPackages [minet]: Remove: archive file [/home/abi/fetcher/tmp/minet-2.0.2.tar.gz]
+[2024-04-22 10:05:43] INFO root fetch - main [MainThread]: End processing [minet]: success
+[2024-04-22 10:05:44] INFO root fetch - processPackages [doc2tei-CERTIC]: Remove: archive file [/home/abi/fetcher/tmp/doc2tei-CERTIC-0.0.94.tar.gz]
+[2024-04-22 10:05:44] INFO root fetch - processPackages [doc2tei-CERTIC]: Remove: archive file [/home/abi/fetcher/tmp/doc2tei-CERTIC-0.0.95.tar.gz]
+[2024-04-22 10:05:44] INFO root fetch - main [MainThread]: End processing [doc2tei-CERTIC]: success
+[2024-04-22 10:05:44] INFO root fetch - main [MainThread]: Store serial: [22873827]
