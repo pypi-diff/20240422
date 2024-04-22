@@ -5484,3 +5484,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:20:29] INFO root fetch - processPackages [ts3l]: Remove: archive file [/home/abi/fetcher/tmp/ts3l-0.30.tar.gz]
 [2024-04-22 07:20:29] INFO root fetch - main [MainThread]: End processing [ts3l]: success
 [2024-04-22 07:20:29] INFO root fetch - main [MainThread]: Store serial: [22872223]
+[2024-04-22 07:22:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872223]
+[2024-04-22 07:22:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 07:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygerm
+[2024-04-22 07:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naluconfigs
+[2024-04-22 07:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: itk-elastix
+[2024-04-22 07:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sttn
+[2024-04-22 07:22:38] INFO root fetch - processPackages [pygerm]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 07:22:38] INFO root fetch - processPackages [naluconfigs]: New version: [13.8.1] Old Version: [13.8.0]
+[2024-04-22 07:22:38] INFO root fetch - processPackages [sttn]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 07:22:38] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/f7/24/8a481c435c0b18fb60c370763d848206ed877773f4a6e2f1857879032ff7/naluconfigs-13.8.0.tar.gz
+[2024-04-22 07:22:38] INFO root fetch - processPackages [pygerm]: Downloading https://files.pythonhosted.org/packages/a1/45/ca70d58d383d1e6292feff6eb6f27f901065352609e0312d12d4e9ff5bed/pygerm-0.0.1.tar.gz
+[2024-04-22 07:22:38] INFO root fetch - processPackages [itk-elastix]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-22 07:22:38] INFO root fetch - processPackages [sttn]: Downloading https://files.pythonhosted.org/packages/e3/b3/0007630aea6ebdc87c827ad3726adf0a008d8839f8f2ff770e5d1aaa7967/sttn-0.3.2.tar.gz
+[2024-04-22 07:22:38] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/a2/bc/633a57dae959c77bfa8be769853333ce8290c505772ba5eeaf905c28b8b8/naluconfigs-13.8.1.tar.gz
+[2024-04-22 07:22:38] INFO root fetch - processPackages [itk-elastix]: Downloading https://files.pythonhosted.org/packages/6e/f5/0de4c1f7ea7a6ecea34ac7303fe9424882723c867037f25a8d05eeb333a3/itk_elastix-0.8.0-cp39-cp39-win_amd64.whl
+[2024-04-22 07:22:39] INFO root fetch - processPackages [naluconfigs]: executing diffoscope
+[2024-04-22 07:22:39] INFO root fetch - processPackages [naluconfigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naluconfigs-13.8.0.tar.gz tmp/naluconfigs-13.8.1.tar.gz --markdown 20240422/n/naluconfigs/13.8.0-13.8.1/README.md --exclude *.pyd
+[2024-04-22 07:22:39] INFO root fetch - processPackages [pygerm]: Downloading https://files.pythonhosted.org/packages/d6/57/8cfdf8380f595b633a33c3e00a90025a2ec204a317f49c6c145dda28c9b4/pygerm-0.0.2.tar.gz
+[2024-04-22 07:22:39] INFO root fetch - processPackages [pygerm]: executing diffoscope
+[2024-04-22 07:22:39] INFO root fetch - processPackages [pygerm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygerm-0.0.1.tar.gz tmp/pygerm-0.0.2.tar.gz --markdown 20240422/p/pygerm/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 07:22:39] INFO root fetch - processPackages [sttn]: Downloading https://files.pythonhosted.org/packages/b2/ee/938a6a11561f1380673b8f14f53c4325c0d6d3c054d7d2033ab28f093ffc/sttn-0.3.3-py2.py3-none-any.whl
+[2024-04-22 07:22:39] INFO root fetch - processPackages [sttn]: executing diffoscope
+[2024-04-22 07:22:39] INFO root fetch - processPackages [sttn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sttn-0.3.2.tar.gz tmp/sttn-0.3.3-py2.py3-none-any.whl.zip --markdown 20240422/s/sttn/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 07:22:39] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.8.0.tar.gz]
+[2024-04-22 07:22:39] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.8.1.tar.gz]
+[2024-04-22 07:22:39] INFO root fetch - main [MainThread]: End processing [naluconfigs]: success
+[2024-04-22 07:22:40] INFO root fetch - processPackages [sttn]: Remove: archive file [/home/abi/fetcher/tmp/sttn-0.3.2.tar.gz]
+[2024-04-22 07:22:40] INFO root fetch - processPackages [sttn]: Remove: archive file [/home/abi/fetcher/tmp/sttn-0.3.3-py2.py3-none-any.whl.zip]
+[2024-04-22 07:22:40] INFO root fetch - main [MainThread]: End processing [sttn]: success
+[2024-04-22 07:22:40] INFO root fetch - processPackages [itk-elastix]: Downloading https://files.pythonhosted.org/packages/7a/41/4832fae79f88a83dc1722b6aba7e1c0a3c084dbfb15cfed44aa620d4d317/itk_elastix-0.9.0-cp39-cp39-win_amd64.whl
+[2024-04-22 07:22:41] INFO root fetch - processPackages [itk-elastix]: executing diffoscope
+[2024-04-22 07:22:41] INFO root fetch - processPackages [itk-elastix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itk_elastix-0.8.0-cp39-cp39-win_amd64.whl.zip tmp/itk_elastix-0.9.0-cp39-cp39-win_amd64.whl.zip --markdown 20240422/i/itk-elastix/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-22 07:22:42] INFO root fetch - processPackages [itk-elastix]: Remove: archive file [/home/abi/fetcher/tmp/itk_elastix-0.8.0-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 07:22:42] INFO root fetch - processPackages [itk-elastix]: Remove: archive file [/home/abi/fetcher/tmp/itk_elastix-0.9.0-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 07:22:42] INFO root fetch - main [MainThread]: End processing [itk-elastix]: success
+[2024-04-22 07:22:43] INFO root fetch - processPackages [pygerm]: Remove: archive file [/home/abi/fetcher/tmp/pygerm-0.0.1.tar.gz]
+[2024-04-22 07:22:43] INFO root fetch - processPackages [pygerm]: Remove: archive file [/home/abi/fetcher/tmp/pygerm-0.0.2.tar.gz]
+[2024-04-22 07:22:43] INFO root fetch - main [MainThread]: End processing [pygerm]: success
+[2024-04-22 07:22:43] INFO root fetch - main [MainThread]: Store serial: [22872236]
