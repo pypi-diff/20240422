@@ -6991,3 +6991,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:48:13] INFO root fetch - processPackages [UEVaultManager]: Remove: archive file [/home/abi/fetcher/tmp/UEVaultManager-1.9.5.tar.gz]
 [2024-04-22 08:48:13] INFO root fetch - main [MainThread]: End processing [UEVaultManager]: success
 [2024-04-22 08:48:13] INFO root fetch - main [MainThread]: Store serial: [22872775]
+[2024-04-22 08:50:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872775]
+[2024-04-22 08:50:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tsk-monster
+[2024-04-22 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-gshisbanner
+[2024-04-22 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphbin2
+[2024-04-22 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: property-utils
+[2024-04-22 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ropt
+[2024-04-22 08:50:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shadowsocks-alexforks
+[2024-04-22 08:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: color-stream
+[2024-04-22 08:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: urwid
+[2024-04-22 08:50:22] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:50:22] INFO root fetch - processPackages [property-utils]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-22 08:50:22] INFO root fetch - processPackages [ropt]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 08:50:22] WARNING root fetch - processPackages [color-stream]: Skipping, unable to determine old version
+[2024-04-22 08:50:22] INFO root fetch - main [MainThread]: End processing [color-stream] error
+[2024-04-22 08:50:22] WARNING root fetch - processPackages [shadowsocks-alexforks]: Skipping, unable to determine old version
+[2024-04-22 08:50:22] INFO root fetch - main [MainThread]: End processing [shadowsocks-alexforks] error
+[2024-04-22 08:50:22] WARNING root fetch - processPackages [graphbin2]: Skipping, unable to determine old version
+[2024-04-22 08:50:22] INFO root fetch - main [MainThread]: End processing [graphbin2] error
+[2024-04-22 08:50:22] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: New version: [1.3.0] Old Version: [1.2.5]
+[2024-04-22 08:50:22] INFO root fetch - processPackages [urwid]: New version: [2.6.9] Old Version: [2.6.8]
+[2024-04-22 08:50:22] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-22 08:50:22] INFO root fetch - processPackages [property-utils]: Downloading https://files.pythonhosted.org/packages/6f/08/d58ac5086255d66366453d482ec964421ffcfb71d6fa683106cd56b0f8b4/property-utils-0.2.1.tar.gz
+[2024-04-22 08:50:22] INFO root fetch - processPackages [ropt]: Downloading https://files.pythonhosted.org/packages/25/b9/b35be155d7f01095020af1c377298faacdceb7ae4f8778aa7e0e9a930ba5/ropt-0.1.1.tar.gz
+[2024-04-22 08:50:22] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Downloading https://files.pythonhosted.org/packages/80/b2/503a0b2aa2c0e7ce97a9d33ca60e51fe99850ed8fe4fe1c2b9c1d1fc13a5/nonebot_plugin_gshisbanner-1.2.5.tar.gz
+[2024-04-22 08:50:22] INFO root fetch - processPackages [urwid]: Downloading https://files.pythonhosted.org/packages/8d/c5/cf2a6947260600be7503ade31bcf83b6a0388d97e358707260ddca8a4ada/urwid-2.6.8.tar.gz
+[2024-04-22 08:50:22] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/bd/0d/76bc9f0c428722f67988b8db745d256aefb82e1f9e36269eee144c2705f1/tsk_monster-0.0.9.tar.gz
+[2024-04-22 08:50:23] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-22 08:50:23] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.8.tar.gz tmp/tsk_monster-0.0.9.tar.gz --markdown 20240422/t/tsk-monster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:50:23] INFO root fetch - processPackages [property-utils]: Downloading https://files.pythonhosted.org/packages/dd/28/277b8523458b50d9beadf68a8f0f01f9ab7f550d7309284a1966db5490c0/property_utils-0.2.2.tar.gz
+[2024-04-22 08:50:23] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Downloading https://files.pythonhosted.org/packages/d8/3a/1ce28fd412bef32d69e9b504a60f2127a02a06faf1b9e82609d3ef8e5625/nonebot_plugin_gshisbanner-1.3.0.tar.gz
+[2024-04-22 08:50:23] INFO root fetch - processPackages [ropt]: Downloading https://files.pythonhosted.org/packages/0e/7d/0819b3bd4c1ec3cc0b506f213d7fc0cc86006f7e7a794d261dc8afbbefc6/ropt-0.1.2.tar.gz
+[2024-04-22 08:50:23] INFO root fetch - processPackages [property-utils]: executing diffoscope
+[2024-04-22 08:50:23] INFO root fetch - processPackages [property-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/property-utils-0.2.1.tar.gz tmp/property_utils-0.2.2.tar.gz --markdown 20240422/p/property-utils/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-22 08:50:23] INFO root fetch - processPackages [urwid]: Downloading https://files.pythonhosted.org/packages/a0/59/efaa1084ba46194824de9db61d869f4dfc932fb8592aac7375a7ec7aff45/urwid-2.6.9.tar.gz
+[2024-04-22 08:50:23] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: executing diffoscope
+[2024-04-22 08:50:23] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_gshisbanner-1.2.5.tar.gz tmp/nonebot_plugin_gshisbanner-1.3.0.tar.gz --markdown 20240422/n/nonebot-plugin-gshisbanner/1.2.5-1.3.0/README.md --exclude *.pyd
+[2024-04-22 08:50:23] INFO root fetch - processPackages [ropt]: executing diffoscope
+[2024-04-22 08:50:23] INFO root fetch - processPackages [ropt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ropt-0.1.1.tar.gz tmp/ropt-0.1.2.tar.gz --markdown 20240422/r/ropt/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 08:50:23] INFO root fetch - processPackages [urwid]: executing diffoscope
+[2024-04-22 08:50:23] INFO root fetch - processPackages [urwid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urwid-2.6.8.tar.gz tmp/urwid-2.6.9.tar.gz --markdown 20240422/u/urwid/2.6.8-2.6.9/README.md --exclude *.pyd
+[2024-04-22 08:50:23] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.8.tar.gz]
+[2024-04-22 08:50:23] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.9.tar.gz]
+[2024-04-22 08:50:23] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-22 08:50:23] INFO root fetch - processPackages [property-utils]: Remove: archive file [/home/abi/fetcher/tmp/property-utils-0.2.1.tar.gz]
+[2024-04-22 08:50:23] INFO root fetch - processPackages [property-utils]: Remove: archive file [/home/abi/fetcher/tmp/property_utils-0.2.2.tar.gz]
+[2024-04-22 08:50:23] INFO root fetch - main [MainThread]: End processing [property-utils]: success
+[2024-04-22 08:50:24] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_gshisbanner-1.2.5.tar.gz]
+[2024-04-22 08:50:24] INFO root fetch - processPackages [nonebot-plugin-gshisbanner]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_gshisbanner-1.3.0.tar.gz]
+[2024-04-22 08:50:24] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gshisbanner]: success
+[2024-04-22 08:50:24] INFO root fetch - processPackages [ropt]: Remove: archive file [/home/abi/fetcher/tmp/ropt-0.1.1.tar.gz]
+[2024-04-22 08:50:24] INFO root fetch - processPackages [ropt]: Remove: archive file [/home/abi/fetcher/tmp/ropt-0.1.2.tar.gz]
+[2024-04-22 08:50:24] INFO root fetch - main [MainThread]: End processing [ropt]: success
+[2024-04-22 08:50:25] INFO root fetch - processPackages [urwid]: Remove: archive file [/home/abi/fetcher/tmp/urwid-2.6.8.tar.gz]
+[2024-04-22 08:50:25] INFO root fetch - processPackages [urwid]: Remove: archive file [/home/abi/fetcher/tmp/urwid-2.6.9.tar.gz]
+[2024-04-22 08:50:25] INFO root fetch - main [MainThread]: End processing [urwid]: success
+[2024-04-22 08:50:25] INFO root fetch - main [MainThread]: Store serial: [22872804]
