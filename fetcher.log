@@ -4880,3 +4880,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:43:23] INFO root fetch - processPackages [mergepythonclient]: Remove: archive file [/home/abi/fetcher/tmp/mergepythonclient-1.0.8.tar.gz]
 [2024-04-22 06:43:23] INFO root fetch - main [MainThread]: End processing [mergepythonclient]: success
 [2024-04-22 06:43:23] INFO root fetch - main [MainThread]: Store serial: [22871994]
+[2024-04-22 06:45:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871994]
+[2024-04-22 06:45:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 06:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: escaper-lite
+[2024-04-22 06:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: booklet
+[2024-04-22 06:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: idvpackage
+[2024-04-22 06:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runtool
+[2024-04-22 06:45:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: increff-runner
+[2024-04-22 06:45:31] INFO root fetch - processPackages [booklet]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 06:45:31] INFO root fetch - processPackages [booklet]: Downloading https://files.pythonhosted.org/packages/9d/09/1850d1db87fc6992bbcecfd80654fe28d36b6cb0d1d5f28e9261cb97c69d/booklet-0.1.8.tar.gz
+[2024-04-22 06:45:31] INFO root fetch - processPackages [runtool]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-22 06:45:31] INFO root fetch - processPackages [escaper-lite]: New version: [0.0.6] Old Version: [0.0.1]
+[2024-04-22 06:45:31] INFO root fetch - processPackages [increff-runner]: New version: [3.1.7] Old Version: [3.1.6]
+[2024-04-22 06:45:31] INFO root fetch - processPackages [idvpackage]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-22 06:45:31] ERROR root fetch - processPackages [escaper-lite]: Unable to fetch info: No such project/version 'escaper-lite' 0.0.1
+[2024-04-22 06:45:31] INFO root fetch - main [MainThread]: End processing [escaper-lite] error
+[2024-04-22 06:45:31] INFO root fetch - processPackages [booklet]: Downloading https://files.pythonhosted.org/packages/1d/ef/1f5bed538f06615d4fa5885afdc53320da23d090771832c5dd5abdf29010/booklet-0.1.9.tar.gz
+[2024-04-22 06:45:31] INFO root fetch - processPackages [idvpackage]: Downloading https://files.pythonhosted.org/packages/6c/7c/65b70ff47604461688a9475630c0e6f7b3f0809d59034ee93c3a20a856cd/idvpackage-1.9.8.tar.gz
+[2024-04-22 06:45:31] INFO root fetch - processPackages [runtool]: Downloading https://files.pythonhosted.org/packages/7b/4e/92b0870c384f054f7d5a037e5f6b6b19fb8b6847fe27f4fd24f5ebe1acbc/runtool-1.0.6.tar.gz
+[2024-04-22 06:45:31] INFO root fetch - processPackages [increff-runner]: Downloading https://files.pythonhosted.org/packages/c5/34/617d65904fcf95e73c480ce8f12046e26b56be32764e7cd4952c21338616/increff_runner-3.1.6-py3-none-any.whl
+[2024-04-22 06:45:31] WARNING root fetch - processPackages [idvpackage]: Skipping package: exceeds size limit 28247832>=10485760
+[2024-04-22 06:45:31] INFO root fetch - main [MainThread]: End processing [idvpackage] error
+[2024-04-22 06:45:32] INFO root fetch - processPackages [booklet]: executing diffoscope
+[2024-04-22 06:45:32] INFO root fetch - processPackages [booklet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/booklet-0.1.8.tar.gz tmp/booklet-0.1.9.tar.gz --markdown 20240422/b/booklet/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 06:45:32] INFO root fetch - processPackages [increff-runner]: Downloading https://files.pythonhosted.org/packages/06/bb/1980f46492a7d8b082e0a348eb0a5e0deb5c83d0d56b58f84f6bc428a07c/increff_runner-3.1.7-py3-none-any.whl
+[2024-04-22 06:45:32] INFO root fetch - processPackages [runtool]: Downloading https://files.pythonhosted.org/packages/a8/b8/3eabf48761e361cf712ce3994b6f11c3ec44646db78ded4025c5901e095c/runtool-1.0.7.tar.gz
+[2024-04-22 06:45:32] INFO root fetch - processPackages [increff-runner]: executing diffoscope
+[2024-04-22 06:45:32] INFO root fetch - processPackages [increff-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/increff_runner-3.1.6-py3-none-any.whl.zip tmp/increff_runner-3.1.7-py3-none-any.whl.zip --markdown 20240422/i/increff-runner/3.1.6-3.1.7/README.md --exclude *.pyd
+[2024-04-22 06:45:32] INFO root fetch - processPackages [runtool]: executing diffoscope
+[2024-04-22 06:45:32] INFO root fetch - processPackages [runtool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtool-1.0.6.tar.gz tmp/runtool-1.0.7.tar.gz --markdown 20240422/r/runtool/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-22 06:45:32] INFO root fetch - processPackages [booklet]: Remove: archive file [/home/abi/fetcher/tmp/booklet-0.1.8.tar.gz]
+[2024-04-22 06:45:32] INFO root fetch - processPackages [booklet]: Remove: archive file [/home/abi/fetcher/tmp/booklet-0.1.9.tar.gz]
+[2024-04-22 06:45:32] INFO root fetch - main [MainThread]: End processing [booklet]: success
+[2024-04-22 06:45:32] INFO root fetch - processPackages [increff-runner]: Remove: archive file [/home/abi/fetcher/tmp/increff_runner-3.1.6-py3-none-any.whl.zip]
+[2024-04-22 06:45:32] INFO root fetch - processPackages [increff-runner]: Remove: archive file [/home/abi/fetcher/tmp/increff_runner-3.1.7-py3-none-any.whl.zip]
+[2024-04-22 06:45:32] INFO root fetch - main [MainThread]: End processing [increff-runner]: success
+[2024-04-22 06:45:33] INFO root fetch - processPackages [runtool]: Remove: archive file [/home/abi/fetcher/tmp/runtool-1.0.6.tar.gz]
+[2024-04-22 06:45:33] INFO root fetch - processPackages [runtool]: Remove: archive file [/home/abi/fetcher/tmp/runtool-1.0.7.tar.gz]
+[2024-04-22 06:45:33] INFO root fetch - main [MainThread]: End processing [runtool]: success
+[2024-04-22 06:45:33] INFO root fetch - main [MainThread]: Store serial: [22872011]
