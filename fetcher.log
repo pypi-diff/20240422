@@ -5060,3 +5060,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:54:16] INFO root fetch - processPackages [njson]: Remove: archive file [/home/abi/fetcher/tmp/njson-1.1.0.tar.gz]
 [2024-04-22 06:54:16] INFO root fetch - main [MainThread]: End processing [njson]: success
 [2024-04-22 06:54:16] INFO root fetch - main [MainThread]: Store serial: [22872059]
+[2024-04-22 06:56:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872059]
+[2024-04-22 06:56:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 06:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: njson
+[2024-04-22 06:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flamme
+[2024-04-22 06:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oss-client
+[2024-04-22 06:56:26] INFO root fetch - processPackages [njson]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-22 06:56:26] INFO root fetch - processPackages [njson]: Downloading https://files.pythonhosted.org/packages/cf/97/bdc92fda56b0ce69df78e29179a3516be581a9e0236b93e3a63103e52c4b/njson-1.0.1.tar.gz
+[2024-04-22 06:56:26] INFO root fetch - processPackages [oss-client]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-22 06:56:26] INFO root fetch - processPackages [flamme]: New version: [0.0.9] Old Version: [0.0.8a1]
+[2024-04-22 06:56:26] INFO root fetch - processPackages [oss-client]: Downloading https://files.pythonhosted.org/packages/3e/aa/5472069a1a12e9a7da7f73380904bfb28f31d358b670f4e94c9a0474e6fa/oss-client-0.1.4.tar.gz
+[2024-04-22 06:56:26] INFO root fetch - processPackages [flamme]: Downloading https://files.pythonhosted.org/packages/82/a7/78b097dd39d2b564a47d15e8010ec96499b20fc8f3887469ebd5275302a9/flamme-0.0.8a1.tar.gz
+[2024-04-22 06:56:26] INFO root fetch - processPackages [njson]: Downloading https://files.pythonhosted.org/packages/a6/3b/4fcef07fe081061f3263a5890afa813c35a17dbd7e8f4c017ff88ef0d351/njson-1.1.0.tar.gz
+[2024-04-22 06:56:26] INFO root fetch - processPackages [njson]: executing diffoscope
+[2024-04-22 06:56:26] INFO root fetch - processPackages [njson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/njson-1.0.1.tar.gz tmp/njson-1.1.0.tar.gz --markdown 20240422/n/njson/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-22 06:56:26] INFO root fetch - processPackages [flamme]: Downloading https://files.pythonhosted.org/packages/95/b9/67cd6cad72d4221f3d61e760b91b826e3165de0cf760406862c63ea1de01/flamme-0.0.9.tar.gz
+[2024-04-22 06:56:26] INFO root fetch - processPackages [oss-client]: Downloading https://files.pythonhosted.org/packages/f9/63/f5d62a8c78f3a78b93c14e73ac6a3ecb17ea6c4692cfa43e22ef3cfdac02/oss-client-0.1.5.tar.gz
+[2024-04-22 06:56:27] INFO root fetch - processPackages [flamme]: executing diffoscope
+[2024-04-22 06:56:27] INFO root fetch - processPackages [flamme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flamme-0.0.8a1.tar.gz tmp/flamme-0.0.9.tar.gz --markdown 20240422/f/flamme/0.0.8a1-0.0.9/README.md --exclude *.pyd
+[2024-04-22 06:56:27] INFO root fetch - processPackages [oss-client]: executing diffoscope
+[2024-04-22 06:56:27] INFO root fetch - processPackages [oss-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oss-client-0.1.4.tar.gz tmp/oss-client-0.1.5.tar.gz --markdown 20240422/o/oss-client/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-22 06:56:27] INFO root fetch - processPackages [njson]: Remove: archive file [/home/abi/fetcher/tmp/njson-1.0.1.tar.gz]
+[2024-04-22 06:56:27] INFO root fetch - processPackages [njson]: Remove: archive file [/home/abi/fetcher/tmp/njson-1.1.0.tar.gz]
+[2024-04-22 06:56:27] INFO root fetch - main [MainThread]: End processing [njson]: success
+[2024-04-22 06:56:27] INFO root fetch - processPackages [oss-client]: Remove: archive file [/home/abi/fetcher/tmp/oss-client-0.1.4.tar.gz]
+[2024-04-22 06:56:27] INFO root fetch - processPackages [oss-client]: Remove: archive file [/home/abi/fetcher/tmp/oss-client-0.1.5.tar.gz]
+[2024-04-22 06:56:27] INFO root fetch - main [MainThread]: End processing [oss-client]: success
+[2024-04-22 06:56:27] INFO root fetch - processPackages [flamme]: Remove: archive file [/home/abi/fetcher/tmp/flamme-0.0.8a1.tar.gz]
+[2024-04-22 06:56:27] INFO root fetch - processPackages [flamme]: Remove: archive file [/home/abi/fetcher/tmp/flamme-0.0.9.tar.gz]
+[2024-04-22 06:56:27] INFO root fetch - main [MainThread]: End processing [flamme]: success
+[2024-04-22 06:56:27] INFO root fetch - main [MainThread]: Store serial: [22872067]
