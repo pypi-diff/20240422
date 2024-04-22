@@ -1710,3 +1710,42 @@
 [2024-04-22 02:24:01] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
 [2024-04-22 02:24:01] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-04-22 02:24:01] INFO root fetch - main [MainThread]: Store serial: [22870593]
+[2024-04-22 02:26:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870593]
+[2024-04-22 02:26:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 02:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyobs-flipro
+[2024-04-22 02:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ocflib
+[2024-04-22 02:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-certbot-dns-route53
+[2024-04-22 02:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-serverless-clamscan
+[2024-04-22 02:26:10] INFO root fetch - processPackages [pyobs-flipro]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.6.99] Old Version: [2.6.98]
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-04-22 02:26:10] INFO root fetch - processPackages [ocflib]: New version: [9] Old Version: [8]
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/04/67/6fb0e00ee65986b766391e4327a7370cec35f8458c0c80507e3b56a79e57/cdk-serverless-clamscan-2.6.98.tar.gz
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-04-22 02:26:10] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/dc/ef/68a069c3b8d28417fd43080fb1fe05b6671fc7bbe440d50afbd944c218f8/pyobs_flipro-1.1.2.tar.gz
+[2024-04-22 02:26:10] INFO root fetch - processPackages [ocflib]: Downloading https://files.pythonhosted.org/packages/37/9e/7d858340853127292efd32ac4cd52b6c17167e4e2a1394341eda0aed3106/ocflib-8.tar.gz
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/53/8f/ea40546b0f696761a1aaeee533ca8a5f53147131c3aa1f0aa1316112f44f/cdk-serverless-clamscan-2.6.99.tar.gz
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240422/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-04-22 02:26:10] INFO root fetch - processPackages [pyobs-flipro]: Downloading https://files.pythonhosted.org/packages/1a/52/e93755cf3fd87e89e4ae2ca409f4c45c50829664320edb3800f780d01438/pyobs_flipro-1.1.3.tar.gz
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2024-04-22 02:26:10] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.6.98.tar.gz tmp/cdk-serverless-clamscan-2.6.99.tar.gz --markdown 20240422/c/cdk-serverless-clamscan/2.6.98-2.6.99/README.md --exclude *.pyd
+[2024-04-22 02:26:11] INFO root fetch - processPackages [pyobs-flipro]: executing diffoscope
+[2024-04-22 02:26:11] INFO root fetch - processPackages [pyobs-flipro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyobs_flipro-1.1.2.tar.gz tmp/pyobs_flipro-1.1.3.tar.gz --markdown 20240422/p/pyobs-flipro/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-22 02:26:11] INFO root fetch - processPackages [ocflib]: Downloading https://files.pythonhosted.org/packages/9e/8a/34785feea7f069288ddee58a7ae104928ba33da6e1b49be66a2b1fa792b5/ocflib-9.tar.gz
+[2024-04-22 02:26:11] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.98.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.99.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2024-04-22 02:26:11] INFO root fetch - processPackages [ocflib]: executing diffoscope
+[2024-04-22 02:26:11] INFO root fetch - processPackages [ocflib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocflib-8.tar.gz tmp/ocflib-9.tar.gz --markdown 20240422/o/ocflib/8-9/README.md --exclude *.pyd
+[2024-04-22 02:26:11] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-04-22 02:26:11] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.1.2.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - processPackages [pyobs-flipro]: Remove: archive file [/home/abi/fetcher/tmp/pyobs_flipro-1.1.3.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - main [MainThread]: End processing [pyobs-flipro]: success
+[2024-04-22 02:26:11] INFO root fetch - processPackages [ocflib]: Remove: archive file [/home/abi/fetcher/tmp/ocflib-8.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - processPackages [ocflib]: Remove: archive file [/home/abi/fetcher/tmp/ocflib-9.tar.gz]
+[2024-04-22 02:26:11] INFO root fetch - main [MainThread]: End processing [ocflib]: success
+[2024-04-22 02:26:11] INFO root fetch - main [MainThread]: Store serial: [22870613]
