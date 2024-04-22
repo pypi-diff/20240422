@@ -5163,3 +5163,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:00:49] INFO root fetch - processPackages [moobius]: Remove: archive file [/home/abi/fetcher/tmp/moobius-1.1.9.tar.gz]
 [2024-04-22 07:00:49] INFO root fetch - main [MainThread]: End processing [moobius]: success
 [2024-04-22 07:00:49] INFO root fetch - main [MainThread]: Store serial: [22872103]
+[2024-04-22 07:02:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872103]
+[2024-04-22 07:02:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 07:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: math-ops-pp
+[2024-04-22 07:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: screwdriver-cd-python-sdk
+[2024-04-22 07:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gridengine-framework
+[2024-04-22 07:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: goldenpond
+[2024-04-22 07:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fisspy
+[2024-04-22 07:02:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tools-hjh
+[2024-04-22 07:02:57] INFO root fetch - processPackages [fisspy]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-22 07:02:57] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-04-22 07:02:57] WARNING root fetch - processPackages [goldenpond]: Skipping, unable to determine old version
+[2024-04-22 07:02:57] INFO root fetch - main [MainThread]: End processing [goldenpond] error
+[2024-04-22 07:02:57] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/12/22/440513fdaa0ea4911b0a3cba841fdb2e16a19e2129f0ca38c8c8ff90458b/fisspy-1.0.1.tar.gz
+[2024-04-22 07:02:57] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-22 07:02:57] WARNING root fetch - processPackages [math-ops-pp]: Skipping, unable to determine old version
+[2024-04-22 07:02:57] INFO root fetch - main [MainThread]: End processing [math-ops-pp] error
+[2024-04-22 07:02:57] INFO root fetch - processPackages [tools-hjh]: New version: [2.6.2] Old Version: [2.5.7]
+[2024-04-22 07:02:57] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/47/7e/f19393b966cb95045299871747237b126a844f1c3a1ba7c72d8402bc4b0d/gridengine_framework-0.7.2.tar.gz
+[2024-04-22 07:02:57] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/89/22/56327273ec36b9e57d1dd5f33258f5f3c80579ec801a292c69f3be591751/screwdriver-cd-python-sdk-1.0.0.tar.gz
+[2024-04-22 07:02:58] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/cb/f9/95f9d1470618c312271b9b32090401aaebbd70f58e5f5671083cfb7d3f4a/fisspy-1.0.2.tar.gz
+[2024-04-22 07:02:58] INFO root fetch - processPackages [tools-hjh]: Downloading https://files.pythonhosted.org/packages/c6/e3/6f16b413385d76e3686a1835a662c86aeae0f860a7d3d97e7aae622ef9b9/tools_hjh-2.5.7.tar.gz
+[2024-04-22 07:02:58] INFO root fetch - processPackages [fisspy]: executing diffoscope
+[2024-04-22 07:02:58] INFO root fetch - processPackages [fisspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fisspy-1.0.1.tar.gz tmp/fisspy-1.0.2.tar.gz --markdown 20240422/f/fisspy/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-22 07:02:58] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/51/1c/e19fa163f76c58bf5b56c2688a8264b344ce3c2a1184eba402216d82f055/gridengine_framework-0.7.3.tar.gz
+[2024-04-22 07:02:58] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/01/de/ce2878b1bc95de2cee3a119c700c4d9beef08e1f67e7a2f5ad3da6e9b432/screwdriver-cd-python-sdk-1.0.1.tar.gz
+[2024-04-22 07:02:58] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 07:02:58] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.2.tar.gz tmp/gridengine_framework-0.7.3.tar.gz --markdown 20240422/g/gridengine-framework/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-04-22 07:02:58] INFO root fetch - processPackages [tools-hjh]: Downloading https://files.pythonhosted.org/packages/23/24/4d785549c888c716ab1c2e66c3ed02de72e33d91b5a98a33ce575c9ac48a/tools_hjh-2.6.2.tar.gz
+[2024-04-22 07:02:58] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: executing diffoscope
+[2024-04-22 07:02:58] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screwdriver-cd-python-sdk-1.0.0.tar.gz tmp/screwdriver-cd-python-sdk-1.0.1.tar.gz --markdown 20240422/s/screwdriver-cd-python-sdk/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-22 07:02:58] INFO root fetch - processPackages [tools-hjh]: executing diffoscope
+[2024-04-22 07:02:58] INFO root fetch - processPackages [tools-hjh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tools_hjh-2.5.7.tar.gz tmp/tools_hjh-2.6.2.tar.gz --markdown 20240422/t/tools-hjh/2.5.7-2.6.2/README.md --exclude *.pyd
+[2024-04-22 07:02:58] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.1.tar.gz]
+[2024-04-22 07:02:58] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.2.tar.gz]
+[2024-04-22 07:02:58] INFO root fetch - main [MainThread]: End processing [fisspy]: success
+[2024-04-22 07:02:58] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.2.tar.gz]
+[2024-04-22 07:02:58] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.3.tar.gz]
+[2024-04-22 07:02:58] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 07:02:58] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-1.0.0.tar.gz]
+[2024-04-22 07:02:58] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-1.0.1.tar.gz]
+[2024-04-22 07:02:58] INFO root fetch - main [MainThread]: End processing [screwdriver-cd-python-sdk]: success
+[2024-04-22 07:02:59] INFO root fetch - processPackages [tools-hjh]: Remove: archive file [/home/abi/fetcher/tmp/tools_hjh-2.5.7.tar.gz]
+[2024-04-22 07:02:59] INFO root fetch - processPackages [tools-hjh]: Remove: archive file [/home/abi/fetcher/tmp/tools_hjh-2.6.2.tar.gz]
+[2024-04-22 07:02:59] INFO root fetch - main [MainThread]: End processing [tools-hjh]: success
+[2024-04-22 07:02:59] INFO root fetch - main [MainThread]: Store serial: [22872123]
