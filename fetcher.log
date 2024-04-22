@@ -2662,3 +2662,24 @@
 [2024-04-22 03:37:26] INFO root fetch - processPackages [pyqtgraph]: Remove: archive file [/home/abi/fetcher/tmp/pyqtgraph-0.9.8.tar.gz]
 [2024-04-22 03:37:26] INFO root fetch - main [MainThread]: End processing [pyqtgraph]: success
 [2024-04-22 03:37:26] INFO root fetch - main [MainThread]: Store serial: [22871093]
+[2024-04-22 03:39:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871093]
+[2024-04-22 03:39:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 03:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainhashing
+[2024-04-22 03:39:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbchat
+[2024-04-22 03:39:36] INFO root fetch - processPackages [chainhashing]: New version: [1.0.0] Old Version: [0.0.2]
+[2024-04-22 03:39:36] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc84.post1] Old Version: [0.0.2rc83.post1]
+[2024-04-22 03:39:37] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/57/03/da577cd3d329bc04e88e6d8455f26f75765b905d86daff9148ca879b0aef/py_dbchat-0.0.2rc83.post1.tar.gz
+[2024-04-22 03:39:37] INFO root fetch - processPackages [chainhashing]: Downloading https://files.pythonhosted.org/packages/e1/7b/5bf4eba6f325bd3921244b217be72677a2290719f74d5817e5168da05549/chainhashing-0.0.2.tar.gz
+[2024-04-22 03:39:37] INFO root fetch - processPackages [chainhashing]: Downloading https://files.pythonhosted.org/packages/3d/85/4bf178ea5abad76cc63920ac639e412db5fa3253c5c23b301c19f8c349fa/chainhashing-1.0.0.tar.gz
+[2024-04-22 03:39:37] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/22/2d/29fcc0c9c967079649bbb81cde263f00b7f8b12b031c704e61f4d63e3173/py_dbchat-0.0.2rc84.post1.tar.gz
+[2024-04-22 03:39:37] INFO root fetch - processPackages [chainhashing]: executing diffoscope
+[2024-04-22 03:39:37] INFO root fetch - processPackages [chainhashing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainhashing-0.0.2.tar.gz tmp/chainhashing-1.0.0.tar.gz --markdown 20240422/c/chainhashing/0.0.2-1.0.0/README.md --exclude *.pyd
+[2024-04-22 03:39:37] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-22 03:39:37] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc83.post1.tar.gz tmp/py_dbchat-0.0.2rc84.post1.tar.gz --markdown 20240422/p/py-dbchat/0.0.2rc83.post1-0.0.2rc84.post1/README.md --exclude *.pyd
+[2024-04-22 03:39:37] INFO root fetch - processPackages [chainhashing]: Remove: archive file [/home/abi/fetcher/tmp/chainhashing-0.0.2.tar.gz]
+[2024-04-22 03:39:37] INFO root fetch - processPackages [chainhashing]: Remove: archive file [/home/abi/fetcher/tmp/chainhashing-1.0.0.tar.gz]
+[2024-04-22 03:39:37] INFO root fetch - main [MainThread]: End processing [chainhashing]: success
+[2024-04-22 03:39:38] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc83.post1.tar.gz]
+[2024-04-22 03:39:38] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc84.post1.tar.gz]
+[2024-04-22 03:39:38] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-22 03:39:38] INFO root fetch - main [MainThread]: Store serial: [22871099]
