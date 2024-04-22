@@ -1357,3 +1357,45 @@
 [2024-04-22 02:11:00] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202404210010.tar.gz]
 [2024-04-22 02:11:00] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
 [2024-04-22 02:11:00] INFO root fetch - main [MainThread]: Store serial: [22870462]
+[2024-04-22 02:13:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870462]
+[2024-04-22 02:13:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 02:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-quantizers-nightly
+[2024-04-22 02:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: storage-local
+[2024-04-22 02:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-img-optimizer
+[2024-04-22 02:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-events-notify
+[2024-04-22 02:13:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rds-core
+[2024-04-22 02:13:08] WARNING root fetch - processPackages [django-img-optimizer]: Skipping, unable to determine old version
+[2024-04-22 02:13:08] INFO root fetch - main [MainThread]: End processing [django-img-optimizer] error
+[2024-04-22 02:13:08] INFO root fetch - processPackages [storage-local]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 02:13:08] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240421.post1134] Old Version: [1.5.0.20240420.post1003]
+[2024-04-22 02:13:08] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-04-22 02:13:08] INFO root fetch - processPackages [rds-core]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-22 02:13:08] INFO root fetch - processPackages [storage-local]: Downloading https://files.pythonhosted.org/packages/b7/63/976ced0597974a94e0db7472bfb4f03e6c82e5276610b0176be638f047e6/storage-local-0.1.8.tar.gz
+[2024-04-22 02:13:08] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/f0/4f/dc9b893ed4919fd2e2ae23c97cf4761b3ed43f541004b3e2f2952cba6a00/mct-quantizers-nightly-1.5.0.20240420.post1003.tar.gz
+[2024-04-22 02:13:08] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-04-22 02:13:08] INFO root fetch - processPackages [rds-core]: Downloading https://files.pythonhosted.org/packages/cd/8c/573d20e60a7a3153b55de6d7fbc5ef51be3ee9fda98164d3f76a669e55d6/rds-core-0.2.4.tar.gz
+[2024-04-22 02:13:08] INFO root fetch - processPackages [storage-local]: Downloading https://files.pythonhosted.org/packages/80/92/c5f00ebfa1349b712e17441e635a7037dea493f636ec7cb5309d3f303ed3/storage-local-0.1.9.tar.gz
+[2024-04-22 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-04-22 02:13:09] INFO root fetch - processPackages [storage-local]: executing diffoscope
+[2024-04-22 02:13:09] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/21/a9/7ce4815f50ce0ba5a2ba290c2418973fa44e097404ae7e4042c511d8337c/mct-quantizers-nightly-1.5.0.20240421.post1134.tar.gz
+[2024-04-22 02:13:09] INFO root fetch - processPackages [storage-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/storage-local-0.1.8.tar.gz tmp/storage-local-0.1.9.tar.gz --markdown 20240422/s/storage-local/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-04-22 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240422/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-04-22 02:13:09] INFO root fetch - processPackages [rds-core]: Downloading https://files.pythonhosted.org/packages/db/22/7267076760e1a03311da55acd2e19a3ccd593ac04360ba31f795de0a5f4d/rds-core-0.2.5.tar.gz
+[2024-04-22 02:13:09] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-04-22 02:13:09] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240420.post1003.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240421.post1134.tar.gz --markdown 20240422/m/mct-quantizers-nightly/1.5.0.20240420.post1003-1.5.0.20240421.post1134/README.md --exclude *.pyd
+[2024-04-22 02:13:09] INFO root fetch - processPackages [rds-core]: executing diffoscope
+[2024-04-22 02:13:09] INFO root fetch - processPackages [rds-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rds-core-0.2.4.tar.gz tmp/rds-core-0.2.5.tar.gz --markdown 20240422/r/rds-core/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-22 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-04-22 02:13:09] INFO root fetch - processPackages [storage-local]: Remove: archive file [/home/abi/fetcher/tmp/storage-local-0.1.8.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - processPackages [storage-local]: Remove: archive file [/home/abi/fetcher/tmp/storage-local-0.1.9.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - main [MainThread]: End processing [storage-local]: success
+[2024-04-22 02:13:09] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240420.post1003.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240421.post1134.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-04-22 02:13:09] INFO root fetch - processPackages [rds-core]: Remove: archive file [/home/abi/fetcher/tmp/rds-core-0.2.4.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - processPackages [rds-core]: Remove: archive file [/home/abi/fetcher/tmp/rds-core-0.2.5.tar.gz]
+[2024-04-22 02:13:09] INFO root fetch - main [MainThread]: End processing [rds-core]: success
+[2024-04-22 02:13:09] INFO root fetch - main [MainThread]: Store serial: [22870476]
