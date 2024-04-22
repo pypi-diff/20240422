@@ -5805,3 +5805,11 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:44:18] INFO root fetch - processPackages [JayttleProcess]: Remove: archive file [/home/abi/fetcher/tmp/JayttleProcess-0.1.9-py3-none-any.whl.zip]
 [2024-04-22 07:44:18] INFO root fetch - main [MainThread]: End processing [JayttleProcess]: success
 [2024-04-22 07:44:18] INFO root fetch - main [MainThread]: Store serial: [22872358]
+[2024-04-22 07:46:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872358]
+[2024-04-22 07:46:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 07:46:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-axe
+[2024-04-22 07:46:26] INFO root fetch - processPackages [llm-axe]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-22 07:46:27] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/34/a8/7a1f9a2035517efa3e7d1c3aecdf5e5cc3eda53137e6ca7b77ad39f48142/llm_axe-0.0.2.tar.gz
+[2024-04-22 07:46:27] ERROR root fetch - processPackages [llm-axe]: Unable to fetch info: No such project/version 'llm-axe' 0.0.3
+[2024-04-22 07:46:27] INFO root fetch - main [MainThread]: End processing [llm-axe] error
+[2024-04-22 07:46:27] INFO root fetch - main [MainThread]: Store serial: [22872361]
