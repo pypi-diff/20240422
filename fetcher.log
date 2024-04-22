@@ -8822,3 +8822,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:23:19] INFO root fetch - processPackages [capellambse]: Remove: archive file [/home/abi/fetcher/tmp/capellambse-0.5.9.dev5.tar.gz]
 [2024-04-22 10:23:19] INFO root fetch - main [MainThread]: End processing [capellambse]: success
 [2024-04-22 10:23:19] INFO root fetch - main [MainThread]: Store serial: [22874009]
+[2024-04-22 10:25:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874009]
+[2024-04-22 10:25:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 10:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cmcrameri
+[2024-04-22 10:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: increff-runner
+[2024-04-22 10:25:27] INFO root fetch - processPackages [increff-runner]: New version: [3.1.7] Old Version: [3.1.6]
+[2024-04-22 10:25:28] INFO root fetch - processPackages [cmcrameri]: New version: [1.9] Old Version: [1.8]
+[2024-04-22 10:25:28] INFO root fetch - processPackages [increff-runner]: Downloading https://files.pythonhosted.org/packages/c5/34/617d65904fcf95e73c480ce8f12046e26b56be32764e7cd4952c21338616/increff_runner-3.1.6-py3-none-any.whl
+[2024-04-22 10:25:28] INFO root fetch - processPackages [cmcrameri]: Downloading https://files.pythonhosted.org/packages/f3/71/c1ca0cbfe4139c42c37fb13d872a4811fe69e4e6b9da36e143b916fd49ff/cmcrameri-1.8.tar.gz
+[2024-04-22 10:25:28] INFO root fetch - processPackages [increff-runner]: Downloading https://files.pythonhosted.org/packages/06/bb/1980f46492a7d8b082e0a348eb0a5e0deb5c83d0d56b58f84f6bc428a07c/increff_runner-3.1.7-py3-none-any.whl
+[2024-04-22 10:25:28] INFO root fetch - processPackages [increff-runner]: executing diffoscope
+[2024-04-22 10:25:28] INFO root fetch - processPackages [increff-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/increff_runner-3.1.6-py3-none-any.whl.zip tmp/increff_runner-3.1.7-py3-none-any.whl.zip --markdown 20240422/i/increff-runner/3.1.6-3.1.7/README.md --exclude *.pyd
+[2024-04-22 10:25:28] INFO root fetch - processPackages [cmcrameri]: Downloading https://files.pythonhosted.org/packages/fe/18/61ac7ea74f7c4d82ce3a1d49e9a26492b0df5a8792025066efcb318a88e2/cmcrameri-1.9.tar.gz
+[2024-04-22 10:25:28] INFO root fetch - processPackages [cmcrameri]: executing diffoscope
+[2024-04-22 10:25:28] INFO root fetch - processPackages [cmcrameri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmcrameri-1.8.tar.gz tmp/cmcrameri-1.9.tar.gz --markdown 20240422/c/cmcrameri/1.8-1.9/README.md --exclude *.pyd
+[2024-04-22 10:25:28] INFO root fetch - processPackages [increff-runner]: Remove: archive file [/home/abi/fetcher/tmp/increff_runner-3.1.6-py3-none-any.whl.zip]
+[2024-04-22 10:25:28] INFO root fetch - processPackages [increff-runner]: Remove: archive file [/home/abi/fetcher/tmp/increff_runner-3.1.7-py3-none-any.whl.zip]
+[2024-04-22 10:25:28] INFO root fetch - main [MainThread]: End processing [increff-runner]: success
+[2024-04-22 10:25:29] INFO root fetch - processPackages [cmcrameri]: Remove: archive file [/home/abi/fetcher/tmp/cmcrameri-1.8.tar.gz]
+[2024-04-22 10:25:29] INFO root fetch - processPackages [cmcrameri]: Remove: archive file [/home/abi/fetcher/tmp/cmcrameri-1.9.tar.gz]
+[2024-04-22 10:25:29] INFO root fetch - main [MainThread]: End processing [cmcrameri]: success
+[2024-04-22 10:25:29] INFO root fetch - main [MainThread]: Store serial: [22874027]
