@@ -9963,3 +9963,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:09:43] INFO root fetch - processPackages [cloudpss]: Remove: archive file [/home/abi/fetcher/tmp/cloudpss-4.1.1b9.tar.gz]
 [2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [cloudpss]: success
 [2024-04-22 11:09:43] INFO root fetch - main [MainThread]: Store serial: [22874538]
+[2024-04-22 11:11:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874538]
+[2024-04-22 11:11:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 11:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synrbl
+[2024-04-22 11:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zbx-wxwork-assistant
+[2024-04-22 11:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BTCoreSharedLibs
+[2024-04-22 11:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dataset-tools
+[2024-04-22 11:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: amulet-leveldb
+[2024-04-22 11:11:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-paretoarchive
+[2024-04-22 11:11:52] INFO root fetch - processPackages [synrbl]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 11:11:52] INFO root fetch - processPackages [zbx-wxwork-assistant]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-22 11:11:52] INFO root fetch - processPackages [amulet-leveldb]: New version: [1.0.0b5] Old Version: [1.0.0b4]
+[2024-04-22 11:11:52] INFO root fetch - processPackages [py-paretoarchive]: New version: [0.20] Old Version: [0.19]
+[2024-04-22 11:11:52] INFO root fetch - processPackages [BTCoreSharedLibs]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-22 11:11:52] INFO root fetch - processPackages [dataset-tools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 11:11:52] INFO root fetch - processPackages [synrbl]: Downloading https://files.pythonhosted.org/packages/f5/9a/48553a467991f0fd642a3e13d50f4667516eeb8a5fecea3d7d803b6b1f57/synrbl-0.0.7.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [zbx-wxwork-assistant]: Downloading https://files.pythonhosted.org/packages/41/56/44e90a2fe4fdb5b42f19dc477540e308da3578703b7d453e341ff3465973/zbx_wxwork_assistant-1.1.2-py3-none-any.whl
+[2024-04-22 11:11:53] INFO root fetch - processPackages [BTCoreSharedLibs]: Downloading https://files.pythonhosted.org/packages/35/f9/47046be3074e1bf56deadb197a5bc88da7ab2d90ddf46e0acdedc0547918/btcoresharedlibs-0.0.3.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [py-paretoarchive]: Downloading https://files.pythonhosted.org/packages/8a/8f/98556a6dfea99ef90915cfa8c6c5aa64c96f5347b8ae0822dd448e08e0ab/py-paretoarchive-0.19.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [amulet-leveldb]: Downloading https://files.pythonhosted.org/packages/fe/f1/7dc1fffa20555315bdf02fb2e3f853b8c1a2682910f091bd4e78ce0b5d2f/amulet-leveldb-1.0.0b4.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [dataset-tools]: Downloading https://files.pythonhosted.org/packages/45/97/f8cfcb2381e26631dc0de064078e7012c0e84fe2bc5eb59bb6846009f169/dataset-tools-0.0.8.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [zbx-wxwork-assistant]: Downloading https://files.pythonhosted.org/packages/e2/22/674303d1af0689db097cb118abac80e6bc2eb0d4d22222a80d8caea15753/zbx_wxwork_assistant-1.1.3-py3-none-any.whl
+[2024-04-22 11:11:53] INFO root fetch - processPackages [BTCoreSharedLibs]: Downloading https://files.pythonhosted.org/packages/53/9c/f5d509ad95ee58fd4cff065789526f0c0b60091ab212973509f5f028cbb3/btcoresharedlibs-0.0.4.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [zbx-wxwork-assistant]: executing diffoscope
+[2024-04-22 11:11:53] INFO root fetch - processPackages [zbx-wxwork-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zbx_wxwork_assistant-1.1.2-py3-none-any.whl.zip tmp/zbx_wxwork_assistant-1.1.3-py3-none-any.whl.zip --markdown 20240422/z/zbx-wxwork-assistant/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-22 11:11:53] INFO root fetch - processPackages [BTCoreSharedLibs]: executing diffoscope
+[2024-04-22 11:11:53] INFO root fetch - processPackages [BTCoreSharedLibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/btcoresharedlibs-0.0.3.tar.gz tmp/btcoresharedlibs-0.0.4.tar.gz --markdown 20240422/B/BTCoreSharedLibs/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-22 11:11:53] INFO root fetch - processPackages [py-paretoarchive]: Downloading https://files.pythonhosted.org/packages/1e/cf/bf7c8ab0799845636f81c9afc6a9b14fc49a7e5f5151f66cc67df516931c/py-paretoarchive-0.20.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [synrbl]: Downloading https://files.pythonhosted.org/packages/28/86/082dee5389753c8bd486879e55d26d3f2185a225fadf2f1fe4bb9beb9d85/synrbl-0.0.8.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [dataset-tools]: Downloading https://files.pythonhosted.org/packages/b8/58/c030ec40cb92d73145fa4f9c8df9dc35360f48d85535390567bd984369b2/dataset-tools-0.0.9.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [dataset-tools]: executing diffoscope
+[2024-04-22 11:11:53] INFO root fetch - processPackages [dataset-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataset-tools-0.0.8.tar.gz tmp/dataset-tools-0.0.9.tar.gz --markdown 20240422/d/dataset-tools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 11:11:53] INFO root fetch - processPackages [amulet-leveldb]: Downloading https://files.pythonhosted.org/packages/9e/89/c24f9a5c2a9a28139fb308c00f73c102f33851aa18dbbe1ae2767bb76b8a/amulet-leveldb-1.0.0b5.tar.gz
+[2024-04-22 11:11:53] INFO root fetch - processPackages [py-paretoarchive]: executing diffoscope
+[2024-04-22 11:11:53] INFO root fetch - processPackages [py-paretoarchive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-paretoarchive-0.19.tar.gz tmp/py-paretoarchive-0.20.tar.gz --markdown 20240422/p/py-paretoarchive/0.19-0.20/README.md --exclude *.pyd
+[2024-04-22 11:11:53] INFO root fetch - processPackages [amulet-leveldb]: executing diffoscope
+[2024-04-22 11:11:53] INFO root fetch - processPackages [amulet-leveldb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amulet-leveldb-1.0.0b4.tar.gz tmp/amulet-leveldb-1.0.0b5.tar.gz --markdown 20240422/a/amulet-leveldb/1.0.0b4-1.0.0b5/README.md --exclude *.pyd
+[2024-04-22 11:11:53] INFO root fetch - processPackages [synrbl]: executing diffoscope
+[2024-04-22 11:11:53] INFO root fetch - processPackages [synrbl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synrbl-0.0.7.tar.gz tmp/synrbl-0.0.8.tar.gz --markdown 20240422/s/synrbl/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 11:11:54] INFO root fetch - processPackages [zbx-wxwork-assistant]: Remove: archive file [/home/abi/fetcher/tmp/zbx_wxwork_assistant-1.1.2-py3-none-any.whl.zip]
+[2024-04-22 11:11:54] INFO root fetch - processPackages [zbx-wxwork-assistant]: Remove: archive file [/home/abi/fetcher/tmp/zbx_wxwork_assistant-1.1.3-py3-none-any.whl.zip]
+[2024-04-22 11:11:54] INFO root fetch - main [MainThread]: End processing [zbx-wxwork-assistant]: success
+[2024-04-22 11:11:54] INFO root fetch - processPackages [BTCoreSharedLibs]: Remove: archive file [/home/abi/fetcher/tmp/btcoresharedlibs-0.0.3.tar.gz]
+[2024-04-22 11:11:54] INFO root fetch - processPackages [BTCoreSharedLibs]: Remove: archive file [/home/abi/fetcher/tmp/btcoresharedlibs-0.0.4.tar.gz]
+[2024-04-22 11:11:54] INFO root fetch - main [MainThread]: End processing [BTCoreSharedLibs]: success
+[2024-04-22 11:11:54] INFO root fetch - processPackages [dataset-tools]: Remove: archive file [/home/abi/fetcher/tmp/dataset-tools-0.0.8.tar.gz]
+[2024-04-22 11:11:54] INFO root fetch - processPackages [dataset-tools]: Remove: archive file [/home/abi/fetcher/tmp/dataset-tools-0.0.9.tar.gz]
+[2024-04-22 11:11:54] INFO root fetch - main [MainThread]: End processing [dataset-tools]: success
+[2024-04-22 11:11:54] INFO root fetch - processPackages [py-paretoarchive]: Remove: archive file [/home/abi/fetcher/tmp/py-paretoarchive-0.19.tar.gz]
+[2024-04-22 11:11:54] INFO root fetch - processPackages [py-paretoarchive]: Remove: archive file [/home/abi/fetcher/tmp/py-paretoarchive-0.20.tar.gz]
+[2024-04-22 11:11:54] INFO root fetch - main [MainThread]: End processing [py-paretoarchive]: success
+[2024-04-22 11:11:55] INFO root fetch - processPackages [synrbl]: Remove: archive file [/home/abi/fetcher/tmp/synrbl-0.0.7.tar.gz]
+[2024-04-22 11:11:55] INFO root fetch - processPackages [synrbl]: Remove: archive file [/home/abi/fetcher/tmp/synrbl-0.0.8.tar.gz]
+[2024-04-22 11:11:55] INFO root fetch - main [MainThread]: End processing [synrbl]: success
+[2024-04-22 11:11:56] INFO root fetch - processPackages [amulet-leveldb]: Remove: archive file [/home/abi/fetcher/tmp/amulet-leveldb-1.0.0b4.tar.gz]
+[2024-04-22 11:11:56] INFO root fetch - processPackages [amulet-leveldb]: Remove: archive file [/home/abi/fetcher/tmp/amulet-leveldb-1.0.0b5.tar.gz]
+[2024-04-22 11:11:56] INFO root fetch - main [MainThread]: End processing [amulet-leveldb]: success
+[2024-04-22 11:11:56] INFO root fetch - main [MainThread]: Store serial: [22874561]
