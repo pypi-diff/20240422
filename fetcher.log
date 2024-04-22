@@ -4047,3 +4047,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:20:46] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.8.tar.gz]
 [2024-04-22 05:20:46] INFO root fetch - main [MainThread]: End processing [biotech]: success
 [2024-04-22 05:20:46] INFO root fetch - main [MainThread]: Store serial: [22871665]
+[2024-04-22 05:22:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871665]
+[2024-04-22 05:22:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 05:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jijzept
+[2024-04-22 05:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nightly
+[2024-04-22 05:22:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ziya
+[2024-04-22 05:22:55] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.0.dev2024042103] Old Version: [3.3.0.dev2024042003]
+[2024-04-22 05:22:55] INFO root fetch - processPackages [ziya]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-22 05:22:55] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/ba/2e/dffa04b0bffc2468135f1546972a31efdefdcc678ca6dfb9585d73a72d61/keras_nightly-3.3.0.dev2024042003.tar.gz
+[2024-04-22 05:22:55] INFO root fetch - processPackages [jijzept]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-04-22 05:22:55] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/b3/40/3bb030dc6747efe144ab30db92c8951d71a3880a507f35d64a0135edf385/ziya-0.1.0.tar.gz
+[2024-04-22 05:22:55] INFO root fetch - processPackages [jijzept]: Downloading https://files.pythonhosted.org/packages/72/fb/9a52fe090892437248f15fb11b3c8ee874329278b8f5ee8d6169e88dc0a6/jijzept-1.9.1-cp39-cp39-win_amd64.whl
+[2024-04-22 05:22:55] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/3c/0c/72db142dcb34839c7c3dc2ff81edc5b3985dbe87bf7efa4bee8529ee54ce/keras_nightly-3.3.0.dev2024042103.tar.gz
+[2024-04-22 05:22:56] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/36/a9/a9e1f899f1d05ffaaa9f7d305d3048c3a94229809c2291dee5224c97890c/ziya-0.1.1.tar.gz
+[2024-04-22 05:22:56] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-04-22 05:22:56] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.0.tar.gz tmp/ziya-0.1.1.tar.gz --markdown 20240422/z/ziya/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-22 05:22:56] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-04-22 05:22:56] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.0.dev2024042003.tar.gz tmp/keras_nightly-3.3.0.dev2024042103.tar.gz --markdown 20240422/k/keras-nightly/3.3.0.dev2024042003-3.3.0.dev2024042103/README.md --exclude *.pyd
+[2024-04-22 05:22:56] INFO root fetch - processPackages [jijzept]: Downloading https://files.pythonhosted.org/packages/a1/bc/e2438f5f8452cd4acef7ef12bfa56f583f3dfd05881f00d6bb416d64ba72/jijzept-1.9.2-cp39-cp39-win_amd64.whl
+[2024-04-22 05:22:56] INFO root fetch - processPackages [jijzept]: executing diffoscope
+[2024-04-22 05:22:56] INFO root fetch - processPackages [jijzept]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jijzept-1.9.1-cp39-cp39-win_amd64.whl.zip tmp/jijzept-1.9.2-cp39-cp39-win_amd64.whl.zip --markdown 20240422/j/jijzept/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-04-22 05:22:56] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.0.tar.gz]
+[2024-04-22 05:22:56] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.1.tar.gz]
+[2024-04-22 05:22:56] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-04-22 05:22:57] INFO root fetch - processPackages [jijzept]: Remove: archive file [/home/abi/fetcher/tmp/jijzept-1.9.1-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 05:22:57] INFO root fetch - processPackages [jijzept]: Remove: archive file [/home/abi/fetcher/tmp/jijzept-1.9.2-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 05:22:57] INFO root fetch - main [MainThread]: End processing [jijzept]: success
+[2024-04-22 05:22:59] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.0.dev2024042003.tar.gz]
+[2024-04-22 05:22:59] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.0.dev2024042103.tar.gz]
+[2024-04-22 05:22:59] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-04-22 05:22:59] INFO root fetch - main [MainThread]: Store serial: [22871703]
