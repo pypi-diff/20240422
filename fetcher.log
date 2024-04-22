@@ -7377,3 +7377,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:05:46] INFO root fetch - processPackages [dsm-django-socialauth]: Remove: archive file [/home/abi/fetcher/tmp/dsm-django-socialauth-1.0.9.tar.gz]
 [2024-04-22 09:05:46] INFO root fetch - main [MainThread]: End processing [dsm-django-socialauth]: success
 [2024-04-22 09:05:46] INFO root fetch - main [MainThread]: Store serial: [22872907]
+[2024-04-22 09:07:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872907]
+[2024-04-22 09:07:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 09:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chopcal
+[2024-04-22 09:07:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytiqs
+[2024-04-22 09:07:55] INFO root fetch - processPackages [chopcal]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-22 09:07:55] INFO root fetch - processPackages [pytiqs]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-22 09:07:55] INFO root fetch - processPackages [chopcal]: Downloading https://files.pythonhosted.org/packages/b8/f3/bcb43d6a27b8a1ac01c674e508e5a8e4c80b052bafd1b294d908e8a8afbf/chopcal-0.2.1.tar.gz
+[2024-04-22 09:07:55] INFO root fetch - processPackages [pytiqs]: Downloading https://files.pythonhosted.org/packages/95/8e/30a66078f825e4ef7045cffc809f51ec2b0ff062088fd5a1af1b443447a6/pytiqs-1.0.8.tar.gz
+[2024-04-22 09:07:55] INFO root fetch - processPackages [chopcal]: Downloading https://files.pythonhosted.org/packages/bd/b7/7410fc87145ce47e63db6741b83f0db99dfbaf4a424d8daeb105ad30f154/chopcal-0.3.0.tar.gz
+[2024-04-22 09:07:56] INFO root fetch - processPackages [chopcal]: executing diffoscope
+[2024-04-22 09:07:56] INFO root fetch - processPackages [chopcal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chopcal-0.2.1.tar.gz tmp/chopcal-0.3.0.tar.gz --markdown 20240422/c/chopcal/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-04-22 09:07:56] INFO root fetch - processPackages [pytiqs]: Downloading https://files.pythonhosted.org/packages/58/d2/c0049b0f30ead12686d88eed4acd08a2cd919d150d089ac12e4616494aed/pytiqs-1.0.9.tar.gz
+[2024-04-22 09:07:56] INFO root fetch - processPackages [pytiqs]: executing diffoscope
+[2024-04-22 09:07:56] INFO root fetch - processPackages [pytiqs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytiqs-1.0.8.tar.gz tmp/pytiqs-1.0.9.tar.gz --markdown 20240422/p/pytiqs/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-22 09:07:56] INFO root fetch - processPackages [chopcal]: Remove: archive file [/home/abi/fetcher/tmp/chopcal-0.2.1.tar.gz]
+[2024-04-22 09:07:56] INFO root fetch - processPackages [chopcal]: Remove: archive file [/home/abi/fetcher/tmp/chopcal-0.3.0.tar.gz]
+[2024-04-22 09:07:56] INFO root fetch - main [MainThread]: End processing [chopcal]: success
+[2024-04-22 09:07:57] INFO root fetch - processPackages [pytiqs]: Remove: archive file [/home/abi/fetcher/tmp/pytiqs-1.0.8.tar.gz]
+[2024-04-22 09:07:57] INFO root fetch - processPackages [pytiqs]: Remove: archive file [/home/abi/fetcher/tmp/pytiqs-1.0.9.tar.gz]
+[2024-04-22 09:07:57] INFO root fetch - main [MainThread]: End processing [pytiqs]: success
+[2024-04-22 09:07:57] INFO root fetch - main [MainThread]: Store serial: [22872964]
