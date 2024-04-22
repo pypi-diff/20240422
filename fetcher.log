@@ -5411,3 +5411,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:14:00] INFO root fetch - main [MainThread]: End processing [ezregex]: success
 [2024-04-22 07:14:00] INFO root fetch - main [MainThread]: End processing [ezregex]: success
 [2024-04-22 07:14:00] INFO root fetch - main [MainThread]: Store serial: [22872200]
+[2024-04-22 07:16:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872200]
+[2024-04-22 07:16:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 07:16:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: haskellian
+[2024-04-22 07:16:08] INFO root fetch - processPackages [haskellian]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-22 07:16:08] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/7a/0d/c86ec488afb925dabbafdd974c0f9955a8d597497d6a8a0244191014ab1d/haskellian-0.3.4.tar.gz
+[2024-04-22 07:16:08] INFO root fetch - processPackages [haskellian]: Downloading https://files.pythonhosted.org/packages/0a/e1/c454495e18dcc174ec58264e80c961c59cb68f35c10e667663f3ba9c85e7/haskellian-0.3.5.tar.gz
+[2024-04-22 07:16:08] INFO root fetch - processPackages [haskellian]: executing diffoscope
+[2024-04-22 07:16:08] INFO root fetch - processPackages [haskellian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian-0.3.4.tar.gz tmp/haskellian-0.3.5.tar.gz --markdown 20240422/h/haskellian/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-22 07:16:09] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.4.tar.gz]
+[2024-04-22 07:16:09] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.5.tar.gz]
+[2024-04-22 07:16:09] INFO root fetch - main [MainThread]: End processing [haskellian]: success
+[2024-04-22 07:16:09] INFO root fetch - main [MainThread]: Store serial: [22872203]
