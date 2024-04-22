@@ -6943,3 +6943,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:46:02] INFO root fetch - processPackages [spetlr]: Remove: archive file [/home/abi/fetcher/tmp/spetlr-5.1.4.tar.gz]
 [2024-04-22 08:46:02] INFO root fetch - main [MainThread]: End processing [spetlr]: success
 [2024-04-22 08:46:02] INFO root fetch - main [MainThread]: Store serial: [22872760]
+[2024-04-22 08:48:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872760]
+[2024-04-22 08:48:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 08:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-sanyao
+[2024-04-22 08:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oterm
+[2024-04-22 08:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: magentic
+[2024-04-22 08:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: UEVaultManager
+[2024-04-22 08:48:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygmtsar
+[2024-04-22 08:48:11] INFO root fetch - processPackages [nonebot-plugin-sanyao]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-22 08:48:11] INFO root fetch - processPackages [pygmtsar]: New version: [2024.4.17] Old Version: [2024.3.15.post8]
+[2024-04-22 08:48:11] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/96/25/0f64958c277901cd8a4647f788b0f987e38295fb2ad7b960503f9886ca7d/nonebot_plugin_sanyao-0.2.2.tar.gz
+[2024-04-22 08:48:11] INFO root fetch - processPackages [magentic]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-22 08:48:11] INFO root fetch - processPackages [oterm]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-22 08:48:11] INFO root fetch - processPackages [UEVaultManager]: New version: [1.9.5] Old Version: [1.9.4]
+[2024-04-22 08:48:11] INFO root fetch - processPackages [magentic]: Downloading https://files.pythonhosted.org/packages/b1/4c/c92b3a38ac6e6e9e2715083d4b0cd75ceb0e3bcbd7f805d25522283b4708/magentic-0.9.0.tar.gz
+[2024-04-22 08:48:11] INFO root fetch - processPackages [UEVaultManager]: Downloading https://files.pythonhosted.org/packages/05/76/b206cf0be89434e324ff7e7d27393b75c94aeef7b5e7851b0aaea271bba4/UEVaultManager-1.9.4.tar.gz
+[2024-04-22 08:48:11] INFO root fetch - processPackages [oterm]: Downloading https://files.pythonhosted.org/packages/62/8b/d0e6ce2b24f2041d0ad44476285359de1028114a71d4ad9bccbea489cea5/oterm-0.2.6.tar.gz
+[2024-04-22 08:48:11] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/44/33/3424fead236bf2178494ee4679d3f684499b5ba6ffda6da9721d75bf5785/pygmtsar-2024.3.15.post8.tar.gz
+[2024-04-22 08:48:11] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/de/5a/0ade9f59a034d8a1382ace385af22446a484120c98cb59ccc6483dd0ddc0/nonebot_plugin_sanyao-0.2.3.tar.gz
+[2024-04-22 08:48:12] INFO root fetch - processPackages [oterm]: Downloading https://files.pythonhosted.org/packages/7d/b6/a16eb00b7e078dbdfb989ddf41b59a2ec6e4242e61f0f892939b37f2a57e/oterm-0.2.7.tar.gz
+[2024-04-22 08:48:12] INFO root fetch - processPackages [magentic]: Downloading https://files.pythonhosted.org/packages/14/4d/5c6c2464c5abac2cf0a83ac11e48dd90edf9b6d646f6825ce23b0bfe99bf/magentic-0.9.1.tar.gz
+[2024-04-22 08:48:12] INFO root fetch - processPackages [nonebot-plugin-sanyao]: executing diffoscope
+[2024-04-22 08:48:12] INFO root fetch - processPackages [nonebot-plugin-sanyao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sanyao-0.2.2.tar.gz tmp/nonebot_plugin_sanyao-0.2.3.tar.gz --markdown 20240422/n/nonebot-plugin-sanyao/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-22 08:48:12] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/aa/e7/db8241be0bcc0386f4960eb26a95af56b9343409f0dbc81524c7a961cfcf/pygmtsar-2024.4.17.tar.gz
+[2024-04-22 08:48:12] INFO root fetch - processPackages [UEVaultManager]: Downloading https://files.pythonhosted.org/packages/62/25/2ba3e93967bbaacf75b30aae4dbeefc6e0af5996d7b448871a9958efab77/UEVaultManager-1.9.5.tar.gz
+[2024-04-22 08:48:12] INFO root fetch - processPackages [oterm]: executing diffoscope
+[2024-04-22 08:48:12] INFO root fetch - processPackages [oterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oterm-0.2.6.tar.gz tmp/oterm-0.2.7.tar.gz --markdown 20240422/o/oterm/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-22 08:48:12] INFO root fetch - processPackages [magentic]: executing diffoscope
+[2024-04-22 08:48:12] INFO root fetch - processPackages [magentic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magentic-0.9.0.tar.gz tmp/magentic-0.9.1.tar.gz --markdown 20240422/m/magentic/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-22 08:48:12] INFO root fetch - processPackages [pygmtsar]: executing diffoscope
+[2024-04-22 08:48:12] INFO root fetch - processPackages [pygmtsar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmtsar-2024.3.15.post8.tar.gz tmp/pygmtsar-2024.4.17.tar.gz --markdown 20240422/p/pygmtsar/2024.3.15.post8-2024.4.17/README.md --exclude *.pyd
+[2024-04-22 08:48:12] INFO root fetch - processPackages [UEVaultManager]: executing diffoscope
+[2024-04-22 08:48:12] INFO root fetch - processPackages [UEVaultManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UEVaultManager-1.9.4.tar.gz tmp/UEVaultManager-1.9.5.tar.gz --markdown 20240422/U/UEVaultManager/1.9.4-1.9.5/README.md --exclude *.pyd
+[2024-04-22 08:48:12] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.2.2.tar.gz]
+[2024-04-22 08:48:12] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.2.3.tar.gz]
+[2024-04-22 08:48:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sanyao]: success
+[2024-04-22 08:48:13] INFO root fetch - processPackages [magentic]: Remove: archive file [/home/abi/fetcher/tmp/magentic-0.9.0.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - processPackages [magentic]: Remove: archive file [/home/abi/fetcher/tmp/magentic-0.9.1.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - main [MainThread]: End processing [magentic]: success
+[2024-04-22 08:48:13] INFO root fetch - processPackages [oterm]: Remove: archive file [/home/abi/fetcher/tmp/oterm-0.2.6.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - processPackages [oterm]: Remove: archive file [/home/abi/fetcher/tmp/oterm-0.2.7.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - main [MainThread]: End processing [oterm]: success
+[2024-04-22 08:48:13] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.3.15.post8.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.4.17.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - main [MainThread]: End processing [pygmtsar]: success
+[2024-04-22 08:48:13] INFO root fetch - processPackages [UEVaultManager]: Remove: archive file [/home/abi/fetcher/tmp/UEVaultManager-1.9.4.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - processPackages [UEVaultManager]: Remove: archive file [/home/abi/fetcher/tmp/UEVaultManager-1.9.5.tar.gz]
+[2024-04-22 08:48:13] INFO root fetch - main [MainThread]: End processing [UEVaultManager]: success
+[2024-04-22 08:48:13] INFO root fetch - main [MainThread]: Store serial: [22872775]
