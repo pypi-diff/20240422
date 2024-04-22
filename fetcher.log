@@ -7353,3 +7353,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:03:35] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.33.1.dev20240420.tar.gz]
 [2024-04-22 09:03:35] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-04-22 09:03:35] INFO root fetch - main [MainThread]: Store serial: [22872896]
+[2024-04-22 09:05:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872896]
+[2024-04-22 09:05:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 09:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gerumpdf
+[2024-04-22 09:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: citation-crawler
+[2024-04-22 09:05:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dsm-django-socialauth
+[2024-04-22 09:05:44] INFO root fetch - processPackages [dsm-django-socialauth]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-22 09:05:44] WARNING root fetch - processPackages [gerumpdf]: Skipping, unable to determine old version
+[2024-04-22 09:05:44] INFO root fetch - processPackages [citation-crawler]: New version: [2.8.4] Old Version: [2.8.3]
+[2024-04-22 09:05:44] INFO root fetch - main [MainThread]: End processing [gerumpdf] error
+[2024-04-22 09:05:44] INFO root fetch - processPackages [dsm-django-socialauth]: Downloading https://files.pythonhosted.org/packages/5d/f9/9c11ab0849df799e3f45432528010233757706427e1cc81b64e02341dede/dsm-django-socialauth-1.0.8.tar.gz
+[2024-04-22 09:05:44] INFO root fetch - processPackages [citation-crawler]: Downloading https://files.pythonhosted.org/packages/86/6f/4b2e87600c71dba2be219f149edbbc5ef5a48d2fcff073cffdb854e5cf16/citation_crawler-2.8.3.tar.gz
+[2024-04-22 09:05:45] INFO root fetch - processPackages [dsm-django-socialauth]: Downloading https://files.pythonhosted.org/packages/8c/aa/089c42588b3e9ea87ea30dc296d13aa9df5baa5822d37bbb19fc2731df4f/dsm-django-socialauth-1.0.9.tar.gz
+[2024-04-22 09:05:45] INFO root fetch - processPackages [citation-crawler]: Downloading https://files.pythonhosted.org/packages/09/ca/433bfddd2581e2aa106bfefb01a540c42fe1cad03c7f257d70665702dc7d/citation_crawler-2.8.4.tar.gz
+[2024-04-22 09:05:45] INFO root fetch - processPackages [citation-crawler]: executing diffoscope
+[2024-04-22 09:05:45] INFO root fetch - processPackages [citation-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citation_crawler-2.8.3.tar.gz tmp/citation_crawler-2.8.4.tar.gz --markdown 20240422/c/citation-crawler/2.8.3-2.8.4/README.md --exclude *.pyd
+[2024-04-22 09:05:45] INFO root fetch - processPackages [dsm-django-socialauth]: executing diffoscope
+[2024-04-22 09:05:45] INFO root fetch - processPackages [dsm-django-socialauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsm-django-socialauth-1.0.8.tar.gz tmp/dsm-django-socialauth-1.0.9.tar.gz --markdown 20240422/d/dsm-django-socialauth/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-22 09:05:46] INFO root fetch - processPackages [citation-crawler]: Remove: archive file [/home/abi/fetcher/tmp/citation_crawler-2.8.3.tar.gz]
+[2024-04-22 09:05:46] INFO root fetch - processPackages [citation-crawler]: Remove: archive file [/home/abi/fetcher/tmp/citation_crawler-2.8.4.tar.gz]
+[2024-04-22 09:05:46] INFO root fetch - main [MainThread]: End processing [citation-crawler]: success
+[2024-04-22 09:05:46] INFO root fetch - processPackages [dsm-django-socialauth]: Remove: archive file [/home/abi/fetcher/tmp/dsm-django-socialauth-1.0.8.tar.gz]
+[2024-04-22 09:05:46] INFO root fetch - processPackages [dsm-django-socialauth]: Remove: archive file [/home/abi/fetcher/tmp/dsm-django-socialauth-1.0.9.tar.gz]
+[2024-04-22 09:05:46] INFO root fetch - main [MainThread]: End processing [dsm-django-socialauth]: success
+[2024-04-22 09:05:46] INFO root fetch - main [MainThread]: Store serial: [22872907]
