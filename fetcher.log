@@ -7048,3 +7048,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:50:25] INFO root fetch - processPackages [urwid]: Remove: archive file [/home/abi/fetcher/tmp/urwid-2.6.9.tar.gz]
 [2024-04-22 08:50:25] INFO root fetch - main [MainThread]: End processing [urwid]: success
 [2024-04-22 08:50:25] INFO root fetch - main [MainThread]: Store serial: [22872804]
+[2024-04-22 08:52:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872804]
+[2024-04-22 08:52:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 08:52:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ih-common
+[2024-04-22 08:52:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastcrud
+[2024-04-22 08:52:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metadynminer
+[2024-04-22 08:52:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odbc2deltalake
+[2024-04-22 08:52:33] INFO root fetch - processPackages [metadynminer]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-04-22 08:52:33] INFO root fetch - processPackages [odbc2deltalake]: New version: [0.8.7] Old Version: [0.8.5]
+[2024-04-22 08:52:33] INFO root fetch - processPackages [fastcrud]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-22 08:52:33] INFO root fetch - processPackages [ih-common]: New version: [2.8.0] Old Version: [2.7.1]
+[2024-04-22 08:52:34] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/4d/0c/cf8504e53ab0ecc31714dd7033f42cbb6b0de8dfd679755465688b66f914/ih_common-2.7.1.tar.gz
+[2024-04-22 08:52:34] INFO root fetch - processPackages [fastcrud]: Downloading https://files.pythonhosted.org/packages/65/03/d3b58e3d09797960d244fdabca85b359227ca6d0d05233e56f8dbbfe3da9/fastcrud-0.9.0.tar.gz
+[2024-04-22 08:52:34] INFO root fetch - processPackages [odbc2deltalake]: Downloading https://files.pythonhosted.org/packages/c4/04/e91dac112ec55525b0b661ff39d03611841a3c1a041614e7ad4024334298/odbc2deltalake-0.8.5.tar.gz
+[2024-04-22 08:52:34] INFO root fetch - processPackages [metadynminer]: Downloading https://files.pythonhosted.org/packages/02/8f/a39f67a6cc91b899046a95907afd9a3f878da660ad351215f815aaadc5cc/metadynminer-0.7.0.tar.gz
+[2024-04-22 08:52:34] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/37/56/56af585e51da9a974b871731c3a293e02d9df6211d0f51f48aef65de6085/ih_common-2.8.0.tar.gz
+[2024-04-22 08:52:34] INFO root fetch - processPackages [fastcrud]: Downloading https://files.pythonhosted.org/packages/80/99/b99c854973c7d58e5e1d5cd75f589a743aba43155a64950e3f4812a61db8/fastcrud-0.9.1.tar.gz
+[2024-04-22 08:52:34] INFO root fetch - processPackages [metadynminer]: Downloading https://files.pythonhosted.org/packages/56/fa/dd50b8a318b36195113090673391b6ec19553777af8a44d23de039a03c96/metadynminer-0.8.0.tar.gz
+[2024-04-22 08:52:34] INFO root fetch - processPackages [ih-common]: executing diffoscope
+[2024-04-22 08:52:34] INFO root fetch - processPackages [ih-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ih_common-2.7.1.tar.gz tmp/ih_common-2.8.0.tar.gz --markdown 20240422/i/ih-common/2.7.1-2.8.0/README.md --exclude *.pyd
+[2024-04-22 08:52:34] INFO root fetch - processPackages [fastcrud]: executing diffoscope
+[2024-04-22 08:52:34] INFO root fetch - processPackages [fastcrud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastcrud-0.9.0.tar.gz tmp/fastcrud-0.9.1.tar.gz --markdown 20240422/f/fastcrud/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-22 08:52:35] INFO root fetch - processPackages [metadynminer]: executing diffoscope
+[2024-04-22 08:52:35] INFO root fetch - processPackages [metadynminer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metadynminer-0.7.0.tar.gz tmp/metadynminer-0.8.0.tar.gz --markdown 20240422/m/metadynminer/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-04-22 08:52:35] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.7.1.tar.gz]
+[2024-04-22 08:52:35] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.8.0.tar.gz]
+[2024-04-22 08:52:35] INFO root fetch - main [MainThread]: End processing [ih-common]: success
+[2024-04-22 08:52:35] INFO root fetch - processPackages [fastcrud]: Remove: archive file [/home/abi/fetcher/tmp/fastcrud-0.9.0.tar.gz]
+[2024-04-22 08:52:35] INFO root fetch - processPackages [fastcrud]: Remove: archive file [/home/abi/fetcher/tmp/fastcrud-0.9.1.tar.gz]
+[2024-04-22 08:52:35] INFO root fetch - main [MainThread]: End processing [fastcrud]: success
+[2024-04-22 08:52:35] INFO root fetch - processPackages [metadynminer]: Remove: archive file [/home/abi/fetcher/tmp/metadynminer-0.7.0.tar.gz]
+[2024-04-22 08:52:35] INFO root fetch - processPackages [metadynminer]: Remove: archive file [/home/abi/fetcher/tmp/metadynminer-0.8.0.tar.gz]
+[2024-04-22 08:52:35] INFO root fetch - main [MainThread]: End processing [metadynminer]: success
+[2024-04-22 08:52:36] INFO root fetch - processPackages [odbc2deltalake]: Downloading https://files.pythonhosted.org/packages/15/0a/53cdc96e432d8ae90718095b20d2e4038ea4b47fbbb5b884c83c2cf881fc/odbc2deltalake-0.8.7.tar.gz
+[2024-04-22 08:52:36] INFO root fetch - processPackages [odbc2deltalake]: executing diffoscope
+[2024-04-22 08:52:36] INFO root fetch - processPackages [odbc2deltalake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odbc2deltalake-0.8.5.tar.gz tmp/odbc2deltalake-0.8.7.tar.gz --markdown 20240422/o/odbc2deltalake/0.8.5-0.8.7/README.md --exclude *.pyd
+[2024-04-22 08:52:37] INFO root fetch - processPackages [odbc2deltalake]: Remove: archive file [/home/abi/fetcher/tmp/odbc2deltalake-0.8.5.tar.gz]
+[2024-04-22 08:52:37] INFO root fetch - processPackages [odbc2deltalake]: Remove: archive file [/home/abi/fetcher/tmp/odbc2deltalake-0.8.7.tar.gz]
+[2024-04-22 08:52:37] INFO root fetch - main [MainThread]: End processing [odbc2deltalake]: success
+[2024-04-22 08:52:37] INFO root fetch - main [MainThread]: Store serial: [22872814]
