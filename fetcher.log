@@ -8039,3 +8039,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:49:36] INFO root fetch - processPackages [synthetic-aia-mia]: Remove: archive file [/home/abi/fetcher/tmp/synthetic_aia_mia-0.0.9.tar.gz]
 [2024-04-22 09:49:36] INFO root fetch - main [MainThread]: End processing [synthetic-aia-mia]: success
 [2024-04-22 09:49:36] INFO root fetch - main [MainThread]: Store serial: [22873628]
+[2024-04-22 09:51:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873628]
+[2024-04-22 09:51:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 09:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commonmeta-py
+[2024-04-22 09:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sekoia-automation-sdk
+[2024-04-22 09:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-ratelimiter
+[2024-04-22 09:51:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: audio-visual
+[2024-04-22 09:51:46] INFO root fetch - processPackages [commonmeta-py]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-22 09:51:46] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/52/c0/e7c87877f28428fc995c494cd79586152481d7b23c1e0bbb364b89a4b025/commonmeta_py-0.9.3.tar.gz
+[2024-04-22 09:51:46] WARNING root fetch - processPackages [audio-visual]: Skipping, unable to determine old version
+[2024-04-22 09:51:46] INFO root fetch - processPackages [django-ratelimiter]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 09:51:46] INFO root fetch - main [MainThread]: End processing [audio-visual] error
+[2024-04-22 09:51:46] INFO root fetch - processPackages [sekoia-automation-sdk]: New version: [1.9.0] Old Version: [1.8.2]
+[2024-04-22 09:51:46] INFO root fetch - processPackages [django-ratelimiter]: Downloading https://files.pythonhosted.org/packages/14/c7/c17405ac0f2e09bb4079abb14ac88b30f4d36ea89d8e53e4bbdf02c6b5c7/django_ratelimiter-0.1.1.tar.gz
+[2024-04-22 09:51:46] INFO root fetch - processPackages [sekoia-automation-sdk]: Downloading https://files.pythonhosted.org/packages/93/a2/d4d31bfd24391069ebee60429c6942005ff5709ecba03e68e321d7391e0d/sekoia_automation_sdk-1.8.2.tar.gz
+[2024-04-22 09:51:46] INFO root fetch - processPackages [commonmeta-py]: Downloading https://files.pythonhosted.org/packages/a7/bd/df628255dc3f849e7da2d4b39759e0fb92720cf93c1cfbfa4d9ffff22942/commonmeta_py-0.9.4.tar.gz
+[2024-04-22 09:51:46] INFO root fetch - processPackages [commonmeta-py]: executing diffoscope
+[2024-04-22 09:51:46] INFO root fetch - processPackages [commonmeta-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commonmeta_py-0.9.3.tar.gz tmp/commonmeta_py-0.9.4.tar.gz --markdown 20240422/c/commonmeta-py/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-04-22 09:51:46] INFO root fetch - processPackages [django-ratelimiter]: Downloading https://files.pythonhosted.org/packages/46/eb/09476de8eafb0e1ac5f5583d0b783e0678b6bb4c43a05b9bac10c278cf67/django_ratelimiter-0.1.2.tar.gz
+[2024-04-22 09:51:46] INFO root fetch - processPackages [sekoia-automation-sdk]: Downloading https://files.pythonhosted.org/packages/d8/ae/6283dc3513f91a892776561b8f3d360f6ce3b7fbe3e3de361a7b55e57d57/sekoia_automation_sdk-1.9.0.tar.gz
+[2024-04-22 09:51:47] INFO root fetch - processPackages [django-ratelimiter]: executing diffoscope
+[2024-04-22 09:51:47] INFO root fetch - processPackages [django-ratelimiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_ratelimiter-0.1.1.tar.gz tmp/django_ratelimiter-0.1.2.tar.gz --markdown 20240422/d/django-ratelimiter/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 09:51:47] INFO root fetch - processPackages [sekoia-automation-sdk]: executing diffoscope
+[2024-04-22 09:51:47] INFO root fetch - processPackages [sekoia-automation-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sekoia_automation_sdk-1.8.2.tar.gz tmp/sekoia_automation_sdk-1.9.0.tar.gz --markdown 20240422/s/sekoia-automation-sdk/1.8.2-1.9.0/README.md --exclude *.pyd
+[2024-04-22 09:51:47] INFO root fetch - processPackages [django-ratelimiter]: Remove: archive file [/home/abi/fetcher/tmp/django_ratelimiter-0.1.1.tar.gz]
+[2024-04-22 09:51:47] INFO root fetch - processPackages [django-ratelimiter]: Remove: archive file [/home/abi/fetcher/tmp/django_ratelimiter-0.1.2.tar.gz]
+[2024-04-22 09:51:47] INFO root fetch - main [MainThread]: End processing [django-ratelimiter]: success
+[2024-04-22 09:51:47] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.3.tar.gz]
+[2024-04-22 09:51:47] INFO root fetch - processPackages [commonmeta-py]: Remove: archive file [/home/abi/fetcher/tmp/commonmeta_py-0.9.4.tar.gz]
+[2024-04-22 09:51:47] INFO root fetch - main [MainThread]: End processing [commonmeta-py]: success
+[2024-04-22 09:51:47] INFO root fetch - processPackages [sekoia-automation-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sekoia_automation_sdk-1.8.2.tar.gz]
+[2024-04-22 09:51:47] INFO root fetch - processPackages [sekoia-automation-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sekoia_automation_sdk-1.9.0.tar.gz]
+[2024-04-22 09:51:47] INFO root fetch - main [MainThread]: End processing [sekoia-automation-sdk]: success
+[2024-04-22 09:51:47] INFO root fetch - main [MainThread]: Store serial: [22873695]
