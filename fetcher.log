@@ -4017,3 +4017,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:16:21] INFO root fetch - processPackages [spotifywebapiPython]: Remove: archive file [/home/abi/fetcher/tmp/spotifywebapiPython-1.0.9-py3-none-any.whl.zip]
 [2024-04-22 05:16:21] INFO root fetch - main [MainThread]: End processing [spotifywebapiPython]: success
 [2024-04-22 05:16:21] INFO root fetch - main [MainThread]: Store serial: [22871648]
+[2024-04-22 05:18:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871648]
+[2024-04-22 05:18:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 05:18:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datax-split
+[2024-04-22 05:18:31] WARNING root fetch - processPackages [datax-split]: Skipping, unable to determine old version
+[2024-04-22 05:18:31] INFO root fetch - main [MainThread]: End processing [datax-split] error
+[2024-04-22 05:18:31] INFO root fetch - main [MainThread]: Store serial: [22871654]
