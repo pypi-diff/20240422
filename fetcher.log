@@ -6069,3 +6069,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:01:45] INFO root fetch - processPackages [azure-mgmt-datafactory]: Remove: archive file [/home/abi/fetcher/tmp/azure-mgmt-datafactory-7.0.0.tar.gz]
 [2024-04-22 08:01:45] INFO root fetch - main [MainThread]: End processing [azure-mgmt-datafactory]: success
 [2024-04-22 08:01:45] INFO root fetch - main [MainThread]: Store serial: [22872446]
+[2024-04-22 08:03:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872446]
+[2024-04-22 08:03:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 08:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ocflib
+[2024-04-22 08:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: md2weasypdf
+[2024-04-22 08:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dotpack
+[2024-04-22 08:03:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastlogfileparser
+[2024-04-22 08:03:59] INFO root fetch - processPackages [md2weasypdf]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-04-22 08:03:59] INFO root fetch - processPackages [ocflib]: New version: [9] Old Version: [8]
+[2024-04-22 08:03:59] INFO root fetch - processPackages [md2weasypdf]: Downloading https://files.pythonhosted.org/packages/63/b2/3f9c4a98d8069533849983b0dfb03a441ce11a13676adfff588a2a197222/md2weasypdf-0.0.1.tar.gz
+[2024-04-22 08:03:59] INFO root fetch - processPackages [dotpack]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-22 08:03:59] INFO root fetch - processPackages [fastlogfileparser]: New version: [1.0.0a7] Old Version: [1.0.0a6]
+[2024-04-22 08:03:59] INFO root fetch - processPackages [ocflib]: Downloading https://files.pythonhosted.org/packages/37/9e/7d858340853127292efd32ac4cd52b6c17167e4e2a1394341eda0aed3106/ocflib-8.tar.gz
+[2024-04-22 08:04:00] INFO root fetch - processPackages [md2weasypdf]: Downloading https://files.pythonhosted.org/packages/d0/bc/69535b340b5880dfcaf8a0c72f516ca1a9bddebf4673a4307147ef7d89f8/md2weasypdf-0.0.3.tar.gz
+[2024-04-22 08:04:00] INFO root fetch - processPackages [dotpack]: Downloading https://files.pythonhosted.org/packages/23/3f/db912932dcbb313679952c2b011e8054fc522c295e8658b77049fe53921e/dotpack-0.3.5.tar.gz
+[2024-04-22 08:04:00] INFO root fetch - processPackages [ocflib]: Downloading https://files.pythonhosted.org/packages/9e/8a/34785feea7f069288ddee58a7ae104928ba33da6e1b49be66a2b1fa792b5/ocflib-9.tar.gz
+[2024-04-22 08:04:00] INFO root fetch - processPackages [fastlogfileparser]: Downloading https://files.pythonhosted.org/packages/e6/9f/71c5998fb795610d1c3c47c74d6d2cf0b01c80be47c9317496a776d135f1/fastlogfileparser-1.0.0a6.tar.gz
+[2024-04-22 08:04:00] INFO root fetch - processPackages [md2weasypdf]: executing diffoscope
+[2024-04-22 08:04:00] INFO root fetch - processPackages [md2weasypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/md2weasypdf-0.0.1.tar.gz tmp/md2weasypdf-0.0.3.tar.gz --markdown 20240422/m/md2weasypdf/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-04-22 08:04:00] INFO root fetch - processPackages [ocflib]: executing diffoscope
+[2024-04-22 08:04:00] INFO root fetch - processPackages [ocflib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocflib-8.tar.gz tmp/ocflib-9.tar.gz --markdown 20240422/o/ocflib/8-9/README.md --exclude *.pyd
+[2024-04-22 08:04:00] INFO root fetch - processPackages [fastlogfileparser]: Downloading https://files.pythonhosted.org/packages/ac/4c/f51a388123377ef882d7a84c9665073045ab1773cfa0097b6fccf4039e91/fastlogfileparser-1.0.0a7.tar.gz
+[2024-04-22 08:04:00] INFO root fetch - processPackages [dotpack]: Downloading https://files.pythonhosted.org/packages/e4/55/3af7c2f58450f971ea46912036813440e658f32644db51ffac312a4df21d/dotpack-0.3.6.tar.gz
+[2024-04-22 08:04:00] INFO root fetch - processPackages [fastlogfileparser]: executing diffoscope
+[2024-04-22 08:04:00] INFO root fetch - processPackages [fastlogfileparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastlogfileparser-1.0.0a6.tar.gz tmp/fastlogfileparser-1.0.0a7.tar.gz --markdown 20240422/f/fastlogfileparser/1.0.0a6-1.0.0a7/README.md --exclude *.pyd
+[2024-04-22 08:04:00] INFO root fetch - processPackages [dotpack]: executing diffoscope
+[2024-04-22 08:04:00] INFO root fetch - processPackages [dotpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotpack-0.3.5.tar.gz tmp/dotpack-0.3.6.tar.gz --markdown 20240422/d/dotpack/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-22 08:04:00] INFO root fetch - processPackages [md2weasypdf]: Remove: archive file [/home/abi/fetcher/tmp/md2weasypdf-0.0.1.tar.gz]
+[2024-04-22 08:04:00] INFO root fetch - processPackages [md2weasypdf]: Remove: archive file [/home/abi/fetcher/tmp/md2weasypdf-0.0.3.tar.gz]
+[2024-04-22 08:04:00] INFO root fetch - main [MainThread]: End processing [md2weasypdf]: success
+[2024-04-22 08:04:01] INFO root fetch - processPackages [ocflib]: Remove: archive file [/home/abi/fetcher/tmp/ocflib-8.tar.gz]
+[2024-04-22 08:04:01] INFO root fetch - processPackages [ocflib]: Remove: archive file [/home/abi/fetcher/tmp/ocflib-9.tar.gz]
+[2024-04-22 08:04:01] INFO root fetch - main [MainThread]: End processing [ocflib]: success
+[2024-04-22 08:04:01] INFO root fetch - processPackages [fastlogfileparser]: Remove: archive file [/home/abi/fetcher/tmp/fastlogfileparser-1.0.0a6.tar.gz]
+[2024-04-22 08:04:01] INFO root fetch - processPackages [fastlogfileparser]: Remove: archive file [/home/abi/fetcher/tmp/fastlogfileparser-1.0.0a7.tar.gz]
+[2024-04-22 08:04:01] INFO root fetch - main [MainThread]: End processing [fastlogfileparser]: success
+[2024-04-22 08:04:01] INFO root fetch - processPackages [dotpack]: Remove: archive file [/home/abi/fetcher/tmp/dotpack-0.3.5.tar.gz]
+[2024-04-22 08:04:01] INFO root fetch - processPackages [dotpack]: Remove: archive file [/home/abi/fetcher/tmp/dotpack-0.3.6.tar.gz]
+[2024-04-22 08:04:01] INFO root fetch - main [MainThread]: End processing [dotpack]: success
+[2024-04-22 08:04:01] INFO root fetch - main [MainThread]: Store serial: [22872458]
