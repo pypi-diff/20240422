@@ -9446,3 +9446,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:47:31] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
 [2024-04-22 10:47:31] INFO root fetch - main [MainThread]: End processing [yeref]: success
 [2024-04-22 10:47:31] INFO root fetch - main [MainThread]: Store serial: [22874298]
+[2024-04-22 10:49:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874298]
+[2024-04-22 10:49:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 10:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-04-22 10:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zonesmart-utils-fork
+[2024-04-22 10:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proj-master
+[2024-04-22 10:49:41] INFO root fetch - processPackages [zonesmart-utils-fork]: New version: [0.5.9.9] Old Version: [0.5.9.8]
+[2024-04-22 10:49:41] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-04-22 10:49:41] WARNING root fetch - processPackages [proj-master]: Skipping, unable to determine old version
+[2024-04-22 10:49:41] INFO root fetch - main [MainThread]: End processing [proj-master] error
+[2024-04-22 10:49:41] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/1f/3c/039c94473127564e1d61c86469dc142a7a89988f07bba21541fea00682d5/zonesmart-utils-fork-0.5.9.8.tar.gz
+[2024-04-22 10:49:41] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-04-22 10:49:42] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/c7/9f/2ff32de4eacc484eb5a9007534d13156a1b1a1a9c62233775741db20c020/zonesmart-utils-fork-0.5.9.9.tar.gz
+[2024-04-22 10:49:42] INFO root fetch - processPackages [zonesmart-utils-fork]: executing diffoscope
+[2024-04-22 10:49:42] INFO root fetch - processPackages [zonesmart-utils-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonesmart-utils-fork-0.5.9.8.tar.gz tmp/zonesmart-utils-fork-0.5.9.9.tar.gz --markdown 20240422/z/zonesmart-utils-fork/0.5.9.8-0.5.9.9/README.md --exclude *.pyd
+[2024-04-22 10:49:42] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-04-22 10:49:42] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-04-22 10:49:42] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240422/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-04-22 10:49:43] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.8.tar.gz]
+[2024-04-22 10:49:43] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.9.tar.gz]
+[2024-04-22 10:49:43] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
+[2024-04-22 10:49:46] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-04-22 10:49:46] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-04-22 10:49:46] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-04-22 10:49:46] INFO root fetch - main [MainThread]: Store serial: [22874307]
