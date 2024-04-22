@@ -4689,3 +4689,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:28:04] INFO root fetch - processPackages [cait-sith-py]: Remove: archive file [/home/abi/fetcher/tmp/cait_sith_py-0.1.1.tar.gz]
 [2024-04-22 06:28:04] INFO root fetch - main [MainThread]: End processing [cait-sith-py]: success
 [2024-04-22 06:28:04] INFO root fetch - main [MainThread]: Store serial: [22871935]
+[2024-04-22 06:30:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871935]
+[2024-04-22 06:30:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cutseq
+[2024-04-22 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llm-axe
+[2024-04-22 06:30:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datable-ai
+[2024-04-22 06:30:12] INFO root fetch - processPackages [datable-ai]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-22 06:30:12] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 06:30:12] WARNING root fetch - processPackages [llm-axe]: Skipping, unable to determine old version
+[2024-04-22 06:30:12] INFO root fetch - main [MainThread]: End processing [llm-axe] error
+[2024-04-22 06:30:12] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/f5/e0/1d036f214076efb89d4d0915f69136e037714b87e19a84181057bfd52b16/datable_ai-0.0.3.tar.gz
+[2024-04-22 06:30:12] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-04-22 06:30:13] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/14/de/3e4dd5efd61395f0ec6a1d7e1f7bef2db170d72b38f20f5e87ccd33e8002/datable_ai-0.0.4.tar.gz
+[2024-04-22 06:30:13] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-04-22 06:30:13] INFO root fetch - processPackages [datable-ai]: executing diffoscope
+[2024-04-22 06:30:13] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 06:30:13] INFO root fetch - processPackages [datable-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datable_ai-0.0.3.tar.gz tmp/datable_ai-0.0.4.tar.gz --markdown 20240422/d/datable-ai/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-22 06:30:13] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240422/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 06:30:13] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.3.tar.gz]
+[2024-04-22 06:30:13] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.4.tar.gz]
+[2024-04-22 06:30:13] INFO root fetch - main [MainThread]: End processing [datable-ai]: success
+[2024-04-22 06:30:13] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-04-22 06:30:13] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-04-22 06:30:13] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 06:30:13] INFO root fetch - main [MainThread]: Store serial: [22871944]
