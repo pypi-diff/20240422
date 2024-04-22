@@ -10593,3 +10593,110 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:33:49] INFO root fetch - processPackages [drfexts]: Remove: archive file [/home/abi/fetcher/tmp/drfexts-3.8.4.tar.gz]
 [2024-04-22 11:33:49] INFO root fetch - main [MainThread]: End processing [drfexts]: success
 [2024-04-22 11:33:49] INFO root fetch - main [MainThread]: Store serial: [22874821]
+[2024-04-22 11:35:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874821]
+[2024-04-22 11:35:58] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: variPEPS
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opentf-toolkit-nightly
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: create-dara-app
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dara-core
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sheeprl
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dara-components
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vvm-lib
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pear-ebi
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: omnipy
+[2024-04-22 11:35:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyacp
+[2024-04-22 11:35:58] INFO root fetch - processPackages [vvm-lib]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [pear-ebi]: New version: [0.1.69] Old Version: [0.1.68]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [variPEPS]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [sheeprl]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [dara-core]: New version: [1.8.3] Old Version: [1.8.2]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [pyacp]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [vvm-lib]: Downloading https://files.pythonhosted.org/packages/55/a1/3aa210343872b33986ece29957426bc51bc61a28d7dbf8d3aeb5d657cca9/vvm_lib-0.4.2.tar.gz
+[2024-04-22 11:35:58] INFO root fetch - processPackages [opentf-toolkit-nightly]: New version: [0.55.0.dev938] Old Version: [0.55.0.dev934]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [omnipy]: New version: [0.9.5] Old Version: [0.9.3]
+[2024-04-22 11:35:58] INFO root fetch - processPackages [pear-ebi]: Downloading https://files.pythonhosted.org/packages/9a/0b/261bec96084cd544eff8c2609aed04cc9b7a2af18b2d1ff07589ce7050c5/pear_ebi-0.1.68.tar.gz
+[2024-04-22 11:35:58] INFO root fetch - processPackages [create-dara-app]: New version: [1.8.3] Old Version: [1.8.2]
+[2024-04-22 11:35:58] WARNING root fetch - processPackages [pear-ebi]: Skipping package: exceeds size limit 11240224>=10485760
+[2024-04-22 11:35:58] INFO root fetch - processPackages [pear-ebi]: Start processing: kv-api
+[2024-04-22 11:35:58] INFO root fetch - main [MainThread]: End processing [pear-ebi] error
+[2024-04-22 11:35:59] INFO root fetch - processPackages [kv-api]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-22 11:35:59] INFO root fetch - processPackages [variPEPS]: Downloading https://files.pythonhosted.org/packages/a9/33/e4bd6d2e768284bcbc6fd492b9995029b9168cbc8967f8ddba85e1fc3fe9/varipeps-0.5.3.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [dara-core]: Downloading https://files.pythonhosted.org/packages/83/21/8128bd17af06f728f8d43a1414d59927221882733c7d4566ee7184e12055/dara_core-1.8.2-py3-none-any.whl
+[2024-04-22 11:35:59] INFO root fetch - processPackages [dara-components]: New version: [1.8.3] Old Version: [1.8.2]
+[2024-04-22 11:35:59] INFO root fetch - processPackages [sheeprl]: Downloading https://files.pythonhosted.org/packages/39/b4/317e625ddbc0638ffcdb9b4b71c0b54d8a9a3b74fd5ce22134a9d2b99b2f/sheeprl-0.5.4.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [opentf-toolkit-nightly]: Downloading https://files.pythonhosted.org/packages/35/74/45802443cb80ad1927c37b1c55960120ce20695f58aea405b2b9a8e4a052/opentf_toolkit_nightly-0.55.0.dev934-py3-none-any.whl
+[2024-04-22 11:35:59] INFO root fetch - processPackages [create-dara-app]: Downloading https://files.pythonhosted.org/packages/4c/1f/59c9e98da1b647a4c6f33af8bbfda5b3fdb7485cad4c0bcfeb109789b7d8/create_dara_app-1.8.2-py3-none-any.whl
+[2024-04-22 11:35:59] INFO root fetch - processPackages [omnipy]: Downloading https://files.pythonhosted.org/packages/21/ef/f5bfccb5d8a26700c74675f8367c7f9b9de5c43c5a9cb662039052e2c4f3/omnipy-0.9.3.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/cf/a1/930d804c7e5edb6a93292b20a94c00ce931b412730cc2c28c74e33ebc11d/kv_api-0.1.6.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [pyacp]: Downloading https://files.pythonhosted.org/packages/42/85/995c7397836d9e3f2ad9aa10f7b44ef96259615ecfcb636986b1088df446/pyacp-0.2.1.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [vvm-lib]: Downloading https://files.pythonhosted.org/packages/d0/83/7d09450c56c8f1e39a33f3be7baa6aba9cf31f74add5a3332734f0c718cf/vvm_lib-0.4.3.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [dara-components]: Downloading https://files.pythonhosted.org/packages/a4/2e/28e4b8727336c33c678c37c37acf3a540281e886cdf1226bf182f6da2ae9/dara_components-1.8.2-py3-none-any.whl
+[2024-04-22 11:35:59] INFO root fetch - processPackages [vvm-lib]: executing diffoscope
+[2024-04-22 11:35:59] INFO root fetch - processPackages [vvm-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvm_lib-0.4.2.tar.gz tmp/vvm_lib-0.4.3.tar.gz --markdown 20240422/v/vvm-lib/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-22 11:35:59] INFO root fetch - processPackages [variPEPS]: Downloading https://files.pythonhosted.org/packages/79/d8/6119d6eebd3846feaafe55bb1a650a0857869951b4efc6e2725e80393ee2/varipeps-0.5.4.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [opentf-toolkit-nightly]: Downloading https://files.pythonhosted.org/packages/65/08/38a6a88605fcc6f8858d56d7879bcaf2fc78edf4d47cf0da468e6d84a118/opentf_toolkit_nightly-0.55.0.dev938-py3-none-any.whl
+[2024-04-22 11:35:59] INFO root fetch - processPackages [sheeprl]: Downloading https://files.pythonhosted.org/packages/0c/8f/6aa790f8f666e268abe881d4fa2e96c420622bf9e4305639ff1051acd34a/sheeprl-0.5.5.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [create-dara-app]: Downloading https://files.pythonhosted.org/packages/4b/5e/a9d1b1f2c2ca67f73a69f86de3ebb0af406b68065798379cf7ca1afe4d55/create_dara_app-1.8.3-py3-none-any.whl
+[2024-04-22 11:35:59] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/b2/08/b932a10e9843d10213dc79eee074b0f48e6f127282c47f7cf1ff90160502/kv_api-0.1.7.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [variPEPS]: executing diffoscope
+[2024-04-22 11:35:59] INFO root fetch - processPackages [variPEPS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/varipeps-0.5.3.tar.gz tmp/varipeps-0.5.4.tar.gz --markdown 20240422/v/variPEPS/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-22 11:35:59] INFO root fetch - processPackages [opentf-toolkit-nightly]: executing diffoscope
+[2024-04-22 11:35:59] INFO root fetch - processPackages [opentf-toolkit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentf_toolkit_nightly-0.55.0.dev934-py3-none-any.whl.zip tmp/opentf_toolkit_nightly-0.55.0.dev938-py3-none-any.whl.zip --markdown 20240422/o/opentf-toolkit-nightly/0.55.0.dev934-0.55.0.dev938/README.md --exclude *.pyd
+[2024-04-22 11:35:59] INFO root fetch - processPackages [omnipy]: Downloading https://files.pythonhosted.org/packages/d2/b5/fd3adea40f5a8c8a04231dd3f08cbea35696559742ca685a4b025c4fd01e/omnipy-0.9.5.tar.gz
+[2024-04-22 11:35:59] INFO root fetch - processPackages [dara-core]: Downloading https://files.pythonhosted.org/packages/46/ad/d388473f736aa1ded263ddfe994fc60a24f861a9af64cba608c5ec5fffe6/dara_core-1.8.3-py3-none-any.whl
+[2024-04-22 11:35:59] INFO root fetch - processPackages [create-dara-app]: executing diffoscope
+[2024-04-22 11:35:59] INFO root fetch - processPackages [create-dara-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create_dara_app-1.8.2-py3-none-any.whl.zip tmp/create_dara_app-1.8.3-py3-none-any.whl.zip --markdown 20240422/c/create-dara-app/1.8.2-1.8.3/README.md --exclude *.pyd
+[2024-04-22 11:35:59] INFO root fetch - processPackages [kv-api]: executing diffoscope
+[2024-04-22 11:35:59] INFO root fetch - processPackages [kv-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_api-0.1.6.tar.gz tmp/kv_api-0.1.7.tar.gz --markdown 20240422/k/kv-api/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-22 11:35:59] INFO root fetch - processPackages [sheeprl]: executing diffoscope
+[2024-04-22 11:35:59] INFO root fetch - processPackages [sheeprl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sheeprl-0.5.4.tar.gz tmp/sheeprl-0.5.5.tar.gz --markdown 20240422/s/sheeprl/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-04-22 11:35:59] INFO root fetch - processPackages [dara-components]: Downloading https://files.pythonhosted.org/packages/ba/e6/f31a8b694212ac72e3cf48dd9f80dfd5bf1634a132f2599461f22d55f45c/dara_components-1.8.3-py3-none-any.whl
+[2024-04-22 11:36:00] INFO root fetch - processPackages [vvm-lib]: Remove: archive file [/home/abi/fetcher/tmp/vvm_lib-0.4.2.tar.gz]
+[2024-04-22 11:36:00] INFO root fetch - processPackages [vvm-lib]: Remove: archive file [/home/abi/fetcher/tmp/vvm_lib-0.4.3.tar.gz]
+[2024-04-22 11:36:00] INFO root fetch - processPackages [vvm-lib]: Start processing: pyDVL
+[2024-04-22 11:36:00] INFO root fetch - main [MainThread]: End processing [vvm-lib]: success
+[2024-04-22 11:36:00] INFO root fetch - processPackages [dara-core]: executing diffoscope
+[2024-04-22 11:36:00] INFO root fetch - processPackages [dara-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dara_core-1.8.2-py3-none-any.whl.zip tmp/dara_core-1.8.3-py3-none-any.whl.zip --markdown 20240422/d/dara-core/1.8.2-1.8.3/README.md --exclude *.pyd
+[2024-04-22 11:36:00] INFO root fetch - processPackages [pyacp]: Downloading https://files.pythonhosted.org/packages/6e/e0/b853689fd48f940f874957969c93f07f4c0d77010d214c60bb65c1c1ce2d/pyacp-0.2.2.tar.gz
+[2024-04-22 11:36:00] INFO root fetch - processPackages [pyDVL]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-22 11:36:00] INFO root fetch - processPackages [dara-components]: executing diffoscope
+[2024-04-22 11:36:00] INFO root fetch - processPackages [dara-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dara_components-1.8.2-py3-none-any.whl.zip tmp/dara_components-1.8.3-py3-none-any.whl.zip --markdown 20240422/d/dara-components/1.8.2-1.8.3/README.md --exclude *.pyd
+[2024-04-22 11:36:00] INFO root fetch - processPackages [pyDVL]: Downloading https://files.pythonhosted.org/packages/f7/a7/32ba6dd79eced8308debf03c4bba5b04b70791badccc73dd5e8580e6ae12/pydvl-0.9.tar.gz
+[2024-04-22 11:36:00] INFO root fetch - processPackages [opentf-toolkit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/opentf_toolkit_nightly-0.55.0.dev934-py3-none-any.whl.zip]
+[2024-04-22 11:36:00] INFO root fetch - processPackages [opentf-toolkit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/opentf_toolkit_nightly-0.55.0.dev938-py3-none-any.whl.zip]
+[2024-04-22 11:36:00] INFO root fetch - main [MainThread]: End processing [opentf-toolkit-nightly]: success
+[2024-04-22 11:36:00] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.6.tar.gz]
+[2024-04-22 11:36:00] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.7.tar.gz]
+[2024-04-22 11:36:00] INFO root fetch - main [MainThread]: End processing [kv-api]: success
+[2024-04-22 11:36:00] INFO root fetch - processPackages [omnipy]: executing diffoscope
+[2024-04-22 11:36:00] INFO root fetch - processPackages [omnipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnipy-0.9.3.tar.gz tmp/omnipy-0.9.5.tar.gz --markdown 20240422/o/omnipy/0.9.3-0.9.5/README.md --exclude *.pyd
+[2024-04-22 11:36:00] INFO root fetch - processPackages [variPEPS]: Remove: archive file [/home/abi/fetcher/tmp/varipeps-0.5.3.tar.gz]
+[2024-04-22 11:36:00] INFO root fetch - processPackages [variPEPS]: Remove: archive file [/home/abi/fetcher/tmp/varipeps-0.5.4.tar.gz]
+[2024-04-22 11:36:00] INFO root fetch - main [MainThread]: End processing [variPEPS]: success
+[2024-04-22 11:36:00] INFO root fetch - processPackages [create-dara-app]: Remove: archive file [/home/abi/fetcher/tmp/create_dara_app-1.8.2-py3-none-any.whl.zip]
+[2024-04-22 11:36:00] INFO root fetch - processPackages [create-dara-app]: Remove: archive file [/home/abi/fetcher/tmp/create_dara_app-1.8.3-py3-none-any.whl.zip]
+[2024-04-22 11:36:00] INFO root fetch - main [MainThread]: End processing [create-dara-app]: success
+[2024-04-22 11:36:00] INFO root fetch - processPackages [pyDVL]: Downloading https://files.pythonhosted.org/packages/81/64/c269bb4b6213707690dcc139de0a657660bc5cdf4bf16fd28965f7c84f0a/pydvl-0.9.1.tar.gz
+[2024-04-22 11:36:01] INFO root fetch - processPackages [pyDVL]: executing diffoscope
+[2024-04-22 11:36:01] INFO root fetch - processPackages [pyDVL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydvl-0.9.tar.gz tmp/pydvl-0.9.1.tar.gz --markdown 20240422/p/pyDVL/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-22 11:36:01] INFO root fetch - processPackages [omnipy]: Remove: archive file [/home/abi/fetcher/tmp/omnipy-0.9.3.tar.gz]
+[2024-04-22 11:36:01] INFO root fetch - processPackages [omnipy]: Remove: archive file [/home/abi/fetcher/tmp/omnipy-0.9.5.tar.gz]
+[2024-04-22 11:36:01] INFO root fetch - main [MainThread]: End processing [omnipy]: success
+[2024-04-22 11:36:01] INFO root fetch - processPackages [pyacp]: executing diffoscope
+[2024-04-22 11:36:01] INFO root fetch - processPackages [pyacp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyacp-0.2.1.tar.gz tmp/pyacp-0.2.2.tar.gz --markdown 20240422/p/pyacp/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-22 11:36:01] INFO root fetch - processPackages [sheeprl]: Remove: archive file [/home/abi/fetcher/tmp/sheeprl-0.5.4.tar.gz]
+[2024-04-22 11:36:01] INFO root fetch - processPackages [sheeprl]: Remove: archive file [/home/abi/fetcher/tmp/sheeprl-0.5.5.tar.gz]
+[2024-04-22 11:36:01] INFO root fetch - main [MainThread]: End processing [sheeprl]: success
+[2024-04-22 11:36:01] INFO root fetch - processPackages [pyDVL]: Remove: archive file [/home/abi/fetcher/tmp/pydvl-0.9.tar.gz]
+[2024-04-22 11:36:01] INFO root fetch - processPackages [pyDVL]: Remove: archive file [/home/abi/fetcher/tmp/pydvl-0.9.1.tar.gz]
+[2024-04-22 11:36:01] INFO root fetch - main [MainThread]: End processing [pyDVL]: success
+[2024-04-22 11:36:03] INFO root fetch - processPackages [pyacp]: Remove: archive file [/home/abi/fetcher/tmp/pyacp-0.2.1.tar.gz]
+[2024-04-22 11:36:03] INFO root fetch - processPackages [pyacp]: Remove: archive file [/home/abi/fetcher/tmp/pyacp-0.2.2.tar.gz]
+[2024-04-22 11:36:03] INFO root fetch - main [MainThread]: End processing [pyacp]: success
+[2024-04-22 11:36:19] INFO root fetch - processPackages [dara-core]: Remove: archive file [/home/abi/fetcher/tmp/dara_core-1.8.2-py3-none-any.whl.zip]
+[2024-04-22 11:36:19] INFO root fetch - processPackages [dara-core]: Remove: archive file [/home/abi/fetcher/tmp/dara_core-1.8.3-py3-none-any.whl.zip]
+[2024-04-22 11:36:19] INFO root fetch - main [MainThread]: End processing [dara-core]: success
+[2024-04-22 11:37:10] INFO root fetch - processPackages [dara-components]: Remove: archive file [/home/abi/fetcher/tmp/dara_components-1.8.2-py3-none-any.whl.zip]
+[2024-04-22 11:37:10] INFO root fetch - processPackages [dara-components]: Remove: archive file [/home/abi/fetcher/tmp/dara_components-1.8.3-py3-none-any.whl.zip]
+[2024-04-22 11:37:10] INFO root fetch - main [MainThread]: End processing [dara-components]: success
+[2024-04-22 11:37:10] INFO root fetch - main [MainThread]: Store serial: [22874851]
