@@ -9365,3 +9365,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:43:11] INFO root fetch - processPackages [compas-wood]: Remove: archive file [/home/abi/fetcher/tmp/compas_wood-2.0.8-py2.py3-none-any.whl.zip]
 [2024-04-22 10:43:11] INFO root fetch - main [MainThread]: End processing [compas-wood]: success
 [2024-04-22 10:43:11] INFO root fetch - main [MainThread]: Store serial: [22874260]
+[2024-04-22 10:45:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874260]
+[2024-04-22 10:45:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 10:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: klein-queue
+[2024-04-22 10:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: minder.research-data-snapshots
+[2024-04-22 10:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyastroweatherio
+[2024-04-22 10:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lago-python-client
+[2024-04-22 10:45:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-cpu
+[2024-04-22 10:45:20] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.43.1.dev5] Old Version: [0.43.1.dev4]
+[2024-04-22 10:45:20] INFO root fetch - processPackages [klein-queue]: New version: [2.4.5] Old Version: [2.4.4]
+[2024-04-22 10:45:20] INFO root fetch - processPackages [minder.research-data-snapshots]: New version: [0.9] Old Version: [0.8]
+[2024-04-22 10:45:20] INFO root fetch - processPackages [lago-python-client]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-22 10:45:20] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240422] Old Version: [2.17.0.dev20240421]
+[2024-04-22 10:45:20] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/be/75/232fad8210a735d36b8df9665c65b5ffa1c05afbc8f01de368dfb524f8a9/pyastroweatherio-0.43.1.dev4.tar.gz
+[2024-04-22 10:45:20] INFO root fetch - processPackages [klein-queue]: Downloading https://files.pythonhosted.org/packages/24/55/58d243f3d2cb6e66a9b1c4387e95a53adc42308ca994cef8ca699d38ff46/klein_queue-2.4.4.tar.gz
+[2024-04-22 10:45:20] INFO root fetch - processPackages [minder.research-data-snapshots]: Downloading https://files.pythonhosted.org/packages/c6/38/3fa44b6c1901ce0ba70d393c6908e0d45fa3827f2ad9a003de4c8ca966e1/minder.research_data_snapshots-0.8-py3-none-any.whl
+[2024-04-22 10:45:20] INFO root fetch - processPackages [lago-python-client]: Downloading https://files.pythonhosted.org/packages/eb/ff/635c097ff1361ceec61df8e7896ea7a815d141d69d845fc5c348a6b9e50e/lago-python-client-1.1.0.tar.gz
+[2024-04-22 10:45:20] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/99/af/45769ec0ab09e2f8b01826da67ba2fe129199039335090d823579363e89b/tf_nightly_cpu-2.17.0.dev20240421-cp39-cp39-win_amd64.whl
+[2024-04-22 10:45:20] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/04/44/df4ce74613a1e5dc3cdbffa4436eaf46159de4dd45db47fc4b3cca9c9efb/pyastroweatherio-0.43.1.dev5.tar.gz
+[2024-04-22 10:45:20] INFO root fetch - processPackages [minder.research-data-snapshots]: Downloading https://files.pythonhosted.org/packages/dc/c6/079395b01c2b1d7255c758bfb0dc554b6b5ce44b80725b38c54f42f90407/minder.research_data_snapshots-0.9-py3-none-any.whl
+[2024-04-22 10:45:20] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/7a/99/3732401e706a12da74f6d276e44197e3293b0ef5563f8a8d0307992a5683/tf_nightly_cpu-2.17.0.dev20240422-cp39-cp39-win_amd64.whl
+[2024-04-22 10:45:20] INFO root fetch - processPackages [klein-queue]: Downloading https://files.pythonhosted.org/packages/9e/f2/76a61beb476afffa1a9aa298eb77599ac8add1a276f3cfb2d1f7d1e46eda/klein_queue-2.4.5.tar.gz
+[2024-04-22 10:45:20] INFO root fetch - processPackages [lago-python-client]: Downloading https://files.pythonhosted.org/packages/81/e4/614582d9891c0b1289d8727fff88b84691888987b465ca04408033fd691a/lago-python-client-1.2.0.tar.gz
+[2024-04-22 10:45:20] INFO root fetch - processPackages [minder.research-data-snapshots]: executing diffoscope
+[2024-04-22 10:45:20] INFO root fetch - processPackages [minder.research-data-snapshots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/minder.research_data_snapshots-0.8-py3-none-any.whl.zip tmp/minder.research_data_snapshots-0.9-py3-none-any.whl.zip --markdown 20240422/m/minder.research-data-snapshots/0.8-0.9/README.md --exclude *.pyd
+[2024-04-22 10:45:20] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-22 10:45:20] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev4.tar.gz tmp/pyastroweatherio-0.43.1.dev5.tar.gz --markdown 20240422/p/pyastroweatherio/0.43.1.dev4-0.43.1.dev5/README.md --exclude *.pyd
+[2024-04-22 10:45:20] INFO root fetch - processPackages [klein-queue]: executing diffoscope
+[2024-04-22 10:45:20] INFO root fetch - processPackages [klein-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klein_queue-2.4.4.tar.gz tmp/klein_queue-2.4.5.tar.gz --markdown 20240422/k/klein-queue/2.4.4-2.4.5/README.md --exclude *.pyd
+[2024-04-22 10:45:20] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-22 10:45:20] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240422-cp39-cp39-win_amd64.whl.zip --markdown 20240422/t/tf-nightly-cpu/2.17.0.dev20240421-2.17.0.dev20240422/README.md --exclude *.pyd
+[2024-04-22 10:45:20] INFO root fetch - processPackages [lago-python-client]: executing diffoscope
+[2024-04-22 10:45:20] INFO root fetch - processPackages [lago-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lago-python-client-1.1.0.tar.gz tmp/lago-python-client-1.2.0.tar.gz --markdown 20240422/l/lago-python-client/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-22 10:45:21] INFO root fetch - processPackages [minder.research-data-snapshots]: Remove: archive file [/home/abi/fetcher/tmp/minder.research_data_snapshots-0.8-py3-none-any.whl.zip]
+[2024-04-22 10:45:21] INFO root fetch - processPackages [minder.research-data-snapshots]: Remove: archive file [/home/abi/fetcher/tmp/minder.research_data_snapshots-0.9-py3-none-any.whl.zip]
+[2024-04-22 10:45:21] INFO root fetch - main [MainThread]: End processing [minder.research-data-snapshots]: success
+[2024-04-22 10:45:21] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 10:45:21] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240422-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 10:45:21] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-22 10:45:21] INFO root fetch - processPackages [klein-queue]: Remove: archive file [/home/abi/fetcher/tmp/klein_queue-2.4.4.tar.gz]
+[2024-04-22 10:45:21] INFO root fetch - processPackages [klein-queue]: Remove: archive file [/home/abi/fetcher/tmp/klein_queue-2.4.5.tar.gz]
+[2024-04-22 10:45:21] INFO root fetch - main [MainThread]: End processing [klein-queue]: success
+[2024-04-22 10:45:21] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev4.tar.gz]
+[2024-04-22 10:45:21] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev5.tar.gz]
+[2024-04-22 10:45:21] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-22 10:45:21] INFO root fetch - processPackages [lago-python-client]: Remove: archive file [/home/abi/fetcher/tmp/lago-python-client-1.1.0.tar.gz]
+[2024-04-22 10:45:21] INFO root fetch - processPackages [lago-python-client]: Remove: archive file [/home/abi/fetcher/tmp/lago-python-client-1.2.0.tar.gz]
+[2024-04-22 10:45:21] INFO root fetch - main [MainThread]: End processing [lago-python-client]: success
+[2024-04-22 10:45:21] INFO root fetch - main [MainThread]: Store serial: [22874285]
