@@ -7592,3 +7592,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:18:56] INFO root fetch - processPackages [ansible-creator]: Remove: archive file [/home/abi/fetcher/tmp/ansible_creator-24.4.2.tar.gz]
 [2024-04-22 09:18:56] INFO root fetch - main [MainThread]: End processing [ansible-creator]: success
 [2024-04-22 09:18:56] INFO root fetch - main [MainThread]: Store serial: [22873025]
+[2024-04-22 09:21:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873025]
+[2024-04-22 09:21:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 09:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BDMLtools
+[2024-04-22 09:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deathdaily
+[2024-04-22 09:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datafold-sdk
+[2024-04-22 09:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rfb-driver-ea
+[2024-04-22 09:21:05] INFO root fetch - processPackages [deathdaily]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-22 09:21:05] INFO root fetch - processPackages [BDMLtools]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-22 09:21:05] INFO root fetch - processPackages [datafold-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 09:21:05] INFO root fetch - processPackages [deathdaily]: Downloading https://files.pythonhosted.org/packages/09/21/916b3b92e010a73f9085c6d70da28ea508b5b32cc13343fe74eebb572251/deathdaily-0.1.5.tar.gz
+[2024-04-22 09:21:05] INFO root fetch - processPackages [rfb-driver-ea]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 09:21:05] INFO root fetch - processPackages [datafold-sdk]: Downloading https://files.pythonhosted.org/packages/d0/4a/4a40e84c94fd880a6b8e432e55ee41c3afca1b0d69223fd226ea2726bb07/datafold_sdk-0.0.8-py3-none-any.whl
+[2024-04-22 09:21:05] INFO root fetch - processPackages [BDMLtools]: Downloading https://files.pythonhosted.org/packages/48/77/cd34fe3cb742932552ecc6f770db45475c1d747bbadef67ec5fbfdff1424/BDMLtools-0.4.2.tar.gz
+[2024-04-22 09:21:05] INFO root fetch - processPackages [deathdaily]: Downloading https://files.pythonhosted.org/packages/91/14/80e15eb6a5a8b4a98c0b56e6905061de39005fd1424c6490020397787f67/deathdaily-0.1.6.tar.gz
+[2024-04-22 09:21:06] INFO root fetch - processPackages [rfb-driver-ea]: Downloading https://files.pythonhosted.org/packages/bf/ff/50243aa0f829622eee2a4b1590ac69d6c58c67688737f6639b35bbdac0d0/rfb-driver-ea-0.0.1.tar.gz
+[2024-04-22 09:21:06] INFO root fetch - processPackages [deathdaily]: executing diffoscope
+[2024-04-22 09:21:06] INFO root fetch - processPackages [deathdaily]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deathdaily-0.1.5.tar.gz tmp/deathdaily-0.1.6.tar.gz --markdown 20240422/d/deathdaily/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-22 09:21:06] INFO root fetch - processPackages [BDMLtools]: Downloading https://files.pythonhosted.org/packages/b9/db/020a3438b17961d1189475fcfbc8efb7b3365b52327b16a787b13afd8993/BDMLtools-0.4.3.tar.gz
+[2024-04-22 09:21:06] INFO root fetch - processPackages [rfb-driver-ea]: Downloading https://files.pythonhosted.org/packages/c5/c5/2160cc3f9c6ddb41e3825f683297d7c354b23d7c2b65be4cc52094635100/rfb_driver_ea-0.0.2.tar.gz
+[2024-04-22 09:21:06] INFO root fetch - processPackages [BDMLtools]: executing diffoscope
+[2024-04-22 09:21:06] INFO root fetch - processPackages [BDMLtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDMLtools-0.4.2.tar.gz tmp/BDMLtools-0.4.3.tar.gz --markdown 20240422/B/BDMLtools/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-22 09:21:06] INFO root fetch - processPackages [deathdaily]: Remove: archive file [/home/abi/fetcher/tmp/deathdaily-0.1.5.tar.gz]
+[2024-04-22 09:21:06] INFO root fetch - processPackages [deathdaily]: Remove: archive file [/home/abi/fetcher/tmp/deathdaily-0.1.6.tar.gz]
+[2024-04-22 09:21:06] INFO root fetch - main [MainThread]: End processing [deathdaily]: success
+[2024-04-22 09:21:06] INFO root fetch - processPackages [rfb-driver-ea]: executing diffoscope
+[2024-04-22 09:21:06] INFO root fetch - processPackages [rfb-driver-ea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rfb-driver-ea-0.0.1.tar.gz tmp/rfb_driver_ea-0.0.2.tar.gz --markdown 20240422/r/rfb-driver-ea/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 09:21:06] INFO root fetch - processPackages [datafold-sdk]: Downloading https://files.pythonhosted.org/packages/1c/30/d51749c2b59112c5766d7540cc3d9be238c87f58474cf3159f90410cc5f9/datafold_sdk-0.0.9-py3-none-any.whl
+[2024-04-22 09:21:07] INFO root fetch - processPackages [datafold-sdk]: executing diffoscope
+[2024-04-22 09:21:07] INFO root fetch - processPackages [datafold-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datafold_sdk-0.0.8-py3-none-any.whl.zip tmp/datafold_sdk-0.0.9-py3-none-any.whl.zip --markdown 20240422/d/datafold-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 09:21:07] INFO root fetch - processPackages [rfb-driver-ea]: Remove: archive file [/home/abi/fetcher/tmp/rfb-driver-ea-0.0.1.tar.gz]
+[2024-04-22 09:21:07] INFO root fetch - processPackages [rfb-driver-ea]: Remove: archive file [/home/abi/fetcher/tmp/rfb_driver_ea-0.0.2.tar.gz]
+[2024-04-22 09:21:07] INFO root fetch - main [MainThread]: End processing [rfb-driver-ea]: success
+[2024-04-22 09:21:07] INFO root fetch - processPackages [BDMLtools]: Remove: archive file [/home/abi/fetcher/tmp/BDMLtools-0.4.2.tar.gz]
+[2024-04-22 09:21:07] INFO root fetch - processPackages [BDMLtools]: Remove: archive file [/home/abi/fetcher/tmp/BDMLtools-0.4.3.tar.gz]
+[2024-04-22 09:21:07] INFO root fetch - main [MainThread]: End processing [BDMLtools]: success
+[2024-04-22 09:21:07] INFO root fetch - processPackages [datafold-sdk]: Remove: archive file [/home/abi/fetcher/tmp/datafold_sdk-0.0.8-py3-none-any.whl.zip]
+[2024-04-22 09:21:07] INFO root fetch - processPackages [datafold-sdk]: Remove: archive file [/home/abi/fetcher/tmp/datafold_sdk-0.0.9-py3-none-any.whl.zip]
+[2024-04-22 09:21:07] INFO root fetch - main [MainThread]: End processing [datafold-sdk]: success
+[2024-04-22 09:21:07] INFO root fetch - main [MainThread]: Store serial: [22873037]
