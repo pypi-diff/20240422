@@ -8149,3 +8149,126 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:57:37] INFO root fetch - processPackages [cs2solutions]: Remove: archive file [/home/abi/fetcher/tmp/cs2solutions-0.7.0.tar.gz]
 [2024-04-22 09:57:37] INFO root fetch - main [MainThread]: End processing [cs2solutions]: success
 [2024-04-22 09:57:37] INFO root fetch - main [MainThread]: Store serial: [22873723]
+[2024-04-22 09:59:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873723]
+[2024-04-22 09:59:46] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audvis
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miksiai
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fixreprod
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Graphillion
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tikzification
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: common-tools-ai-bnq
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-nightly
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: qtlink
+[2024-04-22 09:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: atomic-bomb-engine
+[2024-04-22 09:59:46] INFO root fetch - processPackages [qtlink]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-04-22 09:59:46] INFO root fetch - processPackages [Graphillion]: New version: [1.7] Old Version: [1.5]
+[2024-04-22 09:59:46] INFO root fetch - processPackages [qtlink]: Downloading https://files.pythonhosted.org/packages/a0/f5/8677e8c499470e6a11da390e419133fb494a452b664fb757b8b81fbffddd/qtlink-1.2.6.tar.gz
+[2024-04-22 09:59:46] WARNING root fetch - processPackages [audvis]: Skipping, unable to determine old version
+[2024-04-22 09:59:46] INFO root fetch - main [MainThread]: End processing [audvis] error
+[2024-04-22 09:59:46] INFO root fetch - processPackages [fixreprod]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 09:59:46] INFO root fetch - processPackages [tikzification]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 09:59:46] WARNING root fetch - processPackages [miksiai]: Skipping, unable to determine old version
+[2024-04-22 09:59:46] INFO root fetch - main [MainThread]: End processing [miksiai] error
+[2024-04-22 09:59:46] INFO root fetch - processPackages [common-tools-ai-bnq]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 09:59:46] INFO root fetch - processPackages [atomic-bomb-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240422] Old Version: [2.17.0.dev20240421]
+[2024-04-22 09:59:47] INFO root fetch - processPackages [Graphillion]: Downloading https://files.pythonhosted.org/packages/4b/fb/ce4e83506e43d632994244eb88459cb213b52cfb86114b987778b97b10d6/Graphillion-1.5.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [fixreprod]: Downloading https://files.pythonhosted.org/packages/d8/e4/30d3c5845c5d391902cdf5bc2afd5dbb9c886ab5878a10a266131adaa500/fixreprod-0.0.8.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tikzification]: Downloading https://files.pythonhosted.org/packages/9b/c0/891dc194ceea82963fd86ca76fe4539f2d2d6802a57cdedac24ebcfb949d/tikzification-0.0.1.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [qtlink]: Downloading https://files.pythonhosted.org/packages/a6/d5/b6a19ab729874df7de747f0bd0eef8bbabb322942372617dede92c678cd8/qtlink-1.2.7.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [common-tools-ai-bnq]: Downloading https://files.pythonhosted.org/packages/71/5c/a74b2cf85bf48b509135fa9a05e028b562677622a845bc257fcc17586e6b/common-tools-ai-bnq-0.0.5.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/4b/58/1afcb49cf85459cd4ec51e12c8eb339e6b6051bbe6f6366f414956bf7743/tf_nightly-2.17.0.dev20240421-cp39-cp39-win_amd64.whl
+[2024-04-22 09:59:47] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/de/47/589c78a3caf02bccdff9d1da27ba01989773662faca9c96280fad2e297e6/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl
+[2024-04-22 09:59:47] INFO root fetch - processPackages [qtlink]: executing diffoscope
+[2024-04-22 09:59:47] INFO root fetch - processPackages [qtlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtlink-1.2.6.tar.gz tmp/qtlink-1.2.7.tar.gz --markdown 20240422/q/qtlink/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tikzification]: Downloading https://files.pythonhosted.org/packages/a1/6b/0563b673f033413096292515c0a0faf2064f098afa1ccf7b326ea19385be/tikzification-0.0.2.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/1c/a7/eff337888fc753e72c12ed0ee58918b563ab85cd82ed0f07a223c5686da6/tf_nightly-2.17.0.dev20240422-cp39-cp39-win_amd64.whl
+[2024-04-22 09:59:47] INFO root fetch - processPackages [common-tools-ai-bnq]: Downloading https://files.pythonhosted.org/packages/1f/80/9d33f04846c215b73548baeb003731876ae074ff169d2ce747ce7445df31/common-tools-ai-bnq-0.0.6.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [fixreprod]: Downloading https://files.pythonhosted.org/packages/a6/23/99afa9f944b34c93d035a4c3ef2553b9140d416b5104ed12fd71cc69cd08/fixreprod-0.0.9.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [Graphillion]: Downloading https://files.pythonhosted.org/packages/2f/2a/112c24b64415b7c87ba34f57f7a3191cbb30fddd097f43024b19b31e52f9/Graphillion-1.7.tar.gz
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tikzification]: executing diffoscope
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tikzification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tikzification-0.0.1.tar.gz tmp/tikzification-0.0.2.tar.gz --markdown 20240422/t/tikzification/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 09:59:47] INFO root fetch - processPackages [common-tools-ai-bnq]: executing diffoscope
+[2024-04-22 09:59:47] INFO root fetch - processPackages [common-tools-ai-bnq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/common-tools-ai-bnq-0.0.5.tar.gz tmp/common-tools-ai-bnq-0.0.6.tar.gz --markdown 20240422/c/common-tools-ai-bnq/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 09:59:47] INFO root fetch - processPackages [fixreprod]: executing diffoscope
+[2024-04-22 09:59:47] INFO root fetch - processPackages [fixreprod]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fixreprod-0.0.8.tar.gz tmp/fixreprod-0.0.9.tar.gz --markdown 20240422/f/fixreprod/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-04-22 09:59:47] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240422-cp39-cp39-win_amd64.whl.zip --markdown 20240422/t/tf-nightly/2.17.0.dev20240421-2.17.0.dev20240422/README.md --exclude *.pyd
+[2024-04-22 09:59:47] INFO root fetch - processPackages [Graphillion]: executing diffoscope
+[2024-04-22 09:59:47] INFO root fetch - processPackages [Graphillion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Graphillion-1.5.tar.gz tmp/Graphillion-1.7.tar.gz --markdown 20240422/G/Graphillion/1.5-1.7/README.md --exclude *.pyd
+[2024-04-22 09:59:47] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/f2/d0/587dc5dedb6e3e81c2ce988350e6322864b47905247529e088c7b811f975/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl
+[2024-04-22 09:59:48] INFO root fetch - processPackages [qtlink]: Remove: archive file [/home/abi/fetcher/tmp/qtlink-1.2.6.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - processPackages [qtlink]: Remove: archive file [/home/abi/fetcher/tmp/qtlink-1.2.7.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [qtlink]: success
+[2024-04-22 09:59:48] INFO root fetch - processPackages [atomic-bomb-engine]: executing diffoscope
+[2024-04-22 09:59:48] INFO root fetch - processPackages [atomic-bomb-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip --markdown 20240422/a/atomic-bomb-engine/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-22 09:59:48] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240421-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 09:59:48] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240422-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-04-22 09:59:48] INFO root fetch - processPackages [common-tools-ai-bnq]: Remove: archive file [/home/abi/fetcher/tmp/common-tools-ai-bnq-0.0.5.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - processPackages [common-tools-ai-bnq]: Remove: archive file [/home/abi/fetcher/tmp/common-tools-ai-bnq-0.0.6.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [common-tools-ai-bnq]: success
+[2024-04-22 09:59:48] INFO root fetch - processPackages [tikzification]: Remove: archive file [/home/abi/fetcher/tmp/tikzification-0.0.1.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - processPackages [tikzification]: Remove: archive file [/home/abi/fetcher/tmp/tikzification-0.0.2.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [tikzification]: success
+[2024-04-22 09:59:48] INFO root fetch - processPackages [fixreprod]: Remove: archive file [/home/abi/fetcher/tmp/fixreprod-0.0.8.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - processPackages [fixreprod]: Remove: archive file [/home/abi/fetcher/tmp/fixreprod-0.0.9.tar.gz]
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [fixreprod]: success
+[2024-04-22 09:59:48] ERROR root fetch - processPackages [Graphillion]: Diffoscope failed: time="2024-04-22T09:59:47+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [Graphillion] error
+[2024-04-22 09:59:48] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip]
+[2024-04-22 09:59:48] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip]
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [atomic-bomb-engine]: success
+[2024-04-22 09:59:48] INFO root fetch - main [MainThread]: Store serial: [22873758]
