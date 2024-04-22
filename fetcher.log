@@ -3480,3 +3480,128 @@
 [2024-04-22 04:47:31] INFO root fetch - processPackages [cs.threads]: Remove: archive file [/home/abi/fetcher/tmp/cs.threads-20240422.tar.gz]
 [2024-04-22 04:47:31] INFO root fetch - main [MainThread]: End processing [cs.threads]: success
 [2024-04-22 04:47:31] INFO root fetch - main [MainThread]: Store serial: [22871394]
+[2024-04-22 04:49:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871394]
+[2024-04-22 04:49:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 04:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mydev
+[2024-04-22 04:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcicutils
+[2024-04-22 04:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atomic-bomb-engine
+[2024-04-22 04:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telectron
+[2024-04-22 04:49:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: siat
+[2024-04-22 04:49:40] WARNING root fetch - processPackages [mydev]: Skipping, unable to determine old version
+[2024-04-22 04:49:40] INFO root fetch - main [MainThread]: End processing [mydev] error
+[2024-04-22 04:49:40] INFO root fetch - processPackages [telectron]: New version: [2.0.70.1] Old Version: [2.0.61.1]
+[2024-04-22 04:49:40] INFO root fetch - processPackages [dcicutils]: New version: [8.8.3.1b9] Old Version: [8.8.3.1b8]
+[2024-04-22 04:49:40] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/55/93/e17ac091ba77e370f92de168ae0415456d09cf71adf27725745f2cdb7d65/telectron-2.0.61.1.tar.gz
+[2024-04-22 04:49:40] INFO root fetch - processPackages [atomic-bomb-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-22 04:49:40] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/55/29/62f5a247f04b2bf0f9da53bf75c80ebc4731638e110560a1b0c2b690b9e1/dcicutils-8.8.3.1b8.tar.gz
+[2024-04-22 04:49:40] INFO root fetch - processPackages [siat]: New version: [3.0.4] Old Version: [3.0.3]
+[2024-04-22 04:49:40] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/de/47/589c78a3caf02bccdff9d1da27ba01989773662faca9c96280fad2e297e6/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl
+[2024-04-22 04:49:40] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/b0/95/6db1d9193aaea7ab397457bf7e746f08cfefd565b4982b943b44ba844a74/dcicutils-8.8.3.1b9.tar.gz
+[2024-04-22 04:49:40] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/4b/34/673057733fd7ab305104850d621b793b02287fd219e2292f8a2f5a18eaae/telectron-2.0.70.1.tar.gz
+[2024-04-22 04:49:40] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-22 04:49:40] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.3.1b8.tar.gz tmp/dcicutils-8.8.3.1b9.tar.gz --markdown 20240422/d/dcicutils/8.8.3.1b8-8.8.3.1b9/README.md --exclude *.pyd
+[2024-04-22 04:49:40] INFO root fetch - processPackages [telectron]: executing diffoscope
+[2024-04-22 04:49:40] INFO root fetch - processPackages [telectron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telectron-2.0.61.1.tar.gz tmp/telectron-2.0.70.1.tar.gz --markdown 20240422/t/telectron/2.0.61.1-2.0.70.1/README.md --exclude *.pyd
+[2024-04-22 04:49:40] INFO root fetch - processPackages [siat]: executing diffoscope
+[2024-04-22 04:49:40] INFO root fetch - processPackages [siat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siat-3.0.3-py3-none-any.whl.zip tmp/siat-3.0.4-py3-none-any.whl.zip --markdown 20240422/s/siat/3.0.3-3.0.4/README.md --exclude *.pyd
+[2024-04-22 04:49:41] ERROR root fetch - processPackages [siat]: Diffoscope failed: time="2024-04-22T04:49:40+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 252, in compare_details
+    differences.extend(zipinfo_differences(self, other))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 127, in zipinfo_differences
+    zipinfo = Difference.from_operation(Zipinfo, file.path, other.path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 267, in from_operation
+    return Difference.from_operation_exc(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 316, in from_operation_exc
+    difference = Difference.from_feeder(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 126, in feeder
+    end_nl = feeder(out_file)
+             ^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 81, in feeder
+    out = filter_reader(buf, filter)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 47, in filter_reader
+    buf = additional_filter(buf)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 57, in filter
+    m = self.re_strip_path.match(line.decode("utf-8"))
+                                 ^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid continuation byte
+
+[2024-04-22 04:49:41] INFO root fetch - main [MainThread]: End processing [siat] error
+[2024-04-22 04:49:41] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b8.tar.gz]
+[2024-04-22 04:49:41] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b9.tar.gz]
+[2024-04-22 04:49:41] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-22 04:49:45] INFO root fetch - processPackages [atomic-bomb-engine]: Downloading https://files.pythonhosted.org/packages/f2/d0/587dc5dedb6e3e81c2ce988350e6322864b47905247529e088c7b811f975/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl
+[2024-04-22 04:49:46] INFO root fetch - processPackages [atomic-bomb-engine]: executing diffoscope
+[2024-04-22 04:49:46] INFO root fetch - processPackages [atomic-bomb-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip --markdown 20240422/a/atomic-bomb-engine/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-22 04:49:47] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.0-cp39-none-win_amd64.whl.zip]
+[2024-04-22 04:49:47] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip]
+[2024-04-22 04:49:47] INFO root fetch - main [MainThread]: End processing [atomic-bomb-engine]: success
+[2024-04-22 04:49:58] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.61.1.tar.gz]
+[2024-04-22 04:49:58] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
+[2024-04-22 04:49:58] INFO root fetch - main [MainThread]: End processing [telectron]: success
+[2024-04-22 04:49:58] INFO root fetch - main [MainThread]: Store serial: [22871409]
