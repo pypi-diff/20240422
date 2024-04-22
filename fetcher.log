@@ -2962,3 +2962,18 @@
 [2024-04-22 04:12:27] INFO root fetch - processPackages [finalsa-dynamo-client]: Remove: archive file [/home/abi/fetcher/tmp/finalsa_dynamo_client-0.0.8.tar.gz]
 [2024-04-22 04:12:27] INFO root fetch - main [MainThread]: End processing [finalsa-dynamo-client]: success
 [2024-04-22 04:12:27] INFO root fetch - main [MainThread]: Store serial: [22871198]
+[2024-04-22 04:14:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871198]
+[2024-04-22 04:14:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 04:14:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azure-smtp-relay
+[2024-04-22 04:14:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testpkg4_ftcao
+[2024-04-22 04:14:37] INFO root fetch - processPackages [azure-smtp-relay]: New version: [1.0.6] Old Version: [1.0.4]
+[2024-04-22 04:14:37] INFO root fetch - processPackages [azure-smtp-relay]: Downloading https://files.pythonhosted.org/packages/5b/e1/3f0a5ad795c100f08b5701bc8a043c8e7b918b64879ccee57a9df14c25e2/azure_smtp_relay-1.0.4.tar.gz
+[2024-04-22 04:14:37] WARNING root fetch - processPackages [testpkg4_ftcao]: Skipping, unable to determine old version
+[2024-04-22 04:14:37] INFO root fetch - main [MainThread]: End processing [testpkg4_ftcao] error
+[2024-04-22 04:14:37] INFO root fetch - processPackages [azure-smtp-relay]: Downloading https://files.pythonhosted.org/packages/8d/95/1ab82b483b517b5e9a832885f6f8c5f7010d9a37bcdb8a10c0d74d36ea8a/azure_smtp_relay-1.0.6.tar.gz
+[2024-04-22 04:14:37] INFO root fetch - processPackages [azure-smtp-relay]: executing diffoscope
+[2024-04-22 04:14:37] INFO root fetch - processPackages [azure-smtp-relay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure_smtp_relay-1.0.4.tar.gz tmp/azure_smtp_relay-1.0.6.tar.gz --markdown 20240422/a/azure-smtp-relay/1.0.4-1.0.6/README.md --exclude *.pyd
+[2024-04-22 04:14:38] INFO root fetch - processPackages [azure-smtp-relay]: Remove: archive file [/home/abi/fetcher/tmp/azure_smtp_relay-1.0.4.tar.gz]
+[2024-04-22 04:14:38] INFO root fetch - processPackages [azure-smtp-relay]: Remove: archive file [/home/abi/fetcher/tmp/azure_smtp_relay-1.0.6.tar.gz]
+[2024-04-22 04:14:38] INFO root fetch - main [MainThread]: End processing [azure-smtp-relay]: success
+[2024-04-22 04:14:38] INFO root fetch - main [MainThread]: Store serial: [22871207]
