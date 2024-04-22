@@ -4854,3 +4854,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:41:06] INFO root fetch - processPackages [mbp]: Remove: archive file [/home/abi/fetcher/tmp/mbp-1.5.91.tar.gz]
 [2024-04-22 06:41:06] INFO root fetch - main [MainThread]: End processing [mbp]: success
 [2024-04-22 06:41:06] INFO root fetch - main [MainThread]: Store serial: [22871984]
+[2024-04-22 06:43:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871984]
+[2024-04-22 06:43:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 06:43:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GS-Edit
+[2024-04-22 06:43:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assimpy
+[2024-04-22 06:43:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mergepythonclient
+[2024-04-22 06:43:14] INFO root fetch - processPackages [GS-Edit]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-22 06:43:15] INFO root fetch - processPackages [GS-Edit]: Downloading https://files.pythonhosted.org/packages/45/aa/20c3a76c014ebdcb9434ba3582f6a341ab9e5bac4e97910ea4639d1cad95/gs_edit-0.2.1.tar.gz
+[2024-04-22 06:43:15] INFO root fetch - processPackages [assimpy]: New version: [5.4.0] Old Version: [5.3.1.3]
+[2024-04-22 06:43:15] INFO root fetch - processPackages [mergepythonclient]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-22 06:43:15] INFO root fetch - processPackages [GS-Edit]: Downloading https://files.pythonhosted.org/packages/6c/5a/a99fa79679817eb521df8fe52973c93a346f55915a467780c0ea19800334/gs_edit-0.2.2.tar.gz
+[2024-04-22 06:43:15] INFO root fetch - processPackages [assimpy]: Downloading https://files.pythonhosted.org/packages/ce/13/df22efbc025085ad817b2f92b2952b261cce2cd04c29d7c99fab82dd98cf/assimpy-5.3.1.3.tar.gz
+[2024-04-22 06:43:15] INFO root fetch - processPackages [mergepythonclient]: Downloading https://files.pythonhosted.org/packages/39/79/0dae8c000f357039ab2eec928e12e22e03ccb465f5ca7e1bab6ff8cc3043/mergepythonclient-1.0.7.tar.gz
+[2024-04-22 06:43:15] WARNING root fetch - processPackages [assimpy]: Skipping package: exceeds size limit 69854337>=10485760
+[2024-04-22 06:43:15] INFO root fetch - main [MainThread]: End processing [assimpy] error
+[2024-04-22 06:43:15] INFO root fetch - processPackages [GS-Edit]: executing diffoscope
+[2024-04-22 06:43:15] INFO root fetch - processPackages [GS-Edit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_edit-0.2.1.tar.gz tmp/gs_edit-0.2.2.tar.gz --markdown 20240422/G/GS-Edit/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-22 06:43:15] INFO root fetch - processPackages [mergepythonclient]: Downloading https://files.pythonhosted.org/packages/03/9f/fe57f9f90112bee2b973a38e0857e6e39a3e5886de760993bb35b949bf1a/mergepythonclient-1.0.8.tar.gz
+[2024-04-22 06:43:15] INFO root fetch - processPackages [mergepythonclient]: executing diffoscope
+[2024-04-22 06:43:15] INFO root fetch - processPackages [mergepythonclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mergepythonclient-1.0.7.tar.gz tmp/mergepythonclient-1.0.8.tar.gz --markdown 20240422/m/mergepythonclient/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-22 06:43:16] INFO root fetch - processPackages [GS-Edit]: Remove: archive file [/home/abi/fetcher/tmp/gs_edit-0.2.1.tar.gz]
+[2024-04-22 06:43:16] INFO root fetch - processPackages [GS-Edit]: Remove: archive file [/home/abi/fetcher/tmp/gs_edit-0.2.2.tar.gz]
+[2024-04-22 06:43:16] INFO root fetch - main [MainThread]: End processing [GS-Edit]: success
+[2024-04-22 06:43:23] INFO root fetch - processPackages [mergepythonclient]: Remove: archive file [/home/abi/fetcher/tmp/mergepythonclient-1.0.7.tar.gz]
+[2024-04-22 06:43:23] INFO root fetch - processPackages [mergepythonclient]: Remove: archive file [/home/abi/fetcher/tmp/mergepythonclient-1.0.8.tar.gz]
+[2024-04-22 06:43:23] INFO root fetch - main [MainThread]: End processing [mergepythonclient]: success
+[2024-04-22 06:43:23] INFO root fetch - main [MainThread]: Store serial: [22871994]
