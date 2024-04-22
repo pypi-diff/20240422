@@ -3696,3 +3696,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 04:54:20] INFO root fetch - processPackages [tinysoundfont]: Remove: archive file [/home/abi/fetcher/tmp/tinysoundfont-0.3.5-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-04-22 04:54:20] INFO root fetch - main [MainThread]: End processing [tinysoundfont]: success
 [2024-04-22 04:54:20] INFO root fetch - main [MainThread]: Store serial: [22871459]
+[2024-04-22 04:56:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871459]
+[2024-04-22 04:56:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 04:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SpiderKidSDK
+[2024-04-22 04:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arts
+[2024-04-22 04:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gaea-operator
+[2024-04-22 04:56:28] INFO root fetch - processPackages [SpiderKidSDK]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-22 04:56:28] INFO root fetch - processPackages [SpiderKidSDK]: Downloading https://files.pythonhosted.org/packages/17/20/2e44afd796a27ca223f027a67ecab64ff9578b8d148513fc8302722072ec/SpiderKidSDK-0.0.2.tar.gz
+[2024-04-22 04:56:28] INFO root fetch - processPackages [gaea-operator]: New version: [1.2.0.dev5] Old Version: [1.2.0.dev4]
+[2024-04-22 04:56:28] INFO root fetch - processPackages [arts]: New version: [2024.4.22] Old Version: [2024.4.19.1]
+[2024-04-22 04:56:28] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/a5/8e/95977dad1bc4ecb24285db61c1c02b14772321eb77b0fc6eb9f8fdc64eff/arts-2024.4.19.1.tar.gz
+[2024-04-22 04:56:28] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/d1/3f/ec60d3dc95472783daae2d473d18b1144511104a829c191166f8aad0fd1b/gaea_operator-1.2.0.dev4-py3-none-any.whl
+[2024-04-22 04:56:28] INFO root fetch - processPackages [SpiderKidSDK]: Downloading https://files.pythonhosted.org/packages/c6/b2/c52dbbcb6279c5a7f628c3a6864f7b6bc7b0ab670c89789db7ecd0df784d/SpiderKidSDK-0.0.3.tar.gz
+[2024-04-22 04:56:28] INFO root fetch - processPackages [SpiderKidSDK]: executing diffoscope
+[2024-04-22 04:56:28] INFO root fetch - processPackages [SpiderKidSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpiderKidSDK-0.0.2.tar.gz tmp/SpiderKidSDK-0.0.3.tar.gz --markdown 20240422/S/SpiderKidSDK/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-22 04:56:28] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/3c/fd/d8df491cc69366cf86976396136443f1cd0b578a7e9fef76afa2bd5f0398/arts-2024.4.22.tar.gz
+[2024-04-22 04:56:28] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/6b/6b/5cf5c6191117de4447e405021aa859a7f5f9110cdec9384cb08b51acd7d9/gaea_operator-1.2.0.dev5-py3-none-any.whl
+[2024-04-22 04:56:29] INFO root fetch - processPackages [arts]: executing diffoscope
+[2024-04-22 04:56:29] INFO root fetch - processPackages [arts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arts-2024.4.19.1.tar.gz tmp/arts-2024.4.22.tar.gz --markdown 20240422/a/arts/2024.4.19.1-2024.4.22/README.md --exclude *.pyd
+[2024-04-22 04:56:29] INFO root fetch - processPackages [gaea-operator]: executing diffoscope
+[2024-04-22 04:56:29] INFO root fetch - processPackages [gaea-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaea_operator-1.2.0.dev4-py3-none-any.whl.zip tmp/gaea_operator-1.2.0.dev5-py3-none-any.whl.zip --markdown 20240422/g/gaea-operator/1.2.0.dev4-1.2.0.dev5/README.md --exclude *.pyd
+[2024-04-22 04:56:29] INFO root fetch - processPackages [SpiderKidSDK]: Remove: archive file [/home/abi/fetcher/tmp/SpiderKidSDK-0.0.2.tar.gz]
+[2024-04-22 04:56:29] INFO root fetch - processPackages [SpiderKidSDK]: Remove: archive file [/home/abi/fetcher/tmp/SpiderKidSDK-0.0.3.tar.gz]
+[2024-04-22 04:56:29] INFO root fetch - main [MainThread]: End processing [SpiderKidSDK]: success
+[2024-04-22 04:56:29] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.dev4-py3-none-any.whl.zip]
+[2024-04-22 04:56:29] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.dev5-py3-none-any.whl.zip]
+[2024-04-22 04:56:29] INFO root fetch - main [MainThread]: End processing [gaea-operator]: success
+[2024-04-22 04:56:30] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.19.1.tar.gz]
+[2024-04-22 04:56:30] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.22.tar.gz]
+[2024-04-22 04:56:30] INFO root fetch - main [MainThread]: End processing [arts]: success
+[2024-04-22 04:56:30] INFO root fetch - main [MainThread]: Store serial: [22871520]
