@@ -6810,3 +6810,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:35:44] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
 [2024-04-22 08:35:44] INFO root fetch - main [MainThread]: End processing [simc-support]: success
 [2024-04-22 08:35:44] INFO root fetch - main [MainThread]: Store serial: [22872718]
+[2024-04-22 08:37:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872718]
+[2024-04-22 08:37:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-twined
+[2024-04-22 08:37:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spaceone-identity
+[2024-04-22 08:37:53] INFO root fetch - processPackages [spaceone-identity]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-04-22 08:37:53] INFO root fetch - processPackages [spaceone-identity]: Downloading https://files.pythonhosted.org/packages/f6/06/1de9a43d552682ae8e4a18d4660a13662795d5389a0b6cfde31e31aeb9c0/spaceone-identity-2.0.dev98.tar.gz
+[2024-04-22 08:37:53] INFO root fetch - processPackages [django-twined]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-22 08:37:53] INFO root fetch - processPackages [django-twined]: Downloading https://files.pythonhosted.org/packages/ff/d3/f35371b90a9baf47d8f19c9badf23a6426bdf5e53f31c70c2a197d485c83/django_twined-0.8.1.tar.gz
+[2024-04-22 08:37:53] INFO root fetch - processPackages [spaceone-identity]: Downloading https://files.pythonhosted.org/packages/3a/f9/802fb8123677b99c90a587b67faa5443d403022fbbd70d8bff1c49920e02/spaceone-identity-2.0.dev99.tar.gz
+[2024-04-22 08:37:53] INFO root fetch - processPackages [spaceone-identity]: executing diffoscope
+[2024-04-22 08:37:53] INFO root fetch - processPackages [spaceone-identity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-identity-2.0.dev98.tar.gz tmp/spaceone-identity-2.0.dev99.tar.gz --markdown 20240422/s/spaceone-identity/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-04-22 08:37:53] INFO root fetch - processPackages [django-twined]: Downloading https://files.pythonhosted.org/packages/e1/e0/9d2e60c4bc10bdadf14671d3427dc7598b7250b6a9daabae20752ea10aa1/django_twined-0.8.2.tar.gz
+[2024-04-22 08:37:53] INFO root fetch - processPackages [django-twined]: executing diffoscope
+[2024-04-22 08:37:53] INFO root fetch - processPackages [django-twined]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_twined-0.8.1.tar.gz tmp/django_twined-0.8.2.tar.gz --markdown 20240422/d/django-twined/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-22 08:37:54] INFO root fetch - processPackages [django-twined]: Remove: archive file [/home/abi/fetcher/tmp/django_twined-0.8.1.tar.gz]
+[2024-04-22 08:37:54] INFO root fetch - processPackages [django-twined]: Remove: archive file [/home/abi/fetcher/tmp/django_twined-0.8.2.tar.gz]
+[2024-04-22 08:37:54] INFO root fetch - main [MainThread]: End processing [django-twined]: success
+[2024-04-22 08:37:54] INFO root fetch - processPackages [spaceone-identity]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-identity-2.0.dev98.tar.gz]
+[2024-04-22 08:37:54] INFO root fetch - processPackages [spaceone-identity]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-identity-2.0.dev99.tar.gz]
+[2024-04-22 08:37:54] INFO root fetch - main [MainThread]: End processing [spaceone-identity]: success
+[2024-04-22 08:37:54] INFO root fetch - main [MainThread]: Store serial: [22872724]
