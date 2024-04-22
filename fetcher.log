@@ -6253,3 +6253,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:10:42] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240421.tar.gz]
 [2024-04-22 08:10:42] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-04-22 08:10:42] INFO root fetch - main [MainThread]: Store serial: [22872504]
+[2024-04-22 08:12:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872504]
+[2024-04-22 08:12:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 08:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmdbapis
+[2024-04-22 08:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bedrock-bot
+[2024-04-22 08:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: th2-data-services
+[2024-04-22 08:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gridengine-framework
+[2024-04-22 08:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arrapi
+[2024-04-22 08:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: repo-review
+[2024-04-22 08:12:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: roleft
+[2024-04-22 08:12:51] INFO root fetch - processPackages [arrapi]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-22 08:12:51] INFO root fetch - processPackages [gridengine-framework]: New version: [0.8.0] Old Version: [0.7.9]
+[2024-04-22 08:12:51] INFO root fetch - processPackages [bedrock-bot]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-22 08:12:51] INFO root fetch - processPackages [tmdbapis]: New version: [1.2.9] Old Version: [1.2.7]
+[2024-04-22 08:12:51] INFO root fetch - processPackages [roleft]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-22 08:12:51] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/82/75/502ee58116644d44aec18bcb2803e5f097c4f437170867c28da2105cd61b/arrapi-1.4.8.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [repo-review]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-22 08:12:51] INFO root fetch - processPackages [th2-data-services]: New version: [2.0.0.dev8779326749] Old Version: [2.0.0.dev8703091686]
+[2024-04-22 08:12:51] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/f4/7e/cd9649bdfccc0c116653629f10cd38dd9182ecd6aa7d4149950ea5671ade/gridengine_framework-0.7.9.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/05/a6/d3e65909cfb8a630fe99da76b5b5236b696fe07f8031a373e9b2139ffa47/bedrock_bot-1.0.4.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/cb/b1/9ef1c2ae10e178aaaca57e943572bec7770a8e9935279738498792c6a7a0/tmdbapis-1.2.7.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [roleft]: Downloading https://files.pythonhosted.org/packages/eb/53/0931108312263b7c48dcf45581e810742b145e098a3ba370a5ded0b1cadd/roleft-1.0.8.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [arrapi]: Downloading https://files.pythonhosted.org/packages/fb/42/26254ff2cd16101f4e5c86aaabb0e44aa2c12fe6e2119f1eadfed874ddcf/arrapi-1.4.9.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [repo-review]: Downloading https://files.pythonhosted.org/packages/c4/62/79f892cbfd48d916c2eeb2274a4e537a0c50556e86b7da213adcdc4bcc23/repo_review-0.9.2.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/6a/27/50e4953ce5ea5bed911f6b876bc462e17de9fc3cc3a5f44e903cc4e88176/tmdbapis-1.2.9.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [th2-data-services]: Downloading https://files.pythonhosted.org/packages/08/11/735cce1e103ac9ad793757bd2f3f2e0f2b461bba4cd0f193e038ecb5c8cf/th2_data_services-2.0.0.dev8703091686.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/37/e6/071f9218f8a17371d1ba0f0ef290098a77203c97f95387bcf42651b85ddb/bedrock_bot-1.0.5.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/d5/06/2bfd83532561a1b6d946e8ed0a2574bd834cfd7a5ba048a1c91f9fe755da/gridengine_framework-0.8.0.tar.gz
+[2024-04-22 08:12:51] INFO root fetch - processPackages [arrapi]: executing diffoscope
+[2024-04-22 08:12:51] INFO root fetch - processPackages [arrapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arrapi-1.4.8.tar.gz tmp/arrapi-1.4.9.tar.gz --markdown 20240422/a/arrapi/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-22 08:12:51] INFO root fetch - processPackages [tmdbapis]: executing diffoscope
+[2024-04-22 08:12:51] INFO root fetch - processPackages [tmdbapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmdbapis-1.2.7.tar.gz tmp/tmdbapis-1.2.9.tar.gz --markdown 20240422/t/tmdbapis/1.2.7-1.2.9/README.md --exclude *.pyd
+[2024-04-22 08:12:51] INFO root fetch - processPackages [bedrock-bot]: executing diffoscope
+[2024-04-22 08:12:51] INFO root fetch - processPackages [bedrock-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bedrock_bot-1.0.4.tar.gz tmp/bedrock_bot-1.0.5.tar.gz --markdown 20240422/b/bedrock-bot/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-22 08:12:51] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 08:12:51] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.9.tar.gz tmp/gridengine_framework-0.8.0.tar.gz --markdown 20240422/g/gridengine-framework/0.7.9-0.8.0/README.md --exclude *.pyd
+[2024-04-22 08:12:52] INFO root fetch - processPackages [th2-data-services]: Downloading https://files.pythonhosted.org/packages/2a/cd/4436a1e80400795cc3ce9cc1c387f8a34f451b65c47f6c2f36ca5cf6567a/th2_data_services-2.0.0.dev8779326749.tar.gz
+[2024-04-22 08:12:52] INFO root fetch - processPackages [roleft]: Downloading https://files.pythonhosted.org/packages/27/30/cfbc1bdcc9e0e1c50a955986d320b2f8c068f60c110cd6f988fd06490add/roleft-1.0.9.tar.gz
+[2024-04-22 08:12:52] INFO root fetch - processPackages [repo-review]: Downloading https://files.pythonhosted.org/packages/82/f0/4ab38b393e7e99188d95e2c5dd007ebfaaef4f04513bdeda5472161411b3/repo_review-0.9.3.tar.gz
+[2024-04-22 08:12:52] INFO root fetch - processPackages [roleft]: executing diffoscope
+[2024-04-22 08:12:52] INFO root fetch - processPackages [roleft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roleft-1.0.8.tar.gz tmp/roleft-1.0.9.tar.gz --markdown 20240422/r/roleft/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-22 08:12:52] INFO root fetch - processPackages [th2-data-services]: executing diffoscope
+[2024-04-22 08:12:52] INFO root fetch - processPackages [th2-data-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/th2_data_services-2.0.0.dev8703091686.tar.gz tmp/th2_data_services-2.0.0.dev8779326749.tar.gz --markdown 20240422/t/th2-data-services/2.0.0.dev8703091686-2.0.0.dev8779326749/README.md --exclude *.pyd
+[2024-04-22 08:12:52] INFO root fetch - processPackages [repo-review]: executing diffoscope
+[2024-04-22 08:12:52] INFO root fetch - processPackages [repo-review]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repo_review-0.9.2.tar.gz tmp/repo_review-0.9.3.tar.gz --markdown 20240422/r/repo-review/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-22 08:12:52] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.4.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.5.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - main [MainThread]: End processing [bedrock-bot]: success
+[2024-04-22 08:12:52] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.7.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.9.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - main [MainThread]: End processing [tmdbapis]: success
+[2024-04-22 08:12:52] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.9.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.8.0.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 08:12:52] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.8.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - processPackages [arrapi]: Remove: archive file [/home/abi/fetcher/tmp/arrapi-1.4.9.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - main [MainThread]: End processing [arrapi]: success
+[2024-04-22 08:12:52] INFO root fetch - processPackages [roleft]: Remove: archive file [/home/abi/fetcher/tmp/roleft-1.0.8.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - processPackages [roleft]: Remove: archive file [/home/abi/fetcher/tmp/roleft-1.0.9.tar.gz]
+[2024-04-22 08:12:52] INFO root fetch - main [MainThread]: End processing [roleft]: success
+[2024-04-22 08:12:53] INFO root fetch - processPackages [th2-data-services]: Remove: archive file [/home/abi/fetcher/tmp/th2_data_services-2.0.0.dev8703091686.tar.gz]
+[2024-04-22 08:12:53] INFO root fetch - processPackages [th2-data-services]: Remove: archive file [/home/abi/fetcher/tmp/th2_data_services-2.0.0.dev8779326749.tar.gz]
+[2024-04-22 08:12:53] INFO root fetch - main [MainThread]: End processing [th2-data-services]: success
+[2024-04-22 08:12:53] INFO root fetch - processPackages [repo-review]: Remove: archive file [/home/abi/fetcher/tmp/repo_review-0.9.2.tar.gz]
+[2024-04-22 08:12:53] INFO root fetch - processPackages [repo-review]: Remove: archive file [/home/abi/fetcher/tmp/repo_review-0.9.3.tar.gz]
+[2024-04-22 08:12:53] INFO root fetch - main [MainThread]: End processing [repo-review]: success
+[2024-04-22 08:12:53] INFO root fetch - main [MainThread]: Store serial: [22872525]
