@@ -3450,3 +3450,33 @@
 [2024-04-22 04:45:19] INFO root fetch - processPackages [youtube-dl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/youtube_dl_nightly-2024.4.8-py2.py3-none-any.whl.zip]
 [2024-04-22 04:45:19] INFO root fetch - main [MainThread]: End processing [youtube-dl-nightly]: success
 [2024-04-22 04:45:19] INFO root fetch - main [MainThread]: Store serial: [22871386]
+[2024-04-22 04:47:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871386]
+[2024-04-22 04:47:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eirStru
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ansi-string
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs.threads
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ansi-string]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-22 04:47:30] INFO root fetch - processPackages [eirStru]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/17/a4/29e37182fc4dd1e804beae8db89f14cc76d5520140508fa09d0514cbeb60/ansi-string-1.0.0.tar.gz
+[2024-04-22 04:47:30] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/b5/2a/25fb95363a9110b32ccbc230c8a5f6207e35c7c5906b6f63320a4ca71535/eirStru-0.3.8.tar.gz
+[2024-04-22 04:47:30] INFO root fetch - processPackages [cs.threads]: New version: [20240422] Old Version: [20240412]
+[2024-04-22 04:47:30] INFO root fetch - processPackages [cs.threads]: Downloading https://files.pythonhosted.org/packages/9b/d6/9518ec11602c048eb61bf9c8531fda4e6ba2ecf4f426da2a243ded58f5b3/cs.threads-20240412.tar.gz
+[2024-04-22 04:47:30] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/26/ce/8cae1a6c9a510bd827a325862ceb832b9e593422dff66af06aa3bdda4f40/eirStru-0.3.9.tar.gz
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/b9/0e/cde7b5df1f4fa787891ad0746d6b0ad437a399f6c0d43e023e704abe6c3e/ansi-string-1.0.1.tar.gz
+[2024-04-22 04:47:30] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-22 04:47:30] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.8.tar.gz tmp/eirStru-0.3.9.tar.gz --markdown 20240422/e/eirStru/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ansi-string]: executing diffoscope
+[2024-04-22 04:47:30] INFO root fetch - processPackages [ansi-string]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansi-string-1.0.0.tar.gz tmp/ansi-string-1.0.1.tar.gz --markdown 20240422/a/ansi-string/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-22 04:47:30] INFO root fetch - processPackages [cs.threads]: Downloading https://files.pythonhosted.org/packages/bb/e5/879d2bce9eaf7b4a207b4bde7d43d6f775b783775af30e466a90b0c5bfe2/cs.threads-20240422.tar.gz
+[2024-04-22 04:47:31] INFO root fetch - processPackages [cs.threads]: executing diffoscope
+[2024-04-22 04:47:31] INFO root fetch - processPackages [cs.threads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.threads-20240412.tar.gz tmp/cs.threads-20240422.tar.gz --markdown 20240422/c/cs.threads/20240412-20240422/README.md --exclude *.pyd
+[2024-04-22 04:47:31] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.8.tar.gz]
+[2024-04-22 04:47:31] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.9.tar.gz]
+[2024-04-22 04:47:31] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-22 04:47:31] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-1.0.0.tar.gz]
+[2024-04-22 04:47:31] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-1.0.1.tar.gz]
+[2024-04-22 04:47:31] INFO root fetch - main [MainThread]: End processing [ansi-string]: success
+[2024-04-22 04:47:31] INFO root fetch - processPackages [cs.threads]: Remove: archive file [/home/abi/fetcher/tmp/cs.threads-20240412.tar.gz]
+[2024-04-22 04:47:31] INFO root fetch - processPackages [cs.threads]: Remove: archive file [/home/abi/fetcher/tmp/cs.threads-20240422.tar.gz]
+[2024-04-22 04:47:31] INFO root fetch - main [MainThread]: End processing [cs.threads]: success
+[2024-04-22 04:47:31] INFO root fetch - main [MainThread]: Store serial: [22871394]
