@@ -1268,3 +1268,36 @@
 [2024-04-22 02:04:09] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240421.tar.gz]
 [2024-04-22 02:04:09] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
 [2024-04-22 02:04:09] INFO root fetch - main [MainThread]: Store serial: [22870429]
+[2024-04-22 02:06:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870429]
+[2024-04-22 02:06:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 02:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: storage-local
+[2024-04-22 02:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mct-nightly
+[2024-04-22 02:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jaxkern-nightly
+[2024-04-22 02:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mundane
+[2024-04-22 02:06:17] INFO root fetch - processPackages [storage-local]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 02:06:17] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-04-22 02:06:17] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240421.444] Old Version: [2.0.0.20240420.357]
+[2024-04-22 02:06:18] INFO root fetch - processPackages [storage-local]: Downloading https://files.pythonhosted.org/packages/b7/63/976ced0597974a94e0db7472bfb4f03e6c82e5276610b0176be638f047e6/storage-local-0.1.8.tar.gz
+[2024-04-22 02:06:18] WARNING root fetch - processPackages [mundane]: Skipping, unable to determine old version
+[2024-04-22 02:06:18] INFO root fetch - main [MainThread]: End processing [mundane] error
+[2024-04-22 02:06:18] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-04-22 02:06:18] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/50/8c/306e51bd4dae1c73df90f98e132aecebb73350619da52f30a79fbc0f1c28/mct-nightly-2.0.0.20240420.357.tar.gz
+[2024-04-22 02:06:18] INFO root fetch - processPackages [storage-local]: Downloading https://files.pythonhosted.org/packages/80/92/c5f00ebfa1349b712e17441e635a7037dea493f636ec7cb5309d3f303ed3/storage-local-0.1.9.tar.gz
+[2024-04-22 02:06:18] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-04-22 02:06:18] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/10/89/96716129209753f5e66179d31d1dcf2b0c2286dfb1e08efd46f808207b51/mct-nightly-2.0.0.20240421.444.tar.gz
+[2024-04-22 02:06:18] INFO root fetch - processPackages [storage-local]: executing diffoscope
+[2024-04-22 02:06:18] INFO root fetch - processPackages [storage-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/storage-local-0.1.8.tar.gz tmp/storage-local-0.1.9.tar.gz --markdown 20240422/s/storage-local/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 02:06:18] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-04-22 02:06:18] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240422/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-04-22 02:06:18] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-04-22 02:06:18] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240420.357.tar.gz tmp/mct-nightly-2.0.0.20240421.444.tar.gz --markdown 20240422/m/mct-nightly/2.0.0.20240420.357-2.0.0.20240421.444/README.md --exclude *.pyd
+[2024-04-22 02:06:18] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-04-22 02:06:18] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-04-22 02:06:18] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-04-22 02:06:18] INFO root fetch - processPackages [storage-local]: Remove: archive file [/home/abi/fetcher/tmp/storage-local-0.1.8.tar.gz]
+[2024-04-22 02:06:18] INFO root fetch - processPackages [storage-local]: Remove: archive file [/home/abi/fetcher/tmp/storage-local-0.1.9.tar.gz]
+[2024-04-22 02:06:18] INFO root fetch - main [MainThread]: End processing [storage-local]: success
+[2024-04-22 02:06:20] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240420.357.tar.gz]
+[2024-04-22 02:06:20] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240421.444.tar.gz]
+[2024-04-22 02:06:20] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-04-22 02:06:20] INFO root fetch - main [MainThread]: Store serial: [22870443]
