@@ -4411,3 +4411,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:59:57] INFO root fetch - processPackages [metaphor-connectors]: Remove: archive file [/home/abi/fetcher/tmp/metaphor-connectors-0.9.4.tar.gz]
 [2024-04-22 05:59:57] INFO root fetch - main [MainThread]: End processing [metaphor-connectors]: success
 [2024-04-22 05:59:57] INFO root fetch - main [MainThread]: Store serial: [22871819]
+[2024-04-22 06:02:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871819]
+[2024-04-22 06:02:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 06:02:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: email-profile
+[2024-04-22 06:02:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cyberdrop-dl
+[2024-04-22 06:02:06] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-04-22 06:02:06] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/4d/1bcce6fd4b01edc3088927c67c6a1f036da4325e2d64f9023ffc785bf41f/cyberdrop_dl-5.2.8.tar.gz
+[2024-04-22 06:02:06] WARNING root fetch - processPackages [email-profile]: Skipping, unable to determine old version
+[2024-04-22 06:02:06] INFO root fetch - main [MainThread]: End processing [email-profile] error
+[2024-04-22 06:02:06] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-04-22 06:02:06] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-04-22 06:02:06] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.8.tar.gz tmp/cyberdrop_dl-5.2.9.tar.gz --markdown 20240422/c/cyberdrop-dl/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-04-22 06:02:07] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.8.tar.gz]
+[2024-04-22 06:02:07] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-04-22 06:02:07] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-04-22 06:02:07] INFO root fetch - main [MainThread]: Store serial: [22871827]
