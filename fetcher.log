@@ -5148,3 +5148,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:58:39] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.7.tar.gz]
 [2024-04-22 06:58:39] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
 [2024-04-22 06:58:39] INFO root fetch - main [MainThread]: Store serial: [22872091]
+[2024-04-22 07:00:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872091]
+[2024-04-22 07:00:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 07:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dw-hamilton-sdk
+[2024-04-22 07:00:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moobius
+[2024-04-22 07:00:48] WARNING root fetch - processPackages [dw-hamilton-sdk]: Skipping, unable to determine old version
+[2024-04-22 07:00:48] INFO root fetch - main [MainThread]: End processing [dw-hamilton-sdk] error
+[2024-04-22 07:00:48] INFO root fetch - processPackages [moobius]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-22 07:00:48] INFO root fetch - processPackages [moobius]: Downloading https://files.pythonhosted.org/packages/84/55/06591e0bcb17992f083dfa1d9cc59641524a25c87be475ad77582f552981/moobius-1.1.8.tar.gz
+[2024-04-22 07:00:48] INFO root fetch - processPackages [moobius]: Downloading https://files.pythonhosted.org/packages/34/9d/6293c2aa4642e5ba55a6a5274e267234cfcc96d20973169693dc564e18cd/moobius-1.1.9.tar.gz
+[2024-04-22 07:00:48] INFO root fetch - processPackages [moobius]: executing diffoscope
+[2024-04-22 07:00:48] INFO root fetch - processPackages [moobius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moobius-1.1.8.tar.gz tmp/moobius-1.1.9.tar.gz --markdown 20240422/m/moobius/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-22 07:00:49] INFO root fetch - processPackages [moobius]: Remove: archive file [/home/abi/fetcher/tmp/moobius-1.1.8.tar.gz]
+[2024-04-22 07:00:49] INFO root fetch - processPackages [moobius]: Remove: archive file [/home/abi/fetcher/tmp/moobius-1.1.9.tar.gz]
+[2024-04-22 07:00:49] INFO root fetch - main [MainThread]: End processing [moobius]: success
+[2024-04-22 07:00:49] INFO root fetch - main [MainThread]: Store serial: [22872103]
