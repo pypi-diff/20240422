@@ -7652,3 +7652,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:23:18] INFO root fetch - processPackages [tad-mctc]: Remove: archive file [/home/abi/fetcher/tmp/tad_mctc-0.1.4.tar.gz]
 [2024-04-22 09:23:18] INFO root fetch - main [MainThread]: End processing [tad-mctc]: success
 [2024-04-22 09:23:18] INFO root fetch - main [MainThread]: Store serial: [22873043]
+[2024-04-22 09:25:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873043]
+[2024-04-22 09:25:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 09:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reconfillion
+[2024-04-22 09:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyAibote
+[2024-04-22 09:25:27] INFO root fetch - processPackages [PyAibote]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-22 09:25:27] WARNING root fetch - processPackages [reconfillion]: Skipping, unable to determine old version
+[2024-04-22 09:25:27] INFO root fetch - main [MainThread]: End processing [reconfillion] error
+[2024-04-22 09:25:27] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/a9/28/22ff7fff821efa644da028b36b099c50cf289863d20524f42e6d92512e2b/PyAibote-1.4.0.tar.gz
+[2024-04-22 09:25:27] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/e1/de/0561a065ea746de2dc9b5b88740b6efca079577d4c05e3281fc0564ecbc3/PyAibote-1.4.1.tar.gz
+[2024-04-22 09:25:28] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-04-22 09:25:28] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.4.0.tar.gz tmp/PyAibote-1.4.1.tar.gz --markdown 20240422/P/PyAibote/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-22 09:25:28] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.0.tar.gz]
+[2024-04-22 09:25:28] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.1.tar.gz]
+[2024-04-22 09:25:28] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-04-22 09:25:28] INFO root fetch - main [MainThread]: Store serial: [22873052]
