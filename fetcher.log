@@ -2745,3 +2745,24 @@
 [2024-04-22 03:48:18] INFO root fetch - processPackages [meta-ai-api]: Remove: archive file [/home/abi/fetcher/tmp/meta_ai_api-1.1.3.tar.gz]
 [2024-04-22 03:48:18] INFO root fetch - main [MainThread]: End processing [meta-ai-api]: success
 [2024-04-22 03:48:18] INFO root fetch - main [MainThread]: Store serial: [22871116]
+[2024-04-22 03:50:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871116]
+[2024-04-22 03:50:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 03:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deep-training
+[2024-04-22 03:50:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mass-composition
+[2024-04-22 03:50:27] INFO root fetch - processPackages [mass-composition]: New version: [0.4.3] Old Version: [0.3.9]
+[2024-04-22 03:50:27] INFO root fetch - processPackages [deep-training]: New version: [0.3.0] Old Version: [0.2.9.post0]
+[2024-04-22 03:50:27] INFO root fetch - processPackages [deep-training]: Downloading https://files.pythonhosted.org/packages/83/73/f6b4cf77a3a20f701923cc8f4a212fe24ca3a501c2af4a3975f4d1509c3b/deep_training-0.2.9.post0-py3-none-any.whl
+[2024-04-22 03:50:27] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/1d/40/52d05e1f8c2e9436a7f7ac53aa5a303981268e69cd327b3890f55209e9dc/mass_composition-0.3.9.tar.gz
+[2024-04-22 03:50:28] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/0a/37/f58ad2fb7a2fd3fbc60d77ada0efecbdf82c7dee8eafce3e82887baf366f/mass_composition-0.4.3.tar.gz
+[2024-04-22 03:50:28] INFO root fetch - processPackages [mass-composition]: executing diffoscope
+[2024-04-22 03:50:28] INFO root fetch - processPackages [mass-composition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mass_composition-0.3.9.tar.gz tmp/mass_composition-0.4.3.tar.gz --markdown 20240422/m/mass-composition/0.3.9-0.4.3/README.md --exclude *.pyd
+[2024-04-22 03:50:28] INFO root fetch - processPackages [deep-training]: Downloading https://files.pythonhosted.org/packages/ac/92/e9878d6c621662ee6c8ce369fd1a9365332e801d334a550ea0f927cbd095/deep_training-0.3.0-py3-none-any.whl
+[2024-04-22 03:50:28] INFO root fetch - processPackages [deep-training]: executing diffoscope
+[2024-04-22 03:50:28] INFO root fetch - processPackages [deep-training]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deep_training-0.2.9.post0-py3-none-any.whl.zip tmp/deep_training-0.3.0-py3-none-any.whl.zip --markdown 20240422/d/deep-training/0.2.9.post0-0.3.0/README.md --exclude *.pyd
+[2024-04-22 03:50:28] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.3.9.tar.gz]
+[2024-04-22 03:50:28] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.4.3.tar.gz]
+[2024-04-22 03:50:28] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
+[2024-04-22 03:50:30] INFO root fetch - processPackages [deep-training]: Remove: archive file [/home/abi/fetcher/tmp/deep_training-0.2.9.post0-py3-none-any.whl.zip]
+[2024-04-22 03:50:30] INFO root fetch - processPackages [deep-training]: Remove: archive file [/home/abi/fetcher/tmp/deep_training-0.3.0-py3-none-any.whl.zip]
+[2024-04-22 03:50:30] INFO root fetch - main [MainThread]: End processing [deep-training]: success
+[2024-04-22 03:50:30] INFO root fetch - main [MainThread]: Store serial: [22871121]
