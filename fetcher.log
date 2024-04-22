@@ -4289,3 +4289,32 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:49:03] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.6.tar.gz]
 [2024-04-22 05:49:03] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
 [2024-04-22 05:49:03] INFO root fetch - main [MainThread]: Store serial: [22871779]
+[2024-04-22 05:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871779]
+[2024-04-22 05:51:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 05:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alipai
+[2024-04-22 05:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certbot-dns-varo
+[2024-04-22 05:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-glass
+[2024-04-22 05:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: glass-engine
+[2024-04-22 05:51:13] INFO root fetch - processPackages [alipai]: New version: [0.4.6] Old Version: [0.4.5.post1]
+[2024-04-22 05:51:13] WARNING root fetch - processPackages [certbot-dns-varo]: Skipping, unable to determine old version
+[2024-04-22 05:51:13] INFO root fetch - main [MainThread]: End processing [certbot-dns-varo] error
+[2024-04-22 05:51:13] INFO root fetch - processPackages [python-glass]: New version: [0.1.55] Old Version: [0.1.54]
+[2024-04-22 05:51:13] INFO root fetch - processPackages [glass-engine]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 05:51:13] INFO root fetch - processPackages [alipai]: Downloading https://files.pythonhosted.org/packages/c6/00/6db233f111e3f4c05f72796489374137483d3511f21b41c62e36a7397a9c/alipai-0.4.5.post1.tar.gz
+[2024-04-22 05:51:13] INFO root fetch - processPackages [python-glass]: Downloading https://files.pythonhosted.org/packages/16/0e/9f78893f82075a9f09edb73c3f59d622b3b5430ee85da5a53aab8e25572e/python_glass-0.1.54.tar.gz
+[2024-04-22 05:51:13] INFO root fetch - processPackages [glass-engine]: Downloading https://files.pythonhosted.org/packages/a0/34/d3893cc5c5e6dbbbc33c6176c695fc26d08dba95f54bbba538a7755d0a93/glass_engine-0.1.8.tar.gz
+[2024-04-22 05:51:13] WARNING root fetch - processPackages [alipai]: Skipping package: exceeds size limit 11281949>=10485760
+[2024-04-22 05:51:13] INFO root fetch - main [MainThread]: End processing [alipai] error
+[2024-04-22 05:51:14] INFO root fetch - processPackages [python-glass]: Downloading https://files.pythonhosted.org/packages/23/e8/c1ac6e135ff7073381e3ca510667937ba40f35fdf1dfba9aa592fbe7a81b/python_glass-0.1.55.tar.gz
+[2024-04-22 05:51:14] INFO root fetch - processPackages [python-glass]: executing diffoscope
+[2024-04-22 05:51:14] INFO root fetch - processPackages [python-glass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_glass-0.1.54.tar.gz tmp/python_glass-0.1.55.tar.gz --markdown 20240422/p/python-glass/0.1.54-0.1.55/README.md --exclude *.pyd
+[2024-04-22 05:51:14] INFO root fetch - processPackages [glass-engine]: Downloading https://files.pythonhosted.org/packages/f4/9d/ee59bc97ed5e63b4228dbc0662473e416b81c3a55188837bbf7ad04b47a3/glass_engine-0.1.9.tar.gz
+[2024-04-22 05:51:14] INFO root fetch - processPackages [glass-engine]: executing diffoscope
+[2024-04-22 05:51:14] INFO root fetch - processPackages [glass-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glass_engine-0.1.8.tar.gz tmp/glass_engine-0.1.9.tar.gz --markdown 20240422/g/glass-engine/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 05:51:15] INFO root fetch - processPackages [python-glass]: Remove: archive file [/home/abi/fetcher/tmp/python_glass-0.1.54.tar.gz]
+[2024-04-22 05:51:15] INFO root fetch - processPackages [python-glass]: Remove: archive file [/home/abi/fetcher/tmp/python_glass-0.1.55.tar.gz]
+[2024-04-22 05:51:15] INFO root fetch - main [MainThread]: End processing [python-glass]: success
+[2024-04-22 05:51:15] INFO root fetch - processPackages [glass-engine]: Remove: archive file [/home/abi/fetcher/tmp/glass_engine-0.1.8.tar.gz]
+[2024-04-22 05:51:15] INFO root fetch - processPackages [glass-engine]: Remove: archive file [/home/abi/fetcher/tmp/glass_engine-0.1.9.tar.gz]
+[2024-04-22 05:51:15] INFO root fetch - main [MainThread]: End processing [glass-engine]: success
+[2024-04-22 05:51:15] INFO root fetch - main [MainThread]: Store serial: [22871793]
