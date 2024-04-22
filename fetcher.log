@@ -4581,3 +4581,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:19:18] INFO root fetch - processPackages [aioesphomeapi]: Remove: archive file [/home/abi/fetcher/tmp/aioesphomeapi-9.1.5.tar.gz]
 [2024-04-22 06:19:18] INFO root fetch - main [MainThread]: End processing [aioesphomeapi]: success
 [2024-04-22 06:19:18] INFO root fetch - main [MainThread]: Store serial: [22871894]
+[2024-04-22 06:21:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871894]
+[2024-04-22 06:21:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 06:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cait-sith-py
+[2024-04-22 06:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinx_mdinclude
+[2024-04-22 06:21:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bookio-fetchfox
+[2024-04-22 06:21:28] INFO root fetch - processPackages [bookio-fetchfox]: New version: [2.4.2] Old Version: [2.4.1]
+[2024-04-22 06:21:28] WARNING root fetch - processPackages [cait-sith-py]: Skipping, unable to determine old version
+[2024-04-22 06:21:28] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/a3/56/334f5088310abc519f9a7f8f0ea678cd96e9372f5ab1a43962af9eef52c9/bookio_fetchfox-2.4.1.tar.gz
+[2024-04-22 06:21:28] INFO root fetch - main [MainThread]: End processing [cait-sith-py] error
+[2024-04-22 06:21:28] INFO root fetch - processPackages [sphinx_mdinclude]: New version: [0.6.0] Old Version: [0.5.4]
+[2024-04-22 06:21:28] INFO root fetch - processPackages [sphinx_mdinclude]: Downloading https://files.pythonhosted.org/packages/29/f9/c6b8cf37c24bb793762343805168118e3d12b5de3af6771212062d1554d6/sphinx_mdinclude-0.5.4.tar.gz
+[2024-04-22 06:21:29] INFO root fetch - processPackages [bookio-fetchfox]: Downloading https://files.pythonhosted.org/packages/9e/40/41e4884d75f8b8d927977d7eab72726e095e80413bd07853fb9de5301363/bookio_fetchfox-2.4.2.tar.gz
+[2024-04-22 06:21:29] INFO root fetch - processPackages [bookio-fetchfox]: executing diffoscope
+[2024-04-22 06:21:29] INFO root fetch - processPackages [bookio-fetchfox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bookio_fetchfox-2.4.1.tar.gz tmp/bookio_fetchfox-2.4.2.tar.gz --markdown 20240422/b/bookio-fetchfox/2.4.1-2.4.2/README.md --exclude *.pyd
+[2024-04-22 06:21:29] INFO root fetch - processPackages [sphinx_mdinclude]: Downloading https://files.pythonhosted.org/packages/82/7c/458b0259c20ac24c2994ba4bed005814e52bb78cf905183cdebf79928f96/sphinx_mdinclude-0.6.0.tar.gz
+[2024-04-22 06:21:29] INFO root fetch - processPackages [sphinx_mdinclude]: executing diffoscope
+[2024-04-22 06:21:29] INFO root fetch - processPackages [sphinx_mdinclude]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_mdinclude-0.5.4.tar.gz tmp/sphinx_mdinclude-0.6.0.tar.gz --markdown 20240422/s/sphinx_mdinclude/0.5.4-0.6.0/README.md --exclude *.pyd
+[2024-04-22 06:21:29] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.4.1.tar.gz]
+[2024-04-22 06:21:29] INFO root fetch - processPackages [bookio-fetchfox]: Remove: archive file [/home/abi/fetcher/tmp/bookio_fetchfox-2.4.2.tar.gz]
+[2024-04-22 06:21:29] INFO root fetch - main [MainThread]: End processing [bookio-fetchfox]: success
+[2024-04-22 06:21:29] INFO root fetch - processPackages [sphinx_mdinclude]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_mdinclude-0.5.4.tar.gz]
+[2024-04-22 06:21:29] INFO root fetch - processPackages [sphinx_mdinclude]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_mdinclude-0.6.0.tar.gz]
+[2024-04-22 06:21:29] INFO root fetch - main [MainThread]: End processing [sphinx_mdinclude]: success
+[2024-04-22 06:21:29] INFO root fetch - main [MainThread]: Store serial: [22871904]
