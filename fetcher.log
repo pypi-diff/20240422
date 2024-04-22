@@ -8542,3 +8542,83 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:12:15] INFO root fetch - processPackages [koyo]: Remove: archive file [/home/abi/fetcher/tmp/koyo-0.2.8.tar.gz]
 [2024-04-22 10:12:15] INFO root fetch - main [MainThread]: End processing [koyo]: success
 [2024-04-22 10:12:15] INFO root fetch - main [MainThread]: Store serial: [22873904]
+[2024-04-22 10:14:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873904]
+[2024-04-22 10:14:25] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ayeaye-fossa
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: db-cache-manager
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mastercard-api-client
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modal
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moodle-sdk
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-azure-native
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: modal-client
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyQuantKit
+[2024-04-22 10:14:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ptyx-mcq
+[2024-04-22 10:14:25] INFO root fetch - processPackages [db-cache-manager]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-22 10:14:25] INFO root fetch - processPackages [modal-client]: New version: [0.62.98] Old Version: [0.62.97]
+[2024-04-22 10:14:25] INFO root fetch - processPackages [mastercard-api-client]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-04-22 10:14:25] INFO root fetch - processPackages [pulumi-azure-native]: New version: [2.9.1a1696416212] Old Version: [2.9.1a1696411987]
+[2024-04-22 10:14:25] INFO root fetch - processPackages [modal]: New version: [0.62.98] Old Version: [0.62.97]
+[2024-04-22 10:14:26] INFO root fetch - processPackages [db-cache-manager]: Downloading https://files.pythonhosted.org/packages/a8/97/8dad52f56a620d48f78d7be94f4f7bcccb522099b224e963f728460f9d31/db_cache_manager-0.1.2.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ayeaye-fossa]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ptyx-mcq]: New version: [27.3.0] Old Version: [27.2.0]
+[2024-04-22 10:14:26] INFO root fetch - processPackages [PyQuantKit]: New version: [0.2.2.post6] Old Version: [0.2.2.post5]
+[2024-04-22 10:14:26] INFO root fetch - processPackages [moodle-sdk]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-22 10:14:26] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/7c/39/23e88d5a9a544cb9a75a9c0b077f73c9c90cb756d8e32766dfffb90f8833/pulumi_azure_native-2.9.1a1696411987.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/22/ad/c488b5a55db9ff37c8a3a7fabf90ceb9cba796e18c02abedb6d90c227be1/modal-0.62.97-py3-none-any.whl
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/7b/73/6d3aed68b5958886607dfd3ccd242d2fd27b39b9a62ee6a70ed228184721/modal_client-0.62.97-py3-none-any.whl
+[2024-04-22 10:14:26] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 27430128>=10485760
+[2024-04-22 10:14:26] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2024-04-22 10:14:26] INFO root fetch - processPackages [mastercard-api-client]: Downloading https://files.pythonhosted.org/packages/35/df/19fef5b72b96a1cc4fb52ebab7271d2b2dc77744a246f06640c778e40fba/mastercard_api_client-2.0.2.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ayeaye-fossa]: Downloading https://files.pythonhosted.org/packages/d8/a1/912b7eb7c2ec90821727eeae723c737b6fccd8c7d43b5b88035f69062531/ayeaye-fossa-0.0.8.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [db-cache-manager]: Downloading https://files.pythonhosted.org/packages/1c/c5/3f75667afa8be5e32f5e859e34cd4472d8371f4cea1fc5d950bfcce7e2ca/db_cache_manager-0.1.3.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [PyQuantKit]: Downloading https://files.pythonhosted.org/packages/c9/1c/3277af6876bb7dc87f2aa38a603dc006fd5f2aef9e2e2e01d2db3071c052/PyQuantKit-0.2.2.post5.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ptyx-mcq]: Downloading https://files.pythonhosted.org/packages/63/66/ae3e2064cabfc64fed52982da046bb8d6ad6221139caca1c6d875a8cc74b/ptyx_mcq-27.2.0.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [moodle-sdk]: Downloading https://files.pythonhosted.org/packages/6c/c9/56657da8bf5fe0cd5beca91255b2c1abdf7c45f12f18142381be58ab2806/moodle-sdk-2.0.8.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/e1/43/8909e36efe8c88188326519159ac1faa149227f01c6a0d968acc30efedde/modal_client-0.62.98-py3-none-any.whl
+[2024-04-22 10:14:26] INFO root fetch - processPackages [db-cache-manager]: executing diffoscope
+[2024-04-22 10:14:26] INFO root fetch - processPackages [db-cache-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db_cache_manager-0.1.2.tar.gz tmp/db_cache_manager-0.1.3.tar.gz --markdown 20240422/d/db-cache-manager/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/b5/38/bb0788928bcf76bff83916023bd1f84d88b1eb03c43f34ae832eff523ed0/modal-0.62.98-py3-none-any.whl
+[2024-04-22 10:14:26] INFO root fetch - processPackages [mastercard-api-client]: Downloading https://files.pythonhosted.org/packages/a9/d5/3d2e2c290aea6745cc698c4ff24c7b488ce9be3438f673514e50772f30c3/mastercard_api_client-2.0.3.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.97-py3-none-any.whl.zip tmp/modal_client-0.62.98-py3-none-any.whl.zip --markdown 20240422/m/modal-client/0.62.97-0.62.98/README.md --exclude *.pyd
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ayeaye-fossa]: Downloading https://files.pythonhosted.org/packages/3f/3a/f0d0d26d68a1d713e3a4fd112bc9c5730bf2ffb87570f006537da13a4e41/ayeaye-fossa-0.0.9.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-22 10:14:26] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.97-py3-none-any.whl.zip tmp/modal-0.62.98-py3-none-any.whl.zip --markdown 20240422/m/modal/0.62.97-0.62.98/README.md --exclude *.pyd
+[2024-04-22 10:14:26] INFO root fetch - processPackages [PyQuantKit]: Downloading https://files.pythonhosted.org/packages/42/35/0ece8b3196118e635428e04c2a752c72ac6f3b20f2bf107331d4d20fb735/PyQuantKit-0.2.2.post6.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [mastercard-api-client]: executing diffoscope
+[2024-04-22 10:14:26] INFO root fetch - processPackages [mastercard-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mastercard_api_client-2.0.2.tar.gz tmp/mastercard_api_client-2.0.3.tar.gz --markdown 20240422/m/mastercard-api-client/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ayeaye-fossa]: executing diffoscope
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ayeaye-fossa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayeaye-fossa-0.0.8.tar.gz tmp/ayeaye-fossa-0.0.9.tar.gz --markdown 20240422/a/ayeaye-fossa/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 10:14:26] INFO root fetch - processPackages [ptyx-mcq]: Downloading https://files.pythonhosted.org/packages/33/26/d478ea4fede4a686d2dbc1b2cbb379d6a66a1cc5b69068a35a7999259556/ptyx_mcq-27.3.0.tar.gz
+[2024-04-22 10:14:26] INFO root fetch - processPackages [PyQuantKit]: executing diffoscope
+[2024-04-22 10:14:26] INFO root fetch - processPackages [PyQuantKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQuantKit-0.2.2.post5.tar.gz tmp/PyQuantKit-0.2.2.post6.tar.gz --markdown 20240422/P/PyQuantKit/0.2.2.post5-0.2.2.post6/README.md --exclude *.pyd
+[2024-04-22 10:14:26] INFO root fetch - processPackages [moodle-sdk]: Downloading https://files.pythonhosted.org/packages/a3/a0/2aa2ba22da531004517f97e558d1c9e0c872fc0335d94955534c25d95746/moodle-sdk-2.0.9.tar.gz
+[2024-04-22 10:14:27] INFO root fetch - processPackages [moodle-sdk]: executing diffoscope
+[2024-04-22 10:14:27] INFO root fetch - processPackages [moodle-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moodle-sdk-2.0.8.tar.gz tmp/moodle-sdk-2.0.9.tar.gz --markdown 20240422/m/moodle-sdk/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-22 10:14:27] INFO root fetch - processPackages [ptyx-mcq]: executing diffoscope
+[2024-04-22 10:14:27] INFO root fetch - processPackages [ptyx-mcq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptyx_mcq-27.2.0.tar.gz tmp/ptyx_mcq-27.3.0.tar.gz --markdown 20240422/p/ptyx-mcq/27.2.0-27.3.0/README.md --exclude *.pyd
+[2024-04-22 10:14:27] INFO root fetch - processPackages [db-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/db_cache_manager-0.1.2.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - processPackages [db-cache-manager]: Remove: archive file [/home/abi/fetcher/tmp/db_cache_manager-0.1.3.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - main [MainThread]: End processing [db-cache-manager]: success
+[2024-04-22 10:14:27] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.97-py3-none-any.whl.zip]
+[2024-04-22 10:14:27] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.98-py3-none-any.whl.zip]
+[2024-04-22 10:14:27] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-22 10:14:27] INFO root fetch - processPackages [mastercard-api-client]: Remove: archive file [/home/abi/fetcher/tmp/mastercard_api_client-2.0.2.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - processPackages [mastercard-api-client]: Remove: archive file [/home/abi/fetcher/tmp/mastercard_api_client-2.0.3.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - main [MainThread]: End processing [mastercard-api-client]: success
+[2024-04-22 10:14:27] INFO root fetch - processPackages [PyQuantKit]: Remove: archive file [/home/abi/fetcher/tmp/PyQuantKit-0.2.2.post5.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - processPackages [PyQuantKit]: Remove: archive file [/home/abi/fetcher/tmp/PyQuantKit-0.2.2.post6.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - main [MainThread]: End processing [PyQuantKit]: success
+[2024-04-22 10:14:27] INFO root fetch - processPackages [ayeaye-fossa]: Remove: archive file [/home/abi/fetcher/tmp/ayeaye-fossa-0.0.8.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - processPackages [ayeaye-fossa]: Remove: archive file [/home/abi/fetcher/tmp/ayeaye-fossa-0.0.9.tar.gz]
+[2024-04-22 10:14:27] INFO root fetch - main [MainThread]: End processing [ayeaye-fossa]: success
+[2024-04-22 10:14:28] INFO root fetch - processPackages [moodle-sdk]: Remove: archive file [/home/abi/fetcher/tmp/moodle-sdk-2.0.8.tar.gz]
+[2024-04-22 10:14:28] INFO root fetch - processPackages [moodle-sdk]: Remove: archive file [/home/abi/fetcher/tmp/moodle-sdk-2.0.9.tar.gz]
+[2024-04-22 10:14:28] INFO root fetch - main [MainThread]: End processing [moodle-sdk]: success
+[2024-04-22 10:14:28] INFO root fetch - processPackages [ptyx-mcq]: Remove: archive file [/home/abi/fetcher/tmp/ptyx_mcq-27.2.0.tar.gz]
+[2024-04-22 10:14:28] INFO root fetch - processPackages [ptyx-mcq]: Remove: archive file [/home/abi/fetcher/tmp/ptyx_mcq-27.3.0.tar.gz]
+[2024-04-22 10:14:28] INFO root fetch - main [MainThread]: End processing [ptyx-mcq]: success
+[2024-04-22 10:14:28] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.97-py3-none-any.whl.zip]
+[2024-04-22 10:14:28] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.98-py3-none-any.whl.zip]
+[2024-04-22 10:14:28] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-22 10:14:28] INFO root fetch - main [MainThread]: Store serial: [22873930]
