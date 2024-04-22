@@ -3605,3 +3605,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 04:49:58] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
 [2024-04-22 04:49:58] INFO root fetch - main [MainThread]: End processing [telectron]: success
 [2024-04-22 04:49:58] INFO root fetch - main [MainThread]: Store serial: [22871409]
+[2024-04-22 04:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871409]
+[2024-04-22 04:52:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 04:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs.fs
+[2024-04-22 04:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gy-erp-sdk-core
+[2024-04-22 04:52:06] INFO root fetch - processPackages [cs.fs]: New version: [20240422] Old Version: [20240412]
+[2024-04-22 04:52:06] INFO root fetch - processPackages [gy-erp-sdk-core]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-22 04:52:07] INFO root fetch - processPackages [gy-erp-sdk-core]: Downloading https://files.pythonhosted.org/packages/d6/a6/968c763e422074cb2eb535a8c170e015973e878c801841e792984b8feade/gy-erp-sdk-core-0.0.3.tar.gz
+[2024-04-22 04:52:07] INFO root fetch - processPackages [cs.fs]: Downloading https://files.pythonhosted.org/packages/ce/30/df0941382bbcfd14ea8b9042b6c4b037c7f8f6195233b13874bc50511419/cs.fs-20240412.tar.gz
+[2024-04-22 04:52:07] INFO root fetch - processPackages [cs.fs]: Downloading https://files.pythonhosted.org/packages/f1/31/ac4ac4d2e63fb11dfa5836e062ec60e30350d1d9af056a1a430259e4d8bf/cs.fs-20240422.tar.gz
+[2024-04-22 04:52:07] INFO root fetch - processPackages [gy-erp-sdk-core]: Downloading https://files.pythonhosted.org/packages/f7/74/6a95c2d25d2965cb34d2bff262c510973fc1da0f5690edc1f399cc027336/gy-erp-sdk-core-0.0.4.tar.gz
+[2024-04-22 04:52:07] INFO root fetch - processPackages [cs.fs]: executing diffoscope
+[2024-04-22 04:52:07] INFO root fetch - processPackages [cs.fs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.fs-20240412.tar.gz tmp/cs.fs-20240422.tar.gz --markdown 20240422/c/cs.fs/20240412-20240422/README.md --exclude *.pyd
+[2024-04-22 04:52:07] INFO root fetch - processPackages [gy-erp-sdk-core]: executing diffoscope
+[2024-04-22 04:52:07] INFO root fetch - processPackages [gy-erp-sdk-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gy-erp-sdk-core-0.0.3.tar.gz tmp/gy-erp-sdk-core-0.0.4.tar.gz --markdown 20240422/g/gy-erp-sdk-core/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-22 04:52:08] INFO root fetch - processPackages [gy-erp-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/gy-erp-sdk-core-0.0.3.tar.gz]
+[2024-04-22 04:52:08] INFO root fetch - processPackages [gy-erp-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/gy-erp-sdk-core-0.0.4.tar.gz]
+[2024-04-22 04:52:08] INFO root fetch - main [MainThread]: End processing [gy-erp-sdk-core]: success
+[2024-04-22 04:52:08] INFO root fetch - processPackages [cs.fs]: Remove: archive file [/home/abi/fetcher/tmp/cs.fs-20240412.tar.gz]
+[2024-04-22 04:52:08] INFO root fetch - processPackages [cs.fs]: Remove: archive file [/home/abi/fetcher/tmp/cs.fs-20240422.tar.gz]
+[2024-04-22 04:52:08] INFO root fetch - main [MainThread]: End processing [cs.fs]: success
+[2024-04-22 04:52:08] INFO root fetch - main [MainThread]: Store serial: [22871424]
