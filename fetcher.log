@@ -8783,3 +8783,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:21:02] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-22 10:21:02] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-22 10:21:02] INFO root fetch - main [MainThread]: Store serial: [22873992]
+[2024-04-22 10:23:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873992]
+[2024-04-22 10:23:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 10:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: noaaco2
+[2024-04-22 10:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solver-multiRPC
+[2024-04-22 10:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ethyca-fides
+[2024-04-22 10:23:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: capellambse
+[2024-04-22 10:23:11] INFO root fetch - processPackages [solver-multiRPC]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-22 10:23:11] INFO root fetch - processPackages [ethyca-fides]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-04-22 10:23:12] INFO root fetch - processPackages [solver-multiRPC]: Downloading https://files.pythonhosted.org/packages/50/83/23a73d3143d2bc3fa45695decc638d626c36b27f9bf597789a3ac807462a/solver-multiRPC-2.0.0.tar.gz
+[2024-04-22 10:23:12] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a5/ce/6ad04dd381854d1db26960c5cc1e174a086becd7eea9daa2b89a8dde7a70/ethyca-fides-2.9.1.tar.gz
+[2024-04-22 10:23:12] INFO root fetch - processPackages [noaaco2]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-22 10:23:12] INFO root fetch - processPackages [capellambse]: New version: [0.5.9.dev5] Old Version: [0.5.9]
+[2024-04-22 10:23:12] INFO root fetch - processPackages [solver-multiRPC]: Downloading https://files.pythonhosted.org/packages/cc/8b/374f3e2a4ecaa3cedc4ded88c2aa96d79af0faa693d262e24f1d54e4b49b/solver-multiRPC-2.0.1.tar.gz
+[2024-04-22 10:23:12] INFO root fetch - processPackages [noaaco2]: Downloading https://files.pythonhosted.org/packages/5d/a2/919977e7466ce4383dc383a16bfc8f625fd788cd4477c0b5fd7f07c741a2/noaaco2-0.0.3.tar.gz
+[2024-04-22 10:23:12] INFO root fetch - processPackages [solver-multiRPC]: executing diffoscope
+[2024-04-22 10:23:12] INFO root fetch - processPackages [solver-multiRPC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solver-multiRPC-2.0.0.tar.gz tmp/solver-multiRPC-2.0.1.tar.gz --markdown 20240422/s/solver-multiRPC/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-04-22 10:23:12] INFO root fetch - processPackages [capellambse]: Downloading https://files.pythonhosted.org/packages/0a/bb/e7974d92c6a3d93dbf30730a6d9302f37f52093b4985246d97e22939147d/capellambse-0.5.9.tar.gz
+[2024-04-22 10:23:12] INFO root fetch - processPackages [ethyca-fides]: Downloading https://files.pythonhosted.org/packages/a3/0c/e979f7bc3c1a405c539d4df6c4c75896975e70d6b87777b8378ea071da2c/ethyca-fides-2.9.2.tar.gz
+[2024-04-22 10:23:12] INFO root fetch - processPackages [noaaco2]: Downloading https://files.pythonhosted.org/packages/9f/f1/3cc8fcb6680c70d6d4dfe18223e023ff4dae4ff408dbf5d5f411fc5b41f8/noaaco2-0.0.4.tar.gz
+[2024-04-22 10:23:12] INFO root fetch - processPackages [noaaco2]: executing diffoscope
+[2024-04-22 10:23:12] INFO root fetch - processPackages [noaaco2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noaaco2-0.0.3.tar.gz tmp/noaaco2-0.0.4.tar.gz --markdown 20240422/n/noaaco2/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-22 10:23:12] INFO root fetch - processPackages [ethyca-fides]: executing diffoscope
+[2024-04-22 10:23:12] INFO root fetch - processPackages [ethyca-fides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ethyca-fides-2.9.1.tar.gz tmp/ethyca-fides-2.9.2.tar.gz --markdown 20240422/e/ethyca-fides/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-04-22 10:23:12] INFO root fetch - processPackages [solver-multiRPC]: Remove: archive file [/home/abi/fetcher/tmp/solver-multiRPC-2.0.0.tar.gz]
+[2024-04-22 10:23:12] INFO root fetch - processPackages [solver-multiRPC]: Remove: archive file [/home/abi/fetcher/tmp/solver-multiRPC-2.0.1.tar.gz]
+[2024-04-22 10:23:12] INFO root fetch - main [MainThread]: End processing [solver-multiRPC]: success
+[2024-04-22 10:23:13] INFO root fetch - processPackages [noaaco2]: Remove: archive file [/home/abi/fetcher/tmp/noaaco2-0.0.3.tar.gz]
+[2024-04-22 10:23:13] INFO root fetch - processPackages [noaaco2]: Remove: archive file [/home/abi/fetcher/tmp/noaaco2-0.0.4.tar.gz]
+[2024-04-22 10:23:13] INFO root fetch - main [MainThread]: End processing [noaaco2]: success
+[2024-04-22 10:23:13] INFO root fetch - processPackages [capellambse]: Downloading https://files.pythonhosted.org/packages/31/3c/3a68e2e4cc3165b37471f5302bc500647962d3db54edea8081d0ced76387/capellambse-0.5.9.dev5.tar.gz
+[2024-04-22 10:23:14] INFO root fetch - processPackages [capellambse]: executing diffoscope
+[2024-04-22 10:23:14] INFO root fetch - processPackages [capellambse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/capellambse-0.5.9.tar.gz tmp/capellambse-0.5.9.dev5.tar.gz --markdown 20240422/c/capellambse/0.5.9-0.5.9.dev5/README.md --exclude *.pyd
+[2024-04-22 10:23:15] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.1.tar.gz]
+[2024-04-22 10:23:15] INFO root fetch - processPackages [ethyca-fides]: Remove: archive file [/home/abi/fetcher/tmp/ethyca-fides-2.9.2.tar.gz]
+[2024-04-22 10:23:15] INFO root fetch - main [MainThread]: End processing [ethyca-fides]: success
+[2024-04-22 10:23:19] INFO root fetch - processPackages [capellambse]: Remove: archive file [/home/abi/fetcher/tmp/capellambse-0.5.9.tar.gz]
+[2024-04-22 10:23:19] INFO root fetch - processPackages [capellambse]: Remove: archive file [/home/abi/fetcher/tmp/capellambse-0.5.9.dev5.tar.gz]
+[2024-04-22 10:23:19] INFO root fetch - main [MainThread]: End processing [capellambse]: success
+[2024-04-22 10:23:19] INFO root fetch - main [MainThread]: Store serial: [22874009]
