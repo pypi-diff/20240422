@@ -5463,3 +5463,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:18:19] INFO root fetch - main [MainThread]: End processing [mydev]: success
 [2024-04-22 07:18:19] INFO root fetch - main [MainThread]: End processing [mydev]: success
 [2024-04-22 07:18:19] INFO root fetch - main [MainThread]: Store serial: [22872215]
+[2024-04-22 07:20:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872215]
+[2024-04-22 07:20:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 07:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ts3l
+[2024-04-22 07:20:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: VizAble
+[2024-04-22 07:20:28] INFO root fetch - processPackages [ts3l]: New version: [0.30] Old Version: [0.21]
+[2024-04-22 07:20:28] INFO root fetch - processPackages [VizAble]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-22 07:20:28] INFO root fetch - processPackages [VizAble]: Downloading https://files.pythonhosted.org/packages/18/8d/d2ba6b0ca25a73926dd99be55778e8cb683131ad342a25f56f6c92849f18/vizable-0.8.0.tar.gz
+[2024-04-22 07:20:28] INFO root fetch - processPackages [ts3l]: Downloading https://files.pythonhosted.org/packages/e7/45/3d00a1d1d958f042e67453e4d74f6f996a180f74cac9cba09b70720d9940/ts3l-0.21.tar.gz
+[2024-04-22 07:20:28] INFO root fetch - processPackages [VizAble]: Downloading https://files.pythonhosted.org/packages/23/d4/f19d13b2598cf35c961841cb981abb85c9f8cfc95fe4ba56c8feeadf30e3/vizable-0.9.0.tar.gz
+[2024-04-22 07:20:29] INFO root fetch - processPackages [ts3l]: Downloading https://files.pythonhosted.org/packages/fb/e5/424adae1e53afb61e6431157728678650c4a20ef7e0fa0bcfda48424ac79/ts3l-0.30.tar.gz
+[2024-04-22 07:20:29] INFO root fetch - processPackages [VizAble]: executing diffoscope
+[2024-04-22 07:20:29] INFO root fetch - processPackages [VizAble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vizable-0.8.0.tar.gz tmp/vizable-0.9.0.tar.gz --markdown 20240422/V/VizAble/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-22 07:20:29] INFO root fetch - processPackages [ts3l]: executing diffoscope
+[2024-04-22 07:20:29] INFO root fetch - processPackages [ts3l]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts3l-0.21.tar.gz tmp/ts3l-0.30.tar.gz --markdown 20240422/t/ts3l/0.21-0.30/README.md --exclude *.pyd
+[2024-04-22 07:20:29] INFO root fetch - processPackages [VizAble]: Remove: archive file [/home/abi/fetcher/tmp/vizable-0.8.0.tar.gz]
+[2024-04-22 07:20:29] INFO root fetch - processPackages [VizAble]: Remove: archive file [/home/abi/fetcher/tmp/vizable-0.9.0.tar.gz]
+[2024-04-22 07:20:29] INFO root fetch - main [MainThread]: End processing [VizAble]: success
+[2024-04-22 07:20:29] INFO root fetch - processPackages [ts3l]: Remove: archive file [/home/abi/fetcher/tmp/ts3l-0.21.tar.gz]
+[2024-04-22 07:20:29] INFO root fetch - processPackages [ts3l]: Remove: archive file [/home/abi/fetcher/tmp/ts3l-0.30.tar.gz]
+[2024-04-22 07:20:29] INFO root fetch - main [MainThread]: End processing [ts3l]: success
+[2024-04-22 07:20:29] INFO root fetch - main [MainThread]: Store serial: [22872223]
