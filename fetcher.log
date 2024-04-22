@@ -4537,3 +4537,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:12:52] INFO root fetch - processPackages [spectrum-image]: Remove: archive file [/home/abi/fetcher/tmp/spectrum_image-0.3.tar.gz]
 [2024-04-22 06:12:52] INFO root fetch - main [MainThread]: End processing [spectrum-image]: success
 [2024-04-22 06:12:52] INFO root fetch - main [MainThread]: Store serial: [22871875]
+[2024-04-22 06:14:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871875]
+[2024-04-22 06:15:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 06:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msg2po
+[2024-04-22 06:15:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bedrock-bot
+[2024-04-22 06:15:00] INFO root fetch - processPackages [bedrock-bot]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-22 06:15:00] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/49/ee/1a13a985737fbde80f301ffefbea8391a27db1b10af0b41f01a8d65bd760/bedrock_bot-1.0.1.tar.gz
+[2024-04-22 06:15:00] INFO root fetch - processPackages [msg2po]: New version: [1.2.0] Old Version: [1.1.9]
+[2024-04-22 06:15:01] INFO root fetch - processPackages [msg2po]: Downloading https://files.pythonhosted.org/packages/ac/dc/1621b60d428bc024b8023645256b16777b5ae46f5100444ee5b7bff99854/msg2po-1.1.9.tar.gz
+[2024-04-22 06:15:01] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/2a/25/3b9ba92959fe338ade14751756e11f0adfacca104d2b80d8baf72922cf69/bedrock_bot-1.0.2.tar.gz
+[2024-04-22 06:15:01] INFO root fetch - processPackages [bedrock-bot]: executing diffoscope
+[2024-04-22 06:15:01] INFO root fetch - processPackages [bedrock-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bedrock_bot-1.0.1.tar.gz tmp/bedrock_bot-1.0.2.tar.gz --markdown 20240422/b/bedrock-bot/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-22 06:15:01] INFO root fetch - processPackages [msg2po]: Downloading https://files.pythonhosted.org/packages/18/67/0e7813c4f9eeb5086bebbba472f055995598e30f999cc84f7437c91f4756/msg2po-1.2.0.tar.gz
+[2024-04-22 06:15:01] INFO root fetch - processPackages [msg2po]: executing diffoscope
+[2024-04-22 06:15:01] INFO root fetch - processPackages [msg2po]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msg2po-1.1.9.tar.gz tmp/msg2po-1.2.0.tar.gz --markdown 20240422/m/msg2po/1.1.9-1.2.0/README.md --exclude *.pyd
+[2024-04-22 06:15:01] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.1.tar.gz]
+[2024-04-22 06:15:01] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.2.tar.gz]
+[2024-04-22 06:15:01] INFO root fetch - main [MainThread]: End processing [bedrock-bot]: success
+[2024-04-22 06:15:02] INFO root fetch - processPackages [msg2po]: Remove: archive file [/home/abi/fetcher/tmp/msg2po-1.1.9.tar.gz]
+[2024-04-22 06:15:02] INFO root fetch - processPackages [msg2po]: Remove: archive file [/home/abi/fetcher/tmp/msg2po-1.2.0.tar.gz]
+[2024-04-22 06:15:02] INFO root fetch - main [MainThread]: End processing [msg2po]: success
+[2024-04-22 06:15:02] INFO root fetch - main [MainThread]: Store serial: [22871881]
