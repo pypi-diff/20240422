@@ -9237,3 +9237,93 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:38:48] INFO root fetch - processPackages [pycatia]: Remove: archive file [/home/abi/fetcher/tmp/pycatia-0.6.8.tar.gz]
 [2024-04-22 10:38:48] INFO root fetch - main [MainThread]: End processing [pycatia]: success
 [2024-04-22 10:38:48] INFO root fetch - main [MainThread]: Store serial: [22874188]
+[2024-04-22 10:40:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874188]
+[2024-04-22 10:40:57] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tagpack-tool
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: te2rules
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-helpwithpic
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: viashpy
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: desktop-env
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: memium
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qcrepocleaner
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mpyl
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: my-avam-example
+[2024-04-22 10:40:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mbtiles-util
+[2024-04-22 10:40:58] INFO root fetch - processPackages [te2rules]: New version: [1.0.0] Old Version: [0.8.1]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [desktop-env]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-22 10:40:58] ERROR root fetch - processPackages [mbtiles-util]: Unable to get metadata: No such project 'mbtiles-util'
+[2024-04-22 10:40:58] INFO root fetch - processPackages [mbtiles-util]: Start processing: server-templates
+[2024-04-22 10:40:58] INFO root fetch - main [MainThread]: End processing [mbtiles-util] error
+[2024-04-22 10:40:58] WARNING root fetch - processPackages [my-avam-example]: Skipping, unable to determine old version
+[2024-04-22 10:40:58] INFO root fetch - main [MainThread]: End processing [my-avam-example] error
+[2024-04-22 10:40:58] INFO root fetch - processPackages [mpyl]: New version: [1.6.5] Old Version: [1.6.4]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [viashpy]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [memium]: New version: [0.7.0] Old Version: [0.19.1]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [qcrepocleaner]: New version: [1.7] Old Version: [1.6]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [tagpack-tool]: New version: [24.1.2] Old Version: [24.1.1]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: New version: [1.3.1] Old Version: [1.2.1]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [server-templates]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-22 10:40:58] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/d6/ea/ad2d7d140073843527920221dccfd7572887822dcb303ee0510f51bf16f6/desktop_env-0.1.5.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [te2rules]: Downloading https://files.pythonhosted.org/packages/f2/69/88675c01158da4cdf1dd8971c71cdbfdeaf247cb4d7d67d9e28ac4fbad45/te2rules-0.8.1.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [viashpy]: Downloading https://files.pythonhosted.org/packages/9e/e1/680e3adb641ff4f50736c43b2877af618a571a54a523c17002ac088bc0fd/viashpy-0.6.0.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/c2/a1/5143f394ab9a718d7dbbecf71011a75973c57b9215bf2110c864e75da4af/memium-0.19.1.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [tagpack-tool]: Downloading https://files.pythonhosted.org/packages/ad/6f/3ba84e0a94b3c85f4a27775f8e10c49460594a2a58d68cef8dea15fe4885/tagpack-tool-24.1.1.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Downloading https://files.pythonhosted.org/packages/3f/22/934d289ad350a8a6ce13dbaad3ca7f6e497e6dce473f4da13a11c8f5a001/nonebot-plugin-HelpWithPic-1.2.1.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [mpyl]: Downloading https://files.pythonhosted.org/packages/33/a2/0c511cddd5d592489e93a4f47eb1f62fa0b90578d11d2f24cc2c417ce349/mpyl-1.6.4-py3-none-any.whl
+[2024-04-22 10:40:58] INFO root fetch - processPackages [qcrepocleaner]: Downloading https://files.pythonhosted.org/packages/d9/67/839170777014c901f168640d23ffc030c65aad4ea144d05a13a1efd26bd2/qcrepocleaner-1.6.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [server-templates]: Downloading https://files.pythonhosted.org/packages/59/69/5c62163e96eea71c6fa6b81fb2ecdbcbae68ea823343f8acccf62b10436d/server_templates-0.2.6.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [desktop-env]: Downloading https://files.pythonhosted.org/packages/94/4b/e0e7b6931eac348f3a54a1d0df09c8243bd793a074559718592a999b2c23/desktop_env-0.1.6.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [te2rules]: Downloading https://files.pythonhosted.org/packages/05/e2/617f550a548524aaf94fe997fc241a6a0200c22a3d90674ecf85192056e6/te2rules-1.0.0.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [viashpy]: Downloading https://files.pythonhosted.org/packages/89/e7/82e1dedd02598decdd86f5ce7a4546adc0fe2af170d574a1279d5a7cb603/viashpy-0.7.0.tar.gz
+[2024-04-22 10:40:58] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/8a/a3/a3f5e0b58a853724e800a65c85c0df00b7d5138ea7cbb3db40d329c5f3d3/memium-0.7.0.tar.gz
+[2024-04-22 10:40:59] INFO root fetch - processPackages [tagpack-tool]: Downloading https://files.pythonhosted.org/packages/9b/a8/4df8d879d6e20cd62922284d2643ca8c278d3a4f17a8596f931cbf477c8d/tagpack_tool-24.1.2.tar.gz
+[2024-04-22 10:40:59] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Downloading https://files.pythonhosted.org/packages/91/44/e0dd6d610f3d6f6c2503da1049dbf206107a15583008b891281129186407/nonebot_plugin_helpwithpic-1.3.1.tar.gz
+[2024-04-22 10:40:59] INFO root fetch - processPackages [mpyl]: Downloading https://files.pythonhosted.org/packages/33/27/24fce492fa614ec6ffc36d985e246627b6969604ae5bd5138f770f69d1cf/mpyl-1.6.5-py3-none-any.whl
+[2024-04-22 10:40:59] INFO root fetch - processPackages [server-templates]: Downloading https://files.pythonhosted.org/packages/ab/3d/200f7a3803660af4124b1a69fa4a03c59d77404b4e749c1ce4cd6ab7ad0a/server_templates-0.2.7.tar.gz
+[2024-04-22 10:40:59] INFO root fetch - processPackages [qcrepocleaner]: Downloading https://files.pythonhosted.org/packages/16/3c/45f9fda4a9be9ff77a488d78cc97839bc4265a62e155df6b081916dd9261/qcrepocleaner-1.7.tar.gz
+[2024-04-22 10:40:59] INFO root fetch - processPackages [te2rules]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [te2rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/te2rules-0.8.1.tar.gz tmp/te2rules-1.0.0.tar.gz --markdown 20240422/t/te2rules/0.8.1-1.0.0/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [desktop-env]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [desktop-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/desktop_env-0.1.5.tar.gz tmp/desktop_env-0.1.6.tar.gz --markdown 20240422/d/desktop-env/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [memium]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [memium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memium-0.19.1.tar.gz tmp/memium-0.7.0.tar.gz --markdown 20240422/m/memium/0.19.1-0.7.0/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [viashpy]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [viashpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viashpy-0.6.0.tar.gz tmp/viashpy-0.7.0.tar.gz --markdown 20240422/v/viashpy/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [tagpack-tool]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [tagpack-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tagpack-tool-24.1.1.tar.gz tmp/tagpack_tool-24.1.2.tar.gz --markdown 20240422/t/tagpack-tool/24.1.1-24.1.2/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-HelpWithPic-1.2.1.tar.gz tmp/nonebot_plugin_helpwithpic-1.3.1.tar.gz --markdown 20240422/n/nonebot-plugin-helpwithpic/1.2.1-1.3.1/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [mpyl]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [mpyl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpyl-1.6.4-py3-none-any.whl.zip tmp/mpyl-1.6.5-py3-none-any.whl.zip --markdown 20240422/m/mpyl/1.6.4-1.6.5/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [server-templates]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [server-templates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/server_templates-0.2.6.tar.gz tmp/server_templates-0.2.7.tar.gz --markdown 20240422/s/server-templates/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-22 10:40:59] INFO root fetch - processPackages [qcrepocleaner]: executing diffoscope
+[2024-04-22 10:40:59] INFO root fetch - processPackages [qcrepocleaner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcrepocleaner-1.6.tar.gz tmp/qcrepocleaner-1.7.tar.gz --markdown 20240422/q/qcrepocleaner/1.6-1.7/README.md --exclude *.pyd
+[2024-04-22 10:41:00] INFO root fetch - processPackages [te2rules]: Remove: archive file [/home/abi/fetcher/tmp/te2rules-0.8.1.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [te2rules]: Remove: archive file [/home/abi/fetcher/tmp/te2rules-1.0.0.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [te2rules]: success
+[2024-04-22 10:41:00] INFO root fetch - processPackages [server-templates]: Remove: archive file [/home/abi/fetcher/tmp/server_templates-0.2.6.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [server-templates]: Remove: archive file [/home/abi/fetcher/tmp/server_templates-0.2.7.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [server-templates]: success
+[2024-04-22 10:41:00] INFO root fetch - processPackages [viashpy]: Remove: archive file [/home/abi/fetcher/tmp/viashpy-0.6.0.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [viashpy]: Remove: archive file [/home/abi/fetcher/tmp/viashpy-0.7.0.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [viashpy]: success
+[2024-04-22 10:41:00] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.5.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [desktop-env]: Remove: archive file [/home/abi/fetcher/tmp/desktop_env-0.1.6.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [qcrepocleaner]: Remove: archive file [/home/abi/fetcher/tmp/qcrepocleaner-1.6.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [qcrepocleaner]: Remove: archive file [/home/abi/fetcher/tmp/qcrepocleaner-1.7.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [desktop-env]: success
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [qcrepocleaner]: success
+[2024-04-22 10:41:00] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-HelpWithPic-1.2.1.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_helpwithpic-1.3.1.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-helpwithpic]: success
+[2024-04-22 10:41:00] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.19.1.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.7.0.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [memium]: success
+[2024-04-22 10:41:00] INFO root fetch - processPackages [tagpack-tool]: Remove: archive file [/home/abi/fetcher/tmp/tagpack-tool-24.1.1.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [tagpack-tool]: Remove: archive file [/home/abi/fetcher/tmp/tagpack_tool-24.1.2.tar.gz]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [tagpack-tool]: success
+[2024-04-22 10:41:00] INFO root fetch - processPackages [mpyl]: Remove: archive file [/home/abi/fetcher/tmp/mpyl-1.6.4-py3-none-any.whl.zip]
+[2024-04-22 10:41:00] INFO root fetch - processPackages [mpyl]: Remove: archive file [/home/abi/fetcher/tmp/mpyl-1.6.5-py3-none-any.whl.zip]
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: End processing [mpyl]: success
+[2024-04-22 10:41:00] INFO root fetch - main [MainThread]: Store serial: [22874225]
