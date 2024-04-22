@@ -5567,3 +5567,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:29:08] INFO root fetch - processPackages [zig-bin]: Remove: archive file [/home/abi/fetcher/tmp/zig_bin-0.12.0.tar.gz]
 [2024-04-22 07:29:08] INFO root fetch - main [MainThread]: End processing [zig-bin]: success
 [2024-04-22 07:29:08] INFO root fetch - main [MainThread]: Store serial: [22872276]
+[2024-04-22 07:31:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872276]
+[2024-04-22 07:31:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 07:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aistudio-cognition
+[2024-04-22 07:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: math-ops-plswork
+[2024-04-22 07:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nyckel
+[2024-04-22 07:31:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cs.cache
+[2024-04-22 07:31:16] INFO root fetch - processPackages [cs.cache]: New version: [20240422] Old Version: [20240412]
+[2024-04-22 07:31:16] WARNING root fetch - processPackages [math-ops-plswork]: Skipping, unable to determine old version
+[2024-04-22 07:31:16] INFO root fetch - main [MainThread]: End processing [math-ops-plswork] error
+[2024-04-22 07:31:16] INFO root fetch - processPackages [nyckel]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-04-22 07:31:16] INFO root fetch - processPackages [aistudio-cognition]: New version: [3.5.0] Old Version: [3.4.1.3a0]
+[2024-04-22 07:31:16] INFO root fetch - processPackages [aistudio-cognition]: Downloading https://files.pythonhosted.org/packages/47/35/bc27f076a50bd881ebd86b7cae1f1ddc6e48acab24af98e5ddc6ba910361/aistudio_cognition-3.4.1.3a0.tar.gz
+[2024-04-22 07:31:16] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/63/31/c04eefd7a63ea5f7c895c5b83f92f6b2b7180e1c36127398a620deadb361/nyckel-0.4.3.tar.gz
+[2024-04-22 07:31:16] INFO root fetch - processPackages [cs.cache]: Downloading https://files.pythonhosted.org/packages/41/46/62e6f66ac93cff2608a2e9c4f121e0a92f7e8463088f25aa37d030c64fa3/cs.cache-20240412.tar.gz
+[2024-04-22 07:31:16] INFO root fetch - processPackages [cs.cache]: Downloading https://files.pythonhosted.org/packages/b7/ee/1a78cb14fa0afec2a762acc4ae41a24b21f343f6fdf0452b4f10590e14e3/cs.cache-20240422.tar.gz
+[2024-04-22 07:31:16] INFO root fetch - processPackages [aistudio-cognition]: Downloading https://files.pythonhosted.org/packages/70/b9/0b85f9a0f987963065f8016faefa066fca3840e4a1fa9f546442c1abfd0c/aistudio_cognition-3.5.0.tar.gz
+[2024-04-22 07:31:16] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/2e/8b/c64df2784470bc6e03d4a8c8b985a8874ab18a0fec1dd128cbab48ebb509/nyckel-0.4.4.tar.gz
+[2024-04-22 07:31:17] INFO root fetch - processPackages [cs.cache]: executing diffoscope
+[2024-04-22 07:31:17] INFO root fetch - processPackages [cs.cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.cache-20240412.tar.gz tmp/cs.cache-20240422.tar.gz --markdown 20240422/c/cs.cache/20240412-20240422/README.md --exclude *.pyd
+[2024-04-22 07:31:17] INFO root fetch - processPackages [aistudio-cognition]: executing diffoscope
+[2024-04-22 07:31:17] INFO root fetch - processPackages [aistudio-cognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aistudio_cognition-3.4.1.3a0.tar.gz tmp/aistudio_cognition-3.5.0.tar.gz --markdown 20240422/a/aistudio-cognition/3.4.1.3a0-3.5.0/README.md --exclude *.pyd
+[2024-04-22 07:31:17] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2024-04-22 07:31:17] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.4.3.tar.gz tmp/nyckel-0.4.4.tar.gz --markdown 20240422/n/nyckel/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-04-22 07:31:17] INFO root fetch - processPackages [cs.cache]: Remove: archive file [/home/abi/fetcher/tmp/cs.cache-20240412.tar.gz]
+[2024-04-22 07:31:17] INFO root fetch - processPackages [cs.cache]: Remove: archive file [/home/abi/fetcher/tmp/cs.cache-20240422.tar.gz]
+[2024-04-22 07:31:17] INFO root fetch - main [MainThread]: End processing [cs.cache]: success
+[2024-04-22 07:31:17] INFO root fetch - processPackages [aistudio-cognition]: Remove: archive file [/home/abi/fetcher/tmp/aistudio_cognition-3.4.1.3a0.tar.gz]
+[2024-04-22 07:31:17] INFO root fetch - processPackages [aistudio-cognition]: Remove: archive file [/home/abi/fetcher/tmp/aistudio_cognition-3.5.0.tar.gz]
+[2024-04-22 07:31:17] INFO root fetch - main [MainThread]: End processing [aistudio-cognition]: success
+[2024-04-22 07:31:17] INFO root fetch - processPackages [nyckel]: Remove: archive file [/home/abi/fetcher/tmp/nyckel-0.4.3.tar.gz]
+[2024-04-22 07:31:17] INFO root fetch - processPackages [nyckel]: Remove: archive file [/home/abi/fetcher/tmp/nyckel-0.4.4.tar.gz]
+[2024-04-22 07:31:17] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2024-04-22 07:31:17] INFO root fetch - main [MainThread]: Store serial: [22872290]
