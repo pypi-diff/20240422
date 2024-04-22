@@ -6211,3 +6211,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:08:30] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.3.1.dev20240422060727.tar.gz]
 [2024-04-22 08:08:30] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
 [2024-04-22 08:08:30] INFO root fetch - main [MainThread]: Store serial: [22872492]
+[2024-04-22 08:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872492]
+[2024-04-22 08:10:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyg-nightly
+[2024-04-22 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: invoicing-excelPDF-2024
+[2024-04-22 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfduck-bsd
+[2024-04-22 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gridengine-framework
+[2024-04-22 08:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tmdbapis
+[2024-04-22 08:10:39] INFO root fetch - processPackages [tmdbapis]: New version: [1.2.9] Old Version: [1.2.7]
+[2024-04-22 08:10:39] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240421] Old Version: [2.6.0.dev20240420]
+[2024-04-22 08:10:39] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-22 08:10:39] INFO root fetch - processPackages [tfduck-bsd]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-04-22 08:10:39] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/cb/b1/9ef1c2ae10e178aaaca57e943572bec7770a8e9935279738498792c6a7a0/tmdbapis-1.2.7.tar.gz
+[2024-04-22 08:10:39] WARNING root fetch - processPackages [invoicing-excelPDF-2024]: Skipping, unable to determine old version
+[2024-04-22 08:10:39] INFO root fetch - main [MainThread]: End processing [invoicing-excelPDF-2024] error
+[2024-04-22 08:10:39] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/9f/23/f8d5eb1ecfc49ca0dcad0fd19cf51de66b380829fff79e733a746f364b22/pyg_nightly-2.6.0.dev20240420.tar.gz
+[2024-04-22 08:10:39] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/4b/33/138660227916f1e088798f39566205c7314cff0e5faed320181d3d3e5f1d/gridengine_framework-0.7.8.tar.gz
+[2024-04-22 08:10:39] INFO root fetch - processPackages [tfduck-bsd]: Downloading https://files.pythonhosted.org/packages/92/b6/43fd2783b6cf9b6b9e12be9f0ca8f862fd5385566435bb80afaf84497a37/tfduck-bsd-0.8.5.tar.gz
+[2024-04-22 08:10:39] INFO root fetch - processPackages [tmdbapis]: Downloading https://files.pythonhosted.org/packages/6a/27/50e4953ce5ea5bed911f6b876bc462e17de9fc3cc3a5f44e903cc4e88176/tmdbapis-1.2.9.tar.gz
+[2024-04-22 08:10:39] INFO root fetch - processPackages [tmdbapis]: executing diffoscope
+[2024-04-22 08:10:39] INFO root fetch - processPackages [tmdbapis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmdbapis-1.2.7.tar.gz tmp/tmdbapis-1.2.9.tar.gz --markdown 20240422/t/tmdbapis/1.2.7-1.2.9/README.md --exclude *.pyd
+[2024-04-22 08:10:39] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/f4/7e/cd9649bdfccc0c116653629f10cd38dd9182ecd6aa7d4149950ea5671ade/gridengine_framework-0.7.9.tar.gz
+[2024-04-22 08:10:39] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/bd/55/49264dc5db88ed22b382098fc309dbdd8c6ab30a3b0ed86c0a2fd3365478/pyg_nightly-2.6.0.dev20240421.tar.gz
+[2024-04-22 08:10:40] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 08:10:40] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.8.tar.gz tmp/gridengine_framework-0.7.9.tar.gz --markdown 20240422/g/gridengine-framework/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-22 08:10:40] INFO root fetch - processPackages [tfduck-bsd]: Downloading https://files.pythonhosted.org/packages/50/36/3334feb3f281c67dd42ca79188d66d0cb4fa71dac481ceff207d3c61fa11/tfduck-bsd-0.8.6.tar.gz
+[2024-04-22 08:10:40] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-04-22 08:10:40] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240420.tar.gz tmp/pyg_nightly-2.6.0.dev20240421.tar.gz --markdown 20240422/p/pyg-nightly/2.6.0.dev20240420-2.6.0.dev20240421/README.md --exclude *.pyd
+[2024-04-22 08:10:40] INFO root fetch - processPackages [tfduck-bsd]: executing diffoscope
+[2024-04-22 08:10:40] INFO root fetch - processPackages [tfduck-bsd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfduck-bsd-0.8.5.tar.gz tmp/tfduck-bsd-0.8.6.tar.gz --markdown 20240422/t/tfduck-bsd/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-04-22 08:10:40] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.7.tar.gz]
+[2024-04-22 08:10:40] INFO root fetch - processPackages [tmdbapis]: Remove: archive file [/home/abi/fetcher/tmp/tmdbapis-1.2.9.tar.gz]
+[2024-04-22 08:10:40] INFO root fetch - main [MainThread]: End processing [tmdbapis]: success
+[2024-04-22 08:10:40] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.8.tar.gz]
+[2024-04-22 08:10:40] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.9.tar.gz]
+[2024-04-22 08:10:40] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 08:10:40] INFO root fetch - processPackages [tfduck-bsd]: Remove: archive file [/home/abi/fetcher/tmp/tfduck-bsd-0.8.5.tar.gz]
+[2024-04-22 08:10:40] INFO root fetch - processPackages [tfduck-bsd]: Remove: archive file [/home/abi/fetcher/tmp/tfduck-bsd-0.8.6.tar.gz]
+[2024-04-22 08:10:40] INFO root fetch - main [MainThread]: End processing [tfduck-bsd]: success
+[2024-04-22 08:10:42] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240420.tar.gz]
+[2024-04-22 08:10:42] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240421.tar.gz]
+[2024-04-22 08:10:42] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-04-22 08:10:42] INFO root fetch - main [MainThread]: Store serial: [22872504]
