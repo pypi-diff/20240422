@@ -2395,3 +2395,51 @@
 [2024-04-22 03:18:59] INFO root fetch - processPackages [practical-astronomy]: Remove: archive file [/home/abi/fetcher/tmp/practical_astronomy-1.0.0.tar.gz]
 [2024-04-22 03:18:59] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
 [2024-04-22 03:18:59] INFO root fetch - main [MainThread]: Store serial: [22870895]
+[2024-04-22 03:21:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870895]
+[2024-04-22 03:21:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 03:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-wordpress
+[2024-04-22 03:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blastpipe
+[2024-04-22 03:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biotech
+[2024-04-22 03:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telectron
+[2024-04-22 03:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: g4f
+[2024-04-22 03:21:08] INFO root fetch - processPackages [blastpipe]: New version: [2024.0.5] Old Version: [2024.0.4]
+[2024-04-22 03:21:08] INFO root fetch - processPackages [g4f]: New version: [0.3.0.3] Old Version: [0.3.0.2]
+[2024-04-22 03:21:08] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-22 03:21:08] INFO root fetch - processPackages [telectron]: New version: [2.0.70.1] Old Version: [2.0.61.1]
+[2024-04-22 03:21:08] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/fd/00/f0d30f79069c457bfdc0ea1358d431691599a2389418234742c1712f0be5/blastpipe-2024.0.4.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [biotech]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-04-22 03:21:08] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/ac/ae/b9d265db2194bce0b8bf21cf2ca308472629a764dca77615e0135ac8b678/g4f-0.3.0.2.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/95/5a/46730445b7c8db7cad33c0b319cbd75004ba42b6cbe2f00628d2191c5516/cdk-wordpress-0.0.98.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/55/93/e17ac091ba77e370f92de168ae0415456d09cf71adf27725745f2cdb7d65/telectron-2.0.61.1.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/f4/aa/90846168e56b11c709438b52f5aa0c61da2255230fe3e137049530ac5888/biotech-1.1.6.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/20/40/cce6de47615cb90dcc7a9f37d409a4de1e6d324cb1458115ab46fef1a42a/blastpipe-2024.0.5.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [cdk-wordpress]: Downloading https://files.pythonhosted.org/packages/f5/33/8bc435266e926cea52eb7df452e54c2c0657beef07580a86eae44236d88b/cdk-wordpress-0.0.99.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-22 03:21:08] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.0.4.tar.gz tmp/blastpipe-2024.0.5.tar.gz --markdown 20240422/b/blastpipe/2024.0.4-2024.0.5/README.md --exclude *.pyd
+[2024-04-22 03:21:08] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/4b/34/673057733fd7ab305104850d621b793b02287fd219e2292f8a2f5a18eaae/telectron-2.0.70.1.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2024-04-22 03:21:08] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20240422/c/cdk-wordpress/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-22 03:21:08] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/a1/55/46f720970a4d872ed667bcd0f0ecd449c37483ef60327d5ae401bc42c0a1/g4f-0.3.0.3.tar.gz
+[2024-04-22 03:21:08] INFO root fetch - processPackages [telectron]: executing diffoscope
+[2024-04-22 03:21:08] INFO root fetch - processPackages [telectron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telectron-2.0.61.1.tar.gz tmp/telectron-2.0.70.1.tar.gz --markdown 20240422/t/telectron/2.0.61.1-2.0.70.1/README.md --exclude *.pyd
+[2024-04-22 03:21:08] INFO root fetch - processPackages [g4f]: executing diffoscope
+[2024-04-22 03:21:08] INFO root fetch - processPackages [g4f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g4f-0.3.0.2.tar.gz tmp/g4f-0.3.0.3.tar.gz --markdown 20240422/g/g4f/0.3.0.2-0.3.0.3/README.md --exclude *.pyd
+[2024-04-22 03:21:08] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/6c/ee/43782f4b9e40f5df208b357bf4c5384fdb6a264dab41318355d0e90b1d4c/biotech-1.1.7.tar.gz
+[2024-04-22 03:21:09] INFO root fetch - processPackages [biotech]: executing diffoscope
+[2024-04-22 03:21:09] INFO root fetch - processPackages [biotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotech-1.1.6.tar.gz tmp/biotech-1.1.7.tar.gz --markdown 20240422/b/biotech/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-04-22 03:21:09] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.98.tar.gz]
+[2024-04-22 03:21:09] INFO root fetch - processPackages [cdk-wordpress]: Remove: archive file [/home/abi/fetcher/tmp/cdk-wordpress-0.0.99.tar.gz]
+[2024-04-22 03:21:09] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2024-04-22 03:21:09] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.4.tar.gz]
+[2024-04-22 03:21:09] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.5.tar.gz]
+[2024-04-22 03:21:09] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-22 03:21:10] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.0.2.tar.gz]
+[2024-04-22 03:21:10] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.0.3.tar.gz]
+[2024-04-22 03:21:10] INFO root fetch - main [MainThread]: End processing [g4f]: success
+[2024-04-22 03:21:15] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.6.tar.gz]
+[2024-04-22 03:21:15] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.7.tar.gz]
+[2024-04-22 03:21:15] INFO root fetch - main [MainThread]: End processing [biotech]: success
+[2024-04-22 03:21:25] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.61.1.tar.gz]
+[2024-04-22 03:21:25] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
+[2024-04-22 03:21:25] INFO root fetch - main [MainThread]: End processing [telectron]: success
+[2024-04-22 03:21:25] INFO root fetch - main [MainThread]: Store serial: [22870912]
