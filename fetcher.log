@@ -4605,3 +4605,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:21:29] INFO root fetch - processPackages [sphinx_mdinclude]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_mdinclude-0.6.0.tar.gz]
 [2024-04-22 06:21:29] INFO root fetch - main [MainThread]: End processing [sphinx_mdinclude]: success
 [2024-04-22 06:21:29] INFO root fetch - main [MainThread]: Store serial: [22871904]
+[2024-04-22 06:23:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871904]
+[2024-04-22 06:23:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 06:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swit-core
+[2024-04-22 06:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quantplay
+[2024-04-22 06:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: HyperCoast
+[2024-04-22 06:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kobo-md
+[2024-04-22 06:23:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datable-ai
+[2024-04-22 06:23:40] INFO root fetch - processPackages [HyperCoast]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-04-22 06:23:40] INFO root fetch - processPackages [datable-ai]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-22 06:23:40] INFO root fetch - processPackages [HyperCoast]: Downloading https://files.pythonhosted.org/packages/b5/19/73764581e00233e3827967eb91f4ccfc79def3477c32c12886e7351459f6/hypercoast-0.0.3.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/f6/53/f4c220942d9a7292dea5b4e0cf1667afa311278d666092a44bf61b5bc459/datable_ai-0.0.2.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [swit-core]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-22 06:23:40] INFO root fetch - processPackages [quantplay]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-04-22 06:23:40] INFO root fetch - processPackages [kobo-md]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 06:23:40] INFO root fetch - processPackages [HyperCoast]: Downloading https://files.pythonhosted.org/packages/78/7c/c83cca5afeef397b272fed1002a70009f00841d694fa2d08da4d26c7e288/hypercoast-0.1.0.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [swit-core]: Downloading https://files.pythonhosted.org/packages/52/78/8dbf8d259ded05f7d13d1b4f52a1edab55c3a5ddcd0c12d2f32319fd2670/swit_core-4.0.1.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/71/23/85a802491d69beb714dd8831f123c9440301eb94caca43392e50be63fff6/quantplay-1.5.8.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [kobo-md]: Downloading https://files.pythonhosted.org/packages/21/c6/52f76a6934ab3c3ffbea70744622e15428fd09d193a84b264728cfa8aef2/kobo-md-0.1.8.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/f5/e0/1d036f214076efb89d4d0915f69136e037714b87e19a84181057bfd52b16/datable_ai-0.0.3.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [HyperCoast]: executing diffoscope
+[2024-04-22 06:23:40] INFO root fetch - processPackages [HyperCoast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypercoast-0.0.3.tar.gz tmp/hypercoast-0.1.0.tar.gz --markdown 20240422/H/HyperCoast/0.0.3-0.1.0/README.md --exclude *.pyd
+[2024-04-22 06:23:40] INFO root fetch - processPackages [datable-ai]: executing diffoscope
+[2024-04-22 06:23:40] INFO root fetch - processPackages [datable-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datable_ai-0.0.2.tar.gz tmp/datable_ai-0.0.3.tar.gz --markdown 20240422/d/datable-ai/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-22 06:23:40] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/29/44/bc619a0a4e2ecba52ee7f6eac8f51f600a1d90bb67f88a28638d7d9f9c62/quantplay-1.5.9.tar.gz
+[2024-04-22 06:23:40] INFO root fetch - processPackages [kobo-md]: Downloading https://files.pythonhosted.org/packages/cd/bb/4403d9ab9219c5fb454c4d668bb93595dea06e7c0c48798562c3668c8a30/kobo-md-0.1.9.tar.gz
+[2024-04-22 06:23:41] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2024-04-22 06:23:41] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.5.8.tar.gz tmp/quantplay-1.5.9.tar.gz --markdown 20240422/q/quantplay/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-04-22 06:23:41] INFO root fetch - processPackages [kobo-md]: executing diffoscope
+[2024-04-22 06:23:41] INFO root fetch - processPackages [kobo-md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kobo-md-0.1.8.tar.gz tmp/kobo-md-0.1.9.tar.gz --markdown 20240422/k/kobo-md/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 06:23:41] INFO root fetch - processPackages [swit-core]: Downloading https://files.pythonhosted.org/packages/22/fe/863b91697a1031102e43cbb43d99793dfd1cbd0dad63367794574536b6a8/swit_core-4.0.2.tar.gz
+[2024-04-22 06:23:41] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.2.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.3.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - main [MainThread]: End processing [datable-ai]: success
+[2024-04-22 06:23:41] INFO root fetch - processPackages [HyperCoast]: Remove: archive file [/home/abi/fetcher/tmp/hypercoast-0.0.3.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - processPackages [HyperCoast]: Remove: archive file [/home/abi/fetcher/tmp/hypercoast-0.1.0.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - main [MainThread]: End processing [HyperCoast]: success
+[2024-04-22 06:23:41] INFO root fetch - processPackages [swit-core]: executing diffoscope
+[2024-04-22 06:23:41] INFO root fetch - processPackages [swit-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swit_core-4.0.1.tar.gz tmp/swit_core-4.0.2.tar.gz --markdown 20240422/s/swit-core/4.0.1-4.0.2/README.md --exclude *.pyd
+[2024-04-22 06:23:41] INFO root fetch - processPackages [kobo-md]: Remove: archive file [/home/abi/fetcher/tmp/kobo-md-0.1.8.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - processPackages [kobo-md]: Remove: archive file [/home/abi/fetcher/tmp/kobo-md-0.1.9.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - main [MainThread]: End processing [kobo-md]: success
+[2024-04-22 06:23:41] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.8.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.9.tar.gz]
+[2024-04-22 06:23:41] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2024-04-22 06:23:44] INFO root fetch - processPackages [swit-core]: Remove: archive file [/home/abi/fetcher/tmp/swit_core-4.0.1.tar.gz]
+[2024-04-22 06:23:44] INFO root fetch - processPackages [swit-core]: Remove: archive file [/home/abi/fetcher/tmp/swit_core-4.0.2.tar.gz]
+[2024-04-22 06:23:44] INFO root fetch - main [MainThread]: End processing [swit-core]: success
+[2024-04-22 06:23:44] INFO root fetch - main [MainThread]: Store serial: [22871917]
