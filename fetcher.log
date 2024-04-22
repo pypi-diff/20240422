@@ -5876,3 +5876,57 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:50:49] INFO root fetch - processPackages [niquests]: Remove: archive file [/home/abi/fetcher/tmp/niquests-3.6.1.tar.gz]
 [2024-04-22 07:50:49] INFO root fetch - main [MainThread]: End processing [niquests]: success
 [2024-04-22 07:50:49] INFO root fetch - main [MainThread]: Store serial: [22872382]
+[2024-04-22 07:52:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872382]
+[2024-04-22 07:52:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-stock-logistics-warehouse
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ondewo-csi-client
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ehdg-pupil-detector
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostcli
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: animatebar
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lamindb_setup
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: RandomCarrot
+[2024-04-22 07:52:58] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ondewo-csi-client]: New version: [4.0.0] Old Version: [3.2.0]
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ehdg-pupil-detector]: New version: [3.4.0] Old Version: [3.3.0]
+[2024-04-22 07:52:58] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-04-22 07:52:58] WARNING root fetch - processPackages [RandomCarrot]: Skipping, unable to determine old version
+[2024-04-22 07:52:58] INFO root fetch - main [MainThread]: End processing [RandomCarrot] error
+[2024-04-22 07:52:58] WARNING root fetch - processPackages [animatebar]: Skipping, unable to determine old version
+[2024-04-22 07:52:58] INFO root fetch - main [MainThread]: End processing [animatebar] error
+[2024-04-22 07:52:58] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: New version: [16.0.20240421.0] Old Version: [16.0.20240321.0]
+[2024-04-22 07:52:58] INFO root fetch - processPackages [lamindb_setup]: New version: [0.69.5] Old Version: [0.69.4]
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ondewo-csi-client]: Downloading https://files.pythonhosted.org/packages/26/66/a13c9325f0895656bac93f0894291f57ddbc6e658aefaf45bab1d1ac5a19/ondewo-csi-client-3.2.0.tar.gz
+[2024-04-22 07:52:58] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/9a/e7/326a7494165be20c45297d1602db97c4c7a1a5051bc0ada1e8f340078a37/odoo_addons_oca_stock_logistics_warehouse-16.0.20240321.0-py3-none-any.whl
+[2024-04-22 07:52:58] INFO root fetch - processPackages [ehdg-pupil-detector]: Downloading https://files.pythonhosted.org/packages/a0/1e/23ac05fa44114028546a8b30d0a597db250c279053450ba215ff036c66b5/ehdg_pupil_detector-3.3.0.tar.gz
+[2024-04-22 07:52:58] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-04-22 07:52:58] INFO root fetch - processPackages [lamindb_setup]: Downloading https://files.pythonhosted.org/packages/1d/7b/c540a5d9bb4510c7d2d0de59c9ac7c618a7aec3e2283e846247e32caa3eb/lamindb_setup-0.69.4.tar.gz
+[2024-04-22 07:52:58] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-04-22 07:52:58] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240422/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ehdg-pupil-detector]: Downloading https://files.pythonhosted.org/packages/52/1b/31c339fd1056e883a34dc9c75a17dfa8bbc7ce0f2f940e78c869fd611cb7/ehdg_pupil_detector-3.4.0.tar.gz
+[2024-04-22 07:52:59] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/f7/87/e6f7bd329c4968526bd557176153459ae884cc6a95dced20b2a012c6332f/odoo_addons_oca_stock_logistics_warehouse-16.0.20240421.0-py3-none-any.whl
+[2024-04-22 07:52:59] INFO root fetch - processPackages [lamindb_setup]: Downloading https://files.pythonhosted.org/packages/e5/9e/493b7764c911efe5a4695363defc1bc97bc1dd77d81362ca0b3bf84ff196/lamindb_setup-0.69.5.tar.gz
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ondewo-csi-client]: Downloading https://files.pythonhosted.org/packages/8a/24/ce27a88c74db55c1d5c2f89298217a2836a8d6ceca9a029bd2d28cbfa5d9/ondewo-csi-client-4.0.0.tar.gz
+[2024-04-22 07:52:59] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: executing diffoscope
+[2024-04-22 07:52:59] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240321.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240421.0-py3-none-any.whl.zip --markdown 20240422/o/odoo-addons-oca-stock-logistics-warehouse/16.0.20240321.0-16.0.20240421.0/README.md --exclude *.pyd
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ehdg-pupil-detector]: executing diffoscope
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ehdg-pupil-detector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdg_pupil_detector-3.3.0.tar.gz tmp/ehdg_pupil_detector-3.4.0.tar.gz --markdown 20240422/e/ehdg-pupil-detector/3.3.0-3.4.0/README.md --exclude *.pyd
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ondewo-csi-client]: executing diffoscope
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ondewo-csi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-csi-client-3.2.0.tar.gz tmp/ondewo-csi-client-4.0.0.tar.gz --markdown 20240422/o/ondewo-csi-client/3.2.0-4.0.0/README.md --exclude *.pyd
+[2024-04-22 07:52:59] INFO root fetch - processPackages [lamindb_setup]: executing diffoscope
+[2024-04-22 07:52:59] INFO root fetch - processPackages [lamindb_setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamindb_setup-0.69.4.tar.gz tmp/lamindb_setup-0.69.5.tar.gz --markdown 20240422/l/lamindb_setup/0.69.4-0.69.5/README.md --exclude *.pyd
+[2024-04-22 07:52:59] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-04-22 07:52:59] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-04-22 07:52:59] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-04-22 07:52:59] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240321.0-py3-none-any.whl.zip]
+[2024-04-22 07:52:59] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20240421.0-py3-none-any.whl.zip]
+[2024-04-22 07:52:59] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ehdg-pupil-detector]: Remove: archive file [/home/abi/fetcher/tmp/ehdg_pupil_detector-3.3.0.tar.gz]
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ehdg-pupil-detector]: Remove: archive file [/home/abi/fetcher/tmp/ehdg_pupil_detector-3.4.0.tar.gz]
+[2024-04-22 07:52:59] INFO root fetch - main [MainThread]: End processing [ehdg-pupil-detector]: success
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ondewo-csi-client]: Remove: archive file [/home/abi/fetcher/tmp/ondewo-csi-client-3.2.0.tar.gz]
+[2024-04-22 07:52:59] INFO root fetch - processPackages [ondewo-csi-client]: Remove: archive file [/home/abi/fetcher/tmp/ondewo-csi-client-4.0.0.tar.gz]
+[2024-04-22 07:52:59] INFO root fetch - main [MainThread]: End processing [ondewo-csi-client]: success
+[2024-04-22 07:53:00] INFO root fetch - processPackages [lamindb_setup]: Remove: archive file [/home/abi/fetcher/tmp/lamindb_setup-0.69.4.tar.gz]
+[2024-04-22 07:53:00] INFO root fetch - processPackages [lamindb_setup]: Remove: archive file [/home/abi/fetcher/tmp/lamindb_setup-0.69.5.tar.gz]
+[2024-04-22 07:53:00] INFO root fetch - main [MainThread]: End processing [lamindb_setup]: success
+[2024-04-22 07:53:00] INFO root fetch - main [MainThread]: Store serial: [22872404]
