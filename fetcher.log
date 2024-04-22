@@ -5690,3 +5690,56 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:35:39] INFO root fetch - processPackages [odoo14-addon-base-conditional-image]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_conditional_image-14.0.2.0.2.dev2-py3-none-any.whl.zip]
 [2024-04-22 07:35:39] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-conditional-image]: success
 [2024-04-22 07:35:39] INFO root fetch - main [MainThread]: Store serial: [22872319]
+[2024-04-22 07:37:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872319]
+[2024-04-22 07:37:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 07:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-base-deterministic-session-gc
+[2024-04-22 07:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-rpc-helper
+[2024-04-22 07:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-base-video-link
+[2024-04-22 07:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: p-eo
+[2024-04-22 07:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bolero
+[2024-04-22 07:37:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xagent
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-base-deterministic-session-gc]: New version: [14.0.1.0.1.dev4] Old Version: [14.0.1.0.1.dev2]
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-base-video-link]: New version: [14.0.1.1.3.dev3] Old Version: [14.0.1.1.3.dev1]
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-base-deterministic-session-gc]: Downloading https://files.pythonhosted.org/packages/0f/d0/8441a432abef1ef3ad75191c55bb83edacf006cfb84552c2742d883bd9ed/odoo14_addon_base_deterministic_session_gc-14.0.1.0.1.dev2-py3-none-any.whl
+[2024-04-22 07:37:48] INFO root fetch - processPackages [xagent]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-rpc-helper]: New version: [14.0.1.2.1.dev4] Old Version: [14.0.1.2.1.dev2]
+[2024-04-22 07:37:48] INFO root fetch - processPackages [p-eo]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-22 07:37:48] INFO root fetch - processPackages [bolero]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-base-video-link]: Downloading https://files.pythonhosted.org/packages/64/97/7f117559b3fd0f2929940b6108e98f25e9ac5ea3fef821982bc398cac979/odoo14_addon_base_video_link-14.0.1.1.3.dev1-py3-none-any.whl
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-rpc-helper]: Downloading https://files.pythonhosted.org/packages/c2/eb/fe38042bbb415db2499ff8d9d6e313ab0c78da4f26cef47846d871d1ae94/odoo14_addon_rpc_helper-14.0.1.2.1.dev2-py3-none-any.whl
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-base-deterministic-session-gc]: Downloading https://files.pythonhosted.org/packages/18/18/2320558b5032aaa948dc7d82ddeb178f7a458a99de0c90152e59a4bb4bf5/odoo14_addon_base_deterministic_session_gc-14.0.1.0.1.dev4-py3-none-any.whl
+[2024-04-22 07:37:48] INFO root fetch - processPackages [p-eo]: Downloading https://files.pythonhosted.org/packages/c1/59/c3527c6cc961ebb7c6c4551573731adad11d71e569e51bf8d773a5bc0b53/p_eo-0.3.1-py3-none-any.whl
+[2024-04-22 07:37:48] INFO root fetch - processPackages [xagent]: Downloading https://files.pythonhosted.org/packages/ee/a8/2e4249a502b2f17338f444d18141c7d95b1d3fbee8f9e83cc6edea88c0f9/xagent-0.0.6.tar.gz
+[2024-04-22 07:37:48] INFO root fetch - processPackages [bolero]: Downloading https://files.pythonhosted.org/packages/0e/54/d977da7062905b9ef12d154a22d7c529f309814631e9af2438766d209519/bolero-0.0.8.tar.gz
+[2024-04-22 07:37:48] WARNING root fetch - processPackages [bolero]: Skipping package: exceeds size limit 13048827>=10485760
+[2024-04-22 07:37:48] INFO root fetch - main [MainThread]: End processing [bolero] error
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-base-deterministic-session-gc]: executing diffoscope
+[2024-04-22 07:37:48] INFO root fetch - processPackages [odoo14-addon-base-deterministic-session-gc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_deterministic_session_gc-14.0.1.0.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_base_deterministic_session_gc-14.0.1.0.1.dev4-py3-none-any.whl.zip --markdown 20240422/o/odoo14-addon-base-deterministic-session-gc/14.0.1.0.1.dev2-14.0.1.0.1.dev4/README.md --exclude *.pyd
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-base-video-link]: Downloading https://files.pythonhosted.org/packages/5b/42/a20822603cf979b9f9512bc29c4ad8366fc006ca976ae23af8aaeb5b661c/odoo14_addon_base_video_link-14.0.1.1.3.dev3-py3-none-any.whl
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-base-video-link]: executing diffoscope
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-base-video-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_video_link-14.0.1.1.3.dev1-py3-none-any.whl.zip tmp/odoo14_addon_base_video_link-14.0.1.1.3.dev3-py3-none-any.whl.zip --markdown 20240422/o/odoo14-addon-base-video-link/14.0.1.1.3.dev1-14.0.1.1.3.dev3/README.md --exclude *.pyd
+[2024-04-22 07:37:49] INFO root fetch - processPackages [p-eo]: Downloading https://files.pythonhosted.org/packages/73/88/4b74da167c4efe1d64708b7854d943f7756beef4c16d2278768adf5f206c/p_eo-0.4.0-py3-none-any.whl
+[2024-04-22 07:37:49] INFO root fetch - processPackages [xagent]: Downloading https://files.pythonhosted.org/packages/39/a8/17dc2e03545bd393c5c22dfdd7b3de9bc578de6c2ecbe61e36e552c92994/xagent-0.0.7.tar.gz
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-rpc-helper]: Downloading https://files.pythonhosted.org/packages/98/46/5230913809434db952396bc7bf864fab1b32344d2ca68b930bcdf2487934/odoo14_addon_rpc_helper-14.0.1.2.1.dev4-py3-none-any.whl
+[2024-04-22 07:37:49] INFO root fetch - processPackages [p-eo]: executing diffoscope
+[2024-04-22 07:37:49] INFO root fetch - processPackages [p-eo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p_eo-0.3.1-py3-none-any.whl.zip tmp/p_eo-0.4.0-py3-none-any.whl.zip --markdown 20240422/p/p-eo/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-22 07:37:49] INFO root fetch - processPackages [xagent]: executing diffoscope
+[2024-04-22 07:37:49] INFO root fetch - processPackages [xagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xagent-0.0.6.tar.gz tmp/xagent-0.0.7.tar.gz --markdown 20240422/x/xagent/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-rpc-helper]: executing diffoscope
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-rpc-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_rpc_helper-14.0.1.2.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_rpc_helper-14.0.1.2.1.dev4-py3-none-any.whl.zip --markdown 20240422/o/odoo14-addon-rpc-helper/14.0.1.2.1.dev2-14.0.1.2.1.dev4/README.md --exclude *.pyd
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-base-deterministic-session-gc]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_deterministic_session_gc-14.0.1.0.1.dev2-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-base-deterministic-session-gc]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_deterministic_session_gc-14.0.1.0.1.dev4-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-deterministic-session-gc]: success
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-base-video-link]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_video_link-14.0.1.1.3.dev1-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-base-video-link]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_video_link-14.0.1.1.3.dev3-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-video-link]: success
+[2024-04-22 07:37:49] INFO root fetch - processPackages [p-eo]: Remove: archive file [/home/abi/fetcher/tmp/p_eo-0.3.1-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - processPackages [p-eo]: Remove: archive file [/home/abi/fetcher/tmp/p_eo-0.4.0-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - main [MainThread]: End processing [p-eo]: success
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-rpc-helper]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_rpc_helper-14.0.1.2.1.dev2-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - processPackages [odoo14-addon-rpc-helper]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_rpc_helper-14.0.1.2.1.dev4-py3-none-any.whl.zip]
+[2024-04-22 07:37:49] INFO root fetch - main [MainThread]: End processing [odoo14-addon-rpc-helper]: success
+[2024-04-22 07:37:50] INFO root fetch - processPackages [xagent]: Remove: archive file [/home/abi/fetcher/tmp/xagent-0.0.6.tar.gz]
+[2024-04-22 07:37:50] INFO root fetch - processPackages [xagent]: Remove: archive file [/home/abi/fetcher/tmp/xagent-0.0.7.tar.gz]
+[2024-04-22 07:37:50] INFO root fetch - main [MainThread]: End processing [xagent]: success
+[2024-04-22 07:37:50] INFO root fetch - main [MainThread]: Store serial: [22872333]
