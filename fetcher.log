@@ -4148,3 +4148,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:31:40] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-04-22 05:31:40] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-04-22 05:31:40] INFO root fetch - main [MainThread]: Store serial: [22871723]
+[2024-04-22 05:33:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871723]
+[2024-04-22 05:33:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 05:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-22 05:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GS-Edit
+[2024-04-22 05:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-22 05:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eenhoorntje-llm-lib
+[2024-04-22 05:33:49] INFO root fetch - processPackages [eenhoorntje-llm-lib]: New version: [0.8] Old Version: [0.7]
+[2024-04-22 05:33:49] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.19a1713732126] Old Version: [0.0.19a1713682959]
+[2024-04-22 05:33:49] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.19a1713732126] Old Version: [0.0.19a1713682959]
+[2024-04-22 05:33:49] INFO root fetch - processPackages [GS-Edit]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-22 05:33:49] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Downloading https://files.pythonhosted.org/packages/09/9c/1cc2c95f318831669411fe3e312185370ae2ad50bf63828815ab53a041a0/eenhoorntje_llm_lib-0.7.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/3d/08/b18daf70a5cd494a6a0bdb2d67aeff0c2fc96f60c9eb9da633833f1a1f1c/pulumi_kubernetes_the_hard_way-0.0.19a1713682959.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/3d/08/b18daf70a5cd494a6a0bdb2d67aeff0c2fc96f60c9eb9da633833f1a1f1c/pulumi_kubernetes_the_hard_way-0.0.19a1713682959.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [GS-Edit]: Downloading https://files.pythonhosted.org/packages/45/aa/20c3a76c014ebdcb9434ba3582f6a341ab9e5bac4e97910ea4639d1cad95/gs_edit-0.2.1.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/6e/ce/2c99e1e6d94b76e2749fa157fc5b5764ca9b459edf722e46dd3e697ce0a3/pulumi_kubernetes_the_hard_way-0.0.19a1713732126.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/6e/ce/2c99e1e6d94b76e2749fa157fc5b5764ca9b459edf722e46dd3e697ce0a3/pulumi_kubernetes_the_hard_way-0.0.19a1713732126.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Downloading https://files.pythonhosted.org/packages/58/53/c1bd6020de71ee2c61bd61f6c2d4ad72551fc6b613896bfdf423f9900b0a/eenhoorntje_llm_lib-0.8.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [GS-Edit]: Downloading https://files.pythonhosted.org/packages/6c/5a/a99fa79679817eb521df8fe52973c93a346f55915a467780c0ea19800334/gs_edit-0.2.2.tar.gz
+[2024-04-22 05:33:50] INFO root fetch - processPackages [eenhoorntje-llm-lib]: executing diffoscope
+[2024-04-22 05:33:50] INFO root fetch - processPackages [eenhoorntje-llm-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eenhoorntje_llm_lib-0.7.tar.gz tmp/eenhoorntje_llm_lib-0.8.tar.gz --markdown 20240422/e/eenhoorntje-llm-lib/0.7-0.8/README.md --exclude *.pyd
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682959.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713732126.tar.gz --markdown 20240422/p/pulumi-kubernetes-the-hard-way/0.0.19a1713682959-0.0.19a1713732126/README.md --exclude *.pyd
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-22 05:33:50] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682959.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713732126.tar.gz --markdown 20240422/p/pulumi-kubernetes-the-hard-way/0.0.19a1713682959-0.0.19a1713732126/README.md --exclude *.pyd
+[2024-04-22 05:33:50] INFO root fetch - processPackages [GS-Edit]: executing diffoscope
+[2024-04-22 05:33:50] INFO root fetch - processPackages [GS-Edit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_edit-0.2.1.tar.gz tmp/gs_edit-0.2.2.tar.gz --markdown 20240422/G/GS-Edit/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-22 05:33:51] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Remove: archive file [/home/abi/fetcher/tmp/eenhoorntje_llm_lib-0.7.tar.gz]
+[2024-04-22 05:33:51] INFO root fetch - processPackages [eenhoorntje-llm-lib]: Remove: archive file [/home/abi/fetcher/tmp/eenhoorntje_llm_lib-0.8.tar.gz]
+[2024-04-22 05:33:51] INFO root fetch - main [MainThread]: End processing [eenhoorntje-llm-lib]: success
+[2024-04-22 05:33:51] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713682959.tar.gz]
+[2024-04-22 05:33:51] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.19a1713732126.tar.gz]
+[2024-04-22 05:33:51] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-22 05:33:51] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-22 05:33:51] INFO root fetch - processPackages [GS-Edit]: Remove: archive file [/home/abi/fetcher/tmp/gs_edit-0.2.1.tar.gz]
+[2024-04-22 05:33:51] INFO root fetch - processPackages [GS-Edit]: Remove: archive file [/home/abi/fetcher/tmp/gs_edit-0.2.2.tar.gz]
+[2024-04-22 05:33:51] INFO root fetch - main [MainThread]: End processing [GS-Edit]: success
+[2024-04-22 05:33:51] INFO root fetch - main [MainThread]: Store serial: [22871735]
