@@ -5295,3 +5295,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:07:22] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.4.tar.gz]
 [2024-04-22 07:07:22] INFO root fetch - main [MainThread]: End processing [oresat-dxwifi]: success
 [2024-04-22 07:07:22] INFO root fetch - main [MainThread]: Store serial: [22872166]
+[2024-04-22 07:09:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872166]
+[2024-04-22 07:09:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 07:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libgzipf-python
+[2024-04-22 07:09:30] INFO root fetch - processPackages [libgzipf-python]: New version: [20240422] Old Version: [20240103]
+[2024-04-22 07:09:31] INFO root fetch - processPackages [libgzipf-python]: Downloading https://files.pythonhosted.org/packages/b7/83/d2b2804a98a1fc8bc026631f2b7bb91a1405b23e17fb5c300834e2d7f467/libgzipf-python-20240103.tar.gz
+[2024-04-22 07:09:31] INFO root fetch - processPackages [libgzipf-python]: Downloading https://files.pythonhosted.org/packages/05/bf/3986d371f177e701225878853b17f706da2d95cd061345a819f0a9957ff7/libgzipf-python-20240422.tar.gz
+[2024-04-22 07:09:31] INFO root fetch - processPackages [libgzipf-python]: executing diffoscope
+[2024-04-22 07:09:31] INFO root fetch - processPackages [libgzipf-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libgzipf-python-20240103.tar.gz tmp/libgzipf-python-20240422.tar.gz --markdown 20240422/l/libgzipf-python/20240103-20240422/README.md --exclude *.pyd
+[2024-04-22 07:09:38] INFO root fetch - processPackages [libgzipf-python]: Remove: archive file [/home/abi/fetcher/tmp/libgzipf-python-20240103.tar.gz]
+[2024-04-22 07:09:38] INFO root fetch - processPackages [libgzipf-python]: Remove: archive file [/home/abi/fetcher/tmp/libgzipf-python-20240422.tar.gz]
+[2024-04-22 07:09:38] INFO root fetch - main [MainThread]: End processing [libgzipf-python]: success
+[2024-04-22 07:09:38] INFO root fetch - main [MainThread]: Store serial: [22872169]
