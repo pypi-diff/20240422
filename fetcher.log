@@ -3906,3 +3906,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:07:26] INFO root fetch - processPackages [ugot]: Remove: archive file [/home/abi/fetcher/tmp/ugot-0.2.9.tar.gz]
 [2024-04-22 05:07:26] INFO root fetch - main [MainThread]: End processing [ugot]: success
 [2024-04-22 05:07:26] INFO root fetch - main [MainThread]: Store serial: [22871588]
+[2024-04-22 05:09:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871588]
+[2024-04-22 05:09:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 05:09:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyslang
+[2024-04-22 05:09:34] INFO root fetch - processPackages [pyslang]: New version: [6.0] Old Version: [5.0.0]
+[2024-04-22 05:09:35] INFO root fetch - processPackages [pyslang]: Downloading https://files.pythonhosted.org/packages/17/ab/d79995777be00bab1138f26e2a6d403fbfe0654c478218857dff1c00575e/pyslang-5.0.0.tar.gz
+[2024-04-22 05:09:35] INFO root fetch - processPackages [pyslang]: Downloading https://files.pythonhosted.org/packages/b5/7c/67a1aaf90f48d2a59bb95816a7aee75c9b6a04305bef90c0f2c09e392aea/pyslang-6.0.tar.gz
+[2024-04-22 05:09:35] INFO root fetch - processPackages [pyslang]: executing diffoscope
+[2024-04-22 05:09:35] INFO root fetch - processPackages [pyslang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslang-5.0.0.tar.gz tmp/pyslang-6.0.tar.gz --markdown 20240422/p/pyslang/5.0.0-6.0/README.md --exclude *.pyd
+[2024-04-22 05:09:40] INFO root fetch - processPackages [pyslang]: Remove: archive file [/home/abi/fetcher/tmp/pyslang-5.0.0.tar.gz]
+[2024-04-22 05:09:40] INFO root fetch - processPackages [pyslang]: Remove: archive file [/home/abi/fetcher/tmp/pyslang-6.0.tar.gz]
+[2024-04-22 05:09:40] INFO root fetch - main [MainThread]: End processing [pyslang]: success
+[2024-04-22 05:09:40] INFO root fetch - main [MainThread]: Store serial: [22871615]
