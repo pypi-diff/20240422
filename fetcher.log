@@ -2780,3 +2780,24 @@
 [2024-04-22 03:54:47] INFO root fetch - processPackages [flowdata]: Remove: archive file [/home/abi/fetcher/tmp/flowdata-0.1.2.tar.gz]
 [2024-04-22 03:54:47] INFO root fetch - main [MainThread]: End processing [flowdata]: success
 [2024-04-22 03:54:47] INFO root fetch - main [MainThread]: Store serial: [22871123]
+[2024-04-22 03:56:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871123]
+[2024-04-22 03:56:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 03:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quick-server
+[2024-04-22 03:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edgartools
+[2024-04-22 03:56:56] INFO root fetch - processPackages [quick-server]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-22 03:56:56] INFO root fetch - processPackages [edgartools]: New version: [2.9.0] Old Version: [2.8.3]
+[2024-04-22 03:56:56] INFO root fetch - processPackages [quick-server]: Downloading https://files.pythonhosted.org/packages/1d/e7/bfd0d028f233ce39f2532c8337a26f9aea745c31f7f061bdece3881a0e7a/quick_server-0.9.2.tar.gz
+[2024-04-22 03:56:56] INFO root fetch - processPackages [edgartools]: Downloading https://files.pythonhosted.org/packages/d8/c6/400200c18dfea8996fed257a419285ffb6839fac1a467836c0d47f525bfa/edgartools-2.8.3.tar.gz
+[2024-04-22 03:56:56] INFO root fetch - processPackages [quick-server]: Downloading https://files.pythonhosted.org/packages/ed/ab/1f9bb0e2b7a43babd3b5011a2c2ba2b806744846e73709c23c51a17399f4/quick_server-0.9.3.tar.gz
+[2024-04-22 03:56:56] INFO root fetch - processPackages [quick-server]: executing diffoscope
+[2024-04-22 03:56:56] INFO root fetch - processPackages [quick-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick_server-0.9.2.tar.gz tmp/quick_server-0.9.3.tar.gz --markdown 20240422/q/quick-server/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-22 03:56:56] INFO root fetch - processPackages [edgartools]: Downloading https://files.pythonhosted.org/packages/c6/e4/10d80214acd99a350add686b19eb2625613291c9bff643051d50b5aca766/edgartools-2.9.0.tar.gz
+[2024-04-22 03:56:56] INFO root fetch - processPackages [edgartools]: executing diffoscope
+[2024-04-22 03:56:56] INFO root fetch - processPackages [edgartools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgartools-2.8.3.tar.gz tmp/edgartools-2.9.0.tar.gz --markdown 20240422/e/edgartools/2.8.3-2.9.0/README.md --exclude *.pyd
+[2024-04-22 03:56:57] INFO root fetch - processPackages [quick-server]: Remove: archive file [/home/abi/fetcher/tmp/quick_server-0.9.2.tar.gz]
+[2024-04-22 03:56:57] INFO root fetch - processPackages [quick-server]: Remove: archive file [/home/abi/fetcher/tmp/quick_server-0.9.3.tar.gz]
+[2024-04-22 03:56:57] INFO root fetch - main [MainThread]: End processing [quick-server]: success
+[2024-04-22 03:56:57] INFO root fetch - processPackages [edgartools]: Remove: archive file [/home/abi/fetcher/tmp/edgartools-2.8.3.tar.gz]
+[2024-04-22 03:56:57] INFO root fetch - processPackages [edgartools]: Remove: archive file [/home/abi/fetcher/tmp/edgartools-2.9.0.tar.gz]
+[2024-04-22 03:56:57] INFO root fetch - main [MainThread]: End processing [edgartools]: success
+[2024-04-22 03:56:57] INFO root fetch - main [MainThread]: Store serial: [22871129]
