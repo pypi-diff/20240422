@@ -3207,3 +3207,45 @@
 [2024-04-22 04:29:50] INFO root fetch - processPackages [php-ast]: Remove: archive file [/home/abi/fetcher/tmp/php_ast-1.4.tar.gz]
 [2024-04-22 04:29:50] INFO root fetch - main [MainThread]: End processing [php-ast]: success
 [2024-04-22 04:29:50] INFO root fetch - main [MainThread]: Store serial: [22871296]
+[2024-04-22 04:31:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871296]
+[2024-04-22 04:31:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 04:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aespm
+[2024-04-22 04:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SpiderKidSDK
+[2024-04-22 04:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rentalUtility
+[2024-04-22 04:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: telectron
+[2024-04-22 04:31:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cutseq
+[2024-04-22 04:31:58] INFO root fetch - processPackages [cutseq]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 04:31:58] INFO root fetch - processPackages [telectron]: New version: [2.0.70.1] Old Version: [2.0.61.1]
+[2024-04-22 04:31:58] INFO root fetch - processPackages [aespm]: New version: [1.0.0] Old Version: [0.0.2]
+[2024-04-22 04:31:58] INFO root fetch - processPackages [aespm]: Downloading https://files.pythonhosted.org/packages/f3/d4/175e9b5bf7d0928eedcac41a5b808f4e9a2ca88bc60ab9308b8b49068da5/aespm-0.0.2.tar.gz
+[2024-04-22 04:31:58] INFO root fetch - processPackages [SpiderKidSDK]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 04:31:58] WARNING root fetch - processPackages [rentalUtility]: Skipping, unable to determine old version
+[2024-04-22 04:31:58] INFO root fetch - main [MainThread]: End processing [rentalUtility] error
+[2024-04-22 04:31:58] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/d1/f9/7f2d56d8b9ceef7250277cf44b5a3a67b1cafe5e730eb030004f4f99b257/cutseq-0.0.4.tar.gz
+[2024-04-22 04:31:58] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/55/93/e17ac091ba77e370f92de168ae0415456d09cf71adf27725745f2cdb7d65/telectron-2.0.61.1.tar.gz
+[2024-04-22 04:31:59] INFO root fetch - processPackages [SpiderKidSDK]: Downloading https://files.pythonhosted.org/packages/8a/c8/3fe69fbc03a73eb679d9102b3cc28876c2a2ba260e1f7a86ce7bdca90a94/SpiderKidSDK-0.0.1.tar.gz
+[2024-04-22 04:31:59] INFO root fetch - processPackages [aespm]: Downloading https://files.pythonhosted.org/packages/3f/57/243ae203f276fbcdca9800abfb3a031222e8ad4795da4f77bdf53e4c907e/aespm-1.0.0.tar.gz
+[2024-04-22 04:31:59] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/46/c3/faefa730179ad6f19938942dba213b8fd10c3d7453fe2bbde7924185eb13/cutseq-0.0.5.tar.gz
+[2024-04-22 04:31:59] INFO root fetch - processPackages [telectron]: Downloading https://files.pythonhosted.org/packages/4b/34/673057733fd7ab305104850d621b793b02287fd219e2292f8a2f5a18eaae/telectron-2.0.70.1.tar.gz
+[2024-04-22 04:31:59] INFO root fetch - processPackages [aespm]: executing diffoscope
+[2024-04-22 04:31:59] INFO root fetch - processPackages [aespm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aespm-0.0.2.tar.gz tmp/aespm-1.0.0.tar.gz --markdown 20240422/a/aespm/0.0.2-1.0.0/README.md --exclude *.pyd
+[2024-04-22 04:31:59] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 04:31:59] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.4.tar.gz tmp/cutseq-0.0.5.tar.gz --markdown 20240422/c/cutseq/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 04:31:59] INFO root fetch - processPackages [SpiderKidSDK]: Downloading https://files.pythonhosted.org/packages/17/20/2e44afd796a27ca223f027a67ecab64ff9578b8d148513fc8302722072ec/SpiderKidSDK-0.0.2.tar.gz
+[2024-04-22 04:31:59] INFO root fetch - processPackages [telectron]: executing diffoscope
+[2024-04-22 04:31:59] INFO root fetch - processPackages [telectron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telectron-2.0.61.1.tar.gz tmp/telectron-2.0.70.1.tar.gz --markdown 20240422/t/telectron/2.0.61.1-2.0.70.1/README.md --exclude *.pyd
+[2024-04-22 04:31:59] INFO root fetch - processPackages [SpiderKidSDK]: executing diffoscope
+[2024-04-22 04:31:59] INFO root fetch - processPackages [SpiderKidSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpiderKidSDK-0.0.1.tar.gz tmp/SpiderKidSDK-0.0.2.tar.gz --markdown 20240422/S/SpiderKidSDK/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 04:31:59] INFO root fetch - processPackages [aespm]: Remove: archive file [/home/abi/fetcher/tmp/aespm-0.0.2.tar.gz]
+[2024-04-22 04:31:59] INFO root fetch - processPackages [aespm]: Remove: archive file [/home/abi/fetcher/tmp/aespm-1.0.0.tar.gz]
+[2024-04-22 04:31:59] INFO root fetch - main [MainThread]: End processing [aespm]: success
+[2024-04-22 04:31:59] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.4.tar.gz]
+[2024-04-22 04:31:59] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.5.tar.gz]
+[2024-04-22 04:31:59] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 04:32:00] INFO root fetch - processPackages [SpiderKidSDK]: Remove: archive file [/home/abi/fetcher/tmp/SpiderKidSDK-0.0.1.tar.gz]
+[2024-04-22 04:32:00] INFO root fetch - processPackages [SpiderKidSDK]: Remove: archive file [/home/abi/fetcher/tmp/SpiderKidSDK-0.0.2.tar.gz]
+[2024-04-22 04:32:00] INFO root fetch - main [MainThread]: End processing [SpiderKidSDK]: success
+[2024-04-22 04:32:16] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.61.1.tar.gz]
+[2024-04-22 04:32:16] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
+[2024-04-22 04:32:16] INFO root fetch - main [MainThread]: End processing [telectron]: success
+[2024-04-22 04:32:16] INFO root fetch - main [MainThread]: Store serial: [22871312]
