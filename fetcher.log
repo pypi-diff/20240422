@@ -10337,3 +10337,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:24:14] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
 [2024-04-22 11:24:14] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2024-04-22 11:24:14] INFO root fetch - main [MainThread]: Store serial: [22874703]
+[2024-04-22 11:26:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874703]
+[2024-04-22 11:26:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 11:26:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multivoro
+[2024-04-22 11:26:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grooveshop-django-api
+[2024-04-22 11:26:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: project-master
+[2024-04-22 11:26:22] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-22 11:26:22] WARNING root fetch - processPackages [multivoro]: Skipping, unable to determine old version
+[2024-04-22 11:26:22] INFO root fetch - main [MainThread]: End processing [multivoro] error
+[2024-04-22 11:26:22] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-04-22 11:26:22] INFO root fetch - processPackages [project-master]: New version: [1.1] Old Version: [1.0]
+[2024-04-22 11:26:22] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-04-22 11:26:22] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-22 11:26:22] INFO root fetch - processPackages [project-master]: Downloading https://files.pythonhosted.org/packages/52/b6/5c0a879981212d654f9bcc83636c174cd02270bf80d82b227eede5da6c00/project_master-1.0.tar.gz
+[2024-04-22 11:26:23] INFO root fetch - processPackages [project-master]: Downloading https://files.pythonhosted.org/packages/fb/f1/ec2b020d8b9662acc34e2974b00b3a0d3fc8c292e4c56adbc0d3661b4f75/project_master-1.1.tar.gz
+[2024-04-22 11:26:23] INFO root fetch - processPackages [project-master]: executing diffoscope
+[2024-04-22 11:26:23] INFO root fetch - processPackages [project-master]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project_master-1.0.tar.gz tmp/project_master-1.1.tar.gz --markdown 20240422/p/project-master/1.0-1.1/README.md --exclude *.pyd
+[2024-04-22 11:26:23] INFO root fetch - processPackages [project-master]: Remove: archive file [/home/abi/fetcher/tmp/project_master-1.0.tar.gz]
+[2024-04-22 11:26:23] INFO root fetch - processPackages [project-master]: Remove: archive file [/home/abi/fetcher/tmp/project_master-1.1.tar.gz]
+[2024-04-22 11:26:23] INFO root fetch - main [MainThread]: End processing [project-master]: success
+[2024-04-22 11:26:23] INFO root fetch - main [MainThread]: Store serial: [22874715]
