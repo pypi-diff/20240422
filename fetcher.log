@@ -3885,3 +3885,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:05:16] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.7.tar.gz]
 [2024-04-22 05:05:16] INFO root fetch - main [MainThread]: End processing [biotech]: success
 [2024-04-22 05:05:16] INFO root fetch - main [MainThread]: Store serial: [22871579]
+[2024-04-22 05:07:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871579]
+[2024-04-22 05:07:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 05:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gaea-operator
+[2024-04-22 05:07:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ugot
+[2024-04-22 05:07:25] INFO root fetch - processPackages [gaea-operator]: New version: [1.2.0.dev5] Old Version: [1.2.0.dev4]
+[2024-04-22 05:07:25] INFO root fetch - processPackages [ugot]: New version: [0.2.9] Old Version: [0.2.12]
+[2024-04-22 05:07:25] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/d1/3f/ec60d3dc95472783daae2d473d18b1144511104a829c191166f8aad0fd1b/gaea_operator-1.2.0.dev4-py3-none-any.whl
+[2024-04-22 05:07:25] INFO root fetch - processPackages [ugot]: Downloading https://files.pythonhosted.org/packages/0b/28/c6c0220c2e0927f6285e2d7485f97065a398cc5c0fef04930dbb09bfbb4e/ugot-0.2.12.tar.gz
+[2024-04-22 05:07:25] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/6b/6b/5cf5c6191117de4447e405021aa859a7f5f9110cdec9384cb08b51acd7d9/gaea_operator-1.2.0.dev5-py3-none-any.whl
+[2024-04-22 05:07:25] INFO root fetch - processPackages [gaea-operator]: executing diffoscope
+[2024-04-22 05:07:25] INFO root fetch - processPackages [gaea-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaea_operator-1.2.0.dev4-py3-none-any.whl.zip tmp/gaea_operator-1.2.0.dev5-py3-none-any.whl.zip --markdown 20240422/g/gaea-operator/1.2.0.dev4-1.2.0.dev5/README.md --exclude *.pyd
+[2024-04-22 05:07:25] INFO root fetch - processPackages [ugot]: Downloading https://files.pythonhosted.org/packages/e3/c9/4aba2122a226101e00871b1247dfd2d22ba1caee9668b57daff45dfc9176/ugot-0.2.9.tar.gz
+[2024-04-22 05:07:25] INFO root fetch - processPackages [ugot]: executing diffoscope
+[2024-04-22 05:07:25] INFO root fetch - processPackages [ugot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ugot-0.2.12.tar.gz tmp/ugot-0.2.9.tar.gz --markdown 20240422/u/ugot/0.2.12-0.2.9/README.md --exclude *.pyd
+[2024-04-22 05:07:26] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.dev4-py3-none-any.whl.zip]
+[2024-04-22 05:07:26] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.dev5-py3-none-any.whl.zip]
+[2024-04-22 05:07:26] INFO root fetch - main [MainThread]: End processing [gaea-operator]: success
+[2024-04-22 05:07:26] INFO root fetch - processPackages [ugot]: Remove: archive file [/home/abi/fetcher/tmp/ugot-0.2.12.tar.gz]
+[2024-04-22 05:07:26] INFO root fetch - processPackages [ugot]: Remove: archive file [/home/abi/fetcher/tmp/ugot-0.2.9.tar.gz]
+[2024-04-22 05:07:26] INFO root fetch - main [MainThread]: End processing [ugot]: success
+[2024-04-22 05:07:26] INFO root fetch - main [MainThread]: Store serial: [22871588]
