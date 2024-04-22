@@ -5952,3 +5952,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:55:10] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.1.1.tar.gz]
 [2024-04-22 07:55:10] INFO root fetch - main [MainThread]: End processing [tgqSim]: success
 [2024-04-22 07:55:10] INFO root fetch - main [MainThread]: Store serial: [22872413]
+[2024-04-22 07:57:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872413]
+[2024-04-22 07:57:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 07:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arcpyext
+[2024-04-22 07:57:18] INFO root fetch - processPackages [arcpyext]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-22 07:57:18] INFO root fetch - processPackages [arcpyext]: Downloading https://files.pythonhosted.org/packages/af/eb/0d5f144561d2a0dab2cb717956e2051169c299d412df7da0d8730577b7b3/arcpyext-0.7.8-py2.py3-none-any.whl
+[2024-04-22 07:57:19] INFO root fetch - processPackages [arcpyext]: Downloading https://files.pythonhosted.org/packages/8e/70/c8a3549a9ad665f3831b83fb3320d345e16d3687c177c70a07ba1afce80d/arcpyext-0.7.9-py2.py3-none-any.whl
+[2024-04-22 07:57:19] INFO root fetch - processPackages [arcpyext]: executing diffoscope
+[2024-04-22 07:57:19] INFO root fetch - processPackages [arcpyext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcpyext-0.7.8-py2.py3-none-any.whl.zip tmp/arcpyext-0.7.9-py2.py3-none-any.whl.zip --markdown 20240422/a/arcpyext/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-22 07:57:20] INFO root fetch - processPackages [arcpyext]: Remove: archive file [/home/abi/fetcher/tmp/arcpyext-0.7.8-py2.py3-none-any.whl.zip]
+[2024-04-22 07:57:20] INFO root fetch - processPackages [arcpyext]: Remove: archive file [/home/abi/fetcher/tmp/arcpyext-0.7.9-py2.py3-none-any.whl.zip]
+[2024-04-22 07:57:20] INFO root fetch - main [MainThread]: End processing [arcpyext]: success
+[2024-04-22 07:57:20] INFO root fetch - main [MainThread]: Store serial: [22872415]
