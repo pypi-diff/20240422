@@ -3109,3 +3109,51 @@
 [2024-04-22 04:23:18] INFO root fetch - processPackages [imageio]: Remove: archive file [/home/abi/fetcher/tmp/imageio-2.9.0.tar.gz]
 [2024-04-22 04:23:18] INFO root fetch - main [MainThread]: End processing [imageio]: success
 [2024-04-22 04:23:18] INFO root fetch - main [MainThread]: Store serial: [22871254]
+[2024-04-22 04:25:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871254]
+[2024-04-22 04:25:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 04:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudpss
+[2024-04-22 04:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funboost
+[2024-04-22 04:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zonesmart-utils-fork
+[2024-04-22 04:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opencv-wrap
+[2024-04-22 04:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imgvision
+[2024-04-22 04:25:27] INFO root fetch - processPackages [zonesmart-utils-fork]: New version: [0.5.9.4] Old Version: [0.5.9.3]
+[2024-04-22 04:25:27] INFO root fetch - processPackages [imgvision]: New version: [0.1.7.2] Old Version: [0.1.7.1]
+[2024-04-22 04:25:27] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/9c/2d/cfa5e58d5610f671f033b6f81e5e9fe4b28e8fa1526b4a9fa915e6f8bd52/zonesmart-utils-fork-0.5.9.3.tar.gz
+[2024-04-22 04:25:27] INFO root fetch - processPackages [imgvision]: Downloading https://files.pythonhosted.org/packages/9e/db/61e19c55112c2f16b8a8dfbb07b5496f48238ddea7fb410f9e976693c4f0/imgvision-0.1.7.1-py3-none-any.whl
+[2024-04-22 04:25:27] INFO root fetch - processPackages [opencv-wrap]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 04:25:27] INFO root fetch - processPackages [funboost]: New version: [43.8] Old Version: [43.7]
+[2024-04-22 04:25:27] INFO root fetch - processPackages [cloudpss]: New version: [4.1.1b9] Old Version: [4.1.1b8]
+[2024-04-22 04:25:28] INFO root fetch - processPackages [funboost]: Downloading https://files.pythonhosted.org/packages/33/32/7c8257c4a60c93e6c21c982528133719645f2301ce08d2e8215004b5e72d/funboost-43.7.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [opencv-wrap]: Downloading https://files.pythonhosted.org/packages/c9/4d/53deeacd33a055c244704d9d2c587d91150c36f2401efc23019735f52d82/opencv_wrap-0.1.1.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/65/0d/e9ba31f289288d38ec199f38c22f1178ac0366abcaa1e81a28f168399008/cloudpss-4.1.1b8.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [imgvision]: Downloading https://files.pythonhosted.org/packages/0a/10/4aac1cf097c06e5c19e9e691c68649f08a05e4d3f96191b2e9598a03df2e/imgvision-0.1.7.2.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/bc/62/2aee483a38ceadd6d10a7b1f8e918e20d391ddbf7888c063f71cdcb76685/zonesmart-utils-fork-0.5.9.4.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [imgvision]: executing diffoscope
+[2024-04-22 04:25:28] INFO root fetch - processPackages [imgvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imgvision-0.1.7.1-py3-none-any.whl.zip tmp/imgvision-0.1.7.2.tar.gz --markdown 20240422/i/imgvision/0.1.7.1-0.1.7.2/README.md --exclude *.pyd
+[2024-04-22 04:25:28] INFO root fetch - processPackages [zonesmart-utils-fork]: executing diffoscope
+[2024-04-22 04:25:28] INFO root fetch - processPackages [zonesmart-utils-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonesmart-utils-fork-0.5.9.3.tar.gz tmp/zonesmart-utils-fork-0.5.9.4.tar.gz --markdown 20240422/z/zonesmart-utils-fork/0.5.9.3-0.5.9.4/README.md --exclude *.pyd
+[2024-04-22 04:25:28] INFO root fetch - processPackages [opencv-wrap]: Downloading https://files.pythonhosted.org/packages/db/0b/11c465b6a6d5f15acebc879743408c2a34305133f2fd34f0fd4f34eb1aab/opencv_wrap-0.1.2.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/5b/24/24989e49cb8cf21d5d2c8b071d835f6a78aca17eceeb1885baa86476f8d4/cloudpss-4.1.1b9.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [opencv-wrap]: executing diffoscope
+[2024-04-22 04:25:28] INFO root fetch - processPackages [opencv-wrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opencv_wrap-0.1.1.tar.gz tmp/opencv_wrap-0.1.2.tar.gz --markdown 20240422/o/opencv-wrap/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 04:25:28] INFO root fetch - processPackages [funboost]: Downloading https://files.pythonhosted.org/packages/08/9f/61476553d230e649dd55747483b0ca235a224c5715c8d996ce336ce512a0/funboost-43.8.tar.gz
+[2024-04-22 04:25:28] INFO root fetch - processPackages [funboost]: executing diffoscope
+[2024-04-22 04:25:28] INFO root fetch - processPackages [funboost]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funboost-43.7.tar.gz tmp/funboost-43.8.tar.gz --markdown 20240422/f/funboost/43.7-43.8/README.md --exclude *.pyd
+[2024-04-22 04:25:28] INFO root fetch - processPackages [cloudpss]: executing diffoscope
+[2024-04-22 04:25:28] INFO root fetch - processPackages [cloudpss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpss-4.1.1b8.tar.gz tmp/cloudpss-4.1.1b9.tar.gz --markdown 20240422/c/cloudpss/4.1.1b8-4.1.1b9/README.md --exclude *.pyd
+[2024-04-22 04:25:28] INFO root fetch - processPackages [imgvision]: Remove: archive file [/home/abi/fetcher/tmp/imgvision-0.1.7.1-py3-none-any.whl.zip]
+[2024-04-22 04:25:28] INFO root fetch - processPackages [imgvision]: Remove: archive file [/home/abi/fetcher/tmp/imgvision-0.1.7.2.tar.gz]
+[2024-04-22 04:25:28] INFO root fetch - main [MainThread]: End processing [imgvision]: success
+[2024-04-22 04:25:29] INFO root fetch - processPackages [opencv-wrap]: Remove: archive file [/home/abi/fetcher/tmp/opencv_wrap-0.1.1.tar.gz]
+[2024-04-22 04:25:29] INFO root fetch - processPackages [opencv-wrap]: Remove: archive file [/home/abi/fetcher/tmp/opencv_wrap-0.1.2.tar.gz]
+[2024-04-22 04:25:29] INFO root fetch - main [MainThread]: End processing [opencv-wrap]: success
+[2024-04-22 04:25:29] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.3.tar.gz]
+[2024-04-22 04:25:29] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.4.tar.gz]
+[2024-04-22 04:25:29] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
+[2024-04-22 04:25:29] INFO root fetch - processPackages [cloudpss]: Remove: archive file [/home/abi/fetcher/tmp/cloudpss-4.1.1b8.tar.gz]
+[2024-04-22 04:25:29] INFO root fetch - processPackages [cloudpss]: Remove: archive file [/home/abi/fetcher/tmp/cloudpss-4.1.1b9.tar.gz]
+[2024-04-22 04:25:29] INFO root fetch - main [MainThread]: End processing [cloudpss]: success
+[2024-04-22 04:25:30] INFO root fetch - processPackages [funboost]: Remove: archive file [/home/abi/fetcher/tmp/funboost-43.7.tar.gz]
+[2024-04-22 04:25:30] INFO root fetch - processPackages [funboost]: Remove: archive file [/home/abi/fetcher/tmp/funboost-43.8.tar.gz]
+[2024-04-22 04:25:30] INFO root fetch - main [MainThread]: End processing [funboost]: success
+[2024-04-22 04:25:30] INFO root fetch - main [MainThread]: Store serial: [22871268]
