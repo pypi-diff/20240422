@@ -10151,3 +10151,111 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:17:04] INFO root fetch - processPackages [yoctopuce]: Remove: archive file [/home/abi/fetcher/tmp/yoctopuce-2.0.60664.tar.gz]
 [2024-04-22 11:17:04] INFO root fetch - main [MainThread]: End processing [yoctopuce]: success
 [2024-04-22 11:17:04] INFO root fetch - main [MainThread]: Store serial: [22874615]
+[2024-04-22 11:19:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874615]
+[2024-04-22 11:19:22] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: objectbox
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wttch-train-helper
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: math-ops-iiitb
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lusid-configuration-sdk
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: environment-mlflow-client
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pure-utils
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lense
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-paretoarchive
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-eventify
+[2024-04-22 11:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mo-math
+[2024-04-22 11:19:22] INFO root fetch - processPackages [wttch-train-helper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [py-paretoarchive]: New version: [0.20] Old Version: [0.19]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [mo-math]: New version: [7.595.24112] Old Version: [7.594.24112]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [objectbox]: New version: [0.7.0a2] Old Version: [0.7.0a1]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/3b/39/20b37adf77ac5d3a1c29fac307c5b35603437a19b4e9ccfdf3da730c7734/wttch-train-helper-0.0.8.tar.gz
+[2024-04-22 11:19:22] WARNING root fetch - processPackages [django-eventify]: Skipping, unable to determine old version
+[2024-04-22 11:19:22] INFO root fetch - processPackages [django-eventify]: Start processing: curl-cffi
+[2024-04-22 11:19:22] INFO root fetch - main [MainThread]: End processing [django-eventify] error
+[2024-04-22 11:19:22] INFO root fetch - processPackages [lusid-configuration-sdk]: New version: [2.1.6] Old Version: [2.1.5]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [pure-utils]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-22 11:19:22] WARNING root fetch - processPackages [math-ops-iiitb]: Skipping, unable to determine old version
+[2024-04-22 11:19:22] INFO root fetch - processPackages [math-ops-iiitb]: Start processing: yeref
+[2024-04-22 11:19:22] INFO root fetch - main [MainThread]: End processing [math-ops-iiitb] error
+[2024-04-22 11:19:22] INFO root fetch - processPackages [lense]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [environment-mlflow-client]: New version: [3.0.2] Old Version: [3.0.0]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [py-paretoarchive]: Downloading https://files.pythonhosted.org/packages/8a/8f/98556a6dfea99ef90915cfa8c6c5aa64c96f5347b8ae0822dd448e08e0ab/py-paretoarchive-0.19.tar.gz
+[2024-04-22 11:19:22] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/1d/70/7552a61eb556cf6df3552519b3ed97eb9476d3f58c12141bd23bd4780b0f/mo_math-7.594.24112.tar.gz
+[2024-04-22 11:19:22] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/af/d8/8361c8b1aef4f8c047a5de0221c3b34f94d964d15ee90bba631d751bece8/objectbox-0.7.0a1-py3-none-any.whl
+[2024-04-22 11:19:22] INFO root fetch - processPackages [curl-cffi]: New version: [0.7.0b4] Old Version: [0.6.3b1]
+[2024-04-22 11:19:22] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-22 11:19:22] INFO root fetch - processPackages [lusid-configuration-sdk]: Downloading https://files.pythonhosted.org/packages/14/10/b512c461d51cbd3743b416509ec06aeff85e1f245602f5acd4455e6c8f91/lusid_configuration_sdk-2.1.5.tar.gz
+[2024-04-22 11:19:22] INFO root fetch - processPackages [environment-mlflow-client]: Downloading https://files.pythonhosted.org/packages/67/55/73d8f6a074535f3ffe561902c608bb71bea7f1f38df3b38f495ac77c9358/environment_mlflow_client-3.0.0-py3-none-any.whl
+[2024-04-22 11:19:22] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/06/f1/4c3862ff8dfa72e0261e6a5f5e8fb8722a335c9adec2134db760cf92c16a/wttch-train-helper-0.0.9.tar.gz
+[2024-04-22 11:19:22] INFO root fetch - processPackages [pure-utils]: Downloading https://files.pythonhosted.org/packages/98/4c/2955c1e94e30348adbd7502307caff22869b9f887dd6d3fa6b3f5f1d7029/pure_utils-0.6.0.tar.gz
+[2024-04-22 11:19:22] INFO root fetch - processPackages [lense]: Downloading https://files.pythonhosted.org/packages/7c/85/052b323649aafe92ae9cf4466c5b69ac2ef809c5809c95eb8888453041e8/lense-0.0.2-py3-none-any.whl
+[2024-04-22 11:19:22] INFO root fetch - processPackages [py-paretoarchive]: Downloading https://files.pythonhosted.org/packages/1e/cf/bf7c8ab0799845636f81c9afc6a9b14fc49a7e5f5151f66cc67df516931c/py-paretoarchive-0.20.tar.gz
+[2024-04-22 11:19:23] INFO root fetch - processPackages [wttch-train-helper]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [wttch-train-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wttch-train-helper-0.0.8.tar.gz tmp/wttch-train-helper-0.0.9.tar.gz --markdown 20240422/w/wttch-train-helper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/e5/0b/95ae32df3a6854d3633328db86af3ccfb562952c3218c422a84600c0376d/mo_math-7.595.24112.tar.gz
+[2024-04-22 11:19:23] INFO root fetch - processPackages [py-paretoarchive]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [py-paretoarchive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-paretoarchive-0.19.tar.gz tmp/py-paretoarchive-0.20.tar.gz --markdown 20240422/p/py-paretoarchive/0.19-0.20/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [curl-cffi]: Downloading https://files.pythonhosted.org/packages/eb/d2/f2f25a4c0e4427e4083bc906552056d155df8b5fb39280228dac603e5e63/curl_cffi-0.6.3b1.tar.gz
+[2024-04-22 11:19:23] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-22 11:19:23] INFO root fetch - processPackages [environment-mlflow-client]: Downloading https://files.pythonhosted.org/packages/9b/c7/282c3082d12b351910b94f295cbca6539c80cdc23dcc260de503811e7c72/environment_mlflow_client-3.0.2-py3-none-any.whl
+[2024-04-22 11:19:23] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.594.24112.tar.gz tmp/mo_math-7.595.24112.tar.gz --markdown 20240422/m/mo-math/7.594.24112-7.595.24112/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [pure-utils]: Downloading https://files.pythonhosted.org/packages/5e/04/42bdbaa0989980b3271a56343ae95fab9a8faebb68f0c157ddb669e7aab1/pure_utils-0.7.0.tar.gz
+[2024-04-22 11:19:23] INFO root fetch - processPackages [lense]: Downloading https://files.pythonhosted.org/packages/86/7c/aed3e8df448d66c3c0ec4288fcad2994fd3fa18dbf384ce8b80d151e53a6/lense-0.0.3-py3-none-any.whl
+[2024-04-22 11:19:23] INFO root fetch - processPackages [environment-mlflow-client]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [environment-mlflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/environment_mlflow_client-3.0.0-py3-none-any.whl.zip tmp/environment_mlflow_client-3.0.2-py3-none-any.whl.zip --markdown 20240422/e/environment-mlflow-client/3.0.0-3.0.2/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [pure-utils]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [pure-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_utils-0.6.0.tar.gz tmp/pure_utils-0.7.0.tar.gz --markdown 20240422/p/pure-utils/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240422/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [lense]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [lense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lense-0.0.2-py3-none-any.whl.zip tmp/lense-0.0.3-py3-none-any.whl.zip --markdown 20240422/l/lense/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [lusid-configuration-sdk]: Downloading https://files.pythonhosted.org/packages/1a/77/8308fd2f10ae3a69e2054ffdc6abce07c88abaa821c2db2ba6e5387d765f/lusid_configuration_sdk-2.1.6.tar.gz
+[2024-04-22 11:19:23] INFO root fetch - processPackages [lusid-configuration-sdk]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [lusid-configuration-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_configuration_sdk-2.1.5.tar.gz tmp/lusid_configuration_sdk-2.1.6.tar.gz --markdown 20240422/l/lusid-configuration-sdk/2.1.5-2.1.6/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [curl-cffi]: Downloading https://files.pythonhosted.org/packages/73/c9/ccb69a14ca5cde1631b9c86a286dd9e2218b68564db67f28a19b1a389512/curl_cffi-0.7.0b4.tar.gz
+[2024-04-22 11:19:23] INFO root fetch - processPackages [objectbox]: Downloading https://files.pythonhosted.org/packages/6b/1c/d377fbad4f67f46c04977059b000d4b6dbb999d30766dfb348d953c370c0/objectbox-0.7.0a2-py3-none-any.whl
+[2024-04-22 11:19:23] INFO root fetch - processPackages [curl-cffi]: executing diffoscope
+[2024-04-22 11:19:23] INFO root fetch - processPackages [curl-cffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/curl_cffi-0.6.3b1.tar.gz tmp/curl_cffi-0.7.0b4.tar.gz --markdown 20240422/c/curl-cffi/0.6.3b1-0.7.0b4/README.md --exclude *.pyd
+[2024-04-22 11:19:23] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.8.tar.gz]
+[2024-04-22 11:19:23] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.9.tar.gz]
+[2024-04-22 11:19:23] INFO root fetch - processPackages [wttch-train-helper]: Start processing: known-problems-fastapi-router
+[2024-04-22 11:19:23] INFO root fetch - main [MainThread]: End processing [wttch-train-helper]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [known-problems-fastapi-router]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [objectbox]: executing diffoscope
+[2024-04-22 11:19:24] INFO root fetch - processPackages [objectbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/objectbox-0.7.0a1-py3-none-any.whl.zip tmp/objectbox-0.7.0a2-py3-none-any.whl.zip --markdown 20240422/o/objectbox/0.7.0a1-0.7.0a2/README.md --exclude *.pyd
+[2024-04-22 11:19:24] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.594.24112.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.595.24112.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [environment-mlflow-client]: Remove: archive file [/home/abi/fetcher/tmp/environment_mlflow_client-3.0.0-py3-none-any.whl.zip]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [environment-mlflow-client]: Remove: archive file [/home/abi/fetcher/tmp/environment_mlflow_client-3.0.2-py3-none-any.whl.zip]
+[2024-04-22 11:19:24] INFO root fetch - main [MainThread]: End processing [environment-mlflow-client]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [known-problems-fastapi-router]: Downloading https://files.pythonhosted.org/packages/99/68/f565fcea712a4db87ea876ad7e7060fa3a46f37e396b4987fd6234cd4a58/known_problems_fastapi_router-0.1.1.tar.gz
+[2024-04-22 11:19:24] INFO root fetch - processPackages [py-paretoarchive]: Remove: archive file [/home/abi/fetcher/tmp/py-paretoarchive-0.19.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [py-paretoarchive]: Remove: archive file [/home/abi/fetcher/tmp/py-paretoarchive-0.20.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - main [MainThread]: End processing [py-paretoarchive]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [lense]: Remove: archive file [/home/abi/fetcher/tmp/lense-0.0.2-py3-none-any.whl.zip]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [lense]: Remove: archive file [/home/abi/fetcher/tmp/lense-0.0.3-py3-none-any.whl.zip]
+[2024-04-22 11:19:24] INFO root fetch - main [MainThread]: End processing [lense]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [pure-utils]: Remove: archive file [/home/abi/fetcher/tmp/pure_utils-0.6.0.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [pure-utils]: Remove: archive file [/home/abi/fetcher/tmp/pure_utils-0.7.0.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - main [MainThread]: End processing [pure-utils]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [lusid-configuration-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_configuration_sdk-2.1.5.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - processPackages [lusid-configuration-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_configuration_sdk-2.1.6.tar.gz]
+[2024-04-22 11:19:24] INFO root fetch - main [MainThread]: End processing [lusid-configuration-sdk]: success
+[2024-04-22 11:19:24] INFO root fetch - processPackages [known-problems-fastapi-router]: Downloading https://files.pythonhosted.org/packages/da/79/6a0d9634518ebbe1a43251eac1873fcfaee4c53112c1bdad8145fb8a7ed7/known_problems_fastapi_router-0.1.2.tar.gz
+[2024-04-22 11:19:24] INFO root fetch - processPackages [known-problems-fastapi-router]: executing diffoscope
+[2024-04-22 11:19:24] INFO root fetch - processPackages [known-problems-fastapi-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/known_problems_fastapi_router-0.1.1.tar.gz tmp/known_problems_fastapi_router-0.1.2.tar.gz --markdown 20240422/k/known-problems-fastapi-router/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 11:19:25] INFO root fetch - processPackages [curl-cffi]: Remove: archive file [/home/abi/fetcher/tmp/curl_cffi-0.6.3b1.tar.gz]
+[2024-04-22 11:19:25] INFO root fetch - processPackages [curl-cffi]: Remove: archive file [/home/abi/fetcher/tmp/curl_cffi-0.7.0b4.tar.gz]
+[2024-04-22 11:19:25] INFO root fetch - main [MainThread]: End processing [curl-cffi]: success
+[2024-04-22 11:19:25] INFO root fetch - processPackages [known-problems-fastapi-router]: Remove: archive file [/home/abi/fetcher/tmp/known_problems_fastapi_router-0.1.1.tar.gz]
+[2024-04-22 11:19:25] INFO root fetch - processPackages [known-problems-fastapi-router]: Remove: archive file [/home/abi/fetcher/tmp/known_problems_fastapi_router-0.1.2.tar.gz]
+[2024-04-22 11:19:25] INFO root fetch - main [MainThread]: End processing [known-problems-fastapi-router]: success
+[2024-04-22 11:19:46] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a1-py3-none-any.whl.zip]
+[2024-04-22 11:19:46] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a2-py3-none-any.whl.zip]
+[2024-04-22 11:19:46] INFO root fetch - main [MainThread]: End processing [objectbox]: success
+[2024-04-22 11:19:46] INFO root fetch - main [MainThread]: Store serial: [22874667]
