@@ -4794,3 +4794,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:36:44] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-0.8.6-py3-none-any.whl.zip]
 [2024-04-22 06:36:44] INFO root fetch - main [MainThread]: End processing [appmesh]: success
 [2024-04-22 06:36:44] INFO root fetch - main [MainThread]: Store serial: [22871968]
+[2024-04-22 06:38:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871968]
+[2024-04-22 06:38:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 06:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appmesh
+[2024-04-22 06:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cs.tagset
+[2024-04-22 06:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datable-ai
+[2024-04-22 06:38:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ehdg-tools
+[2024-04-22 06:38:54] INFO root fetch - processPackages [datable-ai]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 06:38:54] INFO root fetch - processPackages [appmesh]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-04-22 06:38:54] INFO root fetch - processPackages [cs.tagset]: New version: [20240422] Old Version: [20240316]
+[2024-04-22 06:38:54] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/14/de/3e4dd5efd61395f0ec6a1d7e1f7bef2db170d72b38f20f5e87ccd33e8002/datable_ai-0.0.4.tar.gz
+[2024-04-22 06:38:54] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/22/e9/6c8505af062484a5ace4c57daeb832f7ee5777fe33a4e56aa2f52993e0cb/appmesh-0.8.5-py3-none-any.whl
+[2024-04-22 06:38:54] INFO root fetch - processPackages [ehdg-tools]: New version: [4.2.2] Old Version: [4.2.1]
+[2024-04-22 06:38:54] INFO root fetch - processPackages [cs.tagset]: Downloading https://files.pythonhosted.org/packages/39/19/ee200c5a35e6384e35e9cb2d0874914143760f0022aa0520ca46abf92581/cs.tagset-20240316.tar.gz
+[2024-04-22 06:38:55] INFO root fetch - processPackages [ehdg-tools]: Downloading https://files.pythonhosted.org/packages/bd/46/4b2350599e47c06b7147adaa4d07206cf0fc17006fb0f0b34464da982b42/ehdg_tools-4.2.1.tar.gz
+[2024-04-22 06:38:55] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/e5/15/2a612beec390ca568f49b25d1713b2ec3082e50b9cabaa9fd4863e14ac0e/appmesh-0.8.6-py3-none-any.whl
+[2024-04-22 06:38:55] INFO root fetch - processPackages [cs.tagset]: Downloading https://files.pythonhosted.org/packages/03/a3/adeb9f961764a5a64589e00c13919611b427168e3386e748e2cae5960e8b/cs.tagset-20240422.tar.gz
+[2024-04-22 06:38:55] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/cc/fa/f1c4723743720f981f6126a56ad5fd9404ea007e18519523af8f4ff65c55/datable_ai-0.0.5.tar.gz
+[2024-04-22 06:38:55] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2024-04-22 06:38:55] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-0.8.5-py3-none-any.whl.zip tmp/appmesh-0.8.6-py3-none-any.whl.zip --markdown 20240422/a/appmesh/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-04-22 06:38:55] INFO root fetch - processPackages [cs.tagset]: executing diffoscope
+[2024-04-22 06:38:55] INFO root fetch - processPackages [cs.tagset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.tagset-20240316.tar.gz tmp/cs.tagset-20240422.tar.gz --markdown 20240422/c/cs.tagset/20240316-20240422/README.md --exclude *.pyd
+[2024-04-22 06:38:55] INFO root fetch - processPackages [datable-ai]: executing diffoscope
+[2024-04-22 06:38:55] INFO root fetch - processPackages [datable-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datable_ai-0.0.4.tar.gz tmp/datable_ai-0.0.5.tar.gz --markdown 20240422/d/datable-ai/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 06:38:55] INFO root fetch - processPackages [ehdg-tools]: Downloading https://files.pythonhosted.org/packages/0a/f4/f26b15201a48e5c99dd079dbc98cc3d75ed378849f6402b05fd4e571e475/ehdg_tools-4.2.2.tar.gz
+[2024-04-22 06:38:55] INFO root fetch - processPackages [ehdg-tools]: executing diffoscope
+[2024-04-22 06:38:55] INFO root fetch - processPackages [ehdg-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdg_tools-4.2.1.tar.gz tmp/ehdg_tools-4.2.2.tar.gz --markdown 20240422/e/ehdg-tools/4.2.1-4.2.2/README.md --exclude *.pyd
+[2024-04-22 06:38:55] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.4.tar.gz]
+[2024-04-22 06:38:55] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.5.tar.gz]
+[2024-04-22 06:38:55] INFO root fetch - main [MainThread]: End processing [datable-ai]: success
+[2024-04-22 06:38:55] INFO root fetch - processPackages [cs.tagset]: Remove: archive file [/home/abi/fetcher/tmp/cs.tagset-20240316.tar.gz]
+[2024-04-22 06:38:55] INFO root fetch - processPackages [cs.tagset]: Remove: archive file [/home/abi/fetcher/tmp/cs.tagset-20240422.tar.gz]
+[2024-04-22 06:38:55] INFO root fetch - main [MainThread]: End processing [cs.tagset]: success
+[2024-04-22 06:38:56] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-0.8.5-py3-none-any.whl.zip]
+[2024-04-22 06:38:56] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-0.8.6-py3-none-any.whl.zip]
+[2024-04-22 06:38:56] INFO root fetch - main [MainThread]: End processing [appmesh]: success
+[2024-04-22 06:38:56] INFO root fetch - processPackages [ehdg-tools]: Remove: archive file [/home/abi/fetcher/tmp/ehdg_tools-4.2.1.tar.gz]
+[2024-04-22 06:38:56] INFO root fetch - processPackages [ehdg-tools]: Remove: archive file [/home/abi/fetcher/tmp/ehdg_tools-4.2.2.tar.gz]
+[2024-04-22 06:38:56] INFO root fetch - main [MainThread]: End processing [ehdg-tools]: success
+[2024-04-22 06:38:56] INFO root fetch - main [MainThread]: Store serial: [22871979]
