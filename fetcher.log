@@ -4077,3 +4077,20 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:22:59] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.0.dev2024042103.tar.gz]
 [2024-04-22 05:22:59] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-22 05:22:59] INFO root fetch - main [MainThread]: Store serial: [22871703]
+[2024-04-22 05:25:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871703]
+[2024-04-22 05:25:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 05:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Jvav
+[2024-04-22 05:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tilearn-infer
+[2024-04-22 05:25:08] INFO root fetch - processPackages [tilearn-infer]: New version: [0.3.3] Old Version: [0.3.1]
+[2024-04-22 05:25:08] INFO root fetch - processPackages [Jvav]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-22 05:25:08] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/6f/a6/8b0084085b79b99ad1139916cacd01689193bb4e0ff23625ed3b05b680c8/Jvav-1.8.0.tar.gz
+[2024-04-22 05:25:08] INFO root fetch - processPackages [tilearn-infer]: Downloading https://files.pythonhosted.org/packages/45/f5/7443c6b880bcacff014c2072bdb9514acd0a353f6efdaa4bdc24c00f7468/tilearn_infer-0.3.1-py3-none-any.whl
+[2024-04-22 05:25:09] WARNING root fetch - processPackages [tilearn-infer]: Skipping package: exceeds size limit 16395750>=10485760
+[2024-04-22 05:25:09] INFO root fetch - main [MainThread]: End processing [tilearn-infer] error
+[2024-04-22 05:25:09] INFO root fetch - processPackages [Jvav]: Downloading https://files.pythonhosted.org/packages/f2/72/dc5eb7d9040865deaefd087fcfe0288e9827d5a5a7da591de3674f6ee82d/Jvav-1.9.0.tar.gz
+[2024-04-22 05:25:09] INFO root fetch - processPackages [Jvav]: executing diffoscope
+[2024-04-22 05:25:09] INFO root fetch - processPackages [Jvav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jvav-1.8.0.tar.gz tmp/Jvav-1.9.0.tar.gz --markdown 20240422/J/Jvav/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-22 05:25:09] INFO root fetch - processPackages [Jvav]: Remove: archive file [/home/abi/fetcher/tmp/Jvav-1.8.0.tar.gz]
+[2024-04-22 05:25:09] INFO root fetch - processPackages [Jvav]: Remove: archive file [/home/abi/fetcher/tmp/Jvav-1.9.0.tar.gz]
+[2024-04-22 05:25:09] INFO root fetch - main [MainThread]: End processing [Jvav]: success
+[2024-04-22 05:25:09] INFO root fetch - main [MainThread]: Store serial: [22871708]
