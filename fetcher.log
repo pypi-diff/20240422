@@ -3016,3 +3016,57 @@
 [2024-04-22 04:18:57] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz]
 [2024-04-22 04:18:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-orangejuice]: success
 [2024-04-22 04:18:57] INFO root fetch - main [MainThread]: Store serial: [22871223]
+[2024-04-22 04:21:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871223]
+[2024-04-22 04:21:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 04:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-protobuf
+[2024-04-22 04:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-tensorflow
+[2024-04-22 04:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-foreign-fields
+[2024-04-22 04:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlx-exec
+[2024-04-22 04:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: backupfolders
+[2024-04-22 04:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: typedmongo
+[2024-04-22 04:21:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sqlx-orm
+[2024-04-22 04:21:05] INFO root fetch - processPackages [sqlx-exec]: New version: [2.3.6] Old Version: [2.3.5]
+[2024-04-22 04:21:05] WARNING root fetch - processPackages [backupfolders]: Skipping, unable to determine old version
+[2024-04-22 04:21:05] INFO root fetch - main [MainThread]: End processing [backupfolders] error
+[2024-04-22 04:21:05] INFO root fetch - processPackages [sqlx-orm]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-22 04:21:06] WARNING root fetch - processPackages [typedmongo]: Skipping, unable to determine old version
+[2024-04-22 04:21:06] INFO root fetch - main [MainThread]: End processing [typedmongo] error
+[2024-04-22 04:21:06] INFO root fetch - processPackages [django-foreign-fields]: New version: [0.3.2] Old Version: [0.1]
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-tensorflow]: New version: [2.15.0.20240422] Old Version: [2.15.0.20240417]
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-protobuf]: New version: [5.26.0.20240422] Old Version: [5.26.0.20240420]
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-exec]: Downloading https://files.pythonhosted.org/packages/9f/96/f4ebf0ab6486507a640df429ee2603942f294a13e1e7b78b7349e7f741e0/sqlx-exec-2.3.5.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-orm]: Downloading https://files.pythonhosted.org/packages/d5/be/23726251bc86a97a73d7f7c817e6abab6df01de38d0b62de0b84fdb93e85/sqlx-orm-0.0.3.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [django-foreign-fields]: Downloading https://files.pythonhosted.org/packages/3f/fa/c4e544c26de406eb0c306f0d04a8dffce3c1a38ddb0ae46b5eca573583d6/django-foreign-fields-0.1.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-protobuf]: Downloading https://files.pythonhosted.org/packages/a5/5a/93252c3a305b993256881e907a71a21c628cbc9620a09e5dc5c119cc6f1f/types-protobuf-5.26.0.20240420.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-tensorflow]: Downloading https://files.pythonhosted.org/packages/37/2d/d058ebda474ec6a50501280e7ebd2113f15065af9233263a19c17fe59c62/types-tensorflow-2.15.0.20240417.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-orm]: Downloading https://files.pythonhosted.org/packages/27/65/84f16f6405d5f6e685328e861bed353eebb5ec030a73ef3731488e507c95/sqlx-orm-0.0.5.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-exec]: Downloading https://files.pythonhosted.org/packages/36/9c/6b0ce1b95a45ecfff73e987c4a713d30f9fe92ee3d63e39a4a401b5aacf0/sqlx-exec-2.3.6.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-orm]: executing diffoscope
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlx-orm-0.0.3.tar.gz tmp/sqlx-orm-0.0.5.tar.gz --markdown 20240422/s/sqlx-orm/0.0.3-0.0.5/README.md --exclude *.pyd
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-exec]: executing diffoscope
+[2024-04-22 04:21:06] INFO root fetch - processPackages [sqlx-exec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlx-exec-2.3.5.tar.gz tmp/sqlx-exec-2.3.6.tar.gz --markdown 20240422/s/sqlx-exec/2.3.5-2.3.6/README.md --exclude *.pyd
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-protobuf]: Downloading https://files.pythonhosted.org/packages/1e/8d/c39658f5b49ead959070694a130c7e7f058b86c072eac589639304e06ebf/types-protobuf-5.26.0.20240422.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-tensorflow]: Downloading https://files.pythonhosted.org/packages/16/92/1bf3ee64d10ae25849d6e2f6c7740bc075ebb7146762f67a45a01a25d981/types-tensorflow-2.15.0.20240422.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [django-foreign-fields]: Downloading https://files.pythonhosted.org/packages/5c/97/c43722d02472b17897451bee424844f123a4b57265946aaa42c4d19e439d/django_foreign_fields-0.3.2.tar.gz
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-protobuf]: executing diffoscope
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-protobuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-protobuf-5.26.0.20240420.tar.gz tmp/types-protobuf-5.26.0.20240422.tar.gz --markdown 20240422/t/types-protobuf/5.26.0.20240420-5.26.0.20240422/README.md --exclude *.pyd
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-tensorflow]: executing diffoscope
+[2024-04-22 04:21:06] INFO root fetch - processPackages [types-tensorflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-tensorflow-2.15.0.20240417.tar.gz tmp/types-tensorflow-2.15.0.20240422.tar.gz --markdown 20240422/t/types-tensorflow/2.15.0.20240417-2.15.0.20240422/README.md --exclude *.pyd
+[2024-04-22 04:21:06] INFO root fetch - processPackages [django-foreign-fields]: executing diffoscope
+[2024-04-22 04:21:06] INFO root fetch - processPackages [django-foreign-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-foreign-fields-0.1.tar.gz tmp/django_foreign_fields-0.3.2.tar.gz --markdown 20240422/d/django-foreign-fields/0.1-0.3.2/README.md --exclude *.pyd
+[2024-04-22 04:21:07] INFO root fetch - processPackages [sqlx-orm]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-orm-0.0.3.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - processPackages [sqlx-orm]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-orm-0.0.5.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - main [MainThread]: End processing [sqlx-orm]: success
+[2024-04-22 04:21:07] INFO root fetch - processPackages [sqlx-exec]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-exec-2.3.5.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - processPackages [sqlx-exec]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-exec-2.3.6.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - main [MainThread]: End processing [sqlx-exec]: success
+[2024-04-22 04:21:07] INFO root fetch - processPackages [types-protobuf]: Remove: archive file [/home/abi/fetcher/tmp/types-protobuf-5.26.0.20240420.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - processPackages [types-protobuf]: Remove: archive file [/home/abi/fetcher/tmp/types-protobuf-5.26.0.20240422.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - main [MainThread]: End processing [types-protobuf]: success
+[2024-04-22 04:21:07] INFO root fetch - processPackages [django-foreign-fields]: Remove: archive file [/home/abi/fetcher/tmp/django-foreign-fields-0.1.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - processPackages [django-foreign-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_foreign_fields-0.3.2.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - main [MainThread]: End processing [django-foreign-fields]: success
+[2024-04-22 04:21:07] INFO root fetch - processPackages [types-tensorflow]: Remove: archive file [/home/abi/fetcher/tmp/types-tensorflow-2.15.0.20240417.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - processPackages [types-tensorflow]: Remove: archive file [/home/abi/fetcher/tmp/types-tensorflow-2.15.0.20240422.tar.gz]
+[2024-04-22 04:21:07] INFO root fetch - main [MainThread]: End processing [types-tensorflow]: success
+[2024-04-22 04:21:07] INFO root fetch - main [MainThread]: Store serial: [22871243]
