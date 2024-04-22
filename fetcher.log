@@ -9761,3 +9761,119 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:05:04] INFO root fetch - processPackages [mediawiki-langcodes]: Remove: archive file [/home/abi/fetcher/tmp/mediawiki_langcodes-0.2.5.tar.gz]
 [2024-04-22 11:05:04] INFO root fetch - main [MainThread]: End processing [mediawiki-langcodes]: success
 [2024-04-22 11:05:04] INFO root fetch - main [MainThread]: Store serial: [22874435]
+[2024-04-22 11:07:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874435]
+[2024-04-22 11:07:14] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.tabular
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.multimodal
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extractstructuresMC
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-priming
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autogluon.timeseries
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pygpt-net
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hyfi-fetcher
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-22 11:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nonebot-plugin-helpwithpic
+[2024-04-22 11:07:14] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: New version: [1.3.1] Old Version: [1.2.1]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.tabular]: New version: [1.1.1b20240421] Old Version: [1.1.1b20240420]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240421] Old Version: [1.1.1b20240420]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.multimodal]: New version: [1.1.1b20240421] Old Version: [1.1.1b20240420]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [extractstructuresMC]: New version: [1.0.0.1] Old Version: [1.0.0.0]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.timeseries]: New version: [1.1.1b20240421] Old Version: [1.1.1b20240420]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [hyfi-fetcher]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/e7/df/fc04d8fa426590c4c56bcd0091d84219c041c82a235c1432cb0c9f03aad4/autogluon.tabular-1.1.1b20240420.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Downloading https://files.pythonhosted.org/packages/3f/22/934d289ad350a8a6ce13dbaad3ca7f6e497e6dce473f4da13a11c8f5a001/nonebot-plugin-HelpWithPic-1.2.1.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/95/8d/3d77520fb993624e058c4e8161081a44fa2ed059c377b6e233e670a9d6f7/autogluon-1.1.1b20240420.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/c8/d7/4f6938e560af4a0a7c0206cf995bf48d40eac6f1724e50c8377144a5ade0/autogluon.multimodal-1.1.1b20240420.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/e6/34/af25af65d9e227f02e8b1894dcf8d9b3e436669522b51617de46a000d1d6/autogluon.timeseries-1.1.1b20240420.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a5/de/e40709b6067cd6a2fe2ce05bb561b0d9d4c91f6cd91f7b3c4bd151d18a9b/pygpt_net-2.1.8.tar.gz
+[2024-04-22 11:07:15] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-22 11:07:15] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Start processing: pulumi-aws-native
+[2024-04-22 11:07:15] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-22 11:07:15] INFO root fetch - processPackages [extractstructuresMC]: Downloading https://files.pythonhosted.org/packages/2d/ac/fce5c56298d7c49b5dc40baab514e8c7f74bb69693da3205324969da7f69/extractstructuresMC-1.0.0.0.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [hyfi-fetcher]: Downloading https://files.pythonhosted.org/packages/63/e2/e2b4839032c7f223dd033f61c1e18a9e15fa1a4c967065d4747d4e744bd6/hyfi_fetcher-0.2.0.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [pulumi-aws-native]: New version: [0.99.1a1711556734] Old Version: [0.99.1a1711140610]
+[2024-04-22 11:07:15] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Downloading https://files.pythonhosted.org/packages/91/44/e0dd6d610f3d6f6c2503da1049dbf206107a15583008b891281129186407/nonebot_plugin_helpwithpic-1.3.1.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/2b/6b/d2dc85ad3464ccf6edd7e5f72d17853f22fb663303261edbdbfcd0b7cb82/autogluon.tabular-1.1.1b20240421.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-04-22 11:07:15] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: executing diffoscope
+[2024-04-22 11:07:15] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-HelpWithPic-1.2.1.tar.gz tmp/nonebot_plugin_helpwithpic-1.3.1.tar.gz --markdown 20240422/n/nonebot-plugin-helpwithpic/1.2.1-1.3.1/README.md --exclude *.pyd
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/24/ba/e8543c6c14d3ad9df1936c69fa6a43959f88fd1a5e391335b0e2e4d8e946/autogluon-1.1.1b20240421.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/a2/71/35dd4652e81e5a3c1e60345045f5ee80b3a5dfbb982284b85f3d3c9483e5/autogluon.timeseries-1.1.1b20240421.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/c4/d5/76173e67728a011e2fd48918324dc4641e44c85b57d7c8cdc166db70a7af/autogluon.multimodal-1.1.1b20240421.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [pulumi-aws-native]: Downloading https://files.pythonhosted.org/packages/19/c7/d03ea0c1414fd20fb080e9a3bd37d113e50575a061fa505b7748f059ce83/pulumi_aws_native-0.99.1a1711140610.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [hyfi-fetcher]: Downloading https://files.pythonhosted.org/packages/ff/1b/01573256950fbd270d6c2edad0b468874d950a8c19c8a60118654270ae22/hyfi_fetcher-0.2.1.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-1.1.1b20240420.tar.gz tmp/autogluon.tabular-1.1.1b20240421.tar.gz --markdown 20240422/a/autogluon.tabular/1.1.1b20240420-1.1.1b20240421/README.md --exclude *.pyd
+[2024-04-22 11:07:15] INFO root fetch - processPackages [extractstructuresMC]: Downloading https://files.pythonhosted.org/packages/25/ff/60e82db734565a450aa2e50b1f5e599586a4531fa7ffa6a94c31ebc45eda/extractstructuresMC-1.0.0.1.tar.gz
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240420.tar.gz tmp/autogluon-1.1.1b20240421.tar.gz --markdown 20240422/a/autogluon/1.1.1b20240420-1.1.1b20240421/README.md --exclude *.pyd
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-1.1.1b20240420.tar.gz tmp/autogluon.timeseries-1.1.1b20240421.tar.gz --markdown 20240422/a/autogluon.timeseries/1.1.1b20240420-1.1.1b20240421/README.md --exclude *.pyd
+[2024-04-22 11:07:15] INFO root fetch - processPackages [hyfi-fetcher]: executing diffoscope
+[2024-04-22 11:07:15] INFO root fetch - processPackages [hyfi-fetcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyfi_fetcher-0.2.0.tar.gz tmp/hyfi_fetcher-0.2.1.tar.gz --markdown 20240422/h/hyfi-fetcher/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2024-04-22 11:07:15] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-1.1.1b20240420.tar.gz tmp/autogluon.multimodal-1.1.1b20240421.tar.gz --markdown 20240422/a/autogluon.multimodal/1.1.1b20240420-1.1.1b20240421/README.md --exclude *.pyd
+[2024-04-22 11:07:16] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-22 11:07:16] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.8.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240422/p/pygpt-net/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-22 11:07:16] INFO root fetch - processPackages [extractstructuresMC]: executing diffoscope
+[2024-04-22 11:07:16] INFO root fetch - processPackages [extractstructuresMC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extractstructuresMC-1.0.0.0.tar.gz tmp/extractstructuresMC-1.0.0.1.tar.gz --markdown 20240422/e/extractstructuresMC/1.0.0.0-1.0.0.1/README.md --exclude *.pyd
+[2024-04-22 11:07:16] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-HelpWithPic-1.2.1.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_helpwithpic-1.3.1.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - processPackages [nonebot-plugin-helpwithpic]: Start processing: pyastroweatherio
+[2024-04-22 11:07:16] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-helpwithpic]: success
+[2024-04-22 11:07:16] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.43.1.dev5] Old Version: [0.43.1.dev4]
+[2024-04-22 11:07:16] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-04-22 11:07:16] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/be/75/232fad8210a735d36b8df9665c65b5ffa1c05afbc8f01de368dfb524f8a9/pyastroweatherio-0.43.1.dev4.tar.gz
+[2024-04-22 11:07:16] INFO root fetch - processPackages [hyfi-fetcher]: Remove: archive file [/home/abi/fetcher/tmp/hyfi_fetcher-0.2.0.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - processPackages [hyfi-fetcher]: Remove: archive file [/home/abi/fetcher/tmp/hyfi_fetcher-0.2.1.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - processPackages [hyfi-fetcher]: Start processing: pyboy
+[2024-04-22 11:07:16] INFO root fetch - main [MainThread]: End processing [hyfi-fetcher]: success
+[2024-04-22 11:07:16] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240420.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240421.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-04-22 11:07:16] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240420.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240421.tar.gz]
+[2024-04-22 11:07:16] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/04/44/df4ce74613a1e5dc3cdbffa4436eaf46159de4dd45db47fc4b3cca9c9efb/pyastroweatherio-0.43.1.dev5.tar.gz
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyboy]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pulumi-aws-native]: Downloading https://files.pythonhosted.org/packages/d0/0e/7e16c6b89142943493d6c6bd57d07580a6118b74b519c157fd40acdf71b7/pulumi_aws_native-0.99.1a1711556734.tar.gz
+[2024-04-22 11:07:17] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240420.tar.gz]
+[2024-04-22 11:07:17] INFO root fetch - processPackages [autogluon.tabular]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.tabular-1.1.1b20240421.tar.gz]
+[2024-04-22 11:07:17] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2024-04-22 11:07:17] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-04-22 11:07:17] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240422/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev4.tar.gz tmp/pyastroweatherio-0.43.1.dev5.tar.gz --markdown 20240422/p/pyastroweatherio/0.43.1.dev4-0.43.1.dev5/README.md --exclude *.pyd
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyboy]: Downloading https://files.pythonhosted.org/packages/67/1e/55d6b3681d353436971cf7a55d5d0e39e8d18c8138f417f2cf43048fcc9f/pyboy-2.0.2.tar.gz
+[2024-04-22 11:07:17] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240420.tar.gz]
+[2024-04-22 11:07:17] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240421.tar.gz]
+[2024-04-22 11:07:17] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pulumi-aws-native]: executing diffoscope
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pulumi-aws-native]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws_native-0.99.1a1711140610.tar.gz tmp/pulumi_aws_native-0.99.1a1711556734.tar.gz --markdown 20240422/p/pulumi-aws-native/0.99.1a1711140610-0.99.1a1711556734/README.md --exclude *.pyd
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyboy]: Downloading https://files.pythonhosted.org/packages/ee/61/a34bcfabe7746accc340d2e0f1fd607eb42466ea1f7ad9ace2b6956561a8/pyboy-2.0.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev4.tar.gz]
+[2024-04-22 11:07:17] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev5.tar.gz]
+[2024-04-22 11:07:17] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-22 11:07:18] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-04-22 11:07:18] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-04-22 11:07:18] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-04-22 11:07:18] INFO root fetch - processPackages [pyboy]: executing diffoscope
+[2024-04-22 11:07:18] INFO root fetch - processPackages [pyboy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyboy-2.0.2.tar.gz tmp/pyboy-2.0.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.zip --markdown 20240422/p/pyboy/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-04-22 11:07:19] INFO root fetch - processPackages [pyboy]: Remove: archive file [/home/abi/fetcher/tmp/pyboy-2.0.2.tar.gz]
+[2024-04-22 11:07:19] INFO root fetch - processPackages [pyboy]: Remove: archive file [/home/abi/fetcher/tmp/pyboy-2.0.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.zip]
+[2024-04-22 11:07:19] INFO root fetch - main [MainThread]: End processing [pyboy]: success
+[2024-04-22 11:07:19] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.8.tar.gz]
+[2024-04-22 11:07:19] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-22 11:07:19] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-22 11:07:20] INFO root fetch - processPackages [extractstructuresMC]: Remove: archive file [/home/abi/fetcher/tmp/extractstructuresMC-1.0.0.0.tar.gz]
+[2024-04-22 11:07:20] INFO root fetch - processPackages [extractstructuresMC]: Remove: archive file [/home/abi/fetcher/tmp/extractstructuresMC-1.0.0.1.tar.gz]
+[2024-04-22 11:07:20] INFO root fetch - main [MainThread]: End processing [extractstructuresMC]: success
+[2024-04-22 11:07:32] INFO root fetch - processPackages [pulumi-aws-native]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws_native-0.99.1a1711140610.tar.gz]
+[2024-04-22 11:07:32] INFO root fetch - processPackages [pulumi-aws-native]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws_native-0.99.1a1711556734.tar.gz]
+[2024-04-22 11:07:32] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
+[2024-04-22 11:07:32] INFO root fetch - main [MainThread]: Store serial: [22874488]
