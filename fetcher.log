@@ -3816,3 +3816,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:00:50] INFO root fetch - processPackages [cs.tagset]: Remove: archive file [/home/abi/fetcher/tmp/cs.tagset-20240422.tar.gz]
 [2024-04-22 05:00:50] INFO root fetch - main [MainThread]: End processing [cs.tagset]: success
 [2024-04-22 05:00:50] INFO root fetch - main [MainThread]: Store serial: [22871554]
+[2024-04-22 05:02:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871554]
+[2024-04-22 05:02:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 05:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quickremember
+[2024-04-22 05:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xiaoranli
+[2024-04-22 05:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ziya
+[2024-04-22 05:02:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GS-Edit
+[2024-04-22 05:02:58] WARNING root fetch - processPackages [quickremember]: Skipping, unable to determine old version
+[2024-04-22 05:02:58] INFO root fetch - main [MainThread]: End processing [quickremember] error
+[2024-04-22 05:02:58] WARNING root fetch - processPackages [GS-Edit]: Skipping, unable to determine old version
+[2024-04-22 05:02:58] INFO root fetch - main [MainThread]: End processing [GS-Edit] error
+[2024-04-22 05:02:58] INFO root fetch - processPackages [xiaoranli]: New version: [0.7.8] Old Version: [0.7.35]
+[2024-04-22 05:02:58] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/c4/65/5ddf5bb177797f7dce5adb596ba84616bac6b85cf3bd6a9a5ee369771c17/xiaoranli-0.7.35-py3-none-any.whl
+[2024-04-22 05:02:58] WARNING root fetch - processPackages [ziya]: Skipping, unable to determine old version
+[2024-04-22 05:02:58] INFO root fetch - main [MainThread]: End processing [ziya] error
+[2024-04-22 05:02:59] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/e9/5b/e43b6250e9f8891fffdc1165cb4f968bb072984d6dfa0c333957416e2092/xiaoranli-0.7.8-py3-none-any.whl
+[2024-04-22 05:02:59] INFO root fetch - processPackages [xiaoranli]: executing diffoscope
+[2024-04-22 05:02:59] INFO root fetch - processPackages [xiaoranli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaoranli-0.7.35-py3-none-any.whl.zip tmp/xiaoranli-0.7.8-py3-none-any.whl.zip --markdown 20240422/x/xiaoranli/0.7.35-0.7.8/README.md --exclude *.pyd
+[2024-04-22 05:03:00] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.35-py3-none-any.whl.zip]
+[2024-04-22 05:03:00] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.8-py3-none-any.whl.zip]
+[2024-04-22 05:03:00] INFO root fetch - main [MainThread]: End processing [xiaoranli]: success
+[2024-04-22 05:03:00] INFO root fetch - main [MainThread]: Store serial: [22871563]
