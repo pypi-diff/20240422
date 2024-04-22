@@ -3626,3 +3626,73 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 04:52:08] INFO root fetch - processPackages [cs.fs]: Remove: archive file [/home/abi/fetcher/tmp/cs.fs-20240422.tar.gz]
 [2024-04-22 04:52:08] INFO root fetch - main [MainThread]: End processing [cs.fs]: success
 [2024-04-22 04:52:08] INFO root fetch - main [MainThread]: Store serial: [22871424]
+[2024-04-22 04:54:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871424]
+[2024-04-22 04:54:18] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hebill
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testpkg5_ftcao
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs.resources
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hebill
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quickremember
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gismath
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cs.py.doc
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tinysoundfont
+[2024-04-22 04:54:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: SpiderKidSDK
+[2024-04-22 04:54:18] INFO root fetch - processPackages [SpiderKidSDK]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: New version: [1.2.1] Old Version: [1.2.0a2]
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: New version: [1.2.1] Old Version: [1.2.0a2]
+[2024-04-22 04:54:18] INFO root fetch - processPackages [gismath]: New version: [0.0.27] Old Version: [0.0.26]
+[2024-04-22 04:54:18] INFO root fetch - processPackages [cs.py.doc]: New version: [20240422] Old Version: [20240412]
+[2024-04-22 04:54:18] INFO root fetch - processPackages [SpiderKidSDK]: Downloading https://files.pythonhosted.org/packages/8a/c8/3fe69fbc03a73eb679d9102b3cc28876c2a2ba260e1f7a86ce7bdca90a94/SpiderKidSDK-0.0.1.tar.gz
+[2024-04-22 04:54:18] WARNING root fetch - processPackages [quickremember]: Skipping, unable to determine old version
+[2024-04-22 04:54:18] INFO root fetch - main [MainThread]: End processing [quickremember] error
+[2024-04-22 04:54:18] WARNING root fetch - processPackages [testpkg5_ftcao]: Skipping, unable to determine old version
+[2024-04-22 04:54:18] INFO root fetch - main [MainThread]: End processing [testpkg5_ftcao] error
+[2024-04-22 04:54:18] INFO root fetch - processPackages [cs.resources]: New version: [20240422] Old Version: [20240412]
+[2024-04-22 04:54:18] INFO root fetch - processPackages [tinysoundfont]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/2b/db/1c7d2a211f9fc0b07a4d7e571febf699cef92ac98d4cde6689af6a6c989e/hebill-1.2.0a2.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/2b/db/1c7d2a211f9fc0b07a4d7e571febf699cef92ac98d4cde6689af6a6c989e/hebill-1.2.0a2.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [cs.py.doc]: Downloading https://files.pythonhosted.org/packages/a0/fd/27f1e81343ad475111d7570d4bcf2decd3f8818a8779e3ad4d5474deb6a5/cs.py.doc-20240412.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [SpiderKidSDK]: Downloading https://files.pythonhosted.org/packages/17/20/2e44afd796a27ca223f027a67ecab64ff9578b8d148513fc8302722072ec/SpiderKidSDK-0.0.2.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [gismath]: Downloading https://files.pythonhosted.org/packages/b7/e3/f992669809ba57fd2342af1f53f4d480e6cf6e7647da8593e03929cd8ade/gismath-0.0.26-cp311-cp311-win_amd64.whl
+[2024-04-22 04:54:18] INFO root fetch - processPackages [cs.resources]: Downloading https://files.pythonhosted.org/packages/93/b2/3634475bc7586fa113e0a55e213a1e8b4066699a5b4485d7c459c8528221/cs.resources-20240412.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [tinysoundfont]: Downloading https://files.pythonhosted.org/packages/7d/88/d8946587678ccaab847e92ea6e718043e47a66984d826ef755bb16cf2c3a/tinysoundfont-0.3.4.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [SpiderKidSDK]: executing diffoscope
+[2024-04-22 04:54:18] INFO root fetch - processPackages [SpiderKidSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SpiderKidSDK-0.0.1.tar.gz tmp/SpiderKidSDK-0.0.2.tar.gz --markdown 20240422/S/SpiderKidSDK/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/0e/1e/6ef7769184a3c3eecd5423469ac36cc49b267f6b690feb466b26b0add0e8/hebill-1.2.1.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: Downloading https://files.pythonhosted.org/packages/0e/1e/6ef7769184a3c3eecd5423469ac36cc49b267f6b690feb466b26b0add0e8/hebill-1.2.1.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [cs.py.doc]: Downloading https://files.pythonhosted.org/packages/40/55/92bf3ab1e8ccaac9b1389862050a71bbf189263a317fade2d98a8ba554d9/cs.py.doc-20240422.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [cs.resources]: Downloading https://files.pythonhosted.org/packages/20/19/602eb3773941f6791032ee612b802b39073fa233293b898867771757641a/cs.resources-20240422.tar.gz
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: executing diffoscope
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hebill-1.2.0a2.tar.gz tmp/hebill-1.2.1.tar.gz --markdown 20240422/h/hebill/1.2.0a2-1.2.1/README.md --exclude *.pyd
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: executing diffoscope
+[2024-04-22 04:54:18] INFO root fetch - processPackages [hebill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hebill-1.2.0a2.tar.gz tmp/hebill-1.2.1.tar.gz --markdown 20240422/h/hebill/1.2.0a2-1.2.1/README.md --exclude *.pyd
+[2024-04-22 04:54:19] INFO root fetch - processPackages [gismath]: Downloading https://files.pythonhosted.org/packages/ad/da/7a1cc9fba9718aeadae545612464493b8b045fa639bce3a5769df636d9ca/gismath-0.0.27-cp311-cp311-win_amd64.whl
+[2024-04-22 04:54:19] INFO root fetch - processPackages [tinysoundfont]: Downloading https://files.pythonhosted.org/packages/44/84/0ea2cbc7fade2279c87cf7a3195416716b0ff9b01fb86713ca8fa9bf8f07/tinysoundfont-0.3.5-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.resources]: executing diffoscope
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.resources]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.resources-20240412.tar.gz tmp/cs.resources-20240422.tar.gz --markdown 20240422/c/cs.resources/20240412-20240422/README.md --exclude *.pyd
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.py.doc]: executing diffoscope
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.py.doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.py.doc-20240412.tar.gz tmp/cs.py.doc-20240422.tar.gz --markdown 20240422/c/cs.py.doc/20240412-20240422/README.md --exclude *.pyd
+[2024-04-22 04:54:19] INFO root fetch - processPackages [gismath]: executing diffoscope
+[2024-04-22 04:54:19] INFO root fetch - processPackages [gismath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gismath-0.0.26-cp311-cp311-win_amd64.whl.zip tmp/gismath-0.0.27-cp311-cp311-win_amd64.whl.zip --markdown 20240422/g/gismath/0.0.26-0.0.27/README.md --exclude *.pyd
+[2024-04-22 04:54:19] INFO root fetch - processPackages [SpiderKidSDK]: Remove: archive file [/home/abi/fetcher/tmp/SpiderKidSDK-0.0.1.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - processPackages [SpiderKidSDK]: Remove: archive file [/home/abi/fetcher/tmp/SpiderKidSDK-0.0.2.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - main [MainThread]: End processing [SpiderKidSDK]: success
+[2024-04-22 04:54:19] INFO root fetch - processPackages [tinysoundfont]: executing diffoscope
+[2024-04-22 04:54:19] INFO root fetch - processPackages [tinysoundfont]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinysoundfont-0.3.4.tar.gz tmp/tinysoundfont-0.3.5-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240422/t/tinysoundfont/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-22 04:54:19] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.0a2.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - processPackages [hebill]: Remove: archive file [/home/abi/fetcher/tmp/hebill-1.2.1.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - main [MainThread]: End processing [hebill]: success
+[2024-04-22 04:54:19] INFO root fetch - main [MainThread]: End processing [hebill]: success
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.resources]: Remove: archive file [/home/abi/fetcher/tmp/cs.resources-20240412.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.resources]: Remove: archive file [/home/abi/fetcher/tmp/cs.resources-20240422.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - main [MainThread]: End processing [cs.resources]: success
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.py.doc]: Remove: archive file [/home/abi/fetcher/tmp/cs.py.doc-20240412.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - processPackages [cs.py.doc]: Remove: archive file [/home/abi/fetcher/tmp/cs.py.doc-20240422.tar.gz]
+[2024-04-22 04:54:19] INFO root fetch - main [MainThread]: End processing [cs.py.doc]: success
+[2024-04-22 04:54:19] INFO root fetch - processPackages [gismath]: Remove: archive file [/home/abi/fetcher/tmp/gismath-0.0.26-cp311-cp311-win_amd64.whl.zip]
+[2024-04-22 04:54:19] INFO root fetch - processPackages [gismath]: Remove: archive file [/home/abi/fetcher/tmp/gismath-0.0.27-cp311-cp311-win_amd64.whl.zip]
+[2024-04-22 04:54:19] INFO root fetch - main [MainThread]: End processing [gismath]: success
+[2024-04-22 04:54:20] INFO root fetch - processPackages [tinysoundfont]: Remove: archive file [/home/abi/fetcher/tmp/tinysoundfont-0.3.4.tar.gz]
+[2024-04-22 04:54:20] INFO root fetch - processPackages [tinysoundfont]: Remove: archive file [/home/abi/fetcher/tmp/tinysoundfont-0.3.5-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-04-22 04:54:20] INFO root fetch - main [MainThread]: End processing [tinysoundfont]: success
+[2024-04-22 04:54:20] INFO root fetch - main [MainThread]: Store serial: [22871459]
