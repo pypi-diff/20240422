@@ -7736,3 +7736,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:27:41] INFO root fetch - processPackages [lixi]: Remove: archive file [/home/abi/fetcher/tmp/lixi-0.9.3.tar.gz]
 [2024-04-22 09:27:41] INFO root fetch - main [MainThread]: End processing [lixi]: success
 [2024-04-22 09:27:41] INFO root fetch - main [MainThread]: Store serial: [22873075]
+[2024-04-22 09:29:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873075]
+[2024-04-22 09:29:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 09:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lockerpm
+[2024-04-22 09:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytdml
+[2024-04-22 09:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neuromorphic-drivers
+[2024-04-22 09:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bitstring
+[2024-04-22 09:29:50] INFO root fetch - processPackages [bitstring]: New version: [4.2.0b2] Old Version: [4.2.0b1]
+[2024-04-22 09:29:50] INFO root fetch - processPackages [lockerpm]: New version: [1.0.1b1] Old Version: [1.0.0]
+[2024-04-22 09:29:50] INFO root fetch - processPackages [neuromorphic-drivers]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-04-22 09:29:50] INFO root fetch - processPackages [pytdml]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-04-22 09:29:50] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/f8/1a/79684489879e309642374f846d29909575130dead8a38e43103737b3102a/bitstring-4.2.0b1.tar.gz
+[2024-04-22 09:29:50] INFO root fetch - processPackages [pytdml]: Downloading https://files.pythonhosted.org/packages/ce/79/6ae652ff5907ff43b665fc0c027ffdeda1209d7130e7fd471aafb7e8e13c/pytdml-1.1.6.tar.gz
+[2024-04-22 09:29:50] INFO root fetch - processPackages [lockerpm]: Downloading https://files.pythonhosted.org/packages/cd/6b/679f2603f371f83e6c670434d202c20d9550707c59fba34262aa28fe73c1/lockerpm-1.0.0.tar.gz
+[2024-04-22 09:29:50] INFO root fetch - processPackages [neuromorphic-drivers]: Downloading https://files.pythonhosted.org/packages/30/1b/222bb946fb3b0904b42301a09e5c5a65ddef7ad00c3b411205c9fe3d0518/neuromorphic_drivers-0.8.3.tar.gz
+[2024-04-22 09:29:51] INFO root fetch - processPackages [lockerpm]: Downloading https://files.pythonhosted.org/packages/70/31/c8747a667df97539be8792f292265505c4665d065fc5057bcb62f08af02e/lockerpm-1.0.1b1.tar.gz
+[2024-04-22 09:29:51] INFO root fetch - processPackages [pytdml]: Downloading https://files.pythonhosted.org/packages/71/49/46769261b911f2270349b4e5e8e5bdaf29d029d9b1b5562a67b52b868a70/pytdml-1.1.7.tar.gz
+[2024-04-22 09:29:51] INFO root fetch - processPackages [bitstring]: Downloading https://files.pythonhosted.org/packages/de/0c/4f9a48f486f1e3bde0e4a6b11e02bf6a4b524fbb1267a3582e58bc7ee611/bitstring-4.2.0b2.tar.gz
+[2024-04-22 09:29:51] INFO root fetch - processPackages [neuromorphic-drivers]: Downloading https://files.pythonhosted.org/packages/16/fd/ca21699a141a7c11b8dc7e8d96ae1d627c1cc41c1d3fb5a05a3df361747c/neuromorphic_drivers-0.9.0.tar.gz
+[2024-04-22 09:29:51] INFO root fetch - processPackages [lockerpm]: executing diffoscope
+[2024-04-22 09:29:51] INFO root fetch - processPackages [lockerpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lockerpm-1.0.0.tar.gz tmp/lockerpm-1.0.1b1.tar.gz --markdown 20240422/l/lockerpm/1.0.0-1.0.1b1/README.md --exclude *.pyd
+[2024-04-22 09:29:51] INFO root fetch - processPackages [pytdml]: executing diffoscope
+[2024-04-22 09:29:51] INFO root fetch - processPackages [pytdml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytdml-1.1.6.tar.gz tmp/pytdml-1.1.7.tar.gz --markdown 20240422/p/pytdml/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-04-22 09:29:51] INFO root fetch - processPackages [neuromorphic-drivers]: executing diffoscope
+[2024-04-22 09:29:51] INFO root fetch - processPackages [neuromorphic-drivers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuromorphic_drivers-0.8.3.tar.gz tmp/neuromorphic_drivers-0.9.0.tar.gz --markdown 20240422/n/neuromorphic-drivers/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-04-22 09:29:51] INFO root fetch - processPackages [bitstring]: executing diffoscope
+[2024-04-22 09:29:51] INFO root fetch - processPackages [bitstring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bitstring-4.2.0b1.tar.gz tmp/bitstring-4.2.0b2.tar.gz --markdown 20240422/b/bitstring/4.2.0b1-4.2.0b2/README.md --exclude *.pyd
+[2024-04-22 09:29:52] INFO root fetch - processPackages [lockerpm]: Remove: archive file [/home/abi/fetcher/tmp/lockerpm-1.0.0.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - processPackages [lockerpm]: Remove: archive file [/home/abi/fetcher/tmp/lockerpm-1.0.1b1.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - main [MainThread]: End processing [lockerpm]: success
+[2024-04-22 09:29:52] INFO root fetch - processPackages [pytdml]: Remove: archive file [/home/abi/fetcher/tmp/pytdml-1.1.6.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - processPackages [pytdml]: Remove: archive file [/home/abi/fetcher/tmp/pytdml-1.1.7.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - main [MainThread]: End processing [pytdml]: success
+[2024-04-22 09:29:52] INFO root fetch - processPackages [neuromorphic-drivers]: Remove: archive file [/home/abi/fetcher/tmp/neuromorphic_drivers-0.8.3.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - processPackages [neuromorphic-drivers]: Remove: archive file [/home/abi/fetcher/tmp/neuromorphic_drivers-0.9.0.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - main [MainThread]: End processing [neuromorphic-drivers]: success
+[2024-04-22 09:29:52] INFO root fetch - processPackages [bitstring]: Remove: archive file [/home/abi/fetcher/tmp/bitstring-4.2.0b1.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - processPackages [bitstring]: Remove: archive file [/home/abi/fetcher/tmp/bitstring-4.2.0b2.tar.gz]
+[2024-04-22 09:29:52] INFO root fetch - main [MainThread]: End processing [bitstring]: success
+[2024-04-22 09:29:52] INFO root fetch - main [MainThread]: Store serial: [22873108]
