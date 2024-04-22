@@ -4203,3 +4203,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:36:01] INFO root fetch - processPackages [pgsqlx]: Remove: archive file [/home/abi/fetcher/tmp/pgsqlx-2.1.4.tar.gz]
 [2024-04-22 05:36:01] INFO root fetch - main [MainThread]: End processing [pgsqlx]: success
 [2024-04-22 05:36:01] INFO root fetch - main [MainThread]: Store serial: [22871747]
+[2024-04-22 05:38:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871747]
+[2024-04-22 05:38:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 05:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-22 05:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlx-orm-generator
+[2024-04-22 05:38:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.20a1713756038] Old Version: [0.0.20a1713755987]
+[2024-04-22 05:38:09] WARNING root fetch - processPackages [sqlx-orm-generator]: Skipping, unable to determine old version
+[2024-04-22 05:38:09] INFO root fetch - main [MainThread]: End processing [sqlx-orm-generator] error
+[2024-04-22 05:38:10] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/50/fb/9ef4ccc6865361e0893c987692991b76274353ac5c6dcd941fbab02bae16/pulumi_kubernetes_the_hard_way-0.0.20a1713755987.tar.gz
+[2024-04-22 05:38:10] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/be/88/d8dd23bad77598fd86b134b5edb0b78158d6cbfdaaab62ea8d25c5c2c777/pulumi_kubernetes_the_hard_way-0.0.20a1713756038.tar.gz
+[2024-04-22 05:38:10] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-22 05:38:10] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.20a1713755987.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.20a1713756038.tar.gz --markdown 20240422/p/pulumi-kubernetes-the-hard-way/0.0.20a1713755987-0.0.20a1713756038/README.md --exclude *.pyd
+[2024-04-22 05:38:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.20a1713755987.tar.gz]
+[2024-04-22 05:38:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.20a1713756038.tar.gz]
+[2024-04-22 05:38:11] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-22 05:38:11] INFO root fetch - main [MainThread]: Store serial: [22871754]
