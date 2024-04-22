@@ -4558,3 +4558,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:15:02] INFO root fetch - processPackages [msg2po]: Remove: archive file [/home/abi/fetcher/tmp/msg2po-1.2.0.tar.gz]
 [2024-04-22 06:15:02] INFO root fetch - main [MainThread]: End processing [msg2po]: success
 [2024-04-22 06:15:02] INFO root fetch - main [MainThread]: Store serial: [22871881]
+[2024-04-22 06:17:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871881]
+[2024-04-22 06:17:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 06:19:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871881]
+[2024-04-22 06:19:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 06:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-sanyao
+[2024-04-22 06:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aioesphomeapi
+[2024-04-22 06:19:17] INFO root fetch - processPackages [nonebot-plugin-sanyao]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-22 06:19:17] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/69/89/0daff58ad801312ad1b1ea673be3ad087f5a9e2094d529d35ce3f935152a/nonebot_plugin_sanyao-0.2.0.tar.gz
+[2024-04-22 06:19:17] INFO root fetch - processPackages [aioesphomeapi]: New version: [9.1.5] Old Version: [9.1.4]
+[2024-04-22 06:19:17] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Downloading https://files.pythonhosted.org/packages/c6/c7/513328865a935b00b115f86ec2b6c3143cb2bafcf4c0a921ae0085827ea8/nonebot_plugin_sanyao-0.2.1.tar.gz
+[2024-04-22 06:19:17] INFO root fetch - processPackages [aioesphomeapi]: Downloading https://files.pythonhosted.org/packages/62/7f/d2cc3b95dfe936bbad8f3956f274147389d6625de031d1105261491bffd9/aioesphomeapi-9.1.4.tar.gz
+[2024-04-22 06:19:17] INFO root fetch - processPackages [nonebot-plugin-sanyao]: executing diffoscope
+[2024-04-22 06:19:17] INFO root fetch - processPackages [nonebot-plugin-sanyao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_sanyao-0.2.0.tar.gz tmp/nonebot_plugin_sanyao-0.2.1.tar.gz --markdown 20240422/n/nonebot-plugin-sanyao/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-22 06:19:17] INFO root fetch - processPackages [aioesphomeapi]: Downloading https://files.pythonhosted.org/packages/95/57/381c894380ec58a8c891a923696dc0d97d7af266921f326f942ec3332685/aioesphomeapi-9.1.5.tar.gz
+[2024-04-22 06:19:18] INFO root fetch - processPackages [aioesphomeapi]: executing diffoscope
+[2024-04-22 06:19:18] INFO root fetch - processPackages [aioesphomeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioesphomeapi-9.1.4.tar.gz tmp/aioesphomeapi-9.1.5.tar.gz --markdown 20240422/a/aioesphomeapi/9.1.4-9.1.5/README.md --exclude *.pyd
+[2024-04-22 06:19:18] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.2.0.tar.gz]
+[2024-04-22 06:19:18] INFO root fetch - processPackages [nonebot-plugin-sanyao]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_sanyao-0.2.1.tar.gz]
+[2024-04-22 06:19:18] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-sanyao]: success
+[2024-04-22 06:19:18] INFO root fetch - processPackages [aioesphomeapi]: Remove: archive file [/home/abi/fetcher/tmp/aioesphomeapi-9.1.4.tar.gz]
+[2024-04-22 06:19:18] INFO root fetch - processPackages [aioesphomeapi]: Remove: archive file [/home/abi/fetcher/tmp/aioesphomeapi-9.1.5.tar.gz]
+[2024-04-22 06:19:18] INFO root fetch - main [MainThread]: End processing [aioesphomeapi]: success
+[2024-04-22 06:19:18] INFO root fetch - main [MainThread]: Store serial: [22871894]
