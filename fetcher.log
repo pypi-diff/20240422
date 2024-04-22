@@ -5535,3 +5535,35 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:24:52] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
 [2024-04-22 07:24:52] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
 [2024-04-22 07:24:52] INFO root fetch - main [MainThread]: Store serial: [22872261]
+[2024-04-22 07:26:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872261]
+[2024-04-22 07:27:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 07:29:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872261]
+[2024-04-22 07:29:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 07:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lambkid
+[2024-04-22 07:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zig-bin
+[2024-04-22 07:29:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quick-yaml
+[2024-04-22 07:29:06] INFO root fetch - processPackages [lambkid]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 07:29:06] INFO root fetch - processPackages [zig-bin]: New version: [0.12.0] Old Version: [0.11.0]
+[2024-04-22 07:29:06] INFO root fetch - processPackages [quick-yaml]: New version: [1.1b1] Old Version: [1.0b1]
+[2024-04-22 07:29:06] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/6a/38/f38847da57bd91482716f8004b4d19347ec9f4743ccba412cf7eef888c49/lambkid-0.1.8.tar.gz
+[2024-04-22 07:29:06] INFO root fetch - processPackages [quick-yaml]: Downloading https://files.pythonhosted.org/packages/7c/c2/2024b058e9a997aa36d21b855649fe252ea0f6cd296c3c9c35983454b368/quick_yaml-1.0b1.tar.gz
+[2024-04-22 07:29:06] INFO root fetch - processPackages [zig-bin]: Downloading https://files.pythonhosted.org/packages/05/60/bffecdc04254892a18ed6882d0b94afac55487587da6c4148a26ff5dd3f4/zig_bin-0.11.0.tar.gz
+[2024-04-22 07:29:07] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/2a/05/3ffb7974db064cbcc79af161bf87417bc66b99e257e16f9f35bc2dfaf41e/lambkid-0.1.9.tar.gz
+[2024-04-22 07:29:07] INFO root fetch - processPackages [quick-yaml]: Downloading https://files.pythonhosted.org/packages/f2/33/a585920534bf9779a5ed44df065f06c2131a85420c0d66052a8b0d1d3847/quick_yaml-1.1b1.tar.gz
+[2024-04-22 07:29:07] INFO root fetch - processPackages [zig-bin]: Downloading https://files.pythonhosted.org/packages/96/a3/019578d66b639441c28b2e3424d05b773ceac8491267d82474aacfb9e964/zig_bin-0.12.0.tar.gz
+[2024-04-22 07:29:07] INFO root fetch - processPackages [lambkid]: executing diffoscope
+[2024-04-22 07:29:07] INFO root fetch - processPackages [lambkid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambkid-0.1.8.tar.gz tmp/lambkid-0.1.9.tar.gz --markdown 20240422/l/lambkid/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 07:29:07] INFO root fetch - processPackages [quick-yaml]: executing diffoscope
+[2024-04-22 07:29:07] INFO root fetch - processPackages [quick-yaml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quick_yaml-1.0b1.tar.gz tmp/quick_yaml-1.1b1.tar.gz --markdown 20240422/q/quick-yaml/1.0b1-1.1b1/README.md --exclude *.pyd
+[2024-04-22 07:29:07] INFO root fetch - processPackages [zig-bin]: executing diffoscope
+[2024-04-22 07:29:07] INFO root fetch - processPackages [zig-bin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zig_bin-0.11.0.tar.gz tmp/zig_bin-0.12.0.tar.gz --markdown 20240422/z/zig-bin/0.11.0-0.12.0/README.md --exclude *.pyd
+[2024-04-22 07:29:07] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.1.8.tar.gz]
+[2024-04-22 07:29:07] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.1.9.tar.gz]
+[2024-04-22 07:29:07] INFO root fetch - main [MainThread]: End processing [lambkid]: success
+[2024-04-22 07:29:08] INFO root fetch - processPackages [quick-yaml]: Remove: archive file [/home/abi/fetcher/tmp/quick_yaml-1.0b1.tar.gz]
+[2024-04-22 07:29:08] INFO root fetch - processPackages [quick-yaml]: Remove: archive file [/home/abi/fetcher/tmp/quick_yaml-1.1b1.tar.gz]
+[2024-04-22 07:29:08] INFO root fetch - main [MainThread]: End processing [quick-yaml]: success
+[2024-04-22 07:29:08] INFO root fetch - processPackages [zig-bin]: Remove: archive file [/home/abi/fetcher/tmp/zig_bin-0.11.0.tar.gz]
+[2024-04-22 07:29:08] INFO root fetch - processPackages [zig-bin]: Remove: archive file [/home/abi/fetcher/tmp/zig_bin-0.12.0.tar.gz]
+[2024-04-22 07:29:08] INFO root fetch - main [MainThread]: End processing [zig-bin]: success
+[2024-04-22 07:29:08] INFO root fetch - main [MainThread]: Store serial: [22872276]
