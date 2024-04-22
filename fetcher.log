@@ -2443,3 +2443,42 @@
 [2024-04-22 03:21:25] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
 [2024-04-22 03:21:25] INFO root fetch - main [MainThread]: End processing [telectron]: success
 [2024-04-22 03:21:25] INFO root fetch - main [MainThread]: Store serial: [22870912]
+[2024-04-22 03:23:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870912]
+[2024-04-22 03:23:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mysqlx
+[2024-04-22 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adafruit-circuitpython-irremote
+[2024-04-22 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adafruit-circuitpython-rsa
+[2024-04-22 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anyon
+[2024-04-22 03:23:34] INFO root fetch - processPackages [mysqlx]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-04-22 03:23:34] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-22 03:23:34] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: New version: [5.0.1] Old Version: [5.0.0]
+[2024-04-22 03:23:34] INFO root fetch - processPackages [anyon]: New version: [4.2.1] Old Version: [4.2.0]
+[2024-04-22 03:23:34] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Downloading https://files.pythonhosted.org/packages/84/c0/f44eeda5f0c831a70dea9d9917070642d11a152150d76c6d457ec66e57bf/adafruit_circuitpython_irremote-5.0.0.tar.gz
+[2024-04-22 03:23:34] INFO root fetch - processPackages [mysqlx]: Downloading https://files.pythonhosted.org/packages/6e/48/28e31ea6340f24d98ab4c189eea3f30722c97c8956a6ad18d2712fa790c0/mysqlx-2.1.3.tar.gz
+[2024-04-22 03:23:34] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: Downloading https://files.pythonhosted.org/packages/bb/66/4f2d86e81c31c061711bc474763f3e0ba4f0336e3293bc3d31814a549e66/adafruit-circuitpython-rsa-1.2.8.tar.gz
+[2024-04-22 03:23:34] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/a6/5f/be8629d49209a3892097efdefec9a7ba991332c1e350e20a519a8171e881/anyon-4.2.0-cp312-none-win_amd64.whl
+[2024-04-22 03:23:34] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Downloading https://files.pythonhosted.org/packages/81/d5/56d7542d02a8b056cbc63384d3b4123cdcc13bb8151b3c6a7175ebd71c53/adafruit_circuitpython_irremote-5.0.1.tar.gz
+[2024-04-22 03:23:34] INFO root fetch - processPackages [mysqlx]: Downloading https://files.pythonhosted.org/packages/47/6a/f4bfb3b15d634fa58c5a087fc4da86f03fbe2f9bc26df407ace99f19d401/mysqlx-2.1.4.tar.gz
+[2024-04-22 03:23:34] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: Downloading https://files.pythonhosted.org/packages/32/1c/75f76b4d99edaad29544698f3453d31674558693228d2a2e2af7bc103956/adafruit-circuitpython-rsa-1.2.9.tar.gz
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: executing diffoscope
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit_circuitpython_irremote-5.0.0.tar.gz tmp/adafruit_circuitpython_irremote-5.0.1.tar.gz --markdown 20240422/a/adafruit-circuitpython-irremote/5.0.0-5.0.1/README.md --exclude *.pyd
+[2024-04-22 03:23:35] INFO root fetch - processPackages [mysqlx]: executing diffoscope
+[2024-04-22 03:23:35] INFO root fetch - processPackages [mysqlx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mysqlx-2.1.3.tar.gz tmp/mysqlx-2.1.4.tar.gz --markdown 20240422/m/mysqlx/2.1.3-2.1.4/README.md --exclude *.pyd
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: executing diffoscope
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-rsa-1.2.8.tar.gz tmp/adafruit-circuitpython-rsa-1.2.9.tar.gz --markdown 20240422/a/adafruit-circuitpython-rsa/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-22 03:23:35] INFO root fetch - processPackages [anyon]: Downloading https://files.pythonhosted.org/packages/36/36/833a992f6fe7fdbc71bf7fde1371084829f4476f30fe2c8d07b42fae7b84/anyon-4.2.1-cp311-none-manylinux2014_x86_64.whl
+[2024-04-22 03:23:35] INFO root fetch - processPackages [mysqlx]: Remove: archive file [/home/abi/fetcher/tmp/mysqlx-2.1.3.tar.gz]
+[2024-04-22 03:23:35] INFO root fetch - processPackages [mysqlx]: Remove: archive file [/home/abi/fetcher/tmp/mysqlx-2.1.4.tar.gz]
+[2024-04-22 03:23:35] INFO root fetch - main [MainThread]: End processing [mysqlx]: success
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_irremote-5.0.0.tar.gz]
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_irremote-5.0.1.tar.gz]
+[2024-04-22 03:23:35] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-irremote]: success
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-rsa-1.2.8.tar.gz]
+[2024-04-22 03:23:35] INFO root fetch - processPackages [adafruit-circuitpython-rsa]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-rsa-1.2.9.tar.gz]
+[2024-04-22 03:23:35] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-rsa]: success
+[2024-04-22 03:23:36] INFO root fetch - processPackages [anyon]: executing diffoscope
+[2024-04-22 03:23:36] INFO root fetch - processPackages [anyon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyon-4.2.0-cp312-none-win_amd64.whl.zip tmp/anyon-4.2.1-cp311-none-manylinux2014_x86_64.whl.zip --markdown 20240422/a/anyon/4.2.0-4.2.1/README.md --exclude *.pyd
+[2024-04-22 03:23:36] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.0-cp312-none-win_amd64.whl.zip]
+[2024-04-22 03:23:36] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.1-cp311-none-manylinux2014_x86_64.whl.zip]
+[2024-04-22 03:23:36] INFO root fetch - main [MainThread]: End processing [anyon]: success
+[2024-04-22 03:23:36] INFO root fetch - main [MainThread]: Store serial: [22870924]
