@@ -5523,3 +5523,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:22:43] INFO root fetch - processPackages [pygerm]: Remove: archive file [/home/abi/fetcher/tmp/pygerm-0.0.2.tar.gz]
 [2024-04-22 07:22:43] INFO root fetch - main [MainThread]: End processing [pygerm]: success
 [2024-04-22 07:22:43] INFO root fetch - main [MainThread]: Store serial: [22872236]
+[2024-04-22 07:24:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872236]
+[2024-04-22 07:24:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 07:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostcli
+[2024-04-22 07:24:51] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 07:24:51] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-04-22 07:24:51] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-04-22 07:24:51] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-04-22 07:24:51] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240422/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 07:24:52] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-04-22 07:24:52] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-04-22 07:24:52] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-04-22 07:24:52] INFO root fetch - main [MainThread]: Store serial: [22872261]
