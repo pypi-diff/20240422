@@ -9681,3 +9681,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:00:40] INFO root fetch - processPackages [picsellia]: Remove: archive file [/home/abi/fetcher/tmp/picsellia-6.9.1.tar.gz]
 [2024-04-22 11:00:40] INFO root fetch - main [MainThread]: End processing [picsellia]: success
 [2024-04-22 11:00:40] INFO root fetch - main [MainThread]: Store serial: [22874388]
+[2024-04-22 11:02:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874388]
+[2024-04-22 11:02:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 11:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magic-list
+[2024-04-22 11:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IISRapi
+[2024-04-22 11:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shittycorn
+[2024-04-22 11:02:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: puerml
+[2024-04-22 11:02:49] INFO root fetch - processPackages [magic-list]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-22 11:02:49] INFO root fetch - processPackages [magic-list]: Downloading https://files.pythonhosted.org/packages/94/d5/fa2f5d97c6919948001b396022a57ecb5b8882fe0aced0adb0aaa28a816a/magic_list-2.2.0.tar.gz
+[2024-04-22 11:02:49] WARNING root fetch - processPackages [shittycorn]: Skipping, unable to determine old version
+[2024-04-22 11:02:49] INFO root fetch - main [MainThread]: End processing [shittycorn] error
+[2024-04-22 11:02:49] WARNING root fetch - processPackages [IISRapi]: Skipping, unable to determine old version
+[2024-04-22 11:02:49] INFO root fetch - main [MainThread]: End processing [IISRapi] error
+[2024-04-22 11:02:49] WARNING root fetch - processPackages [puerml]: Skipping, unable to determine old version
+[2024-04-22 11:02:49] INFO root fetch - main [MainThread]: End processing [puerml] error
+[2024-04-22 11:02:49] INFO root fetch - processPackages [magic-list]: Downloading https://files.pythonhosted.org/packages/03/4a/fbd3112ca3256d1cba9600612a931bef1a0c1b5f8fb5b20c2b851e0c3b41/magic_list-2.2.1.tar.gz
+[2024-04-22 11:02:49] INFO root fetch - processPackages [magic-list]: executing diffoscope
+[2024-04-22 11:02:49] INFO root fetch - processPackages [magic-list]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic_list-2.2.0.tar.gz tmp/magic_list-2.2.1.tar.gz --markdown 20240422/m/magic-list/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-22 11:02:50] INFO root fetch - processPackages [magic-list]: Remove: archive file [/home/abi/fetcher/tmp/magic_list-2.2.0.tar.gz]
+[2024-04-22 11:02:50] INFO root fetch - processPackages [magic-list]: Remove: archive file [/home/abi/fetcher/tmp/magic_list-2.2.1.tar.gz]
+[2024-04-22 11:02:50] INFO root fetch - main [MainThread]: End processing [magic-list]: success
+[2024-04-22 11:02:50] INFO root fetch - main [MainThread]: Store serial: [22874405]
