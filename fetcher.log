@@ -8494,3 +8494,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:10:05] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240421.tar.gz]
 [2024-04-22 10:10:05] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-04-22 10:10:05] INFO root fetch - main [MainThread]: Store serial: [22873890]
+[2024-04-22 10:12:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873890]
+[2024-04-22 10:12:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 10:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: koyo
+[2024-04-22 10:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lxfcode
+[2024-04-22 10:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-22 10:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sawsi
+[2024-04-22 10:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vuc3
+[2024-04-22 10:12:14] INFO root fetch - processPackages [sawsi]: New version: [9.9] Old Version: [9.8]
+[2024-04-22 10:12:14] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-22 10:12:14] INFO root fetch - processPackages [koyo]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-22 10:12:14] INFO root fetch - processPackages [lxfcode]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 10:12:14] INFO root fetch - processPackages [vuc3]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 10:12:14] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/a5/89/e5230b963c36d9342bd53c4174b8b4f9595f77c5aa510614cf80ac5315a0/sawsi-9.8.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [lxfcode]: Downloading https://files.pythonhosted.org/packages/f9/3e/e736f359fac02495b7cb0f739eea2a1fb1e0a588ecd93c6e5e9a932223e5/lxfcode-0.3.2-py2.py3-none-any.whl
+[2024-04-22 10:12:14] INFO root fetch - processPackages [vuc3]: Downloading https://files.pythonhosted.org/packages/cd/1c/0f3dd8898e44f5e8dda91225ee1651486aee84fbc2159c04094f7404b921/vuc3-0.0.1.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [koyo]: Downloading https://files.pythonhosted.org/packages/39/d3/d9b294faa695962ff58cdd835e80de7f064c48bbdaa50c0b61c97fe5e2b2/koyo-0.2.7.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/69/c2/e945385340121de75cca5d00aa9ac99f3d874c5977239a7d7efe5e969e17/sawsi-9.9.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-22 10:12:14] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240422/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-22 10:12:14] INFO root fetch - processPackages [sawsi]: executing diffoscope
+[2024-04-22 10:12:14] INFO root fetch - processPackages [sawsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sawsi-9.8.tar.gz tmp/sawsi-9.9.tar.gz --markdown 20240422/s/sawsi/9.8-9.9/README.md --exclude *.pyd
+[2024-04-22 10:12:14] INFO root fetch - processPackages [vuc3]: Downloading https://files.pythonhosted.org/packages/f2/66/f15fea11d0588cb4be9173b46a738b1e23180222553f1672391b3e7275c5/vuc3-0.0.2.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [koyo]: Downloading https://files.pythonhosted.org/packages/42/2c/f1123a50fe1f26ab93f943ed6d3e31d845dad5f425a3d8b22ab0e3ceee82/koyo-0.2.8.tar.gz
+[2024-04-22 10:12:14] INFO root fetch - processPackages [lxfcode]: Downloading https://files.pythonhosted.org/packages/1f/63/8b5681f789cbacb2c25a05f2339e664762d9f019c3f48cc59331058e83c3/lxfcode-0.3.3-py2.py3-none-any.whl
+[2024-04-22 10:12:15] INFO root fetch - processPackages [koyo]: executing diffoscope
+[2024-04-22 10:12:15] INFO root fetch - processPackages [koyo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/koyo-0.2.7.tar.gz tmp/koyo-0.2.8.tar.gz --markdown 20240422/k/koyo/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-22 10:12:15] INFO root fetch - processPackages [lxfcode]: executing diffoscope
+[2024-04-22 10:12:15] INFO root fetch - processPackages [lxfcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lxfcode-0.3.2-py2.py3-none-any.whl.zip tmp/lxfcode-0.3.3-py2.py3-none-any.whl.zip --markdown 20240422/l/lxfcode/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 10:12:15] INFO root fetch - processPackages [vuc3]: executing diffoscope
+[2024-04-22 10:12:15] INFO root fetch - processPackages [vuc3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vuc3-0.0.1.tar.gz tmp/vuc3-0.0.2.tar.gz --markdown 20240422/v/vuc3/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 10:12:15] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-22 10:12:15] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.8.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.9.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - main [MainThread]: End processing [sawsi]: success
+[2024-04-22 10:12:15] INFO root fetch - processPackages [vuc3]: Remove: archive file [/home/abi/fetcher/tmp/vuc3-0.0.1.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - processPackages [vuc3]: Remove: archive file [/home/abi/fetcher/tmp/vuc3-0.0.2.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - main [MainThread]: End processing [vuc3]: success
+[2024-04-22 10:12:15] INFO root fetch - processPackages [lxfcode]: Remove: archive file [/home/abi/fetcher/tmp/lxfcode-0.3.2-py2.py3-none-any.whl.zip]
+[2024-04-22 10:12:15] INFO root fetch - processPackages [lxfcode]: Remove: archive file [/home/abi/fetcher/tmp/lxfcode-0.3.3-py2.py3-none-any.whl.zip]
+[2024-04-22 10:12:15] INFO root fetch - main [MainThread]: End processing [lxfcode]: success
+[2024-04-22 10:12:15] INFO root fetch - processPackages [koyo]: Remove: archive file [/home/abi/fetcher/tmp/koyo-0.2.7.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - processPackages [koyo]: Remove: archive file [/home/abi/fetcher/tmp/koyo-0.2.8.tar.gz]
+[2024-04-22 10:12:15] INFO root fetch - main [MainThread]: End processing [koyo]: success
+[2024-04-22 10:12:15] INFO root fetch - main [MainThread]: Store serial: [22873904]
