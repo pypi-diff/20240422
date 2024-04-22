@@ -10082,3 +10082,72 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:14:12] INFO root fetch - processPackages [translate-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/translate-toolkit-3.9.2.tar.gz]
 [2024-04-22 11:14:12] INFO root fetch - main [MainThread]: End processing [translate-toolkit]: success
 [2024-04-22 11:14:12] INFO root fetch - main [MainThread]: Store serial: [22874589]
+[2024-04-22 11:16:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874589]
+[2024-04-22 11:16:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yeref
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-kwargs
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvfuser-cu121
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yoctopuce
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nvfuser-cu118
+[2024-04-22 11:16:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-22 11:16:21] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:16:21] INFO root fetch - processPackages [mo-kwargs]: New version: [7.595.24112] Old Version: [7.594.24112]
+[2024-04-22 11:16:21] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.2.dev20240421] Old Version: [0.2.2.dev20240419]
+[2024-04-22 11:16:21] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-22 11:16:21] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.2.dev20240421] Old Version: [0.2.2.dev20240419]
+[2024-04-22 11:16:22] INFO root fetch - processPackages [yoctopuce]: New version: [2.0.60664] Old Version: [2.0.60394]
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/aa/cd/3215b606cc3bf97ef9fcc1c2573b3ee1a1cf5e3fb7f389312886929e2419/nvfuser_cu118-0.2.2.dev20240419.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/bf/3e/d134edde494611551ce07bb45c4fdbd2537bc1bcf0909c024e789e5b3a65/mo_kwargs-7.594.24112.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-22 11:16:22] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/d3/97/d81efb3d29e476365262de453ceb3b4b309e85374ac820cb0dbcc5af171e/nvfuser_cu121-0.2.2.dev20240419.tar.gz
+[2024-04-22 11:16:22] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-22 11:16:22] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-22 11:16:22] INFO root fetch - processPackages [yoctopuce]: Downloading https://files.pythonhosted.org/packages/9f/7f/f57c82f11e0ca9bf530ed9946b05259dca0435b0114fc0078bfe8bff386b/yoctopuce-2.0.60394.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/40/5c/3eee0d9e91ff9d156d572a4acd8cb2e440868c1e270765f47dd8cc822698/nvfuser_cu118-0.2.2.dev20240421.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/8c/4b/83f27ea3aaf193b1f24e832d2bad232ba4d86cd868675f6c44fd90d690f4/nvfuser_cu121-0.2.2.dev20240421.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/d5/03/813fd00dc84fde4090c3c2265a669e06e1df5297ec18644472d38ad6c4a8/mo_kwargs-7.595.24112.tar.gz
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.2.dev20240419.tar.gz tmp/nvfuser_cu118-0.2.2.dev20240421.tar.gz --markdown 20240422/n/nvfuser-cu118/0.2.2.dev20240419-0.2.2.dev20240421/README.md --exclude *.pyd
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-04-22 11:16:22] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.2.dev20240419.tar.gz tmp/nvfuser_cu121-0.2.2.dev20240421.tar.gz --markdown 20240422/n/nvfuser-cu121/0.2.2.dev20240419-0.2.2.dev20240421/README.md --exclude *.pyd
+[2024-04-22 11:16:22] INFO root fetch - processPackages [mo-kwargs]: executing diffoscope
+[2024-04-22 11:16:22] INFO root fetch - processPackages [mo-kwargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_kwargs-7.594.24112.tar.gz tmp/mo_kwargs-7.595.24112.tar.gz --markdown 20240422/m/mo-kwargs/7.594.24112-7.595.24112/README.md --exclude *.pyd
+[2024-04-22 11:16:22] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-22 11:16:22] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240422/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240422/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240422/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-22 11:16:23] INFO root fetch - processPackages [yoctopuce]: Downloading https://files.pythonhosted.org/packages/b6/fc/f65dc147a58ec4718da3dfeaad331295a2e0bebc2099d96ec4adcd123a7c/yoctopuce-2.0.60664.tar.gz
+[2024-04-22 11:16:23] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.2.dev20240419.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.2.dev20240421.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-04-22 11:16:23] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.2.dev20240419.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.2.dev20240421.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-04-22 11:16:23] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.594.24112.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.595.24112.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
+[2024-04-22 11:16:23] INFO root fetch - processPackages [yoctopuce]: executing diffoscope
+[2024-04-22 11:16:23] INFO root fetch - processPackages [yoctopuce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoctopuce-2.0.60394.tar.gz tmp/yoctopuce-2.0.60664.tar.gz --markdown 20240422/y/yoctopuce/2.0.60394-2.0.60664/README.md --exclude *.pyd
+[2024-04-22 11:16:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-22 11:16:23] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-22 11:16:23] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-22 11:17:04] INFO root fetch - processPackages [yoctopuce]: Remove: archive file [/home/abi/fetcher/tmp/yoctopuce-2.0.60394.tar.gz]
+[2024-04-22 11:17:04] INFO root fetch - processPackages [yoctopuce]: Remove: archive file [/home/abi/fetcher/tmp/yoctopuce-2.0.60664.tar.gz]
+[2024-04-22 11:17:04] INFO root fetch - main [MainThread]: End processing [yoctopuce]: success
+[2024-04-22 11:17:04] INFO root fetch - main [MainThread]: Store serial: [22874615]
