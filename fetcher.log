@@ -7150,3 +7150,69 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:56:58] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.9.tar.gz]
 [2024-04-22 08:56:58] INFO root fetch - main [MainThread]: End processing [core-pro]: success
 [2024-04-22 08:56:58] INFO root fetch - main [MainThread]: Store serial: [22872831]
+[2024-04-22 08:59:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872831]
+[2024-04-22 08:59:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 08:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: handwriting_visualizations
+[2024-04-22 08:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-dashboard
+[2024-04-22 08:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ropt-dakota
+[2024-04-22 08:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pgos-cli-python-sdk-v1
+[2024-04-22 08:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pywaybackup
+[2024-04-22 08:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dbt-bytehouse
+[2024-04-22 08:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: quantuminspire
+[2024-04-22 08:59:07] INFO root fetch - processPackages [ropt-dakota]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-22 08:59:07] INFO root fetch - processPackages [pgos-cli-python-sdk-v1]: New version: [0.2.9.111] Old Version: [0.2.9.110]
+[2024-04-22 08:59:07] INFO root fetch - processPackages [handwriting_visualizations]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-04-22 08:59:07] INFO root fetch - processPackages [pytest-dashboard]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 08:59:07] INFO root fetch - processPackages [pywaybackup]: New version: [1.0.0] Old Version: [0.8.1]
+[2024-04-22 08:59:07] INFO root fetch - processPackages [dbt-bytehouse]: New version: [1.7.1] Old Version: [1.3.2]
+[2024-04-22 08:59:07] INFO root fetch - processPackages [quantuminspire]: New version: [2.3.0] Old Version: [2.2.2]
+[2024-04-22 08:59:07] INFO root fetch - processPackages [ropt-dakota]: Downloading https://files.pythonhosted.org/packages/22/94/f923a9fcb54c43897047c81dddb9e66182b35a22a18541b1045d753ecd68/ropt_dakota-0.1.0.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [pgos-cli-python-sdk-v1]: Downloading https://files.pythonhosted.org/packages/29/56/619425392fbdafcd94d5a1a9e199e12a5a08bda31a1af002cc3c457405d9/pgos-cli-python-sdk-v1-0.2.9.110.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [handwriting_visualizations]: Downloading https://files.pythonhosted.org/packages/1a/ce/fade3c22dd1541891d879e97f9dc6461957927f123501c9055f3545237f0/handwriting_visualizations-0.1.4.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [pytest-dashboard]: Downloading https://files.pythonhosted.org/packages/ac/bd/05433045dc52e8777d3f6d0042e92fd0dab7e4d40cb0f8452f245fb74bdf/pytest_dashboard-0.0.5.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [pywaybackup]: Downloading https://files.pythonhosted.org/packages/c6/81/89b4af18fab67712ae4e170915280f83717ea59af4902a761cf7d26d0cd3/pywaybackup-0.8.1.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [quantuminspire]: Downloading https://files.pythonhosted.org/packages/11/c4/6d984d63e8ea93c2d01f7269416bbccf8733cfac6584c4263de9889c258d/quantuminspire-2.2.2.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [dbt-bytehouse]: Downloading https://files.pythonhosted.org/packages/63/14/cc8477c9a2d8038363ffb419c1e9653c1782322a5d3dfdf914f2475036fb/dbt-bytehouse-1.3.2.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [ropt-dakota]: Downloading https://files.pythonhosted.org/packages/fc/f1/b271bb19a33131218a7624bda642f53075049bd98403aa73a64a586fa015/ropt_dakota-0.1.1.tar.gz
+[2024-04-22 08:59:07] INFO root fetch - processPackages [handwriting_visualizations]: Downloading https://files.pythonhosted.org/packages/45/14/ae23bed2006205de8a63e8cd0c0d7d25f50249e04477d1d766a48e7eb53f/handwriting_visualizations-0.2.0.tar.gz
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pytest-dashboard]: Downloading https://files.pythonhosted.org/packages/a5/58/0739a1ec6d28cc46dfafa93632d3cdd7f3d77d689e2b8a8a6e6bce1cb881/pytest_dashboard-0.0.6.tar.gz
+[2024-04-22 08:59:08] INFO root fetch - processPackages [ropt-dakota]: executing diffoscope
+[2024-04-22 08:59:08] INFO root fetch - processPackages [ropt-dakota]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ropt_dakota-0.1.0.tar.gz tmp/ropt_dakota-0.1.1.tar.gz --markdown 20240422/r/ropt-dakota/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pywaybackup]: Downloading https://files.pythonhosted.org/packages/50/8a/eda8ada0e028cf64427879a2fe6fbfcf9c513be03f99b544ccb1fee32aef/pywaybackup-1.0.0.tar.gz
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pgos-cli-python-sdk-v1]: Downloading https://files.pythonhosted.org/packages/4b/1a/4d086d47b3031b22d8b2466201136c16b9c300cc35817a222ace9b6031f4/pgos-cli-python-sdk-v1-0.2.9.111.tar.gz
+[2024-04-22 08:59:08] INFO root fetch - processPackages [quantuminspire]: Downloading https://files.pythonhosted.org/packages/73/68/522aacc6cc2b2210ab062e90474160eed3703e8a123c37c921f358d4f49c/quantuminspire-2.3.0.tar.gz
+[2024-04-22 08:59:08] INFO root fetch - processPackages [dbt-bytehouse]: Downloading https://files.pythonhosted.org/packages/69/a7/9b39ccb2d65709ac459d83056f92b7b8c0119563dfef6a62610095192cec/dbt-bytehouse-1.7.1.tar.gz
+[2024-04-22 08:59:08] INFO root fetch - processPackages [handwriting_visualizations]: executing diffoscope
+[2024-04-22 08:59:08] INFO root fetch - processPackages [handwriting_visualizations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/handwriting_visualizations-0.1.4.tar.gz tmp/handwriting_visualizations-0.2.0.tar.gz --markdown 20240422/h/handwriting_visualizations/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pytest-dashboard]: executing diffoscope
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pytest-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_dashboard-0.0.5.tar.gz tmp/pytest_dashboard-0.0.6.tar.gz --markdown 20240422/p/pytest-dashboard/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pywaybackup]: executing diffoscope
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pywaybackup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywaybackup-0.8.1.tar.gz tmp/pywaybackup-1.0.0.tar.gz --markdown 20240422/p/pywaybackup/0.8.1-1.0.0/README.md --exclude *.pyd
+[2024-04-22 08:59:08] INFO root fetch - processPackages [quantuminspire]: executing diffoscope
+[2024-04-22 08:59:08] INFO root fetch - processPackages [quantuminspire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantuminspire-2.2.2.tar.gz tmp/quantuminspire-2.3.0.tar.gz --markdown 20240422/q/quantuminspire/2.2.2-2.3.0/README.md --exclude *.pyd
+[2024-04-22 08:59:08] INFO root fetch - processPackages [dbt-bytehouse]: executing diffoscope
+[2024-04-22 08:59:08] INFO root fetch - processPackages [dbt-bytehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-bytehouse-1.3.2.tar.gz tmp/dbt-bytehouse-1.7.1.tar.gz --markdown 20240422/d/dbt-bytehouse/1.3.2-1.7.1/README.md --exclude *.pyd
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pgos-cli-python-sdk-v1]: executing diffoscope
+[2024-04-22 08:59:08] INFO root fetch - processPackages [pgos-cli-python-sdk-v1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgos-cli-python-sdk-v1-0.2.9.110.tar.gz tmp/pgos-cli-python-sdk-v1-0.2.9.111.tar.gz --markdown 20240422/p/pgos-cli-python-sdk-v1/0.2.9.110-0.2.9.111/README.md --exclude *.pyd
+[2024-04-22 08:59:08] INFO root fetch - processPackages [ropt-dakota]: Remove: archive file [/home/abi/fetcher/tmp/ropt_dakota-0.1.0.tar.gz]
+[2024-04-22 08:59:08] INFO root fetch - processPackages [ropt-dakota]: Remove: archive file [/home/abi/fetcher/tmp/ropt_dakota-0.1.1.tar.gz]
+[2024-04-22 08:59:08] INFO root fetch - main [MainThread]: End processing [ropt-dakota]: success
+[2024-04-22 08:59:09] INFO root fetch - processPackages [pytest-dashboard]: Remove: archive file [/home/abi/fetcher/tmp/pytest_dashboard-0.0.5.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - processPackages [pytest-dashboard]: Remove: archive file [/home/abi/fetcher/tmp/pytest_dashboard-0.0.6.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - main [MainThread]: End processing [pytest-dashboard]: success
+[2024-04-22 08:59:09] INFO root fetch - processPackages [handwriting_visualizations]: Remove: archive file [/home/abi/fetcher/tmp/handwriting_visualizations-0.1.4.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - processPackages [handwriting_visualizations]: Remove: archive file [/home/abi/fetcher/tmp/handwriting_visualizations-0.2.0.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - main [MainThread]: End processing [handwriting_visualizations]: success
+[2024-04-22 08:59:09] INFO root fetch - processPackages [pywaybackup]: Remove: archive file [/home/abi/fetcher/tmp/pywaybackup-0.8.1.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - processPackages [pywaybackup]: Remove: archive file [/home/abi/fetcher/tmp/pywaybackup-1.0.0.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - main [MainThread]: End processing [pywaybackup]: success
+[2024-04-22 08:59:09] INFO root fetch - processPackages [quantuminspire]: Remove: archive file [/home/abi/fetcher/tmp/quantuminspire-2.2.2.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - processPackages [quantuminspire]: Remove: archive file [/home/abi/fetcher/tmp/quantuminspire-2.3.0.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - main [MainThread]: End processing [quantuminspire]: success
+[2024-04-22 08:59:09] INFO root fetch - processPackages [dbt-bytehouse]: Remove: archive file [/home/abi/fetcher/tmp/dbt-bytehouse-1.3.2.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - processPackages [dbt-bytehouse]: Remove: archive file [/home/abi/fetcher/tmp/dbt-bytehouse-1.7.1.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - main [MainThread]: End processing [dbt-bytehouse]: success
+[2024-04-22 08:59:09] INFO root fetch - processPackages [pgos-cli-python-sdk-v1]: Remove: archive file [/home/abi/fetcher/tmp/pgos-cli-python-sdk-v1-0.2.9.110.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - processPackages [pgos-cli-python-sdk-v1]: Remove: archive file [/home/abi/fetcher/tmp/pgos-cli-python-sdk-v1-0.2.9.111.tar.gz]
+[2024-04-22 08:59:09] INFO root fetch - main [MainThread]: End processing [pgos-cli-python-sdk-v1]: success
+[2024-04-22 08:59:09] INFO root fetch - main [MainThread]: Store serial: [22872851]
