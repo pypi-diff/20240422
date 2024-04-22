@@ -2139,3 +2139,69 @@
 [2024-04-22 02:52:57] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
 [2024-04-22 02:52:57] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
 [2024-04-22 02:52:57] INFO root fetch - main [MainThread]: Store serial: [22870762]
+[2024-04-22 02:55:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870762]
+[2024-04-22 02:55:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tradedangerous
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ValWrap
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chainhashing
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyoptinterface
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gitlab-projects-migrate
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-lambda-layer-curl
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bioomics
+[2024-04-22 02:55:07] INFO root fetch - processPackages [chainhashing]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 02:55:07] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-22 02:55:07] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ValWrap]: New version: [0.9.1] Old Version: [0.8.1]
+[2024-04-22 02:55:07] INFO root fetch - processPackages [bioomics]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-22 02:55:07] INFO root fetch - processPackages [pyoptinterface]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-22 02:55:07] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [gitlab-projects-migrate]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-22 02:55:07] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [chainhashing]: Downloading https://files.pythonhosted.org/packages/cc/08/b67a709a99dea743668aa0b4e528d8779556624228592740b7a8a7e607a9/chainhashing-0.0.1.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [ValWrap]: Downloading https://files.pythonhosted.org/packages/c5/53/b21efc91aee1e1e3704caa8e08ef1e58481509e44662d4db7d7cb08b265a/ValWrap-0.8.1.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [pyoptinterface]: Downloading https://files.pythonhosted.org/packages/4a/14/9c11a2a96b38b268d9aab6b6a3deaa871283770a82ab5856367c03effdb1/pyoptinterface-0.1.1-cp39-cp39-win_amd64.whl
+[2024-04-22 02:55:07] INFO root fetch - processPackages [bioomics]: Downloading https://files.pythonhosted.org/packages/1b/78/5b460f8d1ee1739c94fc9976ee8f5d28885b3db9161249e2d91ebcecfcaa/bioomics-0.2.1.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [gitlab-projects-migrate]: Downloading https://files.pythonhosted.org/packages/fd/97/47c6f912003c2850006d47dbfc315c51196abddd79bc50ac3ad62277342d/gitlab_projects_migrate-1.0.0.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [chainhashing]: Downloading https://files.pythonhosted.org/packages/e1/7b/5bf4eba6f325bd3921244b217be72677a2290719f74d5817e5168da05549/chainhashing-0.0.2.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-22 02:55:07] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-04-22 02:55:08] INFO root fetch - processPackages [ValWrap]: Downloading https://files.pythonhosted.org/packages/59/82/99df09afd90191ccfdce08006c71be4a7f9dacbe56a843e1de864e6e3034/ValWrap-0.9.1.tar.gz
+[2024-04-22 02:55:08] INFO root fetch - processPackages [chainhashing]: executing diffoscope
+[2024-04-22 02:55:08] INFO root fetch - processPackages [chainhashing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainhashing-0.0.1.tar.gz tmp/chainhashing-0.0.2.tar.gz --markdown 20240422/c/chainhashing/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 02:55:08] INFO root fetch - processPackages [gitlab-projects-migrate]: Downloading https://files.pythonhosted.org/packages/ed/9a/c4237081d60f27fda2a2e6990e751dd265eb9b43d0c0c26c22839e7750c9/gitlab_projects_migrate-1.1.0.tar.gz
+[2024-04-22 02:55:08] INFO root fetch - processPackages [ValWrap]: executing diffoscope
+[2024-04-22 02:55:08] INFO root fetch - processPackages [ValWrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ValWrap-0.8.1.tar.gz tmp/ValWrap-0.9.1.tar.gz --markdown 20240422/V/ValWrap/0.8.1-0.9.1/README.md --exclude *.pyd
+[2024-04-22 02:55:08] INFO root fetch - processPackages [bioomics]: Downloading https://files.pythonhosted.org/packages/7d/04/fb1715cd6dd7f0bea62456be49b7a59fd90c3d5f11c3d2ebc7013e27c4f3/bioomics-0.2.2.tar.gz
+[2024-04-22 02:55:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-04-22 02:55:08] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240422/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-22 02:55:08] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-22 02:55:08] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240422/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-22 02:55:08] INFO root fetch - processPackages [pyoptinterface]: Downloading https://files.pythonhosted.org/packages/64/77/6ed3d83b0732428fdd0df4d6622758504ad86d12920f57ec2529005533bb/pyoptinterface-0.2.0-cp39-cp39-win_amd64.whl
+[2024-04-22 02:55:08] INFO root fetch - processPackages [bioomics]: executing diffoscope
+[2024-04-22 02:55:08] INFO root fetch - processPackages [bioomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioomics-0.2.1.tar.gz tmp/bioomics-0.2.2.tar.gz --markdown 20240422/b/bioomics/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-22 02:55:08] INFO root fetch - processPackages [gitlab-projects-migrate]: executing diffoscope
+[2024-04-22 02:55:08] INFO root fetch - processPackages [gitlab-projects-migrate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlab_projects_migrate-1.0.0.tar.gz tmp/gitlab_projects_migrate-1.1.0.tar.gz --markdown 20240422/g/gitlab-projects-migrate/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-22 02:55:08] INFO root fetch - processPackages [pyoptinterface]: executing diffoscope
+[2024-04-22 02:55:08] INFO root fetch - processPackages [pyoptinterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyoptinterface-0.1.1-cp39-cp39-win_amd64.whl.zip tmp/pyoptinterface-0.2.0-cp39-cp39-win_amd64.whl.zip --markdown 20240422/p/pyoptinterface/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-22 02:55:08] INFO root fetch - processPackages [chainhashing]: Remove: archive file [/home/abi/fetcher/tmp/chainhashing-0.0.1.tar.gz]
+[2024-04-22 02:55:08] INFO root fetch - processPackages [chainhashing]: Remove: archive file [/home/abi/fetcher/tmp/chainhashing-0.0.2.tar.gz]
+[2024-04-22 02:55:08] INFO root fetch - main [MainThread]: End processing [chainhashing]: success
+[2024-04-22 02:55:08] INFO root fetch - processPackages [ValWrap]: Remove: archive file [/home/abi/fetcher/tmp/ValWrap-0.8.1.tar.gz]
+[2024-04-22 02:55:08] INFO root fetch - processPackages [ValWrap]: Remove: archive file [/home/abi/fetcher/tmp/ValWrap-0.9.1.tar.gz]
+[2024-04-22 02:55:08] INFO root fetch - main [MainThread]: End processing [ValWrap]: success
+[2024-04-22 02:55:09] INFO root fetch - processPackages [gitlab-projects-migrate]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_migrate-1.0.0.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - processPackages [gitlab-projects-migrate]: Remove: archive file [/home/abi/fetcher/tmp/gitlab_projects_migrate-1.1.0.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - main [MainThread]: End processing [gitlab-projects-migrate]: success
+[2024-04-22 02:55:09] INFO root fetch - processPackages [bioomics]: Remove: archive file [/home/abi/fetcher/tmp/bioomics-0.2.1.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - processPackages [bioomics]: Remove: archive file [/home/abi/fetcher/tmp/bioomics-0.2.2.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - main [MainThread]: End processing [bioomics]: success
+[2024-04-22 02:55:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-04-22 02:55:09] INFO root fetch - processPackages [pyoptinterface]: Remove: archive file [/home/abi/fetcher/tmp/pyoptinterface-0.1.1-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 02:55:09] INFO root fetch - processPackages [pyoptinterface]: Remove: archive file [/home/abi/fetcher/tmp/pyoptinterface-0.2.0-cp39-cp39-win_amd64.whl.zip]
+[2024-04-22 02:55:09] INFO root fetch - main [MainThread]: End processing [pyoptinterface]: success
+[2024-04-22 02:55:09] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-22 02:55:09] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-22 02:55:09] INFO root fetch - main [MainThread]: Store serial: [22870800]
