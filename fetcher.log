@@ -2822,3 +2822,27 @@
 [2024-04-22 03:59:08] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.9.tar.gz]
 [2024-04-22 03:59:08] INFO root fetch - main [MainThread]: End processing [eirStru]: success
 [2024-04-22 03:59:08] INFO root fetch - main [MainThread]: Store serial: [22871134]
+[2024-04-22 04:01:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871134]
+[2024-04-22 04:01:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 04:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fmbench
+[2024-04-22 04:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lyk-reservation-nowon
+[2024-04-22 04:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DualFinder
+[2024-04-22 04:01:18] WARNING root fetch - processPackages [lyk-reservation-nowon]: Skipping, unable to determine old version
+[2024-04-22 04:01:18] INFO root fetch - main [MainThread]: End processing [lyk-reservation-nowon] error
+[2024-04-22 04:01:18] INFO root fetch - processPackages [fmbench]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-22 04:01:18] INFO root fetch - processPackages [DualFinder]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-22 04:01:18] INFO root fetch - processPackages [fmbench]: Downloading https://files.pythonhosted.org/packages/12/ff/7ccc41c0fab7fb2a7b7db448775887d29837bdaabdb47265fcd435e8eb35/fmbench-1.0.8.tar.gz
+[2024-04-22 04:01:18] INFO root fetch - processPackages [DualFinder]: Downloading https://files.pythonhosted.org/packages/96/bf/52848fcc962bffb4b1c95f048261b9124b9ae93cfb214ff03b7cc0ddd32e/DualFinder-1.0.0.tar.gz
+[2024-04-22 04:01:18] INFO root fetch - processPackages [fmbench]: Downloading https://files.pythonhosted.org/packages/84/ee/d5b3731e328488d9664f215a9cdceeb188cdf6dd2c19b5f99a6a59daa9e4/fmbench-1.0.9.tar.gz
+[2024-04-22 04:01:18] INFO root fetch - processPackages [DualFinder]: Downloading https://files.pythonhosted.org/packages/11/32/74b0e591d223fd7f4a83e0048c87c578ea1b9bc2d67da2ab2dd163881308/DualFinder-1.1.0.tar.gz
+[2024-04-22 04:01:18] INFO root fetch - processPackages [fmbench]: executing diffoscope
+[2024-04-22 04:01:18] INFO root fetch - processPackages [fmbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmbench-1.0.8.tar.gz tmp/fmbench-1.0.9.tar.gz --markdown 20240422/f/fmbench/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-22 04:01:19] INFO root fetch - processPackages [DualFinder]: executing diffoscope
+[2024-04-22 04:01:19] INFO root fetch - processPackages [DualFinder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DualFinder-1.0.0.tar.gz tmp/DualFinder-1.1.0.tar.gz --markdown 20240422/D/DualFinder/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-22 04:01:19] INFO root fetch - processPackages [DualFinder]: Remove: archive file [/home/abi/fetcher/tmp/DualFinder-1.0.0.tar.gz]
+[2024-04-22 04:01:19] INFO root fetch - processPackages [DualFinder]: Remove: archive file [/home/abi/fetcher/tmp/DualFinder-1.1.0.tar.gz]
+[2024-04-22 04:01:19] INFO root fetch - main [MainThread]: End processing [DualFinder]: success
+[2024-04-22 04:01:19] INFO root fetch - processPackages [fmbench]: Remove: archive file [/home/abi/fetcher/tmp/fmbench-1.0.8.tar.gz]
+[2024-04-22 04:01:19] INFO root fetch - processPackages [fmbench]: Remove: archive file [/home/abi/fetcher/tmp/fmbench-1.0.9.tar.gz]
+[2024-04-22 04:01:19] INFO root fetch - main [MainThread]: End processing [fmbench]: success
+[2024-04-22 04:01:19] INFO root fetch - main [MainThread]: Store serial: [22871142]
