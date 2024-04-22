@@ -7087,3 +7087,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:52:37] INFO root fetch - processPackages [odbc2deltalake]: Remove: archive file [/home/abi/fetcher/tmp/odbc2deltalake-0.8.7.tar.gz]
 [2024-04-22 08:52:37] INFO root fetch - main [MainThread]: End processing [odbc2deltalake]: success
 [2024-04-22 08:52:37] INFO root fetch - main [MainThread]: Store serial: [22872814]
+[2024-04-22 08:54:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872814]
+[2024-04-22 08:54:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 08:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: upils
+[2024-04-22 08:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linktest
+[2024-04-22 08:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-web-tree-many2one-clickable
+[2024-04-22 08:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdfcmd
+[2024-04-22 08:54:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shadowsocks-alexforks
+[2024-04-22 08:54:45] WARNING root fetch - processPackages [shadowsocks-alexforks]: Skipping, unable to determine old version
+[2024-04-22 08:54:45] INFO root fetch - main [MainThread]: End processing [shadowsocks-alexforks] error
+[2024-04-22 08:54:46] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.0.5]
+[2024-04-22 08:54:46] INFO root fetch - processPackages [linktest]: New version: [2.5.8] Old Version: [2.5.7]
+[2024-04-22 08:54:46] INFO root fetch - processPackages [pdfcmd]: New version: [1.9] Old Version: [1.8]
+[2024-04-22 08:54:46] INFO root fetch - processPackages [upils]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-22 08:54:46] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/a1/aa/2a431aaa433272148940914bfacb5d358afabfb61fed51231530a0422639/linktest-2.5.7.tar.gz
+[2024-04-22 08:54:46] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: Downloading https://files.pythonhosted.org/packages/ce/97/f6f0c549a5ceafd2c0f6a573af376a23e510897c447c7f621864d10185e1/odoo_addon_web_tree_many2one_clickable-16.0.1.0.0.5-py3-none-any.whl
+[2024-04-22 08:54:46] INFO root fetch - processPackages [pdfcmd]: Downloading https://files.pythonhosted.org/packages/c2/84/e99ae67bf5fabdd96fa773fe58536849f13a479f3d7759a4a6aef8661ab1/pdfcmd-1.8.tar.gz
+[2024-04-22 08:54:46] INFO root fetch - processPackages [upils]: Downloading https://files.pythonhosted.org/packages/58/f6/bd1a241d067f54520e1f2bd9209fb72f035e8dbab612522456bd6b79cd18/upils-0.5.0.tar.gz
+[2024-04-22 08:54:46] INFO root fetch - processPackages [pdfcmd]: Downloading https://files.pythonhosted.org/packages/dc/b7/c0c7768ef55cc8f7ca9b38aca111e7720001bc1d6c66820a3b1a716db73b/pdfcmd-1.9.tar.gz
+[2024-04-22 08:54:46] INFO root fetch - processPackages [upils]: Downloading https://files.pythonhosted.org/packages/41/55/4802e7d3a1ab21c3fd1e65fe20dbc18b7b7368bf29c2309226ae3a1fc81e/upils-0.6.0.tar.gz
+[2024-04-22 08:54:46] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/df/db/69fed2ff117dc29a11c6d5153f1766be9d3bb93264dca298b103b8f8a03d/linktest-2.5.8.tar.gz
+[2024-04-22 08:54:46] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: Downloading https://files.pythonhosted.org/packages/2c/9b/9f88804bdcc4d2653af3a81f0bea533cb1922cf6db23903c49867667e211/odoo_addon_web_tree_many2one_clickable-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-22 08:54:47] INFO root fetch - processPackages [upils]: executing diffoscope
+[2024-04-22 08:54:47] INFO root fetch - processPackages [upils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upils-0.5.0.tar.gz tmp/upils-0.6.0.tar.gz --markdown 20240422/u/upils/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-22 08:54:47] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2024-04-22 08:54:47] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.5.7.tar.gz tmp/linktest-2.5.8.tar.gz --markdown 20240422/l/linktest/2.5.7-2.5.8/README.md --exclude *.pyd
+[2024-04-22 08:54:47] INFO root fetch - processPackages [pdfcmd]: executing diffoscope
+[2024-04-22 08:54:47] INFO root fetch - processPackages [pdfcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfcmd-1.8.tar.gz tmp/pdfcmd-1.9.tar.gz --markdown 20240422/p/pdfcmd/1.8-1.9/README.md --exclude *.pyd
+[2024-04-22 08:54:47] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: executing diffoscope
+[2024-04-22 08:54:47] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_tree_many2one_clickable-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_web_tree_many2one_clickable-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-web-tree-many2one-clickable/16.0.1.0.0.5-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-04-22 08:54:47] INFO root fetch - processPackages [upils]: Remove: archive file [/home/abi/fetcher/tmp/upils-0.5.0.tar.gz]
+[2024-04-22 08:54:47] INFO root fetch - processPackages [upils]: Remove: archive file [/home/abi/fetcher/tmp/upils-0.6.0.tar.gz]
+[2024-04-22 08:54:47] INFO root fetch - main [MainThread]: End processing [upils]: success
+[2024-04-22 08:54:47] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.5.7.tar.gz]
+[2024-04-22 08:54:47] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.5.8.tar.gz]
+[2024-04-22 08:54:47] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2024-04-22 08:54:47] INFO root fetch - processPackages [pdfcmd]: Remove: archive file [/home/abi/fetcher/tmp/pdfcmd-1.8.tar.gz]
+[2024-04-22 08:54:47] INFO root fetch - processPackages [pdfcmd]: Remove: archive file [/home/abi/fetcher/tmp/pdfcmd-1.9.tar.gz]
+[2024-04-22 08:54:47] INFO root fetch - main [MainThread]: End processing [pdfcmd]: success
+[2024-04-22 08:54:47] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_tree_many2one_clickable-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-22 08:54:47] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_tree_many2one_clickable-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-22 08:54:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-tree-many2one-clickable]: success
+[2024-04-22 08:54:47] INFO root fetch - main [MainThread]: Store serial: [22872826]
