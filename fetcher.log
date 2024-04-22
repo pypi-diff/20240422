@@ -10444,3 +10444,104 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:28:49] INFO root fetch - processPackages [mypy-dev]: Remove: archive file [/home/abi/fetcher/tmp/mypy-dev-1.9.0b1.tar.gz]
 [2024-04-22 11:28:49] INFO root fetch - main [MainThread]: End processing [mypy-dev]: success
 [2024-04-22 11:28:49] INFO root fetch - main [MainThread]: Store serial: [22874767]
+[2024-04-22 11:31:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874767]
+[2024-04-22 11:31:18] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rips
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fmd5sum
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scitools-iris
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TPE-Bot
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: macrosynergy
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scancodeio
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: few-shot-priming
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyvispr
+[2024-04-22 11:31:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cloth-tools
+[2024-04-22 11:31:18] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [TPE-Bot]: New version: [6.8.9] Old Version: [6.8.8]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [rips]: New version: [2024.3.1.2] Old Version: [2024.3.0.2]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-22 11:31:18] INFO root fetch - processPackages [cloth-tools]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/d6/48/e9be6c864c44c929982d90a159d3c9b2efa46bf64a71ee302543562fd795/TPE-Bot-6.8.8.tar.gz
+[2024-04-22 11:31:18] WARNING root fetch - processPackages [fmd5sum]: Skipping, unable to determine old version
+[2024-04-22 11:31:18] INFO root fetch - processPackages [fmd5sum]: Start processing: project-master
+[2024-04-22 11:31:18] INFO root fetch - main [MainThread]: End processing [fmd5sum] error
+[2024-04-22 11:31:18] INFO root fetch - processPackages [scitools-iris]: New version: [3.9.0rc0] Old Version: [3.9.0]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [pyvispr]: New version: [2024.5] Old Version: [2024.4]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [rips]: Downloading https://files.pythonhosted.org/packages/c7/c4/df8bc43300a82d5b920e3d03525837a824c8bffc514f717863ee59dd4ec5/rips-2024.3.0.2.tar.gz
+[2024-04-22 11:31:18] INFO root fetch - processPackages [macrosynergy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:31:18] INFO root fetch - processPackages [project-master]: New version: [1.2] Old Version: [1.1]
+[2024-04-22 11:31:18] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-22 11:31:18] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Start processing: cognite-power-ops
+[2024-04-22 11:31:18] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-22 11:31:18] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-04-22 11:31:19] INFO root fetch - processPackages [project-master]: Downloading https://files.pythonhosted.org/packages/fb/f1/ec2b020d8b9662acc34e2974b00b3a0d3fc8c292e4c56adbc0d3661b4f75/project_master-1.1.tar.gz
+[2024-04-22 11:31:19] INFO root fetch - processPackages [cognite-power-ops]: New version: [0.94.1] Old Version: [0.94.0]
+[2024-04-22 11:31:19] INFO root fetch - processPackages [rips]: Downloading https://files.pythonhosted.org/packages/04/9a/67d057e0e379ff13b1fd14c4287fbb102ed4c64391c984ec49ba3386ed12/rips-2024.3.1.2.tar.gz
+[2024-04-22 11:31:19] INFO root fetch - processPackages [pyvispr]: Downloading https://files.pythonhosted.org/packages/74/88/a9fe23ce20e51a0d47630be8d5a8d9524fd977deb09046d64d9e378c342a/pyvispr-2024.4.tar.gz
+[2024-04-22 11:31:19] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-04-22 11:31:19] INFO root fetch - processPackages [rips]: executing diffoscope
+[2024-04-22 11:31:19] INFO root fetch - processPackages [rips]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rips-2024.3.0.2.tar.gz tmp/rips-2024.3.1.2.tar.gz --markdown 20240422/r/rips/2024.3.0.2-2024.3.1.2/README.md --exclude *.pyd
+[2024-04-22 11:31:19] INFO root fetch - processPackages [TPE-Bot]: Downloading https://files.pythonhosted.org/packages/06/39/6765b1db3a22aca727c70cf3cb2180bd475be3d190efa459b1c45ffd3f12/TPE-Bot-6.8.9.tar.gz
+[2024-04-22 11:31:19] INFO root fetch - processPackages [project-master]: Downloading https://files.pythonhosted.org/packages/ce/07/c1eb8466618bfbd716e6549c5c01db0b8b5f0d0b88dd3f22df3fc7be4d02/project_master-1.2.tar.gz
+[2024-04-22 11:31:19] INFO root fetch - processPackages [cognite-power-ops]: Downloading https://files.pythonhosted.org/packages/ae/02/03b658ee14a5ee7f38f9250c404675ae7ef4ffd4e8c48779f0ffe3a20037/cognite_power_ops-0.94.0.tar.gz
+[2024-04-22 11:31:19] INFO root fetch - processPackages [project-master]: executing diffoscope
+[2024-04-22 11:31:19] INFO root fetch - processPackages [project-master]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project_master-1.1.tar.gz tmp/project_master-1.2.tar.gz --markdown 20240422/p/project-master/1.1-1.2/README.md --exclude *.pyd
+[2024-04-22 11:31:19] INFO root fetch - processPackages [pyvispr]: Downloading https://files.pythonhosted.org/packages/7a/6e/e0d25bc02d6a09696cb49e7825c50f8324a750ba32075fb25d6cac3f5cdf/pyvispr-2024.5.tar.gz
+[2024-04-22 11:31:19] INFO root fetch - processPackages [TPE-Bot]: executing diffoscope
+[2024-04-22 11:31:19] INFO root fetch - processPackages [TPE-Bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TPE-Bot-6.8.8.tar.gz tmp/TPE-Bot-6.8.9.tar.gz --markdown 20240422/T/TPE-Bot/6.8.8-6.8.9/README.md --exclude *.pyd
+[2024-04-22 11:31:19] INFO root fetch - processPackages [pyvispr]: executing diffoscope
+[2024-04-22 11:31:19] INFO root fetch - processPackages [pyvispr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvispr-2024.4.tar.gz tmp/pyvispr-2024.5.tar.gz --markdown 20240422/p/pyvispr/2024.4-2024.5/README.md --exclude *.pyd
+[2024-04-22 11:31:19] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-04-22 11:31:19] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240422/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-22 11:31:19] INFO root fetch - processPackages [cognite-power-ops]: Downloading https://files.pythonhosted.org/packages/47/83/12e166d225eab427eac02ffe93e429a8f558493b02504f7a466bf2cc3198/cognite_power_ops-0.94.1.tar.gz
+[2024-04-22 11:31:20] INFO root fetch - processPackages [cognite-power-ops]: executing diffoscope
+[2024-04-22 11:31:20] INFO root fetch - processPackages [cognite-power-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_power_ops-0.94.0.tar.gz tmp/cognite_power_ops-0.94.1.tar.gz --markdown 20240422/c/cognite-power-ops/0.94.0-0.94.1/README.md --exclude *.pyd
+[2024-04-22 11:31:20] INFO root fetch - processPackages [project-master]: Remove: archive file [/home/abi/fetcher/tmp/project_master-1.1.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - processPackages [project-master]: Remove: archive file [/home/abi/fetcher/tmp/project_master-1.2.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - main [MainThread]: End processing [project-master]: success
+[2024-04-22 11:31:20] INFO root fetch - processPackages [rips]: Remove: archive file [/home/abi/fetcher/tmp/rips-2024.3.0.2.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - processPackages [rips]: Remove: archive file [/home/abi/fetcher/tmp/rips-2024.3.1.2.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - main [MainThread]: End processing [rips]: success
+[2024-04-22 11:31:20] INFO root fetch - processPackages [pyvispr]: Remove: archive file [/home/abi/fetcher/tmp/pyvispr-2024.4.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - processPackages [pyvispr]: Remove: archive file [/home/abi/fetcher/tmp/pyvispr-2024.5.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - main [MainThread]: End processing [pyvispr]: success
+[2024-04-22 11:31:20] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.8.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - processPackages [TPE-Bot]: Remove: archive file [/home/abi/fetcher/tmp/TPE-Bot-6.8.9.tar.gz]
+[2024-04-22 11:31:20] INFO root fetch - main [MainThread]: End processing [TPE-Bot]: success
+[2024-04-22 11:31:20] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-04-22 11:31:20] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-04-22 11:31:20] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-04-22 11:31:21] INFO root fetch - processPackages [scancodeio]: New version: [34.4.0] Old Version: [34.3.0]
+[2024-04-22 11:31:21] INFO root fetch - processPackages [scancodeio]: Downloading https://files.pythonhosted.org/packages/fe/12/802820219825316d4126b10392033973ef024fb2ddf58e9528edae4178e0/scancodeio-34.3.0.tar.gz
+[2024-04-22 11:31:23] INFO root fetch - processPackages [cognite-power-ops]: Remove: archive file [/home/abi/fetcher/tmp/cognite_power_ops-0.94.0.tar.gz]
+[2024-04-22 11:31:23] INFO root fetch - processPackages [cognite-power-ops]: Remove: archive file [/home/abi/fetcher/tmp/cognite_power_ops-0.94.1.tar.gz]
+[2024-04-22 11:31:23] INFO root fetch - main [MainThread]: End processing [cognite-power-ops]: success
+[2024-04-22 11:31:23] INFO root fetch - processPackages [scitools-iris]: Downloading https://files.pythonhosted.org/packages/32/25/cb5d61789bc74cf490b00ab04d1d9c020c56f0588b7042f61a072781f3a7/scitools_iris-3.9.0.tar.gz
+[2024-04-22 11:31:23] INFO root fetch - processPackages [cloth-tools]: Downloading https://files.pythonhosted.org/packages/0f/09/c793275834f9db787dc3d9ec88edb15189e7e52d8e34f64903f8c3de6733/cloth-tools-0.2.0.tar.gz
+[2024-04-22 11:31:24] INFO root fetch - processPackages [cloth-tools]: Downloading https://files.pythonhosted.org/packages/f9/94/24a642f5872a5d9934d33e26a2a0b2f467894044482d71f4f8bd4665b527/cloth_tools-0.3.0.tar.gz
+[2024-04-22 11:31:24] INFO root fetch - processPackages [cloth-tools]: executing diffoscope
+[2024-04-22 11:31:24] INFO root fetch - processPackages [cloth-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloth-tools-0.2.0.tar.gz tmp/cloth_tools-0.3.0.tar.gz --markdown 20240422/c/cloth-tools/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-22 11:31:24] INFO root fetch - processPackages [cloth-tools]: Remove: archive file [/home/abi/fetcher/tmp/cloth-tools-0.2.0.tar.gz]
+[2024-04-22 11:31:24] INFO root fetch - processPackages [cloth-tools]: Remove: archive file [/home/abi/fetcher/tmp/cloth_tools-0.3.0.tar.gz]
+[2024-04-22 11:31:24] INFO root fetch - main [MainThread]: End processing [cloth-tools]: success
+[2024-04-22 11:31:25] INFO root fetch - processPackages [macrosynergy]: Downloading https://files.pythonhosted.org/packages/2d/ab/00749ace09d1854c70731845ceab79cb8e63ff8cb5dda26054274155e1cb/macrosynergy-0.1.8.tar.gz
+[2024-04-22 11:31:25] INFO root fetch - processPackages [macrosynergy]: Downloading https://files.pythonhosted.org/packages/b9/b8/29dfcdf47d06d49a91811e245dd464a5d67077fc4a0523781818255e1443/macrosynergy-0.1.9.tar.gz
+[2024-04-22 11:31:25] INFO root fetch - processPackages [macrosynergy]: executing diffoscope
+[2024-04-22 11:31:25] INFO root fetch - processPackages [macrosynergy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrosynergy-0.1.8.tar.gz tmp/macrosynergy-0.1.9.tar.gz --markdown 20240422/m/macrosynergy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 11:31:26] INFO root fetch - processPackages [macrosynergy]: Remove: archive file [/home/abi/fetcher/tmp/macrosynergy-0.1.8.tar.gz]
+[2024-04-22 11:31:26] INFO root fetch - processPackages [macrosynergy]: Remove: archive file [/home/abi/fetcher/tmp/macrosynergy-0.1.9.tar.gz]
+[2024-04-22 11:31:26] INFO root fetch - main [MainThread]: End processing [macrosynergy]: success
+[2024-04-22 11:31:27] INFO root fetch - processPackages [scitools-iris]: Downloading https://files.pythonhosted.org/packages/80/9e/b2a329e33ce605566c7d6b69aebf06a706933a2226d3727454f0254e5cc0/scitools-iris-3.9.0rc0.tar.gz
+[2024-04-22 11:31:27] INFO root fetch - processPackages [scitools-iris]: executing diffoscope
+[2024-04-22 11:31:27] INFO root fetch - processPackages [scitools-iris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scitools_iris-3.9.0.tar.gz tmp/scitools-iris-3.9.0rc0.tar.gz --markdown 20240422/s/scitools-iris/3.9.0-3.9.0rc0/README.md --exclude *.pyd
+[2024-04-22 11:31:33] INFO root fetch - processPackages [scancodeio]: Downloading https://files.pythonhosted.org/packages/1d/ea/c10a77f2d5c86a7ab4769b1da0f8b7a9b75cbd277f4528f32f4ac3c6269e/scancodeio-34.4.0.tar.gz
+[2024-04-22 11:31:34] INFO root fetch - processPackages [scitools-iris]: Remove: archive file [/home/abi/fetcher/tmp/scitools_iris-3.9.0.tar.gz]
+[2024-04-22 11:31:34] INFO root fetch - processPackages [scitools-iris]: Remove: archive file [/home/abi/fetcher/tmp/scitools-iris-3.9.0rc0.tar.gz]
+[2024-04-22 11:31:34] INFO root fetch - main [MainThread]: End processing [scitools-iris]: success
+[2024-04-22 11:31:35] INFO root fetch - processPackages [scancodeio]: executing diffoscope
+[2024-04-22 11:31:35] INFO root fetch - processPackages [scancodeio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scancodeio-34.3.0.tar.gz tmp/scancodeio-34.4.0.tar.gz --markdown 20240422/s/scancodeio/34.3.0-34.4.0/README.md --exclude *.pyd
+[2024-04-22 11:31:39] INFO root fetch - processPackages [scancodeio]: Remove: archive file [/home/abi/fetcher/tmp/scancodeio-34.3.0.tar.gz]
+[2024-04-22 11:31:39] INFO root fetch - processPackages [scancodeio]: Remove: archive file [/home/abi/fetcher/tmp/scancodeio-34.4.0.tar.gz]
+[2024-04-22 11:31:39] INFO root fetch - main [MainThread]: End processing [scancodeio]: success
+[2024-04-22 11:31:39] INFO root fetch - main [MainThread]: Store serial: [22874806]
