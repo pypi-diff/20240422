@@ -4339,3 +4339,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:53:27] INFO root fetch - processPackages [antchain-bot]: Remove: archive file [/home/abi/fetcher/tmp/antchain_bot-1.9.8.tar.gz]
 [2024-04-22 05:53:27] INFO root fetch - main [MainThread]: End processing [antchain-bot]: success
 [2024-04-22 05:53:27] INFO root fetch - main [MainThread]: Store serial: [22871799]
+[2024-04-22 05:55:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871799]
+[2024-04-22 05:55:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 05:55:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cutseq
+[2024-04-22 05:55:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-document-page
+[2024-04-22 05:55:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bk-audit
+[2024-04-22 05:55:36] INFO root fetch - processPackages [cutseq]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 05:55:36] INFO root fetch - processPackages [odoo14-addon-document-page]: New version: [14.0.1.3.1.dev1] Old Version: [14.0.1.3.1]
+[2024-04-22 05:55:36] INFO root fetch - processPackages [bk-audit]: New version: [1.2.1] Old Version: [1.2.0b1]
+[2024-04-22 05:55:36] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/7a/0d/08deebbe55900e03394dcefa5c667f71cb61d7a7557e4d95e4effb934f6b/cutseq-0.0.7.tar.gz
+[2024-04-22 05:55:36] INFO root fetch - processPackages [odoo14-addon-document-page]: Downloading https://files.pythonhosted.org/packages/78/bc/172f6f720536297690fd308cef7decb556cb13c48a82e85626b333f8f096/odoo14_addon_document_page-14.0.1.3.1-py3-none-any.whl
+[2024-04-22 05:55:36] INFO root fetch - processPackages [bk-audit]: Downloading https://files.pythonhosted.org/packages/9a/eb/3775cc147fbb221f3c613cad104d50739a3c8bcdb0e54df81d5544b0a4b8/bk-audit-1.2.0b1.tar.gz
+[2024-04-22 05:55:36] INFO root fetch - processPackages [odoo14-addon-document-page]: Downloading https://files.pythonhosted.org/packages/08/fe/f84dce7768a6ce4f4f859c511c02be8e26da0228750c6fd56e737af2a32e/odoo14_addon_document_page-14.0.1.3.1.dev1-py3-none-any.whl
+[2024-04-22 05:55:36] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-04-22 05:55:36] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 05:55:36] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.7.tar.gz tmp/cutseq-0.0.8.tar.gz --markdown 20240422/c/cutseq/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 05:55:36] INFO root fetch - processPackages [odoo14-addon-document-page]: executing diffoscope
+[2024-04-22 05:55:36] INFO root fetch - processPackages [odoo14-addon-document-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_document_page-14.0.1.3.1-py3-none-any.whl.zip tmp/odoo14_addon_document_page-14.0.1.3.1.dev1-py3-none-any.whl.zip --markdown 20240422/o/odoo14-addon-document-page/14.0.1.3.1-14.0.1.3.1.dev1/README.md --exclude *.pyd
+[2024-04-22 05:55:36] INFO root fetch - processPackages [bk-audit]: Downloading https://files.pythonhosted.org/packages/58/81/b99887e6cdd04a6cabdce6abd537cde0e65b6e8c5f1c1e7c139318189b6f/bk_audit-1.2.1.tar.gz
+[2024-04-22 05:55:36] INFO root fetch - processPackages [bk-audit]: executing diffoscope
+[2024-04-22 05:55:36] INFO root fetch - processPackages [bk-audit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bk-audit-1.2.0b1.tar.gz tmp/bk_audit-1.2.1.tar.gz --markdown 20240422/b/bk-audit/1.2.0b1-1.2.1/README.md --exclude *.pyd
+[2024-04-22 05:55:37] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.7.tar.gz]
+[2024-04-22 05:55:37] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-04-22 05:55:37] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 05:55:37] INFO root fetch - processPackages [bk-audit]: Remove: archive file [/home/abi/fetcher/tmp/bk-audit-1.2.0b1.tar.gz]
+[2024-04-22 05:55:37] INFO root fetch - processPackages [bk-audit]: Remove: archive file [/home/abi/fetcher/tmp/bk_audit-1.2.1.tar.gz]
+[2024-04-22 05:55:37] INFO root fetch - main [MainThread]: End processing [bk-audit]: success
+[2024-04-22 05:55:37] INFO root fetch - processPackages [odoo14-addon-document-page]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_document_page-14.0.1.3.1-py3-none-any.whl.zip]
+[2024-04-22 05:55:37] INFO root fetch - processPackages [odoo14-addon-document-page]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_document_page-14.0.1.3.1.dev1-py3-none-any.whl.zip]
+[2024-04-22 05:55:37] INFO root fetch - main [MainThread]: End processing [odoo14-addon-document-page]: success
+[2024-04-22 05:55:37] INFO root fetch - main [MainThread]: Store serial: [22871807]
