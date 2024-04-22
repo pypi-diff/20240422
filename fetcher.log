@@ -1893,3 +1893,24 @@
 [2024-04-22 02:32:45] INFO root fetch - processPackages [astropy-iers-data]: Remove: archive file [/home/abi/fetcher/tmp/astropy-iers-data-0.2024.4.8.0.32.4.tar.gz]
 [2024-04-22 02:32:45] INFO root fetch - main [MainThread]: End processing [astropy-iers-data]: success
 [2024-04-22 02:32:45] INFO root fetch - main [MainThread]: Store serial: [22870657]
+[2024-04-22 02:34:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870657]
+[2024-04-22 02:34:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 02:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-22 02:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dogma-rust
+[2024-04-22 02:34:55] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-22 02:34:55] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-22 02:34:55] INFO root fetch - processPackages [dogma-rust]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-22 02:34:55] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-22 02:34:55] INFO root fetch - processPackages [dogma-rust]: Downloading https://files.pythonhosted.org/packages/5b/9f/fc01131cb7262177af8289fb6c59f07a21e448bc686af73d4f27915878cc/dogma_rust-0.2.5.tar.gz
+[2024-04-22 02:34:56] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-22 02:34:56] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240422/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-22 02:34:56] INFO root fetch - processPackages [dogma-rust]: Downloading https://files.pythonhosted.org/packages/d4/86/b9c9d987954f296c6b4c97bcf899b72a9b118adfe2878b0f8f683b7a2776/dogma_rust-0.2.6.tar.gz
+[2024-04-22 02:34:56] INFO root fetch - processPackages [dogma-rust]: executing diffoscope
+[2024-04-22 02:34:56] INFO root fetch - processPackages [dogma-rust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dogma_rust-0.2.5.tar.gz tmp/dogma_rust-0.2.6.tar.gz --markdown 20240422/d/dogma-rust/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-22 02:34:56] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-22 02:34:56] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-22 02:34:56] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-22 02:34:56] INFO root fetch - processPackages [dogma-rust]: Remove: archive file [/home/abi/fetcher/tmp/dogma_rust-0.2.5.tar.gz]
+[2024-04-22 02:34:56] INFO root fetch - processPackages [dogma-rust]: Remove: archive file [/home/abi/fetcher/tmp/dogma_rust-0.2.6.tar.gz]
+[2024-04-22 02:34:56] INFO root fetch - main [MainThread]: End processing [dogma-rust]: success
+[2024-04-22 02:34:56] INFO root fetch - main [MainThread]: Store serial: [22870665]
