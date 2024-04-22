@@ -9877,3 +9877,89 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:07:32] INFO root fetch - processPackages [pulumi-aws-native]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws_native-0.99.1a1711556734.tar.gz]
 [2024-04-22 11:07:32] INFO root fetch - main [MainThread]: End processing [pulumi-aws-native]: success
 [2024-04-22 11:07:32] INFO root fetch - main [MainThread]: Store serial: [22874488]
+[2024-04-22 11:09:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874488]
+[2024-04-22 11:09:41] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yeref
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: text_lloom
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-adapter-kritor
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wttch-train-helper
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monisha
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: IISRapi
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Helo12340981234
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cloudpss
+[2024-04-22 11:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: numbers-c2pa
+[2024-04-22 11:09:41] INFO root fetch - processPackages [cloudpss]: New version: [4.1.1b9] Old Version: [4.1.1b8]
+[2024-04-22 11:09:41] WARNING root fetch - processPackages [IISRapi]: Skipping, unable to determine old version
+[2024-04-22 11:09:41] INFO root fetch - processPackages [IISRapi]: Start processing: gaea-operator
+[2024-04-22 11:09:41] INFO root fetch - main [MainThread]: End processing [IISRapi] error
+[2024-04-22 11:09:41] INFO root fetch - processPackages [wttch-train-helper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 11:09:41] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:09:41] INFO root fetch - processPackages [monisha]: New version: [0.0.56] Old Version: [0.0.55]
+[2024-04-22 11:09:41] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-22 11:09:41] INFO root fetch - processPackages [gaea-operator]: New version: [1.2.0.dev6] Old Version: [1.2.0.dev5]
+[2024-04-22 11:09:41] WARNING root fetch - processPackages [Helo12340981234]: Skipping, unable to determine old version
+[2024-04-22 11:09:41] INFO root fetch - main [MainThread]: End processing [Helo12340981234] error
+[2024-04-22 11:09:41] INFO root fetch - processPackages [nonebot-adapter-kritor]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-22 11:09:41] INFO root fetch - processPackages [numbers-c2pa]: New version: [0.1.0] Old Version: [0.0.7]
+[2024-04-22 11:09:41] INFO root fetch - processPackages [text_lloom]: New version: [0.7.1] Old Version: [0.7]
+[2024-04-22 11:09:41] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-22 11:09:41] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/3b/39/20b37adf77ac5d3a1c29fac307c5b35603437a19b4e9ccfdf3da730c7734/wttch-train-helper-0.0.8.tar.gz
+[2024-04-22 11:09:41] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-22 11:09:41] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/df/01/dd553cfad685768267d60830e8401c715e31d460cf57e8bfa5f3f0cfccbb/monisha-0.0.55.tar.gz
+[2024-04-22 11:09:41] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/65/0d/e9ba31f289288d38ec199f38c22f1178ac0366abcaa1e81a28f168399008/cloudpss-4.1.1b8.tar.gz
+[2024-04-22 11:09:41] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/6b/6b/5cf5c6191117de4447e405021aa859a7f5f9110cdec9384cb08b51acd7d9/gaea_operator-1.2.0.dev5-py3-none-any.whl
+[2024-04-22 11:09:41] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-22 11:09:41] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-22 11:09:42] INFO root fetch - processPackages [nonebot-adapter-kritor]: Downloading https://files.pythonhosted.org/packages/d2/7f/abfd7ecd5f58e6d36626b9f64538318c31d11d0060257caad161ee6d2738/nonebot_adapter_kritor-0.1.0.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [numbers-c2pa]: Downloading https://files.pythonhosted.org/packages/b4/c2/c14959f36b7cdaa59d63699c0bc815c3e03b0bce07502e04cf481c278e7e/numbers-c2pa-0.0.7.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [text_lloom]: Downloading https://files.pythonhosted.org/packages/81/fe/a3f09aa33560146f78529dbdd3fd31497faa295b03df24be4faa8c78130f/text_lloom-0.7.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/06/f1/4c3862ff8dfa72e0261e6a5f5e8fb8722a335c9adec2134db760cf92c16a/wttch-train-helper-0.0.9.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/5b/24/24989e49cb8cf21d5d2c8b071d835f6a78aca17eceeb1885baa86476f8d4/cloudpss-4.1.1b9.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/7a/cd/e95670c2a73d98e220e478ddc030a0ba9a40404cf85784c56d77401e8cfb/monisha-0.0.56.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [wttch-train-helper]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [wttch-train-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wttch-train-helper-0.0.8.tar.gz tmp/wttch-train-helper-0.0.9.tar.gz --markdown 20240422/w/wttch-train-helper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 11:09:42] INFO root fetch - processPackages [gaea-operator]: Downloading https://files.pythonhosted.org/packages/ee/1d/91c32c19721830e9a045528467052b4e6e46742d86329c37a506309e1e83/gaea_operator-1.2.0.dev6-py3-none-any.whl
+[2024-04-22 11:09:42] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240422/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-22 11:09:42] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.55.tar.gz tmp/monisha-0.0.56.tar.gz --markdown 20240422/m/monisha/0.0.55-0.0.56/README.md --exclude *.pyd
+[2024-04-22 11:09:42] INFO root fetch - processPackages [cloudpss]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [cloudpss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpss-4.1.1b8.tar.gz tmp/cloudpss-4.1.1b9.tar.gz --markdown 20240422/c/cloudpss/4.1.1b8-4.1.1b9/README.md --exclude *.pyd
+[2024-04-22 11:09:42] INFO root fetch - processPackages [numbers-c2pa]: Downloading https://files.pythonhosted.org/packages/2a/c2/f43593a0518405c6308e0c4f940bfe55e748652bd7b8981e2f59b6c96423/numbers_c2pa-0.1.0.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [nonebot-adapter-kritor]: Downloading https://files.pythonhosted.org/packages/c7/23/c89ab91964e5df5eb208e7af6a6b798b1e78a1110fda25c06f19ad89b7e9/nonebot_adapter_kritor-0.1.1.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [gaea-operator]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [gaea-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gaea_operator-1.2.0.dev5-py3-none-any.whl.zip tmp/gaea_operator-1.2.0.dev6-py3-none-any.whl.zip --markdown 20240422/g/gaea-operator/1.2.0.dev5-1.2.0.dev6/README.md --exclude *.pyd
+[2024-04-22 11:09:42] INFO root fetch - processPackages [text_lloom]: Downloading https://files.pythonhosted.org/packages/6d/a7/4c650df09ac28ddc4cc657dd5912d47375db2b69a9c2f17214f10231ff2a/text_lloom-0.7.1.tar.gz
+[2024-04-22 11:09:42] INFO root fetch - processPackages [numbers-c2pa]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [numbers-c2pa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numbers-c2pa-0.0.7.tar.gz tmp/numbers_c2pa-0.1.0.tar.gz --markdown 20240422/n/numbers-c2pa/0.0.7-0.1.0/README.md --exclude *.pyd
+[2024-04-22 11:09:42] INFO root fetch - processPackages [nonebot-adapter-kritor]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [nonebot-adapter-kritor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_kritor-0.1.0.tar.gz tmp/nonebot_adapter_kritor-0.1.1.tar.gz --markdown 20240422/n/nonebot-adapter-kritor/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-22 11:09:42] INFO root fetch - processPackages [text_lloom]: executing diffoscope
+[2024-04-22 11:09:42] INFO root fetch - processPackages [text_lloom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text_lloom-0.7.tar.gz tmp/text_lloom-0.7.1.tar.gz --markdown 20240422/t/text_lloom/0.7-0.7.1/README.md --exclude *.pyd
+[2024-04-22 11:09:43] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.8.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.9.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [wttch-train-helper]: success
+[2024-04-22 11:09:43] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-22 11:09:43] INFO root fetch - processPackages [numbers-c2pa]: Remove: archive file [/home/abi/fetcher/tmp/numbers-c2pa-0.0.7.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [numbers-c2pa]: Remove: archive file [/home/abi/fetcher/tmp/numbers_c2pa-0.1.0.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [numbers-c2pa]: success
+[2024-04-22 11:09:43] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.55.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.56.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-04-22 11:09:43] INFO root fetch - processPackages [text_lloom]: Remove: archive file [/home/abi/fetcher/tmp/text_lloom-0.7.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [text_lloom]: Remove: archive file [/home/abi/fetcher/tmp/text_lloom-0.7.1.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [text_lloom]: success
+[2024-04-22 11:09:43] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.dev5-py3-none-any.whl.zip]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [gaea-operator]: Remove: archive file [/home/abi/fetcher/tmp/gaea_operator-1.2.0.dev6-py3-none-any.whl.zip]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [gaea-operator]: success
+[2024-04-22 11:09:43] INFO root fetch - processPackages [nonebot-adapter-kritor]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_kritor-0.1.0.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [nonebot-adapter-kritor]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_kritor-0.1.1.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-kritor]: success
+[2024-04-22 11:09:43] INFO root fetch - processPackages [cloudpss]: Remove: archive file [/home/abi/fetcher/tmp/cloudpss-4.1.1b8.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - processPackages [cloudpss]: Remove: archive file [/home/abi/fetcher/tmp/cloudpss-4.1.1b9.tar.gz]
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: End processing [cloudpss]: success
+[2024-04-22 11:09:43] INFO root fetch - main [MainThread]: Store serial: [22874538]
