@@ -2232,3 +2232,42 @@
 [2024-04-22 02:59:29] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21368337>=10485760
 [2024-04-22 02:59:29] INFO root fetch - main [MainThread]: End processing [pycde] error
 [2024-04-22 02:59:29] INFO root fetch - main [MainThread]: Store serial: [22870817]
+[2024-04-22 03:01:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870817]
+[2024-04-22 03:01:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-ww-plugin-openwakeword
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scaffoldmaker
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: houdini_package_manager
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: btrfs-backup-ng
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: New version: [0.4.1a1] Old Version: [0.4.0]
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Downloading https://files.pythonhosted.org/packages/2c/60/795684dea3d7ca6639bc298737c699fc9919c74e5def4054aa88e6fe6c7a/ovos_ww_plugin_openwakeword-0.4.0-py3-none-any.whl
+[2024-04-22 03:01:38] INFO root fetch - processPackages [houdini_package_manager]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-22 03:01:38] INFO root fetch - processPackages [scaffoldmaker]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-22 03:01:38] INFO root fetch - processPackages [btrfs-backup-ng]: New version: [0.6.0] Old Version: [0.5.9]
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Downloading https://files.pythonhosted.org/packages/b5/3b/b90e50b316a28864f4010ea2be7f70fa2a970d307f191c3cb2eb6ed1e5fb/ovos_ww_plugin_openwakeword-0.4.1a1-py3-none-any.whl
+[2024-04-22 03:01:38] INFO root fetch - processPackages [scaffoldmaker]: Downloading https://files.pythonhosted.org/packages/1e/fc/331fe13f8c4da9bae65f05c24fc3018176bf89af611ae7c62f83dc30672c/scaffoldmaker-0.8.1.tar.gz
+[2024-04-22 03:01:38] INFO root fetch - processPackages [houdini_package_manager]: Downloading https://files.pythonhosted.org/packages/85/69/0e24ef0ec347922bf6deb7108948cc077e64b2ea4ff2bb5974c11931d74a/houdini_package_manager-1.1.2.tar.gz
+[2024-04-22 03:01:38] INFO root fetch - processPackages [btrfs-backup-ng]: Downloading https://files.pythonhosted.org/packages/f6/f8/38e7f9b68f1f84329cdf0a07166901fe4fd8414f862cca8653c7836e52f7/btrfs-backup-ng-0.5.9.tar.gz
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: executing diffoscope
+[2024-04-22 03:01:38] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_ww_plugin_openwakeword-0.4.0-py3-none-any.whl.zip tmp/ovos_ww_plugin_openwakeword-0.4.1a1-py3-none-any.whl.zip --markdown 20240422/o/ovos-ww-plugin-openwakeword/0.4.0-0.4.1a1/README.md --exclude *.pyd
+[2024-04-22 03:01:38] INFO root fetch - processPackages [btrfs-backup-ng]: Downloading https://files.pythonhosted.org/packages/e2/bd/c419e2fc229b6433ed3f4162c01336609f92c854ce1c02252b4c647037d0/btrfs_backup_ng-0.6.0.tar.gz
+[2024-04-22 03:01:38] INFO root fetch - processPackages [scaffoldmaker]: Downloading https://files.pythonhosted.org/packages/df/4e/5adfa05c43cad46d9d47f546523226383cd46b18516b700a2e698dad9385/scaffoldmaker-0.9.0.tar.gz
+[2024-04-22 03:01:38] INFO root fetch - processPackages [btrfs-backup-ng]: executing diffoscope
+[2024-04-22 03:01:38] INFO root fetch - processPackages [btrfs-backup-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/btrfs-backup-ng-0.5.9.tar.gz tmp/btrfs_backup_ng-0.6.0.tar.gz --markdown 20240422/b/btrfs-backup-ng/0.5.9-0.6.0/README.md --exclude *.pyd
+[2024-04-22 03:01:38] INFO root fetch - processPackages [scaffoldmaker]: executing diffoscope
+[2024-04-22 03:01:38] INFO root fetch - processPackages [scaffoldmaker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaffoldmaker-0.8.1.tar.gz tmp/scaffoldmaker-0.9.0.tar.gz --markdown 20240422/s/scaffoldmaker/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-22 03:01:39] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Remove: archive file [/home/abi/fetcher/tmp/ovos_ww_plugin_openwakeword-0.4.0-py3-none-any.whl.zip]
+[2024-04-22 03:01:39] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Remove: archive file [/home/abi/fetcher/tmp/ovos_ww_plugin_openwakeword-0.4.1a1-py3-none-any.whl.zip]
+[2024-04-22 03:01:39] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-openwakeword]: success
+[2024-04-22 03:01:39] INFO root fetch - processPackages [houdini_package_manager]: Downloading https://files.pythonhosted.org/packages/e5/8b/78cfebbfbe3b8f200df02e8d14d3dfdda438a2f145c96288d29e1dd528f3/houdini_package_manager-1.1.3.tar.gz
+[2024-04-22 03:01:39] INFO root fetch - processPackages [btrfs-backup-ng]: Remove: archive file [/home/abi/fetcher/tmp/btrfs-backup-ng-0.5.9.tar.gz]
+[2024-04-22 03:01:39] INFO root fetch - processPackages [btrfs-backup-ng]: Remove: archive file [/home/abi/fetcher/tmp/btrfs_backup_ng-0.6.0.tar.gz]
+[2024-04-22 03:01:39] INFO root fetch - main [MainThread]: End processing [btrfs-backup-ng]: success
+[2024-04-22 03:01:39] INFO root fetch - processPackages [houdini_package_manager]: executing diffoscope
+[2024-04-22 03:01:39] INFO root fetch - processPackages [houdini_package_manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/houdini_package_manager-1.1.2.tar.gz tmp/houdini_package_manager-1.1.3.tar.gz --markdown 20240422/h/houdini_package_manager/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-22 03:01:40] INFO root fetch - processPackages [houdini_package_manager]: Remove: archive file [/home/abi/fetcher/tmp/houdini_package_manager-1.1.2.tar.gz]
+[2024-04-22 03:01:40] INFO root fetch - processPackages [houdini_package_manager]: Remove: archive file [/home/abi/fetcher/tmp/houdini_package_manager-1.1.3.tar.gz]
+[2024-04-22 03:01:40] INFO root fetch - main [MainThread]: End processing [houdini_package_manager]: success
+[2024-04-22 03:01:40] INFO root fetch - processPackages [scaffoldmaker]: Remove: archive file [/home/abi/fetcher/tmp/scaffoldmaker-0.8.1.tar.gz]
+[2024-04-22 03:01:40] INFO root fetch - processPackages [scaffoldmaker]: Remove: archive file [/home/abi/fetcher/tmp/scaffoldmaker-0.9.0.tar.gz]
+[2024-04-22 03:01:40] INFO root fetch - main [MainThread]: End processing [scaffoldmaker]: success
+[2024-04-22 03:01:40] INFO root fetch - main [MainThread]: Store serial: [22870829]
