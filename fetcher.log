@@ -4746,3 +4746,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:34:33] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.2.0.tar.gz]
 [2024-04-22 06:34:33] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
 [2024-04-22 06:34:33] INFO root fetch - main [MainThread]: Store serial: [22871953]
+[2024-04-22 06:36:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871953]
+[2024-04-22 06:36:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 06:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cait-sith-py
+[2024-04-22 06:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbchat
+[2024-04-22 06:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PerplexiPy
+[2024-04-22 06:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Akatosh
+[2024-04-22 06:36:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: appmesh
+[2024-04-22 06:36:42] INFO root fetch - processPackages [cait-sith-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-22 06:36:42] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc86.post1] Old Version: [0.0.2rc85.post1]
+[2024-04-22 06:36:42] INFO root fetch - processPackages [PerplexiPy]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-22 06:36:42] INFO root fetch - processPackages [cait-sith-py]: Downloading https://files.pythonhosted.org/packages/be/8d/12eee243ea328baf9c7a8b8f5705cb1c0cbe81e5f167a2531a8a65fd9278/cait_sith_py-0.1.0.tar.gz
+[2024-04-22 06:36:42] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/7a/94/f1a926387425fc1eba7c5cb0a2f2883aaad303413235475f19499c736378/py_dbchat-0.0.2rc85.post1.tar.gz
+[2024-04-22 06:36:43] INFO root fetch - processPackages [appmesh]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-04-22 06:36:43] INFO root fetch - processPackages [Akatosh]: New version: [3.0.0] Old Version: [2.3.3]
+[2024-04-22 06:36:43] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/07/1b/fa55a2223a34d014a9d56a692d2fe71a096a326311c999eacbf6429fd9b7/PerplexiPy-1.0.2-py3-none-any.whl
+[2024-04-22 06:36:43] INFO root fetch - processPackages [cait-sith-py]: Downloading https://files.pythonhosted.org/packages/6b/08/e7ceea69724e378d8add34c09fc0e3680af54b198840227dcd577fb916bb/cait_sith_py-0.1.1.tar.gz
+[2024-04-22 06:36:43] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/22/e9/6c8505af062484a5ace4c57daeb832f7ee5777fe33a4e56aa2f52993e0cb/appmesh-0.8.5-py3-none-any.whl
+[2024-04-22 06:36:43] INFO root fetch - processPackages [Akatosh]: Downloading https://files.pythonhosted.org/packages/27/10/30075552cd8a42f48746db776b8c1b4c71035fe26492d71e334ac76cf459/Akatosh-2.3.3.tar.gz
+[2024-04-22 06:36:43] INFO root fetch - processPackages [cait-sith-py]: executing diffoscope
+[2024-04-22 06:36:43] INFO root fetch - processPackages [cait-sith-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cait_sith_py-0.1.0.tar.gz tmp/cait_sith_py-0.1.1.tar.gz --markdown 20240422/c/cait-sith-py/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-22 06:36:43] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/16/2b/f54a3b9466d9d2d7fd8abb85c08d7d5e9cbfc40cd995598b2c1412782c87/py_dbchat-0.0.2rc86.post1.tar.gz
+[2024-04-22 06:36:43] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/d4/47/646987c6644e00577e339d84b4cd3c190e0e20f9e58f0c8ca907cfe4bd6f/PerplexiPy-1.0.3-py3-none-any.whl
+[2024-04-22 06:36:43] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-22 06:36:43] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc85.post1.tar.gz tmp/py_dbchat-0.0.2rc86.post1.tar.gz --markdown 20240422/p/py-dbchat/0.0.2rc85.post1-0.0.2rc86.post1/README.md --exclude *.pyd
+[2024-04-22 06:36:43] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/e5/15/2a612beec390ca568f49b25d1713b2ec3082e50b9cabaa9fd4863e14ac0e/appmesh-0.8.6-py3-none-any.whl
+[2024-04-22 06:36:43] INFO root fetch - processPackages [Akatosh]: Downloading https://files.pythonhosted.org/packages/d1/fd/63c45c3e18bfe7aa73803ba95b8c77e733d75fc4aa43ae38b8dd5a2b810d/akatosh-3.0.0.tar.gz
+[2024-04-22 06:36:43] INFO root fetch - processPackages [PerplexiPy]: executing diffoscope
+[2024-04-22 06:36:43] INFO root fetch - processPackages [PerplexiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PerplexiPy-1.0.2-py3-none-any.whl.zip tmp/PerplexiPy-1.0.3-py3-none-any.whl.zip --markdown 20240422/P/PerplexiPy/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-22 06:36:43] INFO root fetch - processPackages [cait-sith-py]: Remove: archive file [/home/abi/fetcher/tmp/cait_sith_py-0.1.0.tar.gz]
+[2024-04-22 06:36:43] INFO root fetch - processPackages [cait-sith-py]: Remove: archive file [/home/abi/fetcher/tmp/cait_sith_py-0.1.1.tar.gz]
+[2024-04-22 06:36:43] INFO root fetch - main [MainThread]: End processing [cait-sith-py]: success
+[2024-04-22 06:36:44] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2024-04-22 06:36:44] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-0.8.5-py3-none-any.whl.zip tmp/appmesh-0.8.6-py3-none-any.whl.zip --markdown 20240422/a/appmesh/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-04-22 06:36:44] INFO root fetch - processPackages [Akatosh]: executing diffoscope
+[2024-04-22 06:36:44] INFO root fetch - processPackages [Akatosh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Akatosh-2.3.3.tar.gz tmp/akatosh-3.0.0.tar.gz --markdown 20240422/A/Akatosh/2.3.3-3.0.0/README.md --exclude *.pyd
+[2024-04-22 06:36:44] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.2-py3-none-any.whl.zip]
+[2024-04-22 06:36:44] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.3-py3-none-any.whl.zip]
+[2024-04-22 06:36:44] INFO root fetch - main [MainThread]: End processing [PerplexiPy]: success
+[2024-04-22 06:36:44] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc85.post1.tar.gz]
+[2024-04-22 06:36:44] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc86.post1.tar.gz]
+[2024-04-22 06:36:44] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-22 06:36:44] INFO root fetch - processPackages [Akatosh]: Remove: archive file [/home/abi/fetcher/tmp/Akatosh-2.3.3.tar.gz]
+[2024-04-22 06:36:44] INFO root fetch - processPackages [Akatosh]: Remove: archive file [/home/abi/fetcher/tmp/akatosh-3.0.0.tar.gz]
+[2024-04-22 06:36:44] INFO root fetch - main [MainThread]: End processing [Akatosh]: success
+[2024-04-22 06:36:44] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-0.8.5-py3-none-any.whl.zip]
+[2024-04-22 06:36:44] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-0.8.6-py3-none-any.whl.zip]
+[2024-04-22 06:36:44] INFO root fetch - main [MainThread]: End processing [appmesh]: success
+[2024-04-22 06:36:44] INFO root fetch - main [MainThread]: Store serial: [22871968]
