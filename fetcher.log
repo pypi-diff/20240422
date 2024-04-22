@@ -6694,3 +6694,68 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:31:19] INFO root fetch - processPackages [daktari]: Remove: archive file [/home/abi/fetcher/tmp/daktari-0.0.99.tar.gz]
 [2024-04-22 08:31:19] INFO root fetch - main [MainThread]: End processing [daktari]: success
 [2024-04-22 08:31:19] INFO root fetch - main [MainThread]: Store serial: [22872677]
+[2024-04-22 08:33:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872677]
+[2024-04-22 08:33:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-dms
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-dms-storage
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: php-ast
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: screwdriver-cd-python-sdk
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-l10n-es-aeat-mod216
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cs.tagset
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-l10n-es-irnr
+[2024-04-22 08:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pygpt-net
+[2024-04-22 08:33:29] INFO root fetch - processPackages [cs.tagset]: New version: [20240422.1] Old Version: [20240422]
+[2024-04-22 08:33:29] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-22 08:33:29] INFO root fetch - processPackages [php-ast]: New version: [1.4] Old Version: [1.3]
+[2024-04-22 08:33:29] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-22 08:33:29] WARNING root fetch - processPackages [odoo14-addon-dms-storage]: Skipping, unable to determine old version
+[2024-04-22 08:33:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-dms-storage] error
+[2024-04-22 08:33:29] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod216]: New version: [16.0.1.0.1.4] Old Version: [16.0.1.0.1.1]
+[2024-04-22 08:33:29] INFO root fetch - processPackages [cs.tagset]: Downloading https://files.pythonhosted.org/packages/03/a3/adeb9f961764a5a64589e00c13919611b427168e3386e748e2cae5960e8b/cs.tagset-20240422.tar.gz
+[2024-04-22 08:33:29] INFO root fetch - processPackages [odoo14-addon-dms]: New version: [14.0.4.9.0] Old Version: [14.0.4.8.0]
+[2024-04-22 08:33:29] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/01/de/ce2878b1bc95de2cee3a119c700c4d9beef08e1f67e7a2f5ad3da6e9b432/screwdriver-cd-python-sdk-1.0.1.tar.gz
+[2024-04-22 08:33:29] INFO root fetch - processPackages [odoo-addon-l10n-es-irnr]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.3]
+[2024-04-22 08:33:29] INFO root fetch - processPackages [php-ast]: Downloading https://files.pythonhosted.org/packages/5c/2a/524be675eb32261d3e9831cf8dbb083ba938ede368c79e3d1e0531076493/php_ast-1.3.tar.gz
+[2024-04-22 08:33:29] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a5/de/e40709b6067cd6a2fe2ce05bb561b0d9d4c91f6cd91f7b3c4bd151d18a9b/pygpt_net-2.1.8.tar.gz
+[2024-04-22 08:33:29] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod216]: Downloading https://files.pythonhosted.org/packages/72/db/235cf8e06724374e81576493b8aa61d83bf4fb7a2f07cc053d79b55333e4/odoo_addon_l10n_es_aeat_mod216-16.0.1.0.1.1-py3-none-any.whl
+[2024-04-22 08:33:29] INFO root fetch - processPackages [odoo-addon-l10n-es-irnr]: Downloading https://files.pythonhosted.org/packages/28/c9/7d56cf75a83be2ea50cb466f7f241fa6a861c230d48c81081f6982115fba/odoo_addon_l10n_es_irnr-16.0.1.0.0.3-py3-none-any.whl
+[2024-04-22 08:33:29] INFO root fetch - processPackages [odoo14-addon-dms]: Downloading https://files.pythonhosted.org/packages/78/46/ce7e4f21cf40450af14b51803d9c7bd16e2d017d02e1ef934ab399abe634/odoo14_addon_dms-14.0.4.8.0-py3-none-any.whl
+[2024-04-22 08:33:29] WARNING root fetch - processPackages [odoo14-addon-dms]: Skipping package: exceeds size limit 15634464>=10485760
+[2024-04-22 08:33:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-dms] error
+[2024-04-22 08:33:29] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/e1/b6/2c762d32639c1779b38f0bda287a1432ee8e23773e74b286d99b2b1a0a27/screwdriver-cd-python-sdk-1.0.2.tar.gz
+[2024-04-22 08:33:29] INFO root fetch - processPackages [cs.tagset]: Downloading https://files.pythonhosted.org/packages/96/76/a079b5d67515e72033a3623e68720622a9ea798ae76181283e334cafdd07/cs.tagset-20240422.1.tar.gz
+[2024-04-22 08:33:29] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-22 08:33:29] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: executing diffoscope
+[2024-04-22 08:33:29] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screwdriver-cd-python-sdk-1.0.1.tar.gz tmp/screwdriver-cd-python-sdk-1.0.2.tar.gz --markdown 20240422/s/screwdriver-cd-python-sdk/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-22 08:33:30] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod216]: Downloading https://files.pythonhosted.org/packages/05/14/1b7f455149af8d628b0a27ca4964fa3a8d990b71349e8f49ef6b355d92a0/odoo_addon_l10n_es_aeat_mod216-16.0.1.0.1.4-py3-none-any.whl
+[2024-04-22 08:33:30] INFO root fetch - processPackages [php-ast]: Downloading https://files.pythonhosted.org/packages/ad/66/18da22abca07467ebe2633cf9078f6888ef168bd6e4ad925f2285ae7ec1a/php_ast-1.4.tar.gz
+[2024-04-22 08:33:30] INFO root fetch - processPackages [cs.tagset]: executing diffoscope
+[2024-04-22 08:33:30] INFO root fetch - processPackages [cs.tagset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.tagset-20240422.tar.gz tmp/cs.tagset-20240422.1.tar.gz --markdown 20240422/c/cs.tagset/20240422-20240422.1/README.md --exclude *.pyd
+[2024-04-22 08:33:30] INFO root fetch - processPackages [odoo-addon-l10n-es-irnr]: Downloading https://files.pythonhosted.org/packages/36/2f/7e2906beb9654fbaa24d3cbeb8a14953dc9124bbfec72d75bf377c25ce00/odoo_addon_l10n_es_irnr-16.0.1.0.0.5-py3-none-any.whl
+[2024-04-22 08:33:30] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod216]: executing diffoscope
+[2024-04-22 08:33:30] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod216]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_aeat_mod216-16.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_aeat_mod216-16.0.1.0.1.4-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-l10n-es-aeat-mod216/16.0.1.0.1.1-16.0.1.0.1.4/README.md --exclude *.pyd
+[2024-04-22 08:33:30] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-22 08:33:30] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.8.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240422/p/pygpt-net/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-22 08:33:30] INFO root fetch - processPackages [odoo-addon-l10n-es-irnr]: executing diffoscope
+[2024-04-22 08:33:30] INFO root fetch - processPackages [odoo-addon-l10n-es-irnr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_es_irnr-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_l10n_es_irnr-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-l10n-es-irnr/16.0.1.0.0.3-16.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-22 08:33:30] INFO root fetch - processPackages [php-ast]: executing diffoscope
+[2024-04-22 08:33:30] INFO root fetch - processPackages [php-ast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/php_ast-1.3.tar.gz tmp/php_ast-1.4.tar.gz --markdown 20240422/p/php-ast/1.3-1.4/README.md --exclude *.pyd
+[2024-04-22 08:33:30] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-1.0.1.tar.gz]
+[2024-04-22 08:33:30] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-1.0.2.tar.gz]
+[2024-04-22 08:33:30] INFO root fetch - main [MainThread]: End processing [screwdriver-cd-python-sdk]: success
+[2024-04-22 08:33:31] INFO root fetch - processPackages [cs.tagset]: Remove: archive file [/home/abi/fetcher/tmp/cs.tagset-20240422.tar.gz]
+[2024-04-22 08:33:31] INFO root fetch - processPackages [cs.tagset]: Remove: archive file [/home/abi/fetcher/tmp/cs.tagset-20240422.1.tar.gz]
+[2024-04-22 08:33:31] INFO root fetch - main [MainThread]: End processing [cs.tagset]: success
+[2024-04-22 08:33:31] INFO root fetch - processPackages [odoo-addon-l10n-es-irnr]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_irnr-16.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-22 08:33:31] INFO root fetch - processPackages [odoo-addon-l10n-es-irnr]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_irnr-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-22 08:33:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-irnr]: success
+[2024-04-22 08:33:31] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod216]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod216-16.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-22 08:33:31] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod216]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod216-16.0.1.0.1.4-py3-none-any.whl.zip]
+[2024-04-22 08:33:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod216]: success
+[2024-04-22 08:33:31] INFO root fetch - processPackages [php-ast]: Remove: archive file [/home/abi/fetcher/tmp/php_ast-1.3.tar.gz]
+[2024-04-22 08:33:31] INFO root fetch - processPackages [php-ast]: Remove: archive file [/home/abi/fetcher/tmp/php_ast-1.4.tar.gz]
+[2024-04-22 08:33:31] INFO root fetch - main [MainThread]: End processing [php-ast]: success
+[2024-04-22 08:33:33] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.8.tar.gz]
+[2024-04-22 08:33:33] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-22 08:33:33] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-22 08:33:33] INFO root fetch - main [MainThread]: Store serial: [22872698]
