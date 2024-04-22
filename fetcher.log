@@ -2766,3 +2766,17 @@
 [2024-04-22 03:50:30] INFO root fetch - processPackages [deep-training]: Remove: archive file [/home/abi/fetcher/tmp/deep_training-0.3.0-py3-none-any.whl.zip]
 [2024-04-22 03:50:30] INFO root fetch - main [MainThread]: End processing [deep-training]: success
 [2024-04-22 03:50:30] INFO root fetch - main [MainThread]: Store serial: [22871121]
+[2024-04-22 03:52:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871121]
+[2024-04-22 03:52:39] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 03:54:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871121]
+[2024-04-22 03:54:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 03:54:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flowdata
+[2024-04-22 03:54:46] INFO root fetch - processPackages [flowdata]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 03:54:46] INFO root fetch - processPackages [flowdata]: Downloading https://files.pythonhosted.org/packages/b1/43/033a1c4c4b67e58190b1ac78ff328843085583b41167a053f2d038726ef6/flowdata-0.1.1.tar.gz
+[2024-04-22 03:54:46] INFO root fetch - processPackages [flowdata]: Downloading https://files.pythonhosted.org/packages/f7/c1/17194f3cf407e638cadab2496f26b6df93c979ab8a4bf408aa4f38c80ccb/flowdata-0.1.2.tar.gz
+[2024-04-22 03:54:47] INFO root fetch - processPackages [flowdata]: executing diffoscope
+[2024-04-22 03:54:47] INFO root fetch - processPackages [flowdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowdata-0.1.1.tar.gz tmp/flowdata-0.1.2.tar.gz --markdown 20240422/f/flowdata/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 03:54:47] INFO root fetch - processPackages [flowdata]: Remove: archive file [/home/abi/fetcher/tmp/flowdata-0.1.1.tar.gz]
+[2024-04-22 03:54:47] INFO root fetch - processPackages [flowdata]: Remove: archive file [/home/abi/fetcher/tmp/flowdata-0.1.2.tar.gz]
+[2024-04-22 03:54:47] INFO root fetch - main [MainThread]: End processing [flowdata]: success
+[2024-04-22 03:54:47] INFO root fetch - main [MainThread]: Store serial: [22871123]
