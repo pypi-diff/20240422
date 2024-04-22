@@ -6363,3 +6363,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:15:05] INFO root fetch - processPackages [volstreet]: Remove: archive file [/home/abi/fetcher/tmp/volstreet-7.2.2.tar.gz]
 [2024-04-22 08:15:05] INFO root fetch - main [MainThread]: End processing [volstreet]: success
 [2024-04-22 08:15:05] INFO root fetch - main [MainThread]: Store serial: [22872539]
+[2024-04-22 08:17:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872539]
+[2024-04-22 08:17:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 08:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fake-bpy-module-latest
+[2024-04-22 08:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tsk-monster
+[2024-04-22 08:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqqq
+[2024-04-22 08:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fake-bpy-module
+[2024-04-22 08:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cs.imageutils
+[2024-04-22 08:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: that-depends
+[2024-04-22 08:17:14] INFO root fetch - processPackages [that-depends]: New version: [1.6.3] Old Version: [1.6.2]
+[2024-04-22 08:17:14] INFO root fetch - processPackages [pyqqq]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240421] Old Version: [20240420]
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240421] Old Version: [20240420]
+[2024-04-22 08:17:14] WARNING root fetch - processPackages [cs.imageutils]: Skipping, unable to determine old version
+[2024-04-22 08:17:14] INFO root fetch - main [MainThread]: End processing [cs.imageutils] error
+[2024-04-22 08:17:14] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/7a/0d/85656606685b46527ac7b2385c2b9ca114c493ec018751396121fc5f1c2d/fake_bpy_module-20240420.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [pyqqq]: Downloading https://files.pythonhosted.org/packages/e6/f1/b05051a33adef460277ba5c39e32abb0a36482b499f2d13d49653a5bdb96/pyqqq-0.8.3.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/ce/5f/8d2cab49d314f135816d4da49ff9daac27dc3a71ea6f04cac161051881bf/that_depends-1.6.2.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/ba/e5/c2c85cad97419a3f69fddb8ce051f406160283536c8aea51d3699ab9a203/fake_bpy_module_latest-20240420.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [pyqqq]: Downloading https://files.pythonhosted.org/packages/2b/d3/9cc27662d73f034569a096ac608dc334ad4dca38868e554569747e2c9aed/pyqqq-0.8.4.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [that-depends]: Downloading https://files.pythonhosted.org/packages/1a/db/962d6db9f9bb8a0d0c25fe6df14729874306713496df398a3813b52783c9/that_depends-1.6.3.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [pyqqq]: executing diffoscope
+[2024-04-22 08:17:14] INFO root fetch - processPackages [pyqqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqqq-0.8.3.tar.gz tmp/pyqqq-0.8.4.tar.gz --markdown 20240422/p/pyqqq/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-04-22 08:17:14] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/bd/0d/76bc9f0c428722f67988b8db745d256aefb82e1f9e36269eee144c2705f1/tsk_monster-0.0.9.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/15/2f/c9e94a77df0159ad708c2f43ce08f3d64d4ac7364bdd37c8e7158fbcea4e/fake_bpy_module_latest-20240421.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/8d/b8/49a272b5a04cfa2670abe42357789def40ce5ffa513ba94180b88cdf3277/fake_bpy_module-20240421.tar.gz
+[2024-04-22 08:17:14] INFO root fetch - processPackages [that-depends]: executing diffoscope
+[2024-04-22 08:17:14] INFO root fetch - processPackages [that-depends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/that_depends-1.6.2.tar.gz tmp/that_depends-1.6.3.tar.gz --markdown 20240422/t/that-depends/1.6.2-1.6.3/README.md --exclude *.pyd
+[2024-04-22 08:17:14] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-22 08:17:14] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.8.tar.gz tmp/tsk_monster-0.0.9.tar.gz --markdown 20240422/t/tsk-monster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-04-22 08:17:14] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240420.tar.gz tmp/fake_bpy_module_latest-20240421.tar.gz --markdown 20240422/f/fake-bpy-module-latest/20240420-20240421/README.md --exclude *.pyd
+[2024-04-22 08:17:15] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-04-22 08:17:15] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240420.tar.gz tmp/fake_bpy_module-20240421.tar.gz --markdown 20240422/f/fake-bpy-module/20240420-20240421/README.md --exclude *.pyd
+[2024-04-22 08:17:15] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.8.tar.gz]
+[2024-04-22 08:17:15] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.9.tar.gz]
+[2024-04-22 08:17:15] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-22 08:17:15] INFO root fetch - processPackages [pyqqq]: Remove: archive file [/home/abi/fetcher/tmp/pyqqq-0.8.3.tar.gz]
+[2024-04-22 08:17:15] INFO root fetch - processPackages [pyqqq]: Remove: archive file [/home/abi/fetcher/tmp/pyqqq-0.8.4.tar.gz]
+[2024-04-22 08:17:15] INFO root fetch - main [MainThread]: End processing [pyqqq]: success
+[2024-04-22 08:17:15] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.6.2.tar.gz]
+[2024-04-22 08:17:15] INFO root fetch - processPackages [that-depends]: Remove: archive file [/home/abi/fetcher/tmp/that_depends-1.6.3.tar.gz]
+[2024-04-22 08:17:15] INFO root fetch - main [MainThread]: End processing [that-depends]: success
+[2024-04-22 08:17:22] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240420.tar.gz]
+[2024-04-22 08:17:22] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240421.tar.gz]
+[2024-04-22 08:17:22] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-04-22 08:17:22] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240420.tar.gz]
+[2024-04-22 08:17:22] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240421.tar.gz]
+[2024-04-22 08:17:22] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-04-22 08:17:22] INFO root fetch - main [MainThread]: Store serial: [22872559]
