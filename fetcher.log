@@ -2091,3 +2091,51 @@
 [2024-04-22 02:50:46] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-22 02:50:46] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-22 02:50:46] INFO root fetch - main [MainThread]: Store serial: [22870749]
+[2024-04-22 02:52:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870749]
+[2024-04-22 02:52:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 02:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cria
+[2024-04-22 02:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sshfs
+[2024-04-22 02:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyimg4
+[2024-04-22 02:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: etb-pg
+[2024-04-22 02:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tradedangerous
+[2024-04-22 02:52:55] INFO root fetch - processPackages [sshfs]: New version: [2024.4.0] Old Version: [2023.7.0]
+[2024-04-22 02:52:55] INFO root fetch - processPackages [cria]: New version: [1.4.0] Old Version: [0.1.0]
+[2024-04-22 02:52:55] INFO root fetch - processPackages [tradedangerous]: New version: [10.9.8] Old Version: [10.9.7]
+[2024-04-22 02:52:55] INFO root fetch - processPackages [etb-pg]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-22 02:52:55] INFO root fetch - processPackages [pyimg4]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-04-22 02:52:55] INFO root fetch - processPackages [sshfs]: Downloading https://files.pythonhosted.org/packages/71/18/fa440e1b4cb83c9179b07ffb6ce78a6ed751945350601a3342c2b842d60d/sshfs-2023.7.0.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [cria]: Downloading https://files.pythonhosted.org/packages/7a/18/a0502f3391e77e00b9b75a4a5a8c7fa6b52d6eb3bbdb8948affb724f49dc/cria-0.1.0.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/f0/71/5c26485ec7d39c61db0e0eff321b9fcd6656ad98bae9dd80db18336dc73d/tradedangerous-10.9.7.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [etb-pg]: Downloading https://files.pythonhosted.org/packages/1a/5f/4d94a333036c95ac191dd698a2fcc2089ffaee06d34a54e867b0d0c32bb3/etb-pg-0.1.5.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [pyimg4]: Downloading https://files.pythonhosted.org/packages/ae/be/62a1effb30cad4ac85a68106780b3785c64936601a63924a9b3f157affd0/pyimg4-0.8.3.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [sshfs]: Downloading https://files.pythonhosted.org/packages/97/5e/2f54fc637e1807ceb55af41e5948fdbbaaeb03c44afa2d400b2c04c4700f/sshfs-2024.4.0.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [cria]: Downloading https://files.pythonhosted.org/packages/9a/d5/50074e278f8cd12847d4005f84481b1e62f0ad468c4fe74f5e6bcb13b5ce/cria-1.4.0.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [tradedangerous]: Downloading https://files.pythonhosted.org/packages/d9/11/d9ffad5dfc88cd5ec054cd2e82b8477ba81df779f293f62a341c1dbd90cd/tradedangerous-10.9.8.tar.gz
+[2024-04-22 02:52:55] INFO root fetch - processPackages [cria]: executing diffoscope
+[2024-04-22 02:52:55] INFO root fetch - processPackages [cria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cria-0.1.0.tar.gz tmp/cria-1.4.0.tar.gz --markdown 20240422/c/cria/0.1.0-1.4.0/README.md --exclude *.pyd
+[2024-04-22 02:52:55] INFO root fetch - processPackages [sshfs]: executing diffoscope
+[2024-04-22 02:52:55] INFO root fetch - processPackages [sshfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sshfs-2023.7.0.tar.gz tmp/sshfs-2024.4.0.tar.gz --markdown 20240422/s/sshfs/2023.7.0-2024.4.0/README.md --exclude *.pyd
+[2024-04-22 02:52:56] INFO root fetch - processPackages [pyimg4]: Downloading https://files.pythonhosted.org/packages/2c/d1/cb565cf7c85192fde162145161a383615d47520ead1685556cabbf2dcc19/pyimg4-0.8.4.tar.gz
+[2024-04-22 02:52:56] INFO root fetch - processPackages [etb-pg]: Downloading https://files.pythonhosted.org/packages/5d/32/d027c82e553140a9ec3e4015c49dc5c645979a5cab92f5de275ed163dd64/etb-pg-0.1.6.tar.gz
+[2024-04-22 02:52:56] INFO root fetch - processPackages [tradedangerous]: executing diffoscope
+[2024-04-22 02:52:56] INFO root fetch - processPackages [tradedangerous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tradedangerous-10.9.7.tar.gz tmp/tradedangerous-10.9.8.tar.gz --markdown 20240422/t/tradedangerous/10.9.7-10.9.8/README.md --exclude *.pyd
+[2024-04-22 02:52:56] INFO root fetch - processPackages [pyimg4]: executing diffoscope
+[2024-04-22 02:52:56] INFO root fetch - processPackages [pyimg4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyimg4-0.8.3.tar.gz tmp/pyimg4-0.8.4.tar.gz --markdown 20240422/p/pyimg4/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-04-22 02:52:56] INFO root fetch - processPackages [etb-pg]: executing diffoscope
+[2024-04-22 02:52:56] INFO root fetch - processPackages [etb-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etb-pg-0.1.5.tar.gz tmp/etb-pg-0.1.6.tar.gz --markdown 20240422/e/etb-pg/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-22 02:52:56] INFO root fetch - processPackages [cria]: Remove: archive file [/home/abi/fetcher/tmp/cria-0.1.0.tar.gz]
+[2024-04-22 02:52:56] INFO root fetch - processPackages [cria]: Remove: archive file [/home/abi/fetcher/tmp/cria-1.4.0.tar.gz]
+[2024-04-22 02:52:56] INFO root fetch - main [MainThread]: End processing [cria]: success
+[2024-04-22 02:52:56] INFO root fetch - processPackages [sshfs]: Remove: archive file [/home/abi/fetcher/tmp/sshfs-2023.7.0.tar.gz]
+[2024-04-22 02:52:56] INFO root fetch - processPackages [sshfs]: Remove: archive file [/home/abi/fetcher/tmp/sshfs-2024.4.0.tar.gz]
+[2024-04-22 02:52:56] INFO root fetch - main [MainThread]: End processing [sshfs]: success
+[2024-04-22 02:52:57] INFO root fetch - processPackages [pyimg4]: Remove: archive file [/home/abi/fetcher/tmp/pyimg4-0.8.3.tar.gz]
+[2024-04-22 02:52:57] INFO root fetch - processPackages [pyimg4]: Remove: archive file [/home/abi/fetcher/tmp/pyimg4-0.8.4.tar.gz]
+[2024-04-22 02:52:57] INFO root fetch - main [MainThread]: End processing [pyimg4]: success
+[2024-04-22 02:52:57] INFO root fetch - processPackages [etb-pg]: Remove: archive file [/home/abi/fetcher/tmp/etb-pg-0.1.5.tar.gz]
+[2024-04-22 02:52:57] INFO root fetch - processPackages [etb-pg]: Remove: archive file [/home/abi/fetcher/tmp/etb-pg-0.1.6.tar.gz]
+[2024-04-22 02:52:57] INFO root fetch - main [MainThread]: End processing [etb-pg]: success
+[2024-04-22 02:52:57] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.7.tar.gz]
+[2024-04-22 02:52:57] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
+[2024-04-22 02:52:57] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
+[2024-04-22 02:52:57] INFO root fetch - main [MainThread]: Store serial: [22870762]
