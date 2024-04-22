@@ -1938,3 +1938,36 @@
 [2024-04-22 02:39:15] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.99-py3-none-any.whl.zip]
 [2024-04-22 02:39:15] INFO root fetch - main [MainThread]: End processing [mystring]: success
 [2024-04-22 02:39:15] INFO root fetch - main [MainThread]: Store serial: [22870670]
+[2024-04-22 02:41:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870670]
+[2024-04-22 02:41:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 02:41:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cria
+[2024-04-22 02:41:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: affixapi
+[2024-04-22 02:41:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: display-colors
+[2024-04-22 02:41:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mcfetch
+[2024-04-22 02:41:25] INFO root fetch - processPackages [cria]: New version: [1.4.0] Old Version: [0.1.0]
+[2024-04-22 02:41:25] INFO root fetch - processPackages [mcfetch]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-04-22 02:41:25] WARNING root fetch - processPackages [display-colors]: Skipping, unable to determine old version
+[2024-04-22 02:41:25] INFO root fetch - main [MainThread]: End processing [display-colors] error
+[2024-04-22 02:41:25] INFO root fetch - processPackages [affixapi]: New version: [1.1.61] Old Version: [1.1.60]
+[2024-04-22 02:41:25] INFO root fetch - processPackages [cria]: Downloading https://files.pythonhosted.org/packages/7a/18/a0502f3391e77e00b9b75a4a5a8c7fa6b52d6eb3bbdb8948affb724f49dc/cria-0.1.0.tar.gz
+[2024-04-22 02:41:25] INFO root fetch - processPackages [mcfetch]: Downloading https://files.pythonhosted.org/packages/ba/1b/6991ed9ea154a20285f4daceba639308c1812ecfc3492f2f5fab770e70ae/mcfetch-1.1.0.tar.gz
+[2024-04-22 02:41:25] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/f6/d7/c3dad0cb339debecbf608bef12cd2d4e5216744c79841a5a4db797f2a686/affixapi-1.1.60.tar.gz
+[2024-04-22 02:41:26] INFO root fetch - processPackages [cria]: Downloading https://files.pythonhosted.org/packages/9a/d5/50074e278f8cd12847d4005f84481b1e62f0ad468c4fe74f5e6bcb13b5ce/cria-1.4.0.tar.gz
+[2024-04-22 02:41:26] INFO root fetch - processPackages [affixapi]: Downloading https://files.pythonhosted.org/packages/27/b0/c83228b94129ede7d7fd72530f53def0a3224896206f0eca3dfbc2f1299b/affixapi-1.1.61.tar.gz
+[2024-04-22 02:41:26] INFO root fetch - processPackages [mcfetch]: Downloading https://files.pythonhosted.org/packages/2e/7d/8c844481f84a9b6243d4488e5ad484b1ecbf28a3203ea1381ea58f0504e4/mcfetch-2.0.0.tar.gz
+[2024-04-22 02:41:26] INFO root fetch - processPackages [cria]: executing diffoscope
+[2024-04-22 02:41:26] INFO root fetch - processPackages [cria]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cria-0.1.0.tar.gz tmp/cria-1.4.0.tar.gz --markdown 20240422/c/cria/0.1.0-1.4.0/README.md --exclude *.pyd
+[2024-04-22 02:41:26] INFO root fetch - processPackages [affixapi]: executing diffoscope
+[2024-04-22 02:41:26] INFO root fetch - processPackages [affixapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affixapi-1.1.60.tar.gz tmp/affixapi-1.1.61.tar.gz --markdown 20240422/a/affixapi/1.1.60-1.1.61/README.md --exclude *.pyd
+[2024-04-22 02:41:26] INFO root fetch - processPackages [mcfetch]: executing diffoscope
+[2024-04-22 02:41:26] INFO root fetch - processPackages [mcfetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcfetch-1.1.0.tar.gz tmp/mcfetch-2.0.0.tar.gz --markdown 20240422/m/mcfetch/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-04-22 02:41:26] INFO root fetch - processPackages [cria]: Remove: archive file [/home/abi/fetcher/tmp/cria-0.1.0.tar.gz]
+[2024-04-22 02:41:26] INFO root fetch - processPackages [cria]: Remove: archive file [/home/abi/fetcher/tmp/cria-1.4.0.tar.gz]
+[2024-04-22 02:41:26] INFO root fetch - main [MainThread]: End processing [cria]: success
+[2024-04-22 02:41:26] INFO root fetch - processPackages [mcfetch]: Remove: archive file [/home/abi/fetcher/tmp/mcfetch-1.1.0.tar.gz]
+[2024-04-22 02:41:26] INFO root fetch - processPackages [mcfetch]: Remove: archive file [/home/abi/fetcher/tmp/mcfetch-2.0.0.tar.gz]
+[2024-04-22 02:41:26] INFO root fetch - main [MainThread]: End processing [mcfetch]: success
+[2024-04-22 02:41:27] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.60.tar.gz]
+[2024-04-22 02:41:27] INFO root fetch - processPackages [affixapi]: Remove: archive file [/home/abi/fetcher/tmp/affixapi-1.1.61.tar.gz]
+[2024-04-22 02:41:27] INFO root fetch - main [MainThread]: End processing [affixapi]: success
+[2024-04-22 02:41:27] INFO root fetch - main [MainThread]: Store serial: [22870684]
