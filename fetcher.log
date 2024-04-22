@@ -6108,3 +6108,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:04:01] INFO root fetch - processPackages [dotpack]: Remove: archive file [/home/abi/fetcher/tmp/dotpack-0.3.6.tar.gz]
 [2024-04-22 08:04:01] INFO root fetch - main [MainThread]: End processing [dotpack]: success
 [2024-04-22 08:04:01] INFO root fetch - main [MainThread]: Store serial: [22872458]
+[2024-04-22 08:06:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872458]
+[2024-04-22 08:06:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 08:06:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gridengine-framework
+[2024-04-22 08:06:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecr-scan-notifier
+[2024-04-22 08:06:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DLSim
+[2024-04-22 08:06:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AutoRAG
+[2024-04-22 08:06:09] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-22 08:06:09] INFO root fetch - processPackages [DLSim]: New version: [0.2.9] Old Version: [0.2.12]
+[2024-04-22 08:06:09] INFO root fetch - processPackages [ecr-scan-notifier]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:06:09] INFO root fetch - processPackages [AutoRAG]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-22 08:06:09] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/ef/a4/bfc618655388ef51a9b8a1606bb0d045476d6258359c925f7d613c6b80a1/gridengine_framework-0.7.5.tar.gz
+[2024-04-22 08:06:10] INFO root fetch - processPackages [DLSim]: Downloading https://files.pythonhosted.org/packages/ad/7e/776353eeec82c72885e050ce12bc767417c73141815810aa80720bbffd48/dlsim-0.2.12.tar.gz
+[2024-04-22 08:06:10] INFO root fetch - processPackages [ecr-scan-notifier]: Downloading https://files.pythonhosted.org/packages/40/4d/1a1d0d9bc892c0dfb4d791a0884a59a8914a10d1e7da04c6b59517cf273f/ecr-scan-notifier-0.0.8.tar.gz
+[2024-04-22 08:06:10] INFO root fetch - processPackages [AutoRAG]: Downloading https://files.pythonhosted.org/packages/66/60/9ce9ee622bfee2a76f240bb2b09458e2f2a59f0df7492706034512a3ed05/autorag-0.1.3.tar.gz
+[2024-04-22 08:06:10] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/13/f7/2fa1dec70e6092e55acfdc6d9c50194c645d2c79b6af56055da35bc01880/gridengine_framework-0.7.6.tar.gz
+[2024-04-22 08:06:10] INFO root fetch - processPackages [ecr-scan-notifier]: Downloading https://files.pythonhosted.org/packages/d1/00/57fd90da8640eba9f4ecd18284a84eab9858fbc02e1cde2695b5c20f9967/ecr-scan-notifier-0.0.9.tar.gz
+[2024-04-22 08:06:10] INFO root fetch - processPackages [DLSim]: Downloading https://files.pythonhosted.org/packages/96/4f/e171596c9a167ea825d908fca6761e30658fc57bcb5586d328251e144de8/DLSim-0.2.9.tar.gz
+[2024-04-22 08:06:10] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 08:06:10] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.5.tar.gz tmp/gridengine_framework-0.7.6.tar.gz --markdown 20240422/g/gridengine-framework/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-04-22 08:06:10] INFO root fetch - processPackages [ecr-scan-notifier]: executing diffoscope
+[2024-04-22 08:06:10] INFO root fetch - processPackages [ecr-scan-notifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecr-scan-notifier-0.0.8.tar.gz tmp/ecr-scan-notifier-0.0.9.tar.gz --markdown 20240422/e/ecr-scan-notifier/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:06:11] INFO root fetch - processPackages [DLSim]: executing diffoscope
+[2024-04-22 08:06:11] INFO root fetch - processPackages [DLSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlsim-0.2.12.tar.gz tmp/DLSim-0.2.9.tar.gz --markdown 20240422/D/DLSim/0.2.12-0.2.9/README.md --exclude *.pyd
+[2024-04-22 08:06:11] INFO root fetch - processPackages [ecr-scan-notifier]: Remove: archive file [/home/abi/fetcher/tmp/ecr-scan-notifier-0.0.8.tar.gz]
+[2024-04-22 08:06:11] INFO root fetch - processPackages [ecr-scan-notifier]: Remove: archive file [/home/abi/fetcher/tmp/ecr-scan-notifier-0.0.9.tar.gz]
+[2024-04-22 08:06:11] INFO root fetch - main [MainThread]: End processing [ecr-scan-notifier]: success
+[2024-04-22 08:06:11] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.5.tar.gz]
+[2024-04-22 08:06:11] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.6.tar.gz]
+[2024-04-22 08:06:11] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 08:06:11] INFO root fetch - processPackages [DLSim]: Remove: archive file [/home/abi/fetcher/tmp/dlsim-0.2.12.tar.gz]
+[2024-04-22 08:06:11] INFO root fetch - processPackages [DLSim]: Remove: archive file [/home/abi/fetcher/tmp/DLSim-0.2.9.tar.gz]
+[2024-04-22 08:06:11] INFO root fetch - main [MainThread]: End processing [DLSim]: success
+[2024-04-22 08:06:11] INFO root fetch - processPackages [AutoRAG]: Downloading https://files.pythonhosted.org/packages/a3/7f/68a3a64b6e83970db8bb34a4fcfbbbdaa1a65dd151b5ef228a57a2417390/autorag-0.1.4.tar.gz
+[2024-04-22 08:06:12] INFO root fetch - processPackages [AutoRAG]: executing diffoscope
+[2024-04-22 08:06:12] INFO root fetch - processPackages [AutoRAG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autorag-0.1.3.tar.gz tmp/autorag-0.1.4.tar.gz --markdown 20240422/A/AutoRAG/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-22 08:06:15] INFO root fetch - processPackages [AutoRAG]: Remove: archive file [/home/abi/fetcher/tmp/autorag-0.1.3.tar.gz]
+[2024-04-22 08:06:15] INFO root fetch - processPackages [AutoRAG]: Remove: archive file [/home/abi/fetcher/tmp/autorag-0.1.4.tar.gz]
+[2024-04-22 08:06:15] INFO root fetch - main [MainThread]: End processing [AutoRAG]: success
+[2024-04-22 08:06:15] INFO root fetch - main [MainThread]: Store serial: [22872471]
