@@ -9026,3 +9026,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:32:09] INFO root fetch - processPackages [scaleway]: Remove: archive file [/home/abi/fetcher/tmp/scaleway-2.1.0.tar.gz]
 [2024-04-22 10:32:09] INFO root fetch - main [MainThread]: End processing [scaleway]: success
 [2024-04-22 10:32:09] INFO root fetch - main [MainThread]: Store serial: [22874113]
+[2024-04-22 10:34:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874113]
+[2024-04-22 10:34:18] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ondewo-vtsi-client
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spatialdata_xenium_explorer
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mecord-cli
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: monisha
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iap-cli
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nuva
+[2024-04-22 10:34:18] WARNING root fetch - processPackages [nuva]: Skipping, unable to determine old version
+[2024-04-22 10:34:18] INFO root fetch - main [MainThread]: End processing [nuva] error
+[2024-04-22 10:34:18] INFO root fetch - processPackages [monisha]: New version: [0.0.55] Old Version: [0.0.54]
+[2024-04-22 10:34:18] INFO root fetch - processPackages [spatialdata_xenium_explorer]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-22 10:34:18] INFO root fetch - processPackages [iap-cli]: New version: [2024.4a1] Old Version: [2024.3a2]
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ondewo-vtsi-client]: New version: [7.0.0] Old Version: [6.9.0]
+[2024-04-22 10:34:18] INFO root fetch - processPackages [mecord-cli]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-22 10:34:18] INFO root fetch - processPackages [iap-cli]: Downloading https://files.pythonhosted.org/packages/a3/f1/165c56903dced8bcad5b003dd3d2ac52ce79988fa1c7f969e3fd8c8964d8/iap_cli-2024.3a2.tar.gz
+[2024-04-22 10:34:18] INFO root fetch - processPackages [spatialdata_xenium_explorer]: Downloading https://files.pythonhosted.org/packages/c0/14/0c4a44930bcb933cab183074f657776b859278d20993a04a573c92fd082b/spatialdata_xenium_explorer-0.1.6.tar.gz
+[2024-04-22 10:34:18] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/1f/29/bf90a652e8bfacf34018bcabf6bfdca6271bbc619fdb1a13aaaa71c1ead4/monisha-0.0.54.tar.gz
+[2024-04-22 10:34:18] INFO root fetch - processPackages [ondewo-vtsi-client]: Downloading https://files.pythonhosted.org/packages/34/84/ee2a059ed6545c7ba934a09beea5789e2ea8af2a7400e1f6510f69963833/ondewo-vtsi-client-6.9.0.tar.gz
+[2024-04-22 10:34:18] INFO root fetch - processPackages [mecord-cli]: Downloading https://files.pythonhosted.org/packages/7c/bf/66e6ad83ca0dd75592f8185e3bd1a6f8c9965bb170b7b3b18b4228228ff9/mecord-cli-0.7.8.tar.gz
+[2024-04-22 10:34:19] INFO root fetch - processPackages [iap-cli]: Downloading https://files.pythonhosted.org/packages/77/d8/f590a55c076a36485f4d8e33e92b742c3692ec697f66b0d6981405788c6c/iap_cli-2024.4a1.tar.gz
+[2024-04-22 10:34:19] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/df/01/dd553cfad685768267d60830e8401c715e31d460cf57e8bfa5f3f0cfccbb/monisha-0.0.55.tar.gz
+[2024-04-22 10:34:19] INFO root fetch - processPackages [mecord-cli]: Downloading https://files.pythonhosted.org/packages/70/13/191f5410fea42e233e3d24471a04404a7d4f46b99c28a29c24913449788b/mecord-cli-0.7.9.tar.gz
+[2024-04-22 10:34:19] INFO root fetch - processPackages [ondewo-vtsi-client]: Downloading https://files.pythonhosted.org/packages/22/22/03b1aaae906b69de2d3f3d4908d84a686b9a45bf9b4fe081f233f82e823d/ondewo-vtsi-client-7.0.0.tar.gz
+[2024-04-22 10:34:19] INFO root fetch - processPackages [spatialdata_xenium_explorer]: Downloading https://files.pythonhosted.org/packages/9b/06/d5be8c047b7123e9bc4e48768bb0bbf6dc62f8be16f4c5932e76c2b7ba23/spatialdata_xenium_explorer-0.1.7.tar.gz
+[2024-04-22 10:34:19] INFO root fetch - processPackages [iap-cli]: executing diffoscope
+[2024-04-22 10:34:19] INFO root fetch - processPackages [iap-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iap_cli-2024.3a2.tar.gz tmp/iap_cli-2024.4a1.tar.gz --markdown 20240422/i/iap-cli/2024.3a2-2024.4a1/README.md --exclude *.pyd
+[2024-04-22 10:34:19] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-04-22 10:34:19] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.54.tar.gz tmp/monisha-0.0.55.tar.gz --markdown 20240422/m/monisha/0.0.54-0.0.55/README.md --exclude *.pyd
+[2024-04-22 10:34:19] INFO root fetch - processPackages [spatialdata_xenium_explorer]: executing diffoscope
+[2024-04-22 10:34:19] INFO root fetch - processPackages [spatialdata_xenium_explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialdata_xenium_explorer-0.1.6.tar.gz tmp/spatialdata_xenium_explorer-0.1.7.tar.gz --markdown 20240422/s/spatialdata_xenium_explorer/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-22 10:34:19] INFO root fetch - processPackages [mecord-cli]: executing diffoscope
+[2024-04-22 10:34:19] INFO root fetch - processPackages [mecord-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mecord-cli-0.7.8.tar.gz tmp/mecord-cli-0.7.9.tar.gz --markdown 20240422/m/mecord-cli/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-22 10:34:19] INFO root fetch - processPackages [ondewo-vtsi-client]: executing diffoscope
+[2024-04-22 10:34:19] INFO root fetch - processPackages [ondewo-vtsi-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-vtsi-client-6.9.0.tar.gz tmp/ondewo-vtsi-client-7.0.0.tar.gz --markdown 20240422/o/ondewo-vtsi-client/6.9.0-7.0.0/README.md --exclude *.pyd
+[2024-04-22 10:34:20] INFO root fetch - processPackages [iap-cli]: Remove: archive file [/home/abi/fetcher/tmp/iap_cli-2024.3a2.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - processPackages [iap-cli]: Remove: archive file [/home/abi/fetcher/tmp/iap_cli-2024.4a1.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - main [MainThread]: End processing [iap-cli]: success
+[2024-04-22 10:34:20] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.54.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.55.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-04-22 10:34:20] INFO root fetch - processPackages [spatialdata_xenium_explorer]: Remove: archive file [/home/abi/fetcher/tmp/spatialdata_xenium_explorer-0.1.6.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - processPackages [spatialdata_xenium_explorer]: Remove: archive file [/home/abi/fetcher/tmp/spatialdata_xenium_explorer-0.1.7.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - main [MainThread]: End processing [spatialdata_xenium_explorer]: success
+[2024-04-22 10:34:20] INFO root fetch - processPackages [mecord-cli]: Remove: archive file [/home/abi/fetcher/tmp/mecord-cli-0.7.8.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - processPackages [mecord-cli]: Remove: archive file [/home/abi/fetcher/tmp/mecord-cli-0.7.9.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - main [MainThread]: End processing [mecord-cli]: success
+[2024-04-22 10:34:20] INFO root fetch - processPackages [ondewo-vtsi-client]: Remove: archive file [/home/abi/fetcher/tmp/ondewo-vtsi-client-6.9.0.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - processPackages [ondewo-vtsi-client]: Remove: archive file [/home/abi/fetcher/tmp/ondewo-vtsi-client-7.0.0.tar.gz]
+[2024-04-22 10:34:20] INFO root fetch - main [MainThread]: End processing [ondewo-vtsi-client]: success
+[2024-04-22 10:34:20] INFO root fetch - main [MainThread]: Store serial: [22874142]
