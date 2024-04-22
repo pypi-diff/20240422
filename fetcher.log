@@ -10292,3 +10292,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:22:02] INFO root fetch - processPackages [vk-teams-async-bot]: Remove: archive file [/home/abi/fetcher/tmp/vk_teams_async_bot-0.2.3.tar.gz]
 [2024-04-22 11:22:02] INFO root fetch - main [MainThread]: End processing [vk-teams-async-bot]: success
 [2024-04-22 11:22:02] INFO root fetch - main [MainThread]: Store serial: [22874686]
+[2024-04-22 11:24:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874686]
+[2024-04-22 11:24:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 11:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: puerml
+[2024-04-22 11:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyastroweatherio
+[2024-04-22 11:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tbp-nightly
+[2024-04-22 11:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: roff
+[2024-04-22 11:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dem-roughness-calculator
+[2024-04-22 11:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fdamages
+[2024-04-22 11:24:11] WARNING root fetch - processPackages [roff]: Skipping, unable to determine old version
+[2024-04-22 11:24:11] INFO root fetch - main [MainThread]: End processing [roff] error
+[2024-04-22 11:24:11] INFO root fetch - processPackages [pyastroweatherio]: New version: [0.43.1.dev6] Old Version: [0.43.1.dev5]
+[2024-04-22 11:24:11] WARNING root fetch - processPackages [puerml]: Skipping, unable to determine old version
+[2024-04-22 11:24:11] INFO root fetch - main [MainThread]: End processing [puerml] error
+[2024-04-22 11:24:11] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2024-04-22 11:24:11] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/04/44/df4ce74613a1e5dc3cdbffa4436eaf46159de4dd45db47fc4b3cca9c9efb/pyastroweatherio-0.43.1.dev5.tar.gz
+[2024-04-22 11:24:11] INFO root fetch - processPackages [fdamages]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 11:24:11] INFO root fetch - processPackages [dem-roughness-calculator]: New version: [1.0.7] Old Version: [1.0.5]
+[2024-04-22 11:24:11] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/b9/6c/43a589e5ab1d1b961e5780e41057576c7abd5bf16d3f871d8ef4ebdaf461/tbp-nightly-2.9.0a20221129.tar.gz
+[2024-04-22 11:24:11] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/5e/b4/af1f80bf7e06b68e5fcabfdbfb395545c742a8658fc84f67605f90c599c0/dem_roughness_calculator-1.0.5.tar.gz
+[2024-04-22 11:24:11] INFO root fetch - processPackages [fdamages]: Downloading https://files.pythonhosted.org/packages/f7/47/b073d66da70f033a16648506bf9c8c9bf6bb94a4c2addffde34a57d1029e/fdamages-0.0.8.tar.gz
+[2024-04-22 11:24:11] INFO root fetch - processPackages [pyastroweatherio]: Downloading https://files.pythonhosted.org/packages/f8/bc/4ca0e875a8b689be7b920d494a15550aa7ccf78e4de0ab47f7b2709fcb2d/pyastroweatherio-0.43.1.dev6.tar.gz
+[2024-04-22 11:24:11] INFO root fetch - processPackages [pyastroweatherio]: executing diffoscope
+[2024-04-22 11:24:11] INFO root fetch - processPackages [pyastroweatherio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyastroweatherio-0.43.1.dev5.tar.gz tmp/pyastroweatherio-0.43.1.dev6.tar.gz --markdown 20240422/p/pyastroweatherio/0.43.1.dev5-0.43.1.dev6/README.md --exclude *.pyd
+[2024-04-22 11:24:11] INFO root fetch - processPackages [fdamages]: Downloading https://files.pythonhosted.org/packages/c8/91/80a20c426c12fcad2a527baf311c3b6d5f974f223536344ee9c16296a491/fdamages-0.0.9.tar.gz
+[2024-04-22 11:24:11] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/a0/ee/f7756a82d9fb7f326e2ccb9c96fa8804f9e3822b2653c039a22b48a2ee3c/dem_roughness_calculator-1.0.7.tar.gz
+[2024-04-22 11:24:12] INFO root fetch - processPackages [tbp-nightly]: Downloading https://files.pythonhosted.org/packages/2e/31/c611af28c0d42c7cbb86781523f94e57796654fd8b7a7049e8a6db2eecf3/tbp-nightly-2.9.0a20221130.tar.gz
+[2024-04-22 11:24:12] INFO root fetch - processPackages [fdamages]: executing diffoscope
+[2024-04-22 11:24:12] INFO root fetch - processPackages [fdamages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fdamages-0.0.8.tar.gz tmp/fdamages-0.0.9.tar.gz --markdown 20240422/f/fdamages/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 11:24:12] INFO root fetch - processPackages [dem-roughness-calculator]: executing diffoscope
+[2024-04-22 11:24:12] INFO root fetch - processPackages [dem-roughness-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dem_roughness_calculator-1.0.5.tar.gz tmp/dem_roughness_calculator-1.0.7.tar.gz --markdown 20240422/d/dem-roughness-calculator/1.0.5-1.0.7/README.md --exclude *.pyd
+[2024-04-22 11:24:12] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2024-04-22 11:24:12] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20240422/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/README.md --exclude *.pyd
+[2024-04-22 11:24:12] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev5.tar.gz]
+[2024-04-22 11:24:12] INFO root fetch - processPackages [pyastroweatherio]: Remove: archive file [/home/abi/fetcher/tmp/pyastroweatherio-0.43.1.dev6.tar.gz]
+[2024-04-22 11:24:12] INFO root fetch - main [MainThread]: End processing [pyastroweatherio]: success
+[2024-04-22 11:24:12] INFO root fetch - processPackages [fdamages]: Remove: archive file [/home/abi/fetcher/tmp/fdamages-0.0.8.tar.gz]
+[2024-04-22 11:24:12] INFO root fetch - processPackages [fdamages]: Remove: archive file [/home/abi/fetcher/tmp/fdamages-0.0.9.tar.gz]
+[2024-04-22 11:24:12] INFO root fetch - main [MainThread]: End processing [fdamages]: success
+[2024-04-22 11:24:12] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.0.5.tar.gz]
+[2024-04-22 11:24:12] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.0.7.tar.gz]
+[2024-04-22 11:24:12] INFO root fetch - main [MainThread]: End processing [dem-roughness-calculator]: success
+[2024-04-22 11:24:14] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221129.tar.gz]
+[2024-04-22 11:24:14] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
+[2024-04-22 11:24:14] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2024-04-22 11:24:14] INFO root fetch - main [MainThread]: Store serial: [22874703]
