@@ -5253,3 +5253,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:05:10] INFO root fetch - processPackages [project-async]: Remove: archive file [/home/abi/fetcher/tmp/project_async-0.0.1rc71.post1.tar.gz]
 [2024-04-22 07:05:10] INFO root fetch - main [MainThread]: End processing [project-async]: success
 [2024-04-22 07:05:10] INFO root fetch - main [MainThread]: Store serial: [22872151]
+[2024-04-22 07:07:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872151]
+[2024-04-22 07:07:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapid-pe
+[2024-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybetterloader
+[2024-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlops-api-gemstack
+[2024-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oresat-dxwifi
+[2024-04-22 07:07:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ocflib
+[2024-04-22 07:07:20] WARNING root fetch - processPackages [pybetterloader]: Skipping, unable to determine old version
+[2024-04-22 07:07:20] INFO root fetch - main [MainThread]: End processing [pybetterloader] error
+[2024-04-22 07:07:20] INFO root fetch - processPackages [oresat-dxwifi]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-22 07:07:20] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240421] Old Version: [0.1.2.dev20240420]
+[2024-04-22 07:07:20] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 07:07:20] INFO root fetch - processPackages [oresat-dxwifi]: Downloading https://files.pythonhosted.org/packages/d0/8c/d29b0fd58e6bc80a261e911a8ced42f1a1c989861d8f49840f13f46b32c6/oresat_dxwifi-0.3.3.tar.gz
+[2024-04-22 07:07:20] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/91/74/9226878cfd84a2646c2d66f187ec939dcd8bac2a51ddbe7c93cd7fe47cd5/rapid_pe-0.1.2.dev20240420.tar.gz
+[2024-04-22 07:07:20] INFO root fetch - processPackages [ocflib]: New version: [9] Old Version: [8]
+[2024-04-22 07:07:20] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/dd/3b/da083c237098d9b3add1aa7960b7cbb2cf2e62ce30a4817c259b4288dec2/mlops_api_gemstack-0.3.2.tar.gz
+[2024-04-22 07:07:20] INFO root fetch - processPackages [ocflib]: Downloading https://files.pythonhosted.org/packages/37/9e/7d858340853127292efd32ac4cd52b6c17167e4e2a1394341eda0aed3106/ocflib-8.tar.gz
+[2024-04-22 07:07:21] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/6c/a3/5ea6769b283c700355eeaf8e329acdf39ee16c69dc749063c99cfaf35615/rapid_pe-0.1.2.dev20240421.tar.gz
+[2024-04-22 07:07:21] INFO root fetch - processPackages [oresat-dxwifi]: Downloading https://files.pythonhosted.org/packages/5f/de/17602cb021bbfa99efc96e01ac748ea5621e4c1074852404ffd3511c7dd5/oresat_dxwifi-0.3.4.tar.gz
+[2024-04-22 07:07:21] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-04-22 07:07:21] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240420.tar.gz tmp/rapid_pe-0.1.2.dev20240421.tar.gz --markdown 20240422/r/rapid-pe/0.1.2.dev20240420-0.1.2.dev20240421/README.md --exclude *.pyd
+[2024-04-22 07:07:21] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/b4/a2/41cab2ad46e68f9d4ffd8fea18e74b42d80f5e00513e06dcc78c4855f1be/mlops_api_gemstack-0.3.3.tar.gz
+[2024-04-22 07:07:21] INFO root fetch - processPackages [ocflib]: Downloading https://files.pythonhosted.org/packages/9e/8a/34785feea7f069288ddee58a7ae104928ba33da6e1b49be66a2b1fa792b5/ocflib-9.tar.gz
+[2024-04-22 07:07:21] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-22 07:07:21] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.2.tar.gz tmp/mlops_api_gemstack-0.3.3.tar.gz --markdown 20240422/m/mlops-api-gemstack/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 07:07:21] INFO root fetch - processPackages [ocflib]: executing diffoscope
+[2024-04-22 07:07:21] INFO root fetch - processPackages [ocflib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocflib-8.tar.gz tmp/ocflib-9.tar.gz --markdown 20240422/o/ocflib/8-9/README.md --exclude *.pyd
+[2024-04-22 07:07:21] INFO root fetch - processPackages [oresat-dxwifi]: executing diffoscope
+[2024-04-22 07:07:21] INFO root fetch - processPackages [oresat-dxwifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_dxwifi-0.3.3.tar.gz tmp/oresat_dxwifi-0.3.4.tar.gz --markdown 20240422/o/oresat-dxwifi/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-22 07:07:21] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.2.tar.gz]
+[2024-04-22 07:07:21] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.3.tar.gz]
+[2024-04-22 07:07:21] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-22 07:07:21] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240420.tar.gz]
+[2024-04-22 07:07:21] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240421.tar.gz]
+[2024-04-22 07:07:21] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-04-22 07:07:21] INFO root fetch - processPackages [ocflib]: Remove: archive file [/home/abi/fetcher/tmp/ocflib-8.tar.gz]
+[2024-04-22 07:07:21] INFO root fetch - processPackages [ocflib]: Remove: archive file [/home/abi/fetcher/tmp/ocflib-9.tar.gz]
+[2024-04-22 07:07:21] INFO root fetch - main [MainThread]: End processing [ocflib]: success
+[2024-04-22 07:07:22] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.3.tar.gz]
+[2024-04-22 07:07:22] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.4.tar.gz]
+[2024-04-22 07:07:22] INFO root fetch - main [MainThread]: End processing [oresat-dxwifi]: success
+[2024-04-22 07:07:22] INFO root fetch - main [MainThread]: Store serial: [22872166]
