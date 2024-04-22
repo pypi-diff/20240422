@@ -6831,3 +6831,58 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:37:54] INFO root fetch - processPackages [spaceone-identity]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-identity-2.0.dev99.tar.gz]
 [2024-04-22 08:37:54] INFO root fetch - main [MainThread]: End processing [spaceone-identity]: success
 [2024-04-22 08:37:54] INFO root fetch - main [MainThread]: Store serial: [22872724]
+[2024-04-22 08:39:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872724]
+[2024-04-22 08:40:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 08:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trevorproxy-serverless
+[2024-04-22 08:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sklearn2pmml
+[2024-04-22 08:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wei-office-simptool
+[2024-04-22 08:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsk-monster
+[2024-04-22 08:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tsk-monster
+[2024-04-22 08:40:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-account-invoice-fixed-discount
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:40:03] INFO root fetch - processPackages [wei-office-simptool]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 08:40:03] INFO root fetch - processPackages [sklearn2pmml]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-04-22 08:40:03] INFO root fetch - processPackages [odoo-addon-account-invoice-fixed-discount]: New version: [17.0.1.0.0.8] Old Version: [17.0.1.0.0.6]
+[2024-04-22 08:40:03] INFO root fetch - processPackages [trevorproxy-serverless]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-22 08:40:03] INFO root fetch - processPackages [sklearn2pmml]: Downloading https://files.pythonhosted.org/packages/21/2a/847c0af6f9d6ec00f3fa954c4c691c4311da9a8098e84de07e8d2d85107e/sklearn2pmml-0.99.2.tar.gz
+[2024-04-22 08:40:03] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/b3/14/ad2a3a29a1e76f6a333fb6f89d94f4361953dec8c0654f3190b708d83d6d/wei_office_simptool-0.0.5.tar.gz
+[2024-04-22 08:40:03] INFO root fetch - processPackages [trevorproxy-serverless]: Downloading https://files.pythonhosted.org/packages/ad/bd/442c9f4e48150c866bef996c1896ecd403715b88819708b0268c521cd0ae/trevorproxy_serverless-0.0.1.tar.gz
+[2024-04-22 08:40:03] INFO root fetch - processPackages [odoo-addon-account-invoice-fixed-discount]: Downloading https://files.pythonhosted.org/packages/3f/5c/fa5e23f51ec9283082407ff61e2a8bd4fb0545d6ee52a70e6342049e0087/odoo_addon_account_invoice_fixed_discount-17.0.1.0.0.6-py3-none-any.whl
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/bd/0d/76bc9f0c428722f67988b8db745d256aefb82e1f9e36269eee144c2705f1/tsk_monster-0.0.9.tar.gz
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/bd/0d/76bc9f0c428722f67988b8db745d256aefb82e1f9e36269eee144c2705f1/tsk_monster-0.0.9.tar.gz
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.8.tar.gz tmp/tsk_monster-0.0.9.tar.gz --markdown 20240422/t/tsk-monster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-22 08:40:03] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.8.tar.gz tmp/tsk_monster-0.0.9.tar.gz --markdown 20240422/t/tsk-monster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:40:03] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/b1/0a/0d52907e4d46f8583ea35421846c304586394cfa29e24f31523b146b5859/wei_office_simptool-0.0.6.tar.gz
+[2024-04-22 08:40:04] INFO root fetch - processPackages [trevorproxy-serverless]: Downloading https://files.pythonhosted.org/packages/f8/d2/7e7e151e79f82b4cb0167263f57e3ea22f0ef8aaa42836b874429e2de04e/trevorproxy_serverless-0.0.2.tar.gz
+[2024-04-22 08:40:04] INFO root fetch - processPackages [wei-office-simptool]: executing diffoscope
+[2024-04-22 08:40:04] INFO root fetch - processPackages [wei-office-simptool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wei_office_simptool-0.0.5.tar.gz tmp/wei_office_simptool-0.0.6.tar.gz --markdown 20240422/w/wei-office-simptool/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 08:40:04] INFO root fetch - processPackages [trevorproxy-serverless]: executing diffoscope
+[2024-04-22 08:40:04] INFO root fetch - processPackages [trevorproxy-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trevorproxy_serverless-0.0.1.tar.gz tmp/trevorproxy_serverless-0.0.2.tar.gz --markdown 20240422/t/trevorproxy-serverless/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 08:40:04] INFO root fetch - processPackages [odoo-addon-account-invoice-fixed-discount]: Downloading https://files.pythonhosted.org/packages/f2/f5/5419f87a649689a2b5a168ac3e8962dd1c8fd40c508997fc20160139ee28/odoo_addon_account_invoice_fixed_discount-17.0.1.0.0.8-py3-none-any.whl
+[2024-04-22 08:40:04] INFO root fetch - processPackages [sklearn2pmml]: Downloading https://files.pythonhosted.org/packages/85/79/363259bb11041d70c9ae8a5f3258d58b4b7ccb8ceee0294b75162f882252/sklearn2pmml-0.99.3.tar.gz
+[2024-04-22 08:40:04] INFO root fetch - processPackages [odoo-addon-account-invoice-fixed-discount]: executing diffoscope
+[2024-04-22 08:40:04] INFO root fetch - processPackages [odoo-addon-account-invoice-fixed-discount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_fixed_discount-17.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_fixed_discount-17.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-account-invoice-fixed-discount/17.0.1.0.0.6-17.0.1.0.0.8/README.md --exclude *.pyd
+[2024-04-22 08:40:04] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.8.tar.gz]
+[2024-04-22 08:40:04] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.9.tar.gz]
+[2024-04-22 08:40:04] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-22 08:40:04] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-22 08:40:04] INFO root fetch - processPackages [sklearn2pmml]: executing diffoscope
+[2024-04-22 08:40:04] INFO root fetch - processPackages [sklearn2pmml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn2pmml-0.99.2.tar.gz tmp/sklearn2pmml-0.99.3.tar.gz --markdown 20240422/s/sklearn2pmml/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-04-22 08:40:04] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.5.tar.gz]
+[2024-04-22 08:40:04] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.6.tar.gz]
+[2024-04-22 08:40:04] INFO root fetch - main [MainThread]: End processing [wei-office-simptool]: success
+[2024-04-22 08:40:04] INFO root fetch - processPackages [trevorproxy-serverless]: Remove: archive file [/home/abi/fetcher/tmp/trevorproxy_serverless-0.0.1.tar.gz]
+[2024-04-22 08:40:04] INFO root fetch - processPackages [trevorproxy-serverless]: Remove: archive file [/home/abi/fetcher/tmp/trevorproxy_serverless-0.0.2.tar.gz]
+[2024-04-22 08:40:04] INFO root fetch - main [MainThread]: End processing [trevorproxy-serverless]: success
+[2024-04-22 08:40:05] INFO root fetch - processPackages [odoo-addon-account-invoice-fixed-discount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_fixed_discount-17.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-04-22 08:40:05] INFO root fetch - processPackages [odoo-addon-account-invoice-fixed-discount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_fixed_discount-17.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-04-22 08:40:05] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-fixed-discount]: success
+[2024-04-22 08:41:39] INFO root fetch - processPackages [sklearn2pmml]: Remove: archive file [/home/abi/fetcher/tmp/sklearn2pmml-0.99.2.tar.gz]
+[2024-04-22 08:41:39] INFO root fetch - processPackages [sklearn2pmml]: Remove: archive file [/home/abi/fetcher/tmp/sklearn2pmml-0.99.3.tar.gz]
+[2024-04-22 08:41:39] INFO root fetch - main [MainThread]: End processing [sklearn2pmml]: success
+[2024-04-22 08:41:39] INFO root fetch - main [MainThread]: Store serial: [22872740]
