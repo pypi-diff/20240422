@@ -8622,3 +8622,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:14:28] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.98-py3-none-any.whl.zip]
 [2024-04-22 10:14:28] INFO root fetch - main [MainThread]: End processing [modal]: success
 [2024-04-22 10:14:28] INFO root fetch - main [MainThread]: Store serial: [22873930]
+[2024-04-22 10:16:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873930]
+[2024-04-22 10:16:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 10:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hera
+[2024-04-22 10:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hera-workflows
+[2024-04-22 10:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lxfcode
+[2024-04-22 10:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hustmirror-cli
+[2024-04-22 10:16:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uitestrunner-syberos
+[2024-04-22 10:16:36] INFO root fetch - processPackages [lxfcode]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 10:16:36] INFO root fetch - processPackages [uitestrunner-syberos]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-22 10:16:36] INFO root fetch - processPackages [lxfcode]: Downloading https://files.pythonhosted.org/packages/f9/3e/e736f359fac02495b7cb0f739eea2a1fb1e0a588ecd93c6e5e9a932223e5/lxfcode-0.3.2-py2.py3-none-any.whl
+[2024-04-22 10:16:36] ERROR root fetch - processPackages [hustmirror-cli]: Unable to get metadata: No such project 'hustmirror-cli'
+[2024-04-22 10:16:36] INFO root fetch - main [MainThread]: End processing [hustmirror-cli] error
+[2024-04-22 10:16:36] INFO root fetch - processPackages [uitestrunner-syberos]: Downloading https://files.pythonhosted.org/packages/71/60/8a5cbd698ed2b32b06e2b8500e76fc76d67e1dbae1e5463376650a73939c/uitestrunner_syberos-2.2.8.tar.gz
+[2024-04-22 10:16:36] INFO root fetch - processPackages [hera]: New version: [5.9.0] Old Version: [5.8.0]
+[2024-04-22 10:16:36] INFO root fetch - processPackages [hera-workflows]: New version: [5.9.0] Old Version: [5.8.0]
+[2024-04-22 10:16:36] WARNING root fetch - processPackages [uitestrunner-syberos]: Skipping package: exceeds size limit 61923538>=10485760
+[2024-04-22 10:16:36] INFO root fetch - main [MainThread]: End processing [uitestrunner-syberos] error
+[2024-04-22 10:16:36] INFO root fetch - processPackages [lxfcode]: Downloading https://files.pythonhosted.org/packages/1f/63/8b5681f789cbacb2c25a05f2339e664762d9f019c3f48cc59331058e83c3/lxfcode-0.3.3-py2.py3-none-any.whl
+[2024-04-22 10:16:36] INFO root fetch - processPackages [hera]: Downloading https://files.pythonhosted.org/packages/ca/21/d8f3d1eec5b426e7787dff4b901f4abf3e38a66c6d65451d0b1d5c8f9ced/hera-5.8.0.tar.gz
+[2024-04-22 10:16:36] INFO root fetch - processPackages [hera-workflows]: Downloading https://files.pythonhosted.org/packages/d4/33/d7bb7403b9215b43a071fbbc9af830523da1e320b13bde80e5a4e63b908a/hera_workflows-5.8.0.tar.gz
+[2024-04-22 10:16:37] INFO root fetch - processPackages [lxfcode]: executing diffoscope
+[2024-04-22 10:16:37] INFO root fetch - processPackages [lxfcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lxfcode-0.3.2-py2.py3-none-any.whl.zip tmp/lxfcode-0.3.3-py2.py3-none-any.whl.zip --markdown 20240422/l/lxfcode/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 10:16:37] INFO root fetch - processPackages [hera]: Downloading https://files.pythonhosted.org/packages/a1/bd/edecc7df47fbd93b374b88145f3a8f30fb5b314776b3b272c8fbf0f36bae/hera-5.9.0.tar.gz
+[2024-04-22 10:16:37] INFO root fetch - processPackages [hera-workflows]: Downloading https://files.pythonhosted.org/packages/a7/71/88cd614bcb8a6a185c779001ecf4650401c151690f88f5aa1156c4f20391/hera_workflows-5.9.0.tar.gz
+[2024-04-22 10:16:37] INFO root fetch - processPackages [hera]: executing diffoscope
+[2024-04-22 10:16:37] INFO root fetch - processPackages [hera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hera-5.8.0.tar.gz tmp/hera-5.9.0.tar.gz --markdown 20240422/h/hera/5.8.0-5.9.0/README.md --exclude *.pyd
+[2024-04-22 10:16:37] INFO root fetch - processPackages [hera-workflows]: executing diffoscope
+[2024-04-22 10:16:37] INFO root fetch - processPackages [hera-workflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hera_workflows-5.8.0.tar.gz tmp/hera_workflows-5.9.0.tar.gz --markdown 20240422/h/hera-workflows/5.8.0-5.9.0/README.md --exclude *.pyd
+[2024-04-22 10:16:37] INFO root fetch - processPackages [lxfcode]: Remove: archive file [/home/abi/fetcher/tmp/lxfcode-0.3.2-py2.py3-none-any.whl.zip]
+[2024-04-22 10:16:37] INFO root fetch - processPackages [lxfcode]: Remove: archive file [/home/abi/fetcher/tmp/lxfcode-0.3.3-py2.py3-none-any.whl.zip]
+[2024-04-22 10:16:37] INFO root fetch - main [MainThread]: End processing [lxfcode]: success
+[2024-04-22 10:16:38] INFO root fetch - processPackages [hera]: Remove: archive file [/home/abi/fetcher/tmp/hera-5.8.0.tar.gz]
+[2024-04-22 10:16:38] INFO root fetch - processPackages [hera]: Remove: archive file [/home/abi/fetcher/tmp/hera-5.9.0.tar.gz]
+[2024-04-22 10:16:38] INFO root fetch - main [MainThread]: End processing [hera]: success
+[2024-04-22 10:16:38] INFO root fetch - processPackages [hera-workflows]: Remove: archive file [/home/abi/fetcher/tmp/hera_workflows-5.8.0.tar.gz]
+[2024-04-22 10:16:38] INFO root fetch - processPackages [hera-workflows]: Remove: archive file [/home/abi/fetcher/tmp/hera_workflows-5.9.0.tar.gz]
+[2024-04-22 10:16:38] INFO root fetch - main [MainThread]: End processing [hera-workflows]: success
+[2024-04-22 10:16:38] INFO root fetch - main [MainThread]: Store serial: [22873953]
