@@ -4369,3 +4369,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:55:37] INFO root fetch - processPackages [odoo14-addon-document-page]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_document_page-14.0.1.3.1.dev1-py3-none-any.whl.zip]
 [2024-04-22 05:55:37] INFO root fetch - main [MainThread]: End processing [odoo14-addon-document-page]: success
 [2024-04-22 05:55:37] INFO root fetch - main [MainThread]: Store serial: [22871807]
+[2024-04-22 05:57:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871807]
+[2024-04-22 05:57:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 05:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openparse
+[2024-04-22 05:57:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aq-geometric
+[2024-04-22 05:57:46] INFO root fetch - processPackages [openparse]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-22 05:57:46] INFO root fetch - processPackages [aq-geometric]: New version: [2024.4.7.2] Old Version: [2024.4.6.1]
+[2024-04-22 05:57:46] INFO root fetch - processPackages [openparse]: Downloading https://files.pythonhosted.org/packages/35/6b/340474e2e0c3d7110c42f1acf6aeddba12fadfe19e9be59678b62a0388fa/openparse-0.5.2.tar.gz
+[2024-04-22 05:57:46] INFO root fetch - processPackages [aq-geometric]: Downloading https://files.pythonhosted.org/packages/e8/3a/361e91ac5e9c6f7d6d1f4fae3f93e8654e9e151e1853cbd03ee234b30c96/aq_geometric-2024.4.6.1.tar.gz
+[2024-04-22 05:57:46] INFO root fetch - processPackages [aq-geometric]: Downloading https://files.pythonhosted.org/packages/0e/08/70b34eb8103823c658557aaaf636d19969e7d9c7e2f66f140ce371644f59/aq_geometric-2024.4.7.2.tar.gz
+[2024-04-22 05:57:46] INFO root fetch - processPackages [openparse]: Downloading https://files.pythonhosted.org/packages/30/77/a64a4b14ceaef1539c95a0c3da9036ba67ca1887c63ee77f62789dd74850/openparse-0.5.3.tar.gz
+[2024-04-22 05:57:46] INFO root fetch - processPackages [aq-geometric]: executing diffoscope
+[2024-04-22 05:57:46] INFO root fetch - processPackages [aq-geometric]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aq_geometric-2024.4.6.1.tar.gz tmp/aq_geometric-2024.4.7.2.tar.gz --markdown 20240422/a/aq-geometric/2024.4.6.1-2024.4.7.2/README.md --exclude *.pyd
+[2024-04-22 05:57:46] INFO root fetch - processPackages [openparse]: executing diffoscope
+[2024-04-22 05:57:46] INFO root fetch - processPackages [openparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openparse-0.5.2.tar.gz tmp/openparse-0.5.3.tar.gz --markdown 20240422/o/openparse/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-22 05:57:47] INFO root fetch - processPackages [aq-geometric]: Remove: archive file [/home/abi/fetcher/tmp/aq_geometric-2024.4.6.1.tar.gz]
+[2024-04-22 05:57:47] INFO root fetch - processPackages [aq-geometric]: Remove: archive file [/home/abi/fetcher/tmp/aq_geometric-2024.4.7.2.tar.gz]
+[2024-04-22 05:57:47] INFO root fetch - main [MainThread]: End processing [aq-geometric]: success
+[2024-04-22 05:57:47] INFO root fetch - processPackages [openparse]: Remove: archive file [/home/abi/fetcher/tmp/openparse-0.5.2.tar.gz]
+[2024-04-22 05:57:47] INFO root fetch - processPackages [openparse]: Remove: archive file [/home/abi/fetcher/tmp/openparse-0.5.3.tar.gz]
+[2024-04-22 05:57:47] INFO root fetch - main [MainThread]: End processing [openparse]: success
+[2024-04-22 05:57:47] INFO root fetch - main [MainThread]: Store serial: [22871813]
