@@ -1854,3 +1854,42 @@
 [2024-04-22 02:30:33] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
 [2024-04-22 02:30:33] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
 [2024-04-22 02:30:33] INFO root fetch - main [MainThread]: Store serial: [22870648]
+[2024-04-22 02:32:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870648]
+[2024-04-22 02:32:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 02:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astropy-iers-data
+[2024-04-22 02:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mystring
+[2024-04-22 02:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aeppl-nightly
+[2024-04-22 02:32:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auto-test-common
+[2024-04-22 02:32:43] INFO root fetch - processPackages [mystring]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-22 02:32:43] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240421] Old Version: [0.1.5.dev20240420]
+[2024-04-22 02:32:43] INFO root fetch - processPackages [auto-test-common]: New version: [2.0.0] Old Version: [1.1.99]
+[2024-04-22 02:32:43] INFO root fetch - processPackages [astropy-iers-data]: New version: [0.2024.4.8.0.32.4] Old Version: [0.2024.4.22.0.29.50]
+[2024-04-22 02:32:43] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/88/05/d0d140db04c0b270b7380359ce66dc3b26477e6b13a36cd8ced2e0442041/mystring-0.2.98-py3-none-any.whl
+[2024-04-22 02:32:43] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/11/e5/1d28b18d2ac80cc11f36402ff402b3c531d45848df5eb5c80fe075ca278a/aeppl_nightly-0.1.5.dev20240420.tar.gz
+[2024-04-22 02:32:43] INFO root fetch - processPackages [astropy-iers-data]: Downloading https://files.pythonhosted.org/packages/97/2a/de6bccaefc2b2616d31fb67ce7785eb691e66085de601302be85c93cc503/astropy_iers_data-0.2024.4.22.0.29.50.tar.gz
+[2024-04-22 02:32:43] INFO root fetch - processPackages [auto-test-common]: Downloading https://files.pythonhosted.org/packages/03/93/e1a6f314f7eb19e918b717a782ffdc08b62617a59d42c7424e64155e8c5f/auto-test-common-1.1.99.tar.gz
+[2024-04-22 02:32:43] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/fa/f7/968c4dde1769f6b1b7f54bedafe67abf4ae2c5ff261eaed5f05032e85e87/mystring-0.2.99-py3-none-any.whl
+[2024-04-22 02:32:43] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/db/04/f5f4663c37bfab5d9a3a16b37b92b3a9b574864ee38b0e48ee5a07862816/aeppl_nightly-0.1.5.dev20240421.tar.gz
+[2024-04-22 02:32:43] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2024-04-22 02:32:43] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.2.98-py3-none-any.whl.zip tmp/mystring-0.2.99-py3-none-any.whl.zip --markdown 20240422/m/mystring/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-04-22 02:32:43] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-04-22 02:32:43] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240420.tar.gz tmp/aeppl_nightly-0.1.5.dev20240421.tar.gz --markdown 20240422/a/aeppl-nightly/0.1.5.dev20240420-0.1.5.dev20240421/README.md --exclude *.pyd
+[2024-04-22 02:32:43] INFO root fetch - processPackages [auto-test-common]: Downloading https://files.pythonhosted.org/packages/b2/af/5515000445751ddaece2e1b3afa4ac1fa7364bcd03ad38ba19a9b7c7c63a/auto-test-common-2.0.0.tar.gz
+[2024-04-22 02:32:43] INFO root fetch - processPackages [astropy-iers-data]: Downloading https://files.pythonhosted.org/packages/22/b9/c9c77cb70e55488e36127da2edc5f744506c27dd2e7c6326b21b4405ed99/astropy-iers-data-0.2024.4.8.0.32.4.tar.gz
+[2024-04-22 02:32:44] INFO root fetch - processPackages [auto-test-common]: executing diffoscope
+[2024-04-22 02:32:44] INFO root fetch - processPackages [auto-test-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-test-common-1.1.99.tar.gz tmp/auto-test-common-2.0.0.tar.gz --markdown 20240422/a/auto-test-common/1.1.99-2.0.0/README.md --exclude *.pyd
+[2024-04-22 02:32:44] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.98-py3-none-any.whl.zip]
+[2024-04-22 02:32:44] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.99-py3-none-any.whl.zip]
+[2024-04-22 02:32:44] INFO root fetch - main [MainThread]: End processing [mystring]: success
+[2024-04-22 02:32:44] INFO root fetch - processPackages [astropy-iers-data]: executing diffoscope
+[2024-04-22 02:32:44] INFO root fetch - processPackages [astropy-iers-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astropy_iers_data-0.2024.4.22.0.29.50.tar.gz tmp/astropy-iers-data-0.2024.4.8.0.32.4.tar.gz --markdown 20240422/a/astropy-iers-data/0.2024.4.22.0.29.50-0.2024.4.8.0.32.4/README.md --exclude *.pyd
+[2024-04-22 02:32:44] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240420.tar.gz]
+[2024-04-22 02:32:44] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240421.tar.gz]
+[2024-04-22 02:32:44] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-04-22 02:32:44] INFO root fetch - processPackages [auto-test-common]: Remove: archive file [/home/abi/fetcher/tmp/auto-test-common-1.1.99.tar.gz]
+[2024-04-22 02:32:44] INFO root fetch - processPackages [auto-test-common]: Remove: archive file [/home/abi/fetcher/tmp/auto-test-common-2.0.0.tar.gz]
+[2024-04-22 02:32:44] INFO root fetch - main [MainThread]: End processing [auto-test-common]: success
+[2024-04-22 02:32:45] INFO root fetch - processPackages [astropy-iers-data]: Remove: archive file [/home/abi/fetcher/tmp/astropy_iers_data-0.2024.4.22.0.29.50.tar.gz]
+[2024-04-22 02:32:45] INFO root fetch - processPackages [astropy-iers-data]: Remove: archive file [/home/abi/fetcher/tmp/astropy-iers-data-0.2024.4.8.0.32.4.tar.gz]
+[2024-04-22 02:32:45] INFO root fetch - main [MainThread]: End processing [astropy-iers-data]: success
+[2024-04-22 02:32:45] INFO root fetch - main [MainThread]: Store serial: [22870657]
