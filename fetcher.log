@@ -2683,3 +2683,24 @@
 [2024-04-22 03:39:38] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc84.post1.tar.gz]
 [2024-04-22 03:39:38] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-22 03:39:38] INFO root fetch - main [MainThread]: Store serial: [22871099]
+[2024-04-22 03:41:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871099]
+[2024-04-22 03:41:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 03:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flash-rwkv
+[2024-04-22 03:41:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monit-agd
+[2024-04-22 03:41:46] INFO root fetch - processPackages [monit-agd]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-22 03:41:46] INFO root fetch - processPackages [monit-agd]: Downloading https://files.pythonhosted.org/packages/78/b5/5b6efd6accd6ae1cd6b0bb95aa6fcbf943d5dba466a59da6148d98a545ce/monit-agd-1.1.tar.gz
+[2024-04-22 03:41:46] INFO root fetch - processPackages [flash-rwkv]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-22 03:41:47] INFO root fetch - processPackages [flash-rwkv]: Downloading https://files.pythonhosted.org/packages/4d/43/ac47e9e205f429726c5f83eacef931884321a6b50aa1a2af89726a942a27/flash_rwkv-0.2.0-py3-none-any.whl
+[2024-04-22 03:41:47] INFO root fetch - processPackages [monit-agd]: Downloading https://files.pythonhosted.org/packages/43/dc/c503f8e3417b0c374f460bcc178124ab8c89a286aa8bdc20c1c083a045c7/monit-agd-1.1.1.tar.gz
+[2024-04-22 03:41:47] INFO root fetch - processPackages [monit-agd]: executing diffoscope
+[2024-04-22 03:41:47] INFO root fetch - processPackages [monit-agd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monit-agd-1.1.tar.gz tmp/monit-agd-1.1.1.tar.gz --markdown 20240422/m/monit-agd/1.1-1.1.1/README.md --exclude *.pyd
+[2024-04-22 03:41:47] INFO root fetch - processPackages [flash-rwkv]: Downloading https://files.pythonhosted.org/packages/38/1c/9f91b0e67f62d9ab80e41e907ff79b66a1a7b1325dc2e142c316ef6bde6f/flash_rwkv-0.2.1-py3-none-any.whl
+[2024-04-22 03:41:47] INFO root fetch - processPackages [flash-rwkv]: executing diffoscope
+[2024-04-22 03:41:47] INFO root fetch - processPackages [flash-rwkv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flash_rwkv-0.2.0-py3-none-any.whl.zip tmp/flash_rwkv-0.2.1-py3-none-any.whl.zip --markdown 20240422/f/flash-rwkv/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-22 03:41:47] INFO root fetch - processPackages [monit-agd]: Remove: archive file [/home/abi/fetcher/tmp/monit-agd-1.1.tar.gz]
+[2024-04-22 03:41:47] INFO root fetch - processPackages [monit-agd]: Remove: archive file [/home/abi/fetcher/tmp/monit-agd-1.1.1.tar.gz]
+[2024-04-22 03:41:47] INFO root fetch - main [MainThread]: End processing [monit-agd]: success
+[2024-04-22 03:41:47] INFO root fetch - processPackages [flash-rwkv]: Remove: archive file [/home/abi/fetcher/tmp/flash_rwkv-0.2.0-py3-none-any.whl.zip]
+[2024-04-22 03:41:47] INFO root fetch - processPackages [flash-rwkv]: Remove: archive file [/home/abi/fetcher/tmp/flash_rwkv-0.2.1-py3-none-any.whl.zip]
+[2024-04-22 03:41:47] INFO root fetch - main [MainThread]: End processing [flash-rwkv]: success
+[2024-04-22 03:41:47] INFO root fetch - main [MainThread]: Store serial: [22871104]
