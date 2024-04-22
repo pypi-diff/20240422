@@ -8272,3 +8272,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 09:59:48] INFO root fetch - processPackages [atomic-bomb-engine]: Remove: archive file [/home/abi/fetcher/tmp/atomic_bomb_engine-0.9.1-cp39-none-win_amd64.whl.zip]
 [2024-04-22 09:59:48] INFO root fetch - main [MainThread]: End processing [atomic-bomb-engine]: success
 [2024-04-22 09:59:48] INFO root fetch - main [MainThread]: Store serial: [22873758]
+[2024-04-22 10:01:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873758]
+[2024-04-22 10:01:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 10:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: competex
+[2024-04-22 10:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sawsi
+[2024-04-22 10:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ropt-nomad
+[2024-04-22 10:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gtempco2
+[2024-04-22 10:01:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sourcedefender
+[2024-04-22 10:01:57] INFO root fetch - processPackages [competex]: New version: [0.5] Old Version: [0.1]
+[2024-04-22 10:01:57] WARNING root fetch - processPackages [ropt-nomad]: Skipping, unable to determine old version
+[2024-04-22 10:01:57] INFO root fetch - main [MainThread]: End processing [ropt-nomad] error
+[2024-04-22 10:01:57] INFO root fetch - processPackages [sourcedefender]: New version: [11.0.20] Old Version: [11.0.19]
+[2024-04-22 10:01:57] INFO root fetch - processPackages [gtempco2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 10:01:57] INFO root fetch - processPackages [sawsi]: New version: [9.9] Old Version: [9.8]
+[2024-04-22 10:01:58] INFO root fetch - processPackages [competex]: Downloading https://files.pythonhosted.org/packages/4d/57/26c5bb42b2940873e270b96fe4787b762f823606b4e1caeb9675fa00e7a9/competex-0.1.tar.gz
+[2024-04-22 10:01:58] INFO root fetch - processPackages [gtempco2]: Downloading https://files.pythonhosted.org/packages/64/17/8de80a1830133d4a4bd194c638b635e3dfd73b935ef886164a6ebd480366/gtempco2-0.0.8.tar.gz
+[2024-04-22 10:01:58] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/a5/89/e5230b963c36d9342bd53c4174b8b4f9595f77c5aa510614cf80ac5315a0/sawsi-9.8.tar.gz
+[2024-04-22 10:01:58] INFO root fetch - processPackages [sourcedefender]: Downloading https://files.pythonhosted.org/packages/65/25/790265ec53408b126c7c12753ddda08dd8d5ccf39ff13cace4fa1ddeeb63/sourcedefender-11.0.19.tar.gz
+[2024-04-22 10:01:58] INFO root fetch - processPackages [competex]: Downloading https://files.pythonhosted.org/packages/56/bf/017af53c2f905a9b9d5fc5bd0eee86a9974e4eb454e5997cd86b8bb98873/competex-0.5.tar.gz
+[2024-04-22 10:01:58] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/69/c2/e945385340121de75cca5d00aa9ac99f3d874c5977239a7d7efe5e969e17/sawsi-9.9.tar.gz
+[2024-04-22 10:01:58] INFO root fetch - processPackages [gtempco2]: Downloading https://files.pythonhosted.org/packages/6b/6b/4bcc9ceec95ff9eee60a52eaf7ef5092394964702865ead1d3edbb2c6108/gtempco2-0.0.9.tar.gz
+[2024-04-22 10:01:58] INFO root fetch - processPackages [competex]: executing diffoscope
+[2024-04-22 10:01:58] INFO root fetch - processPackages [competex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/competex-0.1.tar.gz tmp/competex-0.5.tar.gz --markdown 20240422/c/competex/0.1-0.5/README.md --exclude *.pyd
+[2024-04-22 10:01:58] INFO root fetch - processPackages [sawsi]: executing diffoscope
+[2024-04-22 10:01:58] INFO root fetch - processPackages [sawsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sawsi-9.8.tar.gz tmp/sawsi-9.9.tar.gz --markdown 20240422/s/sawsi/9.8-9.9/README.md --exclude *.pyd
+[2024-04-22 10:01:58] INFO root fetch - processPackages [gtempco2]: executing diffoscope
+[2024-04-22 10:01:58] INFO root fetch - processPackages [gtempco2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtempco2-0.0.8.tar.gz tmp/gtempco2-0.0.9.tar.gz --markdown 20240422/g/gtempco2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 10:01:58] INFO root fetch - processPackages [sourcedefender]: Downloading https://files.pythonhosted.org/packages/5b/aa/35e53ee631c19c55cc6efa8306bce597358fad0340307917f3813b413012/sourcedefender-11.0.20.tar.gz
+[2024-04-22 10:01:59] INFO root fetch - processPackages [competex]: Remove: archive file [/home/abi/fetcher/tmp/competex-0.1.tar.gz]
+[2024-04-22 10:01:59] INFO root fetch - processPackages [competex]: Remove: archive file [/home/abi/fetcher/tmp/competex-0.5.tar.gz]
+[2024-04-22 10:01:59] INFO root fetch - main [MainThread]: End processing [competex]: success
+[2024-04-22 10:01:59] INFO root fetch - processPackages [gtempco2]: Remove: archive file [/home/abi/fetcher/tmp/gtempco2-0.0.8.tar.gz]
+[2024-04-22 10:01:59] INFO root fetch - processPackages [gtempco2]: Remove: archive file [/home/abi/fetcher/tmp/gtempco2-0.0.9.tar.gz]
+[2024-04-22 10:01:59] INFO root fetch - main [MainThread]: End processing [gtempco2]: success
+[2024-04-22 10:01:59] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.8.tar.gz]
+[2024-04-22 10:01:59] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.9.tar.gz]
+[2024-04-22 10:01:59] INFO root fetch - main [MainThread]: End processing [sawsi]: success
+[2024-04-22 10:01:59] INFO root fetch - processPackages [sourcedefender]: executing diffoscope
+[2024-04-22 10:01:59] INFO root fetch - processPackages [sourcedefender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcedefender-11.0.19.tar.gz tmp/sourcedefender-11.0.20.tar.gz --markdown 20240422/s/sourcedefender/11.0.19-11.0.20/README.md --exclude *.pyd
+[2024-04-22 10:03:26] INFO root fetch - processPackages [sourcedefender]: Remove: archive file [/home/abi/fetcher/tmp/sourcedefender-11.0.19.tar.gz]
+[2024-04-22 10:03:26] INFO root fetch - processPackages [sourcedefender]: Remove: archive file [/home/abi/fetcher/tmp/sourcedefender-11.0.20.tar.gz]
+[2024-04-22 10:03:26] INFO root fetch - main [MainThread]: End processing [sourcedefender]: success
+[2024-04-22 10:03:26] INFO root fetch - main [MainThread]: Store serial: [22873794]
