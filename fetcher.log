@@ -8013,3 +8013,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:47:25] INFO root fetch - processPackages [aquacrop]: Remove: archive file [/home/abi/fetcher/tmp/aquacrop-3.0.3.tar.gz]
 [2024-04-22 09:47:25] INFO root fetch - main [MainThread]: End processing [aquacrop]: success
 [2024-04-22 09:47:25] INFO root fetch - main [MainThread]: Store serial: [22873417]
+[2024-04-22 09:49:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873417]
+[2024-04-22 09:49:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 09:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: synthetic-aia-mia
+[2024-04-22 09:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: competex
+[2024-04-22 09:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ul-db-utils
+[2024-04-22 09:49:34] INFO root fetch - processPackages [competex]: New version: [0.3] Old Version: [0.2]
+[2024-04-22 09:49:34] INFO root fetch - processPackages [competex]: Downloading https://files.pythonhosted.org/packages/ec/3d/acfc457f4cc987de9a96f31e4c39af6de884fdeec2092a0a060cdf92cddf/competex-0.2.tar.gz
+[2024-04-22 09:49:34] INFO root fetch - processPackages [ul-db-utils]: New version: [3.3.0] Old Version: [3.2.5]
+[2024-04-22 09:49:34] INFO root fetch - processPackages [synthetic-aia-mia]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 09:49:34] INFO root fetch - processPackages [synthetic-aia-mia]: Downloading https://files.pythonhosted.org/packages/ac/a7/4b74c7e4ecfe669e7feb5457494d74cefdfe4b615b36b82866672ffdf117/synthetic_aia_mia-0.0.8.tar.gz
+[2024-04-22 09:49:34] INFO root fetch - processPackages [ul-db-utils]: Downloading https://files.pythonhosted.org/packages/97/16/86f58edfa0eb8dfd68c3b0ee2e7a9e4d5cd1f56958d1b3a7d43573cc62b3/ul-db-utils-3.2.5.tar.gz
+[2024-04-22 09:49:35] ERROR root fetch - processPackages [competex]: Unable to fetch info: No such project/version 'competex' 0.3
+[2024-04-22 09:49:35] INFO root fetch - main [MainThread]: End processing [competex] error
+[2024-04-22 09:49:35] INFO root fetch - processPackages [ul-db-utils]: Downloading https://files.pythonhosted.org/packages/f5/20/7a6dd6c57c16125f7e0249dc8e4df09771ccc5a30ea7c19408276fe25907/ul-db-utils-3.3.0.tar.gz
+[2024-04-22 09:49:35] INFO root fetch - processPackages [synthetic-aia-mia]: Downloading https://files.pythonhosted.org/packages/80/38/e87a2a4460fb149ee691426d520c46087c724438cf8d716c5ee7effbb51f/synthetic_aia_mia-0.0.9.tar.gz
+[2024-04-22 09:49:35] INFO root fetch - processPackages [ul-db-utils]: executing diffoscope
+[2024-04-22 09:49:35] INFO root fetch - processPackages [ul-db-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ul-db-utils-3.2.5.tar.gz tmp/ul-db-utils-3.3.0.tar.gz --markdown 20240422/u/ul-db-utils/3.2.5-3.3.0/README.md --exclude *.pyd
+[2024-04-22 09:49:35] INFO root fetch - processPackages [synthetic-aia-mia]: executing diffoscope
+[2024-04-22 09:49:35] INFO root fetch - processPackages [synthetic-aia-mia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthetic_aia_mia-0.0.8.tar.gz tmp/synthetic_aia_mia-0.0.9.tar.gz --markdown 20240422/s/synthetic-aia-mia/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 09:49:36] INFO root fetch - processPackages [ul-db-utils]: Remove: archive file [/home/abi/fetcher/tmp/ul-db-utils-3.2.5.tar.gz]
+[2024-04-22 09:49:36] INFO root fetch - processPackages [ul-db-utils]: Remove: archive file [/home/abi/fetcher/tmp/ul-db-utils-3.3.0.tar.gz]
+[2024-04-22 09:49:36] INFO root fetch - main [MainThread]: End processing [ul-db-utils]: success
+[2024-04-22 09:49:36] INFO root fetch - processPackages [synthetic-aia-mia]: Remove: archive file [/home/abi/fetcher/tmp/synthetic_aia_mia-0.0.8.tar.gz]
+[2024-04-22 09:49:36] INFO root fetch - processPackages [synthetic-aia-mia]: Remove: archive file [/home/abi/fetcher/tmp/synthetic_aia_mia-0.0.9.tar.gz]
+[2024-04-22 09:49:36] INFO root fetch - main [MainThread]: End processing [synthetic-aia-mia]: success
+[2024-04-22 09:49:36] INFO root fetch - main [MainThread]: Store serial: [22873628]
