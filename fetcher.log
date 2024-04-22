@@ -6631,3 +6631,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:26:59] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_multi_relation-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-04-22 08:26:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-multi-relation]: success
 [2024-04-22 08:26:59] INFO root fetch - main [MainThread]: Store serial: [22872659]
+[2024-04-22 08:29:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872659]
+[2024-04-22 08:29:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 08:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cutseq
+[2024-04-22 08:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pikachu-Kit
+[2024-04-22 08:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ommx-python-mip-adapter
+[2024-04-22 08:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotframework-parrot-dtmf
+[2024-04-22 08:29:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-chatbox
+[2024-04-22 08:29:08] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:29:08] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-04-22 08:29:08] WARNING root fetch - processPackages [Pikachu-Kit]: Skipping, unable to determine old version
+[2024-04-22 08:29:08] INFO root fetch - main [MainThread]: End processing [Pikachu-Kit] error
+[2024-04-22 08:29:08] INFO root fetch - processPackages [streamlit-chatbox]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-22 08:29:08] INFO root fetch - processPackages [ommx-python-mip-adapter]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-04-22 08:29:08] INFO root fetch - processPackages [robotframework-parrot-dtmf]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-22 08:29:08] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-04-22 08:29:08] INFO root fetch - processPackages [ommx-python-mip-adapter]: Downloading https://files.pythonhosted.org/packages/08/db/d86fc07275ade2287475e556ecad6eef9c78a7d95409d5723281157166f2/ommx_python_mip_adapter-0.0.2.tar.gz
+[2024-04-22 08:29:08] INFO root fetch - processPackages [streamlit-chatbox]: Downloading https://files.pythonhosted.org/packages/bf/7d/8bb4ab39d910d3d30964fedee60f8a114fd2e4bc50dc33f975dbac098035/streamlit_chatbox-1.1.8-py3-none-any.whl
+[2024-04-22 08:29:08] INFO root fetch - processPackages [robotframework-parrot-dtmf]: Downloading https://files.pythonhosted.org/packages/6d/b7/9a3177325d42fda0c25ba5b3f72f1480075e6e9acded189afb355ecf8737/robotframework_parrot_dtmf-1.0.0.tar.gz
+[2024-04-22 08:29:08] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 08:29:08] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240422/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:29:08] INFO root fetch - processPackages [ommx-python-mip-adapter]: Downloading https://files.pythonhosted.org/packages/04/e5/89f7c906c64b2ee73c0118bf49e16abf40082e6ae31f63be322978b0e9e5/ommx_python_mip_adapter-0.1.0.tar.gz
+[2024-04-22 08:29:08] INFO root fetch - processPackages [robotframework-parrot-dtmf]: Downloading https://files.pythonhosted.org/packages/2d/df/7a2cf68b3a136edb165b8bfc0206f1304723182e537313ce22194e632eda/robotframework_parrot_dtmf-1.0.1.tar.gz
+[2024-04-22 08:29:08] INFO root fetch - processPackages [ommx-python-mip-adapter]: executing diffoscope
+[2024-04-22 08:29:08] INFO root fetch - processPackages [ommx-python-mip-adapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ommx_python_mip_adapter-0.0.2.tar.gz tmp/ommx_python_mip_adapter-0.1.0.tar.gz --markdown 20240422/o/ommx-python-mip-adapter/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-04-22 08:29:08] INFO root fetch - processPackages [streamlit-chatbox]: Downloading https://files.pythonhosted.org/packages/c0/eb/71b18f2c0de71e0b49eadcd496124da378a72b3e9d45c832c656d6ad394c/streamlit_chatbox-1.1.9-py3-none-any.whl
+[2024-04-22 08:29:08] INFO root fetch - processPackages [streamlit-chatbox]: executing diffoscope
+[2024-04-22 08:29:08] INFO root fetch - processPackages [streamlit-chatbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit_chatbox-1.1.8-py3-none-any.whl.zip tmp/streamlit_chatbox-1.1.9-py3-none-any.whl.zip --markdown 20240422/s/streamlit-chatbox/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-22 08:29:08] INFO root fetch - processPackages [robotframework-parrot-dtmf]: executing diffoscope
+[2024-04-22 08:29:08] INFO root fetch - processPackages [robotframework-parrot-dtmf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_parrot_dtmf-1.0.0.tar.gz tmp/robotframework_parrot_dtmf-1.0.1.tar.gz --markdown 20240422/r/robotframework-parrot-dtmf/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-22 08:29:09] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-04-22 08:29:09] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-04-22 08:29:09] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 08:29:09] INFO root fetch - processPackages [ommx-python-mip-adapter]: Remove: archive file [/home/abi/fetcher/tmp/ommx_python_mip_adapter-0.0.2.tar.gz]
+[2024-04-22 08:29:09] INFO root fetch - processPackages [ommx-python-mip-adapter]: Remove: archive file [/home/abi/fetcher/tmp/ommx_python_mip_adapter-0.1.0.tar.gz]
+[2024-04-22 08:29:09] INFO root fetch - main [MainThread]: End processing [ommx-python-mip-adapter]: success
+[2024-04-22 08:29:09] INFO root fetch - processPackages [streamlit-chatbox]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chatbox-1.1.8-py3-none-any.whl.zip]
+[2024-04-22 08:29:09] INFO root fetch - processPackages [streamlit-chatbox]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_chatbox-1.1.9-py3-none-any.whl.zip]
+[2024-04-22 08:29:09] INFO root fetch - main [MainThread]: End processing [streamlit-chatbox]: success
+[2024-04-22 08:29:09] INFO root fetch - processPackages [robotframework-parrot-dtmf]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_parrot_dtmf-1.0.0.tar.gz]
+[2024-04-22 08:29:09] INFO root fetch - processPackages [robotframework-parrot-dtmf]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_parrot_dtmf-1.0.1.tar.gz]
+[2024-04-22 08:29:09] INFO root fetch - main [MainThread]: End processing [robotframework-parrot-dtmf]: success
+[2024-04-22 08:29:09] INFO root fetch - main [MainThread]: Store serial: [22872671]
