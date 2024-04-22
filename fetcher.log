@@ -7775,3 +7775,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:29:52] INFO root fetch - processPackages [bitstring]: Remove: archive file [/home/abi/fetcher/tmp/bitstring-4.2.0b2.tar.gz]
 [2024-04-22 09:29:52] INFO root fetch - main [MainThread]: End processing [bitstring]: success
 [2024-04-22 09:29:52] INFO root fetch - main [MainThread]: Store serial: [22873108]
+[2024-04-22 09:31:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873108]
+[2024-04-22 09:32:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 09:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pySigma-backend-trellix-helix
+[2024-04-22 09:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: covidlag
+[2024-04-22 09:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ptars
+[2024-04-22 09:32:01] INFO root fetch - processPackages [ptars]: New version: [0.0.2rc2] Old Version: [0.0.2rc0]
+[2024-04-22 09:32:01] INFO root fetch - processPackages [covidlag]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 09:32:01] WARNING root fetch - processPackages [pySigma-backend-trellix-helix]: Skipping, unable to determine old version
+[2024-04-22 09:32:01] INFO root fetch - main [MainThread]: End processing [pySigma-backend-trellix-helix] error
+[2024-04-22 09:32:01] INFO root fetch - processPackages [ptars]: Downloading https://files.pythonhosted.org/packages/47/b5/ecd07389ebc1e7d4325f72c51001d48e07757386c16fab66d4d0a30b8cac/ptars-0.0.2rc0.tar.gz
+[2024-04-22 09:32:01] INFO root fetch - processPackages [covidlag]: Downloading https://files.pythonhosted.org/packages/63/72/8dcc492343d9ebfabb90524a1feb94c62a355dbd8c7bb7a4223de0a0cd1c/covidlag-0.0.7.tar.gz
+[2024-04-22 09:32:02] INFO root fetch - processPackages [covidlag]: Downloading https://files.pythonhosted.org/packages/3a/1d/f02756cd2c0937325d1ee9b39af592e82aef0f78e866487365b7672be1ab/covidlag-0.0.8.tar.gz
+[2024-04-22 09:32:02] INFO root fetch - processPackages [ptars]: Downloading https://files.pythonhosted.org/packages/61/e0/d7e4bdc65b797f576005995bec63eaab545cb99a0011aa6640991ea00acf/ptars-0.0.2rc2.tar.gz
+[2024-04-22 09:32:02] INFO root fetch - processPackages [covidlag]: executing diffoscope
+[2024-04-22 09:32:02] INFO root fetch - processPackages [covidlag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/covidlag-0.0.7.tar.gz tmp/covidlag-0.0.8.tar.gz --markdown 20240422/c/covidlag/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 09:32:02] INFO root fetch - processPackages [ptars]: executing diffoscope
+[2024-04-22 09:32:02] INFO root fetch - processPackages [ptars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptars-0.0.2rc0.tar.gz tmp/ptars-0.0.2rc2.tar.gz --markdown 20240422/p/ptars/0.0.2rc0-0.0.2rc2/README.md --exclude *.pyd
+[2024-04-22 09:32:03] INFO root fetch - processPackages [covidlag]: Remove: archive file [/home/abi/fetcher/tmp/covidlag-0.0.7.tar.gz]
+[2024-04-22 09:32:03] INFO root fetch - processPackages [covidlag]: Remove: archive file [/home/abi/fetcher/tmp/covidlag-0.0.8.tar.gz]
+[2024-04-22 09:32:03] INFO root fetch - main [MainThread]: End processing [covidlag]: success
+[2024-04-22 09:32:03] INFO root fetch - processPackages [ptars]: Remove: archive file [/home/abi/fetcher/tmp/ptars-0.0.2rc0.tar.gz]
+[2024-04-22 09:32:03] INFO root fetch - processPackages [ptars]: Remove: archive file [/home/abi/fetcher/tmp/ptars-0.0.2rc2.tar.gz]
+[2024-04-22 09:32:03] INFO root fetch - main [MainThread]: End processing [ptars]: success
+[2024-04-22 09:32:03] INFO root fetch - main [MainThread]: Store serial: [22873133]
