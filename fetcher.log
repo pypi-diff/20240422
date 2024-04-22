@@ -2043,3 +2043,51 @@
 [2024-04-22 02:48:18] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
 [2024-04-22 02:48:18] INFO root fetch - main [MainThread]: End processing [telectron]: success
 [2024-04-22 02:48:18] INFO root fetch - main [MainThread]: Store serial: [22870722]
+[2024-04-22 02:50:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870722]
+[2024-04-22 02:50:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 02:50:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genomeshader
+[2024-04-22 02:50:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uhelp
+[2024-04-22 02:50:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cognite-synthetic-tags
+[2024-04-22 02:50:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-sns-notify
+[2024-04-22 02:50:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bioversions
+[2024-04-22 02:50:26] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-22 02:50:26] INFO root fetch - processPackages [genomeshader]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 02:50:26] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-22 02:50:26] INFO root fetch - processPackages [uhelp]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-22 02:50:26] INFO root fetch - processPackages [cognite-synthetic-tags]: New version: [0.5.0] Old Version: [0.3.3]
+[2024-04-22 02:50:26] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2024-04-22 02:50:26] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-04-22 02:50:26] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/1c/84/39f1662d319381705e811acf6c7854194d08e68e45c79d57c5a763bdc863/genomeshader-0.1.8.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [uhelp]: Downloading https://files.pythonhosted.org/packages/98/78/9af242a8c55c31f962d04b6c8a83450d292fb87ccc930699a7961c328ab0/uhelp-0.5.0.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cognite-synthetic-tags]: Downloading https://files.pythonhosted.org/packages/45/93/3b97a96be1c77826f34704cc025808966ef000982fb57f4c9770fc4b6153/cognite-synthetic-tags-0.3.3.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [genomeshader]: Downloading https://files.pythonhosted.org/packages/99/48/90c7c052b1a65bbffd3e20c6f11964c9fc1a3dc182ef8de7c3611b26d473/genomeshader-0.1.9.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [genomeshader]: executing diffoscope
+[2024-04-22 02:50:27] INFO root fetch - processPackages [genomeshader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genomeshader-0.1.8.tar.gz tmp/genomeshader-0.1.9.tar.gz --markdown 20240422/g/genomeshader/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20240422/c/cdk-sns-notify/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-22 02:50:27] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-04-22 02:50:27] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240422/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cognite-synthetic-tags]: Downloading https://files.pythonhosted.org/packages/e9/54/453824fb4c85be5b8e8d5aefde2296cbfdda042460fc14b8fb313d0cc5f7/cognite_synthetic_tags-0.5.0.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [uhelp]: Downloading https://files.pythonhosted.org/packages/2b/dc/24a145f13f3cd04e6f36262838e22ce7888f9f6790413d64d47f0fd3338a/uhelp-0.6.0.tar.gz
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cognite-synthetic-tags]: executing diffoscope
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cognite-synthetic-tags]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite-synthetic-tags-0.3.3.tar.gz tmp/cognite_synthetic_tags-0.5.0.tar.gz --markdown 20240422/c/cognite-synthetic-tags/0.3.3-0.5.0/README.md --exclude *.pyd
+[2024-04-22 02:50:27] INFO root fetch - processPackages [uhelp]: executing diffoscope
+[2024-04-22 02:50:27] INFO root fetch - processPackages [uhelp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uhelp-0.5.0.tar.gz tmp/uhelp-0.6.0.tar.gz --markdown 20240422/u/uhelp/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.98.tar.gz]
+[2024-04-22 02:50:27] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.99.tar.gz]
+[2024-04-22 02:50:27] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2024-04-22 02:50:28] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.8.tar.gz]
+[2024-04-22 02:50:28] INFO root fetch - processPackages [genomeshader]: Remove: archive file [/home/abi/fetcher/tmp/genomeshader-0.1.9.tar.gz]
+[2024-04-22 02:50:28] INFO root fetch - main [MainThread]: End processing [genomeshader]: success
+[2024-04-22 02:50:28] INFO root fetch - processPackages [cognite-synthetic-tags]: Remove: archive file [/home/abi/fetcher/tmp/cognite-synthetic-tags-0.3.3.tar.gz]
+[2024-04-22 02:50:28] INFO root fetch - processPackages [cognite-synthetic-tags]: Remove: archive file [/home/abi/fetcher/tmp/cognite_synthetic_tags-0.5.0.tar.gz]
+[2024-04-22 02:50:28] INFO root fetch - main [MainThread]: End processing [cognite-synthetic-tags]: success
+[2024-04-22 02:50:40] INFO root fetch - processPackages [uhelp]: Remove: archive file [/home/abi/fetcher/tmp/uhelp-0.5.0.tar.gz]
+[2024-04-22 02:50:40] INFO root fetch - processPackages [uhelp]: Remove: archive file [/home/abi/fetcher/tmp/uhelp-0.6.0.tar.gz]
+[2024-04-22 02:50:40] INFO root fetch - main [MainThread]: End processing [uhelp]: success
+[2024-04-22 02:50:46] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-04-22 02:50:46] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-04-22 02:50:46] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-04-22 02:50:46] INFO root fetch - main [MainThread]: Store serial: [22870749]
