@@ -2893,3 +2893,24 @@
 [2024-04-22 04:05:40] INFO root fetch - processPackages [imgvision]: Remove: archive file [/home/abi/fetcher/tmp/imgvision-0.1.7.2.tar.gz]
 [2024-04-22 04:05:40] INFO root fetch - main [MainThread]: End processing [imgvision]: success
 [2024-04-22 04:05:40] INFO root fetch - main [MainThread]: Store serial: [22871170]
+[2024-04-22 04:07:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871170]
+[2024-04-22 04:07:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 04:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-vector-stores-databricks
+[2024-04-22 04:07:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eirStru
+[2024-04-22 04:07:49] INFO root fetch - processPackages [eirStru]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-22 04:07:49] INFO root fetch - processPackages [llama-index-vector-stores-databricks]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-22 04:07:49] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/b5/2a/25fb95363a9110b32ccbc230c8a5f6207e35c7c5906b6f63320a4ca71535/eirStru-0.3.8.tar.gz
+[2024-04-22 04:07:49] INFO root fetch - processPackages [llama-index-vector-stores-databricks]: Downloading https://files.pythonhosted.org/packages/ca/2c/4820dd651255ad7323a66e7e6a7f5eb366cb6233dec6fbe5170b32c15b5a/llama_index_vector_stores_databricks-0.1.1.tar.gz
+[2024-04-22 04:07:49] INFO root fetch - processPackages [eirStru]: Downloading https://files.pythonhosted.org/packages/26/ce/8cae1a6c9a510bd827a325862ceb832b9e593422dff66af06aa3bdda4f40/eirStru-0.3.9.tar.gz
+[2024-04-22 04:07:49] INFO root fetch - processPackages [eirStru]: executing diffoscope
+[2024-04-22 04:07:49] INFO root fetch - processPackages [eirStru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eirStru-0.3.8.tar.gz tmp/eirStru-0.3.9.tar.gz --markdown 20240422/e/eirStru/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-22 04:07:50] INFO root fetch - processPackages [llama-index-vector-stores-databricks]: Downloading https://files.pythonhosted.org/packages/52/b4/1da517285351cc8002eee0e9eb6cfa6e0b66809fe61808b8cebd4c5f0534/llama_index_vector_stores_databricks-0.1.2.tar.gz
+[2024-04-22 04:07:50] INFO root fetch - processPackages [llama-index-vector-stores-databricks]: executing diffoscope
+[2024-04-22 04:07:50] INFO root fetch - processPackages [llama-index-vector-stores-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_vector_stores_databricks-0.1.1.tar.gz tmp/llama_index_vector_stores_databricks-0.1.2.tar.gz --markdown 20240422/l/llama-index-vector-stores-databricks/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-22 04:07:50] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.8.tar.gz]
+[2024-04-22 04:07:50] INFO root fetch - processPackages [eirStru]: Remove: archive file [/home/abi/fetcher/tmp/eirStru-0.3.9.tar.gz]
+[2024-04-22 04:07:50] INFO root fetch - main [MainThread]: End processing [eirStru]: success
+[2024-04-22 04:07:50] INFO root fetch - processPackages [llama-index-vector-stores-databricks]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_databricks-0.1.1.tar.gz]
+[2024-04-22 04:07:50] INFO root fetch - processPackages [llama-index-vector-stores-databricks]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_databricks-0.1.2.tar.gz]
+[2024-04-22 04:07:50] INFO root fetch - main [MainThread]: End processing [llama-index-vector-stores-databricks]: success
+[2024-04-22 04:07:50] INFO root fetch - main [MainThread]: Store serial: [22871175]
