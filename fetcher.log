@@ -3070,3 +3070,42 @@
 [2024-04-22 04:21:07] INFO root fetch - processPackages [types-tensorflow]: Remove: archive file [/home/abi/fetcher/tmp/types-tensorflow-2.15.0.20240422.tar.gz]
 [2024-04-22 04:21:07] INFO root fetch - main [MainThread]: End processing [types-tensorflow]: success
 [2024-04-22 04:21:07] INFO root fetch - main [MainThread]: Store serial: [22871243]
+[2024-04-22 04:23:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871243]
+[2024-04-22 04:23:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 04:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-04-22 04:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hatchling
+[2024-04-22 04:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gridengine-framework
+[2024-04-22 04:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imageio
+[2024-04-22 04:23:16] INFO root fetch - processPackages [hatchling]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-22 04:23:16] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240421] Old Version: [1.2.20240420]
+[2024-04-22 04:23:16] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-22 04:23:16] INFO root fetch - processPackages [imageio]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-04-22 04:23:16] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/c3/f2/ded60de846493d217d986254e7dcac705d878d1445fd90d1dcf8332b342b/iam_actions-1.2.20240420.tar.gz
+[2024-04-22 04:23:16] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/a1/e0/e22e343e7e5853b1d10c5f6fb5072ca3d38aa05e51c9920bb373d393e40c/hatchling-1.8.1.tar.gz
+[2024-04-22 04:23:16] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/63/aa/1c075744c116dd0e86501a9865a28ce0eb658a3de6e646bbad7e1c72387f/gridengine_framework-0.7.0.tar.gz
+[2024-04-22 04:23:16] INFO root fetch - processPackages [imageio]: Downloading https://files.pythonhosted.org/packages/ea/59/c6d568a309cf4c1b8e091bd8630c590a57f2e068a8e4114e1f36ee0d8e4f/imageio-2.8.0.tar.gz
+[2024-04-22 04:23:16] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/db/6f/d83d688462f4fee1187c6b403489a2049b6ee3fb9b237f13bd3308815037/iam_actions-1.2.20240421.tar.gz
+[2024-04-22 04:23:16] INFO root fetch - processPackages [hatchling]: Downloading https://files.pythonhosted.org/packages/0e/7a/bc6679c4c8814b8f09957d255825e75a09220660c272f95719c512538811/hatchling-1.9.0.tar.gz
+[2024-04-22 04:23:17] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/5e/b0/8decb5d3c46f5c095be490e05d4cef9a545f871d70d478ad06b58a98d953/gridengine_framework-0.7.1.tar.gz
+[2024-04-22 04:23:17] INFO root fetch - processPackages [hatchling]: executing diffoscope
+[2024-04-22 04:23:17] INFO root fetch - processPackages [hatchling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatchling-1.8.1.tar.gz tmp/hatchling-1.9.0.tar.gz --markdown 20240422/h/hatchling/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-22 04:23:17] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-04-22 04:23:17] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240420.tar.gz tmp/iam_actions-1.2.20240421.tar.gz --markdown 20240422/i/iam-actions/1.2.20240420-1.2.20240421/README.md --exclude *.pyd
+[2024-04-22 04:23:17] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 04:23:17] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.0.tar.gz tmp/gridengine_framework-0.7.1.tar.gz --markdown 20240422/g/gridengine-framework/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-22 04:23:17] INFO root fetch - processPackages [imageio]: Downloading https://files.pythonhosted.org/packages/c3/73/f37f428748c4f10a7991ac5bff00f113a34bcc0d0a78957d6e1cdc29a94e/imageio-2.9.0.tar.gz
+[2024-04-22 04:23:17] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.0.tar.gz]
+[2024-04-22 04:23:17] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.1.tar.gz]
+[2024-04-22 04:23:17] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 04:23:17] INFO root fetch - processPackages [hatchling]: Remove: archive file [/home/abi/fetcher/tmp/hatchling-1.8.1.tar.gz]
+[2024-04-22 04:23:17] INFO root fetch - processPackages [hatchling]: Remove: archive file [/home/abi/fetcher/tmp/hatchling-1.9.0.tar.gz]
+[2024-04-22 04:23:17] INFO root fetch - main [MainThread]: End processing [hatchling]: success
+[2024-04-22 04:23:17] INFO root fetch - processPackages [imageio]: executing diffoscope
+[2024-04-22 04:23:17] INFO root fetch - processPackages [imageio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imageio-2.8.0.tar.gz tmp/imageio-2.9.0.tar.gz --markdown 20240422/i/imageio/2.8.0-2.9.0/README.md --exclude *.pyd
+[2024-04-22 04:23:18] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240420.tar.gz]
+[2024-04-22 04:23:18] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240421.tar.gz]
+[2024-04-22 04:23:18] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-04-22 04:23:18] INFO root fetch - processPackages [imageio]: Remove: archive file [/home/abi/fetcher/tmp/imageio-2.8.0.tar.gz]
+[2024-04-22 04:23:18] INFO root fetch - processPackages [imageio]: Remove: archive file [/home/abi/fetcher/tmp/imageio-2.9.0.tar.gz]
+[2024-04-22 04:23:18] INFO root fetch - main [MainThread]: End processing [imageio]: success
+[2024-04-22 04:23:18] INFO root fetch - main [MainThread]: Store serial: [22871254]
