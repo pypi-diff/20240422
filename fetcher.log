@@ -7888,3 +7888,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:38:35] INFO root fetch - processPackages [rank-torrent-name]: Remove: archive file [/home/abi/fetcher/tmp/rank_torrent_name-0.2.9.tar.gz]
 [2024-04-22 09:38:35] INFO root fetch - main [MainThread]: End processing [rank-torrent-name]: success
 [2024-04-22 09:38:35] INFO root fetch - main [MainThread]: Store serial: [22873162]
+[2024-04-22 09:40:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873162]
+[2024-04-22 09:40:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 09:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudoll
+[2024-04-22 09:40:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: local-rag-llm
+[2024-04-22 09:40:45] INFO root fetch - processPackages [cloudoll]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-22 09:40:45] INFO root fetch - processPackages [local-rag-llm]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 09:40:45] INFO root fetch - processPackages [cloudoll]: Downloading https://files.pythonhosted.org/packages/bf/e6/ce8d4cce32f7ef4c4563e7e4eb5002a2e8b435d8bcaa9cabae17ab7e66d0/cloudoll-2.2.8.tar.gz
+[2024-04-22 09:40:45] INFO root fetch - processPackages [local-rag-llm]: Downloading https://files.pythonhosted.org/packages/47/e5/e681fffe7011785fd7a7b6d47c68c5ed670e65e570a1209d5629101b9abf/local_rag_llm-0.0.8.tar.gz
+[2024-04-22 09:40:46] INFO root fetch - processPackages [local-rag-llm]: Downloading https://files.pythonhosted.org/packages/50/eb/1c59a18537e299c44773c4b799d52b69bc745cf7d7b224e6fe5d71e2ab1c/local_rag_llm-0.0.9.tar.gz
+[2024-04-22 09:40:46] INFO root fetch - processPackages [cloudoll]: Downloading https://files.pythonhosted.org/packages/dd/a1/030552f4a6f314f5a262aeec0fae5b22c17e5d56b7486ecbdf0b0361389c/cloudoll-2.2.9.tar.gz
+[2024-04-22 09:40:46] INFO root fetch - processPackages [local-rag-llm]: executing diffoscope
+[2024-04-22 09:40:46] INFO root fetch - processPackages [local-rag-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local_rag_llm-0.0.8.tar.gz tmp/local_rag_llm-0.0.9.tar.gz --markdown 20240422/l/local-rag-llm/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 09:40:46] INFO root fetch - processPackages [cloudoll]: executing diffoscope
+[2024-04-22 09:40:46] INFO root fetch - processPackages [cloudoll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudoll-2.2.8.tar.gz tmp/cloudoll-2.2.9.tar.gz --markdown 20240422/c/cloudoll/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-22 09:40:46] INFO root fetch - processPackages [local-rag-llm]: Remove: archive file [/home/abi/fetcher/tmp/local_rag_llm-0.0.8.tar.gz]
+[2024-04-22 09:40:46] INFO root fetch - processPackages [local-rag-llm]: Remove: archive file [/home/abi/fetcher/tmp/local_rag_llm-0.0.9.tar.gz]
+[2024-04-22 09:40:46] INFO root fetch - main [MainThread]: End processing [local-rag-llm]: success
+[2024-04-22 09:40:47] INFO root fetch - processPackages [cloudoll]: Remove: archive file [/home/abi/fetcher/tmp/cloudoll-2.2.8.tar.gz]
+[2024-04-22 09:40:47] INFO root fetch - processPackages [cloudoll]: Remove: archive file [/home/abi/fetcher/tmp/cloudoll-2.2.9.tar.gz]
+[2024-04-22 09:40:47] INFO root fetch - main [MainThread]: End processing [cloudoll]: success
+[2024-04-22 09:40:47] INFO root fetch - main [MainThread]: Store serial: [22873169]
