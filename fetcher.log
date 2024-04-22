@@ -6471,3 +6471,38 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:19:39] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-04-22 08:19:39] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-04-22 08:19:39] INFO root fetch - main [MainThread]: Store serial: [22872582]
+[2024-04-22 08:21:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872582]
+[2024-04-22 08:21:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 08:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-barcodes-gs1-secondary-unit
+[2024-04-22 08:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: radiens
+[2024-04-22 08:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Pikachu-Kit
+[2024-04-22 08:21:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crossword-puzzle
+[2024-04-22 08:21:48] INFO root fetch - processPackages [radiens]: New version: [3.0.0b5] Old Version: [3.0.0b4]
+[2024-04-22 08:21:48] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.49] Old Version: [1.2.48]
+[2024-04-22 08:21:48] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/df/45/1dab9fa0c7495c8eb27d5ad6e6535f516ecae2eca731d3ea46007839bc40/crossword_puzzle-1.2.48.tar.gz
+[2024-04-22 08:21:48] INFO root fetch - processPackages [odoo-addon-stock-barcodes-gs1-secondary-unit]: New version: [15.0.1.0.1] Old Version: [15.0.1.0.0.17]
+[2024-04-22 08:21:48] INFO root fetch - processPackages [Pikachu-Kit]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 08:21:48] INFO root fetch - processPackages [radiens]: Downloading https://files.pythonhosted.org/packages/cb/25/564f31688cc9a7734b050d7f58c2197814e931bae4c3a438be93395852c8/radiens-3.0.0b4.tar.gz
+[2024-04-22 08:21:48] INFO root fetch - processPackages [Pikachu-Kit]: Downloading https://files.pythonhosted.org/packages/59/91/6446994f23a3012070b80f51cb240813d89febe615006a0d1836af9d5684/Pikachu_Kit-0.0.7-py3-none-any.whl
+[2024-04-22 08:21:48] INFO root fetch - processPackages [odoo-addon-stock-barcodes-gs1-secondary-unit]: Downloading https://files.pythonhosted.org/packages/9c/c1/650d21b5c254f0aa893e2e543d99a3aec7320eeb1bfddaf9c437d23c7b01/odoo_addon_stock_barcodes_gs1_secondary_unit-15.0.1.0.0.17-py3-none-any.whl
+[2024-04-22 08:21:48] INFO root fetch - processPackages [radiens]: Downloading https://files.pythonhosted.org/packages/01/10/4ace9464e5e3067d3097c00b4f748c9264237c643b8f84b24d02b949312b/radiens-3.0.0b5.tar.gz
+[2024-04-22 08:21:48] WARNING root fetch - processPackages [Pikachu-Kit]: Skipping package: exceeds size limit 42697215>=10485760
+[2024-04-22 08:21:48] INFO root fetch - main [MainThread]: End processing [Pikachu-Kit] error
+[2024-04-22 08:21:49] INFO root fetch - processPackages [radiens]: executing diffoscope
+[2024-04-22 08:21:49] INFO root fetch - processPackages [radiens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radiens-3.0.0b4.tar.gz tmp/radiens-3.0.0b5.tar.gz --markdown 20240422/r/radiens/3.0.0b4-3.0.0b5/README.md --exclude *.pyd
+[2024-04-22 08:21:49] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/5c/15/ce0db56c109bf0f775bcf9ff935e2d6eacf92b2a0f553f1a1c1817739826/crossword_puzzle-1.2.49.tar.gz
+[2024-04-22 08:21:49] INFO root fetch - processPackages [odoo-addon-stock-barcodes-gs1-secondary-unit]: Downloading https://files.pythonhosted.org/packages/8d/15/5891ae8f6c029b0ec4c3bd6dc172b0d086496a0c2ca701170c960936972c/odoo_addon_stock_barcodes_gs1_secondary_unit-15.0.1.0.1-py3-none-any.whl
+[2024-04-22 08:21:49] INFO root fetch - processPackages [odoo-addon-stock-barcodes-gs1-secondary-unit]: executing diffoscope
+[2024-04-22 08:21:49] INFO root fetch - processPackages [odoo-addon-stock-barcodes-gs1-secondary-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_barcodes_gs1_secondary_unit-15.0.1.0.0.17-py3-none-any.whl.zip tmp/odoo_addon_stock_barcodes_gs1_secondary_unit-15.0.1.0.1-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-stock-barcodes-gs1-secondary-unit/15.0.1.0.0.17-15.0.1.0.1/README.md --exclude *.pyd
+[2024-04-22 08:21:49] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-04-22 08:21:49] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.48.tar.gz tmp/crossword_puzzle-1.2.49.tar.gz --markdown 20240422/c/crossword-puzzle/1.2.48-1.2.49/README.md --exclude *.pyd
+[2024-04-22 08:21:49] INFO root fetch - processPackages [odoo-addon-stock-barcodes-gs1-secondary-unit]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_barcodes_gs1_secondary_unit-15.0.1.0.0.17-py3-none-any.whl.zip]
+[2024-04-22 08:21:49] INFO root fetch - processPackages [odoo-addon-stock-barcodes-gs1-secondary-unit]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_barcodes_gs1_secondary_unit-15.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-22 08:21:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-barcodes-gs1-secondary-unit]: success
+[2024-04-22 08:21:49] INFO root fetch - processPackages [radiens]: Remove: archive file [/home/abi/fetcher/tmp/radiens-3.0.0b4.tar.gz]
+[2024-04-22 08:21:49] INFO root fetch - processPackages [radiens]: Remove: archive file [/home/abi/fetcher/tmp/radiens-3.0.0b5.tar.gz]
+[2024-04-22 08:21:49] INFO root fetch - main [MainThread]: End processing [radiens]: success
+[2024-04-22 08:22:30] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.48.tar.gz]
+[2024-04-22 08:22:30] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.49.tar.gz]
+[2024-04-22 08:22:30] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-04-22 08:22:30] INFO root fetch - main [MainThread]: Store serial: [22872592]
