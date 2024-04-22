@@ -6147,3 +6147,67 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:06:15] INFO root fetch - processPackages [AutoRAG]: Remove: archive file [/home/abi/fetcher/tmp/autorag-0.1.4.tar.gz]
 [2024-04-22 08:06:15] INFO root fetch - main [MainThread]: End processing [AutoRAG]: success
 [2024-04-22 08:06:15] INFO root fetch - main [MainThread]: Store serial: [22872471]
+[2024-04-22 08:08:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872471]
+[2024-04-22 08:08:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 08:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radiens
+[2024-04-22 08:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gridengine-framework
+[2024-04-22 08:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cutseq
+[2024-04-22 08:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kungfupanda
+[2024-04-22 08:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kometautils
+[2024-04-22 08:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: localstack-core
+[2024-04-22 08:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: gridengine-framework
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kometautils]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-22 08:08:25] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kungfupanda]: New version: [0.8] Old Version: [0.7]
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-22 08:08:25] INFO root fetch - processPackages [radiens]: New version: [3.0.0b5] Old Version: [3.0.0b4]
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kometautils]: Downloading https://files.pythonhosted.org/packages/40/7a/0e29201429eb68c5119af3e47efc226ddb5b002c7d44f85cb59694120162/kometautils-0.3.2.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/13/f7/2fa1dec70e6092e55acfdc6d9c50194c645d2c79b6af56055da35bc01880/gridengine_framework-0.7.6.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/11/fb/fd59ec0d032da628a6fcc52ced808c72f4d541f577922bdfc358c982aaec/kungfupanda-0.7.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/13/f7/2fa1dec70e6092e55acfdc6d9c50194c645d2c79b6af56055da35bc01880/gridengine_framework-0.7.6.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [radiens]: Downloading https://files.pythonhosted.org/packages/cb/25/564f31688cc9a7734b050d7f58c2197814e931bae4c3a438be93395852c8/radiens-3.0.0b4.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kungfupanda]: Downloading https://files.pythonhosted.org/packages/02/cb/b9219e37ade9ea6f620e1945533ff6c73489069eb538d791044b5f612eb4/kungfupanda-0.8.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/4e/47/9c31a398843b356bd97be7a2a66f6051ebe9060d9010b174f48539ad95f9/gridengine_framework-0.7.7.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/4e/47/9c31a398843b356bd97be7a2a66f6051ebe9060d9010b174f48539ad95f9/gridengine_framework-0.7.7.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 08:08:25] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240422/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kometautils]: Downloading https://files.pythonhosted.org/packages/01/1e/68c6af55614d4621532f944e9084fb222ee35f60035cab141903c7982e76/kometautils-0.3.3.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kungfupanda]: executing diffoscope
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kungfupanda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kungfupanda-0.7.tar.gz tmp/kungfupanda-0.8.tar.gz --markdown 20240422/k/kungfupanda/0.7-0.8/README.md --exclude *.pyd
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.6.tar.gz tmp/gridengine_framework-0.7.7.tar.gz --markdown 20240422/g/gridengine-framework/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-04-22 08:08:25] INFO root fetch - processPackages [localstack-core]: New version: [3.3.1.dev20240422060727] Old Version: [3.3.1.dev20240419165112]
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 08:08:25] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.6.tar.gz tmp/gridengine_framework-0.7.7.tar.gz --markdown 20240422/g/gridengine-framework/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kometautils]: executing diffoscope
+[2024-04-22 08:08:25] INFO root fetch - processPackages [kometautils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kometautils-0.3.2.tar.gz tmp/kometautils-0.3.3.tar.gz --markdown 20240422/k/kometautils/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 08:08:25] INFO root fetch - processPackages [radiens]: Downloading https://files.pythonhosted.org/packages/01/10/4ace9464e5e3067d3097c00b4f748c9264237c643b8f84b24d02b949312b/radiens-3.0.0b5.tar.gz
+[2024-04-22 08:08:25] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/68/3b/ca328efba5168e44c36e5f51c2f98d4d42dbe204496020deb6a4e0a50ff2/localstack_core-3.3.1.dev20240419165112.tar.gz
+[2024-04-22 08:08:26] INFO root fetch - processPackages [radiens]: executing diffoscope
+[2024-04-22 08:08:26] INFO root fetch - processPackages [radiens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radiens-3.0.0b4.tar.gz tmp/radiens-3.0.0b5.tar.gz --markdown 20240422/r/radiens/3.0.0b4-3.0.0b5/README.md --exclude *.pyd
+[2024-04-22 08:08:26] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 08:08:26] INFO root fetch - processPackages [localstack-core]: Downloading https://files.pythonhosted.org/packages/f7/84/d5c4ae1842d480bc214daff9e4fa99fd4d01dfc5aee699b1a0de28fe9ff2/localstack_core-3.3.1.dev20240422060727.tar.gz
+[2024-04-22 08:08:26] INFO root fetch - processPackages [kometautils]: Remove: archive file [/home/abi/fetcher/tmp/kometautils-0.3.2.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - processPackages [kometautils]: Remove: archive file [/home/abi/fetcher/tmp/kometautils-0.3.3.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - main [MainThread]: End processing [kometautils]: success
+[2024-04-22 08:08:26] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.7.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - processPackages [kungfupanda]: Remove: archive file [/home/abi/fetcher/tmp/kungfupanda-0.8.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - main [MainThread]: End processing [kungfupanda]: success
+[2024-04-22 08:08:26] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.6.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.7.tar.gz]
+[2024-04-22 08:08:26] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 08:08:26] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 08:08:26] INFO root fetch - processPackages [localstack-core]: executing diffoscope
+[2024-04-22 08:08:26] INFO root fetch - processPackages [localstack-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localstack_core-3.3.1.dev20240419165112.tar.gz tmp/localstack_core-3.3.1.dev20240422060727.tar.gz --markdown 20240422/l/localstack-core/3.3.1.dev20240419165112-3.3.1.dev20240422060727/README.md --exclude *.pyd
+[2024-04-22 08:08:27] INFO root fetch - processPackages [radiens]: Remove: archive file [/home/abi/fetcher/tmp/radiens-3.0.0b4.tar.gz]
+[2024-04-22 08:08:27] INFO root fetch - processPackages [radiens]: Remove: archive file [/home/abi/fetcher/tmp/radiens-3.0.0b5.tar.gz]
+[2024-04-22 08:08:27] INFO root fetch - main [MainThread]: End processing [radiens]: success
+[2024-04-22 08:08:30] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.3.1.dev20240419165112.tar.gz]
+[2024-04-22 08:08:30] INFO root fetch - processPackages [localstack-core]: Remove: archive file [/home/abi/fetcher/tmp/localstack_core-3.3.1.dev20240422060727.tar.gz]
+[2024-04-22 08:08:30] INFO root fetch - main [MainThread]: End processing [localstack-core]: success
+[2024-04-22 08:08:30] INFO root fetch - main [MainThread]: Store serial: [22872492]
