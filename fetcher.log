@@ -7398,3 +7398,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:07:57] INFO root fetch - processPackages [pytiqs]: Remove: archive file [/home/abi/fetcher/tmp/pytiqs-1.0.9.tar.gz]
 [2024-04-22 09:07:57] INFO root fetch - main [MainThread]: End processing [pytiqs]: success
 [2024-04-22 09:07:57] INFO root fetch - main [MainThread]: Store serial: [22872964]
+[2024-04-22 09:10:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872964]
+[2024-04-22 09:10:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 09:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wah
+[2024-04-22 09:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rfb-driver-db
+[2024-04-22 09:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ih-common
+[2024-04-22 09:10:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qtlink
+[2024-04-22 09:10:05] INFO root fetch - processPackages [wah]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 09:10:05] INFO root fetch - processPackages [ih-common]: New version: [2.8.0] Old Version: [2.7.1]
+[2024-04-22 09:10:06] INFO root fetch - processPackages [qtlink]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-04-22 09:10:06] INFO root fetch - processPackages [rfb-driver-db]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 09:10:06] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/1e/98/86b56f53d2270da5a315b2f0d5733e61fd0dabbbde1d17bcff2dd938939e/wah-0.1.8.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/4d/0c/cf8504e53ab0ecc31714dd7033f42cbb6b0de8dfd679755465688b66f914/ih_common-2.7.1.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [qtlink]: Downloading https://files.pythonhosted.org/packages/a0/f5/8677e8c499470e6a11da390e419133fb494a452b664fb757b8b81fbffddd/qtlink-1.2.6.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [rfb-driver-db]: Downloading https://files.pythonhosted.org/packages/17/05/e875017ab7bf57d230495ff89a8182ac5060a4bb17e9a6cb9a67213bbce3/rfb_driver_db-0.0.1.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/6c/57/7be641139065b67640542a312a3988d0a93024cdc145ea667b7e8d432eb8/wah-0.1.9.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/37/56/56af585e51da9a974b871731c3a293e02d9df6211d0f51f48aef65de6085/ih_common-2.8.0.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [wah]: executing diffoscope
+[2024-04-22 09:10:06] INFO root fetch - processPackages [wah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wah-0.1.8.tar.gz tmp/wah-0.1.9.tar.gz --markdown 20240422/w/wah/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 09:10:06] INFO root fetch - processPackages [qtlink]: Downloading https://files.pythonhosted.org/packages/a6/d5/b6a19ab729874df7de747f0bd0eef8bbabb322942372617dede92c678cd8/qtlink-1.2.7.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [rfb-driver-db]: Downloading https://files.pythonhosted.org/packages/13/21/447b703e0a50a0485c22fd4be89c93010a21af1d8f0d660d7453ae2e7754/rfb_driver_db-0.0.2.tar.gz
+[2024-04-22 09:10:06] INFO root fetch - processPackages [ih-common]: executing diffoscope
+[2024-04-22 09:10:06] INFO root fetch - processPackages [ih-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ih_common-2.7.1.tar.gz tmp/ih_common-2.8.0.tar.gz --markdown 20240422/i/ih-common/2.7.1-2.8.0/README.md --exclude *.pyd
+[2024-04-22 09:10:07] INFO root fetch - processPackages [qtlink]: executing diffoscope
+[2024-04-22 09:10:07] INFO root fetch - processPackages [qtlink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtlink-1.2.6.tar.gz tmp/qtlink-1.2.7.tar.gz --markdown 20240422/q/qtlink/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-04-22 09:10:07] INFO root fetch - processPackages [rfb-driver-db]: executing diffoscope
+[2024-04-22 09:10:07] INFO root fetch - processPackages [rfb-driver-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rfb_driver_db-0.0.1.tar.gz tmp/rfb_driver_db-0.0.2.tar.gz --markdown 20240422/r/rfb-driver-db/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 09:10:07] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.8.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - main [MainThread]: End processing [wah]: success
+[2024-04-22 09:10:07] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.7.1.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.8.0.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - main [MainThread]: End processing [ih-common]: success
+[2024-04-22 09:10:07] INFO root fetch - processPackages [qtlink]: Remove: archive file [/home/abi/fetcher/tmp/qtlink-1.2.6.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - processPackages [qtlink]: Remove: archive file [/home/abi/fetcher/tmp/qtlink-1.2.7.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - main [MainThread]: End processing [qtlink]: success
+[2024-04-22 09:10:07] INFO root fetch - processPackages [rfb-driver-db]: Remove: archive file [/home/abi/fetcher/tmp/rfb_driver_db-0.0.1.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - processPackages [rfb-driver-db]: Remove: archive file [/home/abi/fetcher/tmp/rfb_driver_db-0.0.2.tar.gz]
+[2024-04-22 09:10:07] INFO root fetch - main [MainThread]: End processing [rfb-driver-db]: success
+[2024-04-22 09:10:07] INFO root fetch - main [MainThread]: Store serial: [22872975]
