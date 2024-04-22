@@ -9161,3 +9161,79 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:36:33] INFO root fetch - processPackages [kclvm]: Remove: archive file [/home/abi/fetcher/tmp/kclvm-0.8.5.tar.gz]
 [2024-04-22 10:36:33] INFO root fetch - main [MainThread]: End processing [kclvm]: success
 [2024-04-22 10:36:33] INFO root fetch - main [MainThread]: Store serial: [22874163]
+[2024-04-22 10:38:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874163]
+[2024-04-22 10:38:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-log-inspector
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-gmailapi-json-backend
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lazyad
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lightning-sdk
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycatia
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bugcount
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pear-ebi
+[2024-04-22 10:38:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: acenav-api
+[2024-04-22 10:38:41] INFO root fetch - processPackages [django-log-inspector]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/10/1c/fea85505dd0ce28c139f32279dcdcd6670b77c178f5f5dff1856799c6c3c/django_log_inspector-0.0.7.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-gmailapi-json-backend]: New version: [1.9] Old Version: [1.8]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lazyad]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [bugcount]: New version: [0.0.7] Old Version: [0.0.11]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lightning-sdk]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [pear-ebi]: New version: [0.1.69] Old Version: [0.1.68]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [acenav-api]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-22 10:38:42] INFO root fetch - processPackages [pycatia]: New version: [0.6.8] Old Version: [0.6.7]
+[2024-04-22 10:38:42] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-22 10:38:42] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lazyad]: Downloading https://files.pythonhosted.org/packages/3f/9c/9d8a8814dbedaa707257e01a64458376d55a3a152b2f08ef9f4c56661787/lazyad-0.0.8.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-gmailapi-json-backend]: Downloading https://files.pythonhosted.org/packages/83/6c/72e7f6d20fb65bd95e30b77420f9f5ecd8c7c8dff84948d316e4506d0454/django-gmailapi-json-backend-1.8.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lightning-sdk]: Downloading https://files.pythonhosted.org/packages/bd/1d/782c7da71072b8b5b28c1b22d6ed39c65c4b4422f366794520f466487b3f/lightning_sdk-0.1.4-py3-none-any.whl
+[2024-04-22 10:38:42] INFO root fetch - processPackages [bugcount]: Downloading https://files.pythonhosted.org/packages/8e/0f/90afd1e23aebede8e5ad19f51af9ce8e5ceff3703563bb26d5f477dc9f94/bugcount-0.0.11.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [pycatia]: Downloading https://files.pythonhosted.org/packages/09/fe/37bdf8092cc28794c2941deb60de0f50ce865d11f68e89ffc3ef6e916dc9/pycatia-0.6.7.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [acenav-api]: Downloading https://files.pythonhosted.org/packages/47/d1/b86d930b3dca44dfd26654a70367bb2d7a2e7d368e0b642f8020ee3895cb/acenav_api-1.0.4.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [pear-ebi]: Downloading https://files.pythonhosted.org/packages/9a/0b/261bec96084cd544eff8c2609aed04cc9b7a2af18b2d1ff07589ce7050c5/pear_ebi-0.1.68.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/eb/88/90ccb8a2fd560751598ff912de1849d64bfd2e70af3af7291d73930bbb3c/django_log_inspector-0.0.8.tar.gz
+[2024-04-22 10:38:42] WARNING root fetch - processPackages [pear-ebi]: Skipping package: exceeds size limit 11240224>=10485760
+[2024-04-22 10:38:42] INFO root fetch - main [MainThread]: End processing [pear-ebi] error
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lazyad]: Downloading https://files.pythonhosted.org/packages/7b/2a/f7437e2bbfc03d2bf7d3c612739c19147a2f7a431be3132870c8e6528a86/lazyad-0.0.9.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-log-inspector]: executing diffoscope
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-log-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_log_inspector-0.0.7.tar.gz tmp/django_log_inspector-0.0.8.tar.gz --markdown 20240422/d/django-log-inspector/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-gmailapi-json-backend]: Downloading https://files.pythonhosted.org/packages/0d/f7/8379f41d6447589ef74f695783db108c58c977819b9e44f718d0fa1583a8/django_gmailapi_json_backend-1.9.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [bugcount]: Downloading https://files.pythonhosted.org/packages/15/22/18ccbfca74b259def485ac26360cdf5bf8d3f5a23bf2b8ba8750a7bc7e6c/bugcount-0.0.7.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lazyad]: executing diffoscope
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lazyad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazyad-0.0.8.tar.gz tmp/lazyad-0.0.9.tar.gz --markdown 20240422/l/lazyad/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 10:38:42] INFO root fetch - processPackages [acenav-api]: Downloading https://files.pythonhosted.org/packages/59/c8/4d08d62771f14e8df40e3936d944a450aab5905ec5bb2b34ac62cacff3c5/acenav_api-1.0.5.tar.gz
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-gmailapi-json-backend]: executing diffoscope
+[2024-04-22 10:38:42] INFO root fetch - processPackages [django-gmailapi-json-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-gmailapi-json-backend-1.8.tar.gz tmp/django_gmailapi_json_backend-1.9.tar.gz --markdown 20240422/d/django-gmailapi-json-backend/1.8-1.9/README.md --exclude *.pyd
+[2024-04-22 10:38:42] INFO root fetch - processPackages [bugcount]: executing diffoscope
+[2024-04-22 10:38:42] INFO root fetch - processPackages [bugcount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bugcount-0.0.11.tar.gz tmp/bugcount-0.0.7.tar.gz --markdown 20240422/b/bugcount/0.0.11-0.0.7/README.md --exclude *.pyd
+[2024-04-22 10:38:42] INFO root fetch - processPackages [acenav-api]: executing diffoscope
+[2024-04-22 10:38:42] INFO root fetch - processPackages [acenav-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acenav_api-1.0.4.tar.gz tmp/acenav_api-1.0.5.tar.gz --markdown 20240422/a/acenav-api/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-04-22 10:38:42] INFO root fetch - processPackages [lightning-sdk]: Downloading https://files.pythonhosted.org/packages/a0/06/8700eb99160d762cff2824ff73d01e7a3d27d97858a98ca7498ef919e6c8/lightning_sdk-0.1.5-py3-none-any.whl
+[2024-04-22 10:38:42] INFO root fetch - processPackages [pycatia]: Downloading https://files.pythonhosted.org/packages/a7/bc/76a7862a0e57191581070bdff8c496154ef4afb1c74d76b0a0e3a2918390/pycatia-0.6.8.tar.gz
+[2024-04-22 10:38:43] INFO root fetch - processPackages [pycatia]: executing diffoscope
+[2024-04-22 10:38:43] INFO root fetch - processPackages [pycatia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycatia-0.6.7.tar.gz tmp/pycatia-0.6.8.tar.gz --markdown 20240422/p/pycatia/0.6.7-0.6.8/README.md --exclude *.pyd
+[2024-04-22 10:38:43] INFO root fetch - processPackages [lightning-sdk]: executing diffoscope
+[2024-04-22 10:38:43] INFO root fetch - processPackages [lightning-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightning_sdk-0.1.4-py3-none-any.whl.zip tmp/lightning_sdk-0.1.5-py3-none-any.whl.zip --markdown 20240422/l/lightning-sdk/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-22 10:38:43] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.7.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.8.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - main [MainThread]: End processing [django-log-inspector]: success
+[2024-04-22 10:38:43] INFO root fetch - processPackages [django-gmailapi-json-backend]: Remove: archive file [/home/abi/fetcher/tmp/django-gmailapi-json-backend-1.8.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - processPackages [django-gmailapi-json-backend]: Remove: archive file [/home/abi/fetcher/tmp/django_gmailapi_json_backend-1.9.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - main [MainThread]: End processing [django-gmailapi-json-backend]: success
+[2024-04-22 10:38:43] INFO root fetch - processPackages [lazyad]: Remove: archive file [/home/abi/fetcher/tmp/lazyad-0.0.8.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - processPackages [lazyad]: Remove: archive file [/home/abi/fetcher/tmp/lazyad-0.0.9.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - main [MainThread]: End processing [lazyad]: success
+[2024-04-22 10:38:43] INFO root fetch - processPackages [bugcount]: Remove: archive file [/home/abi/fetcher/tmp/bugcount-0.0.11.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - processPackages [bugcount]: Remove: archive file [/home/abi/fetcher/tmp/bugcount-0.0.7.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - main [MainThread]: End processing [bugcount]: success
+[2024-04-22 10:38:43] INFO root fetch - processPackages [acenav-api]: Remove: archive file [/home/abi/fetcher/tmp/acenav_api-1.0.4.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - processPackages [acenav-api]: Remove: archive file [/home/abi/fetcher/tmp/acenav_api-1.0.5.tar.gz]
+[2024-04-22 10:38:43] INFO root fetch - main [MainThread]: End processing [acenav-api]: success
+[2024-04-22 10:38:46] INFO root fetch - processPackages [lightning-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lightning_sdk-0.1.4-py3-none-any.whl.zip]
+[2024-04-22 10:38:46] INFO root fetch - processPackages [lightning-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lightning_sdk-0.1.5-py3-none-any.whl.zip]
+[2024-04-22 10:38:46] INFO root fetch - main [MainThread]: End processing [lightning-sdk]: success
+[2024-04-22 10:38:48] INFO root fetch - processPackages [pycatia]: Remove: archive file [/home/abi/fetcher/tmp/pycatia-0.6.7.tar.gz]
+[2024-04-22 10:38:48] INFO root fetch - processPackages [pycatia]: Remove: archive file [/home/abi/fetcher/tmp/pycatia-0.6.8.tar.gz]
+[2024-04-22 10:38:48] INFO root fetch - main [MainThread]: End processing [pycatia]: success
+[2024-04-22 10:38:48] INFO root fetch - main [MainThread]: Store serial: [22874188]
