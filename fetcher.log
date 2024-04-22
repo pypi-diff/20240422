@@ -7502,3 +7502,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:14:31] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.9-py3-none-any.whl.zip]
 [2024-04-22 09:14:31] INFO root fetch - main [MainThread]: End processing [wakautosolver]: success
 [2024-04-22 09:14:31] INFO root fetch - main [MainThread]: Store serial: [22872994]
+[2024-04-22 09:16:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872994]
+[2024-04-22 09:16:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 09:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eth-keybind
+[2024-04-22 09:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dsm-django-socialauth
+[2024-04-22 09:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ophyd-devices
+[2024-04-22 09:16:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ramodels
+[2024-04-22 09:16:40] INFO root fetch - processPackages [dsm-django-socialauth]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-22 09:16:40] WARNING root fetch - processPackages [eth-keybind]: Skipping, unable to determine old version
+[2024-04-22 09:16:40] INFO root fetch - main [MainThread]: End processing [eth-keybind] error
+[2024-04-22 09:16:40] INFO root fetch - processPackages [ophyd-devices]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-22 09:16:40] INFO root fetch - processPackages [dsm-django-socialauth]: Downloading https://files.pythonhosted.org/packages/5d/f9/9c11ab0849df799e3f45432528010233757706427e1cc81b64e02341dede/dsm-django-socialauth-1.0.8.tar.gz
+[2024-04-22 09:16:40] INFO root fetch - processPackages [ramodels]: New version: [9.7.3] Old Version: [9.7.2]
+[2024-04-22 09:16:40] INFO root fetch - processPackages [ophyd-devices]: Downloading https://files.pythonhosted.org/packages/2b/09/1e0a1fc236c9ce64bbf92f29458f9e672c21b97c776e5c9f5d5ae6e23d72/ophyd_devices-0.9.1.tar.gz
+[2024-04-22 09:16:41] INFO root fetch - processPackages [ramodels]: Downloading https://files.pythonhosted.org/packages/29/94/25c6513c9642d16d4d771d154cb5d58a1f40fbf5e9234badf73bf79c1b4d/ramodels-9.7.2.tar.gz
+[2024-04-22 09:16:41] INFO root fetch - processPackages [dsm-django-socialauth]: Downloading https://files.pythonhosted.org/packages/8c/aa/089c42588b3e9ea87ea30dc296d13aa9df5baa5822d37bbb19fc2731df4f/dsm-django-socialauth-1.0.9.tar.gz
+[2024-04-22 09:16:41] INFO root fetch - processPackages [dsm-django-socialauth]: executing diffoscope
+[2024-04-22 09:16:41] INFO root fetch - processPackages [dsm-django-socialauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsm-django-socialauth-1.0.8.tar.gz tmp/dsm-django-socialauth-1.0.9.tar.gz --markdown 20240422/d/dsm-django-socialauth/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-22 09:16:41] INFO root fetch - processPackages [ophyd-devices]: Downloading https://files.pythonhosted.org/packages/55/4e/d641ca498a4fba59915a76536e150eb26c82206c4314ac039e51ef8aeae8/ophyd_devices-0.9.2.tar.gz
+[2024-04-22 09:16:41] INFO root fetch - processPackages [ramodels]: Downloading https://files.pythonhosted.org/packages/b1/d1/a8e61257ea98cd3ecc586e4ab73fdc4c6dc2c4b71071bd21a7915b67aeb9/ramodels-9.7.3.tar.gz
+[2024-04-22 09:16:41] INFO root fetch - processPackages [ophyd-devices]: executing diffoscope
+[2024-04-22 09:16:41] INFO root fetch - processPackages [ophyd-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ophyd_devices-0.9.1.tar.gz tmp/ophyd_devices-0.9.2.tar.gz --markdown 20240422/o/ophyd-devices/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-22 09:16:42] INFO root fetch - processPackages [ramodels]: executing diffoscope
+[2024-04-22 09:16:42] INFO root fetch - processPackages [ramodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ramodels-9.7.2.tar.gz tmp/ramodels-9.7.3.tar.gz --markdown 20240422/r/ramodels/9.7.2-9.7.3/README.md --exclude *.pyd
+[2024-04-22 09:16:42] INFO root fetch - processPackages [dsm-django-socialauth]: Remove: archive file [/home/abi/fetcher/tmp/dsm-django-socialauth-1.0.8.tar.gz]
+[2024-04-22 09:16:42] INFO root fetch - processPackages [dsm-django-socialauth]: Remove: archive file [/home/abi/fetcher/tmp/dsm-django-socialauth-1.0.9.tar.gz]
+[2024-04-22 09:16:42] INFO root fetch - main [MainThread]: End processing [dsm-django-socialauth]: success
+[2024-04-22 09:16:42] INFO root fetch - processPackages [ophyd-devices]: Remove: archive file [/home/abi/fetcher/tmp/ophyd_devices-0.9.1.tar.gz]
+[2024-04-22 09:16:42] INFO root fetch - processPackages [ophyd-devices]: Remove: archive file [/home/abi/fetcher/tmp/ophyd_devices-0.9.2.tar.gz]
+[2024-04-22 09:16:42] INFO root fetch - main [MainThread]: End processing [ophyd-devices]: success
+[2024-04-22 09:16:42] INFO root fetch - processPackages [ramodels]: Remove: archive file [/home/abi/fetcher/tmp/ramodels-9.7.2.tar.gz]
+[2024-04-22 09:16:42] INFO root fetch - processPackages [ramodels]: Remove: archive file [/home/abi/fetcher/tmp/ramodels-9.7.3.tar.gz]
+[2024-04-22 09:16:42] INFO root fetch - main [MainThread]: End processing [ramodels]: success
+[2024-04-22 09:16:42] INFO root fetch - main [MainThread]: Store serial: [22873007]
