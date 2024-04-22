@@ -8072,3 +8072,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:51:47] INFO root fetch - processPackages [sekoia-automation-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sekoia_automation_sdk-1.9.0.tar.gz]
 [2024-04-22 09:51:47] INFO root fetch - main [MainThread]: End processing [sekoia-automation-sdk]: success
 [2024-04-22 09:51:47] INFO root fetch - main [MainThread]: Store serial: [22873695]
+[2024-04-22 09:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873695]
+[2024-04-22 09:53:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 09:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: udata-front
+[2024-04-22 09:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emm
+[2024-04-22 09:53:56] INFO root fetch - processPackages [emm]: New version: [2.1.0] Old Version: [2.0.1]
+[2024-04-22 09:53:56] INFO root fetch - processPackages [udata-front]: New version: [3.5.6.dev19017] Old Version: [3.5.6.dev18995]
+[2024-04-22 09:53:56] INFO root fetch - processPackages [udata-front]: Downloading https://files.pythonhosted.org/packages/ce/07/9f781a6f3876d3a1ec00352b07ac63c0300132ce1cc79d7877203b9416d3/udata_front-3.5.6.dev18995-py2.py3-none-any.whl
+[2024-04-22 09:53:56] INFO root fetch - processPackages [emm]: Downloading https://files.pythonhosted.org/packages/96/47/acc253f380ca6a6e959c40d3d53931ea713587ea88e65f2d688772938029/emm-2.0.1.tar.gz
+[2024-04-22 09:53:57] INFO root fetch - processPackages [emm]: Downloading https://files.pythonhosted.org/packages/d6/8c/dbf9b33dfc97f1698241230261ff94e901cd60cc025daa5cc2d8fe42c96d/emm-2.1.0.tar.gz
+[2024-04-22 09:53:57] INFO root fetch - processPackages [emm]: executing diffoscope
+[2024-04-22 09:53:57] INFO root fetch - processPackages [emm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emm-2.0.1.tar.gz tmp/emm-2.1.0.tar.gz --markdown 20240422/e/emm/2.0.1-2.1.0/README.md --exclude *.pyd
+[2024-04-22 09:53:57] INFO root fetch - processPackages [udata-front]: Downloading https://files.pythonhosted.org/packages/06/d6/5a3608259a0c900ca196ef0dcb5e2cab9c30b9c01ed234c4cffa36caaec6/udata_front-3.5.6.dev19017-py2.py3-none-any.whl
+[2024-04-22 09:53:58] INFO root fetch - processPackages [emm]: Remove: archive file [/home/abi/fetcher/tmp/emm-2.0.1.tar.gz]
+[2024-04-22 09:53:58] INFO root fetch - processPackages [emm]: Remove: archive file [/home/abi/fetcher/tmp/emm-2.1.0.tar.gz]
+[2024-04-22 09:53:58] INFO root fetch - main [MainThread]: End processing [emm]: success
+[2024-04-22 09:53:58] INFO root fetch - processPackages [udata-front]: executing diffoscope
+[2024-04-22 09:53:58] INFO root fetch - processPackages [udata-front]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/udata_front-3.5.6.dev18995-py2.py3-none-any.whl.zip tmp/udata_front-3.5.6.dev19017-py2.py3-none-any.whl.zip --markdown 20240422/u/udata-front/3.5.6.dev18995-3.5.6.dev19017/README.md --exclude *.pyd
+[2024-04-22 09:55:25] INFO root fetch - processPackages [udata-front]: Remove: archive file [/home/abi/fetcher/tmp/udata_front-3.5.6.dev18995-py2.py3-none-any.whl.zip]
+[2024-04-22 09:55:25] INFO root fetch - processPackages [udata-front]: Remove: archive file [/home/abi/fetcher/tmp/udata_front-3.5.6.dev19017-py2.py3-none-any.whl.zip]
+[2024-04-22 09:55:25] INFO root fetch - main [MainThread]: End processing [udata-front]: success
+[2024-04-22 09:55:25] INFO root fetch - main [MainThread]: Store serial: [22873701]
