@@ -9702,3 +9702,62 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:02:50] INFO root fetch - processPackages [magic-list]: Remove: archive file [/home/abi/fetcher/tmp/magic_list-2.2.1.tar.gz]
 [2024-04-22 11:02:50] INFO root fetch - main [MainThread]: End processing [magic-list]: success
 [2024-04-22 11:02:50] INFO root fetch - main [MainThread]: Store serial: [22874405]
+[2024-04-22 11:04:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874405]
+[2024-04-22 11:04:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bda.plone.productshop
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llmkira
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.common
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autogluon.core
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xpress
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shittycorn
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mediawiki-langcodes
+[2024-04-22 11:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon.features
+[2024-04-22 11:04:58] WARNING root fetch - processPackages [shittycorn]: Skipping, unable to determine old version
+[2024-04-22 11:04:58] INFO root fetch - main [MainThread]: End processing [shittycorn] error
+[2024-04-22 11:04:58] INFO root fetch - processPackages [autogluon.features]: New version: [1.1.1b20240421] Old Version: [1.1.1b20240420]
+[2024-04-22 11:04:58] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240421] Old Version: [1.1.1b20240420]
+[2024-04-22 11:04:58] INFO root fetch - processPackages [llmkira]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-22 11:04:58] INFO root fetch - processPackages [autogluon.core]: New version: [1.1.1b20240421] Old Version: [1.1.1b20240420]
+[2024-04-22 11:04:58] INFO root fetch - processPackages [mediawiki-langcodes]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-22 11:04:58] WARNING root fetch - processPackages [bda.plone.productshop]: Skipping, unable to determine old version
+[2024-04-22 11:04:58] INFO root fetch - main [MainThread]: End processing [bda.plone.productshop] error
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/90/93/2d003a0ee2aa6942a23d652227efbf90e7953528959526a4e65b8b01a38d/autogluon.features-1.1.1b20240420.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [xpress]: New version: [9.4.0] Old Version: [9.3.1]
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/77/ec/3dc3b50eb722294ea19ae2e4a6d339c9615986670797f6195f469c052311/autogluon.common-1.1.1b20240420.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/6f/b7/83ebd054c9b0057bf85e9ce2d0b95bc5d30381ef1c8194e5a18cc49de72b/autogluon.core-1.1.1b20240420.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [mediawiki-langcodes]: Downloading https://files.pythonhosted.org/packages/e9/4f/b67c19b1a8875ebe0a0db982b8752929c85f8f38dcb160e9f071d59f3b99/mediawiki_langcodes-0.2.4.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [llmkira]: Downloading https://files.pythonhosted.org/packages/e5/d5/c5bfc825302d9114c7409c19e6f9ddba6bff4bf97ba516afe903acffda8e/llmkira-1.0.3.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [xpress]: Downloading https://files.pythonhosted.org/packages/1b/9e/ea210b27c314bcde9c9bb0e5ac1e539fbcfaec656f3271d389e3cfb46594/xpress-9.3.1-cp39-cp39-win_amd64.whl
+[2024-04-22 11:04:59] WARNING root fetch - processPackages [xpress]: Skipping package: exceeds size limit 55717031>=10485760
+[2024-04-22 11:04:59] INFO root fetch - main [MainThread]: End processing [xpress] error
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/25/53/ad172c67e00482cc18a49f409534f879e3832d9cce3fd25e2a5304a4e93f/autogluon.core-1.1.1b20240421.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/73/cd/d631d4a56e63080ed35d7ff5a4803184131ddf358041c936f776536510da/autogluon.features-1.1.1b20240421.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/a3/05/ad4021be27b0a1f9ed5be8c597bed77a4ae2f7b73525327568a873986e20/autogluon.common-1.1.1b20240421.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [llmkira]: Downloading https://files.pythonhosted.org/packages/5a/8f/e282a591acc51fe999ecf77954098df9211d8d989df17ff8baf4455e799a/llmkira-1.0.4.tar.gz
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.1.1b20240420.tar.gz tmp/autogluon.core-1.1.1b20240421.tar.gz --markdown 20240422/a/autogluon.core/1.1.1b20240420-1.1.1b20240421/README.md --exclude *.pyd
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-1.1.1b20240420.tar.gz tmp/autogluon.features-1.1.1b20240421.tar.gz --markdown 20240422/a/autogluon.features/1.1.1b20240420-1.1.1b20240421/README.md --exclude *.pyd
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-04-22 11:04:59] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240420.tar.gz tmp/autogluon.common-1.1.1b20240421.tar.gz --markdown 20240422/a/autogluon.common/1.1.1b20240420-1.1.1b20240421/README.md --exclude *.pyd
+[2024-04-22 11:04:59] INFO root fetch - processPackages [llmkira]: executing diffoscope
+[2024-04-22 11:04:59] INFO root fetch - processPackages [llmkira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmkira-1.0.3.tar.gz tmp/llmkira-1.0.4.tar.gz --markdown 20240422/l/llmkira/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-22 11:05:00] INFO root fetch - processPackages [mediawiki-langcodes]: Downloading https://files.pythonhosted.org/packages/d4/18/fe902f8666f716adb4e281d8d99e05da5cc9fa70217e948d80111f3a6396/mediawiki_langcodes-0.2.5.tar.gz
+[2024-04-22 11:05:00] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240420.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.1.1b20240421.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2024-04-22 11:05:00] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240420.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240421.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-04-22 11:05:00] INFO root fetch - processPackages [llmkira]: Remove: archive file [/home/abi/fetcher/tmp/llmkira-1.0.3.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - processPackages [llmkira]: Remove: archive file [/home/abi/fetcher/tmp/llmkira-1.0.4.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - main [MainThread]: End processing [llmkira]: success
+[2024-04-22 11:05:00] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240420.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.1.1b20240421.tar.gz]
+[2024-04-22 11:05:00] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-04-22 11:05:00] INFO root fetch - processPackages [mediawiki-langcodes]: executing diffoscope
+[2024-04-22 11:05:00] INFO root fetch - processPackages [mediawiki-langcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mediawiki_langcodes-0.2.4.tar.gz tmp/mediawiki_langcodes-0.2.5.tar.gz --markdown 20240422/m/mediawiki-langcodes/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-22 11:05:04] INFO root fetch - processPackages [mediawiki-langcodes]: Remove: archive file [/home/abi/fetcher/tmp/mediawiki_langcodes-0.2.4.tar.gz]
+[2024-04-22 11:05:04] INFO root fetch - processPackages [mediawiki-langcodes]: Remove: archive file [/home/abi/fetcher/tmp/mediawiki_langcodes-0.2.5.tar.gz]
+[2024-04-22 11:05:04] INFO root fetch - main [MainThread]: End processing [mediawiki-langcodes]: success
+[2024-04-22 11:05:04] INFO root fetch - main [MainThread]: Store serial: [22874435]
