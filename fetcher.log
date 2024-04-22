@@ -4997,3 +4997,66 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:52:05] INFO root fetch - processPackages [pdf-tools-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pdf_tools_sdk-1.5.0rc3.tar.gz]
 [2024-04-22 06:52:05] INFO root fetch - main [MainThread]: End processing [pdf-tools-sdk]: success
 [2024-04-22 06:52:05] INFO root fetch - main [MainThread]: Store serial: [22872040]
+[2024-04-22 06:54:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872040]
+[2024-04-22 06:54:14] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elecu
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-pos-product-label
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-pos
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gismath
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyqqq
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mnemo-lib
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cutseq
+[2024-04-22 06:54:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: njson
+[2024-04-22 06:54:15] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 06:54:15] INFO root fetch - processPackages [gismath]: New version: [0.0.28a0] Old Version: [0.0.28]
+[2024-04-22 06:54:15] INFO root fetch - processPackages [pyqqq]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-04-22 06:54:15] WARNING root fetch - processPackages [mnemo-lib]: Skipping, unable to determine old version
+[2024-04-22 06:54:15] INFO root fetch - main [MainThread]: End processing [mnemo-lib] error
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addon-pos-product-label]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.6]
+[2024-04-22 06:54:15] WARNING root fetch - processPackages [elecu]: Skipping, unable to determine old version
+[2024-04-22 06:54:15] INFO root fetch - main [MainThread]: End processing [elecu] error
+[2024-04-22 06:54:15] INFO root fetch - processPackages [njson]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addons-oca-pos]: New version: [16.0.20240421.0] Old Version: [16.0.20240402.0]
+[2024-04-22 06:54:15] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-04-22 06:54:15] INFO root fetch - processPackages [gismath]: Downloading https://files.pythonhosted.org/packages/f8/f8/6e1b38f789fcdf7c19d8345141f87416225694a544a603932e0b7d5f9013/gismath-0.0.28-cp311-cp311-win_amd64.whl
+[2024-04-22 06:54:15] INFO root fetch - processPackages [pyqqq]: Downloading https://files.pythonhosted.org/packages/e6/f1/b05051a33adef460277ba5c39e32abb0a36482b499f2d13d49653a5bdb96/pyqqq-0.8.3.tar.gz
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addon-pos-product-label]: Downloading https://files.pythonhosted.org/packages/66/49/9ae0d6671e984f0d12e01932a8cc622650b136dfe96f9173cfec413eb4ae/odoo_addon_pos_product_label-16.0.1.0.0.6-py3-none-any.whl
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addons-oca-pos]: Downloading https://files.pythonhosted.org/packages/2f/d7/a8123466a7e9e7ee4caa35bdd939b3bee2b08e5a4edfc5691ace70824644/odoo_addons_oca_pos-16.0.20240402.0-py3-none-any.whl
+[2024-04-22 06:54:15] INFO root fetch - processPackages [njson]: Downloading https://files.pythonhosted.org/packages/cf/97/bdc92fda56b0ce69df78e29179a3516be581a9e0236b93e3a63103e52c4b/njson-1.0.1.tar.gz
+[2024-04-22 06:54:15] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-04-22 06:54:15] INFO root fetch - processPackages [gismath]: Downloading https://files.pythonhosted.org/packages/63/e4/b0d32214f4c8ea48bb6e650c3c6135ee1b0033484b1e038e7f611900f6eb/gismath-0.0.28a0-cp311-cp311-win_amd64.whl
+[2024-04-22 06:54:15] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 06:54:15] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240422/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 06:54:15] INFO root fetch - processPackages [gismath]: executing diffoscope
+[2024-04-22 06:54:15] INFO root fetch - processPackages [gismath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gismath-0.0.28-cp311-cp311-win_amd64.whl.zip tmp/gismath-0.0.28a0-cp311-cp311-win_amd64.whl.zip --markdown 20240422/g/gismath/0.0.28-0.0.28a0/README.md --exclude *.pyd
+[2024-04-22 06:54:15] INFO root fetch - processPackages [pyqqq]: Downloading https://files.pythonhosted.org/packages/2b/d3/9cc27662d73f034569a096ac608dc334ad4dca38868e554569747e2c9aed/pyqqq-0.8.4.tar.gz
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addons-oca-pos]: Downloading https://files.pythonhosted.org/packages/da/d9/b107eacec4f96e2c59a2386409b5256148b88614a5ceadcc8e3f8a9a5e3d/odoo_addons_oca_pos-16.0.20240421.0-py3-none-any.whl
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addon-pos-product-label]: Downloading https://files.pythonhosted.org/packages/1e/d5/daa7305c4ff95ca580e8b3d7398f047f3dd03fb12c646280385d5c0838b2/odoo_addon_pos_product_label-16.0.1.0.0.8-py3-none-any.whl
+[2024-04-22 06:54:15] INFO root fetch - processPackages [njson]: Downloading https://files.pythonhosted.org/packages/a6/3b/4fcef07fe081061f3263a5890afa813c35a17dbd7e8f4c017ff88ef0d351/njson-1.1.0.tar.gz
+[2024-04-22 06:54:15] INFO root fetch - processPackages [pyqqq]: executing diffoscope
+[2024-04-22 06:54:15] INFO root fetch - processPackages [pyqqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqqq-0.8.3.tar.gz tmp/pyqqq-0.8.4.tar.gz --markdown 20240422/p/pyqqq/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addons-oca-pos]: executing diffoscope
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addons-oca-pos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_pos-16.0.20240402.0-py3-none-any.whl.zip tmp/odoo_addons_oca_pos-16.0.20240421.0-py3-none-any.whl.zip --markdown 20240422/o/odoo-addons-oca-pos/16.0.20240402.0-16.0.20240421.0/README.md --exclude *.pyd
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addon-pos-product-label]: executing diffoscope
+[2024-04-22 06:54:15] INFO root fetch - processPackages [odoo-addon-pos-product-label]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_product_label-16.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_pos_product_label-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-pos-product-label/16.0.1.0.0.6-16.0.1.0.0.8/README.md --exclude *.pyd
+[2024-04-22 06:54:16] INFO root fetch - processPackages [njson]: executing diffoscope
+[2024-04-22 06:54:16] INFO root fetch - processPackages [njson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/njson-1.0.1.tar.gz tmp/njson-1.1.0.tar.gz --markdown 20240422/n/njson/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-22 06:54:16] INFO root fetch - processPackages [gismath]: Remove: archive file [/home/abi/fetcher/tmp/gismath-0.0.28-cp311-cp311-win_amd64.whl.zip]
+[2024-04-22 06:54:16] INFO root fetch - processPackages [gismath]: Remove: archive file [/home/abi/fetcher/tmp/gismath-0.0.28a0-cp311-cp311-win_amd64.whl.zip]
+[2024-04-22 06:54:16] INFO root fetch - main [MainThread]: End processing [gismath]: success
+[2024-04-22 06:54:16] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-04-22 06:54:16] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-04-22 06:54:16] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 06:54:16] INFO root fetch - processPackages [odoo-addons-oca-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_pos-16.0.20240402.0-py3-none-any.whl.zip]
+[2024-04-22 06:54:16] INFO root fetch - processPackages [odoo-addons-oca-pos]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_pos-16.0.20240421.0-py3-none-any.whl.zip]
+[2024-04-22 06:54:16] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-pos]: success
+[2024-04-22 06:54:16] INFO root fetch - processPackages [pyqqq]: Remove: archive file [/home/abi/fetcher/tmp/pyqqq-0.8.3.tar.gz]
+[2024-04-22 06:54:16] INFO root fetch - processPackages [pyqqq]: Remove: archive file [/home/abi/fetcher/tmp/pyqqq-0.8.4.tar.gz]
+[2024-04-22 06:54:16] INFO root fetch - main [MainThread]: End processing [pyqqq]: success
+[2024-04-22 06:54:16] INFO root fetch - processPackages [odoo-addon-pos-product-label]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_product_label-16.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-04-22 06:54:16] INFO root fetch - processPackages [odoo-addon-pos-product-label]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_pos_product_label-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-04-22 06:54:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-product-label]: success
+[2024-04-22 06:54:16] INFO root fetch - processPackages [njson]: Remove: archive file [/home/abi/fetcher/tmp/njson-1.0.1.tar.gz]
+[2024-04-22 06:54:16] INFO root fetch - processPackages [njson]: Remove: archive file [/home/abi/fetcher/tmp/njson-1.1.0.tar.gz]
+[2024-04-22 06:54:16] INFO root fetch - main [MainThread]: End processing [njson]: success
+[2024-04-22 06:54:16] INFO root fetch - main [MainThread]: Store serial: [22872059]
