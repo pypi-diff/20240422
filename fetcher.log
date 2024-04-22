@@ -2611,3 +2611,24 @@
 [2024-04-22 03:33:00] INFO root fetch - processPackages [astro-ghost]: Remove: archive file [/home/abi/fetcher/tmp/astro_ghost-2.1.2.tar.gz]
 [2024-04-22 03:33:00] INFO root fetch - main [MainThread]: End processing [astro-ghost]: success
 [2024-04-22 03:33:00] INFO root fetch - main [MainThread]: Store serial: [22871056]
+[2024-04-22 03:35:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871056]
+[2024-04-22 03:35:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 03:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ommx
+[2024-04-22 03:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: marcuslion
+[2024-04-22 03:35:09] INFO root fetch - processPackages [marcuslion]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-22 03:35:09] INFO root fetch - processPackages [marcuslion]: Downloading https://files.pythonhosted.org/packages/9e/1b/35d713162681f4b6a508ca2f0abe84f28934e251febf83a312e0978d0135/marcuslion-0.2.8.tar.gz
+[2024-04-22 03:35:09] INFO root fetch - processPackages [ommx]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-22 03:35:10] INFO root fetch - processPackages [ommx]: Downloading https://files.pythonhosted.org/packages/60/32/06a01198662fca087dbb6c697c3b9ecab5ca22ec0ca6aad9525073fcb5e5/ommx-0.1.0.tar.gz
+[2024-04-22 03:35:10] INFO root fetch - processPackages [marcuslion]: Downloading https://files.pythonhosted.org/packages/73/74/371dc6066e1b5614cacf5b247114099a910b32ff470c7e0515f1a376d74d/marcuslion-0.2.9.tar.gz
+[2024-04-22 03:35:10] INFO root fetch - processPackages [marcuslion]: executing diffoscope
+[2024-04-22 03:35:10] INFO root fetch - processPackages [marcuslion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcuslion-0.2.8.tar.gz tmp/marcuslion-0.2.9.tar.gz --markdown 20240422/m/marcuslion/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-22 03:35:10] INFO root fetch - processPackages [ommx]: Downloading https://files.pythonhosted.org/packages/53/bb/b25368590a4fd609395aed069074f1e173653c74cad826b8b4031609234c/ommx-0.1.1.tar.gz
+[2024-04-22 03:35:10] INFO root fetch - processPackages [ommx]: executing diffoscope
+[2024-04-22 03:35:10] INFO root fetch - processPackages [ommx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ommx-0.1.0.tar.gz tmp/ommx-0.1.1.tar.gz --markdown 20240422/o/ommx/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-22 03:35:10] INFO root fetch - processPackages [marcuslion]: Remove: archive file [/home/abi/fetcher/tmp/marcuslion-0.2.8.tar.gz]
+[2024-04-22 03:35:10] INFO root fetch - processPackages [marcuslion]: Remove: archive file [/home/abi/fetcher/tmp/marcuslion-0.2.9.tar.gz]
+[2024-04-22 03:35:10] INFO root fetch - main [MainThread]: End processing [marcuslion]: success
+[2024-04-22 03:35:11] INFO root fetch - processPackages [ommx]: Remove: archive file [/home/abi/fetcher/tmp/ommx-0.1.0.tar.gz]
+[2024-04-22 03:35:11] INFO root fetch - processPackages [ommx]: Remove: archive file [/home/abi/fetcher/tmp/ommx-0.1.1.tar.gz]
+[2024-04-22 03:35:11] INFO root fetch - main [MainThread]: End processing [ommx]: success
+[2024-04-22 03:35:11] INFO root fetch - main [MainThread]: Store serial: [22871085]
