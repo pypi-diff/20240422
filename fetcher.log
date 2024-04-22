@@ -3726,3 +3726,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 04:56:30] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.22.tar.gz]
 [2024-04-22 04:56:30] INFO root fetch - main [MainThread]: End processing [arts]: success
 [2024-04-22 04:56:30] INFO root fetch - main [MainThread]: Store serial: [22871520]
+[2024-04-22 04:58:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871520]
+[2024-04-22 04:58:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 04:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cs.cmdutils
+[2024-04-22 04:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-adcp20220101-py2
+[2024-04-22 04:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datable-ai
+[2024-04-22 04:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gy-erp-sdk-core
+[2024-04-22 04:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alibabacloud-adcp20220101
+[2024-04-22 04:58:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CtqKit
+[2024-04-22 04:58:38] INFO root fetch - processPackages [gy-erp-sdk-core]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-22 04:58:38] INFO root fetch - processPackages [datable-ai]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 04:58:39] INFO root fetch - processPackages [gy-erp-sdk-core]: Downloading https://files.pythonhosted.org/packages/d6/a6/968c763e422074cb2eb535a8c170e015973e878c801841e792984b8feade/gy-erp-sdk-core-0.0.3.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101-py2]: New version: [3.0.0] Old Version: [2.0.2]
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101]: New version: [3.0.0] Old Version: [2.0.2]
+[2024-04-22 04:58:39] INFO root fetch - processPackages [CtqKit]: New version: [0.1.1b5] Old Version: [0.1.1b4]
+[2024-04-22 04:58:39] INFO root fetch - processPackages [cs.cmdutils]: New version: [20240422] Old Version: [20240412]
+[2024-04-22 04:58:39] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/23/8c/ce3617b7fe95a843ff2d9889a9cd3670b6ed5a876e645e7574d8e4c38a95/datable_ai-0.0.1.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101-py2]: Downloading https://files.pythonhosted.org/packages/9c/72/030297be43bf63322f79933f35c51b129b996a82f531da64e6f5002f802b/alibabacloud_adcp20220101_py2-2.0.2.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [cs.cmdutils]: Downloading https://files.pythonhosted.org/packages/4a/3d/e3d6fb1680e9cfd297212f5a7f2caabe284fd1820a01395edd1b265f8e81/cs.cmdutils-20240412.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101]: Downloading https://files.pythonhosted.org/packages/70/dc/a493a16c30f740b0d636386873bd77f30daa81b2a99fa7bb3e85ea098a6e/alibabacloud_adcp20220101-2.0.2.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [CtqKit]: Downloading https://files.pythonhosted.org/packages/bd/29/ea63dd4610bd72a6f61ca5bb0a282f31b52665faa492d8958524c76c54cb/ctqkit-0.1.1b4.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [gy-erp-sdk-core]: Downloading https://files.pythonhosted.org/packages/f7/74/6a95c2d25d2965cb34d2bff262c510973fc1da0f5690edc1f399cc027336/gy-erp-sdk-core-0.0.4.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [datable-ai]: Downloading https://files.pythonhosted.org/packages/f6/53/f4c220942d9a7292dea5b4e0cf1667afa311278d666092a44bf61b5bc459/datable_ai-0.0.2.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [gy-erp-sdk-core]: executing diffoscope
+[2024-04-22 04:58:39] INFO root fetch - processPackages [gy-erp-sdk-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gy-erp-sdk-core-0.0.3.tar.gz tmp/gy-erp-sdk-core-0.0.4.tar.gz --markdown 20240422/g/gy-erp-sdk-core/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-22 04:58:39] INFO root fetch - processPackages [datable-ai]: executing diffoscope
+[2024-04-22 04:58:39] INFO root fetch - processPackages [datable-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datable_ai-0.0.1.tar.gz tmp/datable_ai-0.0.2.tar.gz --markdown 20240422/d/datable-ai/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 04:58:39] INFO root fetch - processPackages [CtqKit]: Downloading https://files.pythonhosted.org/packages/62/69/ec449625cb867d87f0cda28dbd3a002e93bcc290437b8970eeb4740e3f17/ctqkit-0.1.1b5.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101-py2]: Downloading https://files.pythonhosted.org/packages/78/ba/2b1fc4928cf29fb2a31b2139383ba6cf2183644a28c185e3f129c3611d18/alibabacloud_adcp20220101_py2-3.0.0.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [cs.cmdutils]: Downloading https://files.pythonhosted.org/packages/07/c1/404cb89a74e50f75723271d78fb5e0c8ecc8657e9e6a447b5a53954cbb98/cs.cmdutils-20240422.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101]: Downloading https://files.pythonhosted.org/packages/87/7f/73c56b2ad01227f81964faebaa9f8320b460a9e081fbe78f1f371dc38e77/alibabacloud_adcp20220101-3.0.0.tar.gz
+[2024-04-22 04:58:39] INFO root fetch - processPackages [CtqKit]: executing diffoscope
+[2024-04-22 04:58:39] INFO root fetch - processPackages [CtqKit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctqkit-0.1.1b4.tar.gz tmp/ctqkit-0.1.1b5.tar.gz --markdown 20240422/C/CtqKit/0.1.1b4-0.1.1b5/README.md --exclude *.pyd
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101-py2]: executing diffoscope
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101-py2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_adcp20220101_py2-2.0.2.tar.gz tmp/alibabacloud_adcp20220101_py2-3.0.0.tar.gz --markdown 20240422/a/alibabacloud-adcp20220101-py2/2.0.2-3.0.0/README.md --exclude *.pyd
+[2024-04-22 04:58:39] INFO root fetch - processPackages [cs.cmdutils]: executing diffoscope
+[2024-04-22 04:58:39] INFO root fetch - processPackages [cs.cmdutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.cmdutils-20240412.tar.gz tmp/cs.cmdutils-20240422.tar.gz --markdown 20240422/c/cs.cmdutils/20240412-20240422/README.md --exclude *.pyd
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101]: executing diffoscope
+[2024-04-22 04:58:39] INFO root fetch - processPackages [alibabacloud-adcp20220101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_adcp20220101-2.0.2.tar.gz tmp/alibabacloud_adcp20220101-3.0.0.tar.gz --markdown 20240422/a/alibabacloud-adcp20220101/2.0.2-3.0.0/README.md --exclude *.pyd
+[2024-04-22 04:58:40] INFO root fetch - processPackages [gy-erp-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/gy-erp-sdk-core-0.0.3.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - processPackages [gy-erp-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/gy-erp-sdk-core-0.0.4.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - main [MainThread]: End processing [gy-erp-sdk-core]: success
+[2024-04-22 04:58:40] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.1.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - processPackages [datable-ai]: Remove: archive file [/home/abi/fetcher/tmp/datable_ai-0.0.2.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - main [MainThread]: End processing [datable-ai]: success
+[2024-04-22 04:58:40] INFO root fetch - processPackages [CtqKit]: Remove: archive file [/home/abi/fetcher/tmp/ctqkit-0.1.1b4.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - processPackages [CtqKit]: Remove: archive file [/home/abi/fetcher/tmp/ctqkit-0.1.1b5.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - main [MainThread]: End processing [CtqKit]: success
+[2024-04-22 04:58:40] INFO root fetch - processPackages [cs.cmdutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.cmdutils-20240412.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - processPackages [cs.cmdutils]: Remove: archive file [/home/abi/fetcher/tmp/cs.cmdutils-20240422.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - main [MainThread]: End processing [cs.cmdutils]: success
+[2024-04-22 04:58:40] INFO root fetch - processPackages [alibabacloud-adcp20220101-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_adcp20220101_py2-2.0.2.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - processPackages [alibabacloud-adcp20220101-py2]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_adcp20220101_py2-3.0.0.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - main [MainThread]: End processing [alibabacloud-adcp20220101-py2]: success
+[2024-04-22 04:58:40] INFO root fetch - processPackages [alibabacloud-adcp20220101]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_adcp20220101-2.0.2.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - processPackages [alibabacloud-adcp20220101]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_adcp20220101-3.0.0.tar.gz]
+[2024-04-22 04:58:40] INFO root fetch - main [MainThread]: End processing [alibabacloud-adcp20220101]: success
+[2024-04-22 04:58:40] INFO root fetch - main [MainThread]: Store serial: [22871540]
