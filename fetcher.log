@@ -3978,3 +3978,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:14:09] INFO root fetch - processPackages [Nuitka-winsvc]: Remove: archive file [/home/abi/fetcher/tmp/nuitka_winsvc-2.1.6.tar.gz]
 [2024-04-22 05:14:09] INFO root fetch - main [MainThread]: End processing [Nuitka-winsvc]: success
 [2024-04-22 05:14:09] INFO root fetch - main [MainThread]: Store serial: [22871637]
+[2024-04-22 05:16:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871637]
+[2024-04-22 05:16:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 05:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotifywebapiPython
+[2024-04-22 05:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NiceFlow
+[2024-04-22 05:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scattermind
+[2024-04-22 05:16:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: booklet
+[2024-04-22 05:16:18] INFO root fetch - processPackages [scattermind]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-22 05:16:18] INFO root fetch - processPackages [spotifywebapiPython]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-22 05:16:18] INFO root fetch - processPackages [booklet]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 05:16:18] INFO root fetch - processPackages [NiceFlow]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 05:16:18] INFO root fetch - processPackages [scattermind]: Downloading https://files.pythonhosted.org/packages/a8/d3/159a62194ae1cbcd14018df337713b2d682732416b9844de5bc7e12efc23/scattermind-0.4.0.tar.gz
+[2024-04-22 05:16:18] INFO root fetch - processPackages [spotifywebapiPython]: Downloading https://files.pythonhosted.org/packages/c3/4b/1b907a2ed582d5555dc524c7cb255e5b69a889abf299db373fcc28d9c534/spotifywebapiPython-1.0.8-py3-none-any.whl
+[2024-04-22 05:16:18] INFO root fetch - processPackages [booklet]: Downloading https://files.pythonhosted.org/packages/9d/09/1850d1db87fc6992bbcecfd80654fe28d36b6cb0d1d5f28e9261cb97c69d/booklet-0.1.8.tar.gz
+[2024-04-22 05:16:18] INFO root fetch - processPackages [NiceFlow]: Downloading https://files.pythonhosted.org/packages/21/92/a3d7b36feac4c5efee6cd153e4656ebfde7008ae5eb67804b8689b63eb5b/NiceFlow-0.0.4-py3-none-any.whl
+[2024-04-22 05:16:18] INFO root fetch - processPackages [scattermind]: Downloading https://files.pythonhosted.org/packages/14/90/5f063bc22cee3ca07bf62dad4a2f4d5e0bf3722ee567818327fbe683fede/scattermind-0.4.1.tar.gz
+[2024-04-22 05:16:18] INFO root fetch - processPackages [booklet]: Downloading https://files.pythonhosted.org/packages/1d/ef/1f5bed538f06615d4fa5885afdc53320da23d090771832c5dd5abdf29010/booklet-0.1.9.tar.gz
+[2024-04-22 05:16:18] INFO root fetch - processPackages [NiceFlow]: Downloading https://files.pythonhosted.org/packages/54/3c/07aecd59a994d5cc591fddae8c66bdf523d73bc697b715bb38afaaefc607/NiceFlow-0.0.5-py3-none-any.whl
+[2024-04-22 05:16:18] INFO root fetch - processPackages [spotifywebapiPython]: Downloading https://files.pythonhosted.org/packages/09/d9/ff9833da296d7b2a5ec9335cb50a9e116122ece682dd96dc99778badc7c3/spotifywebapiPython-1.0.9-py3-none-any.whl
+[2024-04-22 05:16:18] INFO root fetch - processPackages [scattermind]: executing diffoscope
+[2024-04-22 05:16:18] INFO root fetch - processPackages [scattermind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scattermind-0.4.0.tar.gz tmp/scattermind-0.4.1.tar.gz --markdown 20240422/s/scattermind/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-22 05:16:18] INFO root fetch - processPackages [booklet]: executing diffoscope
+[2024-04-22 05:16:18] INFO root fetch - processPackages [booklet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/booklet-0.1.8.tar.gz tmp/booklet-0.1.9.tar.gz --markdown 20240422/b/booklet/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 05:16:18] INFO root fetch - processPackages [NiceFlow]: executing diffoscope
+[2024-04-22 05:16:18] INFO root fetch - processPackages [NiceFlow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NiceFlow-0.0.4-py3-none-any.whl.zip tmp/NiceFlow-0.0.5-py3-none-any.whl.zip --markdown 20240422/N/NiceFlow/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 05:16:18] INFO root fetch - processPackages [spotifywebapiPython]: executing diffoscope
+[2024-04-22 05:16:18] INFO root fetch - processPackages [spotifywebapiPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotifywebapiPython-1.0.8-py3-none-any.whl.zip tmp/spotifywebapiPython-1.0.9-py3-none-any.whl.zip --markdown 20240422/s/spotifywebapiPython/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-22 05:16:19] INFO root fetch - processPackages [booklet]: Remove: archive file [/home/abi/fetcher/tmp/booklet-0.1.8.tar.gz]
+[2024-04-22 05:16:19] INFO root fetch - processPackages [booklet]: Remove: archive file [/home/abi/fetcher/tmp/booklet-0.1.9.tar.gz]
+[2024-04-22 05:16:19] INFO root fetch - main [MainThread]: End processing [booklet]: success
+[2024-04-22 05:16:19] INFO root fetch - processPackages [NiceFlow]: Remove: archive file [/home/abi/fetcher/tmp/NiceFlow-0.0.4-py3-none-any.whl.zip]
+[2024-04-22 05:16:19] INFO root fetch - processPackages [NiceFlow]: Remove: archive file [/home/abi/fetcher/tmp/NiceFlow-0.0.5-py3-none-any.whl.zip]
+[2024-04-22 05:16:19] INFO root fetch - main [MainThread]: End processing [NiceFlow]: success
+[2024-04-22 05:16:19] INFO root fetch - processPackages [scattermind]: Remove: archive file [/home/abi/fetcher/tmp/scattermind-0.4.0.tar.gz]
+[2024-04-22 05:16:19] INFO root fetch - processPackages [scattermind]: Remove: archive file [/home/abi/fetcher/tmp/scattermind-0.4.1.tar.gz]
+[2024-04-22 05:16:19] INFO root fetch - main [MainThread]: End processing [scattermind]: success
+[2024-04-22 05:16:21] INFO root fetch - processPackages [spotifywebapiPython]: Remove: archive file [/home/abi/fetcher/tmp/spotifywebapiPython-1.0.8-py3-none-any.whl.zip]
+[2024-04-22 05:16:21] INFO root fetch - processPackages [spotifywebapiPython]: Remove: archive file [/home/abi/fetcher/tmp/spotifywebapiPython-1.0.9-py3-none-any.whl.zip]
+[2024-04-22 05:16:21] INFO root fetch - main [MainThread]: End processing [spotifywebapiPython]: success
+[2024-04-22 05:16:21] INFO root fetch - main [MainThread]: Store serial: [22871648]
