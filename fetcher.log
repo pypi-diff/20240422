@@ -2205,3 +2205,15 @@
 [2024-04-22 02:55:09] INFO root fetch - processPackages [tradedangerous]: Remove: archive file [/home/abi/fetcher/tmp/tradedangerous-10.9.8.tar.gz]
 [2024-04-22 02:55:09] INFO root fetch - main [MainThread]: End processing [tradedangerous]: success
 [2024-04-22 02:55:09] INFO root fetch - main [MainThread]: Store serial: [22870800]
+[2024-04-22 02:57:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870800]
+[2024-04-22 02:57:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 02:57:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ovos-ww-plugin-openwakeword
+[2024-04-22 02:57:18] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: New version: [0.4.1a1] Old Version: [0.4.0]
+[2024-04-22 02:57:18] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Downloading https://files.pythonhosted.org/packages/2c/60/795684dea3d7ca6639bc298737c699fc9919c74e5def4054aa88e6fe6c7a/ovos_ww_plugin_openwakeword-0.4.0-py3-none-any.whl
+[2024-04-22 02:57:18] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Downloading https://files.pythonhosted.org/packages/b5/3b/b90e50b316a28864f4010ea2be7f70fa2a970d307f191c3cb2eb6ed1e5fb/ovos_ww_plugin_openwakeword-0.4.1a1-py3-none-any.whl
+[2024-04-22 02:57:19] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: executing diffoscope
+[2024-04-22 02:57:19] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_ww_plugin_openwakeword-0.4.0-py3-none-any.whl.zip tmp/ovos_ww_plugin_openwakeword-0.4.1a1-py3-none-any.whl.zip --markdown 20240422/o/ovos-ww-plugin-openwakeword/0.4.0-0.4.1a1/README.md --exclude *.pyd
+[2024-04-22 02:57:19] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Remove: archive file [/home/abi/fetcher/tmp/ovos_ww_plugin_openwakeword-0.4.0-py3-none-any.whl.zip]
+[2024-04-22 02:57:19] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Remove: archive file [/home/abi/fetcher/tmp/ovos_ww_plugin_openwakeword-0.4.1a1-py3-none-any.whl.zip]
+[2024-04-22 02:57:19] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-openwakeword]: success
+[2024-04-22 02:57:19] INFO root fetch - main [MainThread]: Store serial: [22870803]
