@@ -6886,3 +6886,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:41:39] INFO root fetch - processPackages [sklearn2pmml]: Remove: archive file [/home/abi/fetcher/tmp/sklearn2pmml-0.99.3.tar.gz]
 [2024-04-22 08:41:39] INFO root fetch - main [MainThread]: End processing [sklearn2pmml]: success
 [2024-04-22 08:41:39] INFO root fetch - main [MainThread]: Store serial: [22872740]
+[2024-04-22 08:43:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872740]
+[2024-04-22 08:43:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 08:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azure-mgmt-recoveryservicesbackup
+[2024-04-22 08:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PQAnalysis
+[2024-04-22 08:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ess-streaming-data-types
+[2024-04-22 08:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cs.iso14496
+[2024-04-22 08:43:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jupyterhub
+[2024-04-22 08:43:48] INFO root fetch - processPackages [PQAnalysis]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-22 08:43:48] INFO root fetch - processPackages [jupyterhub]: New version: [5.0.0b1] Old Version: [4.1.5]
+[2024-04-22 08:43:48] INFO root fetch - processPackages [cs.iso14496]: New version: [20240422] Old Version: [20231129]
+[2024-04-22 08:43:48] INFO root fetch - processPackages [azure-mgmt-recoveryservicesbackup]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-04-22 08:43:48] INFO root fetch - processPackages [ess-streaming-data-types]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-22 08:43:48] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/c8/d4/96f980fae706e89b6a39f3ee935ea96618cedb937b97db23a336247776b7/PQAnalysis-0.5.1.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [ess-streaming-data-types]: Downloading https://files.pythonhosted.org/packages/d6/a3/6fb367f39a60b79ab2a15ab47acee6e8885ba98783122d2c1ea60d05e30c/ess_streaming_data_types-0.9.5.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [cs.iso14496]: Downloading https://files.pythonhosted.org/packages/71/e2/a3d7520c6fb091fe235a543e4e96ac267eeda466f4aa29b7db754abf0a3e/cs.iso14496-20231129.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [jupyterhub]: Downloading https://files.pythonhosted.org/packages/f4/2e/6c218924df8c444fae5b661cdad6283ca9ad5abeedb1830e59d1284d89e5/jupyterhub-4.1.5.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [azure-mgmt-recoveryservicesbackup]: Downloading https://files.pythonhosted.org/packages/c6/b2/c5bd3c2ad34a28b88ae54fdf138b9439ba9e773a78d6d1b65c886ddf4c6f/azure-mgmt-recoveryservicesbackup-9.0.0.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [ess-streaming-data-types]: Downloading https://files.pythonhosted.org/packages/55/79/6979dd20f7642baba523f950aafa9a808555f5006efaeb5fb16598324b92/ess_streaming_data_types-0.9.6.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [cs.iso14496]: Downloading https://files.pythonhosted.org/packages/e8/30/99f666fdb38d557306b8864445527cdcb667e83f933f8b53c449a2853590/cs.iso14496-20240422.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [azure-mgmt-recoveryservicesbackup]: Downloading https://files.pythonhosted.org/packages/d1/10/e3d49f12842a84de410f8ed9831d6dcf6ee04e993f79fe4eb33adf1a9265/azure-mgmt-recoveryservicesbackup-9.1.0.tar.gz
+[2024-04-22 08:43:48] INFO root fetch - processPackages [ess-streaming-data-types]: executing diffoscope
+[2024-04-22 08:43:48] INFO root fetch - processPackages [ess-streaming-data-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ess_streaming_data_types-0.9.5.tar.gz tmp/ess_streaming_data_types-0.9.6.tar.gz --markdown 20240422/e/ess-streaming-data-types/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-22 08:43:49] INFO root fetch - processPackages [cs.iso14496]: executing diffoscope
+[2024-04-22 08:43:49] INFO root fetch - processPackages [cs.iso14496]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.iso14496-20231129.tar.gz tmp/cs.iso14496-20240422.tar.gz --markdown 20240422/c/cs.iso14496/20231129-20240422/README.md --exclude *.pyd
+[2024-04-22 08:43:49] INFO root fetch - processPackages [azure-mgmt-recoveryservicesbackup]: executing diffoscope
+[2024-04-22 08:43:49] INFO root fetch - processPackages [azure-mgmt-recoveryservicesbackup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-mgmt-recoveryservicesbackup-9.0.0.tar.gz tmp/azure-mgmt-recoveryservicesbackup-9.1.0.tar.gz --markdown 20240422/a/azure-mgmt-recoveryservicesbackup/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-04-22 08:43:49] INFO root fetch - processPackages [PQAnalysis]: Downloading https://files.pythonhosted.org/packages/4c/78/58484169da26d1cc3d3b96f8525e0ac47ce82c3e8c428c7d64b78254636b/pqanalysis-0.5.2.tar.gz
+[2024-04-22 08:43:49] INFO root fetch - processPackages [jupyterhub]: Downloading https://files.pythonhosted.org/packages/53/74/d6a4476f9ccc95cd2200dd968674995ed220614a046aa8fe1dc0dc72aabc/jupyterhub-5.0.0b1.tar.gz
+[2024-04-22 08:43:49] WARNING root fetch - processPackages [jupyterhub]: Skipping package: exceeds size limit 16839619>=10485760
+[2024-04-22 08:43:49] INFO root fetch - main [MainThread]: End processing [jupyterhub] error
+[2024-04-22 08:43:49] INFO root fetch - processPackages [cs.iso14496]: Remove: archive file [/home/abi/fetcher/tmp/cs.iso14496-20231129.tar.gz]
+[2024-04-22 08:43:49] INFO root fetch - processPackages [cs.iso14496]: Remove: archive file [/home/abi/fetcher/tmp/cs.iso14496-20240422.tar.gz]
+[2024-04-22 08:43:49] INFO root fetch - main [MainThread]: End processing [cs.iso14496]: success
+[2024-04-22 08:43:50] INFO root fetch - processPackages [ess-streaming-data-types]: Remove: archive file [/home/abi/fetcher/tmp/ess_streaming_data_types-0.9.5.tar.gz]
+[2024-04-22 08:43:50] INFO root fetch - processPackages [ess-streaming-data-types]: Remove: archive file [/home/abi/fetcher/tmp/ess_streaming_data_types-0.9.6.tar.gz]
+[2024-04-22 08:43:50] INFO root fetch - main [MainThread]: End processing [ess-streaming-data-types]: success
+[2024-04-22 08:43:50] INFO root fetch - processPackages [PQAnalysis]: executing diffoscope
+[2024-04-22 08:43:50] INFO root fetch - processPackages [PQAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PQAnalysis-0.5.1.tar.gz tmp/pqanalysis-0.5.2.tar.gz --markdown 20240422/P/PQAnalysis/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-22 08:43:51] INFO root fetch - processPackages [azure-mgmt-recoveryservicesbackup]: Remove: archive file [/home/abi/fetcher/tmp/azure-mgmt-recoveryservicesbackup-9.0.0.tar.gz]
+[2024-04-22 08:43:51] INFO root fetch - processPackages [azure-mgmt-recoveryservicesbackup]: Remove: archive file [/home/abi/fetcher/tmp/azure-mgmt-recoveryservicesbackup-9.1.0.tar.gz]
+[2024-04-22 08:43:51] INFO root fetch - main [MainThread]: End processing [azure-mgmt-recoveryservicesbackup]: success
+[2024-04-22 08:43:51] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/PQAnalysis-0.5.1.tar.gz]
+[2024-04-22 08:43:51] INFO root fetch - processPackages [PQAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/pqanalysis-0.5.2.tar.gz]
+[2024-04-22 08:43:51] INFO root fetch - main [MainThread]: End processing [PQAnalysis]: success
+[2024-04-22 08:43:51] INFO root fetch - main [MainThread]: Store serial: [22872756]
