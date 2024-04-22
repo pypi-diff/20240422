@@ -8093,3 +8093,59 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:55:25] INFO root fetch - processPackages [udata-front]: Remove: archive file [/home/abi/fetcher/tmp/udata_front-3.5.6.dev19017-py2.py3-none-any.whl.zip]
 [2024-04-22 09:55:25] INFO root fetch - main [MainThread]: End processing [udata-front]: success
 [2024-04-22 09:55:25] INFO root fetch - main [MainThread]: Store serial: [22873701]
+[2024-04-22 09:57:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873701]
+[2024-04-22 09:57:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 09:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hiscovid
+[2024-04-22 09:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-nvd3
+[2024-04-22 09:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs2solutions
+[2024-04-22 09:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vt-py
+[2024-04-22 09:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-idp-user
+[2024-04-22 09:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-cyberfurry
+[2024-04-22 09:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-azure-native
+[2024-04-22 09:57:36] INFO root fetch - processPackages [django-idp-user]: New version: [2.5.0.dev0] Old Version: [2.5.0]
+[2024-04-22 09:57:36] INFO root fetch - processPackages [cs2solutions]: New version: [0.7.0] Old Version: [0.6.5]
+[2024-04-22 09:57:36] WARNING root fetch - processPackages [nonebot-plugin-cyberfurry]: Skipping, unable to determine old version
+[2024-04-22 09:57:36] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-cyberfurry] error
+[2024-04-22 09:57:36] INFO root fetch - processPackages [python-nvd3]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-22 09:57:36] INFO root fetch - processPackages [hiscovid]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 09:57:36] INFO root fetch - processPackages [vt-py]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-22 09:57:36] INFO root fetch - processPackages [pulumi-azure-native]: New version: [2.9.1a1696416212] Old Version: [2.9.1a1696411987]
+[2024-04-22 09:57:36] INFO root fetch - processPackages [django-idp-user]: Downloading https://files.pythonhosted.org/packages/c0/71/cfded4f76f29332b2a348d58e81283662adcb2bd0a3556c4ace5b2dfdfb2/django-idp-user-2.5.0.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [cs2solutions]: Downloading https://files.pythonhosted.org/packages/dd/3f/54737abc08b913100f14a9a913d3936c15ba7121d19e75ed27cdc403c496/cs2solutions-0.6.5.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [python-nvd3]: Downloading https://files.pythonhosted.org/packages/4d/73/27fd4eb5cb13416c65d5731c2ae2fd85fe75b789816039aaec488d110a1b/python-nvd3-0.8.0.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [hiscovid]: Downloading https://files.pythonhosted.org/packages/6b/ea/428dfef091d9292c4cf32ef42b0588c366bbf2ff51a5089e1a7899237dac/hiscovid-0.0.4.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [vt-py]: Downloading https://files.pythonhosted.org/packages/b7/c2/ea53172c1d4fd377ab882faaf6e786a1c6bbd0c3f1ce7ac5efaf3aa16c92/vt-py-0.8.0.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [pulumi-azure-native]: Downloading https://files.pythonhosted.org/packages/7c/39/23e88d5a9a544cb9a75a9c0b077f73c9c90cb756d8e32766dfffb90f8833/pulumi_azure_native-2.9.1a1696411987.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [django-idp-user]: Downloading https://files.pythonhosted.org/packages/03/8d/d78e85d8c8eaa17cc495fc3a1f9abe97cafdd4eaa5ff3a0f7d0b58364c02/django-idp-user-2.5.0.dev0.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [hiscovid]: Downloading https://files.pythonhosted.org/packages/fb/54/3807f6f6b28dc1e8d4028ed80bc4c8e6c0631fb4eb70ae7921022eb019aa/hiscovid-0.0.5.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [python-nvd3]: Downloading https://files.pythonhosted.org/packages/7b/37/763af3f1f7b4222c9c2db5220d67e01e27f6477e9341d63a7142832162dc/python-nvd3-0.9.0.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [vt-py]: Downloading https://files.pythonhosted.org/packages/dd/c6/6a071fa597adc9a06d74abf6b1cfe22c027b24cf0ebe40fc59e4bcd2f9cd/vt-py-0.9.0.tar.gz
+[2024-04-22 09:57:36] INFO root fetch - processPackages [cs2solutions]: Downloading https://files.pythonhosted.org/packages/a3/2b/7842b5d4c1f24009ecae47d7c5cea8344b1a248f6c7b3dccb743fb40b41c/cs2solutions-0.7.0.tar.gz
+[2024-04-22 09:57:36] WARNING root fetch - processPackages [pulumi-azure-native]: Skipping package: exceeds size limit 27430128>=10485760
+[2024-04-22 09:57:36] INFO root fetch - main [MainThread]: End processing [pulumi-azure-native] error
+[2024-04-22 09:57:36] INFO root fetch - processPackages [hiscovid]: executing diffoscope
+[2024-04-22 09:57:36] INFO root fetch - processPackages [hiscovid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiscovid-0.0.4.tar.gz tmp/hiscovid-0.0.5.tar.gz --markdown 20240422/h/hiscovid/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 09:57:36] INFO root fetch - processPackages [django-idp-user]: executing diffoscope
+[2024-04-22 09:57:36] INFO root fetch - processPackages [django-idp-user]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-idp-user-2.5.0.tar.gz tmp/django-idp-user-2.5.0.dev0.tar.gz --markdown 20240422/d/django-idp-user/2.5.0-2.5.0.dev0/README.md --exclude *.pyd
+[2024-04-22 09:57:36] INFO root fetch - processPackages [python-nvd3]: executing diffoscope
+[2024-04-22 09:57:36] INFO root fetch - processPackages [python-nvd3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-nvd3-0.8.0.tar.gz tmp/python-nvd3-0.9.0.tar.gz --markdown 20240422/p/python-nvd3/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-22 09:57:36] INFO root fetch - processPackages [vt-py]: executing diffoscope
+[2024-04-22 09:57:36] INFO root fetch - processPackages [vt-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vt-py-0.8.0.tar.gz tmp/vt-py-0.9.0.tar.gz --markdown 20240422/v/vt-py/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-22 09:57:36] INFO root fetch - processPackages [cs2solutions]: executing diffoscope
+[2024-04-22 09:57:36] INFO root fetch - processPackages [cs2solutions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2solutions-0.6.5.tar.gz tmp/cs2solutions-0.7.0.tar.gz --markdown 20240422/c/cs2solutions/0.6.5-0.7.0/README.md --exclude *.pyd
+[2024-04-22 09:57:37] INFO root fetch - processPackages [hiscovid]: Remove: archive file [/home/abi/fetcher/tmp/hiscovid-0.0.4.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - processPackages [hiscovid]: Remove: archive file [/home/abi/fetcher/tmp/hiscovid-0.0.5.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - main [MainThread]: End processing [hiscovid]: success
+[2024-04-22 09:57:37] INFO root fetch - processPackages [vt-py]: Remove: archive file [/home/abi/fetcher/tmp/vt-py-0.8.0.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - processPackages [vt-py]: Remove: archive file [/home/abi/fetcher/tmp/vt-py-0.9.0.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - main [MainThread]: End processing [vt-py]: success
+[2024-04-22 09:57:37] INFO root fetch - processPackages [django-idp-user]: Remove: archive file [/home/abi/fetcher/tmp/django-idp-user-2.5.0.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - processPackages [django-idp-user]: Remove: archive file [/home/abi/fetcher/tmp/django-idp-user-2.5.0.dev0.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - main [MainThread]: End processing [django-idp-user]: success
+[2024-04-22 09:57:37] INFO root fetch - processPackages [python-nvd3]: Remove: archive file [/home/abi/fetcher/tmp/python-nvd3-0.8.0.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - processPackages [python-nvd3]: Remove: archive file [/home/abi/fetcher/tmp/python-nvd3-0.9.0.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - main [MainThread]: End processing [python-nvd3]: success
+[2024-04-22 09:57:37] INFO root fetch - processPackages [cs2solutions]: Remove: archive file [/home/abi/fetcher/tmp/cs2solutions-0.6.5.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - processPackages [cs2solutions]: Remove: archive file [/home/abi/fetcher/tmp/cs2solutions-0.7.0.tar.gz]
+[2024-04-22 09:57:37] INFO root fetch - main [MainThread]: End processing [cs2solutions]: success
+[2024-04-22 09:57:37] INFO root fetch - main [MainThread]: Store serial: [22873723]
