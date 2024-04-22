@@ -2536,3 +2536,36 @@
 [2024-04-22 03:28:38] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-22 03:28:38] INFO root fetch - main [MainThread]: End processing [rookiepy]: success
 [2024-04-22 03:28:38] INFO root fetch - main [MainThread]: Store serial: [22871007]
+[2024-04-22 03:30:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871007]
+[2024-04-22 03:30:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 03:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pingplot
+[2024-04-22 03:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: marcuslion
+[2024-04-22 03:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapy-impersonate
+[2024-04-22 03:30:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geny
+[2024-04-22 03:30:47] INFO root fetch - processPackages [marcuslion]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-22 03:30:47] INFO root fetch - processPackages [marcuslion]: Downloading https://files.pythonhosted.org/packages/9e/1b/35d713162681f4b6a508ca2f0abe84f28934e251febf83a312e0978d0135/marcuslion-0.2.8.tar.gz
+[2024-04-22 03:30:47] INFO root fetch - processPackages [scrapy-impersonate]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-22 03:30:47] INFO root fetch - processPackages [geny]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-22 03:30:47] WARNING root fetch - processPackages [pingplot]: Skipping, unable to determine old version
+[2024-04-22 03:30:47] INFO root fetch - main [MainThread]: End processing [pingplot] error
+[2024-04-22 03:30:47] INFO root fetch - processPackages [scrapy-impersonate]: Downloading https://files.pythonhosted.org/packages/41/07/a0cf25a10e66b68c3ae208de2db2ba8482713d2ff50497750ac978e98264/scrapy-impersonate-1.2.0.tar.gz
+[2024-04-22 03:30:47] INFO root fetch - processPackages [geny]: Downloading https://files.pythonhosted.org/packages/a7/3d/605e23f7556e1b5eddaac242f85680c218701288023f56592e7b4044763e/geny-0.1.2.tar.gz
+[2024-04-22 03:30:47] INFO root fetch - processPackages [marcuslion]: Downloading https://files.pythonhosted.org/packages/73/74/371dc6066e1b5614cacf5b247114099a910b32ff470c7e0515f1a376d74d/marcuslion-0.2.9.tar.gz
+[2024-04-22 03:30:47] INFO root fetch - processPackages [marcuslion]: executing diffoscope
+[2024-04-22 03:30:47] INFO root fetch - processPackages [marcuslion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcuslion-0.2.8.tar.gz tmp/marcuslion-0.2.9.tar.gz --markdown 20240422/m/marcuslion/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-22 03:30:48] INFO root fetch - processPackages [geny]: Downloading https://files.pythonhosted.org/packages/37/6a/b19f89383e7d8508b134ef55507584d3edaff9340c99abecb05ab92f7731/geny-0.1.3.tar.gz
+[2024-04-22 03:30:48] INFO root fetch - processPackages [scrapy-impersonate]: Downloading https://files.pythonhosted.org/packages/c6/a6/1411cf9f3577b50a61d44babff7105557d1d3f2890ae075b15690ee0681d/scrapy_impersonate-1.2.1.tar.gz
+[2024-04-22 03:30:48] INFO root fetch - processPackages [geny]: executing diffoscope
+[2024-04-22 03:30:48] INFO root fetch - processPackages [geny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geny-0.1.2.tar.gz tmp/geny-0.1.3.tar.gz --markdown 20240422/g/geny/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-22 03:30:48] INFO root fetch - processPackages [scrapy-impersonate]: executing diffoscope
+[2024-04-22 03:30:48] INFO root fetch - processPackages [scrapy-impersonate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-impersonate-1.2.0.tar.gz tmp/scrapy_impersonate-1.2.1.tar.gz --markdown 20240422/s/scrapy-impersonate/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-22 03:30:48] INFO root fetch - processPackages [marcuslion]: Remove: archive file [/home/abi/fetcher/tmp/marcuslion-0.2.8.tar.gz]
+[2024-04-22 03:30:48] INFO root fetch - processPackages [marcuslion]: Remove: archive file [/home/abi/fetcher/tmp/marcuslion-0.2.9.tar.gz]
+[2024-04-22 03:30:48] INFO root fetch - main [MainThread]: End processing [marcuslion]: success
+[2024-04-22 03:30:48] INFO root fetch - processPackages [scrapy-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-impersonate-1.2.0.tar.gz]
+[2024-04-22 03:30:48] INFO root fetch - processPackages [scrapy-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/scrapy_impersonate-1.2.1.tar.gz]
+[2024-04-22 03:30:48] INFO root fetch - main [MainThread]: End processing [scrapy-impersonate]: success
+[2024-04-22 03:30:48] INFO root fetch - processPackages [geny]: Remove: archive file [/home/abi/fetcher/tmp/geny-0.1.2.tar.gz]
+[2024-04-22 03:30:48] INFO root fetch - processPackages [geny]: Remove: archive file [/home/abi/fetcher/tmp/geny-0.1.3.tar.gz]
+[2024-04-22 03:30:48] INFO root fetch - main [MainThread]: End processing [geny]: success
+[2024-04-22 03:30:48] INFO root fetch - main [MainThread]: Store serial: [22871043]
