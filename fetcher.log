@@ -5423,3 +5423,43 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:16:09] INFO root fetch - processPackages [haskellian]: Remove: archive file [/home/abi/fetcher/tmp/haskellian-0.3.5.tar.gz]
 [2024-04-22 07:16:09] INFO root fetch - main [MainThread]: End processing [haskellian]: success
 [2024-04-22 07:16:09] INFO root fetch - main [MainThread]: Store serial: [22872203]
+[2024-04-22 07:18:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872203]
+[2024-04-22 07:18:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 07:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mydev
+[2024-04-22 07:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pingplot
+[2024-04-22 07:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chamco-ragbot
+[2024-04-22 07:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rapidpe-rift-pipe
+[2024-04-22 07:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mydev
+[2024-04-22 07:18:18] INFO root fetch - processPackages [mydev]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 07:18:18] WARNING root fetch - processPackages [pingplot]: Skipping, unable to determine old version
+[2024-04-22 07:18:18] INFO root fetch - main [MainThread]: End processing [pingplot] error
+[2024-04-22 07:18:18] INFO root fetch - processPackages [chamco-ragbot]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 07:18:18] INFO root fetch - processPackages [mydev]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 07:18:18] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.6.9.dev20240319] Old Version: [0.6.9.dev20240318]
+[2024-04-22 07:18:18] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/28/24/217618cc94e5d20215b780cc06e8b8ea901198fa7e2ab0f9ae59576698af/chamco_ragbot-0.1.8.tar.gz
+[2024-04-22 07:18:18] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/e0/d8/d7b88a4aebe9c66f5be7749976ca4a5d90c4c1f76b8309b2528f7d696fc2/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz
+[2024-04-22 07:18:18] INFO root fetch - processPackages [mydev]: Downloading https://files.pythonhosted.org/packages/c4/9e/f956599267ad6819ec1c58729eb267d2a694186337a5efdd4c70a8f0274d/mydev-0.0.1.tar.gz
+[2024-04-22 07:18:18] INFO root fetch - processPackages [mydev]: Downloading https://files.pythonhosted.org/packages/c4/9e/f956599267ad6819ec1c58729eb267d2a694186337a5efdd4c70a8f0274d/mydev-0.0.1.tar.gz
+[2024-04-22 07:18:18] INFO root fetch - processPackages [chamco-ragbot]: Downloading https://files.pythonhosted.org/packages/6d/2f/b0cfb668429f9c2cc9bbd78a2a429261023e9941169dc50b7905e48db0ac/chamco_ragbot-0.1.9.tar.gz
+[2024-04-22 07:18:18] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/57/73/f8f8961db2f4ad6df9b52d6fc88b6fc134a86d378de28ab14ee4105baea4/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz
+[2024-04-22 07:18:19] INFO root fetch - processPackages [chamco-ragbot]: executing diffoscope
+[2024-04-22 07:18:19] INFO root fetch - processPackages [chamco-ragbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chamco_ragbot-0.1.8.tar.gz tmp/chamco_ragbot-0.1.9.tar.gz --markdown 20240422/c/chamco-ragbot/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 07:18:19] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2024-04-22 07:18:19] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz --markdown 20240422/r/rapidpe-rift-pipe/0.6.9.dev20240318-0.6.9.dev20240319/README.md --exclude *.pyd
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: Downloading https://files.pythonhosted.org/packages/7f/f9/f6d4a7ec0df6b48c3448ce2f1d191df9c325b9b4c93f9c5f4c7651a8f3bb/mydev-0.0.2.tar.gz
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: Downloading https://files.pythonhosted.org/packages/7f/f9/f6d4a7ec0df6b48c3448ce2f1d191df9c325b9b4c93f9c5f4c7651a8f3bb/mydev-0.0.2.tar.gz
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: executing diffoscope
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: executing diffoscope
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mydev-0.0.1.tar.gz tmp/mydev-0.0.2.tar.gz --markdown 20240422/m/mydev/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mydev-0.0.1.tar.gz tmp/mydev-0.0.2.tar.gz --markdown 20240422/m/mydev/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 07:18:19] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.8.tar.gz]
+[2024-04-22 07:18:19] INFO root fetch - processPackages [chamco-ragbot]: Remove: archive file [/home/abi/fetcher/tmp/chamco_ragbot-0.1.9.tar.gz]
+[2024-04-22 07:18:19] INFO root fetch - main [MainThread]: End processing [chamco-ragbot]: success
+[2024-04-22 07:18:19] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz]
+[2024-04-22 07:18:19] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
+[2024-04-22 07:18:19] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: Remove: archive file [/home/abi/fetcher/tmp/mydev-0.0.1.tar.gz]
+[2024-04-22 07:18:19] INFO root fetch - processPackages [mydev]: Remove: archive file [/home/abi/fetcher/tmp/mydev-0.0.2.tar.gz]
+[2024-04-22 07:18:19] INFO root fetch - main [MainThread]: End processing [mydev]: success
+[2024-04-22 07:18:19] INFO root fetch - main [MainThread]: End processing [mydev]: success
+[2024-04-22 07:18:19] INFO root fetch - main [MainThread]: Store serial: [22872215]
