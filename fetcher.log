@@ -7631,3 +7631,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 09:21:07] INFO root fetch - processPackages [datafold-sdk]: Remove: archive file [/home/abi/fetcher/tmp/datafold_sdk-0.0.9-py3-none-any.whl.zip]
 [2024-04-22 09:21:07] INFO root fetch - main [MainThread]: End processing [datafold-sdk]: success
 [2024-04-22 09:21:07] INFO root fetch - main [MainThread]: Store serial: [22873037]
+[2024-04-22 09:23:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873037]
+[2024-04-22 09:23:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 09:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackql-deploy
+[2024-04-22 09:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tad-mctc
+[2024-04-22 09:23:16] INFO root fetch - processPackages [stackql-deploy]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-04-22 09:23:16] INFO root fetch - processPackages [tad-mctc]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-22 09:23:16] INFO root fetch - processPackages [stackql-deploy]: Downloading https://files.pythonhosted.org/packages/08/48/f501cff73daf2962c63ea3d77ac41683652723d9a793278301df7e2f123f/stackql_deploy-1.0.9.tar.gz
+[2024-04-22 09:23:16] INFO root fetch - processPackages [tad-mctc]: Downloading https://files.pythonhosted.org/packages/11/03/95829efe9da488a56f2dbc8787a261d938c23273bbbf5dad4c69626b2a1f/tad_mctc-0.1.3.tar.gz
+[2024-04-22 09:23:16] INFO root fetch - processPackages [stackql-deploy]: Downloading https://files.pythonhosted.org/packages/1c/7b/f80ece39af799de89f4cf642fba081f0543619e659f1cd040a004e0df5f1/stackql_deploy-1.1.0.tar.gz
+[2024-04-22 09:23:17] INFO root fetch - processPackages [stackql-deploy]: executing diffoscope
+[2024-04-22 09:23:17] INFO root fetch - processPackages [stackql-deploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackql_deploy-1.0.9.tar.gz tmp/stackql_deploy-1.1.0.tar.gz --markdown 20240422/s/stackql-deploy/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-04-22 09:23:17] INFO root fetch - processPackages [tad-mctc]: Downloading https://files.pythonhosted.org/packages/38/c0/ec86b2daaee36a1e77877ee2a43c832bc4e1fdab46d6e8a116616ad08a55/tad_mctc-0.1.4.tar.gz
+[2024-04-22 09:23:17] INFO root fetch - processPackages [tad-mctc]: executing diffoscope
+[2024-04-22 09:23:17] INFO root fetch - processPackages [tad-mctc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tad_mctc-0.1.3.tar.gz tmp/tad_mctc-0.1.4.tar.gz --markdown 20240422/t/tad-mctc/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-22 09:23:17] INFO root fetch - processPackages [stackql-deploy]: Remove: archive file [/home/abi/fetcher/tmp/stackql_deploy-1.0.9.tar.gz]
+[2024-04-22 09:23:17] INFO root fetch - processPackages [stackql-deploy]: Remove: archive file [/home/abi/fetcher/tmp/stackql_deploy-1.1.0.tar.gz]
+[2024-04-22 09:23:17] INFO root fetch - main [MainThread]: End processing [stackql-deploy]: success
+[2024-04-22 09:23:18] INFO root fetch - processPackages [tad-mctc]: Remove: archive file [/home/abi/fetcher/tmp/tad_mctc-0.1.3.tar.gz]
+[2024-04-22 09:23:18] INFO root fetch - processPackages [tad-mctc]: Remove: archive file [/home/abi/fetcher/tmp/tad_mctc-0.1.4.tar.gz]
+[2024-04-22 09:23:18] INFO root fetch - main [MainThread]: End processing [tad-mctc]: success
+[2024-04-22 09:23:18] INFO root fetch - main [MainThread]: Store serial: [22873043]
