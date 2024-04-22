@@ -3001,3 +3001,18 @@
 [2024-04-22 04:16:48] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz]
 [2024-04-22 04:16:48] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-orangejuice]: success
 [2024-04-22 04:16:48] INFO root fetch - main [MainThread]: Store serial: [22871216]
+[2024-04-22 04:18:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871216]
+[2024-04-22 04:18:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 04:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-orangejuice
+[2024-04-22 04:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SpiderKidSDK
+[2024-04-22 04:18:56] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-22 04:18:56] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/c8/38/90a39a14d7ba6d9112789021b6ef87aaf81e04767b4778d7406cbb277c9f/nonebot-plugin-orangejuice-0.9.0.tar.gz
+[2024-04-22 04:18:56] WARNING root fetch - processPackages [SpiderKidSDK]: Skipping, unable to determine old version
+[2024-04-22 04:18:56] INFO root fetch - main [MainThread]: End processing [SpiderKidSDK] error
+[2024-04-22 04:18:56] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/7f/1d/3890a6434dd566ebff9d0e7fa7f151a8384e4bf47b0a22874773180f8977/nonebot-plugin-orangejuice-0.9.1.tar.gz
+[2024-04-22 04:18:56] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: executing diffoscope
+[2024-04-22 04:18:56] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz --markdown 20240422/n/nonebot-plugin-orangejuice/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-22 04:18:57] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz]
+[2024-04-22 04:18:57] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz]
+[2024-04-22 04:18:57] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-orangejuice]: success
+[2024-04-22 04:18:57] INFO root fetch - main [MainThread]: Store serial: [22871223]
