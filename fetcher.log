@@ -2494,3 +2494,45 @@
 [2024-04-22 03:26:00] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a9.tar.gz]
 [2024-04-22 03:26:00] INFO root fetch - main [MainThread]: End processing [bauplan]: success
 [2024-04-22 03:26:00] INFO root fetch - main [MainThread]: Store serial: [22870933]
+[2024-04-22 03:28:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870933]
+[2024-04-22 03:28:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 03:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchensemble
+[2024-04-22 03:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rookiepy
+[2024-04-22 03:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onediff
+[2024-04-22 03:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onediffx
+[2024-04-22 03:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: monit-agd
+[2024-04-22 03:28:34] WARNING root fetch - processPackages [monit-agd]: Skipping, unable to determine old version
+[2024-04-22 03:28:34] INFO root fetch - main [MainThread]: End processing [monit-agd] error
+[2024-04-22 03:28:34] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202404210128] Old Version: [1.0.0.dev202404200125]
+[2024-04-22 03:28:34] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202404210128] Old Version: [1.0.0.dev202404200125]
+[2024-04-22 03:28:35] INFO root fetch - processPackages [torchensemble]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/f3/5c/a706f3b7b4c70a56f8e59ce192fd7634bf8fdb26500ac3a83caf67397e7b/onediffx-1.0.0.dev202404200125.tar.gz
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/ec/03/85cc9dd68b765d5a4e2cb9781ef7eefac5fbce3ab13edb48f3a6a430e869/onediff-1.0.0.dev202404200125.tar.gz
+[2024-04-22 03:28:35] INFO root fetch - processPackages [rookiepy]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-22 03:28:35] INFO root fetch - processPackages [torchensemble]: Downloading https://files.pythonhosted.org/packages/14/c1/d904b8d075ea5dbd2c66935eae8336b0cebd92495f6e3065803726e4a726/torchensemble-0.1.9.tar.gz
+[2024-04-22 03:28:35] INFO root fetch - processPackages [rookiepy]: Downloading https://files.pythonhosted.org/packages/73/6c/587ab440bd5600123cb10fc810102c1e107bc795f2b364530a5e75a456a0/rookiepy-0.5.0.tar.gz
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/da/df/835d75c74810474485153a6e8475fc2d0dc342a4934bab9606a4c6766249/onediff-1.0.0.dev202404210128.tar.gz
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/7d/bf/0ef1e2c1aa41cdd193278070ed49214bcc101f10e8759bfa3e2eb01db89b/onediffx-1.0.0.dev202404210128.tar.gz
+[2024-04-22 03:28:35] INFO root fetch - processPackages [torchensemble]: Downloading https://files.pythonhosted.org/packages/3d/a1/cdcb03222d38e897c2e64a29991ebca30763f280bba9ce7dcac0b34766a7/torchensemble-0.2.0-py3-none-any.whl
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202404200125.tar.gz tmp/onediff-1.0.0.dev202404210128.tar.gz --markdown 20240422/o/onediff/1.0.0.dev202404200125-1.0.0.dev202404210128/README.md --exclude *.pyd
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-22 03:28:35] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202404200125.tar.gz tmp/onediffx-1.0.0.dev202404210128.tar.gz --markdown 20240422/o/onediffx/1.0.0.dev202404200125-1.0.0.dev202404210128/README.md --exclude *.pyd
+[2024-04-22 03:28:35] INFO root fetch - processPackages [torchensemble]: executing diffoscope
+[2024-04-22 03:28:35] INFO root fetch - processPackages [torchensemble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchensemble-0.1.9.tar.gz tmp/torchensemble-0.2.0-py3-none-any.whl.zip --markdown 20240422/t/torchensemble/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-22 03:28:35] INFO root fetch - processPackages [rookiepy]: Downloading https://files.pythonhosted.org/packages/bb/6a/0dda54a2f8097ad75528cd4aa6bae29b1de6f8e05be0922af9d6c71bbbfa/rookiepy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-22 03:28:36] INFO root fetch - processPackages [torchensemble]: Remove: archive file [/home/abi/fetcher/tmp/torchensemble-0.1.9.tar.gz]
+[2024-04-22 03:28:36] INFO root fetch - processPackages [torchensemble]: Remove: archive file [/home/abi/fetcher/tmp/torchensemble-0.2.0-py3-none-any.whl.zip]
+[2024-04-22 03:28:36] INFO root fetch - main [MainThread]: End processing [torchensemble]: success
+[2024-04-22 03:28:36] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404200125.tar.gz]
+[2024-04-22 03:28:36] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404210128.tar.gz]
+[2024-04-22 03:28:36] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-22 03:28:36] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404200125.tar.gz]
+[2024-04-22 03:28:36] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404210128.tar.gz]
+[2024-04-22 03:28:36] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-04-22 03:28:38] INFO root fetch - processPackages [rookiepy]: executing diffoscope
+[2024-04-22 03:28:38] INFO root fetch - processPackages [rookiepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rookiepy-0.5.0.tar.gz tmp/rookiepy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240422/r/rookiepy/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-22 03:28:38] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.5.0.tar.gz]
+[2024-04-22 03:28:38] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.5.1-pp310-pypy310_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-22 03:28:38] INFO root fetch - main [MainThread]: End processing [rookiepy]: success
+[2024-04-22 03:28:38] INFO root fetch - main [MainThread]: Store serial: [22871007]
