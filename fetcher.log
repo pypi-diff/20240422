@@ -9610,3 +9610,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:58:29] INFO root fetch - processPackages [trl]: Remove: archive file [/home/abi/fetcher/tmp/trl-0.8.6.tar.gz]
 [2024-04-22 10:58:29] INFO root fetch - main [MainThread]: End processing [trl]: success
 [2024-04-22 10:58:29] INFO root fetch - main [MainThread]: Store serial: [22874358]
+[2024-04-22 11:00:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874358]
+[2024-04-22 11:00:38] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: node-graph
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dforge
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odbc2deltalake
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: picsellia
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: core-pro
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cutseq
+[2024-04-22 11:00:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdcdeaths
+[2024-04-22 11:00:38] INFO root fetch - processPackages [odbc2deltalake]: New version: [0.8.7] Old Version: [0.8.5]
+[2024-04-22 11:00:38] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:00:38] INFO root fetch - processPackages [cutseq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 11:00:38] INFO root fetch - processPackages [core-pro]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 11:00:38] INFO root fetch - processPackages [odbc2deltalake]: Downloading https://files.pythonhosted.org/packages/c4/04/e91dac112ec55525b0b661ff39d03611841a3c1a041614e7ad4024334298/odbc2deltalake-0.8.5.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [node-graph]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 11:00:38] INFO root fetch - processPackages [dforge]: New version: [2.1.1] Old Version: [1.0.0]
+[2024-04-22 11:00:38] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [picsellia]: New version: [6.9.1] Old Version: [6.9.0]
+[2024-04-22 11:00:38] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/dc/86/b3c6a8d290835afc0d7b1b25dde8bd558795bdce03403c0c90b2e7da9dff/core_pro-0.0.8.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/95/33/6984c0732c17eb925be43f23c0c27167392d2900fcd21ebf93d9b68f6c2a/cutseq-0.0.8.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [cdcdeaths]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 11:00:38] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-22 11:00:38] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-22 11:00:38] INFO root fetch - processPackages [node-graph]: Downloading https://files.pythonhosted.org/packages/01/59/a07d3c2d6ab1c67f903155ea1a67df0c698176a1f4da67abe7cfd970936d/node_graph-0.0.4.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [dforge]: Downloading https://files.pythonhosted.org/packages/93/75/44fbfff06b6b10ef976b71a40294f91b8d9dda335e3a870004db6e250e90/dforge-1.0.0.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [picsellia]: Downloading https://files.pythonhosted.org/packages/53/4d/429cba0ffc92e278bb7c6de092db18ca374292e945109e701914a1cbd70e/picsellia-6.9.0.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [odbc2deltalake]: Downloading https://files.pythonhosted.org/packages/15/0a/53cdc96e432d8ae90718095b20d2e4038ea4b47fbbb5b884c83c2cf881fc/odbc2deltalake-0.8.7.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/6f/4e/6f2935c9906443317c8d830ec5b4f1c67d988d87345c4ae116a0a613c079/core_pro-0.0.9.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/e5/82/45b103e58b439dac0cf4c7f6ef6957633721ec0f4553abfabba5ed961a0f/cutseq-0.0.9.tar.gz
+[2024-04-22 11:00:38] INFO root fetch - processPackages [cdcdeaths]: Downloading https://files.pythonhosted.org/packages/aa/05/7b2cb03976d1ca91143bacc404b8d05b69c8b3e2491f1033d6ee26ff4695/cdcdeaths-0.0.1.tar.gz
+[2024-04-22 11:00:39] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 11:00:39] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.8.tar.gz tmp/cutseq-0.0.9.tar.gz --markdown 20240422/c/cutseq/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 11:00:39] INFO root fetch - processPackages [core-pro]: executing diffoscope
+[2024-04-22 11:00:39] INFO root fetch - processPackages [core-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core_pro-0.0.8.tar.gz tmp/core_pro-0.0.9.tar.gz --markdown 20240422/c/core-pro/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 11:00:39] INFO root fetch - processPackages [odbc2deltalake]: executing diffoscope
+[2024-04-22 11:00:39] INFO root fetch - processPackages [odbc2deltalake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odbc2deltalake-0.8.5.tar.gz tmp/odbc2deltalake-0.8.7.tar.gz --markdown 20240422/o/odbc2deltalake/0.8.5-0.8.7/README.md --exclude *.pyd
+[2024-04-22 11:00:39] INFO root fetch - processPackages [node-graph]: Downloading https://files.pythonhosted.org/packages/83/4a/6835ecd4a7fcdbdd45af295e90dffb5897fa48158c5a2bc701b5f0057582/node_graph-0.0.5.tar.gz
+[2024-04-22 11:00:39] INFO root fetch - processPackages [picsellia]: Downloading https://files.pythonhosted.org/packages/17/e6/4ee4c9871f71c35921138843b9bb53c0485cebd4cfe1cdc5c45b0d1aedac/picsellia-6.9.1.tar.gz
+[2024-04-22 11:00:39] INFO root fetch - processPackages [dforge]: Downloading https://files.pythonhosted.org/packages/83/fe/1d57736425766d6e3c50a731a2f7fb7409333cecb957307c67b8a77432b4/dforge-2.1.1.tar.gz
+[2024-04-22 11:00:39] INFO root fetch - processPackages [node-graph]: executing diffoscope
+[2024-04-22 11:00:39] INFO root fetch - processPackages [node-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node_graph-0.0.4.tar.gz tmp/node_graph-0.0.5.tar.gz --markdown 20240422/n/node-graph/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 11:00:39] INFO root fetch - processPackages [cdcdeaths]: Downloading https://files.pythonhosted.org/packages/31/3c/8e8e747b50b01a16f40aca52863f03083a5c96bed53c0bcf8c08c678f17d/cdcdeaths-0.0.2.tar.gz
+[2024-04-22 11:00:39] INFO root fetch - processPackages [picsellia]: executing diffoscope
+[2024-04-22 11:00:39] INFO root fetch - processPackages [picsellia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picsellia-6.9.0.tar.gz tmp/picsellia-6.9.1.tar.gz --markdown 20240422/p/picsellia/6.9.0-6.9.1/README.md --exclude *.pyd
+[2024-04-22 11:00:39] INFO root fetch - processPackages [dforge]: executing diffoscope
+[2024-04-22 11:00:39] INFO root fetch - processPackages [dforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dforge-1.0.0.tar.gz tmp/dforge-2.1.1.tar.gz --markdown 20240422/d/dforge/1.0.0-2.1.1/README.md --exclude *.pyd
+[2024-04-22 11:00:39] INFO root fetch - processPackages [cdcdeaths]: executing diffoscope
+[2024-04-22 11:00:39] INFO root fetch - processPackages [cdcdeaths]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdcdeaths-0.0.1.tar.gz tmp/cdcdeaths-0.0.2.tar.gz --markdown 20240422/c/cdcdeaths/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 11:00:39] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.8.tar.gz]
+[2024-04-22 11:00:39] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
+[2024-04-22 11:00:39] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 11:00:39] INFO root fetch - processPackages [odbc2deltalake]: Remove: archive file [/home/abi/fetcher/tmp/odbc2deltalake-0.8.5.tar.gz]
+[2024-04-22 11:00:39] INFO root fetch - processPackages [odbc2deltalake]: Remove: archive file [/home/abi/fetcher/tmp/odbc2deltalake-0.8.7.tar.gz]
+[2024-04-22 11:00:39] INFO root fetch - main [MainThread]: End processing [odbc2deltalake]: success
+[2024-04-22 11:00:40] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.8.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.9.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - main [MainThread]: End processing [core-pro]: success
+[2024-04-22 11:00:40] INFO root fetch - processPackages [dforge]: Remove: archive file [/home/abi/fetcher/tmp/dforge-1.0.0.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - processPackages [dforge]: Remove: archive file [/home/abi/fetcher/tmp/dforge-2.1.1.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - main [MainThread]: End processing [dforge]: success
+[2024-04-22 11:00:40] INFO root fetch - processPackages [node-graph]: Remove: archive file [/home/abi/fetcher/tmp/node_graph-0.0.4.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - processPackages [node-graph]: Remove: archive file [/home/abi/fetcher/tmp/node_graph-0.0.5.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - main [MainThread]: End processing [node-graph]: success
+[2024-04-22 11:00:40] INFO root fetch - processPackages [cdcdeaths]: Remove: archive file [/home/abi/fetcher/tmp/cdcdeaths-0.0.1.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - processPackages [cdcdeaths]: Remove: archive file [/home/abi/fetcher/tmp/cdcdeaths-0.0.2.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - main [MainThread]: End processing [cdcdeaths]: success
+[2024-04-22 11:00:40] INFO root fetch - processPackages [picsellia]: Remove: archive file [/home/abi/fetcher/tmp/picsellia-6.9.0.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - processPackages [picsellia]: Remove: archive file [/home/abi/fetcher/tmp/picsellia-6.9.1.tar.gz]
+[2024-04-22 11:00:40] INFO root fetch - main [MainThread]: End processing [picsellia]: success
+[2024-04-22 11:00:40] INFO root fetch - main [MainThread]: Store serial: [22874388]
