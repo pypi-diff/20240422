@@ -2383,3 +2383,15 @@
 [2024-04-22 03:16:48] INFO root fetch - processPackages [pygubu-designer]: Remove: archive file [/home/abi/fetcher/tmp/pygubu_designer-0.39.1.tar.gz]
 [2024-04-22 03:16:48] INFO root fetch - main [MainThread]: End processing [pygubu-designer]: success
 [2024-04-22 03:16:48] INFO root fetch - main [MainThread]: Store serial: [22870887]
+[2024-04-22 03:18:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870887]
+[2024-04-22 03:18:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 03:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: practical-astronomy
+[2024-04-22 03:18:57] INFO root fetch - processPackages [practical-astronomy]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-04-22 03:18:57] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/7e/e2/6bd05793ab4503bbc5c33226f79f8c672afdf7f1b59fca6444c8d13287bd/practical_astronomy-0.0.4.tar.gz
+[2024-04-22 03:18:57] INFO root fetch - processPackages [practical-astronomy]: Downloading https://files.pythonhosted.org/packages/57/f1/52960c1f60fd77bd67023a46b51cbb094cd1824a9b76414336cd91f3fd70/practical_astronomy-1.0.0.tar.gz
+[2024-04-22 03:18:57] INFO root fetch - processPackages [practical-astronomy]: executing diffoscope
+[2024-04-22 03:18:57] INFO root fetch - processPackages [practical-astronomy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/practical_astronomy-0.0.4.tar.gz tmp/practical_astronomy-1.0.0.tar.gz --markdown 20240422/p/practical-astronomy/0.0.4-1.0.0/README.md --exclude *.pyd
+[2024-04-22 03:18:59] INFO root fetch - processPackages [practical-astronomy]: Remove: archive file [/home/abi/fetcher/tmp/practical_astronomy-0.0.4.tar.gz]
+[2024-04-22 03:18:59] INFO root fetch - processPackages [practical-astronomy]: Remove: archive file [/home/abi/fetcher/tmp/practical_astronomy-1.0.0.tar.gz]
+[2024-04-22 03:18:59] INFO root fetch - main [MainThread]: End processing [practical-astronomy]: success
+[2024-04-22 03:18:59] INFO root fetch - main [MainThread]: Store serial: [22870895]
