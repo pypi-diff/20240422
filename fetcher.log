@@ -9077,3 +9077,87 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:34:20] INFO root fetch - processPackages [ondewo-vtsi-client]: Remove: archive file [/home/abi/fetcher/tmp/ondewo-vtsi-client-7.0.0.tar.gz]
 [2024-04-22 10:34:20] INFO root fetch - main [MainThread]: End processing [ondewo-vtsi-client]: success
 [2024-04-22 10:34:20] INFO root fetch - main [MainThread]: Store serial: [22874142]
+[2024-04-22 10:36:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874142]
+[2024-04-22 10:36:30] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-hx-yinying
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: noaatsi
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kclvm
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfem
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ai21
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: DLMS-SPODES-client
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fisspy
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spiderwebai-py
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: django-log-inspector
+[2024-04-22 10:36:30] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [fisspy]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [django-log-inspector]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [spiderwebai-py]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [DLMS-SPODES-client]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [ai21]: New version: [2.2.1] Old Version: [2.2.0rc2]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [noaatsi]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [kclvm]: New version: [0.8.5] Old Version: [0.8.0b1]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [pyfem]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-22 10:36:30] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/70/b9/874f7a4a6c328972214a00c0db1f03888bd0a938eb727a0cf5a9b295e1d7/nonebot-plugin-hx-yinying-0.0.8.tar.gz
+[2024-04-22 10:36:30] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/cb/f9/95f9d1470618c312271b9b32090401aaebbd70f58e5f5671083cfb7d3f4a/fisspy-1.0.2.tar.gz
+[2024-04-22 10:36:30] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/2b/1a/53c49e15bee77d9ddd0dadbf71e9c52587f1c9f5ed8480afa0d337e04a10/django_log_inspector-0.0.6.tar.gz
+[2024-04-22 10:36:30] INFO root fetch - processPackages [spiderwebai-py]: Downloading https://files.pythonhosted.org/packages/12/8b/990f160cd35c5e6966f7713da1c2d6327f9d05c37790f4deea5130fd764c/spiderwebai-py-0.1.2.tar.gz
+[2024-04-22 10:36:30] INFO root fetch - processPackages [DLMS-SPODES-client]: Downloading https://files.pythonhosted.org/packages/37/06/b75b97d416a03b6029eea7be7f81f962530d9e9f46a10996379570f5d2b4/DLMS_SPODES_client-0.8.4.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [ai21]: Downloading https://files.pythonhosted.org/packages/2c/c0/c033c97c3b4c73258314485eed971afd63d65b7f5d4162d6e6658f605e35/ai21-2.2.0rc2.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [pyfem]: Downloading https://files.pythonhosted.org/packages/ad/7a/923a6f335b3639990c95d23d6cd764ef09f5bd6d3e8553cd6f4732dae495/pyfem-0.2.0.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [kclvm]: Downloading https://files.pythonhosted.org/packages/6d/3b/01bbcf3ecfac5de06c4c6e8513fbdf83dbae3e235f062a772fbdf3b1c2e5/kclvm-0.8.0b1.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [noaatsi]: Downloading https://files.pythonhosted.org/packages/f8/9e/7d9bf66ea39bccd3965e75c26133d72f6637c65c5bf58707ab001b26d9b6/noaatsi-0.0.1.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [DLMS-SPODES-client]: Downloading https://files.pythonhosted.org/packages/7b/95/dc999d7c4215a29745cd3ce50b490254b60b4f4f43b0decdd93a17886151/DLMS_SPODES_client-0.8.5.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Downloading https://files.pythonhosted.org/packages/be/a6/0c50139e58dfec3d25519be3828a44d7134572f37d850b27b7f427d64cac/nonebot-plugin-hx-yinying-0.0.9.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/17/0a/27c0e74f293bb321010900128a28193e42b4e16738a4411c84e5b46b87f4/fisspy-1.0.3.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [spiderwebai-py]: Downloading https://files.pythonhosted.org/packages/b6/c7/56a0d01bf9618661a258d03a19d585aa6bf4d819e44fe59c0aac7599244b/spiderwebai-py-0.1.3.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/10/1c/fea85505dd0ce28c139f32279dcdcd6670b77c178f5f5dff1856799c6c3c/django_log_inspector-0.0.7.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [DLMS-SPODES-client]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [DLMS-SPODES-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DLMS_SPODES_client-0.8.4.tar.gz tmp/DLMS_SPODES_client-0.8.5.tar.gz --markdown 20240422/D/DLMS-SPODES-client/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-hx-yinying-0.0.8.tar.gz tmp/nonebot-plugin-hx-yinying-0.0.9.tar.gz --markdown 20240422/n/nonebot-plugin-hx-yinying/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [spiderwebai-py]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [spiderwebai-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiderwebai-py-0.1.2.tar.gz tmp/spiderwebai-py-0.1.3.tar.gz --markdown 20240422/s/spiderwebai-py/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [fisspy]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [fisspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fisspy-1.0.2.tar.gz tmp/fisspy-1.0.3.tar.gz --markdown 20240422/f/fisspy/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [pyfem]: Downloading https://files.pythonhosted.org/packages/61/fa/1232e6bbe7a630053412b3ef45dce6046a0fc87f9f48ea2adfec3a039fa7/pyfem-0.2.1.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [django-log-inspector]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [django-log-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_log_inspector-0.0.6.tar.gz tmp/django_log_inspector-0.0.7.tar.gz --markdown 20240422/d/django-log-inspector/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [kclvm]: Downloading https://files.pythonhosted.org/packages/b5/c9/740284672ecfd62b3d5cb95606c200c328320006b8f339f20fa7810869e0/kclvm-0.8.5.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [noaatsi]: Downloading https://files.pythonhosted.org/packages/a0/5f/85e42393a1b2547a4630315813a602737d2c9d4d7ad58744cd9715e542b5/noaatsi-0.0.2.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [ai21]: Downloading https://files.pythonhosted.org/packages/62/3e/c6decd41e58ac6120827a7bb59c82e8fb12eba6497ca6f500e2a02f0fefd/ai21-2.2.1.tar.gz
+[2024-04-22 10:36:31] INFO root fetch - processPackages [pyfem]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [pyfem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfem-0.2.0.tar.gz tmp/pyfem-0.2.1.tar.gz --markdown 20240422/p/pyfem/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [kclvm]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [kclvm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kclvm-0.8.0b1.tar.gz tmp/kclvm-0.8.5.tar.gz --markdown 20240422/k/kclvm/0.8.0b1-0.8.5/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [noaatsi]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [noaatsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noaatsi-0.0.1.tar.gz tmp/noaatsi-0.0.2.tar.gz --markdown 20240422/n/noaatsi/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 10:36:31] INFO root fetch - processPackages [ai21]: executing diffoscope
+[2024-04-22 10:36:31] INFO root fetch - processPackages [ai21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai21-2.2.0rc2.tar.gz tmp/ai21-2.2.1.tar.gz --markdown 20240422/a/ai21/2.2.0rc2-2.2.1/README.md --exclude *.pyd
+[2024-04-22 10:36:32] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-0.0.8.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [nonebot-plugin-hx-yinying]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-hx-yinying-0.0.9.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hx-yinying]: success
+[2024-04-22 10:36:32] INFO root fetch - processPackages [spiderwebai-py]: Remove: archive file [/home/abi/fetcher/tmp/spiderwebai-py-0.1.2.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [spiderwebai-py]: Remove: archive file [/home/abi/fetcher/tmp/spiderwebai-py-0.1.3.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [spiderwebai-py]: success
+[2024-04-22 10:36:32] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.6.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.7.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [django-log-inspector]: success
+[2024-04-22 10:36:32] INFO root fetch - processPackages [DLMS-SPODES-client]: Remove: archive file [/home/abi/fetcher/tmp/DLMS_SPODES_client-0.8.4.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [DLMS-SPODES-client]: Remove: archive file [/home/abi/fetcher/tmp/DLMS_SPODES_client-0.8.5.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [DLMS-SPODES-client]: success
+[2024-04-22 10:36:32] INFO root fetch - processPackages [noaatsi]: Remove: archive file [/home/abi/fetcher/tmp/noaatsi-0.0.1.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [noaatsi]: Remove: archive file [/home/abi/fetcher/tmp/noaatsi-0.0.2.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [noaatsi]: success
+[2024-04-22 10:36:32] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.2.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.3.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [fisspy]: success
+[2024-04-22 10:36:32] INFO root fetch - processPackages [ai21]: Remove: archive file [/home/abi/fetcher/tmp/ai21-2.2.0rc2.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [ai21]: Remove: archive file [/home/abi/fetcher/tmp/ai21-2.2.1.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [ai21]: success
+[2024-04-22 10:36:32] INFO root fetch - processPackages [pyfem]: Remove: archive file [/home/abi/fetcher/tmp/pyfem-0.2.0.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - processPackages [pyfem]: Remove: archive file [/home/abi/fetcher/tmp/pyfem-0.2.1.tar.gz]
+[2024-04-22 10:36:32] INFO root fetch - main [MainThread]: End processing [pyfem]: success
+[2024-04-22 10:36:33] INFO root fetch - processPackages [kclvm]: Remove: archive file [/home/abi/fetcher/tmp/kclvm-0.8.0b1.tar.gz]
+[2024-04-22 10:36:33] INFO root fetch - processPackages [kclvm]: Remove: archive file [/home/abi/fetcher/tmp/kclvm-0.8.5.tar.gz]
+[2024-04-22 10:36:33] INFO root fetch - main [MainThread]: End processing [kclvm]: success
+[2024-04-22 10:36:33] INFO root fetch - main [MainThread]: Store serial: [22874163]
