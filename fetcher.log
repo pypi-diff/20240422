@@ -10357,3 +10357,90 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:26:23] INFO root fetch - processPackages [project-master]: Remove: archive file [/home/abi/fetcher/tmp/project_master-1.1.tar.gz]
 [2024-04-22 11:26:23] INFO root fetch - main [MainThread]: End processing [project-master]: success
 [2024-04-22 11:26:23] INFO root fetch - main [MainThread]: Store serial: [22874715]
+[2024-04-22 11:28:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874715]
+[2024-04-22 11:28:33] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ziptimezone
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vvm-lib
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wangbindl-test-001
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yeref
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sarus-data-spec-public
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mypy-dev
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: puerml
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ignutils
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: project-master
+[2024-04-22 11:28:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ih-common
+[2024-04-22 11:28:34] INFO root fetch - processPackages [puerml]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [project-master]: New version: [1.1] Old Version: [1.0]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ih-common]: New version: [2.8.0] Old Version: [2.7.1]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [vvm-lib]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.9] Old Version: [0.10.8]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [yeref]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-22 11:28:34] WARNING root fetch - processPackages [wangbindl-test-001]: Skipping, unable to determine old version
+[2024-04-22 11:28:34] INFO root fetch - main [MainThread]: End processing [wangbindl-test-001] error
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ignutils]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [mypy-dev]: New version: [1.9.0b1] Old Version: [1.10.0b1]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [sarus-data-spec-public]: New version: [4.0.0.dev6] Old Version: [4.0.0.dev5]
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/3f/d8/cec168ca5a4565430e2c5f107439bd7dcb47e0257b71d3baa3f99a36a704/ziptimezone-0.10.8.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/4d/0c/cf8504e53ab0ecc31714dd7033f42cbb6b0de8dfd679755465688b66f914/ih_common-2.7.1.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [vvm-lib]: Downloading https://files.pythonhosted.org/packages/90/2a/b1be80b7c855ba937b90974a2b5b82a4019d37a41dd9f12d780c27ed7085/vvm_lib-0.4.1.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/ec/cb/204e6fbe233bbb61cf29c1b491e8c638c8a843edc47fb4e1d8cc8c26608c/yeref-0.9.8.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/9b/9b/2b49689ca82ad7274847dcb0a2ece1acec9e10c71b3fb78a678e577edc15/puerml-0.1.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [project-master]: Downloading https://files.pythonhosted.org/packages/52/b6/5c0a879981212d654f9bcc83636c174cd02270bf80d82b227eede5da6c00/project_master-1.0.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [sarus-data-spec-public]: Downloading https://files.pythonhosted.org/packages/a6/c3/baf41fe13cf895e1fd0bbe082601d4757b34d178f1efec36ffee0bbf32ad/sarus_data_spec_public-4.0.0.dev5.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ignutils]: Downloading https://files.pythonhosted.org/packages/d5/cf/743255d9d50f9be7823d3a27e8e72a4f63b72eb2f83b9da405deb32e341b/ignutils-0.0.7.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [mypy-dev]: Downloading https://files.pythonhosted.org/packages/9e/40/831e0640410f98f0949d5a84013d083bb9ec2f768bb7021cdf1d9e984951/mypy_dev-1.10.0b1-cp39-cp39-macosx_11_0_arm64.whl
+[2024-04-22 11:28:34] INFO root fetch - processPackages [vvm-lib]: Downloading https://files.pythonhosted.org/packages/55/a1/3aa210343872b33986ece29957426bc51bc61a28d7dbf8d3aeb5d657cca9/vvm_lib-0.4.2.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/37/56/56af585e51da9a974b871731c3a293e02d9df6211d0f51f48aef65de6085/ih_common-2.8.0.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/bf/21/e5b3da6eca2ad05e0174b86e5e3e4f7e036ba1aeef5692c1dad9d4f645a7/ziptimezone-0.10.9.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [yeref]: Downloading https://files.pythonhosted.org/packages/01/13/0f11bb3dfb27aaf16ed48b0046f50ac65b1fde32662fbc314d53e2558b2d/yeref-0.9.9.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [project-master]: Downloading https://files.pythonhosted.org/packages/fb/f1/ec2b020d8b9662acc34e2974b00b3a0d3fc8c292e4c56adbc0d3661b4f75/project_master-1.1.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [vvm-lib]: executing diffoscope
+[2024-04-22 11:28:34] INFO root fetch - processPackages [vvm-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vvm_lib-0.4.1.tar.gz tmp/vvm_lib-0.4.2.tar.gz --markdown 20240422/v/vvm-lib/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.8.tar.gz tmp/ziptimezone-0.10.9.tar.gz --markdown 20240422/z/ziptimezone/0.10.8-0.10.9/README.md --exclude *.pyd
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ih-common]: executing diffoscope
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ih-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ih_common-2.7.1.tar.gz tmp/ih_common-2.8.0.tar.gz --markdown 20240422/i/ih-common/2.7.1-2.8.0/README.md --exclude *.pyd
+[2024-04-22 11:28:34] INFO root fetch - processPackages [puerml]: Downloading https://files.pythonhosted.org/packages/87/83/e0b8bf702362076485d5b4ade8b2c9eae14e68a2641c70942b34308209fb/puerml-0.1.1.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [project-master]: executing diffoscope
+[2024-04-22 11:28:34] INFO root fetch - processPackages [project-master]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project_master-1.0.tar.gz tmp/project_master-1.1.tar.gz --markdown 20240422/p/project-master/1.0-1.1/README.md --exclude *.pyd
+[2024-04-22 11:28:34] INFO root fetch - processPackages [yeref]: executing diffoscope
+[2024-04-22 11:28:34] INFO root fetch - processPackages [yeref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yeref-0.9.8.tar.gz tmp/yeref-0.9.9.tar.gz --markdown 20240422/y/yeref/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-22 11:28:34] INFO root fetch - processPackages [sarus-data-spec-public]: Downloading https://files.pythonhosted.org/packages/5f/c5/469663f75847a545cd515af0559a48782d2f1aaf82bc3f7247c0bd6bdbf0/sarus_data_spec_public-4.0.0.dev6.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [ignutils]: Downloading https://files.pythonhosted.org/packages/8c/d9/dd9d9ca0ccbac3e373ddc7acbf321a8f68f6f32fade3ff8e0d821998b028/ignutils-0.0.8.tar.gz
+[2024-04-22 11:28:34] INFO root fetch - processPackages [puerml]: executing diffoscope
+[2024-04-22 11:28:34] INFO root fetch - processPackages [puerml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/puerml-0.1.tar.gz tmp/puerml-0.1.1.tar.gz --markdown 20240422/p/puerml/0.1-0.1.1/README.md --exclude *.pyd
+[2024-04-22 11:28:34] INFO root fetch - processPackages [sarus-data-spec-public]: executing diffoscope
+[2024-04-22 11:28:34] INFO root fetch - processPackages [sarus-data-spec-public]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarus_data_spec_public-4.0.0.dev5.tar.gz tmp/sarus_data_spec_public-4.0.0.dev6.tar.gz --markdown 20240422/s/sarus-data-spec-public/4.0.0.dev5-4.0.0.dev6/README.md --exclude *.pyd
+[2024-04-22 11:28:35] INFO root fetch - processPackages [ignutils]: executing diffoscope
+[2024-04-22 11:28:35] INFO root fetch - processPackages [ignutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ignutils-0.0.7.tar.gz tmp/ignutils-0.0.8.tar.gz --markdown 20240422/i/ignutils/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 11:28:35] INFO root fetch - processPackages [vvm-lib]: Remove: archive file [/home/abi/fetcher/tmp/vvm_lib-0.4.1.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - processPackages [vvm-lib]: Remove: archive file [/home/abi/fetcher/tmp/vvm_lib-0.4.2.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - main [MainThread]: End processing [vvm-lib]: success
+[2024-04-22 11:28:35] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.8.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.9.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-22 11:28:35] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - processPackages [puerml]: Remove: archive file [/home/abi/fetcher/tmp/puerml-0.1.1.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - main [MainThread]: End processing [puerml]: success
+[2024-04-22 11:28:35] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.7.1.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.8.0.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - main [MainThread]: End processing [ih-common]: success
+[2024-04-22 11:28:35] INFO root fetch - processPackages [project-master]: Remove: archive file [/home/abi/fetcher/tmp/project_master-1.0.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - processPackages [project-master]: Remove: archive file [/home/abi/fetcher/tmp/project_master-1.1.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - main [MainThread]: End processing [project-master]: success
+[2024-04-22 11:28:35] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.8.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - processPackages [yeref]: Remove: archive file [/home/abi/fetcher/tmp/yeref-0.9.9.tar.gz]
+[2024-04-22 11:28:35] INFO root fetch - main [MainThread]: End processing [yeref]: success
+[2024-04-22 11:28:36] INFO root fetch - processPackages [ignutils]: Remove: archive file [/home/abi/fetcher/tmp/ignutils-0.0.7.tar.gz]
+[2024-04-22 11:28:36] INFO root fetch - processPackages [ignutils]: Remove: archive file [/home/abi/fetcher/tmp/ignutils-0.0.8.tar.gz]
+[2024-04-22 11:28:36] INFO root fetch - main [MainThread]: End processing [ignutils]: success
+[2024-04-22 11:28:36] INFO root fetch - processPackages [sarus-data-spec-public]: Remove: archive file [/home/abi/fetcher/tmp/sarus_data_spec_public-4.0.0.dev5.tar.gz]
+[2024-04-22 11:28:36] INFO root fetch - processPackages [sarus-data-spec-public]: Remove: archive file [/home/abi/fetcher/tmp/sarus_data_spec_public-4.0.0.dev6.tar.gz]
+[2024-04-22 11:28:36] INFO root fetch - main [MainThread]: End processing [sarus-data-spec-public]: success
+[2024-04-22 11:28:40] INFO root fetch - processPackages [mypy-dev]: Downloading https://files.pythonhosted.org/packages/0a/c9/b1cb7aa83f1f8021ba21b86d30cc467ad15491547ea48cff030d07f4d858/mypy-dev-1.9.0b1.tar.gz
+[2024-04-22 11:28:40] INFO root fetch - processPackages [mypy-dev]: executing diffoscope
+[2024-04-22 11:28:40] INFO root fetch - processPackages [mypy-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypy_dev-1.10.0b1-cp39-cp39-macosx_11_0_arm64.whl.zip tmp/mypy-dev-1.9.0b1.tar.gz --markdown 20240422/m/mypy-dev/1.10.0b1-1.9.0b1/README.md --exclude *.pyd
+[2024-04-22 11:28:49] INFO root fetch - processPackages [mypy-dev]: Remove: archive file [/home/abi/fetcher/tmp/mypy_dev-1.10.0b1-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-04-22 11:28:49] INFO root fetch - processPackages [mypy-dev]: Remove: archive file [/home/abi/fetcher/tmp/mypy-dev-1.9.0b1.tar.gz]
+[2024-04-22 11:28:49] INFO root fetch - main [MainThread]: End processing [mypy-dev]: success
+[2024-04-22 11:28:49] INFO root fetch - main [MainThread]: Store serial: [22874767]
