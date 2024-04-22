@@ -4318,3 +4318,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:51:15] INFO root fetch - processPackages [glass-engine]: Remove: archive file [/home/abi/fetcher/tmp/glass_engine-0.1.9.tar.gz]
 [2024-04-22 05:51:15] INFO root fetch - main [MainThread]: End processing [glass-engine]: success
 [2024-04-22 05:51:15] INFO root fetch - main [MainThread]: Store serial: [22871793]
+[2024-04-22 05:53:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871793]
+[2024-04-22 05:53:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 05:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antchain-bot
+[2024-04-22 05:53:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spelunker
+[2024-04-22 05:53:25] INFO root fetch - processPackages [spelunker]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-22 05:53:25] INFO root fetch - processPackages [spelunker]: Downloading https://files.pythonhosted.org/packages/4d/21/f8aa576ec6a9d8a532ecc104e5c1e4045c40fbd7ccbb8f9ebd439a9eff37/spelunker-1.1.8.tar.gz
+[2024-04-22 05:53:25] INFO root fetch - processPackages [antchain-bot]: New version: [1.9.8] Old Version: [1.9.7]
+[2024-04-22 05:53:26] INFO root fetch - processPackages [spelunker]: Downloading https://files.pythonhosted.org/packages/7d/62/574227f9dbe7598bcf5b443ffc335dce87383e422c490c1fc968e1476154/spelunker-1.1.9.tar.gz
+[2024-04-22 05:53:26] INFO root fetch - processPackages [antchain-bot]: Downloading https://files.pythonhosted.org/packages/0d/86/cbf1b955dbc338cc6302fd0ed42f2ae42c1245a00c6439e1fba6cae53d92/antchain_bot-1.9.7.tar.gz
+[2024-04-22 05:53:26] INFO root fetch - processPackages [spelunker]: executing diffoscope
+[2024-04-22 05:53:26] INFO root fetch - processPackages [spelunker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spelunker-1.1.8.tar.gz tmp/spelunker-1.1.9.tar.gz --markdown 20240422/s/spelunker/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-22 05:53:26] INFO root fetch - processPackages [antchain-bot]: Downloading https://files.pythonhosted.org/packages/fa/96/2ef07a099db771e78580bcb8a6f9269b6404019fd3aefd68b80738181db3/antchain_bot-1.9.8.tar.gz
+[2024-04-22 05:53:26] INFO root fetch - processPackages [antchain-bot]: executing diffoscope
+[2024-04-22 05:53:26] INFO root fetch - processPackages [antchain-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antchain_bot-1.9.7.tar.gz tmp/antchain_bot-1.9.8.tar.gz --markdown 20240422/a/antchain-bot/1.9.7-1.9.8/README.md --exclude *.pyd
+[2024-04-22 05:53:26] INFO root fetch - processPackages [spelunker]: Remove: archive file [/home/abi/fetcher/tmp/spelunker-1.1.8.tar.gz]
+[2024-04-22 05:53:26] INFO root fetch - processPackages [spelunker]: Remove: archive file [/home/abi/fetcher/tmp/spelunker-1.1.9.tar.gz]
+[2024-04-22 05:53:26] INFO root fetch - main [MainThread]: End processing [spelunker]: success
+[2024-04-22 05:53:27] INFO root fetch - processPackages [antchain-bot]: Remove: archive file [/home/abi/fetcher/tmp/antchain_bot-1.9.7.tar.gz]
+[2024-04-22 05:53:27] INFO root fetch - processPackages [antchain-bot]: Remove: archive file [/home/abi/fetcher/tmp/antchain_bot-1.9.8.tar.gz]
+[2024-04-22 05:53:27] INFO root fetch - main [MainThread]: End processing [antchain-bot]: success
+[2024-04-22 05:53:27] INFO root fetch - main [MainThread]: Store serial: [22871799]
