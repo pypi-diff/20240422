@@ -8735,3 +8735,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:18:49] INFO root fetch - processPackages [nctoolkit]: Remove: archive file [/home/abi/fetcher/tmp/nctoolkit-1.1.9.tar.gz]
 [2024-04-22 10:18:49] INFO root fetch - main [MainThread]: End processing [nctoolkit]: success
 [2024-04-22 10:18:49] INFO root fetch - main [MainThread]: Store serial: [22873977]
+[2024-04-22 10:20:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873977]
+[2024-04-22 10:20:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 10:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: multiversx-sdk-cli
+[2024-04-22 10:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snk-cli
+[2024-04-22 10:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pygpt-net
+[2024-04-22 10:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: devicetorch
+[2024-04-22 10:20:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyqqq-cli
+[2024-04-22 10:20:58] INFO root fetch - processPackages [devicetorch]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-22 10:20:58] INFO root fetch - processPackages [pyqqq-cli]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-22 10:20:58] INFO root fetch - processPackages [snk-cli]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-04-22 10:20:58] INFO root fetch - processPackages [multiversx-sdk-cli]: New version: [9.5.4] Old Version: [9.5.3]
+[2024-04-22 10:20:58] INFO root fetch - processPackages [pygpt-net]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-04-22 10:20:58] INFO root fetch - processPackages [devicetorch]: Downloading https://files.pythonhosted.org/packages/bf/30/4d762f62bfd02baee9b3b11a19b47e01173ea1dc60be131087f9c095a903/devicetorch-0.1.4.tar.gz
+[2024-04-22 10:20:58] INFO root fetch - processPackages [snk-cli]: Downloading https://files.pythonhosted.org/packages/f2/31/541b5cf1646d0a4b00f6663c0376e643f8bef6845a5d8f5cbb041e2f83d1/snk_cli-0.1.4.tar.gz
+[2024-04-22 10:20:58] INFO root fetch - processPackages [multiversx-sdk-cli]: Downloading https://files.pythonhosted.org/packages/e4/81/7fcb22c1b8b19e4dd264a28b5186eaf0173dcaa70896d94d8b7034ecf3ab/multiversx_sdk_cli-9.5.3.tar.gz
+[2024-04-22 10:20:58] INFO root fetch - processPackages [pyqqq-cli]: Downloading https://files.pythonhosted.org/packages/25/5a/cd5b6f6cb573c6e6d2e97c360a9ead5264d3fe9a7f68fb066c5c5757f19c/pyqqq_cli-0.2.5.tar.gz
+[2024-04-22 10:20:58] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/a5/de/e40709b6067cd6a2fe2ce05bb561b0d9d4c91f6cd91f7b3c4bd151d18a9b/pygpt_net-2.1.8.tar.gz
+[2024-04-22 10:20:59] INFO root fetch - processPackages [snk-cli]: Downloading https://files.pythonhosted.org/packages/54/ea/855f55f778d3acf3226649fabf0b008f7869e66dc7b6156d305a2964641e/snk_cli-0.2.0.tar.gz
+[2024-04-22 10:20:59] INFO root fetch - processPackages [devicetorch]: Downloading https://files.pythonhosted.org/packages/33/3f/9286d9947396f15eeafe68ee90c8078067b05f614fa21411108881647596/devicetorch-0.1.5.tar.gz
+[2024-04-22 10:20:59] INFO root fetch - processPackages [multiversx-sdk-cli]: Downloading https://files.pythonhosted.org/packages/8d/4c/5f7c8ae62ab5bc48fceb9629410a37398c6fe0c719a8b74cc7b52f93c5bc/multiversx_sdk_cli-9.5.4.tar.gz
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pyqqq-cli]: Downloading https://files.pythonhosted.org/packages/58/3c/82c565f4d039f7219da396f2117440d91b784435131c7f6a03d74afa4b7e/pyqqq_cli-0.2.6.tar.gz
+[2024-04-22 10:20:59] INFO root fetch - processPackages [snk-cli]: executing diffoscope
+[2024-04-22 10:20:59] INFO root fetch - processPackages [snk-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snk_cli-0.1.4.tar.gz tmp/snk_cli-0.2.0.tar.gz --markdown 20240422/s/snk-cli/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pygpt-net]: Downloading https://files.pythonhosted.org/packages/b1/0c/70ca3376ad87325507daa188a0b208ac8aba51d8f326cbde31d57835c897/pygpt_net-2.1.9.tar.gz
+[2024-04-22 10:20:59] INFO root fetch - processPackages [multiversx-sdk-cli]: executing diffoscope
+[2024-04-22 10:20:59] INFO root fetch - processPackages [multiversx-sdk-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiversx_sdk_cli-9.5.3.tar.gz tmp/multiversx_sdk_cli-9.5.4.tar.gz --markdown 20240422/m/multiversx-sdk-cli/9.5.3-9.5.4/README.md --exclude *.pyd
+[2024-04-22 10:20:59] INFO root fetch - processPackages [devicetorch]: executing diffoscope
+[2024-04-22 10:20:59] INFO root fetch - processPackages [devicetorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devicetorch-0.1.4.tar.gz tmp/devicetorch-0.1.5.tar.gz --markdown 20240422/d/devicetorch/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pyqqq-cli]: executing diffoscope
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pyqqq-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqqq_cli-0.2.5.tar.gz tmp/pyqqq_cli-0.2.6.tar.gz --markdown 20240422/p/pyqqq-cli/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pygpt-net]: executing diffoscope
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pygpt-net]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygpt_net-2.1.8.tar.gz tmp/pygpt_net-2.1.9.tar.gz --markdown 20240422/p/pygpt-net/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-04-22 10:20:59] INFO root fetch - processPackages [devicetorch]: Remove: archive file [/home/abi/fetcher/tmp/devicetorch-0.1.4.tar.gz]
+[2024-04-22 10:20:59] INFO root fetch - processPackages [devicetorch]: Remove: archive file [/home/abi/fetcher/tmp/devicetorch-0.1.5.tar.gz]
+[2024-04-22 10:20:59] INFO root fetch - main [MainThread]: End processing [devicetorch]: success
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pyqqq-cli]: Remove: archive file [/home/abi/fetcher/tmp/pyqqq_cli-0.2.5.tar.gz]
+[2024-04-22 10:20:59] INFO root fetch - processPackages [pyqqq-cli]: Remove: archive file [/home/abi/fetcher/tmp/pyqqq_cli-0.2.6.tar.gz]
+[2024-04-22 10:20:59] INFO root fetch - main [MainThread]: End processing [pyqqq-cli]: success
+[2024-04-22 10:20:59] INFO root fetch - processPackages [snk-cli]: Remove: archive file [/home/abi/fetcher/tmp/snk_cli-0.1.4.tar.gz]
+[2024-04-22 10:20:59] INFO root fetch - processPackages [snk-cli]: Remove: archive file [/home/abi/fetcher/tmp/snk_cli-0.2.0.tar.gz]
+[2024-04-22 10:20:59] INFO root fetch - main [MainThread]: End processing [snk-cli]: success
+[2024-04-22 10:21:00] INFO root fetch - processPackages [multiversx-sdk-cli]: Remove: archive file [/home/abi/fetcher/tmp/multiversx_sdk_cli-9.5.3.tar.gz]
+[2024-04-22 10:21:00] INFO root fetch - processPackages [multiversx-sdk-cli]: Remove: archive file [/home/abi/fetcher/tmp/multiversx_sdk_cli-9.5.4.tar.gz]
+[2024-04-22 10:21:00] INFO root fetch - main [MainThread]: End processing [multiversx-sdk-cli]: success
+[2024-04-22 10:21:02] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.8.tar.gz]
+[2024-04-22 10:21:02] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
+[2024-04-22 10:21:02] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
+[2024-04-22 10:21:02] INFO root fetch - main [MainThread]: Store serial: [22873992]
