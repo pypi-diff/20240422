@@ -7129,3 +7129,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:54:47] INFO root fetch - processPackages [odoo-addon-web-tree-many2one-clickable]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_tree_many2one_clickable-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-04-22 08:54:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-tree-many2one-clickable]: success
 [2024-04-22 08:54:47] INFO root fetch - main [MainThread]: Store serial: [22872826]
+[2024-04-22 08:56:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872826]
+[2024-04-22 08:56:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 08:56:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wah
+[2024-04-22 08:56:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: core-pro
+[2024-04-22 08:56:56] INFO root fetch - processPackages [wah]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 08:56:56] INFO root fetch - processPackages [core-pro]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:56:57] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/1e/98/86b56f53d2270da5a315b2f0d5733e61fd0dabbbde1d17bcff2dd938939e/wah-0.1.8.tar.gz
+[2024-04-22 08:56:57] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/dc/86/b3c6a8d290835afc0d7b1b25dde8bd558795bdce03403c0c90b2e7da9dff/core_pro-0.0.8.tar.gz
+[2024-04-22 08:56:57] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/6c/57/7be641139065b67640542a312a3988d0a93024cdc145ea667b7e8d432eb8/wah-0.1.9.tar.gz
+[2024-04-22 08:56:57] INFO root fetch - processPackages [core-pro]: Downloading https://files.pythonhosted.org/packages/6f/4e/6f2935c9906443317c8d830ec5b4f1c67d988d87345c4ae116a0a613c079/core_pro-0.0.9.tar.gz
+[2024-04-22 08:56:57] INFO root fetch - processPackages [wah]: executing diffoscope
+[2024-04-22 08:56:57] INFO root fetch - processPackages [wah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wah-0.1.8.tar.gz tmp/wah-0.1.9.tar.gz --markdown 20240422/w/wah/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 08:56:57] INFO root fetch - processPackages [core-pro]: executing diffoscope
+[2024-04-22 08:56:57] INFO root fetch - processPackages [core-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core_pro-0.0.8.tar.gz tmp/core_pro-0.0.9.tar.gz --markdown 20240422/c/core-pro/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:56:58] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.8.tar.gz]
+[2024-04-22 08:56:58] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
+[2024-04-22 08:56:58] INFO root fetch - main [MainThread]: End processing [wah]: success
+[2024-04-22 08:56:58] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.8.tar.gz]
+[2024-04-22 08:56:58] INFO root fetch - processPackages [core-pro]: Remove: archive file [/home/abi/fetcher/tmp/core_pro-0.0.9.tar.gz]
+[2024-04-22 08:56:58] INFO root fetch - main [MainThread]: End processing [core-pro]: success
+[2024-04-22 08:56:58] INFO root fetch - main [MainThread]: Store serial: [22872831]
