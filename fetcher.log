@@ -8660,3 +8660,78 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:16:38] INFO root fetch - processPackages [hera-workflows]: Remove: archive file [/home/abi/fetcher/tmp/hera_workflows-5.9.0.tar.gz]
 [2024-04-22 10:16:38] INFO root fetch - main [MainThread]: End processing [hera-workflows]: success
 [2024-04-22 10:16:38] INFO root fetch - main [MainThread]: Store serial: [22873953]
+[2024-04-22 10:18:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873953]
+[2024-04-22 10:18:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nctoolkit
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-snippets
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synthx
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ayon-python-api
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polly-python
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sdh.otl
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vud4
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: corebridge
+[2024-04-22 10:18:46] INFO root fetch - processPackages [polly-python]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-22 10:18:46] INFO root fetch - processPackages [sdh.otl]: New version: [1.0.0] Old Version: [0.0.5]
+[2024-04-22 10:18:46] INFO root fetch - processPackages [ayon-python-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-22 10:18:46] INFO root fetch - processPackages [synthx]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-22 10:18:46] INFO root fetch - processPackages [vud4]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-22 10:18:46] INFO root fetch - processPackages [nctoolkit]: New version: [1.1.9] Old Version: [1.1.7]
+[2024-04-22 10:18:46] INFO root fetch - processPackages [corebridge]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-22 10:18:46] INFO root fetch - processPackages [python-snippets]: New version: [0.0.6] Old Version: [0.0.44]
+[2024-04-22 10:18:47] INFO root fetch - processPackages [polly-python]: Downloading https://files.pythonhosted.org/packages/c6/85/236ce76113a910e66b396faf17f9086d99155b685e40555494b62e1aad42/polly-python-1.3.0.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [sdh.otl]: Downloading https://files.pythonhosted.org/packages/86/64/a403c8894ed60a4d14da6fc7670aaca086a666edb585339a68b9be67e808/sdh.otl-0.0.5.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [ayon-python-api]: Downloading https://files.pythonhosted.org/packages/18/65/00b75721f3190a46a873bed96d1dc954ab0d89bc18882e1d4cb6270a5fb3/ayon-python-api-1.0.1.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [synthx]: Downloading https://files.pythonhosted.org/packages/17/fe/22c2c0c67039e997eb541bc95c5778a8d4f8e4cab6ea53b9e92b62a5eba3/synthx-0.3.1.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [vud4]: Downloading https://files.pythonhosted.org/packages/36/f9/21799ec05bf0780a4090b183d01d06f779b552467804b1ee9afa4059e367/vud4-0.0.3.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [corebridge]: Downloading https://files.pythonhosted.org/packages/b6/73/c129a35370c51f78a18f50fcdda025ccf2bda5adc96add0ad43e3f51a632/corebridge-0.1.0.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [python-snippets]: Downloading https://files.pythonhosted.org/packages/e5/9c/a319230b8f7529950e36bdf9762843bba0e7ce1b76823aaabdfe26e9f627/python-snippets-0.0.44.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [nctoolkit]: Downloading https://files.pythonhosted.org/packages/b7/32/ff84ad433e9fa57d664c0cd43064b8ad608236b38018df751d5486fe7d06/nctoolkit-1.1.7.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [sdh.otl]: Downloading https://files.pythonhosted.org/packages/ba/a0/51e94f548a144b1c45577b67cec1804e74ff5414b39eb6f43d8433002901/sdh_otl-1.0.0.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [ayon-python-api]: Downloading https://files.pythonhosted.org/packages/e9/4e/5d1c2a9269e025854bb6a29ba2536bdae8c27444ec3098a2e275ea4610b9/ayon-python-api-1.0.2.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [synthx]: Downloading https://files.pythonhosted.org/packages/ef/c7/affe837a0c5f4197f9bfb9ef1293be84d04e4fdad82aeeb0062531f0ba0f/synthx-0.3.2.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [polly-python]: Downloading https://files.pythonhosted.org/packages/e3/3f/7e2122ef636f9e9b3aaa2f22db78b53b361eda042c82799fd32c612f34dd/polly_python-1.4.0.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [corebridge]: Downloading https://files.pythonhosted.org/packages/23/d3/7405651cad422a62349fd408219b367d7f4ca82e102f8c2418fae59aaccb/corebridge-0.1.1.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [vud4]: Downloading https://files.pythonhosted.org/packages/a8/55/e593bdcd4f2ac2d5762a635b748d46a2557d3e1fcea8313c23bbf120c314/vud4-0.0.4.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [python-snippets]: Downloading https://files.pythonhosted.org/packages/f6/c3/913b89642369dc97ecc362717e8cc63904613fbd509b670ce64e809ffc7a/python-snippets-0.0.6.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [synthx]: executing diffoscope
+[2024-04-22 10:18:47] INFO root fetch - processPackages [synthx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synthx-0.3.1.tar.gz tmp/synthx-0.3.2.tar.gz --markdown 20240422/s/synthx/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-22 10:18:47] INFO root fetch - processPackages [nctoolkit]: Downloading https://files.pythonhosted.org/packages/0f/7d/acf04b16208482d2827e48030f236a7c8a25181661ea7d402cd7f3c4e0b5/nctoolkit-1.1.9.tar.gz
+[2024-04-22 10:18:47] INFO root fetch - processPackages [sdh.otl]: executing diffoscope
+[2024-04-22 10:18:47] INFO root fetch - processPackages [sdh.otl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdh.otl-0.0.5.tar.gz tmp/sdh_otl-1.0.0.tar.gz --markdown 20240422/s/sdh.otl/0.0.5-1.0.0/README.md --exclude *.pyd
+[2024-04-22 10:18:47] INFO root fetch - processPackages [vud4]: executing diffoscope
+[2024-04-22 10:18:47] INFO root fetch - processPackages [vud4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vud4-0.0.3.tar.gz tmp/vud4-0.0.4.tar.gz --markdown 20240422/v/vud4/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-22 10:18:47] INFO root fetch - processPackages [polly-python]: executing diffoscope
+[2024-04-22 10:18:47] INFO root fetch - processPackages [polly-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polly-python-1.3.0.tar.gz tmp/polly_python-1.4.0.tar.gz --markdown 20240422/p/polly-python/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-22 10:18:47] INFO root fetch - processPackages [ayon-python-api]: executing diffoscope
+[2024-04-22 10:18:47] INFO root fetch - processPackages [ayon-python-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ayon-python-api-1.0.1.tar.gz tmp/ayon-python-api-1.0.2.tar.gz --markdown 20240422/a/ayon-python-api/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-22 10:18:47] INFO root fetch - processPackages [corebridge]: executing diffoscope
+[2024-04-22 10:18:47] INFO root fetch - processPackages [corebridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corebridge-0.1.0.tar.gz tmp/corebridge-0.1.1.tar.gz --markdown 20240422/c/corebridge/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-22 10:18:47] INFO root fetch - processPackages [python-snippets]: executing diffoscope
+[2024-04-22 10:18:47] INFO root fetch - processPackages [python-snippets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-snippets-0.0.44.tar.gz tmp/python-snippets-0.0.6.tar.gz --markdown 20240422/p/python-snippets/0.0.44-0.0.6/README.md --exclude *.pyd
+[2024-04-22 10:18:48] INFO root fetch - processPackages [nctoolkit]: executing diffoscope
+[2024-04-22 10:18:48] INFO root fetch - processPackages [nctoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nctoolkit-1.1.7.tar.gz tmp/nctoolkit-1.1.9.tar.gz --markdown 20240422/n/nctoolkit/1.1.7-1.1.9/README.md --exclude *.pyd
+[2024-04-22 10:18:48] INFO root fetch - processPackages [corebridge]: Remove: archive file [/home/abi/fetcher/tmp/corebridge-0.1.0.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - processPackages [corebridge]: Remove: archive file [/home/abi/fetcher/tmp/corebridge-0.1.1.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - main [MainThread]: End processing [corebridge]: success
+[2024-04-22 10:18:48] INFO root fetch - processPackages [synthx]: Remove: archive file [/home/abi/fetcher/tmp/synthx-0.3.1.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - processPackages [synthx]: Remove: archive file [/home/abi/fetcher/tmp/synthx-0.3.2.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - main [MainThread]: End processing [synthx]: success
+[2024-04-22 10:18:48] INFO root fetch - processPackages [python-snippets]: Remove: archive file [/home/abi/fetcher/tmp/python-snippets-0.0.44.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - processPackages [python-snippets]: Remove: archive file [/home/abi/fetcher/tmp/python-snippets-0.0.6.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - main [MainThread]: End processing [python-snippets]: success
+[2024-04-22 10:18:48] INFO root fetch - processPackages [sdh.otl]: Remove: archive file [/home/abi/fetcher/tmp/sdh.otl-0.0.5.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - processPackages [sdh.otl]: Remove: archive file [/home/abi/fetcher/tmp/sdh_otl-1.0.0.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - main [MainThread]: End processing [sdh.otl]: success
+[2024-04-22 10:18:48] INFO root fetch - processPackages [ayon-python-api]: Remove: archive file [/home/abi/fetcher/tmp/ayon-python-api-1.0.1.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - processPackages [ayon-python-api]: Remove: archive file [/home/abi/fetcher/tmp/ayon-python-api-1.0.2.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - main [MainThread]: End processing [ayon-python-api]: success
+[2024-04-22 10:18:48] INFO root fetch - processPackages [polly-python]: Remove: archive file [/home/abi/fetcher/tmp/polly-python-1.3.0.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - processPackages [polly-python]: Remove: archive file [/home/abi/fetcher/tmp/polly_python-1.4.0.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - main [MainThread]: End processing [polly-python]: success
+[2024-04-22 10:18:48] INFO root fetch - processPackages [vud4]: Remove: archive file [/home/abi/fetcher/tmp/vud4-0.0.3.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - processPackages [vud4]: Remove: archive file [/home/abi/fetcher/tmp/vud4-0.0.4.tar.gz]
+[2024-04-22 10:18:48] INFO root fetch - main [MainThread]: End processing [vud4]: success
+[2024-04-22 10:18:49] INFO root fetch - processPackages [nctoolkit]: Remove: archive file [/home/abi/fetcher/tmp/nctoolkit-1.1.7.tar.gz]
+[2024-04-22 10:18:49] INFO root fetch - processPackages [nctoolkit]: Remove: archive file [/home/abi/fetcher/tmp/nctoolkit-1.1.9.tar.gz]
+[2024-04-22 10:18:49] INFO root fetch - main [MainThread]: End processing [nctoolkit]: success
+[2024-04-22 10:18:49] INFO root fetch - main [MainThread]: Store serial: [22873977]
