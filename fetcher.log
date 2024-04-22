@@ -5383,3 +5383,31 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:11:49] INFO root fetch - processPackages [arcpyext]: Remove: archive file [/home/abi/fetcher/tmp/arcpyext-0.7.9-py2.py3-none-any.whl.zip]
 [2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [arcpyext]: success
 [2024-04-22 07:11:49] INFO root fetch - main [MainThread]: Store serial: [22872191]
+[2024-04-22 07:13:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872191]
+[2024-04-22 07:13:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 07:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-axe
+[2024-04-22 07:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezregex
+[2024-04-22 07:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ezregex
+[2024-04-22 07:13:58] INFO root fetch - processPackages [llm-axe]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 07:13:58] INFO root fetch - processPackages [ezregex]: New version: [2.1.0] Old Version: [2.0.2]
+[2024-04-22 07:13:58] INFO root fetch - processPackages [ezregex]: New version: [2.1.0] Old Version: [2.0.2]
+[2024-04-22 07:13:58] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/47/a1/1d68be83a0e5330f322df93f981e013aa0ec2a3eba144dacfc1f5cf4976c/llm_axe-0.0.1.tar.gz
+[2024-04-22 07:13:58] INFO root fetch - processPackages [ezregex]: Downloading https://files.pythonhosted.org/packages/f6/82/a5f8a4cb2fc24c748aa34d18171be4d72e9d2d3cade42ca7216fdc3dc34a/ezregex-2.0.2.tar.gz
+[2024-04-22 07:13:58] INFO root fetch - processPackages [ezregex]: Downloading https://files.pythonhosted.org/packages/f6/82/a5f8a4cb2fc24c748aa34d18171be4d72e9d2d3cade42ca7216fdc3dc34a/ezregex-2.0.2.tar.gz
+[2024-04-22 07:13:58] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/34/a8/7a1f9a2035517efa3e7d1c3aecdf5e5cc3eda53137e6ca7b77ad39f48142/llm_axe-0.0.2.tar.gz
+[2024-04-22 07:13:58] INFO root fetch - processPackages [llm-axe]: executing diffoscope
+[2024-04-22 07:13:58] INFO root fetch - processPackages [llm-axe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_axe-0.0.1.tar.gz tmp/llm_axe-0.0.2.tar.gz --markdown 20240422/l/llm-axe/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 07:13:58] INFO root fetch - processPackages [ezregex]: Downloading https://files.pythonhosted.org/packages/63/c0/586efb2cf6422156b7cb212cda585c29972418b2ca60ac8af49371911c28/ezregex-2.1.0.tar.gz
+[2024-04-22 07:13:58] INFO root fetch - processPackages [ezregex]: Downloading https://files.pythonhosted.org/packages/63/c0/586efb2cf6422156b7cb212cda585c29972418b2ca60ac8af49371911c28/ezregex-2.1.0.tar.gz
+[2024-04-22 07:13:59] INFO root fetch - processPackages [ezregex]: executing diffoscope
+[2024-04-22 07:13:59] INFO root fetch - processPackages [ezregex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezregex-2.0.2.tar.gz tmp/ezregex-2.1.0.tar.gz --markdown 20240422/e/ezregex/2.0.2-2.1.0/README.md --exclude *.pyd
+[2024-04-22 07:13:59] INFO root fetch - processPackages [ezregex]: executing diffoscope
+[2024-04-22 07:13:59] INFO root fetch - processPackages [ezregex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezregex-2.0.2.tar.gz tmp/ezregex-2.1.0.tar.gz --markdown 20240422/e/ezregex/2.0.2-2.1.0/README.md --exclude *.pyd
+[2024-04-22 07:13:59] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-0.0.1.tar.gz]
+[2024-04-22 07:13:59] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-0.0.2.tar.gz]
+[2024-04-22 07:13:59] INFO root fetch - main [MainThread]: End processing [llm-axe]: success
+[2024-04-22 07:14:00] INFO root fetch - processPackages [ezregex]: Remove: archive file [/home/abi/fetcher/tmp/ezregex-2.0.2.tar.gz]
+[2024-04-22 07:14:00] INFO root fetch - processPackages [ezregex]: Remove: archive file [/home/abi/fetcher/tmp/ezregex-2.1.0.tar.gz]
+[2024-04-22 07:14:00] INFO root fetch - main [MainThread]: End processing [ezregex]: success
+[2024-04-22 07:14:00] INFO root fetch - main [MainThread]: End processing [ezregex]: success
+[2024-04-22 07:14:00] INFO root fetch - main [MainThread]: Store serial: [22872200]
