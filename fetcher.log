@@ -5813,3 +5813,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:46:27] ERROR root fetch - processPackages [llm-axe]: Unable to fetch info: No such project/version 'llm-axe' 0.0.3
 [2024-04-22 07:46:27] INFO root fetch - main [MainThread]: End processing [llm-axe] error
 [2024-04-22 07:46:27] INFO root fetch - main [MainThread]: Store serial: [22872361]
+[2024-04-22 07:48:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872361]
+[2024-04-22 07:48:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 07:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spaceone-identity
+[2024-04-22 07:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: escaper-lite
+[2024-04-22 07:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mace-models
+[2024-04-22 07:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostcli
+[2024-04-22 07:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xiaoranli
+[2024-04-22 07:48:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bedrock-bot
+[2024-04-22 07:48:36] INFO root fetch - processPackages [bedrock-bot]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-22 07:48:36] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 07:48:36] INFO root fetch - processPackages [xiaoranli]: New version: [0.7.8] Old Version: [0.7.36]
+[2024-04-22 07:48:36] INFO root fetch - processPackages [mace-models]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-22 07:48:36] WARNING root fetch - processPackages [escaper-lite]: Skipping, unable to determine old version
+[2024-04-22 07:48:36] INFO root fetch - main [MainThread]: End processing [escaper-lite] error
+[2024-04-22 07:48:36] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/c8/53/807f51343de84db57ed739a89b185a704a3051077ab6a2883a8ea36c1a73/bedrock_bot-1.0.3.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [spaceone-identity]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-04-22 07:48:36] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/c7/7f/a3ad0cb7deb593f0431827192de45da0d1e022ec876df924cb0648a51d35/xiaoranli-0.7.36-py3-none-any.whl
+[2024-04-22 07:48:36] INFO root fetch - processPackages [mace-models]: Downloading https://files.pythonhosted.org/packages/f8/2c/40f86c926ee0b2479f5e78521432164344e0fc19d214e374f91aa4144909/mace_models-0.1.2.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [spaceone-identity]: Downloading https://files.pythonhosted.org/packages/f6/06/1de9a43d552682ae8e4a18d4660a13662795d5389a0b6cfde31e31aeb9c0/spaceone-identity-2.0.dev98.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-04-22 07:48:36] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240422/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 07:48:36] INFO root fetch - processPackages [bedrock-bot]: Downloading https://files.pythonhosted.org/packages/05/a6/d3e65909cfb8a630fe99da76b5b5236b696fe07f8031a373e9b2139ffa47/bedrock_bot-1.0.4.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/e9/5b/e43b6250e9f8891fffdc1165cb4f968bb072984d6dfa0c333957416e2092/xiaoranli-0.7.8-py3-none-any.whl
+[2024-04-22 07:48:36] INFO root fetch - processPackages [bedrock-bot]: executing diffoscope
+[2024-04-22 07:48:36] INFO root fetch - processPackages [bedrock-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bedrock_bot-1.0.3.tar.gz tmp/bedrock_bot-1.0.4.tar.gz --markdown 20240422/b/bedrock-bot/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-22 07:48:36] INFO root fetch - processPackages [spaceone-identity]: Downloading https://files.pythonhosted.org/packages/3a/f9/802fb8123677b99c90a587b67faa5443d403022fbbd70d8bff1c49920e02/spaceone-identity-2.0.dev99.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [mace-models]: Downloading https://files.pythonhosted.org/packages/c6/d3/2f21965989335d19e8811168dbcbc8ce88c3f3451a406681156ef3bdf861/mace_models-0.1.3.tar.gz
+[2024-04-22 07:48:36] INFO root fetch - processPackages [xiaoranli]: executing diffoscope
+[2024-04-22 07:48:36] INFO root fetch - processPackages [xiaoranli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaoranli-0.7.36-py3-none-any.whl.zip tmp/xiaoranli-0.7.8-py3-none-any.whl.zip --markdown 20240422/x/xiaoranli/0.7.36-0.7.8/README.md --exclude *.pyd
+[2024-04-22 07:48:36] INFO root fetch - processPackages [spaceone-identity]: executing diffoscope
+[2024-04-22 07:48:36] INFO root fetch - processPackages [spaceone-identity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-identity-2.0.dev98.tar.gz tmp/spaceone-identity-2.0.dev99.tar.gz --markdown 20240422/s/spaceone-identity/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-04-22 07:48:36] INFO root fetch - processPackages [mace-models]: executing diffoscope
+[2024-04-22 07:48:36] INFO root fetch - processPackages [mace-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mace_models-0.1.2.tar.gz tmp/mace_models-0.1.3.tar.gz --markdown 20240422/m/mace-models/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-22 07:48:37] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-04-22 07:48:37] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.3.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - processPackages [bedrock-bot]: Remove: archive file [/home/abi/fetcher/tmp/bedrock_bot-1.0.4.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - main [MainThread]: End processing [bedrock-bot]: success
+[2024-04-22 07:48:37] INFO root fetch - processPackages [mace-models]: Remove: archive file [/home/abi/fetcher/tmp/mace_models-0.1.2.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - processPackages [mace-models]: Remove: archive file [/home/abi/fetcher/tmp/mace_models-0.1.3.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - main [MainThread]: End processing [mace-models]: success
+[2024-04-22 07:48:37] INFO root fetch - processPackages [spaceone-identity]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-identity-2.0.dev98.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - processPackages [spaceone-identity]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-identity-2.0.dev99.tar.gz]
+[2024-04-22 07:48:37] INFO root fetch - main [MainThread]: End processing [spaceone-identity]: success
+[2024-04-22 07:48:37] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.36-py3-none-any.whl.zip]
+[2024-04-22 07:48:37] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.8-py3-none-any.whl.zip]
+[2024-04-22 07:48:37] INFO root fetch - main [MainThread]: End processing [xiaoranli]: success
+[2024-04-22 07:48:37] INFO root fetch - main [MainThread]: Store serial: [22872378]
