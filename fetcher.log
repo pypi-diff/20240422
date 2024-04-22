@@ -4218,3 +4218,26 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:38:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.20a1713756038.tar.gz]
 [2024-04-22 05:38:11] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-04-22 05:38:11] INFO root fetch - main [MainThread]: Store serial: [22871754]
+[2024-04-22 05:40:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871754]
+[2024-04-22 05:40:20] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 05:42:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871754]
+[2024-04-22 05:42:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 05:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyAibote
+[2024-04-22 05:42:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cutseq
+[2024-04-22 05:42:26] INFO root fetch - processPackages [cutseq]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-22 05:42:26] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/f7/bb/fc763d1d6e79acb201ea7db0a2a7bcf3691ca77aa51eacb36feb517a383e/cutseq-0.0.6.tar.gz
+[2024-04-22 05:42:26] INFO root fetch - processPackages [PyAibote]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-22 05:42:26] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/a9/28/22ff7fff821efa644da028b36b099c50cf289863d20524f42e6d92512e2b/PyAibote-1.4.0.tar.gz
+[2024-04-22 05:42:26] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/7a/0d/08deebbe55900e03394dcefa5c667f71cb61d7a7557e4d95e4effb934f6b/cutseq-0.0.7.tar.gz
+[2024-04-22 05:42:26] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 05:42:26] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.6.tar.gz tmp/cutseq-0.0.7.tar.gz --markdown 20240422/c/cutseq/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-22 05:42:26] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/e1/de/0561a065ea746de2dc9b5b88740b6efca079577d4c05e3281fc0564ecbc3/PyAibote-1.4.1.tar.gz
+[2024-04-22 05:42:27] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-04-22 05:42:27] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.4.0.tar.gz tmp/PyAibote-1.4.1.tar.gz --markdown 20240422/P/PyAibote/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-22 05:42:27] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.6.tar.gz]
+[2024-04-22 05:42:27] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.7.tar.gz]
+[2024-04-22 05:42:27] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 05:42:27] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.0.tar.gz]
+[2024-04-22 05:42:27] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.1.tar.gz]
+[2024-04-22 05:42:27] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-04-22 05:42:27] INFO root fetch - main [MainThread]: Store serial: [22871760]
