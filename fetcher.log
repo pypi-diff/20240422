@@ -4919,3 +4919,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:45:33] INFO root fetch - processPackages [runtool]: Remove: archive file [/home/abi/fetcher/tmp/runtool-1.0.7.tar.gz]
 [2024-04-22 06:45:33] INFO root fetch - main [MainThread]: End processing [runtool]: success
 [2024-04-22 06:45:33] INFO root fetch - main [MainThread]: Store serial: [22872011]
+[2024-04-22 06:47:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872011]
+[2024-04-22 06:47:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 06:47:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: m-scheduler-partitioning
+[2024-04-22 06:47:42] INFO root fetch - processPackages [m-scheduler-partitioning]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 06:47:42] INFO root fetch - processPackages [m-scheduler-partitioning]: Downloading https://files.pythonhosted.org/packages/76/40/741ba6bdff39920818185045f088a131f520fd4033f492a031376417478d/m_scheduler_partitioning-0.1.8.tar.gz
+[2024-04-22 06:47:43] INFO root fetch - processPackages [m-scheduler-partitioning]: Downloading https://files.pythonhosted.org/packages/2e/19/a5dd6830711dfd3522cce383414bde5dfa1023bfee8dfe72320d6d15e1ae/m_scheduler_partitioning-0.1.9.tar.gz
+[2024-04-22 06:47:43] INFO root fetch - processPackages [m-scheduler-partitioning]: executing diffoscope
+[2024-04-22 06:47:43] INFO root fetch - processPackages [m-scheduler-partitioning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m_scheduler_partitioning-0.1.8.tar.gz tmp/m_scheduler_partitioning-0.1.9.tar.gz --markdown 20240422/m/m-scheduler-partitioning/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 06:47:43] INFO root fetch - processPackages [m-scheduler-partitioning]: Remove: archive file [/home/abi/fetcher/tmp/m_scheduler_partitioning-0.1.8.tar.gz]
+[2024-04-22 06:47:43] INFO root fetch - processPackages [m-scheduler-partitioning]: Remove: archive file [/home/abi/fetcher/tmp/m_scheduler_partitioning-0.1.9.tar.gz]
+[2024-04-22 06:47:43] INFO root fetch - main [MainThread]: End processing [m-scheduler-partitioning]: success
+[2024-04-22 06:47:43] INFO root fetch - main [MainThread]: Store serial: [22872014]
