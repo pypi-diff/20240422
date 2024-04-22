@@ -2941,3 +2941,24 @@
 [2024-04-22 04:10:17] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
 [2024-04-22 04:10:17] INFO root fetch - main [MainThread]: End processing [telectron]: success
 [2024-04-22 04:10:17] INFO root fetch - main [MainThread]: Store serial: [22871191]
+[2024-04-22 04:12:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871191]
+[2024-04-22 04:12:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 04:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlx-batis
+[2024-04-22 04:12:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: finalsa-dynamo-client
+[2024-04-22 04:12:26] INFO root fetch - processPackages [finalsa-dynamo-client]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 04:12:26] INFO root fetch - processPackages [sqlx-batis]: New version: [2.1.4] Old Version: [2.1.3]
+[2024-04-22 04:12:26] INFO root fetch - processPackages [finalsa-dynamo-client]: Downloading https://files.pythonhosted.org/packages/a6/a9/875503faf9044bb21c12463b79743c5e0e72602f935c3efb9f8028c34efd/finalsa_dynamo_client-0.0.7.tar.gz
+[2024-04-22 04:12:26] INFO root fetch - processPackages [sqlx-batis]: Downloading https://files.pythonhosted.org/packages/b1/64/8780d175a1c18a587e29c4d1ded4243fddf32582630681dc1c6f851ff33f/sqlx-batis-2.1.3.tar.gz
+[2024-04-22 04:12:26] INFO root fetch - processPackages [finalsa-dynamo-client]: Downloading https://files.pythonhosted.org/packages/d7/b9/6f517777f5acfe2f554dfa80e62af835a70c6af8f33a23443592220aae93/finalsa_dynamo_client-0.0.8.tar.gz
+[2024-04-22 04:12:26] INFO root fetch - processPackages [sqlx-batis]: Downloading https://files.pythonhosted.org/packages/aa/cc/daf722bc903e869dd60fa36f72efd1065ab7ea6a97b71002e965008a9d3c/sqlx-batis-2.1.4.tar.gz
+[2024-04-22 04:12:26] INFO root fetch - processPackages [finalsa-dynamo-client]: executing diffoscope
+[2024-04-22 04:12:26] INFO root fetch - processPackages [finalsa-dynamo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finalsa_dynamo_client-0.0.7.tar.gz tmp/finalsa_dynamo_client-0.0.8.tar.gz --markdown 20240422/f/finalsa-dynamo-client/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 04:12:26] INFO root fetch - processPackages [sqlx-batis]: executing diffoscope
+[2024-04-22 04:12:26] INFO root fetch - processPackages [sqlx-batis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlx-batis-2.1.3.tar.gz tmp/sqlx-batis-2.1.4.tar.gz --markdown 20240422/s/sqlx-batis/2.1.3-2.1.4/README.md --exclude *.pyd
+[2024-04-22 04:12:27] INFO root fetch - processPackages [sqlx-batis]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-batis-2.1.3.tar.gz]
+[2024-04-22 04:12:27] INFO root fetch - processPackages [sqlx-batis]: Remove: archive file [/home/abi/fetcher/tmp/sqlx-batis-2.1.4.tar.gz]
+[2024-04-22 04:12:27] INFO root fetch - main [MainThread]: End processing [sqlx-batis]: success
+[2024-04-22 04:12:27] INFO root fetch - processPackages [finalsa-dynamo-client]: Remove: archive file [/home/abi/fetcher/tmp/finalsa_dynamo_client-0.0.7.tar.gz]
+[2024-04-22 04:12:27] INFO root fetch - processPackages [finalsa-dynamo-client]: Remove: archive file [/home/abi/fetcher/tmp/finalsa_dynamo_client-0.0.8.tar.gz]
+[2024-04-22 04:12:27] INFO root fetch - main [MainThread]: End processing [finalsa-dynamo-client]: success
+[2024-04-22 04:12:27] INFO root fetch - main [MainThread]: Store serial: [22871198]
