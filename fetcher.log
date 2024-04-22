@@ -6584,3 +6584,50 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:24:48] INFO root fetch - processPackages [perfact-zodbsync]: Remove: archive file [/home/abi/fetcher/tmp/perfact_zodbsync-23.1.1.tar.gz]
 [2024-04-22 08:24:48] INFO root fetch - main [MainThread]: End processing [perfact-zodbsync]: success
 [2024-04-22 08:24:48] INFO root fetch - main [MainThread]: Store serial: [22872630]
+[2024-04-22 08:26:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872630]
+[2024-04-22 08:26:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-account-invoice-report-grouped-by-picking
+[2024-04-22 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aacommons
+[2024-04-22 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uitestrunner-syberos
+[2024-04-22 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-partner-multi-relation
+[2024-04-22 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gy-erp-sdk-core
+[2024-04-22 08:26:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: x20
+[2024-04-22 08:26:57] INFO root fetch - processPackages [gy-erp-sdk-core]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 08:26:57] WARNING root fetch - processPackages [x20]: Skipping, unable to determine old version
+[2024-04-22 08:26:57] INFO root fetch - main [MainThread]: End processing [x20] error
+[2024-04-22 08:26:57] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.1]
+[2024-04-22 08:26:57] INFO root fetch - processPackages [gy-erp-sdk-core]: Downloading https://files.pythonhosted.org/packages/f7/74/6a95c2d25d2965cb34d2bff262c510973fc1da0f5690edc1f399cc027336/gy-erp-sdk-core-0.0.4.tar.gz
+[2024-04-22 08:26:57] INFO root fetch - processPackages [aacommons]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-22 08:26:57] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-grouped-by-picking]: New version: [14.0.1.1.7] Old Version: [14.0.1.1.6]
+[2024-04-22 08:26:57] INFO root fetch - processPackages [uitestrunner-syberos]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-22 08:26:57] INFO root fetch - processPackages [aacommons]: Downloading https://files.pythonhosted.org/packages/53/d7/579b48153bf096cf3e3433ed73fdf1d2f437769e818a15ec21916140148a/aacommons-0.2.7.tar.gz
+[2024-04-22 08:26:57] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-grouped-by-picking]: Downloading https://files.pythonhosted.org/packages/ea/76/c0e6d2dfbe53d09c971ee1a31c6fb9bebfc4f54d109e1ed811ff17c427a3/odoo14_addon_account_invoice_report_grouped_by_picking-14.0.1.1.6-py3-none-any.whl
+[2024-04-22 08:26:57] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: Downloading https://files.pythonhosted.org/packages/31/a0/c6600088aded29b78b80f571d79437b804076e52635f1aec12b17a9999b6/odoo_addon_partner_multi_relation-16.0.1.0.1-py3-none-any.whl
+[2024-04-22 08:26:57] INFO root fetch - processPackages [uitestrunner-syberos]: Downloading https://files.pythonhosted.org/packages/71/60/8a5cbd698ed2b32b06e2b8500e76fc76d67e1dbae1e5463376650a73939c/uitestrunner_syberos-2.2.8.tar.gz
+[2024-04-22 08:26:57] INFO root fetch - processPackages [gy-erp-sdk-core]: Downloading https://files.pythonhosted.org/packages/d5/4a/420032edf97c329900a2928205d39131f29bd220e9384dbb2fc74e2ccaa1/gy-erp-sdk-core-0.0.5.tar.gz
+[2024-04-22 08:26:57] WARNING root fetch - processPackages [uitestrunner-syberos]: Skipping package: exceeds size limit 61923538>=10485760
+[2024-04-22 08:26:57] INFO root fetch - main [MainThread]: End processing [uitestrunner-syberos] error
+[2024-04-22 08:26:58] INFO root fetch - processPackages [gy-erp-sdk-core]: executing diffoscope
+[2024-04-22 08:26:58] INFO root fetch - processPackages [gy-erp-sdk-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gy-erp-sdk-core-0.0.4.tar.gz tmp/gy-erp-sdk-core-0.0.5.tar.gz --markdown 20240422/g/gy-erp-sdk-core/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-grouped-by-picking]: Downloading https://files.pythonhosted.org/packages/45/db/1a0ff7afc28434f2ca635489fb1562f1787d676d52d28e87c154c7ce42ae/odoo14_addon_account_invoice_report_grouped_by_picking-14.0.1.1.7-py3-none-any.whl
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: Downloading https://files.pythonhosted.org/packages/82/04/85e240800dfab3b2f72494ceef26fb4574078e3e95d496ee67080ec27d82/odoo_addon_partner_multi_relation-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-22 08:26:58] INFO root fetch - processPackages [aacommons]: Downloading https://files.pythonhosted.org/packages/a8/c9/fb3447bdba077324125f0a62c192ed9bef65b57f3c091cf39feb3ca51c26/aacommons-0.2.8.tar.gz
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-grouped-by-picking]: executing diffoscope
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-grouped-by-picking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_invoice_report_grouped_by_picking-14.0.1.1.6-py3-none-any.whl.zip tmp/odoo14_addon_account_invoice_report_grouped_by_picking-14.0.1.1.7-py3-none-any.whl.zip --markdown 20240422/o/odoo14-addon-account-invoice-report-grouped-by-picking/14.0.1.1.6-14.0.1.1.7/README.md --exclude *.pyd
+[2024-04-22 08:26:58] INFO root fetch - processPackages [aacommons]: executing diffoscope
+[2024-04-22 08:26:58] INFO root fetch - processPackages [aacommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aacommons-0.2.7.tar.gz tmp/aacommons-0.2.8.tar.gz --markdown 20240422/a/aacommons/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: executing diffoscope
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_multi_relation-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_partner_multi_relation-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-partner-multi-relation/16.0.1.0.1-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-04-22 08:26:58] INFO root fetch - processPackages [gy-erp-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/gy-erp-sdk-core-0.0.4.tar.gz]
+[2024-04-22 08:26:58] INFO root fetch - processPackages [gy-erp-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/gy-erp-sdk-core-0.0.5.tar.gz]
+[2024-04-22 08:26:58] INFO root fetch - main [MainThread]: End processing [gy-erp-sdk-core]: success
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-grouped-by-picking]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_invoice_report_grouped_by_picking-14.0.1.1.6-py3-none-any.whl.zip]
+[2024-04-22 08:26:58] INFO root fetch - processPackages [odoo14-addon-account-invoice-report-grouped-by-picking]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_invoice_report_grouped_by_picking-14.0.1.1.7-py3-none-any.whl.zip]
+[2024-04-22 08:26:58] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-invoice-report-grouped-by-picking]: success
+[2024-04-22 08:26:59] INFO root fetch - processPackages [aacommons]: Remove: archive file [/home/abi/fetcher/tmp/aacommons-0.2.7.tar.gz]
+[2024-04-22 08:26:59] INFO root fetch - processPackages [aacommons]: Remove: archive file [/home/abi/fetcher/tmp/aacommons-0.2.8.tar.gz]
+[2024-04-22 08:26:59] INFO root fetch - main [MainThread]: End processing [aacommons]: success
+[2024-04-22 08:26:59] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_multi_relation-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-22 08:26:59] INFO root fetch - processPackages [odoo-addon-partner-multi-relation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_multi_relation-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-22 08:26:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-multi-relation]: success
+[2024-04-22 08:26:59] INFO root fetch - main [MainThread]: Store serial: [22872659]
