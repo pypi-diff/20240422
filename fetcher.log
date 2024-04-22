@@ -4713,3 +4713,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:30:13] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.9.tar.gz]
 [2024-04-22 06:30:13] INFO root fetch - main [MainThread]: End processing [cutseq]: success
 [2024-04-22 06:30:13] INFO root fetch - main [MainThread]: Store serial: [22871944]
+[2024-04-22 06:32:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871944]
+[2024-04-22 06:32:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 06:32:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oresat-dxwifi
+[2024-04-22 06:32:22] INFO root fetch - processPackages [oresat-dxwifi]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 06:32:22] INFO root fetch - processPackages [oresat-dxwifi]: Downloading https://files.pythonhosted.org/packages/ef/fa/152162195640a5b8604c2f88039d383c6176793960ad902e6d3ebcaaecee/oresat_dxwifi-0.3.2.tar.gz
+[2024-04-22 06:32:22] INFO root fetch - processPackages [oresat-dxwifi]: Downloading https://files.pythonhosted.org/packages/d0/8c/d29b0fd58e6bc80a261e911a8ced42f1a1c989861d8f49840f13f46b32c6/oresat_dxwifi-0.3.3.tar.gz
+[2024-04-22 06:32:23] INFO root fetch - processPackages [oresat-dxwifi]: executing diffoscope
+[2024-04-22 06:32:23] INFO root fetch - processPackages [oresat-dxwifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oresat_dxwifi-0.3.2.tar.gz tmp/oresat_dxwifi-0.3.3.tar.gz --markdown 20240422/o/oresat-dxwifi/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 06:32:23] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.2.tar.gz]
+[2024-04-22 06:32:23] INFO root fetch - processPackages [oresat-dxwifi]: Remove: archive file [/home/abi/fetcher/tmp/oresat_dxwifi-0.3.3.tar.gz]
+[2024-04-22 06:32:23] INFO root fetch - main [MainThread]: End processing [oresat-dxwifi]: success
+[2024-04-22 06:32:23] INFO root fetch - main [MainThread]: Store serial: [22871947]
