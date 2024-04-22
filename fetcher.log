@@ -3399,3 +3399,54 @@
 [2024-04-22 04:43:07] INFO root fetch - processPackages [tccli-intl-en]: Remove: archive file [/home/abi/fetcher/tmp/tccli-intl-en-3.0.99.1.tar.gz]
 [2024-04-22 04:43:07] INFO root fetch - main [MainThread]: End processing [tccli-intl-en]: success
 [2024-04-22 04:43:07] INFO root fetch - main [MainThread]: Store serial: [22871367]
+[2024-04-22 04:45:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871367]
+[2024-04-22 04:45:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 04:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: happyscript
+[2024-04-22 04:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scMDCF
+[2024-04-22 04:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: youtube-dl-nightly
+[2024-04-22 04:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flgo
+[2024-04-22 04:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xiaoranli
+[2024-04-22 04:45:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: profanity-api
+[2024-04-22 04:45:15] INFO root fetch - processPackages [scMDCF]: New version: [1.0.1] Old Version: [0.1.2]
+[2024-04-22 04:45:15] INFO root fetch - processPackages [youtube-dl-nightly]: New version: [2024.4.8] Old Version: [2024.4.6]
+[2024-04-22 04:45:15] INFO root fetch - processPackages [happyscript]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 04:45:16] INFO root fetch - processPackages [scMDCF]: Downloading https://files.pythonhosted.org/packages/14/90/0061ab75f9518116997867a946ecc5c2117e4987382ff27fd1444f1ad0da/scMDCF-0.1.2.tar.gz
+[2024-04-22 04:45:16] WARNING root fetch - processPackages [profanity-api]: Skipping, unable to determine old version
+[2024-04-22 04:45:16] INFO root fetch - main [MainThread]: End processing [profanity-api] error
+[2024-04-22 04:45:16] INFO root fetch - processPackages [xiaoranli]: New version: [0.7.8] Old Version: [0.7.35]
+[2024-04-22 04:45:16] INFO root fetch - processPackages [flgo]: New version: [0.2.8a0] Old Version: [0.2.8]
+[2024-04-22 04:45:16] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/c4/65/5ddf5bb177797f7dce5adb596ba84616bac6b85cf3bd6a9a5ee369771c17/xiaoranli-0.7.35-py3-none-any.whl
+[2024-04-22 04:45:16] INFO root fetch - processPackages [happyscript]: Downloading https://files.pythonhosted.org/packages/0f/1a/164872e178c54cb3987645c469267029b549154aa5512cb4671086e2f1ba/happyscript-0.0.1.tar.gz
+[2024-04-22 04:45:16] INFO root fetch - processPackages [youtube-dl-nightly]: Downloading https://files.pythonhosted.org/packages/0f/61/f882de02f0d5cd7bdce474159568eac390cc433e8243cca68570e48a9f7c/youtube_dl_nightly-2024.4.6-py2.py3-none-any.whl
+[2024-04-22 04:45:16] INFO root fetch - processPackages [scMDCF]: Downloading https://files.pythonhosted.org/packages/3a/ee/d08588c17d80c8abeba376fef087e0d10023095df4e179d8ee8ee751363f/scMDCF-1.0.1.tar.gz
+[2024-04-22 04:45:16] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/3b/9a/514f37340f0fcccbea35ac07a2ef889863b9242cb7d12d1d65e34c5441fc/flgo-0.2.8.tar.gz
+[2024-04-22 04:45:16] INFO root fetch - processPackages [scMDCF]: executing diffoscope
+[2024-04-22 04:45:16] INFO root fetch - processPackages [scMDCF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scMDCF-0.1.2.tar.gz tmp/scMDCF-1.0.1.tar.gz --markdown 20240422/s/scMDCF/0.1.2-1.0.1/README.md --exclude *.pyd
+[2024-04-22 04:45:16] INFO root fetch - processPackages [happyscript]: Downloading https://files.pythonhosted.org/packages/95/38/d4f17c928af0e80302f8562a48aae2465bbcb2f3d85b039d7426b5c15906/happyscript-0.0.2.tar.gz
+[2024-04-22 04:45:16] INFO root fetch - processPackages [flgo]: Downloading https://files.pythonhosted.org/packages/e6/67/9b2051af8325672488fc5eb000255d7c596377f6b72be0c9e7a718c83857/flgo-0.2.8a0.tar.gz
+[2024-04-22 04:45:16] INFO root fetch - processPackages [happyscript]: executing diffoscope
+[2024-04-22 04:45:16] INFO root fetch - processPackages [happyscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/happyscript-0.0.1.tar.gz tmp/happyscript-0.0.2.tar.gz --markdown 20240422/h/happyscript/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 04:45:16] INFO root fetch - processPackages [youtube-dl-nightly]: Downloading https://files.pythonhosted.org/packages/2f/7a/d58f4a5808b9964902b235abb9718d25422df653b171c32a0b0099b020be/youtube_dl_nightly-2024.4.8-py2.py3-none-any.whl
+[2024-04-22 04:45:16] INFO root fetch - processPackages [xiaoranli]: Downloading https://files.pythonhosted.org/packages/e9/5b/e43b6250e9f8891fffdc1165cb4f968bb072984d6dfa0c333957416e2092/xiaoranli-0.7.8-py3-none-any.whl
+[2024-04-22 04:45:16] INFO root fetch - processPackages [scMDCF]: Remove: archive file [/home/abi/fetcher/tmp/scMDCF-0.1.2.tar.gz]
+[2024-04-22 04:45:16] INFO root fetch - processPackages [scMDCF]: Remove: archive file [/home/abi/fetcher/tmp/scMDCF-1.0.1.tar.gz]
+[2024-04-22 04:45:16] INFO root fetch - main [MainThread]: End processing [scMDCF]: success
+[2024-04-22 04:45:17] INFO root fetch - processPackages [youtube-dl-nightly]: executing diffoscope
+[2024-04-22 04:45:17] INFO root fetch - processPackages [youtube-dl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_dl_nightly-2024.4.6-py2.py3-none-any.whl.zip tmp/youtube_dl_nightly-2024.4.8-py2.py3-none-any.whl.zip --markdown 20240422/y/youtube-dl-nightly/2024.4.6-2024.4.8/README.md --exclude *.pyd
+[2024-04-22 04:45:17] INFO root fetch - processPackages [xiaoranli]: executing diffoscope
+[2024-04-22 04:45:17] INFO root fetch - processPackages [xiaoranli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaoranli-0.7.35-py3-none-any.whl.zip tmp/xiaoranli-0.7.8-py3-none-any.whl.zip --markdown 20240422/x/xiaoranli/0.7.35-0.7.8/README.md --exclude *.pyd
+[2024-04-22 04:45:17] INFO root fetch - processPackages [happyscript]: Remove: archive file [/home/abi/fetcher/tmp/happyscript-0.0.1.tar.gz]
+[2024-04-22 04:45:17] INFO root fetch - processPackages [happyscript]: Remove: archive file [/home/abi/fetcher/tmp/happyscript-0.0.2.tar.gz]
+[2024-04-22 04:45:17] INFO root fetch - main [MainThread]: End processing [happyscript]: success
+[2024-04-22 04:45:18] INFO root fetch - processPackages [flgo]: executing diffoscope
+[2024-04-22 04:45:18] INFO root fetch - processPackages [flgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flgo-0.2.8.tar.gz tmp/flgo-0.2.8a0.tar.gz --markdown 20240422/f/flgo/0.2.8-0.2.8a0/README.md --exclude *.pyd
+[2024-04-22 04:45:18] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.35-py3-none-any.whl.zip]
+[2024-04-22 04:45:18] INFO root fetch - processPackages [xiaoranli]: Remove: archive file [/home/abi/fetcher/tmp/xiaoranli-0.7.8-py3-none-any.whl.zip]
+[2024-04-22 04:45:18] INFO root fetch - main [MainThread]: End processing [xiaoranli]: success
+[2024-04-22 04:45:19] INFO root fetch - processPackages [flgo]: Remove: archive file [/home/abi/fetcher/tmp/flgo-0.2.8.tar.gz]
+[2024-04-22 04:45:19] INFO root fetch - processPackages [flgo]: Remove: archive file [/home/abi/fetcher/tmp/flgo-0.2.8a0.tar.gz]
+[2024-04-22 04:45:19] INFO root fetch - main [MainThread]: End processing [flgo]: success
+[2024-04-22 04:45:19] INFO root fetch - processPackages [youtube-dl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/youtube_dl_nightly-2024.4.6-py2.py3-none-any.whl.zip]
+[2024-04-22 04:45:19] INFO root fetch - processPackages [youtube-dl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/youtube_dl_nightly-2024.4.8-py2.py3-none-any.whl.zip]
+[2024-04-22 04:45:19] INFO root fetch - main [MainThread]: End processing [youtube-dl-nightly]: success
+[2024-04-22 04:45:19] INFO root fetch - main [MainThread]: Store serial: [22871386]
