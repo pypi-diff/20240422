@@ -8843,3 +8843,90 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:25:29] INFO root fetch - processPackages [cmcrameri]: Remove: archive file [/home/abi/fetcher/tmp/cmcrameri-1.9.tar.gz]
 [2024-04-22 10:25:29] INFO root fetch - main [MainThread]: End processing [cmcrameri]: success
 [2024-04-22 10:25:29] INFO root fetch - main [MainThread]: Store serial: [22874027]
+[2024-04-22 10:27:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874027]
+[2024-04-22 10:27:39] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywikibot
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datatoolbox
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fix-busted-json
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: agci
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pg-logidater
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: prem-utils
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: AttosecondRayTracing
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: zonesmart-utils-fork
+[2024-04-22 10:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dataidea
+[2024-04-22 10:27:39] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [zonesmart-utils-fork]: New version: [0.5.9.9] Old Version: [0.5.9.8]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-22 10:27:39] INFO root fetch - processPackages [pg-logidater]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/1f/3c/039c94473127564e1d61c86469dc142a7a89988f07bba21541fea00682d5/zonesmart-utils-fork-0.5.9.8.tar.gz
+[2024-04-22 10:27:39] INFO root fetch - processPackages [fix-busted-json]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 10:27:39] WARNING root fetch - processPackages [AttosecondRayTracing]: Skipping, unable to determine old version
+[2024-04-22 10:27:39] INFO root fetch - main [MainThread]: End processing [AttosecondRayTracing] error
+[2024-04-22 10:27:39] INFO root fetch - processPackages [agci]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [prem-utils]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [datatoolbox]: New version: [0.6.7] Old Version: [0.6.5]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [pywikibot]: New version: [9.1.0] Old Version: [9.0.0]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [dataidea]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-22 10:27:39] INFO root fetch - processPackages [fix-busted-json]: Downloading https://files.pythonhosted.org/packages/32/75/93d154543edc4d88ca657a5246195f05acbb7bb58941bdf8d1f6e2fac0f6/fix-busted-json-0.0.8.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [agci]: Downloading https://files.pythonhosted.org/packages/5d/09/f33ab7dbb5124d6035396dca141fb0719c0a1aff4c34b0ff7807eea0c5a9/agci-0.0.1.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pg-logidater]: Downloading https://files.pythonhosted.org/packages/0d/45/3579f885d25ac0fe4afd466c5264b426c541ab4d807e530ac5fcf78521ea/pg_logidater-0.3.2.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [datatoolbox]: Downloading https://files.pythonhosted.org/packages/a3/30/77c58a911c26a05796cc3e1b76cd0088a7833914e38ea8fd6546fe33bc15/datatoolbox-0.6.5-py3-none-any.whl
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pywikibot]: Downloading https://files.pythonhosted.org/packages/af/06/7e28b4ebb1bfd176e5094807254660a35ba4a63e1ef0b050051621454722/pywikibot-9.0.0.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/c7/9f/2ff32de4eacc484eb5a9007534d13156a1b1a1a9c62233775741db20c020/zonesmart-utils-fork-0.5.9.9.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [prem-utils]: Downloading https://files.pythonhosted.org/packages/0b/c2/ef6412c36b4879b14a69ad4cafc10a7cc7f017db696d2d8e7e978238aaa9/prem-utils-0.0.7.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [dataidea]: Downloading https://files.pythonhosted.org/packages/36/71/befe990f1feffb8a495796a66e67cb35961b80fd697ef252bbc319857bf3/dataidea-0.2.3.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240422/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-22 10:27:40] INFO root fetch - processPackages [zonesmart-utils-fork]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [zonesmart-utils-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonesmart-utils-fork-0.5.9.8.tar.gz tmp/zonesmart-utils-fork-0.5.9.9.tar.gz --markdown 20240422/z/zonesmart-utils-fork/0.5.9.8-0.5.9.9/README.md --exclude *.pyd
+[2024-04-22 10:27:40] INFO root fetch - processPackages [fix-busted-json]: Downloading https://files.pythonhosted.org/packages/5d/ec/ae414e0c5b7992be5ddbb8caddb8200fed9af602b4f47a65414b58c743bb/fix-busted-json-0.0.9.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [agci]: Downloading https://files.pythonhosted.org/packages/d2/23/713fcf613504ffd2536210e49ff27b609b1c01bda04039ae1859e3de38c4/agci-0.0.2.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pg-logidater]: Downloading https://files.pythonhosted.org/packages/49/b7/389761a456d13b511b7b1c31ce138a305c5223e79f020c9c0e555ed6f47b/pg_logidater-0.3.3.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [prem-utils]: Downloading https://files.pythonhosted.org/packages/33/0f/fc806fe5db50f59926c6cd92925e6ccc6665f01f20e6ba25faabe2d2211d/prem-utils-0.0.8.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [fix-busted-json]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [fix-busted-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fix-busted-json-0.0.8.tar.gz tmp/fix-busted-json-0.0.9.tar.gz --markdown 20240422/f/fix-busted-json/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pywikibot]: Downloading https://files.pythonhosted.org/packages/8b/cc/1ba77be315d7ac19d623c813c26ffbb3e7173f2dd2b007afe071bf60ebc4/pywikibot-9.1.0.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [datatoolbox]: Downloading https://files.pythonhosted.org/packages/13/9a/2d0fbb62519bd9f68167839e3199de726799b38a94bedd39996d263270d5/datatoolbox-0.6.7.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [agci]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [agci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agci-0.0.1.tar.gz tmp/agci-0.0.2.tar.gz --markdown 20240422/a/agci/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pg-logidater]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pg-logidater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_logidater-0.3.2.tar.gz tmp/pg_logidater-0.3.3.tar.gz --markdown 20240422/p/pg-logidater/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 10:27:40] INFO root fetch - processPackages [prem-utils]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [prem-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prem-utils-0.0.7.tar.gz tmp/prem-utils-0.0.8.tar.gz --markdown 20240422/p/prem-utils/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-22 10:27:40] INFO root fetch - processPackages [dataidea]: Downloading https://files.pythonhosted.org/packages/b1/25/3ed1bda587a342706ccb1eeb3c890cebb5ff8001971700d0d9b1f1387938/dataidea-0.2.4.tar.gz
+[2024-04-22 10:27:40] INFO root fetch - processPackages [datatoolbox]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [datatoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datatoolbox-0.6.5-py3-none-any.whl.zip tmp/datatoolbox-0.6.7.tar.gz --markdown 20240422/d/datatoolbox/0.6.5-0.6.7/README.md --exclude *.pyd
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pywikibot]: executing diffoscope
+[2024-04-22 10:27:40] INFO root fetch - processPackages [pywikibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywikibot-9.0.0.tar.gz tmp/pywikibot-9.1.0.tar.gz --markdown 20240422/p/pywikibot/9.0.0-9.1.0/README.md --exclude *.pyd
+[2024-04-22 10:27:41] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-22 10:27:41] INFO root fetch - processPackages [agci]: Remove: archive file [/home/abi/fetcher/tmp/agci-0.0.1.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - processPackages [agci]: Remove: archive file [/home/abi/fetcher/tmp/agci-0.0.2.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - main [MainThread]: End processing [agci]: success
+[2024-04-22 10:27:41] INFO root fetch - processPackages [fix-busted-json]: Remove: archive file [/home/abi/fetcher/tmp/fix-busted-json-0.0.8.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - processPackages [fix-busted-json]: Remove: archive file [/home/abi/fetcher/tmp/fix-busted-json-0.0.9.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - main [MainThread]: End processing [fix-busted-json]: success
+[2024-04-22 10:27:41] INFO root fetch - processPackages [pg-logidater]: Remove: archive file [/home/abi/fetcher/tmp/pg_logidater-0.3.2.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - processPackages [pg-logidater]: Remove: archive file [/home/abi/fetcher/tmp/pg_logidater-0.3.3.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - main [MainThread]: End processing [pg-logidater]: success
+[2024-04-22 10:27:41] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.8.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.9.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
+[2024-04-22 10:27:41] INFO root fetch - processPackages [dataidea]: executing diffoscope
+[2024-04-22 10:27:41] INFO root fetch - processPackages [dataidea]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataidea-0.2.3.tar.gz tmp/dataidea-0.2.4.tar.gz --markdown 20240422/d/dataidea/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-22 10:27:41] INFO root fetch - processPackages [prem-utils]: Remove: archive file [/home/abi/fetcher/tmp/prem-utils-0.0.7.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - processPackages [prem-utils]: Remove: archive file [/home/abi/fetcher/tmp/prem-utils-0.0.8.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - main [MainThread]: End processing [prem-utils]: success
+[2024-04-22 10:27:41] INFO root fetch - processPackages [datatoolbox]: Remove: archive file [/home/abi/fetcher/tmp/datatoolbox-0.6.5-py3-none-any.whl.zip]
+[2024-04-22 10:27:41] INFO root fetch - processPackages [datatoolbox]: Remove: archive file [/home/abi/fetcher/tmp/datatoolbox-0.6.7.tar.gz]
+[2024-04-22 10:27:41] INFO root fetch - main [MainThread]: End processing [datatoolbox]: success
+[2024-04-22 10:27:42] INFO root fetch - processPackages [dataidea]: Remove: archive file [/home/abi/fetcher/tmp/dataidea-0.2.3.tar.gz]
+[2024-04-22 10:27:42] INFO root fetch - processPackages [dataidea]: Remove: archive file [/home/abi/fetcher/tmp/dataidea-0.2.4.tar.gz]
+[2024-04-22 10:27:42] INFO root fetch - main [MainThread]: End processing [dataidea]: success
+[2024-04-22 10:27:42] INFO root fetch - processPackages [pywikibot]: Remove: archive file [/home/abi/fetcher/tmp/pywikibot-9.0.0.tar.gz]
+[2024-04-22 10:27:42] INFO root fetch - processPackages [pywikibot]: Remove: archive file [/home/abi/fetcher/tmp/pywikibot-9.1.0.tar.gz]
+[2024-04-22 10:27:42] INFO root fetch - main [MainThread]: End processing [pywikibot]: success
+[2024-04-22 10:27:42] INFO root fetch - main [MainThread]: Store serial: [22874064]
