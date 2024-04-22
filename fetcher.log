@@ -4241,3 +4241,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:42:27] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.1.tar.gz]
 [2024-04-22 05:42:27] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
 [2024-04-22 05:42:27] INFO root fetch - main [MainThread]: Store serial: [22871760]
+[2024-04-22 05:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871760]
+[2024-04-22 05:44:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 05:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codefuse-muagent
+[2024-04-22 05:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biotech
+[2024-04-22 05:44:36] INFO root fetch - processPackages [biotech]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-22 05:44:36] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/a9/63/e1cd5c29ab6e9266c8adfa45d0ed96ed9b0b2758504a94413e68d125d6f4/biotech-1.1.8.tar.gz
+[2024-04-22 05:44:36] WARNING root fetch - processPackages [codefuse-muagent]: Skipping, unable to determine old version
+[2024-04-22 05:44:36] INFO root fetch - main [MainThread]: End processing [codefuse-muagent] error
+[2024-04-22 05:44:36] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/f3/e6/22f033e64b1c2a2772132ab33fbf62131137ccc802879a28cbaad90f793c/biotech-1.1.9.tar.gz
+[2024-04-22 05:44:37] INFO root fetch - processPackages [biotech]: executing diffoscope
+[2024-04-22 05:44:37] INFO root fetch - processPackages [biotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotech-1.1.8.tar.gz tmp/biotech-1.1.9.tar.gz --markdown 20240422/b/biotech/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-22 05:44:43] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.8.tar.gz]
+[2024-04-22 05:44:43] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.9.tar.gz]
+[2024-04-22 05:44:43] INFO root fetch - main [MainThread]: End processing [biotech]: success
+[2024-04-22 05:44:43] INFO root fetch - main [MainThread]: Store serial: [22871768]
