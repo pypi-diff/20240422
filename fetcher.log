@@ -5307,3 +5307,79 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:09:38] INFO root fetch - processPackages [libgzipf-python]: Remove: archive file [/home/abi/fetcher/tmp/libgzipf-python-20240422.tar.gz]
 [2024-04-22 07:09:38] INFO root fetch - main [MainThread]: End processing [libgzipf-python]: success
 [2024-04-22 07:09:38] INFO root fetch - main [MainThread]: Store serial: [22872169]
+[2024-04-22 07:11:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872169]
+[2024-04-22 07:11:47] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quant1x-trader
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lidia
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gridengine-framework
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jarguments
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jsonffi
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: elecu
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: increff-runner
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: arcpyext
+[2024-04-22 07:11:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gridengine-framework
+[2024-04-22 07:11:47] INFO root fetch - processPackages [quant1x-trader]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [increff-runner]: New version: [3.1.7] Old Version: [3.1.6]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [gridengine-framework]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [quant1x-trader]: Downloading https://files.pythonhosted.org/packages/33/6f/571674034c55c2cd52b82ee7f464b0d4113b2caf66670fd5d50603b1d22c/quant1x-trader-0.7.3.tar.gz
+[2024-04-22 07:11:47] INFO root fetch - processPackages [jarguments]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [increff-runner]: Downloading https://files.pythonhosted.org/packages/c5/34/617d65904fcf95e73c480ce8f12046e26b56be32764e7cd4952c21338616/increff_runner-3.1.6-py3-none-any.whl
+[2024-04-22 07:11:47] INFO root fetch - processPackages [lidia]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/51/1c/e19fa163f76c58bf5b56c2688a8264b344ce3c2a1184eba402216d82f055/gridengine_framework-0.7.3.tar.gz
+[2024-04-22 07:11:47] WARNING root fetch - processPackages [elecu]: Skipping, unable to determine old version
+[2024-04-22 07:11:47] INFO root fetch - main [MainThread]: End processing [elecu] error
+[2024-04-22 07:11:47] INFO root fetch - processPackages [arcpyext]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [jsonffi]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-22 07:11:47] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/51/1c/e19fa163f76c58bf5b56c2688a8264b344ce3c2a1184eba402216d82f055/gridengine_framework-0.7.3.tar.gz
+[2024-04-22 07:11:47] INFO root fetch - processPackages [jarguments]: Downloading https://files.pythonhosted.org/packages/be/40/e5bc063ae0b38e1b7a1ef95378fbac4b6444fe905189e38be09443357153/jarguments-0.0.1.tar.gz
+[2024-04-22 07:11:47] INFO root fetch - processPackages [lidia]: Downloading https://files.pythonhosted.org/packages/29/52/8f63f6094d340f11e8e93fc7dc800b731e39782f99d07dde94e159d68ab7/lidia-0.9.1.tar.gz
+[2024-04-22 07:11:47] INFO root fetch - processPackages [jsonffi]: Downloading https://files.pythonhosted.org/packages/ba/47/127713103993e228ecf95c755178a55e3a586fd4006b7e81a8b4d637668d/jsonffi-1.0.3-py3-none-any.whl
+[2024-04-22 07:11:47] INFO root fetch - processPackages [arcpyext]: Downloading https://files.pythonhosted.org/packages/af/eb/0d5f144561d2a0dab2cb717956e2051169c299d412df7da0d8730577b7b3/arcpyext-0.7.8-py2.py3-none-any.whl
+[2024-04-22 07:11:47] INFO root fetch - processPackages [increff-runner]: Downloading https://files.pythonhosted.org/packages/06/bb/1980f46492a7d8b082e0a348eb0a5e0deb5c83d0d56b58f84f6bc428a07c/increff_runner-3.1.7-py3-none-any.whl
+[2024-04-22 07:11:47] INFO root fetch - processPackages [quant1x-trader]: Downloading https://files.pythonhosted.org/packages/f2/d8/e9039ec6231e0a524c6cb388ad619fbbd0e7ece5da0a05a3f3d919c37dca/quant1x-trader-0.7.4.tar.gz
+[2024-04-22 07:11:48] INFO root fetch - processPackages [quant1x-trader]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [quant1x-trader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant1x-trader-0.7.3.tar.gz tmp/quant1x-trader-0.7.4.tar.gz --markdown 20240422/q/quant1x-trader/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/8f/13/48952c35de7a1aab19bf9cf5db4b566108242dedd1a3ab55af66518ce922/gridengine_framework-0.7.4.tar.gz
+[2024-04-22 07:11:48] INFO root fetch - processPackages [gridengine-framework]: Downloading https://files.pythonhosted.org/packages/8f/13/48952c35de7a1aab19bf9cf5db4b566108242dedd1a3ab55af66518ce922/gridengine_framework-0.7.4.tar.gz
+[2024-04-22 07:11:48] INFO root fetch - processPackages [increff-runner]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [increff-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/increff_runner-3.1.6-py3-none-any.whl.zip tmp/increff_runner-3.1.7-py3-none-any.whl.zip --markdown 20240422/i/increff-runner/3.1.6-3.1.7/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [jarguments]: Downloading https://files.pythonhosted.org/packages/58/f7/cde48c1812cb6bb9bcc7defc2dc9442b4fbbc0928565c990eb92a2053b25/jarguments-0.1.0.tar.gz
+[2024-04-22 07:11:48] INFO root fetch - processPackages [jsonffi]: Downloading https://files.pythonhosted.org/packages/27/bd/cb3d16da2d98e70d128247bc37430584b6c4b19a8a07251fe5dd05640585/jsonffi-1.0.4-py3-none-any.whl
+[2024-04-22 07:11:48] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.3.tar.gz tmp/gridengine_framework-0.7.4.tar.gz --markdown 20240422/g/gridengine-framework/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [gridengine-framework]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [gridengine-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridengine_framework-0.7.3.tar.gz tmp/gridengine_framework-0.7.4.tar.gz --markdown 20240422/g/gridengine-framework/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [lidia]: Downloading https://files.pythonhosted.org/packages/a0/72/d25c5fba000c3c53d7ec35363c54b0a35ee12db437cb1564add48a7683b5/lidia-0.9.2.tar.gz
+[2024-04-22 07:11:48] INFO root fetch - processPackages [jarguments]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [jarguments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarguments-0.0.1.tar.gz tmp/jarguments-0.1.0.tar.gz --markdown 20240422/j/jarguments/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [arcpyext]: Downloading https://files.pythonhosted.org/packages/8e/70/c8a3549a9ad665f3831b83fb3320d345e16d3687c177c70a07ba1afce80d/arcpyext-0.7.9-py2.py3-none-any.whl
+[2024-04-22 07:11:48] INFO root fetch - processPackages [jsonffi]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [jsonffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsonffi-1.0.3-py3-none-any.whl.zip tmp/jsonffi-1.0.4-py3-none-any.whl.zip --markdown 20240422/j/jsonffi/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [lidia]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [lidia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lidia-0.9.1.tar.gz tmp/lidia-0.9.2.tar.gz --markdown 20240422/l/lidia/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [arcpyext]: executing diffoscope
+[2024-04-22 07:11:48] INFO root fetch - processPackages [arcpyext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arcpyext-0.7.8-py2.py3-none-any.whl.zip tmp/arcpyext-0.7.9-py2.py3-none-any.whl.zip --markdown 20240422/a/arcpyext/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-22 07:11:48] INFO root fetch - processPackages [increff-runner]: Remove: archive file [/home/abi/fetcher/tmp/increff_runner-3.1.6-py3-none-any.whl.zip]
+[2024-04-22 07:11:48] INFO root fetch - processPackages [increff-runner]: Remove: archive file [/home/abi/fetcher/tmp/increff_runner-3.1.7-py3-none-any.whl.zip]
+[2024-04-22 07:11:48] INFO root fetch - main [MainThread]: End processing [increff-runner]: success
+[2024-04-22 07:11:49] INFO root fetch - processPackages [quant1x-trader]: Remove: archive file [/home/abi/fetcher/tmp/quant1x-trader-0.7.3.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - processPackages [quant1x-trader]: Remove: archive file [/home/abi/fetcher/tmp/quant1x-trader-0.7.4.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [quant1x-trader]: success
+[2024-04-22 07:11:49] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.3.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - processPackages [gridengine-framework]: Remove: archive file [/home/abi/fetcher/tmp/gridengine_framework-0.7.4.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 07:11:49] INFO root fetch - processPackages [jarguments]: Remove: archive file [/home/abi/fetcher/tmp/jarguments-0.0.1.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - processPackages [jarguments]: Remove: archive file [/home/abi/fetcher/tmp/jarguments-0.1.0.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [jarguments]: success
+[2024-04-22 07:11:49] INFO root fetch - processPackages [jsonffi]: Remove: archive file [/home/abi/fetcher/tmp/jsonffi-1.0.3-py3-none-any.whl.zip]
+[2024-04-22 07:11:49] INFO root fetch - processPackages [jsonffi]: Remove: archive file [/home/abi/fetcher/tmp/jsonffi-1.0.4-py3-none-any.whl.zip]
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [jsonffi]: success
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [gridengine-framework]: success
+[2024-04-22 07:11:49] INFO root fetch - processPackages [lidia]: Remove: archive file [/home/abi/fetcher/tmp/lidia-0.9.1.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - processPackages [lidia]: Remove: archive file [/home/abi/fetcher/tmp/lidia-0.9.2.tar.gz]
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [lidia]: success
+[2024-04-22 07:11:49] INFO root fetch - processPackages [arcpyext]: Remove: archive file [/home/abi/fetcher/tmp/arcpyext-0.7.8-py2.py3-none-any.whl.zip]
+[2024-04-22 07:11:49] INFO root fetch - processPackages [arcpyext]: Remove: archive file [/home/abi/fetcher/tmp/arcpyext-0.7.9-py2.py3-none-any.whl.zip]
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: End processing [arcpyext]: success
+[2024-04-22 07:11:49] INFO root fetch - main [MainThread]: Store serial: [22872191]
