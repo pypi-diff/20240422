@@ -4508,3 +4508,32 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:08:36] INFO root fetch - processPackages [metaphor-connectors]: Remove: archive file [/home/abi/fetcher/tmp/metaphor-connectors-0.9.4.tar.gz]
 [2024-04-22 06:08:36] INFO root fetch - main [MainThread]: End processing [metaphor-connectors]: success
 [2024-04-22 06:08:36] INFO root fetch - main [MainThread]: Store serial: [22871858]
+[2024-04-22 06:10:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871858]
+[2024-04-22 06:10:45] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 06:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871858]
+[2024-04-22 06:12:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 06:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-llamafile
+[2024-04-22 06:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pih-mio
+[2024-04-22 06:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spectrum-image
+[2024-04-22 06:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rentCalculationsUtility
+[2024-04-22 06:12:50] INFO root fetch - processPackages [spectrum-image]: New version: [0.3] Old Version: [0.2.5]
+[2024-04-22 06:12:50] WARNING root fetch - processPackages [rentCalculationsUtility]: Skipping, unable to determine old version
+[2024-04-22 06:12:50] INFO root fetch - main [MainThread]: End processing [rentCalculationsUtility] error
+[2024-04-22 06:12:50] WARNING root fetch - processPackages [llm-llamafile]: Skipping, unable to determine old version
+[2024-04-22 06:12:50] INFO root fetch - main [MainThread]: End processing [llm-llamafile] error
+[2024-04-22 06:12:50] INFO root fetch - processPackages [pih-mio]: New version: [0.29.1] Old Version: [0.28]
+[2024-04-22 06:12:51] INFO root fetch - processPackages [spectrum-image]: Downloading https://files.pythonhosted.org/packages/5b/5b/a4bd43da3b2dbab1e13e9ae752c7c8f4947f4a99295e6ee9786c8fd3de13/spectrum_image-0.2.5.tar.gz
+[2024-04-22 06:12:51] INFO root fetch - processPackages [pih-mio]: Downloading https://files.pythonhosted.org/packages/a5/1b/bd2d6014e85328a581701bfa8fc4b51935dd91ddd800999327fe8ccdc687/pih-mio-0.28.tar.gz
+[2024-04-22 06:12:51] INFO root fetch - processPackages [pih-mio]: Downloading https://files.pythonhosted.org/packages/a1/32/695ceb4f61469aca4bdc39b7d3ea42f78a64a35be54d4820decc3a0b543c/pih-mio-0.29.1.tar.gz
+[2024-04-22 06:12:51] INFO root fetch - processPackages [spectrum-image]: Downloading https://files.pythonhosted.org/packages/88/5d/673c36f7ccf5320728931866296df8f421567d7d48e814481838fa55ba62/spectrum_image-0.3.tar.gz
+[2024-04-22 06:12:51] INFO root fetch - processPackages [pih-mio]: executing diffoscope
+[2024-04-22 06:12:51] INFO root fetch - processPackages [pih-mio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pih-mio-0.28.tar.gz tmp/pih-mio-0.29.1.tar.gz --markdown 20240422/p/pih-mio/0.28-0.29.1/README.md --exclude *.pyd
+[2024-04-22 06:12:51] INFO root fetch - processPackages [spectrum-image]: executing diffoscope
+[2024-04-22 06:12:51] INFO root fetch - processPackages [spectrum-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spectrum_image-0.2.5.tar.gz tmp/spectrum_image-0.3.tar.gz --markdown 20240422/s/spectrum-image/0.2.5-0.3/README.md --exclude *.pyd
+[2024-04-22 06:12:52] INFO root fetch - processPackages [pih-mio]: Remove: archive file [/home/abi/fetcher/tmp/pih-mio-0.28.tar.gz]
+[2024-04-22 06:12:52] INFO root fetch - processPackages [pih-mio]: Remove: archive file [/home/abi/fetcher/tmp/pih-mio-0.29.1.tar.gz]
+[2024-04-22 06:12:52] INFO root fetch - main [MainThread]: End processing [pih-mio]: success
+[2024-04-22 06:12:52] INFO root fetch - processPackages [spectrum-image]: Remove: archive file [/home/abi/fetcher/tmp/spectrum_image-0.2.5.tar.gz]
+[2024-04-22 06:12:52] INFO root fetch - processPackages [spectrum-image]: Remove: archive file [/home/abi/fetcher/tmp/spectrum_image-0.3.tar.gz]
+[2024-04-22 06:12:52] INFO root fetch - main [MainThread]: End processing [spectrum-image]: success
+[2024-04-22 06:12:52] INFO root fetch - main [MainThread]: Store serial: [22871875]
