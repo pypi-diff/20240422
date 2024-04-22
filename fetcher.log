@@ -8458,3 +8458,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:07:55] INFO root fetch - processPackages [vectice]: Remove: archive file [/home/abi/fetcher/tmp/vectice-24.2.2.0.tar.gz]
 [2024-04-22 10:07:55] INFO root fetch - main [MainThread]: End processing [vectice]: success
 [2024-04-22 10:07:55] INFO root fetch - main [MainThread]: Store serial: [22873872]
+[2024-04-22 10:09:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873872]
+[2024-04-22 10:10:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 10:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyglove
+[2024-04-22 10:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sawsi
+[2024-04-22 10:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vision-locator
+[2024-04-22 10:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crypto_plus
+[2024-04-22 10:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-cyberfurry
+[2024-04-22 10:10:03] INFO root fetch - processPackages [crypto_plus]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-22 10:10:04] WARNING root fetch - processPackages [nonebot-plugin-cyberfurry]: Skipping, unable to determine old version
+[2024-04-22 10:10:04] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-cyberfurry] error
+[2024-04-22 10:10:04] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240421] Old Version: [0.4.5.dev20240420]
+[2024-04-22 10:10:04] INFO root fetch - processPackages [sawsi]: New version: [9.9] Old Version: [9.8]
+[2024-04-22 10:10:04] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/ac/ca/66ee057ef8b03d17ed37015e4e5713a1d84c1776cc7bf1ef8a2492f68841/pyglove-0.4.5.dev20240420.tar.gz
+[2024-04-22 10:10:04] WARNING root fetch - processPackages [vision-locator]: Skipping, unable to determine old version
+[2024-04-22 10:10:04] INFO root fetch - main [MainThread]: End processing [vision-locator] error
+[2024-04-22 10:10:04] INFO root fetch - processPackages [crypto_plus]: Downloading https://files.pythonhosted.org/packages/66/83/dd4c29ed9f9cd9a4a3b70ea640a265a7c992b6939e8e6b5ea39cc803a449/crypto_plus-1.0.3.tar.gz
+[2024-04-22 10:10:04] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/a5/89/e5230b963c36d9342bd53c4174b8b4f9595f77c5aa510614cf80ac5315a0/sawsi-9.8.tar.gz
+[2024-04-22 10:10:04] INFO root fetch - processPackages [crypto_plus]: Downloading https://files.pythonhosted.org/packages/89/5d/c9c4ca4dad032040620022625ea74945e0a0630a5bdcdb6db8144d078df1/crypto_plus-1.0.4.tar.gz
+[2024-04-22 10:10:04] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/69/c2/e945385340121de75cca5d00aa9ac99f3d874c5977239a7d7efe5e969e17/sawsi-9.9.tar.gz
+[2024-04-22 10:10:04] INFO root fetch - processPackages [crypto_plus]: executing diffoscope
+[2024-04-22 10:10:04] INFO root fetch - processPackages [crypto_plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crypto_plus-1.0.3.tar.gz tmp/crypto_plus-1.0.4.tar.gz --markdown 20240422/c/crypto_plus/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-22 10:10:04] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/66/bd/411154b7a20c932797afd0b8bfe91a0d3499bb59812f05591abafbbbcf98/pyglove-0.4.5.dev20240421.tar.gz
+[2024-04-22 10:10:04] INFO root fetch - processPackages [sawsi]: executing diffoscope
+[2024-04-22 10:10:04] INFO root fetch - processPackages [sawsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sawsi-9.8.tar.gz tmp/sawsi-9.9.tar.gz --markdown 20240422/s/sawsi/9.8-9.9/README.md --exclude *.pyd
+[2024-04-22 10:10:04] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-04-22 10:10:04] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240420.tar.gz tmp/pyglove-0.4.5.dev20240421.tar.gz --markdown 20240422/p/pyglove/0.4.5.dev20240420-0.4.5.dev20240421/README.md --exclude *.pyd
+[2024-04-22 10:10:04] INFO root fetch - processPackages [crypto_plus]: Remove: archive file [/home/abi/fetcher/tmp/crypto_plus-1.0.3.tar.gz]
+[2024-04-22 10:10:04] INFO root fetch - processPackages [crypto_plus]: Remove: archive file [/home/abi/fetcher/tmp/crypto_plus-1.0.4.tar.gz]
+[2024-04-22 10:10:04] INFO root fetch - main [MainThread]: End processing [crypto_plus]: success
+[2024-04-22 10:10:05] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.8.tar.gz]
+[2024-04-22 10:10:05] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.9.tar.gz]
+[2024-04-22 10:10:05] INFO root fetch - main [MainThread]: End processing [sawsi]: success
+[2024-04-22 10:10:05] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240420.tar.gz]
+[2024-04-22 10:10:05] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240421.tar.gz]
+[2024-04-22 10:10:05] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-04-22 10:10:05] INFO root fetch - main [MainThread]: Store serial: [22873890]
