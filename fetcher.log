@@ -8386,3 +8386,75 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:05:44] INFO root fetch - processPackages [doc2tei-CERTIC]: Remove: archive file [/home/abi/fetcher/tmp/doc2tei-CERTIC-0.0.95.tar.gz]
 [2024-04-22 10:05:44] INFO root fetch - main [MainThread]: End processing [doc2tei-CERTIC]: success
 [2024-04-22 10:05:44] INFO root fetch - main [MainThread]: Store serial: [22873827]
+[2024-04-22 10:07:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22873827]
+[2024-04-22 10:07:52] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeinterpreterapi-yayi
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compas-wood
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cognee
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pluto-client
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ngstks
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mbtiles-util
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shadowsocks-manager
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: milspend
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: zonesmart-utils-fork
+[2024-04-22 10:07:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vectice
+[2024-04-22 10:07:53] WARNING root fetch - processPackages [compas-wood]: Skipping, unable to determine old version
+[2024-04-22 10:07:53] INFO root fetch - processPackages [compas-wood]: Start processing: asgineer
+[2024-04-22 10:07:53] INFO root fetch - main [MainThread]: End processing [compas-wood] error
+[2024-04-22 10:07:53] INFO root fetch - processPackages [zonesmart-utils-fork]: New version: [0.5.9.9] Old Version: [0.5.9.8]
+[2024-04-22 10:07:53] INFO root fetch - processPackages [cognee]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-22 10:07:53] WARNING root fetch - processPackages [shadowsocks-manager]: Skipping, unable to determine old version
+[2024-04-22 10:07:53] INFO root fetch - main [MainThread]: End processing [shadowsocks-manager] error
+[2024-04-22 10:07:53] WARNING root fetch - processPackages [mbtiles-util]: Skipping, unable to determine old version
+[2024-04-22 10:07:53] WARNING root fetch - processPackages [codeinterpreterapi-yayi]: Skipping, unable to determine old version
+[2024-04-22 10:07:53] INFO root fetch - main [MainThread]: End processing [mbtiles-util] error
+[2024-04-22 10:07:53] INFO root fetch - main [MainThread]: End processing [codeinterpreterapi-yayi] error
+[2024-04-22 10:07:53] INFO root fetch - processPackages [milspend]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 10:07:53] INFO root fetch - processPackages [pluto-client]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 10:07:53] WARNING root fetch - processPackages [ngstks]: Skipping, unable to determine old version
+[2024-04-22 10:07:53] INFO root fetch - main [MainThread]: End processing [ngstks] error
+[2024-04-22 10:07:53] INFO root fetch - processPackages [vectice]: New version: [24.2.2.0] Old Version: [24.2.1.0]
+[2024-04-22 10:07:53] INFO root fetch - processPackages [asgineer]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-22 10:07:53] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/1f/3c/039c94473127564e1d61c86469dc142a7a89988f07bba21541fea00682d5/zonesmart-utils-fork-0.5.9.8.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [cognee]: Downloading https://files.pythonhosted.org/packages/74/2b/37dd3cfd63a208542125efbd7c651eb65b64beaf3fa45395a5bf3e12b3c7/cognee-0.1.2.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [pluto-client]: Downloading https://files.pythonhosted.org/packages/b9/82/7dbbe12433621dc48eef57477820199d9a820957fabc270063706027d2b5/pluto_client-0.0.5.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [milspend]: Downloading https://files.pythonhosted.org/packages/59/1c/217a577b5da3784ad6cd6a56fa509369856b34184555e3deac67a610f547/milspend-0.0.4.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [vectice]: Downloading https://files.pythonhosted.org/packages/f2/2e/22ed75344a0e6ea27f2c80d4c330aedf711ea8c80abcec88bee05af630ea/vectice-24.2.1.0.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [asgineer]: Downloading https://files.pythonhosted.org/packages/61/15/7d7657e39037f0a0009992d1fa9335decdfcaab698082e5a0c6e4fcec4d7/asgineer-0.8.1.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/c7/9f/2ff32de4eacc484eb5a9007534d13156a1b1a1a9c62233775741db20c020/zonesmart-utils-fork-0.5.9.9.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [zonesmart-utils-fork]: executing diffoscope
+[2024-04-22 10:07:53] INFO root fetch - processPackages [zonesmart-utils-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonesmart-utils-fork-0.5.9.8.tar.gz tmp/zonesmart-utils-fork-0.5.9.9.tar.gz --markdown 20240422/z/zonesmart-utils-fork/0.5.9.8-0.5.9.9/README.md --exclude *.pyd
+[2024-04-22 10:07:53] INFO root fetch - processPackages [cognee]: Downloading https://files.pythonhosted.org/packages/da/80/2bc4ebbcb84343bbb2f8a405b36de72d8f31b54ed74463035a2deba31020/cognee-0.1.3.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [milspend]: Downloading https://files.pythonhosted.org/packages/6d/df/cd1ce08aa888cc04c5f9d7782df5a0a25b16e81bcafb10c09d098807ec10/milspend-0.0.5.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [cognee]: executing diffoscope
+[2024-04-22 10:07:53] INFO root fetch - processPackages [cognee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognee-0.1.2.tar.gz tmp/cognee-0.1.3.tar.gz --markdown 20240422/c/cognee/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-22 10:07:53] INFO root fetch - processPackages [vectice]: Downloading https://files.pythonhosted.org/packages/44/42/af92471ab1d71827f326aaf8c5cd04bb30c83a41ce1ffd2a75dc22a103fb/vectice-24.2.2.0.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [pluto-client]: Downloading https://files.pythonhosted.org/packages/3d/a6/bb29cf9e57cfe194c419dc3fa47037b241c573419003eed41e22911ee230/pluto_client-0.0.6.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [asgineer]: Downloading https://files.pythonhosted.org/packages/14/c1/e1744b12a4f525cc12d0c2c4837b7e31e89b9e3bfdbd796d6d4f8f1665f2/asgineer-0.8.2.tar.gz
+[2024-04-22 10:07:53] INFO root fetch - processPackages [pluto-client]: executing diffoscope
+[2024-04-22 10:07:53] INFO root fetch - processPackages [pluto-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluto_client-0.0.5.tar.gz tmp/pluto_client-0.0.6.tar.gz --markdown 20240422/p/pluto-client/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 10:07:54] INFO root fetch - processPackages [milspend]: executing diffoscope
+[2024-04-22 10:07:54] INFO root fetch - processPackages [milspend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/milspend-0.0.4.tar.gz tmp/milspend-0.0.5.tar.gz --markdown 20240422/m/milspend/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 10:07:54] INFO root fetch - processPackages [vectice]: executing diffoscope
+[2024-04-22 10:07:54] INFO root fetch - processPackages [vectice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectice-24.2.1.0.tar.gz tmp/vectice-24.2.2.0.tar.gz --markdown 20240422/v/vectice/24.2.1.0-24.2.2.0/README.md --exclude *.pyd
+[2024-04-22 10:07:54] INFO root fetch - processPackages [asgineer]: executing diffoscope
+[2024-04-22 10:07:54] INFO root fetch - processPackages [asgineer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgineer-0.8.1.tar.gz tmp/asgineer-0.8.2.tar.gz --markdown 20240422/a/asgineer/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-22 10:07:54] INFO root fetch - processPackages [milspend]: Remove: archive file [/home/abi/fetcher/tmp/milspend-0.0.4.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - processPackages [milspend]: Remove: archive file [/home/abi/fetcher/tmp/milspend-0.0.5.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - main [MainThread]: End processing [milspend]: success
+[2024-04-22 10:07:54] INFO root fetch - processPackages [pluto-client]: Remove: archive file [/home/abi/fetcher/tmp/pluto_client-0.0.5.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - processPackages [pluto-client]: Remove: archive file [/home/abi/fetcher/tmp/pluto_client-0.0.6.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - main [MainThread]: End processing [pluto-client]: success
+[2024-04-22 10:07:54] INFO root fetch - processPackages [cognee]: Remove: archive file [/home/abi/fetcher/tmp/cognee-0.1.2.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - processPackages [cognee]: Remove: archive file [/home/abi/fetcher/tmp/cognee-0.1.3.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - main [MainThread]: End processing [cognee]: success
+[2024-04-22 10:07:54] INFO root fetch - processPackages [asgineer]: Remove: archive file [/home/abi/fetcher/tmp/asgineer-0.8.1.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - processPackages [asgineer]: Remove: archive file [/home/abi/fetcher/tmp/asgineer-0.8.2.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - main [MainThread]: End processing [asgineer]: success
+[2024-04-22 10:07:54] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.8.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.9.tar.gz]
+[2024-04-22 10:07:54] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
+[2024-04-22 10:07:55] INFO root fetch - processPackages [vectice]: Remove: archive file [/home/abi/fetcher/tmp/vectice-24.2.1.0.tar.gz]
+[2024-04-22 10:07:55] INFO root fetch - processPackages [vectice]: Remove: archive file [/home/abi/fetcher/tmp/vectice-24.2.2.0.tar.gz]
+[2024-04-22 10:07:55] INFO root fetch - main [MainThread]: End processing [vectice]: success
+[2024-04-22 10:07:55] INFO root fetch - main [MainThread]: Store serial: [22873872]
