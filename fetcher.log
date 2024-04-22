@@ -4674,3 +4674,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 06:25:54] INFO root fetch - processPackages [kobo-md]: Remove: archive file [/home/abi/fetcher/tmp/kobo-md-0.1.9.tar.gz]
 [2024-04-22 06:25:54] INFO root fetch - main [MainThread]: End processing [kobo-md]: success
 [2024-04-22 06:25:54] INFO root fetch - main [MainThread]: Store serial: [22871922]
+[2024-04-22 06:27:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871922]
+[2024-04-22 06:28:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 06:28:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cait-sith-py
+[2024-04-22 06:28:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: competex
+[2024-04-22 06:28:02] INFO root fetch - processPackages [cait-sith-py]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-22 06:28:02] WARNING root fetch - processPackages [competex]: Skipping, unable to determine old version
+[2024-04-22 06:28:02] INFO root fetch - main [MainThread]: End processing [competex] error
+[2024-04-22 06:28:03] INFO root fetch - processPackages [cait-sith-py]: Downloading https://files.pythonhosted.org/packages/be/8d/12eee243ea328baf9c7a8b8f5705cb1c0cbe81e5f167a2531a8a65fd9278/cait_sith_py-0.1.0.tar.gz
+[2024-04-22 06:28:03] INFO root fetch - processPackages [cait-sith-py]: Downloading https://files.pythonhosted.org/packages/6b/08/e7ceea69724e378d8add34c09fc0e3680af54b198840227dcd577fb916bb/cait_sith_py-0.1.1.tar.gz
+[2024-04-22 06:28:03] INFO root fetch - processPackages [cait-sith-py]: executing diffoscope
+[2024-04-22 06:28:03] INFO root fetch - processPackages [cait-sith-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cait_sith_py-0.1.0.tar.gz tmp/cait_sith_py-0.1.1.tar.gz --markdown 20240422/c/cait-sith-py/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-22 06:28:04] INFO root fetch - processPackages [cait-sith-py]: Remove: archive file [/home/abi/fetcher/tmp/cait_sith_py-0.1.0.tar.gz]
+[2024-04-22 06:28:04] INFO root fetch - processPackages [cait-sith-py]: Remove: archive file [/home/abi/fetcher/tmp/cait_sith_py-0.1.1.tar.gz]
+[2024-04-22 06:28:04] INFO root fetch - main [MainThread]: End processing [cait-sith-py]: success
+[2024-04-22 06:28:04] INFO root fetch - main [MainThread]: Store serial: [22871935]
