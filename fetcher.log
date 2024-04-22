@@ -6414,3 +6414,60 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:17:22] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240421.tar.gz]
 [2024-04-22 08:17:22] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2024-04-22 08:17:22] INFO root fetch - main [MainThread]: Store serial: [22872559]
+[2024-04-22 08:19:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872559]
+[2024-04-22 08:19:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 08:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akshare
+[2024-04-22 08:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdf-tools-sdk
+[2024-04-22 08:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dndlprof
+[2024-04-22 08:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pywinstyles
+[2024-04-22 08:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aig-test
+[2024-04-22 08:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aioworldline
+[2024-04-22 08:19:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: one4all-iop-models
+[2024-04-22 08:19:36] WARNING root fetch - processPackages [aig-test]: Skipping, unable to determine old version
+[2024-04-22 08:19:36] INFO root fetch - main [MainThread]: End processing [aig-test] error
+[2024-04-22 08:19:36] INFO root fetch - processPackages [aioworldline]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-22 08:19:36] INFO root fetch - processPackages [pdf-tools-sdk]: New version: [1.5.0.dev2] Old Version: [1.5.0.dev1]
+[2024-04-22 08:19:36] INFO root fetch - processPackages [dndlprof]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-22 08:19:36] INFO root fetch - processPackages [one4all-iop-models]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-22 08:19:36] INFO root fetch - processPackages [pywinstyles]: New version: [1.8] Old Version: [1.7]
+[2024-04-22 08:19:36] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-04-22 08:19:36] INFO root fetch - processPackages [pdf-tools-sdk]: Downloading https://files.pythonhosted.org/packages/ff/4a/6c5114bbaf0590247d2684e4f503afd8bc38eafa765ca30222aa5ebbb105/pdf_tools_sdk-1.5.0.dev1.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [aioworldline]: Downloading https://files.pythonhosted.org/packages/d5/35/17d4ab7c2135444519ab80f9e2b198c10e50a0c4cfc0bf45163486594266/aioworldline-0.1.7.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [dndlprof]: Downloading https://files.pythonhosted.org/packages/88/1f/f5aed151a9ec370de3f0922aea855e199a45b2249b7991b1b6763d6c9a35/dndlprof-0.8.0.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [one4all-iop-models]: Downloading https://files.pythonhosted.org/packages/de/54/557a544c80b3556bad6297472844b348e2bb7b7ffa04eb10d6e5a1edb363/one4all_iop_models-0.1.6.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [pywinstyles]: Downloading https://files.pythonhosted.org/packages/da/33/2faa88545ee4f15a15b3a7059c3e04b11e7820fca85430ba894f09880da4/pywinstyles-1.7.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [one4all-iop-models]: Downloading https://files.pythonhosted.org/packages/53/7f/1471984c1acf2fe233945b359139cd745041e27ddcc3007b14b1d6d39281/one4all_iop_models-0.1.7.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [dndlprof]: Downloading https://files.pythonhosted.org/packages/6c/e2/de16c7fd6662fe88d6d9825b1764e7283cfb1d5689df9b429174729c1ea8/dndlprof-0.9.0.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [aioworldline]: Downloading https://files.pythonhosted.org/packages/aa/c8/10a1bcb5f7b94e2bd51e1c2de08a230b803232c5a49d1fb2d118c506712c/aioworldline-0.1.8.tar.gz
+[2024-04-22 08:19:36] INFO root fetch - processPackages [pywinstyles]: Downloading https://files.pythonhosted.org/packages/09/5b/c3356335b7f60a940c3e9c1aa6f3b6407af10b26c763739933c500937dbe/pywinstyles-1.8.tar.gz
+[2024-04-22 08:19:37] INFO root fetch - processPackages [dndlprof]: executing diffoscope
+[2024-04-22 08:19:37] INFO root fetch - processPackages [dndlprof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dndlprof-0.8.0.tar.gz tmp/dndlprof-0.9.0.tar.gz --markdown 20240422/d/dndlprof/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-22 08:19:37] INFO root fetch - processPackages [aioworldline]: executing diffoscope
+[2024-04-22 08:19:37] INFO root fetch - processPackages [aioworldline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioworldline-0.1.7.tar.gz tmp/aioworldline-0.1.8.tar.gz --markdown 20240422/a/aioworldline/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-22 08:19:37] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-04-22 08:19:37] INFO root fetch - processPackages [one4all-iop-models]: executing diffoscope
+[2024-04-22 08:19:37] INFO root fetch - processPackages [one4all-iop-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/one4all_iop_models-0.1.6.tar.gz tmp/one4all_iop_models-0.1.7.tar.gz --markdown 20240422/o/one4all-iop-models/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-22 08:19:37] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240422/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-04-22 08:19:37] INFO root fetch - processPackages [pywinstyles]: executing diffoscope
+[2024-04-22 08:19:37] INFO root fetch - processPackages [pywinstyles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywinstyles-1.7.tar.gz tmp/pywinstyles-1.8.tar.gz --markdown 20240422/p/pywinstyles/1.7-1.8/README.md --exclude *.pyd
+[2024-04-22 08:19:37] INFO root fetch - processPackages [pdf-tools-sdk]: Downloading https://files.pythonhosted.org/packages/2e/7f/c06e2c955978d2846079b258628daf4c93bace4784c1946262d8dcebe27a/pdf_tools_sdk-1.5.0.dev2.tar.gz
+[2024-04-22 08:19:37] WARNING root fetch - processPackages [pdf-tools-sdk]: Skipping package: exceeds size limit 47680884>=10485760
+[2024-04-22 08:19:37] INFO root fetch - main [MainThread]: End processing [pdf-tools-sdk] error
+[2024-04-22 08:19:37] INFO root fetch - processPackages [one4all-iop-models]: Remove: archive file [/home/abi/fetcher/tmp/one4all_iop_models-0.1.6.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - processPackages [one4all-iop-models]: Remove: archive file [/home/abi/fetcher/tmp/one4all_iop_models-0.1.7.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - main [MainThread]: End processing [one4all-iop-models]: success
+[2024-04-22 08:19:37] INFO root fetch - processPackages [pywinstyles]: Remove: archive file [/home/abi/fetcher/tmp/pywinstyles-1.7.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - processPackages [pywinstyles]: Remove: archive file [/home/abi/fetcher/tmp/pywinstyles-1.8.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - main [MainThread]: End processing [pywinstyles]: success
+[2024-04-22 08:19:37] INFO root fetch - processPackages [aioworldline]: Remove: archive file [/home/abi/fetcher/tmp/aioworldline-0.1.7.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - processPackages [aioworldline]: Remove: archive file [/home/abi/fetcher/tmp/aioworldline-0.1.8.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - main [MainThread]: End processing [aioworldline]: success
+[2024-04-22 08:19:37] INFO root fetch - processPackages [dndlprof]: Remove: archive file [/home/abi/fetcher/tmp/dndlprof-0.8.0.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - processPackages [dndlprof]: Remove: archive file [/home/abi/fetcher/tmp/dndlprof-0.9.0.tar.gz]
+[2024-04-22 08:19:37] INFO root fetch - main [MainThread]: End processing [dndlprof]: success
+[2024-04-22 08:19:39] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-04-22 08:19:39] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-04-22 08:19:39] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-04-22 08:19:39] INFO root fetch - main [MainThread]: Store serial: [22872582]
