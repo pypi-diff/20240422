@@ -2351,3 +2351,35 @@
 [2024-04-22 03:14:37] INFO root fetch - processPackages [cognite-synthetic-tags]: Remove: archive file [/home/abi/fetcher/tmp/cognite_synthetic_tags-0.5.0.tar.gz]
 [2024-04-22 03:14:37] INFO root fetch - main [MainThread]: End processing [cognite-synthetic-tags]: success
 [2024-04-22 03:14:37] INFO root fetch - main [MainThread]: Store serial: [22870868]
+[2024-04-22 03:16:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870868]
+[2024-04-22 03:16:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 03:16:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mundane
+[2024-04-22 03:16:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monit-agd
+[2024-04-22 03:16:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dogma-data
+[2024-04-22 03:16:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygubu-designer
+[2024-04-22 03:16:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DNBC4dev
+[2024-04-22 03:16:45] WARNING root fetch - processPackages [mundane]: Skipping, unable to determine old version
+[2024-04-22 03:16:45] INFO root fetch - main [MainThread]: End processing [mundane] error
+[2024-04-22 03:16:45] WARNING root fetch - processPackages [monit-agd]: Skipping, unable to determine old version
+[2024-04-22 03:16:45] INFO root fetch - main [MainThread]: End processing [monit-agd] error
+[2024-04-22 03:16:45] INFO root fetch - processPackages [dogma-data]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-22 03:16:45] INFO root fetch - processPackages [DNBC4dev]: New version: [2.3.5] Old Version: [2.3.4]
+[2024-04-22 03:16:45] INFO root fetch - processPackages [pygubu-designer]: New version: [0.39.1] Old Version: [0.39]
+[2024-04-22 03:16:45] INFO root fetch - processPackages [dogma-data]: Downloading https://files.pythonhosted.org/packages/8e/b2/a1719dc200acbe067245fbc0aae45c9a087bec36d921bb09dcfc3afe384a/dogma_data-0.2.8.tar.gz
+[2024-04-22 03:16:45] INFO root fetch - processPackages [DNBC4dev]: Downloading https://files.pythonhosted.org/packages/6f/ba/e0511908e7d6300d61dfe66aae64067127ea2185cd2d0935fefa9a54e8d2/DNBC4dev-2.3.4.tar.gz
+[2024-04-22 03:16:45] INFO root fetch - processPackages [pygubu-designer]: Downloading https://files.pythonhosted.org/packages/40/23/9f2ab56d025bc9df386b3f5fe2b8cc4298dcb933b55e68e7b99a0c41d871/pygubu_designer-0.39.tar.gz
+[2024-04-22 03:16:45] WARNING root fetch - processPackages [DNBC4dev]: Skipping package: exceeds size limit 44899019>=10485760
+[2024-04-22 03:16:45] INFO root fetch - main [MainThread]: End processing [DNBC4dev] error
+[2024-04-22 03:16:45] INFO root fetch - processPackages [dogma-data]: Downloading https://files.pythonhosted.org/packages/3e/fe/15abfb530d328398811212c2cf379a1112e6b2653c6198eeaf1f1fe4b2f2/dogma_data-0.2.9.tar.gz
+[2024-04-22 03:16:46] INFO root fetch - processPackages [pygubu-designer]: Downloading https://files.pythonhosted.org/packages/79/2d/c2855711c4479fbbb34cec85aed41162930a29977081b0ef859cde4690e2/pygubu_designer-0.39.1.tar.gz
+[2024-04-22 03:16:46] INFO root fetch - processPackages [dogma-data]: executing diffoscope
+[2024-04-22 03:16:46] INFO root fetch - processPackages [dogma-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dogma_data-0.2.8.tar.gz tmp/dogma_data-0.2.9.tar.gz --markdown 20240422/d/dogma-data/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-22 03:16:46] INFO root fetch - processPackages [pygubu-designer]: executing diffoscope
+[2024-04-22 03:16:46] INFO root fetch - processPackages [pygubu-designer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygubu_designer-0.39.tar.gz tmp/pygubu_designer-0.39.1.tar.gz --markdown 20240422/p/pygubu-designer/0.39-0.39.1/README.md --exclude *.pyd
+[2024-04-22 03:16:46] INFO root fetch - processPackages [dogma-data]: Remove: archive file [/home/abi/fetcher/tmp/dogma_data-0.2.8.tar.gz]
+[2024-04-22 03:16:46] INFO root fetch - processPackages [dogma-data]: Remove: archive file [/home/abi/fetcher/tmp/dogma_data-0.2.9.tar.gz]
+[2024-04-22 03:16:46] INFO root fetch - main [MainThread]: End processing [dogma-data]: success
+[2024-04-22 03:16:48] INFO root fetch - processPackages [pygubu-designer]: Remove: archive file [/home/abi/fetcher/tmp/pygubu_designer-0.39.tar.gz]
+[2024-04-22 03:16:48] INFO root fetch - processPackages [pygubu-designer]: Remove: archive file [/home/abi/fetcher/tmp/pygubu_designer-0.39.1.tar.gz]
+[2024-04-22 03:16:48] INFO root fetch - main [MainThread]: End processing [pygubu-designer]: success
+[2024-04-22 03:16:48] INFO root fetch - main [MainThread]: Store serial: [22870887]
