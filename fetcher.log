@@ -10545,3 +10545,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:31:39] INFO root fetch - processPackages [scancodeio]: Remove: archive file [/home/abi/fetcher/tmp/scancodeio-34.4.0.tar.gz]
 [2024-04-22 11:31:39] INFO root fetch - main [MainThread]: End processing [scancodeio]: success
 [2024-04-22 11:31:39] INFO root fetch - main [MainThread]: Store serial: [22874806]
+[2024-04-22 11:33:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874806]
+[2024-04-22 11:33:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 11:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gliner
+[2024-04-22 11:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AkitaCode
+[2024-04-22 11:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drfexts
+[2024-04-22 11:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embedding-techx
+[2024-04-22 11:33:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: server-templates
+[2024-04-22 11:33:48] INFO root fetch - processPackages [embedding-techx]: New version: [1.0.1] Old Version: [1.0]
+[2024-04-22 11:33:48] INFO root fetch - processPackages [AkitaCode]: New version: [2.1] Old Version: [2.0.3]
+[2024-04-22 11:33:48] INFO root fetch - processPackages [gliner]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:33:48] INFO root fetch - processPackages [drfexts]: New version: [3.8.4] Old Version: [3.8.3]
+[2024-04-22 11:33:48] INFO root fetch - processPackages [server-templates]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-22 11:33:48] INFO root fetch - processPackages [AkitaCode]: Downloading https://files.pythonhosted.org/packages/34/a2/3364a24e726255af4cd9cf746d67cb877afe9cd5f2ffe380e8da805c5615/AkitaCode-2.0.3.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [drfexts]: Downloading https://files.pythonhosted.org/packages/07/3f/57aaac4935ed6fb1d279b93f4f4b2654ab64568f6afccd6a02c1c4ac2a22/drfexts-3.8.3.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/4a/ee/c794dd4d843e1b869cfa087fb4f5065174e23201cb216a6920ae919a0702/gliner-0.1.8.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [server-templates]: Downloading https://files.pythonhosted.org/packages/59/69/5c62163e96eea71c6fa6b81fb2ecdbcbae68ea823343f8acccf62b10436d/server_templates-0.2.6.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [embedding-techx]: Downloading https://files.pythonhosted.org/packages/72/00/e7797c967b19c25bcb3dda4db68a64c0063403b4ada32b851b3119a98dae/embedding-techx-1.0.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [server-templates]: Downloading https://files.pythonhosted.org/packages/ab/3d/200f7a3803660af4124b1a69fa4a03c59d77404b4e749c1ce4cd6ab7ad0a/server_templates-0.2.7.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/54/53/182c5c1b761ab40ca0d4b9b3dfdd6aa606d105eb3ad7d4c743fbcca13471/gliner-0.1.9.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [AkitaCode]: Downloading https://files.pythonhosted.org/packages/29/18/163d6a988e80a15bd40158514237b4191556dc712b8a56dce221055218ed/AkitaCode-2.1-py3-none-any.whl
+[2024-04-22 11:33:48] INFO root fetch - processPackages [drfexts]: Downloading https://files.pythonhosted.org/packages/da/02/1fa71a9b1b5ef9bfb70bc36c8916618b9a7a850b7e9fad8d03d377714704/drfexts-3.8.4.tar.gz
+[2024-04-22 11:33:48] INFO root fetch - processPackages [embedding-techx]: Downloading https://files.pythonhosted.org/packages/77/e8/a6325592e3a710e3f3e6ea6791dc7c0268821e2a7e93f0b44f579ab51fae/embedding-techx-1.0.1.tar.gz
+[2024-04-22 11:33:49] INFO root fetch - processPackages [server-templates]: executing diffoscope
+[2024-04-22 11:33:49] INFO root fetch - processPackages [server-templates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/server_templates-0.2.6.tar.gz tmp/server_templates-0.2.7.tar.gz --markdown 20240422/s/server-templates/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-22 11:33:49] INFO root fetch - processPackages [gliner]: executing diffoscope
+[2024-04-22 11:33:49] INFO root fetch - processPackages [gliner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gliner-0.1.8.tar.gz tmp/gliner-0.1.9.tar.gz --markdown 20240422/g/gliner/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-22 11:33:49] INFO root fetch - processPackages [AkitaCode]: executing diffoscope
+[2024-04-22 11:33:49] INFO root fetch - processPackages [AkitaCode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AkitaCode-2.0.3.tar.gz tmp/AkitaCode-2.1-py3-none-any.whl.zip --markdown 20240422/A/AkitaCode/2.0.3-2.1/README.md --exclude *.pyd
+[2024-04-22 11:33:49] INFO root fetch - processPackages [drfexts]: executing diffoscope
+[2024-04-22 11:33:49] INFO root fetch - processPackages [drfexts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drfexts-3.8.3.tar.gz tmp/drfexts-3.8.4.tar.gz --markdown 20240422/d/drfexts/3.8.3-3.8.4/README.md --exclude *.pyd
+[2024-04-22 11:33:49] INFO root fetch - processPackages [embedding-techx]: executing diffoscope
+[2024-04-22 11:33:49] INFO root fetch - processPackages [embedding-techx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedding-techx-1.0.tar.gz tmp/embedding-techx-1.0.1.tar.gz --markdown 20240422/e/embedding-techx/1.0-1.0.1/README.md --exclude *.pyd
+[2024-04-22 11:33:49] INFO root fetch - processPackages [AkitaCode]: Remove: archive file [/home/abi/fetcher/tmp/AkitaCode-2.0.3.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - processPackages [AkitaCode]: Remove: archive file [/home/abi/fetcher/tmp/AkitaCode-2.1-py3-none-any.whl.zip]
+[2024-04-22 11:33:49] INFO root fetch - main [MainThread]: End processing [AkitaCode]: success
+[2024-04-22 11:33:49] INFO root fetch - processPackages [server-templates]: Remove: archive file [/home/abi/fetcher/tmp/server_templates-0.2.6.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - processPackages [server-templates]: Remove: archive file [/home/abi/fetcher/tmp/server_templates-0.2.7.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - main [MainThread]: End processing [server-templates]: success
+[2024-04-22 11:33:49] INFO root fetch - processPackages [embedding-techx]: Remove: archive file [/home/abi/fetcher/tmp/embedding-techx-1.0.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - processPackages [embedding-techx]: Remove: archive file [/home/abi/fetcher/tmp/embedding-techx-1.0.1.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - main [MainThread]: End processing [embedding-techx]: success
+[2024-04-22 11:33:49] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.8.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.9.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - main [MainThread]: End processing [gliner]: success
+[2024-04-22 11:33:49] INFO root fetch - processPackages [drfexts]: Remove: archive file [/home/abi/fetcher/tmp/drfexts-3.8.3.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - processPackages [drfexts]: Remove: archive file [/home/abi/fetcher/tmp/drfexts-3.8.4.tar.gz]
+[2024-04-22 11:33:49] INFO root fetch - main [MainThread]: End processing [drfexts]: success
+[2024-04-22 11:33:49] INFO root fetch - main [MainThread]: Store serial: [22874821]
