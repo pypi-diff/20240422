@@ -4023,3 +4023,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:18:31] WARNING root fetch - processPackages [datax-split]: Skipping, unable to determine old version
 [2024-04-22 05:18:31] INFO root fetch - main [MainThread]: End processing [datax-split] error
 [2024-04-22 05:18:31] INFO root fetch - main [MainThread]: Store serial: [22871654]
+[2024-04-22 05:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871654]
+[2024-04-22 05:20:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 05:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SLAP2-UTILS
+[2024-04-22 05:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biotech
+[2024-04-22 05:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atai
+[2024-04-22 05:20:39] INFO root fetch - processPackages [biotech]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-22 05:20:39] WARNING root fetch - processPackages [atai]: Skipping, unable to determine old version
+[2024-04-22 05:20:39] INFO root fetch - main [MainThread]: End processing [atai] error
+[2024-04-22 05:20:39] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/6c/ee/43782f4b9e40f5df208b357bf4c5384fdb6a264dab41318355d0e90b1d4c/biotech-1.1.7.tar.gz
+[2024-04-22 05:20:39] INFO root fetch - processPackages [SLAP2-UTILS]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 05:20:39] INFO root fetch - processPackages [SLAP2-UTILS]: Downloading https://files.pythonhosted.org/packages/f3/b3/5d4b0e00bd224b22106b924def2ed385403699f842553f743d42d03f0ccb/slap2_utils-0.0.5.tar.gz
+[2024-04-22 05:20:39] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/a9/63/e1cd5c29ab6e9266c8adfa45d0ed96ed9b0b2758504a94413e68d125d6f4/biotech-1.1.8.tar.gz
+[2024-04-22 05:20:40] INFO root fetch - processPackages [biotech]: executing diffoscope
+[2024-04-22 05:20:40] INFO root fetch - processPackages [biotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotech-1.1.7.tar.gz tmp/biotech-1.1.8.tar.gz --markdown 20240422/b/biotech/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-04-22 05:20:40] INFO root fetch - processPackages [SLAP2-UTILS]: Downloading https://files.pythonhosted.org/packages/ca/d6/c452b5998fc5d5ea14ddc2be9ef81a5f142823ac4f58e9b92106ba2a6647/slap2_utils-0.0.6.tar.gz
+[2024-04-22 05:20:40] INFO root fetch - processPackages [SLAP2-UTILS]: executing diffoscope
+[2024-04-22 05:20:40] INFO root fetch - processPackages [SLAP2-UTILS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slap2_utils-0.0.5.tar.gz tmp/slap2_utils-0.0.6.tar.gz --markdown 20240422/S/SLAP2-UTILS/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 05:20:40] INFO root fetch - processPackages [SLAP2-UTILS]: Remove: archive file [/home/abi/fetcher/tmp/slap2_utils-0.0.5.tar.gz]
+[2024-04-22 05:20:40] INFO root fetch - processPackages [SLAP2-UTILS]: Remove: archive file [/home/abi/fetcher/tmp/slap2_utils-0.0.6.tar.gz]
+[2024-04-22 05:20:40] INFO root fetch - main [MainThread]: End processing [SLAP2-UTILS]: success
+[2024-04-22 05:20:46] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.7.tar.gz]
+[2024-04-22 05:20:46] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.8.tar.gz]
+[2024-04-22 05:20:46] INFO root fetch - main [MainThread]: End processing [biotech]: success
+[2024-04-22 05:20:46] INFO root fetch - main [MainThread]: Store serial: [22871665]
