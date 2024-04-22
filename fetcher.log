@@ -8930,3 +8930,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:27:42] INFO root fetch - processPackages [pywikibot]: Remove: archive file [/home/abi/fetcher/tmp/pywikibot-9.1.0.tar.gz]
 [2024-04-22 10:27:42] INFO root fetch - main [MainThread]: End processing [pywikibot]: success
 [2024-04-22 10:27:42] INFO root fetch - main [MainThread]: Store serial: [22874064]
+[2024-04-22 10:29:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874064]
+[2024-04-22 10:29:54] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuantumRingsLib
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AttosecondRayTracing
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mostlyai
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-log-inspector
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scaleway-core
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: AttosecondRayTracing-core
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wagtail-grapple
+[2024-04-22 10:29:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: embedding-techx
+[2024-04-22 10:29:54] INFO root fetch - processPackages [django-log-inspector]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 10:29:54] WARNING root fetch - processPackages [AttosecondRayTracing]: Skipping, unable to determine old version
+[2024-04-22 10:29:54] INFO root fetch - main [MainThread]: End processing [AttosecondRayTracing] error
+[2024-04-22 10:29:54] INFO root fetch - processPackages [mostlyai]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-22 10:29:54] INFO root fetch - processPackages [scaleway-core]: New version: [2.1.0] Old Version: [2.0.0.dev6]
+[2024-04-22 10:29:54] INFO root fetch - processPackages [QuantumRingsLib]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-04-22 10:29:54] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/cb/5b/84d74c782124afff9d7adf03b9d6ee4bec895fac487769f8a8e806200a3a/django_log_inspector-0.0.5.tar.gz
+[2024-04-22 10:29:54] WARNING root fetch - processPackages [embedding-techx]: Skipping, unable to determine old version
+[2024-04-22 10:29:54] INFO root fetch - main [MainThread]: End processing [embedding-techx] error
+[2024-04-22 10:29:54] WARNING root fetch - processPackages [AttosecondRayTracing-core]: Skipping, unable to determine old version
+[2024-04-22 10:29:54] INFO root fetch - main [MainThread]: End processing [AttosecondRayTracing-core] error
+[2024-04-22 10:29:54] INFO root fetch - processPackages [wagtail-grapple]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-22 10:29:54] INFO root fetch - processPackages [mostlyai]: Downloading https://files.pythonhosted.org/packages/fa/8c/a05d2a94be09bafb8652bbc70501fe0097b89a031ff37e01a1e3d9309ab0/mostlyai-0.3.2.tar.gz
+[2024-04-22 10:29:54] INFO root fetch - processPackages [scaleway-core]: Downloading https://files.pythonhosted.org/packages/6c/26/7cdc61d45a29796d8e7d7baf323109157302195dab97ab41690a61653d28/scaleway_core-2.0.0.dev6.tar.gz
+[2024-04-22 10:29:54] INFO root fetch - processPackages [wagtail-grapple]: Downloading https://files.pythonhosted.org/packages/1f/74/e5939b2932f53c189f86d8b24eb44fefa0b5524767ed68d63df696865a2a/wagtail-grapple-0.9.2.tar.gz
+[2024-04-22 10:29:54] INFO root fetch - processPackages [QuantumRingsLib]: Downloading https://files.pythonhosted.org/packages/29/ef/9e5d3e0540b102fd859eb012f60247278c49fdebc4bcbc4646e80949c603/QuantumRingsLib-0.3.2.tar.gz
+[2024-04-22 10:29:54] INFO root fetch - processPackages [django-log-inspector]: Downloading https://files.pythonhosted.org/packages/2b/1a/53c49e15bee77d9ddd0dadbf71e9c52587f1c9f5ed8480afa0d337e04a10/django_log_inspector-0.0.6.tar.gz
+[2024-04-22 10:29:54] INFO root fetch - processPackages [django-log-inspector]: executing diffoscope
+[2024-04-22 10:29:54] INFO root fetch - processPackages [django-log-inspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_log_inspector-0.0.5.tar.gz tmp/django_log_inspector-0.0.6.tar.gz --markdown 20240422/d/django-log-inspector/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 10:29:54] INFO root fetch - processPackages [mostlyai]: Downloading https://files.pythonhosted.org/packages/26/3f/bbcf9e36dd1fcaa081b1f03154e058fc02fe84d3c289aa785b2f9f15f5c7/mostlyai-0.3.3.tar.gz
+[2024-04-22 10:29:55] INFO root fetch - processPackages [scaleway-core]: Downloading https://files.pythonhosted.org/packages/88/f6/1f884c09668e78fb445d102d0e682598ab166f231ac79ecba65c1fc4244b/scaleway_core-2.1.0.tar.gz
+[2024-04-22 10:29:55] INFO root fetch - processPackages [wagtail-grapple]: Downloading https://files.pythonhosted.org/packages/85/41/6ba0c01b93e12b902285b88f23d4d365ff9af7f34a99e5f17c98e997f3e3/wagtail-grapple-0.9.3.tar.gz
+[2024-04-22 10:29:55] INFO root fetch - processPackages [mostlyai]: executing diffoscope
+[2024-04-22 10:29:55] INFO root fetch - processPackages [mostlyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mostlyai-0.3.2.tar.gz tmp/mostlyai-0.3.3.tar.gz --markdown 20240422/m/mostlyai/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-22 10:29:55] INFO root fetch - processPackages [scaleway-core]: executing diffoscope
+[2024-04-22 10:29:55] INFO root fetch - processPackages [scaleway-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaleway_core-2.0.0.dev6.tar.gz tmp/scaleway_core-2.1.0.tar.gz --markdown 20240422/s/scaleway-core/2.0.0.dev6-2.1.0/README.md --exclude *.pyd
+[2024-04-22 10:29:55] INFO root fetch - processPackages [wagtail-grapple]: executing diffoscope
+[2024-04-22 10:29:55] INFO root fetch - processPackages [wagtail-grapple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-grapple-0.9.2.tar.gz tmp/wagtail-grapple-0.9.3.tar.gz --markdown 20240422/w/wagtail-grapple/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-22 10:29:55] INFO root fetch - processPackages [QuantumRingsLib]: Downloading https://files.pythonhosted.org/packages/f0/da/3015f36079caa2778df19288c29822bd0d549c6e8590b27a85cf40147fba/QuantumRingsLib-0.4.0-cp311-cp311-win_amd64.whl
+[2024-04-22 10:29:55] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.5.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - processPackages [django-log-inspector]: Remove: archive file [/home/abi/fetcher/tmp/django_log_inspector-0.0.6.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - main [MainThread]: End processing [django-log-inspector]: success
+[2024-04-22 10:29:55] INFO root fetch - processPackages [QuantumRingsLib]: executing diffoscope
+[2024-04-22 10:29:55] INFO root fetch - processPackages [QuantumRingsLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuantumRingsLib-0.3.2.tar.gz tmp/QuantumRingsLib-0.4.0-cp311-cp311-win_amd64.whl.zip --markdown 20240422/Q/QuantumRingsLib/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-04-22 10:29:55] INFO root fetch - processPackages [mostlyai]: Remove: archive file [/home/abi/fetcher/tmp/mostlyai-0.3.2.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - processPackages [mostlyai]: Remove: archive file [/home/abi/fetcher/tmp/mostlyai-0.3.3.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - main [MainThread]: End processing [mostlyai]: success
+[2024-04-22 10:29:55] INFO root fetch - processPackages [scaleway-core]: Remove: archive file [/home/abi/fetcher/tmp/scaleway_core-2.0.0.dev6.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - processPackages [scaleway-core]: Remove: archive file [/home/abi/fetcher/tmp/scaleway_core-2.1.0.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - main [MainThread]: End processing [scaleway-core]: success
+[2024-04-22 10:29:55] INFO root fetch - processPackages [wagtail-grapple]: Remove: archive file [/home/abi/fetcher/tmp/wagtail-grapple-0.9.2.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - processPackages [wagtail-grapple]: Remove: archive file [/home/abi/fetcher/tmp/wagtail-grapple-0.9.3.tar.gz]
+[2024-04-22 10:29:55] INFO root fetch - main [MainThread]: End processing [wagtail-grapple]: success
+[2024-04-22 10:29:56] INFO root fetch - processPackages [QuantumRingsLib]: Remove: archive file [/home/abi/fetcher/tmp/QuantumRingsLib-0.3.2.tar.gz]
+[2024-04-22 10:29:56] INFO root fetch - processPackages [QuantumRingsLib]: Remove: archive file [/home/abi/fetcher/tmp/QuantumRingsLib-0.4.0-cp311-cp311-win_amd64.whl.zip]
+[2024-04-22 10:29:56] INFO root fetch - main [MainThread]: End processing [QuantumRingsLib]: success
+[2024-04-22 10:29:56] INFO root fetch - main [MainThread]: Store serial: [22874094]
