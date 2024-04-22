@@ -5208,3 +5208,48 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:02:59] INFO root fetch - processPackages [tools-hjh]: Remove: archive file [/home/abi/fetcher/tmp/tools_hjh-2.6.2.tar.gz]
 [2024-04-22 07:02:59] INFO root fetch - main [MainThread]: End processing [tools-hjh]: success
 [2024-04-22 07:02:59] INFO root fetch - main [MainThread]: Store serial: [22872123]
+[2024-04-22 07:05:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872123]
+[2024-04-22 07:05:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 07:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: math-ops-pls
+[2024-04-22 07:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sislv4utils
+[2024-04-22 07:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: project-async
+[2024-04-22 07:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: screwdriver-cd-python-sdk
+[2024-04-22 07:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sf-hamilton-sdk
+[2024-04-22 07:05:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blastpipe
+[2024-04-22 07:05:09] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-22 07:05:09] INFO root fetch - processPackages [blastpipe]: New version: [2024.0.7] Old Version: [2024.0.6]
+[2024-04-22 07:05:09] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/89/22/56327273ec36b9e57d1dd5f33258f5f3c80579ec801a292c69f3be591751/screwdriver-cd-python-sdk-1.0.0.tar.gz
+[2024-04-22 07:05:09] WARNING root fetch - processPackages [sf-hamilton-sdk]: Skipping, unable to determine old version
+[2024-04-22 07:05:09] INFO root fetch - main [MainThread]: End processing [sf-hamilton-sdk] error
+[2024-04-22 07:05:09] WARNING root fetch - processPackages [math-ops-pls]: Skipping, unable to determine old version
+[2024-04-22 07:05:09] INFO root fetch - main [MainThread]: End processing [math-ops-pls] error
+[2024-04-22 07:05:09] INFO root fetch - processPackages [sislv4utils]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 07:05:09] INFO root fetch - processPackages [project-async]: New version: [0.0.1rc71.post1] Old Version: [0.0.1rc68.post1]
+[2024-04-22 07:05:09] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/c6/3a/2e940971fdb03ea03f0efba09b4aed0edd93e4eefd5edce2a8ac21b8b848/blastpipe-2024.0.6.tar.gz
+[2024-04-22 07:05:09] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Downloading https://files.pythonhosted.org/packages/01/de/ce2878b1bc95de2cee3a119c700c4d9beef08e1f67e7a2f5ad3da6e9b432/screwdriver-cd-python-sdk-1.0.1.tar.gz
+[2024-04-22 07:05:09] INFO root fetch - processPackages [sislv4utils]: Downloading https://files.pythonhosted.org/packages/d6/f1/29e1d907023dfe32f9c40e9fbedc7a2c4ac6f8112d972bc5dd5320fa9e7f/sislv4utils-0.0.5.tar.gz
+[2024-04-22 07:05:09] INFO root fetch - processPackages [project-async]: Downloading https://files.pythonhosted.org/packages/8e/4e/56048e7d44cde1172dbc1fbe25a40fa342129d2faded14a09a39a9b64589/project_async-0.0.1rc68.post1.tar.gz
+[2024-04-22 07:05:09] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: executing diffoscope
+[2024-04-22 07:05:09] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screwdriver-cd-python-sdk-1.0.0.tar.gz tmp/screwdriver-cd-python-sdk-1.0.1.tar.gz --markdown 20240422/s/screwdriver-cd-python-sdk/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-22 07:05:09] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/68/f7/3ae8724bf224f41f13a2899dc96756c7e68bd40e92993078a7c8bd4d6c80/blastpipe-2024.0.7.tar.gz
+[2024-04-22 07:05:09] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-04-22 07:05:09] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.0.6.tar.gz tmp/blastpipe-2024.0.7.tar.gz --markdown 20240422/b/blastpipe/2024.0.6-2024.0.7/README.md --exclude *.pyd
+[2024-04-22 07:05:09] INFO root fetch - processPackages [sislv4utils]: Downloading https://files.pythonhosted.org/packages/f0/77/efbad13311ecefa3d54d18778391027804bed5e85bdade8598f1c26af276/sislv4utils-0.0.6.tar.gz
+[2024-04-22 07:05:09] INFO root fetch - processPackages [sislv4utils]: executing diffoscope
+[2024-04-22 07:05:09] INFO root fetch - processPackages [sislv4utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sislv4utils-0.0.5.tar.gz tmp/sislv4utils-0.0.6.tar.gz --markdown 20240422/s/sislv4utils/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 07:05:09] INFO root fetch - processPackages [project-async]: Downloading https://files.pythonhosted.org/packages/53/a2/0f6771f62ecf9d977931a5a55ef3a26107e956df62a8d544b3a81e8ccc4e/project_async-0.0.1rc71.post1.tar.gz
+[2024-04-22 07:05:09] INFO root fetch - processPackages [project-async]: executing diffoscope
+[2024-04-22 07:05:09] INFO root fetch - processPackages [project-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project_async-0.0.1rc68.post1.tar.gz tmp/project_async-0.0.1rc71.post1.tar.gz --markdown 20240422/p/project-async/0.0.1rc68.post1-0.0.1rc71.post1/README.md --exclude *.pyd
+[2024-04-22 07:05:10] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-1.0.0.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - processPackages [screwdriver-cd-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/screwdriver-cd-python-sdk-1.0.1.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - main [MainThread]: End processing [screwdriver-cd-python-sdk]: success
+[2024-04-22 07:05:10] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.6.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.0.7.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-04-22 07:05:10] INFO root fetch - processPackages [sislv4utils]: Remove: archive file [/home/abi/fetcher/tmp/sislv4utils-0.0.5.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - processPackages [sislv4utils]: Remove: archive file [/home/abi/fetcher/tmp/sislv4utils-0.0.6.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - main [MainThread]: End processing [sislv4utils]: success
+[2024-04-22 07:05:10] INFO root fetch - processPackages [project-async]: Remove: archive file [/home/abi/fetcher/tmp/project_async-0.0.1rc68.post1.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - processPackages [project-async]: Remove: archive file [/home/abi/fetcher/tmp/project_async-0.0.1rc71.post1.tar.gz]
+[2024-04-22 07:05:10] INFO root fetch - main [MainThread]: End processing [project-async]: success
+[2024-04-22 07:05:10] INFO root fetch - main [MainThread]: Store serial: [22872151]
