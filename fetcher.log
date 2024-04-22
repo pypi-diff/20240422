@@ -4094,3 +4094,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:25:09] INFO root fetch - processPackages [Jvav]: Remove: archive file [/home/abi/fetcher/tmp/Jvav-1.9.0.tar.gz]
 [2024-04-22 05:25:09] INFO root fetch - main [MainThread]: End processing [Jvav]: success
 [2024-04-22 05:25:09] INFO root fetch - main [MainThread]: Store serial: [22871708]
+[2024-04-22 05:27:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871708]
+[2024-04-22 05:27:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 05:27:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flet-easy
+[2024-04-22 05:27:18] INFO root fetch - processPackages [flet-easy]: New version: [0.2.1.dev10] Old Version: [0.2.0]
+[2024-04-22 05:27:18] INFO root fetch - processPackages [flet-easy]: Downloading https://files.pythonhosted.org/packages/82/93/abfa5b2b3a8cb165de5b06d6740678df549a8d1e2029f117187ba270d02a/flet_easy-0.2.0.tar.gz
+[2024-04-22 05:27:19] INFO root fetch - processPackages [flet-easy]: Downloading https://files.pythonhosted.org/packages/9e/d3/efc5fbcb6e5d430ea45bef249cc932e246f3a29f9210361976e1e38304cb/flet_easy-0.2.1.dev10.tar.gz
+[2024-04-22 05:27:19] INFO root fetch - processPackages [flet-easy]: executing diffoscope
+[2024-04-22 05:27:19] INFO root fetch - processPackages [flet-easy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_easy-0.2.0.tar.gz tmp/flet_easy-0.2.1.dev10.tar.gz --markdown 20240422/f/flet-easy/0.2.0-0.2.1.dev10/README.md --exclude *.pyd
+[2024-04-22 05:27:19] INFO root fetch - processPackages [flet-easy]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy-0.2.0.tar.gz]
+[2024-04-22 05:27:19] INFO root fetch - processPackages [flet-easy]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy-0.2.1.dev10.tar.gz]
+[2024-04-22 05:27:19] INFO root fetch - main [MainThread]: End processing [flet-easy]: success
+[2024-04-22 05:27:19] INFO root fetch - main [MainThread]: Store serial: [22871711]
