@@ -5600,3 +5600,33 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 07:31:17] INFO root fetch - processPackages [nyckel]: Remove: archive file [/home/abi/fetcher/tmp/nyckel-0.4.4.tar.gz]
 [2024-04-22 07:31:17] INFO root fetch - main [MainThread]: End processing [nyckel]: success
 [2024-04-22 07:31:17] INFO root fetch - main [MainThread]: Store serial: [22872290]
+[2024-04-22 07:33:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872290]
+[2024-04-22 07:33:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 07:33:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-data-encryption
+[2024-04-22 07:33:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-server-environment
+[2024-04-22 07:33:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs.cache
+[2024-04-22 07:33:27] INFO root fetch - processPackages [cs.cache]: New version: [20240422] Old Version: [20240412]
+[2024-04-22 07:33:27] INFO root fetch - processPackages [cs.cache]: Downloading https://files.pythonhosted.org/packages/41/46/62e6f66ac93cff2608a2e9c4f121e0a92f7e8463088f25aa37d030c64fa3/cs.cache-20240412.tar.gz
+[2024-04-22 07:33:27] INFO root fetch - processPackages [odoo14-addon-server-environment]: New version: [14.0.2.2.2.dev1] Old Version: [14.0.2.2.1.dev2]
+[2024-04-22 07:33:27] INFO root fetch - processPackages [odoo14-addon-data-encryption]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev8]
+[2024-04-22 07:33:27] INFO root fetch - processPackages [odoo14-addon-data-encryption]: Downloading https://files.pythonhosted.org/packages/05/58/7caef5f050030c8cc0c45e5b7c4e791bb64e8a98877e0d84c25af08ba51f/odoo14_addon_data_encryption-14.0.1.0.1.dev8-py3-none-any.whl
+[2024-04-22 07:33:27] INFO root fetch - processPackages [odoo14-addon-server-environment]: Downloading https://files.pythonhosted.org/packages/47/a8/ea48b022d0737206bbac1ab7ac433dc2a8efeac4d97711e0abe07a073ece/odoo14_addon_server_environment-14.0.2.2.1.dev2-py3-none-any.whl
+[2024-04-22 07:33:27] INFO root fetch - processPackages [cs.cache]: Downloading https://files.pythonhosted.org/packages/b7/ee/1a78cb14fa0afec2a762acc4ae41a24b21f343f6fdf0452b4f10590e14e3/cs.cache-20240422.tar.gz
+[2024-04-22 07:33:27] INFO root fetch - processPackages [cs.cache]: executing diffoscope
+[2024-04-22 07:33:27] INFO root fetch - processPackages [cs.cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs.cache-20240412.tar.gz tmp/cs.cache-20240422.tar.gz --markdown 20240422/c/cs.cache/20240412-20240422/README.md --exclude *.pyd
+[2024-04-22 07:33:27] INFO root fetch - processPackages [odoo14-addon-data-encryption]: Downloading https://files.pythonhosted.org/packages/52/fd/6530141e701049d71511bbe964883c55cc344eded542929f535aca36b651/odoo14_addon_data_encryption-14.0.1.0.1.dev9-py3-none-any.whl
+[2024-04-22 07:33:28] INFO root fetch - processPackages [odoo14-addon-server-environment]: Downloading https://files.pythonhosted.org/packages/d4/3f/44a7eec83215787bab18a6611878d8f4c7178f9e01554a4fe26ff7f8b540/odoo14_addon_server_environment-14.0.2.2.2.dev1-py3-none-any.whl
+[2024-04-22 07:33:28] INFO root fetch - processPackages [odoo14-addon-data-encryption]: executing diffoscope
+[2024-04-22 07:33:28] INFO root fetch - processPackages [odoo14-addon-data-encryption]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_data_encryption-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_data_encryption-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20240422/o/odoo14-addon-data-encryption/14.0.1.0.1.dev8-14.0.1.0.1.dev9/README.md --exclude *.pyd
+[2024-04-22 07:33:28] INFO root fetch - processPackages [odoo14-addon-server-environment]: executing diffoscope
+[2024-04-22 07:33:28] INFO root fetch - processPackages [odoo14-addon-server-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_server_environment-14.0.2.2.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_server_environment-14.0.2.2.2.dev1-py3-none-any.whl.zip --markdown 20240422/o/odoo14-addon-server-environment/14.0.2.2.1.dev2-14.0.2.2.2.dev1/README.md --exclude *.pyd
+[2024-04-22 07:33:28] INFO root fetch - processPackages [cs.cache]: Remove: archive file [/home/abi/fetcher/tmp/cs.cache-20240412.tar.gz]
+[2024-04-22 07:33:28] INFO root fetch - processPackages [cs.cache]: Remove: archive file [/home/abi/fetcher/tmp/cs.cache-20240422.tar.gz]
+[2024-04-22 07:33:28] INFO root fetch - main [MainThread]: End processing [cs.cache]: success
+[2024-04-22 07:33:28] INFO root fetch - processPackages [odoo14-addon-data-encryption]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_data_encryption-14.0.1.0.1.dev8-py3-none-any.whl.zip]
+[2024-04-22 07:33:28] INFO root fetch - processPackages [odoo14-addon-data-encryption]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_data_encryption-14.0.1.0.1.dev9-py3-none-any.whl.zip]
+[2024-04-22 07:33:28] INFO root fetch - main [MainThread]: End processing [odoo14-addon-data-encryption]: success
+[2024-04-22 07:33:29] INFO root fetch - processPackages [odoo14-addon-server-environment]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_server_environment-14.0.2.2.1.dev2-py3-none-any.whl.zip]
+[2024-04-22 07:33:29] INFO root fetch - processPackages [odoo14-addon-server-environment]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_server_environment-14.0.2.2.2.dev1-py3-none-any.whl.zip]
+[2024-04-22 07:33:29] INFO root fetch - main [MainThread]: End processing [odoo14-addon-server-environment]: success
+[2024-04-22 07:33:29] INFO root fetch - main [MainThread]: Store serial: [22872297]
