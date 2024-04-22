@@ -10259,3 +10259,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:19:46] INFO root fetch - processPackages [objectbox]: Remove: archive file [/home/abi/fetcher/tmp/objectbox-0.7.0a2-py3-none-any.whl.zip]
 [2024-04-22 11:19:46] INFO root fetch - main [MainThread]: End processing [objectbox]: success
 [2024-04-22 11:19:46] INFO root fetch - main [MainThread]: Store serial: [22874667]
+[2024-04-22 11:21:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874667]
+[2024-04-22 11:22:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 11:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyfi-fetcher
+[2024-04-22 11:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: node-graph
+[2024-04-22 11:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: project-master
+[2024-04-22 11:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vk-teams-async-bot
+[2024-04-22 11:22:01] INFO root fetch - processPackages [node-graph]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-22 11:22:01] INFO root fetch - processPackages [hyfi-fetcher]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-22 11:22:01] INFO root fetch - processPackages [vk-teams-async-bot]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-22 11:22:01] ERROR root fetch - processPackages [project-master]: Unable to get metadata: No such project 'project-master'
+[2024-04-22 11:22:01] INFO root fetch - main [MainThread]: End processing [project-master] error
+[2024-04-22 11:22:01] INFO root fetch - processPackages [node-graph]: Downloading https://files.pythonhosted.org/packages/01/59/a07d3c2d6ab1c67f903155ea1a67df0c698176a1f4da67abe7cfd970936d/node_graph-0.0.4.tar.gz
+[2024-04-22 11:22:01] INFO root fetch - processPackages [hyfi-fetcher]: Downloading https://files.pythonhosted.org/packages/63/e2/e2b4839032c7f223dd033f61c1e18a9e15fa1a4c967065d4747d4e744bd6/hyfi_fetcher-0.2.0.tar.gz
+[2024-04-22 11:22:01] INFO root fetch - processPackages [node-graph]: Downloading https://files.pythonhosted.org/packages/83/4a/6835ecd4a7fcdbdd45af295e90dffb5897fa48158c5a2bc701b5f0057582/node_graph-0.0.5.tar.gz
+[2024-04-22 11:22:01] INFO root fetch - processPackages [vk-teams-async-bot]: Downloading https://files.pythonhosted.org/packages/49/f1/6c3b5e6aaadbf649b2ae99352733dd3eb501dc16e02680212fb3d557336a/vk_teams_async_bot-0.2.2.tar.gz
+[2024-04-22 11:22:01] INFO root fetch - processPackages [hyfi-fetcher]: Downloading https://files.pythonhosted.org/packages/ff/1b/01573256950fbd270d6c2edad0b468874d950a8c19c8a60118654270ae22/hyfi_fetcher-0.2.1.tar.gz
+[2024-04-22 11:22:01] INFO root fetch - processPackages [node-graph]: executing diffoscope
+[2024-04-22 11:22:01] INFO root fetch - processPackages [node-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/node_graph-0.0.4.tar.gz tmp/node_graph-0.0.5.tar.gz --markdown 20240422/n/node-graph/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-22 11:22:01] INFO root fetch - processPackages [hyfi-fetcher]: executing diffoscope
+[2024-04-22 11:22:01] INFO root fetch - processPackages [hyfi-fetcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyfi_fetcher-0.2.0.tar.gz tmp/hyfi_fetcher-0.2.1.tar.gz --markdown 20240422/h/hyfi-fetcher/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-22 11:22:01] INFO root fetch - processPackages [vk-teams-async-bot]: Downloading https://files.pythonhosted.org/packages/62/ac/e259d676439c7a9d3c9f3438f6ab7680c49b788fe20384e1c4c6c8c59456/vk_teams_async_bot-0.2.3.tar.gz
+[2024-04-22 11:22:01] INFO root fetch - processPackages [vk-teams-async-bot]: executing diffoscope
+[2024-04-22 11:22:01] INFO root fetch - processPackages [vk-teams-async-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vk_teams_async_bot-0.2.2.tar.gz tmp/vk_teams_async_bot-0.2.3.tar.gz --markdown 20240422/v/vk-teams-async-bot/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-22 11:22:02] INFO root fetch - processPackages [hyfi-fetcher]: Remove: archive file [/home/abi/fetcher/tmp/hyfi_fetcher-0.2.0.tar.gz]
+[2024-04-22 11:22:02] INFO root fetch - processPackages [hyfi-fetcher]: Remove: archive file [/home/abi/fetcher/tmp/hyfi_fetcher-0.2.1.tar.gz]
+[2024-04-22 11:22:02] INFO root fetch - main [MainThread]: End processing [hyfi-fetcher]: success
+[2024-04-22 11:22:02] INFO root fetch - processPackages [node-graph]: Remove: archive file [/home/abi/fetcher/tmp/node_graph-0.0.4.tar.gz]
+[2024-04-22 11:22:02] INFO root fetch - processPackages [node-graph]: Remove: archive file [/home/abi/fetcher/tmp/node_graph-0.0.5.tar.gz]
+[2024-04-22 11:22:02] INFO root fetch - main [MainThread]: End processing [node-graph]: success
+[2024-04-22 11:22:02] INFO root fetch - processPackages [vk-teams-async-bot]: Remove: archive file [/home/abi/fetcher/tmp/vk_teams_async_bot-0.2.2.tar.gz]
+[2024-04-22 11:22:02] INFO root fetch - processPackages [vk-teams-async-bot]: Remove: archive file [/home/abi/fetcher/tmp/vk_teams_async_bot-0.2.3.tar.gz]
+[2024-04-22 11:22:02] INFO root fetch - main [MainThread]: End processing [vk-teams-async-bot]: success
+[2024-04-22 11:22:02] INFO root fetch - main [MainThread]: Store serial: [22874686]
