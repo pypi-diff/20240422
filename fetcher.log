@@ -3249,3 +3249,24 @@
 [2024-04-22 04:32:16] INFO root fetch - processPackages [telectron]: Remove: archive file [/home/abi/fetcher/tmp/telectron-2.0.70.1.tar.gz]
 [2024-04-22 04:32:16] INFO root fetch - main [MainThread]: End processing [telectron]: success
 [2024-04-22 04:32:16] INFO root fetch - main [MainThread]: Store serial: [22871312]
+[2024-04-22 04:34:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871312]
+[2024-04-22 04:34:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 04:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgegraph
+[2024-04-22 04:34:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wxauto
+[2024-04-22 04:34:24] INFO root fetch - processPackages [wxauto]: New version: [3.9.8.15.3] Old Version: [3.9.8.15.2]
+[2024-04-22 04:34:24] INFO root fetch - processPackages [edgegraph]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-22 04:34:24] INFO root fetch - processPackages [wxauto]: Downloading https://files.pythonhosted.org/packages/13/d8/177dde58f0733ce5b8e1bcb0d3646a8f62cacbf774cacc434ba993c6915d/wxauto-3.9.8.15.2.tar.gz
+[2024-04-22 04:34:25] INFO root fetch - processPackages [edgegraph]: Downloading https://files.pythonhosted.org/packages/27/1f/1cea97e2d146f48d0252e36d5d1c4c5d5be1f963ac279013a9a43429a07e/edgegraph-0.1.0.tar.gz
+[2024-04-22 04:34:25] INFO root fetch - processPackages [wxauto]: Downloading https://files.pythonhosted.org/packages/51/47/38774dc4fd8ee7d17147230f2c9bf86307dc114711807aa260cd035adf4f/wxauto-3.9.8.15.3.tar.gz
+[2024-04-22 04:34:25] INFO root fetch - processPackages [wxauto]: executing diffoscope
+[2024-04-22 04:34:25] INFO root fetch - processPackages [wxauto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxauto-3.9.8.15.2.tar.gz tmp/wxauto-3.9.8.15.3.tar.gz --markdown 20240422/w/wxauto/3.9.8.15.2-3.9.8.15.3/README.md --exclude *.pyd
+[2024-04-22 04:34:25] INFO root fetch - processPackages [edgegraph]: Downloading https://files.pythonhosted.org/packages/b9/8a/5e1aac377f00745a934d702040b8c17a6ed7763d1fd7994aa892cd793bf8/edgegraph-0.2.0.tar.gz
+[2024-04-22 04:34:25] INFO root fetch - processPackages [edgegraph]: executing diffoscope
+[2024-04-22 04:34:25] INFO root fetch - processPackages [edgegraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegraph-0.1.0.tar.gz tmp/edgegraph-0.2.0.tar.gz --markdown 20240422/e/edgegraph/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-22 04:34:25] INFO root fetch - processPackages [wxauto]: Remove: archive file [/home/abi/fetcher/tmp/wxauto-3.9.8.15.2.tar.gz]
+[2024-04-22 04:34:25] INFO root fetch - processPackages [wxauto]: Remove: archive file [/home/abi/fetcher/tmp/wxauto-3.9.8.15.3.tar.gz]
+[2024-04-22 04:34:25] INFO root fetch - main [MainThread]: End processing [wxauto]: success
+[2024-04-22 04:34:26] INFO root fetch - processPackages [edgegraph]: Remove: archive file [/home/abi/fetcher/tmp/edgegraph-0.1.0.tar.gz]
+[2024-04-22 04:34:26] INFO root fetch - processPackages [edgegraph]: Remove: archive file [/home/abi/fetcher/tmp/edgegraph-0.2.0.tar.gz]
+[2024-04-22 04:34:26] INFO root fetch - main [MainThread]: End processing [edgegraph]: success
+[2024-04-22 04:34:26] INFO root fetch - main [MainThread]: Store serial: [22871318]
