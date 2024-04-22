@@ -2217,3 +2217,18 @@
 [2024-04-22 02:57:19] INFO root fetch - processPackages [ovos-ww-plugin-openwakeword]: Remove: archive file [/home/abi/fetcher/tmp/ovos_ww_plugin_openwakeword-0.4.1a1-py3-none-any.whl.zip]
 [2024-04-22 02:57:19] INFO root fetch - main [MainThread]: End processing [ovos-ww-plugin-openwakeword]: success
 [2024-04-22 02:57:19] INFO root fetch - main [MainThread]: Store serial: [22870803]
+[2024-04-22 02:59:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870803]
+[2024-04-22 02:59:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 02:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycde
+[2024-04-22 02:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-sqlite-object-storage
+[2024-04-22 02:59:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pythonic-cache
+[2024-04-22 02:59:28] WARNING root fetch - processPackages [pythonic-cache]: Skipping, unable to determine old version
+[2024-04-22 02:59:28] INFO root fetch - main [MainThread]: End processing [pythonic-cache] error
+[2024-04-22 02:59:28] WARNING root fetch - processPackages [django-sqlite-object-storage]: Skipping, unable to determine old version
+[2024-04-22 02:59:28] INFO root fetch - main [MainThread]: End processing [django-sqlite-object-storage] error
+[2024-04-22 02:59:28] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev885] Old Version: [0.3.1.dev884]
+[2024-04-22 02:59:28] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/bb/b5/f3f90dcb6805b33ec974d0f82da2e829e9ba96a07e3d76b3e61c79511f46/pycde-0.3.1.dev884-cp39-cp39-win_amd64.whl
+[2024-04-22 02:59:29] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/19/5c/870b03ed8176f4cbe98ef0d6f0d1859de12f16ec36d41bb1e255960d7afb/pycde-0.3.1.dev885-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-22 02:59:29] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21368337>=10485760
+[2024-04-22 02:59:29] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2024-04-22 02:59:29] INFO root fetch - main [MainThread]: Store serial: [22870817]
