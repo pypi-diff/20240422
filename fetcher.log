@@ -3285,3 +3285,27 @@
 [2024-04-22 04:36:35] INFO root fetch - processPackages [llama-index-readers-web]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_web-0.1.9.tar.gz]
 [2024-04-22 04:36:35] INFO root fetch - main [MainThread]: End processing [llama-index-readers-web]: success
 [2024-04-22 04:36:35] INFO root fetch - main [MainThread]: Store serial: [22871326]
+[2024-04-22 04:38:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871326]
+[2024-04-22 04:38:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-22 04:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-vector-stores-weaviate
+[2024-04-22 04:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zonesmart-utils-fork
+[2024-04-22 04:38:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-fauna
+[2024-04-22 04:38:44] INFO root fetch - processPackages [zonesmart-utils-fork]: New version: [0.5.9.5] Old Version: [0.5.9.4]
+[2024-04-22 04:38:44] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/bc/62/2aee483a38ceadd6d10a7b1f8e918e20d391ddbf7888c063f71cdcb76685/zonesmart-utils-fork-0.5.9.4.tar.gz
+[2024-04-22 04:38:44] INFO root fetch - processPackages [llama-index-vector-stores-weaviate]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-22 04:38:44] WARNING root fetch - processPackages [pytest-fauna]: Skipping, unable to determine old version
+[2024-04-22 04:38:44] INFO root fetch - main [MainThread]: End processing [pytest-fauna] error
+[2024-04-22 04:38:44] INFO root fetch - processPackages [llama-index-vector-stores-weaviate]: Downloading https://files.pythonhosted.org/packages/53/cf/55be7c3bfd753ff334bffa1158a2b336bed98f470910cb31f0433b17118e/llama_index_vector_stores_weaviate-0.1.4.tar.gz
+[2024-04-22 04:38:44] INFO root fetch - processPackages [zonesmart-utils-fork]: Downloading https://files.pythonhosted.org/packages/b0/bf/4d4739c608de4b0b04f66a6ab67327991533263c0849631a61dc7bfa84c0/zonesmart-utils-fork-0.5.9.5.tar.gz
+[2024-04-22 04:38:44] INFO root fetch - processPackages [zonesmart-utils-fork]: executing diffoscope
+[2024-04-22 04:38:44] INFO root fetch - processPackages [zonesmart-utils-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonesmart-utils-fork-0.5.9.4.tar.gz tmp/zonesmart-utils-fork-0.5.9.5.tar.gz --markdown 20240422/z/zonesmart-utils-fork/0.5.9.4-0.5.9.5/README.md --exclude *.pyd
+[2024-04-22 04:38:44] INFO root fetch - processPackages [llama-index-vector-stores-weaviate]: Downloading https://files.pythonhosted.org/packages/f3/9d/506a3efa311976ff95de5110dd724b9ac6b580ef33abf05c0d1b7b8a2b34/llama_index_vector_stores_weaviate-0.1.5.tar.gz
+[2024-04-22 04:38:44] INFO root fetch - processPackages [llama-index-vector-stores-weaviate]: executing diffoscope
+[2024-04-22 04:38:44] INFO root fetch - processPackages [llama-index-vector-stores-weaviate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_vector_stores_weaviate-0.1.4.tar.gz tmp/llama_index_vector_stores_weaviate-0.1.5.tar.gz --markdown 20240422/l/llama-index-vector-stores-weaviate/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-22 04:38:45] INFO root fetch - processPackages [llama-index-vector-stores-weaviate]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_weaviate-0.1.4.tar.gz]
+[2024-04-22 04:38:45] INFO root fetch - processPackages [llama-index-vector-stores-weaviate]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_vector_stores_weaviate-0.1.5.tar.gz]
+[2024-04-22 04:38:45] INFO root fetch - main [MainThread]: End processing [llama-index-vector-stores-weaviate]: success
+[2024-04-22 04:38:45] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.4.tar.gz]
+[2024-04-22 04:38:45] INFO root fetch - processPackages [zonesmart-utils-fork]: Remove: archive file [/home/abi/fetcher/tmp/zonesmart-utils-fork-0.5.9.5.tar.gz]
+[2024-04-22 04:38:45] INFO root fetch - main [MainThread]: End processing [zonesmart-utils-fork]: success
+[2024-04-22 04:38:45] INFO root fetch - main [MainThread]: Store serial: [22871337]
