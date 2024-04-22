@@ -3930,3 +3930,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 05:11:51] INFO root fetch - processPackages [hypothesis-torch]: Remove: archive file [/home/abi/fetcher/tmp/hypothesis_torch-0.1.7.tar.gz]
 [2024-04-22 05:11:51] INFO root fetch - main [MainThread]: End processing [hypothesis-torch]: success
 [2024-04-22 05:11:51] INFO root fetch - main [MainThread]: Store serial: [22871618]
+[2024-04-22 05:13:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871618]
+[2024-04-22 05:13:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-22 05:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai2-kit
+[2024-04-22 05:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cutseq
+[2024-04-22 05:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Nuitka-winsvc
+[2024-04-22 05:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythonic-cache
+[2024-04-22 05:13:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: q-searcher
+[2024-04-22 05:13:59] INFO root fetch - processPackages [pythonic-cache]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-22 05:13:59] INFO root fetch - processPackages [cutseq]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-22 05:13:59] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/46/c3/faefa730179ad6f19938942dba213b8fd10c3d7453fe2bbde7924185eb13/cutseq-0.0.5.tar.gz
+[2024-04-22 05:13:59] INFO root fetch - processPackages [q-searcher]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-22 05:13:59] INFO root fetch - processPackages [Nuitka-winsvc]: New version: [2.1.6] Old Version: [2.1.5]
+[2024-04-22 05:13:59] INFO root fetch - processPackages [ai2-kit]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-22 05:13:59] INFO root fetch - processPackages [pythonic-cache]: Downloading https://files.pythonhosted.org/packages/5d/1e/f9ef811e91522af3d680941d988375a880dd75e1c7b3554907b6b1567685/pythonic_cache-0.1.0.tar.gz
+[2024-04-22 05:13:59] INFO root fetch - processPackages [Nuitka-winsvc]: Downloading https://files.pythonhosted.org/packages/2a/72/d760f4d1a437901b5f3381f42e3edcfd2eb740ed5f47bc48d8673ccb165b/Nuitka-winsvc-2.1.5.tar.gz
+[2024-04-22 05:13:59] INFO root fetch - processPackages [ai2-kit]: Downloading https://files.pythonhosted.org/packages/2f/ac/f68fb35a03f26fbbf6dcc4c0484b2a2c730f858907b176791f95259979fa/ai2_kit-0.9.8.tar.gz
+[2024-04-22 05:13:59] INFO root fetch - processPackages [q-searcher]: Downloading https://files.pythonhosted.org/packages/5c/31/5c8b0b9c54052d551c5efe616acba3e4858c01fc491a7b246231bb5a64da/q_searcher-0.0.2.tar.gz
+[2024-04-22 05:13:59] INFO root fetch - processPackages [cutseq]: Downloading https://files.pythonhosted.org/packages/f7/bb/fc763d1d6e79acb201ea7db0a2a7bcf3691ca77aa51eacb36feb517a383e/cutseq-0.0.6.tar.gz
+[2024-04-22 05:14:00] INFO root fetch - processPackages [cutseq]: executing diffoscope
+[2024-04-22 05:14:00] INFO root fetch - processPackages [cutseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutseq-0.0.5.tar.gz tmp/cutseq-0.0.6.tar.gz --markdown 20240422/c/cutseq/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-22 05:14:00] INFO root fetch - processPackages [pythonic-cache]: Downloading https://files.pythonhosted.org/packages/08/58/86fec8c209ad77c9c1afcfca43b73ab5cd1b1f82575805abc0df10422f4e/pythonic_cache-0.2.0.tar.gz
+[2024-04-22 05:14:00] INFO root fetch - processPackages [pythonic-cache]: executing diffoscope
+[2024-04-22 05:14:00] INFO root fetch - processPackages [pythonic-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonic_cache-0.1.0.tar.gz tmp/pythonic_cache-0.2.0.tar.gz --markdown 20240422/p/pythonic-cache/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-22 05:14:00] INFO root fetch - processPackages [ai2-kit]: Downloading https://files.pythonhosted.org/packages/92/7d/d7c2c21a8ae2d8df9e79cbff8b4677c6171799dbb041ec440b5827feeea9/ai2_kit-0.9.9.tar.gz
+[2024-04-22 05:14:00] INFO root fetch - processPackages [q-searcher]: Downloading https://files.pythonhosted.org/packages/9e/41/95f33227d0fa0c72102e9e3a8f1a6faddeeea6de3f69e0b824b5dafbb4fe/q_searcher-0.0.3.tar.gz
+[2024-04-22 05:14:00] INFO root fetch - processPackages [ai2-kit]: executing diffoscope
+[2024-04-22 05:14:00] INFO root fetch - processPackages [ai2-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai2_kit-0.9.8.tar.gz tmp/ai2_kit-0.9.9.tar.gz --markdown 20240422/a/ai2-kit/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-22 05:14:00] INFO root fetch - processPackages [q-searcher]: executing diffoscope
+[2024-04-22 05:14:00] INFO root fetch - processPackages [q-searcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/q_searcher-0.0.2.tar.gz tmp/q_searcher-0.0.3.tar.gz --markdown 20240422/q/q-searcher/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-22 05:14:00] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.5.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - processPackages [cutseq]: Remove: archive file [/home/abi/fetcher/tmp/cutseq-0.0.6.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - main [MainThread]: End processing [cutseq]: success
+[2024-04-22 05:14:00] INFO root fetch - processPackages [pythonic-cache]: Remove: archive file [/home/abi/fetcher/tmp/pythonic_cache-0.1.0.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - processPackages [pythonic-cache]: Remove: archive file [/home/abi/fetcher/tmp/pythonic_cache-0.2.0.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - main [MainThread]: End processing [pythonic-cache]: success
+[2024-04-22 05:14:00] INFO root fetch - processPackages [Nuitka-winsvc]: Downloading https://files.pythonhosted.org/packages/93/86/29bce82f94ec076af9dfe40d34bf4b5cd1cd1af34a7f2001d6e0dd5f0605/nuitka_winsvc-2.1.6.tar.gz
+[2024-04-22 05:14:00] INFO root fetch - processPackages [q-searcher]: Remove: archive file [/home/abi/fetcher/tmp/q_searcher-0.0.2.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - processPackages [q-searcher]: Remove: archive file [/home/abi/fetcher/tmp/q_searcher-0.0.3.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - main [MainThread]: End processing [q-searcher]: success
+[2024-04-22 05:14:00] INFO root fetch - processPackages [ai2-kit]: Remove: archive file [/home/abi/fetcher/tmp/ai2_kit-0.9.8.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - processPackages [ai2-kit]: Remove: archive file [/home/abi/fetcher/tmp/ai2_kit-0.9.9.tar.gz]
+[2024-04-22 05:14:00] INFO root fetch - main [MainThread]: End processing [ai2-kit]: success
+[2024-04-22 05:14:01] INFO root fetch - processPackages [Nuitka-winsvc]: executing diffoscope
+[2024-04-22 05:14:01] INFO root fetch - processPackages [Nuitka-winsvc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Nuitka-winsvc-2.1.5.tar.gz tmp/nuitka_winsvc-2.1.6.tar.gz --markdown 20240422/N/Nuitka-winsvc/2.1.5-2.1.6/README.md --exclude *.pyd
+[2024-04-22 05:14:09] INFO root fetch - processPackages [Nuitka-winsvc]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-winsvc-2.1.5.tar.gz]
+[2024-04-22 05:14:09] INFO root fetch - processPackages [Nuitka-winsvc]: Remove: archive file [/home/abi/fetcher/tmp/nuitka_winsvc-2.1.6.tar.gz]
+[2024-04-22 05:14:09] INFO root fetch - main [MainThread]: End processing [Nuitka-winsvc]: success
+[2024-04-22 05:14:09] INFO root fetch - main [MainThread]: Store serial: [22871637]
