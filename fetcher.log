@@ -2271,3 +2271,24 @@
 [2024-04-22 03:01:40] INFO root fetch - processPackages [scaffoldmaker]: Remove: archive file [/home/abi/fetcher/tmp/scaffoldmaker-0.9.0.tar.gz]
 [2024-04-22 03:01:40] INFO root fetch - main [MainThread]: End processing [scaffoldmaker]: success
 [2024-04-22 03:01:40] INFO root fetch - main [MainThread]: Store serial: [22870829]
+[2024-04-22 03:03:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870829]
+[2024-04-22 03:03:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 03:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plpygis
+[2024-04-22 03:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: schem
+[2024-04-22 03:03:49] INFO root fetch - processPackages [schem]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-04-22 03:03:49] INFO root fetch - processPackages [schem]: Downloading https://files.pythonhosted.org/packages/42/66/1f4d8683198245612ee7a5e2a5765967f8071b00874015ec0001a1923ae1/schem-0.9.6.tar.gz
+[2024-04-22 03:03:49] INFO root fetch - processPackages [plpygis]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-22 03:03:50] INFO root fetch - processPackages [plpygis]: Downloading https://files.pythonhosted.org/packages/8e/05/c929d3b367032812787e84644ce7902c0a8e70f2d9d6cf7def76012c46dd/plpygis-0.3.0.tar.gz
+[2024-04-22 03:03:50] INFO root fetch - processPackages [schem]: Downloading https://files.pythonhosted.org/packages/f9/61/b544fd79215110646193a4202e32076a3acdc4c3eb43e51932fc774a93a5/schem-0.9.7.tar.gz
+[2024-04-22 03:03:50] INFO root fetch - processPackages [schem]: executing diffoscope
+[2024-04-22 03:03:50] INFO root fetch - processPackages [schem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schem-0.9.6.tar.gz tmp/schem-0.9.7.tar.gz --markdown 20240422/s/schem/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-04-22 03:03:50] INFO root fetch - processPackages [plpygis]: Downloading https://files.pythonhosted.org/packages/c1/e4/542b72de91b19fa6757bf19a942f1c82e0b7c17de1e081bb67ce108c331c/plpygis-0.4.0.tar.gz
+[2024-04-22 03:03:50] INFO root fetch - processPackages [plpygis]: executing diffoscope
+[2024-04-22 03:03:50] INFO root fetch - processPackages [plpygis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plpygis-0.3.0.tar.gz tmp/plpygis-0.4.0.tar.gz --markdown 20240422/p/plpygis/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-22 03:03:50] INFO root fetch - processPackages [schem]: Remove: archive file [/home/abi/fetcher/tmp/schem-0.9.6.tar.gz]
+[2024-04-22 03:03:50] INFO root fetch - processPackages [schem]: Remove: archive file [/home/abi/fetcher/tmp/schem-0.9.7.tar.gz]
+[2024-04-22 03:03:50] INFO root fetch - main [MainThread]: End processing [schem]: success
+[2024-04-22 03:03:50] INFO root fetch - processPackages [plpygis]: Remove: archive file [/home/abi/fetcher/tmp/plpygis-0.3.0.tar.gz]
+[2024-04-22 03:03:50] INFO root fetch - processPackages [plpygis]: Remove: archive file [/home/abi/fetcher/tmp/plpygis-0.4.0.tar.gz]
+[2024-04-22 03:03:50] INFO root fetch - main [MainThread]: End processing [plpygis]: success
+[2024-04-22 03:03:50] INFO root fetch - main [MainThread]: Store serial: [22870838]
