@@ -2878,3 +2878,18 @@
 [2024-04-22 04:03:29] INFO root fetch - processPackages [azure-smtp-relay]: Remove: archive file [/home/abi/fetcher/tmp/azure_smtp_relay-1.0.6.tar.gz]
 [2024-04-22 04:03:29] INFO root fetch - main [MainThread]: End processing [azure-smtp-relay]: success
 [2024-04-22 04:03:29] INFO root fetch - main [MainThread]: Store serial: [22871162]
+[2024-04-22 04:05:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871162]
+[2024-04-22 04:05:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-22 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: imgvision
+[2024-04-22 04:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-ascii-cards
+[2024-04-22 04:05:39] INFO root fetch - processPackages [imgvision]: New version: [0.1.7.2] Old Version: [0.1.7.1]
+[2024-04-22 04:05:39] WARNING root fetch - processPackages [simple-ascii-cards]: Skipping, unable to determine old version
+[2024-04-22 04:05:39] INFO root fetch - main [MainThread]: End processing [simple-ascii-cards] error
+[2024-04-22 04:05:39] INFO root fetch - processPackages [imgvision]: Downloading https://files.pythonhosted.org/packages/9e/db/61e19c55112c2f16b8a8dfbb07b5496f48238ddea7fb410f9e976693c4f0/imgvision-0.1.7.1-py3-none-any.whl
+[2024-04-22 04:05:39] INFO root fetch - processPackages [imgvision]: Downloading https://files.pythonhosted.org/packages/0a/10/4aac1cf097c06e5c19e9e691c68649f08a05e4d3f96191b2e9598a03df2e/imgvision-0.1.7.2.tar.gz
+[2024-04-22 04:05:40] INFO root fetch - processPackages [imgvision]: executing diffoscope
+[2024-04-22 04:05:40] INFO root fetch - processPackages [imgvision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imgvision-0.1.7.1-py3-none-any.whl.zip tmp/imgvision-0.1.7.2.tar.gz --markdown 20240422/i/imgvision/0.1.7.1-0.1.7.2/README.md --exclude *.pyd
+[2024-04-22 04:05:40] INFO root fetch - processPackages [imgvision]: Remove: archive file [/home/abi/fetcher/tmp/imgvision-0.1.7.1-py3-none-any.whl.zip]
+[2024-04-22 04:05:40] INFO root fetch - processPackages [imgvision]: Remove: archive file [/home/abi/fetcher/tmp/imgvision-0.1.7.2.tar.gz]
+[2024-04-22 04:05:40] INFO root fetch - main [MainThread]: End processing [imgvision]: success
+[2024-04-22 04:05:40] INFO root fetch - main [MainThread]: Store serial: [22871170]
