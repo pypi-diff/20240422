@@ -6759,3 +6759,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-22 08:33:33] INFO root fetch - processPackages [pygpt-net]: Remove: archive file [/home/abi/fetcher/tmp/pygpt_net-2.1.9.tar.gz]
 [2024-04-22 08:33:33] INFO root fetch - main [MainThread]: End processing [pygpt-net]: success
 [2024-04-22 08:33:33] INFO root fetch - main [MainThread]: Store serial: [22872698]
+[2024-04-22 08:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22872698]
+[2024-04-22 08:35:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-22 08:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simc-support
+[2024-04-22 08:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotframework-parrot-usbswitchcontroller
+[2024-04-22 08:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: power-grid-model-io
+[2024-04-22 08:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-base-tier-validation
+[2024-04-22 08:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: github-custom-actions
+[2024-04-22 08:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wttch-train-helper
+[2024-04-22 08:35:42] INFO root fetch - processPackages [simc-support]: New version: [9.2.5.3] Old Version: [9.2.5.2]
+[2024-04-22 08:35:42] WARNING root fetch - processPackages [robotframework-parrot-usbswitchcontroller]: Skipping, unable to determine old version
+[2024-04-22 08:35:42] INFO root fetch - main [MainThread]: End processing [robotframework-parrot-usbswitchcontroller] error
+[2024-04-22 08:35:42] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: New version: [17.0.1.5.0.2] Old Version: [17.0.1.5.0.1]
+[2024-04-22 08:35:42] INFO root fetch - processPackages [github-custom-actions]: New version: [1.3.0] Old Version: [1.2.2]
+[2024-04-22 08:35:42] INFO root fetch - processPackages [wttch-train-helper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 08:35:42] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/f2/2a/7c51939ccb108431387a296bc5c850bc5de94d88f9f5349f20368b0d95e5/simc_support-9.2.5.2.tar.gz
+[2024-04-22 08:35:42] INFO root fetch - processPackages [power-grid-model-io]: New version: [1.2.9] Old Version: [1.2.80]
+[2024-04-22 08:35:43] INFO root fetch - processPackages [power-grid-model-io]: Downloading https://files.pythonhosted.org/packages/a2/71/9e39eb21cc14dcf75eb529c53b52d5a7fa6ef2fbaaafb675c64cadd64322/power_grid_model_io-1.2.80.tar.gz
+[2024-04-22 08:35:43] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/3b/39/20b37adf77ac5d3a1c29fac307c5b35603437a19b4e9ccfdf3da730c7734/wttch-train-helper-0.0.8.tar.gz
+[2024-04-22 08:35:43] INFO root fetch - processPackages [github-custom-actions]: Downloading https://files.pythonhosted.org/packages/e9/ac/d503fcd1980c3d19b046a87b9b8c8e8c46e52e550027c0c2d99e88bad399/github_custom_actions-1.2.2.tar.gz
+[2024-04-22 08:35:43] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Downloading https://files.pythonhosted.org/packages/d6/f5/cffc15895c9b2a85eec556f57c584168314c955ec121163449f202607a57/odoo_addon_base_tier_validation-17.0.1.5.0.1-py3-none-any.whl
+[2024-04-22 08:35:43] INFO root fetch - processPackages [simc-support]: Downloading https://files.pythonhosted.org/packages/7f/f2/94679bd3aff7cfce75541c456a83745c5be1b451e014726a9dceb888be9e/simc_support-9.2.5.3.tar.gz
+[2024-04-22 08:35:43] INFO root fetch - processPackages [simc-support]: executing diffoscope
+[2024-04-22 08:35:43] INFO root fetch - processPackages [simc-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simc_support-9.2.5.2.tar.gz tmp/simc_support-9.2.5.3.tar.gz --markdown 20240422/s/simc-support/9.2.5.2-9.2.5.3/README.md --exclude *.pyd
+[2024-04-22 08:35:43] INFO root fetch - processPackages [power-grid-model-io]: Downloading https://files.pythonhosted.org/packages/4c/cc/8eb9ed701ded84401013d806307a8c2d457f6815447f949a74b8907b664e/power_grid_model_io-1.2.9-py3-none-any.whl
+[2024-04-22 08:35:43] INFO root fetch - processPackages [wttch-train-helper]: Downloading https://files.pythonhosted.org/packages/06/f1/4c3862ff8dfa72e0261e6a5f5e8fb8722a335c9adec2134db760cf92c16a/wttch-train-helper-0.0.9.tar.gz
+[2024-04-22 08:35:43] INFO root fetch - processPackages [github-custom-actions]: Downloading https://files.pythonhosted.org/packages/b5/40/3b3c5b63d0b13a6e030490c6c4e9088a651e00b1540abe2e90d0d148962a/github_custom_actions-1.3.0.tar.gz
+[2024-04-22 08:35:43] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Downloading https://files.pythonhosted.org/packages/0c/fd/bdd61ca3ffe36d9b7c38966e345e7c67d9923669e1da7e839f5a765b867e/odoo_addon_base_tier_validation-17.0.1.5.0.2-py3-none-any.whl
+[2024-04-22 08:35:43] INFO root fetch - processPackages [wttch-train-helper]: executing diffoscope
+[2024-04-22 08:35:43] INFO root fetch - processPackages [wttch-train-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wttch-train-helper-0.0.8.tar.gz tmp/wttch-train-helper-0.0.9.tar.gz --markdown 20240422/w/wttch-train-helper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 08:35:43] INFO root fetch - processPackages [github-custom-actions]: executing diffoscope
+[2024-04-22 08:35:43] INFO root fetch - processPackages [github-custom-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/github_custom_actions-1.2.2.tar.gz tmp/github_custom_actions-1.3.0.tar.gz --markdown 20240422/g/github-custom-actions/1.2.2-1.3.0/README.md --exclude *.pyd
+[2024-04-22 08:35:43] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: executing diffoscope
+[2024-04-22 08:35:43] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_tier_validation-17.0.1.5.0.1-py3-none-any.whl.zip tmp/odoo_addon_base_tier_validation-17.0.1.5.0.2-py3-none-any.whl.zip --markdown 20240422/o/odoo-addon-base-tier-validation/17.0.1.5.0.1-17.0.1.5.0.2/README.md --exclude *.pyd
+[2024-04-22 08:35:43] INFO root fetch - processPackages [power-grid-model-io]: executing diffoscope
+[2024-04-22 08:35:43] INFO root fetch - processPackages [power-grid-model-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_grid_model_io-1.2.80.tar.gz tmp/power_grid_model_io-1.2.9-py3-none-any.whl.zip --markdown 20240422/p/power-grid-model-io/1.2.80-1.2.9/README.md --exclude *.pyd
+[2024-04-22 08:35:44] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.8.tar.gz]
+[2024-04-22 08:35:44] INFO root fetch - processPackages [wttch-train-helper]: Remove: archive file [/home/abi/fetcher/tmp/wttch-train-helper-0.0.9.tar.gz]
+[2024-04-22 08:35:44] INFO root fetch - main [MainThread]: End processing [wttch-train-helper]: success
+[2024-04-22 08:35:44] INFO root fetch - processPackages [power-grid-model-io]: Remove: archive file [/home/abi/fetcher/tmp/power_grid_model_io-1.2.80.tar.gz]
+[2024-04-22 08:35:44] INFO root fetch - processPackages [power-grid-model-io]: Remove: archive file [/home/abi/fetcher/tmp/power_grid_model_io-1.2.9-py3-none-any.whl.zip]
+[2024-04-22 08:35:44] INFO root fetch - main [MainThread]: End processing [power-grid-model-io]: success
+[2024-04-22 08:35:44] INFO root fetch - processPackages [github-custom-actions]: Remove: archive file [/home/abi/fetcher/tmp/github_custom_actions-1.2.2.tar.gz]
+[2024-04-22 08:35:44] INFO root fetch - processPackages [github-custom-actions]: Remove: archive file [/home/abi/fetcher/tmp/github_custom_actions-1.3.0.tar.gz]
+[2024-04-22 08:35:44] INFO root fetch - main [MainThread]: End processing [github-custom-actions]: success
+[2024-04-22 08:35:44] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_tier_validation-17.0.1.5.0.1-py3-none-any.whl.zip]
+[2024-04-22 08:35:44] INFO root fetch - processPackages [odoo-addon-base-tier-validation]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_tier_validation-17.0.1.5.0.2-py3-none-any.whl.zip]
+[2024-04-22 08:35:44] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-tier-validation]: success
+[2024-04-22 08:35:44] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.2.tar.gz]
+[2024-04-22 08:35:44] INFO root fetch - processPackages [simc-support]: Remove: archive file [/home/abi/fetcher/tmp/simc_support-9.2.5.3.tar.gz]
+[2024-04-22 08:35:44] INFO root fetch - main [MainThread]: End processing [simc-support]: success
+[2024-04-22 08:35:44] INFO root fetch - main [MainThread]: Store serial: [22872718]
