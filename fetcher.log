@@ -9526,3 +9526,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 10:51:58] INFO root fetch - processPackages [DLMS-Firmware-updater]: Remove: archive file [/home/abi/fetcher/tmp/DLMS_Firmware_updater-0.3.0.tar.gz]
 [2024-04-22 10:51:58] INFO root fetch - main [MainThread]: End processing [DLMS-Firmware-updater]: success
 [2024-04-22 10:51:58] INFO root fetch - main [MainThread]: Store serial: [22874326]
+[2024-04-22 10:54:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874326]
+[2024-04-22 10:54:06] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-22 10:56:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874326]
+[2024-04-22 10:56:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-22 10:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: specklia
+[2024-04-22 10:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sharedkernel
+[2024-04-22 10:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amici
+[2024-04-22 10:56:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kadi
+[2024-04-22 10:56:12] WARNING root fetch - processPackages [sharedkernel]: Skipping, unable to determine old version
+[2024-04-22 10:56:12] INFO root fetch - main [MainThread]: End processing [sharedkernel] error
+[2024-04-22 10:56:12] INFO root fetch - processPackages [amici]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-22 10:56:12] INFO root fetch - processPackages [kadi]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-22 10:56:12] INFO root fetch - processPackages [specklia]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-04-22 10:56:12] INFO root fetch - processPackages [specklia]: Downloading https://files.pythonhosted.org/packages/a7/9f/4720917cb05f5cbc2f231e1f8046c023fc1f91d4aaefdae32d0a739be648/specklia-1.8.8.tar.gz
+[2024-04-22 10:56:12] INFO root fetch - processPackages [amici]: Downloading https://files.pythonhosted.org/packages/3e/bc/ad91a245282b727509812295a334ce6dca3c84855b7e6f83e7c0972ed511/amici-0.9.4.tar.gz
+[2024-04-22 10:56:12] INFO root fetch - processPackages [kadi]: Downloading https://files.pythonhosted.org/packages/3c/13/66ad2967333480e214c9d11d19338d16d5b8eba8c98ce2d7100416b06050/kadi-0.8.1-py3-none-any.whl
+[2024-04-22 10:56:13] WARNING root fetch - processPackages [kadi]: Skipping package: exceeds size limit 16380155>=10485760
+[2024-04-22 10:56:13] INFO root fetch - main [MainThread]: End processing [kadi] error
+[2024-04-22 10:56:13] INFO root fetch - processPackages [specklia]: Downloading https://files.pythonhosted.org/packages/0d/ec/3815cb2a18ad5b8029e09da92f85c68b28ffd5dbcf20be7c41214190aeaf/specklia-1.8.9.tar.gz
+[2024-04-22 10:56:13] INFO root fetch - processPackages [specklia]: executing diffoscope
+[2024-04-22 10:56:13] INFO root fetch - processPackages [specklia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/specklia-1.8.8.tar.gz tmp/specklia-1.8.9.tar.gz --markdown 20240422/s/specklia/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-04-22 10:56:13] INFO root fetch - processPackages [amici]: Downloading https://files.pythonhosted.org/packages/c7/cb/263ff2ae5b21729e617ad3db2137ee34b5f337f423db9d60a3c230276a38/amici-0.9.5.tar.gz
+[2024-04-22 10:56:13] INFO root fetch - processPackages [specklia]: Remove: archive file [/home/abi/fetcher/tmp/specklia-1.8.8.tar.gz]
+[2024-04-22 10:56:13] INFO root fetch - processPackages [specklia]: Remove: archive file [/home/abi/fetcher/tmp/specklia-1.8.9.tar.gz]
+[2024-04-22 10:56:13] INFO root fetch - main [MainThread]: End processing [specklia]: success
+[2024-04-22 10:56:14] INFO root fetch - processPackages [amici]: executing diffoscope
+[2024-04-22 10:56:14] INFO root fetch - processPackages [amici]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amici-0.9.4.tar.gz tmp/amici-0.9.5.tar.gz --markdown 20240422/a/amici/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-22 10:56:17] INFO root fetch - processPackages [amici]: Remove: archive file [/home/abi/fetcher/tmp/amici-0.9.4.tar.gz]
+[2024-04-22 10:56:17] INFO root fetch - processPackages [amici]: Remove: archive file [/home/abi/fetcher/tmp/amici-0.9.5.tar.gz]
+[2024-04-22 10:56:17] INFO root fetch - main [MainThread]: End processing [amici]: success
+[2024-04-22 10:56:17] INFO root fetch - main [MainThread]: Store serial: [22874340]
