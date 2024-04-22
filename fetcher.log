@@ -2482,3 +2482,15 @@
 [2024-04-22 03:23:36] INFO root fetch - processPackages [anyon]: Remove: archive file [/home/abi/fetcher/tmp/anyon-4.2.1-cp311-none-manylinux2014_x86_64.whl.zip]
 [2024-04-22 03:23:36] INFO root fetch - main [MainThread]: End processing [anyon]: success
 [2024-04-22 03:23:36] INFO root fetch - main [MainThread]: Store serial: [22870924]
+[2024-04-22 03:25:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22870924]
+[2024-04-22 03:25:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 03:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bauplan
+[2024-04-22 03:25:46] INFO root fetch - processPackages [bauplan]: New version: [0.0.3a9] Old Version: [0.0.3a88]
+[2024-04-22 03:25:47] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/2a/30/9d76813a8c36a3f71456aff5ba3dcf54938d6f59a5d5706eb379349e210f/bauplan-0.0.3a88-py3-none-win_amd64.whl
+[2024-04-22 03:25:48] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/15/cb/726ad7134b75bc6cab5597ce06747430b4320f9b764bbfd50c6ddf62a15b/bauplan-0.0.3a9.tar.gz
+[2024-04-22 03:25:50] INFO root fetch - processPackages [bauplan]: executing diffoscope
+[2024-04-22 03:25:50] INFO root fetch - processPackages [bauplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bauplan-0.0.3a88-py3-none-win_amd64.whl.zip tmp/bauplan-0.0.3a9.tar.gz --markdown 20240422/b/bauplan/0.0.3a88-0.0.3a9/README.md --exclude *.pyd
+[2024-04-22 03:26:00] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a88-py3-none-win_amd64.whl.zip]
+[2024-04-22 03:26:00] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a9.tar.gz]
+[2024-04-22 03:26:00] INFO root fetch - main [MainThread]: End processing [bauplan]: success
+[2024-04-22 03:26:00] INFO root fetch - main [MainThread]: Store serial: [22870933]
