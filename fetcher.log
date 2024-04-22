@@ -2704,3 +2704,11 @@
 [2024-04-22 03:41:47] INFO root fetch - processPackages [flash-rwkv]: Remove: archive file [/home/abi/fetcher/tmp/flash_rwkv-0.2.1-py3-none-any.whl.zip]
 [2024-04-22 03:41:47] INFO root fetch - main [MainThread]: End processing [flash-rwkv]: success
 [2024-04-22 03:41:47] INFO root fetch - main [MainThread]: Store serial: [22871104]
+[2024-04-22 03:43:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22871104]
+[2024-04-22 03:43:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-22 03:43:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: viper-in-python
+[2024-04-22 03:43:57] INFO root fetch - processPackages [viper-in-python]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-22 03:43:57] INFO root fetch - processPackages [viper-in-python]: Downloading https://files.pythonhosted.org/packages/3f/3b/abb69c28cd77b7dda540238840883f3de473807785fc1f677943a66cac85/viper-in-python-1.0.5.tar.gz
+[2024-04-22 03:43:57] WARNING root fetch - processPackages [viper-in-python]: Skipping package: exceeds size limit 10609940>=10485760
+[2024-04-22 03:43:57] INFO root fetch - main [MainThread]: End processing [viper-in-python] error
+[2024-04-22 03:43:57] INFO root fetch - main [MainThread]: Store serial: [22871107]
