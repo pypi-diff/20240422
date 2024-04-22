@@ -10020,3 +10020,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-22 11:11:56] INFO root fetch - processPackages [amulet-leveldb]: Remove: archive file [/home/abi/fetcher/tmp/amulet-leveldb-1.0.0b5.tar.gz]
 [2024-04-22 11:11:56] INFO root fetch - main [MainThread]: End processing [amulet-leveldb]: success
 [2024-04-22 11:11:56] INFO root fetch - main [MainThread]: Store serial: [22874561]
+[2024-04-22 11:14:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22874561]
+[2024-04-22 11:14:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-22 11:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: napari-toothfairy-annotator
+[2024-04-22 11:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-dots
+[2024-04-22 11:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baysalt-christmas
+[2024-04-22 11:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Riffle
+[2024-04-22 11:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lusid-configuration-sdk-preview
+[2024-04-22 11:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: 2b4cad69c8f0478caa92a512e57b735aba978d0e
+[2024-04-22 11:14:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: translate-toolkit
+[2024-04-22 11:14:07] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-22 11:14:07] INFO root fetch - processPackages [mo-dots]: New version: [9.595.24112] Old Version: [9.594.24112]
+[2024-04-22 11:14:07] INFO root fetch - processPackages [Riffle]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-04-22 11:14:07] INFO root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Downloading https://files.pythonhosted.org/packages/01/41/db784ddc21401cdfc90cf5135c9c817ed309e3b065cae306f76fcd8c0455/2b4cad69c8f0478caa92a512e57b735aba978d0e-0.1.8.tar.gz
+[2024-04-22 11:14:07] INFO root fetch - processPackages [napari-toothfairy-annotator]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-22 11:14:07] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/a0/29/5ddde3904f7914018313f75df3d02db3d7b24d7e7950fc3294aefd11ef28/mo_dots-9.594.24112.tar.gz
+[2024-04-22 11:14:07] INFO root fetch - processPackages [translate-toolkit]: New version: [3.9.2] Old Version: [3.9.1]
+[2024-04-22 11:14:07] INFO root fetch - processPackages [baysalt-christmas]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-22 11:14:07] WARNING root fetch - processPackages [2b4cad69c8f0478caa92a512e57b735aba978d0e]: Skipping package: exceeds size limit 27722932>=10485760
+[2024-04-22 11:14:07] INFO root fetch - main [MainThread]: End processing [2b4cad69c8f0478caa92a512e57b735aba978d0e] error
+[2024-04-22 11:14:07] INFO root fetch - processPackages [lusid-configuration-sdk-preview]: New version: [0.1.525] Old Version: [0.1.524]
+[2024-04-22 11:14:07] INFO root fetch - processPackages [Riffle]: Downloading https://files.pythonhosted.org/packages/d3/4d/b7bad8627be32071ed5a9263ee41eb6e9e991bad6b45d564d0fb838ab51c/Riffle-1.0.1.tar.gz
+[2024-04-22 11:14:07] INFO root fetch - processPackages [napari-toothfairy-annotator]: Downloading https://files.pythonhosted.org/packages/f7/cb/17259a113f9d9938f55e013bf6f160d8468f7fd9af2d89791df7b74af3b4/napari-toothfairy-annotator-0.0.8.tar.gz
+[2024-04-22 11:14:07] INFO root fetch - processPackages [baysalt-christmas]: Downloading https://files.pythonhosted.org/packages/fc/30/f228d15cea5ac5e24e1ce814fef15296e6060456d31c95b6d4cb2435fd88/baysalt_christmas-1.1.3.tar.gz
+[2024-04-22 11:14:07] INFO root fetch - processPackages [translate-toolkit]: Downloading https://files.pythonhosted.org/packages/c5/af/4e8d1c57d68b80bfcf3320cbfa99ccb29b9c7be267029524d12187a924d7/translate-toolkit-3.9.1.tar.gz
+[2024-04-22 11:14:07] INFO root fetch - processPackages [lusid-configuration-sdk-preview]: Downloading https://files.pythonhosted.org/packages/03/cf/e846efe57642a93047f8eeb855cd3901e586d07ed30ec287fa0ab6c4e071/lusid-configuration-sdk-preview-0.1.524.tar.gz
+[2024-04-22 11:14:07] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/0f/b0/a9c183ed21ff42c76ab3a069088a2e02f62944eeeb594565d42c1bef3000/mo_dots-9.595.24112.tar.gz
+[2024-04-22 11:14:08] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2024-04-22 11:14:08] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_dots-9.594.24112.tar.gz tmp/mo_dots-9.595.24112.tar.gz --markdown 20240422/m/mo-dots/9.594.24112-9.595.24112/README.md --exclude *.pyd
+[2024-04-22 11:14:08] INFO root fetch - processPackages [baysalt-christmas]: Downloading https://files.pythonhosted.org/packages/68/15/a7161b04ac726ae893af4a11927acc1f206260100003c43b77e02cf0010e/baysalt_christmas-1.1.4.tar.gz
+[2024-04-22 11:14:08] INFO root fetch - processPackages [napari-toothfairy-annotator]: Downloading https://files.pythonhosted.org/packages/f5/8a/8bd11194691603ce2bfead148fbf0a4bdcfeb82e49d90cf27de34b12ac21/napari-toothfairy-annotator-0.0.9.tar.gz
+[2024-04-22 11:14:08] INFO root fetch - processPackages [Riffle]: Downloading https://files.pythonhosted.org/packages/e7/4a/01a8bdf4f76b39bc644554b0645c316b41b2f338636f9435a2062a966f71/Riffle-2.0.0.tar.gz
+[2024-04-22 11:14:08] INFO root fetch - processPackages [lusid-configuration-sdk-preview]: Downloading https://files.pythonhosted.org/packages/cb/48/80476613b171a09ce941b62bcd5046bcf9e9ac55b10152269ab460e99c6b/lusid-configuration-sdk-preview-0.1.525.tar.gz
+[2024-04-22 11:14:08] INFO root fetch - processPackages [baysalt-christmas]: executing diffoscope
+[2024-04-22 11:14:08] INFO root fetch - processPackages [baysalt-christmas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baysalt_christmas-1.1.3.tar.gz tmp/baysalt_christmas-1.1.4.tar.gz --markdown 20240422/b/baysalt-christmas/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-22 11:14:08] INFO root fetch - processPackages [napari-toothfairy-annotator]: executing diffoscope
+[2024-04-22 11:14:08] INFO root fetch - processPackages [napari-toothfairy-annotator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari-toothfairy-annotator-0.0.8.tar.gz tmp/napari-toothfairy-annotator-0.0.9.tar.gz --markdown 20240422/n/napari-toothfairy-annotator/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-22 11:14:08] INFO root fetch - processPackages [Riffle]: executing diffoscope
+[2024-04-22 11:14:08] INFO root fetch - processPackages [Riffle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Riffle-1.0.1.tar.gz tmp/Riffle-2.0.0.tar.gz --markdown 20240422/R/Riffle/1.0.1-2.0.0/README.md --exclude *.pyd
+[2024-04-22 11:14:08] INFO root fetch - processPackages [lusid-configuration-sdk-preview]: executing diffoscope
+[2024-04-22 11:14:08] INFO root fetch - processPackages [lusid-configuration-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-configuration-sdk-preview-0.1.524.tar.gz tmp/lusid-configuration-sdk-preview-0.1.525.tar.gz --markdown 20240422/l/lusid-configuration-sdk-preview/0.1.524-0.1.525/README.md --exclude *.pyd
+[2024-04-22 11:14:08] INFO root fetch - processPackages [translate-toolkit]: Downloading https://files.pythonhosted.org/packages/1b/b6/8552b915b1bf2f0e08b96cbbecd4a78c1b4a62d9c473785c11e24abde83e/translate-toolkit-3.9.2.tar.gz
+[2024-04-22 11:14:08] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.594.24112.tar.gz]
+[2024-04-22 11:14:08] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.595.24112.tar.gz]
+[2024-04-22 11:14:08] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2024-04-22 11:14:08] INFO root fetch - processPackages [napari-toothfairy-annotator]: Remove: archive file [/home/abi/fetcher/tmp/napari-toothfairy-annotator-0.0.8.tar.gz]
+[2024-04-22 11:14:08] INFO root fetch - processPackages [napari-toothfairy-annotator]: Remove: archive file [/home/abi/fetcher/tmp/napari-toothfairy-annotator-0.0.9.tar.gz]
+[2024-04-22 11:14:08] INFO root fetch - main [MainThread]: End processing [napari-toothfairy-annotator]: success
+[2024-04-22 11:14:08] INFO root fetch - processPackages [baysalt-christmas]: Remove: archive file [/home/abi/fetcher/tmp/baysalt_christmas-1.1.3.tar.gz]
+[2024-04-22 11:14:08] INFO root fetch - processPackages [baysalt-christmas]: Remove: archive file [/home/abi/fetcher/tmp/baysalt_christmas-1.1.4.tar.gz]
+[2024-04-22 11:14:08] INFO root fetch - main [MainThread]: End processing [baysalt-christmas]: success
+[2024-04-22 11:14:09] INFO root fetch - processPackages [Riffle]: Remove: archive file [/home/abi/fetcher/tmp/Riffle-1.0.1.tar.gz]
+[2024-04-22 11:14:09] INFO root fetch - processPackages [Riffle]: Remove: archive file [/home/abi/fetcher/tmp/Riffle-2.0.0.tar.gz]
+[2024-04-22 11:14:09] INFO root fetch - main [MainThread]: End processing [Riffle]: success
+[2024-04-22 11:14:09] INFO root fetch - processPackages [translate-toolkit]: executing diffoscope
+[2024-04-22 11:14:09] INFO root fetch - processPackages [translate-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240422:/home/abi/fetcher/20240422:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translate-toolkit-3.9.1.tar.gz tmp/translate-toolkit-3.9.2.tar.gz --markdown 20240422/t/translate-toolkit/3.9.1-3.9.2/README.md --exclude *.pyd
+[2024-04-22 11:14:09] INFO root fetch - processPackages [lusid-configuration-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-configuration-sdk-preview-0.1.524.tar.gz]
+[2024-04-22 11:14:09] INFO root fetch - processPackages [lusid-configuration-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-configuration-sdk-preview-0.1.525.tar.gz]
+[2024-04-22 11:14:09] INFO root fetch - main [MainThread]: End processing [lusid-configuration-sdk-preview]: success
+[2024-04-22 11:14:12] INFO root fetch - processPackages [translate-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/translate-toolkit-3.9.1.tar.gz]
+[2024-04-22 11:14:12] INFO root fetch - processPackages [translate-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/translate-toolkit-3.9.2.tar.gz]
+[2024-04-22 11:14:12] INFO root fetch - main [MainThread]: End processing [translate-toolkit]: success
+[2024-04-22 11:14:12] INFO root fetch - main [MainThread]: Store serial: [22874589]
